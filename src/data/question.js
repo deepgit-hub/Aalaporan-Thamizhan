@@ -4,7 +4,7 @@ const questions = [
     title: "Introduction to Programming",
 
     questions: [
-      {
+     {
   id: 1,
   title: "Question 1",
 
@@ -20,6 +20,10 @@ const questions = [
   hintTamil:
     "System.out.println() Statement-ஐ பயன்படுத்துங்கள்.",
 
+  expectedOutput: `Hello World`,
+
+  expectedOutputTamil: `Hello World`,
+
   solution: `public class Main {
 
     public static void main(String[] args) {
@@ -31,9 +35,7 @@ const questions = [
 }`,
 
   challenge: false,
-
   locked: false,
-
   completed: false,
 },
 {
