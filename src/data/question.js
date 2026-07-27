@@ -1401,12 +1401,36 @@ Enter second number:
   locked: false,
  completed: false,
 },
-      { 
-        id: 8, 
-        title: "Question 8", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Read a name, age, and percentage from the user and print all three values.",
+
+  questionTamil:
+    "பயனரிடமிருந்து பெயர், வயது மற்றும் சதவீதத்தை பெற்று மூன்றையும் Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use nextLine(), nextInt(), and nextDouble().",
+
+  hintTamil:
+    "nextLine(), nextInt(), மற்றும் nextDouble() பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Deepak
+20
+92.5`,
+
+  expectedOutputTamil: `Deepak
+20
+92.5`,
+
+  solution: "",
+
+  challenge: false,
+  locked: false,
+ completed: false,
+},
       { id: 9,
         title: "Challenge Question 9", 
         locked: true,
