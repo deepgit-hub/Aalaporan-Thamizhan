@@ -3579,15 +3579,7 @@ Exception ஏற்பட்டாலும், ஏற்படாவிட்�
 
   completed: false
 },
-  {
-    id: 36,
-    title: "Throw",
-    englishDefinition: "",
-    tamilDefinition: "",
-    realWorldUsage: "",
-    locked: true,
-    completed: false,
-  },
+  
 ];
 
 export default topics;
