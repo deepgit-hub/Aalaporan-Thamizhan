@@ -793,8 +793,8 @@ const questions = [
     ],
   },
   {
-    topicId: 12,
-    title: "Do While Loop",
+     topicId: 13,
+  title: "For Loop",
 
     questions: [
       {
@@ -2443,7 +2443,7 @@ const questions = [
         },
     ],
   },
-  
+
 ];
 
 export default questions;
