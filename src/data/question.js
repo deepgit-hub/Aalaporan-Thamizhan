@@ -159,6 +159,12 @@ Cyber Security`,
   hintTamil:
     "இரண்டு System.out.println() Statements-ஐ பயன்படுத்துங்கள்.",
 
+  expectedOutput: `Computer Science and Engineering
+Java`,
+
+  expectedOutputTamil: `Computer Science and Engineering
+Java`,
+
   solution: `public class Main {
 
     public static void main(String[] args) {
@@ -171,9 +177,7 @@ Cyber Security`,
 }`,
 
   challenge: false,
-
   locked: false,
-
   completed: false,
 },
 {
