@@ -268,16 +268,24 @@ Cyber Security`,
   title: "Question 8",
 
   questionEnglish:
-    "Write a Java program to print the following output:\n\n************\nWelcome to Java\n************",
+    "Write a Java program to print the following output.",
 
   questionTamil:
-    "கீழே கொடுக்கப்பட்டுள்ள Output-ஐ Print செய்யும் Java Program-ஐ எழுதுங்கள்:\n\n************\nWelcome to Java\n************",
+    "கீழே கொடுக்கப்பட்டுள்ள Output-ஐ Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
 
   hintEnglish:
     "Print each line separately.",
 
   hintTamil:
     "ஒவ்வொரு வரியையும் தனித்தனியாக Print செய்யுங்கள்.",
+
+  expectedOutput: `************
+Welcome to Java
+************`,
+
+  expectedOutputTamil: `************
+Welcome to Java
+************`,
 
   solution: `public class Main {
 
@@ -292,9 +300,7 @@ Cyber Security`,
 }`,
 
   challenge: false,
-
   locked: false,
-
   completed: false,
 },
 {
