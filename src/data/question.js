@@ -890,12 +890,42 @@ Java`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 5, 
-        title: "Question 5", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Declare a String variable named city with the value \"Chennai\" and print it.",
+
+  questionTamil:
+    "\"Chennai\" என்ற மதிப்புடன் city என்ற String Variable-ஐ உருவாக்கி Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Strings use double quotes.",
+
+  hintTamil:
+    "String மதிப்பிற்கு Double Quotes பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Chennai`,
+
+  expectedOutputTamil: `Chennai`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        String city = "Chennai";
+
+        System.out.println(city);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 6, 
         title: "Question 6", 
