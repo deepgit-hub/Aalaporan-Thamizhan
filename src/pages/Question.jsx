@@ -3,57 +3,37 @@ import questions from "../data/question";
 
 function Question() {
   const navigate = useNavigate();
-  const { topicId, questionId } = useParams();
+  const { id } = useParams();
 
   const topic = questions.find(
-    (item) => item.topicId === Number(topicId)
+    (item) => item.topicId === Number(id)
   );
 
   if (!topic) {
     return <h2>Topic Not Found</h2>;
   }
 
-  const question = topic.questions.find(
-    (item) => item.id === Number(questionId)
-  );
-
-  if (!question) {
-    return <h2>Question Not Found</h2>;
-  }
-
   return (
     <>
-      <button onClick={() => navigate(`/question/${topicId}`)}>
+      <button onClick={() => navigate(`/topic/${id}`)}>
         ⬅ Back
       </button>
 
-      <h1>{topic.title}</h1>
+      <h1>Question on "{topic.title}"</h1>
 
-      <h2>{question.title}</h2>
-
-      <hr />
-
-      <h2>📝 Question (English)</h2>
-
-      <p>{question.questionEnglish}</p>
+      <h2>All the Best</h2>
 
       <hr />
 
-      <h2>📝 கேள்வி (Tamil)</h2>
-
-      <p>{question.questionTamil}</p>
-
-      <hr />
-
-      <button>💻 Run Code</button>
-
-      {!question.challenge && (
-        <button>📖 Solution</button>
-      )}
-
-      <button>✅ Done</button>
+      {topic.questions.map((question) => (
+        <div key={question.id} style={{ marginBottom: "15px" }}>
+          <button>
+            {question.title}
+          </button>
+        </div>
+      ))}
     </>
   );
 }
 
-export default Question;
+export default Question;    
