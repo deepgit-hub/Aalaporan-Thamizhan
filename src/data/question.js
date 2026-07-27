@@ -1431,11 +1431,36 @@ Enter second number:
   locked: false,
  completed: false,
 },
-      { id: 9,
-        title: "Challenge Question 9", 
-        locked: true,
-        completed: false 
-        },
+      {
+  id: 9,
+  title: "Challenge Question 9",
+
+  questionEnglish:
+    "Read the product name, price, and quantity from the user and print all the values.",
+
+  questionTamil:
+    "பொருளின் பெயர், விலை மற்றும் அளவை Input ஆக பெற்று அனைத்தையும் Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use String, double, and int input methods.",
+
+  hintTamil:
+    "String, double மற்றும் int Input Methods-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Laptop
+55000
+5`,
+
+  expectedOutputTamil: `Laptop
+55000
+5`,
+
+  solution: "",
+
+  challenge: true,
+  locked: true,
+ completed: false,
+},
       { 
         id: 10, 
         title: "Challenge Question 10", 
