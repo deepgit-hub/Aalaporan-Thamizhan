@@ -675,11 +675,36 @@ Fun`,
   locked: false,
   completed: false,
 },
-      { id: 9,
-        title: "Challenge Question 9", 
-        locked: true,
-        completed: false 
-        },
+      {
+  id: 9,
+  title: "Challenge Question 9",
+
+  questionEnglish:
+    "Declare variables for your name, age, and department, then print all three values.",
+
+  questionTamil:
+    "உங்கள் பெயர், வயது மற்றும் Department-க்கான Variables-ஐ உருவாக்கி மூன்றையும் Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use String and int variables.",
+
+  hintTamil:
+    "String மற்றும் int Variables பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Deepak
+20
+Computer Science and Engineering`,
+
+  expectedOutputTamil: `Deepak
+20
+Computer Science and Engineering`,
+
+  solution: "",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
       { 
         id: 10, 
         title: "Challenge Question 10", 
