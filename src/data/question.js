@@ -2273,24 +2273,98 @@ Remainder = 0`,
   locked: false,
   completed: false,
 },
-    { 
-        id: 8, 
-        title: "Question 8", 
-        locked: false, 
-        completed: false 
-        },
-      { id: 9,
-        title: "Challenge Question 9", 
-        locked: true,
-        completed: false 
-        },
-      { 
-        id: 10, 
-        title: "Challenge Question 10", 
-        locked: true, 
-        completed: false 
-        },
-    ],
+    {
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to check if a salary is greater than 50000. If it is, print \"High Salary\".",
+
+  questionTamil:
+    "சம்பளம் 50000-ஐ விட அதிகமாக இருந்தால் \"High Salary\" என்று Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use the > operator.",
+
+  hintTamil:
+    "> Operator பயன்படுத்துங்கள்.",
+
+  expectedOutput: `High Salary`,
+
+  expectedOutputTamil: `High Salary`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int salary = 60000;
+
+        if (salary > 50000) {
+
+            System.out.println("High Salary");
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
+  {
+  id: 9,
+  title: "Challenge Question 9",
+
+  questionEnglish:
+    "Write a Java program to check if a number is divisible by both 2 and 5. If it is, print \"Divisible by 2 and 5\".",
+
+  questionTamil:
+    "ஒரு எண் 2 மற்றும் 5 ஆகிய இரண்டாலும் வகுபட்டால் \"Divisible by 2 and 5\" என்று Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use % operator and && operator.",
+
+  hintTamil:
+    "% மற்றும் && Operators பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Divisible by 2 and 5`,
+
+  expectedOutputTamil: `Divisible by 2 and 5`,
+
+  solution: "NO SOLUTION!!!",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},    
+{
+  id: 10,
+  title: "Challenge Question 10",
+
+  questionEnglish:
+    "Write a Java program to check if a person is eligible for a driving license (age 18 or above) and print \"Eligible\".",
+
+  questionTamil:
+    "ஒருவரின் வயது 18 அல்லது அதற்கு மேல் இருந்தால் \"Eligible\" என்று Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use if statement and >= operator.",
+
+  hintTamil:
+    "if Statement மற்றும் >= Operator பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Eligible`,
+
+  expectedOutputTamil: `Eligible`,
+
+  solution: "NO SOLUTION!!!",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},    ],
   },
   {
     topicId: 7,
