@@ -1995,49 +1995,285 @@ Remainder = 0`,
     title: "If Statement",
 
     questions: [
+     {
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Write a Java program to check if a number is greater than 10. If it is, print \"Greater than 10\".",
+
+  questionTamil:
+    "ஒரு எண் 10-ஐ விட பெரியதாக இருந்தால் \"Greater than 10\" என்று Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use an if statement with > operator.",
+
+  hintTamil:
+    "> Operator உடன் if Statement பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Greater than 10`,
+
+  expectedOutputTamil: `Greater than 10`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int number = 15;
+
+        if (number > 10) {
+
+            System.out.println("Greater than 10");
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
-         id: 1,
-         title: "Question 1", 
-         locked: false, 
-         completed: false 
-        },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to check if a number is less than 100. If it is, print \"Less than 100\".",
+
+  questionTamil:
+    "ஒரு எண் 100-ஐ விட சிறியதாக இருந்தால் \"Less than 100\" என்று Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use the < operator.",
+
+  hintTamil:
+    "< Operator பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Less than 100`,
+
+  expectedOutputTamil: `Less than 100`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int number = 50;
+
+        if (number < 100) {
+
+            System.out.println("Less than 100");
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
-        id: 2,
-        title: "Question 2", 
-        locked: false, 
-        completed: false 
-        },
-      { 
-        id: 3, 
-        title: "Question 3", 
-        locked: false, 
-        completed: false 
-        },
-      { 
-        id: 4,
-        title: "Question 4",
-        locked: false, 
-        completed: false 
-        },
-      { 
-        id: 5, 
-        title: "Question 5", 
-        locked: false, 
-        completed: false 
-        },
-      { 
-        id: 6, 
-        title: "Question 6", 
-        locked: false, 
-        completed: false 
-        },
-      { 
-        id: 7,
-        title: "Question 7", 
-        locked: false, 
-        completed: false 
-        },
-      { 
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to check if a number is equal to 25. If it is, print \"Equal\".",
+
+  questionTamil:
+    "ஒரு எண் 25-க்கு சமமாக இருந்தால் \"Equal\" என்று Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use the == operator.",
+
+  hintTamil:
+    "== Operator பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Equal`,
+
+  expectedOutputTamil: `Equal`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int number = 25;
+
+        if (number == 25) {
+
+            System.out.println("Equal");
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
+  {
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to check whether a number is even. If it is, print \"Even Number\".",
+
+  questionTamil:
+    "ஒரு எண் Even ஆக இருந்தால் \"Even Number\" என்று Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use % operator with if.",
+
+  hintTamil:
+    "% Operator மற்றும் if Statement பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Even Number`,
+
+  expectedOutputTamil: `Even Number`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int number = 8;
+
+        if (number % 2 == 0) {
+
+            System.out.println("Even Number");
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
+      {
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to check whether a number is positive. If it is, print \"Positive Number\".",
+
+  questionTamil:
+    "ஒரு எண் Positive ஆக இருந்தால் \"Positive Number\" என்று Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Check if the number is greater than 0.",
+
+  hintTamil:
+    "எண் 0-ஐ விட பெரியதா என்று சரிபார்க்கவும்.",
+
+  expectedOutput: `Positive Number`,
+
+  expectedOutputTamil: `Positive Number`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int number = 20;
+
+        if (number > 0) {
+
+            System.out.println("Positive Number");
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},{
+  id: 6,
+  title: "Question 6",
+
+  questionEnglish:
+    "Write a Java program to check if a person's age is 18 or above. If it is, print \"Eligible to Vote\".",
+
+  questionTamil:
+    "ஒருவரின் வயது 18 அல்லது அதற்கு மேல் இருந்தால் \"Eligible to Vote\" என்று Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use >= operator.",
+
+  hintTamil:
+    ">= Operator பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Eligible to Vote`,
+
+  expectedOutputTamil: `Eligible to Vote`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int age = 20;
+
+        if (age >= 18) {
+
+            System.out.println("Eligible to Vote");
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},{
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Write a Java program to check if a student's mark is 35 or above. If it is, print \"Pass\".",
+
+  questionTamil:
+    "மாணவரின் மதிப்பெண் 35 அல்லது அதற்கு மேல் இருந்தால் \"Pass\" என்று Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use >= operator.",
+
+  hintTamil:
+    ">= Operator பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Pass`,
+
+  expectedOutputTamil: `Pass`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int mark = 75;
+
+        if (mark >= 35) {
+
+            System.out.println("Pass");
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
+    { 
         id: 8, 
         title: "Question 8", 
         locked: false, 
