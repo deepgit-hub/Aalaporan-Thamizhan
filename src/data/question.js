@@ -88,6 +88,12 @@ const questions = [
   hintTamil:
     "இரண்டு System.out.println() Statements-ஐ பயன்படுத்துங்கள்.",
 
+  expectedOutput: `Deepak
+Cyber Security`,
+
+  expectedOutputTamil: `Deepak
+Cyber Security`,
+
   solution: `public class Main {
 
     public static void main(String[] args) {
@@ -100,9 +106,7 @@ const questions = [
 }`,
 
   challenge: false,
-
   locked: false,
-
   completed: false,
 },
 {
