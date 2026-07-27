@@ -185,16 +185,26 @@ Java`,
   title: "Question 6",
 
   questionEnglish:
-    "Write a Java program to print the following output:\n\nWelcome\nTo\nJava\nProgramming",
+    "Write a Java program to print the following output.",
 
   questionTamil:
-    "கீழே கொடுக்கப்பட்டுள்ள Output-ஐ Print செய்யும் Java Program-ஐ எழுதுங்கள்:\n\nWelcome\nTo\nJava\nProgramming",
+    "கீழே கொடுக்கப்பட்டுள்ள Output-ஐ Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
 
   hintEnglish:
     "Use four System.out.println() statements.",
 
   hintTamil:
     "நான்கு System.out.println() Statements-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Welcome
+To
+Java
+Programming`,
+
+  expectedOutputTamil: `Welcome
+To
+Java
+Programming`,
 
   solution: `public class Main {
 
@@ -210,9 +220,7 @@ Java`,
 }`,
 
   challenge: false,
-
   locked: false,
-
   completed: false,
 },
 {
