@@ -1229,12 +1229,38 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { 
-        id: 3, 
-        title: "Question 3", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Read a decimal number from the user and print it.",
+
+  questionTamil:
+    "பயனரிடமிருந்து ஒரு Decimal எண்ணை பெற்று அதை Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use nextDouble().",
+
+  hintTamil:
+    "nextDouble() பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Enter price:
+99.99
+
+Price: 99.99`,
+
+  expectedOutputTamil: `Enter price:
+99.99
+
+Price: 99.99`,
+
+  solution: "",
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 4,
         title: "Question 4",
