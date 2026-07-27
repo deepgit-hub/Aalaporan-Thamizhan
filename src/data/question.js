@@ -308,10 +308,10 @@ Welcome to Java
   title: "Challenge Question 9",
 
   questionEnglish:
-    "Write a Java program to print the following pattern:\n\n*\n**\n***\n****\n*****",
+    "Write a Java program to print the following pattern.",
 
   questionTamil:
-    "கீழே கொடுக்கப்பட்டுள்ள Pattern-ஐ Print செய்யும் Java Program-ஐ எழுதுங்கள்:\n\n*\n**\n***\n****\n*****",
+    "கீழே கொடுக்கப்பட்டுள்ள Pattern-ஐ Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
 
   hintEnglish:
     "Use multiple System.out.println() statements.",
@@ -319,12 +319,22 @@ Welcome to Java
   hintTamil:
     "பல System.out.println() Statements-ஐ பயன்படுத்துங்கள்.",
 
+  expectedOutput: `*
+**
+***
+****
+*****`,
+
+  expectedOutputTamil: `*
+**
+***
+****
+*****`,
+
   solution: "",
 
   challenge: true,
-
   locked: true,
-
   completed: false,
 },
 {
