@@ -3572,7 +3572,7 @@ Program Continues.
 💡 Note 
 The finally block always executes after the try and catch blocks, whether an exception occurs or not. It is commonly used to perform cleanup operations such as closing files or releasing resources.
 
-💡 குறிப்பு (Tamil)
+💡 குறிப்பு 
 Exception ஏற்பட்டாலும், ஏற்படாவிட்டாலும் try மற்றும் catch Blocks-க்கு பிறகு finally Block எப்போதும் செயல்படும். Files-ஐ மூடுதல் அல்லது Resources-ஐ வெளியிடுதல் போன்ற Cleanup Operations-க்கு இது பொதுவாக பயன்படுத்தப்படுகிறது.`,
 
   locked: true,
