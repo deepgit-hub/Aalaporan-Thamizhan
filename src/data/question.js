@@ -1623,11 +1623,44 @@ true`,
 
     questions: [
       {
-         id: 1,
-         title: "Question 1", 
-         locked: false, 
-         completed: false 
-        },
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Write a Java program to add two numbers and print the result.",
+
+  questionTamil:
+    "இரண்டு எண்களை கூட்டி அதன் முடிவை Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use the + operator.",
+
+  hintTamil:
+    "+ Operator-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Sum = 30`,
+
+  expectedOutputTamil: `Sum = 30`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int a = 10;
+        int b = 20;
+
+        int sum = a + b;
+
+        System.out.println("Sum = " + sum);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2", 
