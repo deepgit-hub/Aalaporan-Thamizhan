@@ -413,12 +413,42 @@ Fun`,
   locked: false,
   completed: false,
 },
-      {
-        id: 2,
-        title: "Question 2", 
-        locked: false, 
-        completed: false 
-        },
+     {
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Declare a String variable named name with the value \"Deepak\" and print it.",
+
+  questionTamil:
+    "\"Deepak\" என்ற மதிப்புடன் name என்ற String Variable-ஐ உருவாக்கி Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use String name = \"Deepak\";",
+
+  hintTamil:
+    "String name = \"Deepak\"; பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Deepak`,
+
+  expectedOutputTamil: `Deepak`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        String name = "Deepak";
+
+        System.out.println(name);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 3, 
         title: "Question 3", 
