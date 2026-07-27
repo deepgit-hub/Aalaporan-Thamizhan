@@ -818,12 +818,42 @@ Java`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 3, 
-        title: "Question 3", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Declare a char variable named grade with the value 'A' and print it.",
+
+  questionTamil:
+    "'A' என்ற மதிப்புடன் grade என்ற char Variable-ஐ உருவாக்கி Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "A char stores only one character.",
+
+  hintTamil:
+    "char ஒரு எழுத்தை மட்டுமே சேமிக்கும்.",
+
+  expectedOutput: `A`,
+
+  expectedOutputTamil: `A`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        char grade = 'A';
+
+        System.out.println(grade);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 4,
         title: "Question 4",
