@@ -1006,12 +1006,58 @@ false`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 8, 
-        title: "Question 8", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Declare variables using all five data types (int, double, char, boolean, and String) and print each value on a separate line.",
+
+  questionTamil:
+    "int, double, char, boolean மற்றும் String ஆகிய ஐந்து Data Types-ஐ பயன்படுத்தி Variables உருவாக்கி ஒவ்வொன்றையும் தனித்தனி வரிகளில் Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use one variable for each data type.",
+
+  hintTamil:
+    "ஒவ்வொரு Data Type-க்கும் ஒரு Variable உருவாக்குங்கள்.",
+
+  expectedOutput: `10
+99.5
+A
+true
+Java`,
+
+  expectedOutputTamil: `10
+99.5
+A
+true
+Java`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int number = 10;
+        double value = 99.5;
+        char grade = 'A';
+        boolean status = true;
+        String language = "Java";
+
+        System.out.println(number);
+        System.out.println(value);
+        System.out.println(grade);
+        System.out.println(status);
+        System.out.println(language);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { id: 9,
         title: "Challenge Question 9", 
         locked: true,
