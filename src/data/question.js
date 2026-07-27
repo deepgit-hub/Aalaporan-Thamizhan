@@ -1465,7 +1465,29 @@ Enter second number:
 10
 20`,
 
-  solution: "",
+ solution: `import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter first number:");
+
+        int first = input.nextInt();
+
+        System.out.println("Enter second number:");
+
+        int second = input.nextInt();
+
+        System.out.println(first);
+
+        System.out.println(second);
+
+    }
+
+}`,
 
   challenge: false,
   locked: false,
@@ -1495,7 +1517,35 @@ Enter second number:
 20
 92.5`,
 
-  solution: "",
+  solution: `import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter your name:");
+
+        String name = input.nextLine();
+
+        System.out.println("Enter your age:");
+
+        int age = input.nextInt();
+
+        System.out.println("Enter your percentage:");
+
+        double percentage = input.nextDouble();
+
+        System.out.println(name);
+
+        System.out.println(age);
+
+        System.out.println(percentage);
+
+    }
+
+}`,
 
   challenge: false,
   locked: false,
