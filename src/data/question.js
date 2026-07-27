@@ -1784,8 +1784,8 @@ const questions = [
     ],
   },
   {
-    topicId: 12,
-    title: "Do While Loop",
+     topicId: 28,
+  title: "Single Inheritance",
 
     questions: [
       {
