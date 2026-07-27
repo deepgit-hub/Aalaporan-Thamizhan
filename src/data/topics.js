@@ -3569,7 +3569,7 @@ finally{
 Finally Block Executed.
 Program Continues.
 
-💡 Note (English)
+💡 Note 
 The finally block always executes after the try and catch blocks, whether an exception occurs or not. It is commonly used to perform cleanup operations such as closing files or releasing resources.
 
 💡 குறிப்பு (Tamil)
