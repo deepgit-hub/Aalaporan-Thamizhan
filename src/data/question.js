@@ -1778,12 +1778,42 @@ true`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 5, 
-        title: "Question 5", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to find the remainder when 17 is divided by 5.",
+
+  questionTamil:
+    "17-ஐ 5-ஆல் வகுக்கும் போது கிடைக்கும் மீதியை Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use the % operator.",
+
+  hintTamil:
+    "% Operator-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Remainder = 2`,
+
+  expectedOutputTamil: `Remainder = 2`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int remainder = 17 % 5;
+
+        System.out.println("Remainder = " + remainder);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 6, 
         title: "Question 6", 
