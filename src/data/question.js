@@ -966,12 +966,46 @@ Rahul`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 7,
-        title: "Question 7", 
-        locked: false, 
-        completed: false 
-        },
+   {
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Declare a double variable temperature = 36.5 and a boolean variable isRaining = false. Print both values.",
+
+  questionTamil:
+    "temperature = 36.5 என்ற double Variable மற்றும் isRaining = false என்ற boolean Variable-ஐ உருவாக்கி Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use double and boolean.",
+
+  hintTamil:
+    "double மற்றும் boolean பயன்படுத்துங்கள்.",
+
+  expectedOutput: `36.5
+false`,
+
+  expectedOutputTamil: `36.5
+false`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        double temperature = 36.5;
+        boolean isRaining = false;
+
+        System.out.println(temperature);
+        System.out.println(isRaining);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 8, 
         title: "Question 8", 
