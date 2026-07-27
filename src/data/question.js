@@ -2459,18 +2459,94 @@ Remainder = 0`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 3, 
-        title: "Question 3", 
-        locked: false, 
-        completed: false 
-        },
-      { 
-        id: 4,
-        title: "Question 4",
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to check whether a student has passed or failed. Pass mark is 35.",
+
+  questionTamil:
+    "மாணவர் Pass அல்லது Fail என்பதை if-else பயன்படுத்தி கண்டறியும் Java Program-ஐ எழுதுங்கள். Pass Mark 35.",
+
+  hintEnglish:
+    "Use >= 35.",
+
+  hintTamil:
+    ">= 35 பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Pass`,
+
+  expectedOutputTamil: `Pass`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int mark = 60;
+
+        if (mark >= 35) {
+
+            System.out.println("Pass");
+
+        } else {
+
+            System.out.println("Fail");
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
+      {
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to check whether a person is eligible to vote.",
+
+  questionTamil:
+    "ஒருவர் வாக்களிக்க தகுதியானவரா என்பதை if-else பயன்படுத்தி கண்டறியும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use >= 18.",
+
+  hintTamil:
+    ">= 18 பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Eligible to Vote`,
+
+  expectedOutputTamil: `Eligible to Vote`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int age = 20;
+
+        if (age >= 18) {
+
+            System.out.println("Eligible to Vote");
+
+        } else {
+
+            System.out.println("Not Eligible");
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 5, 
         title: "Question 5", 
