@@ -705,12 +705,40 @@ Computer Science and Engineering`,
   locked: true,
   completed: false,
 },
-      { 
-        id: 10, 
-        title: "Challenge Question 10", 
-        locked: true, 
-        completed: false 
-        },
+     {
+  id: 10,
+  title: "Challenge Question 10",
+
+  questionEnglish:
+    "Declare variables of type int, double, char, boolean, and String. Print all the values on separate lines.",
+
+  questionTamil:
+    "int, double, char, boolean மற்றும் String வகைகளில் Variables உருவாக்கி அனைத்தையும் தனித்தனி வரிகளில் Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use one variable for each data type.",
+
+  hintTamil:
+    "ஒவ்வொரு Data Type-க்கும் ஒரு Variable பயன்படுத்துங்கள்.",
+
+  expectedOutput: `10
+99.5
+A
+true
+Java`,
+
+  expectedOutputTamil: `10
+99.5
+A
+true
+Java`,
+
+  solution: "",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
     ],
   },
   {
