@@ -1662,11 +1662,44 @@ true`,
   completed: false,
 },
       {
-        id: 2,
-        title: "Question 2", 
-        locked: false, 
-        completed: false 
-        },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to subtract two numbers and print the result.",
+
+  questionTamil:
+    "இரண்டு எண்களை கழித்து அதன் முடிவை Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use the - operator.",
+
+  hintTamil:
+    "- Operator-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Difference = 10`,
+
+  expectedOutputTamil: `Difference = 10`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int a = 30;
+        int b = 20;
+
+        int difference = a - b;
+
+        System.out.println("Difference = " + difference);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 3, 
         title: "Question 3", 
