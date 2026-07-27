@@ -1962,12 +1962,32 @@ Remainder = 0`,
   locked: true,
   completed: false,
 },
-      { 
-        id: 10, 
-        title: "Challenge Question 10", 
-        locked: true, 
-        completed: false 
-        },
+      {
+  id: 10,
+  title: "Challenge Question 10",
+
+  questionEnglish:
+    "Create a variable with the value 20. Apply +=, -=, ++, and -- operators one after another and print the final value.",
+
+  questionTamil:
+    "20 என்ற மதிப்புடன் ஒரு Variable உருவாக்குங்கள். அதில் +=, -=, ++ மற்றும் -- Operators-ஐ ஒன்றன் பின் ஒன்றாக பயன்படுத்தி இறுதி மதிப்பை Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Apply each operator in sequence.",
+
+  hintTamil:
+    "ஒவ்வொரு Operator-ஐ வரிசையாக பயன்படுத்துங்கள்.",
+
+  expectedOutput: `22`,
+
+  expectedOutputTamil: `22`,
+
+  solution: "",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
     ],
   },
   {
