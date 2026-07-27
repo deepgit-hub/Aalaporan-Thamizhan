@@ -2114,8 +2114,8 @@ const questions = [
     ],
   },
   {
-    topicId: 12,
-    title: "Do While Loop",
+    topicId: 33,
+  title: "Exception Handling",
 
     questions: [
       {
@@ -2180,8 +2180,8 @@ const questions = [
     ],
   },
   {
-    topicId: 12,
-    title: "Do While Loop",
+    topicId: 34,
+  title: "Try Catch",
 
     questions: [
       {
