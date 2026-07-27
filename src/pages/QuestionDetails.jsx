@@ -63,7 +63,16 @@ function QuestionDetails() {
 
       <hr />
 
-      <button>💻 Run Code</button>
+      <button
+  onClick={() =>
+    window.open(
+      "https://onecompiler.com/java#draft-fvge",
+      "_blank"
+    )
+  }
+>
+  💻 Run Code
+</button>
 
       {!question.challenge && (
         <button
