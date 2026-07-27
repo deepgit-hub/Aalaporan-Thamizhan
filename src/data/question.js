@@ -2048,8 +2048,8 @@ const questions = [
     ],
   },
   {
-    topicId: 12,
-    title: "Do While Loop",
+    topicId: 32,
+  title: "Hybrid Inheritance",
 
     questions: [
       {
