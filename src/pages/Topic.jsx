@@ -94,6 +94,11 @@ function Topic() {
       <pre>
         <code>{topic.output}</code>
       </pre>
+      <hr />
+
+<button onClick={() => navigate(`/question/${topic.id}`)}>
+  Start Code
+</button>
     </>
   );
 }
