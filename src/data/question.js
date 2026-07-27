@@ -557,12 +557,46 @@ Fun`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 6, 
-        title: "Question 6", 
-        locked: false, 
-        completed: false 
-        },
+     {
+  id: 6,
+  title: "Question 6",
+
+  questionEnglish:
+    "Declare two integer variables num1 = 10 and num2 = 20. Print both values on separate lines.",
+
+  questionTamil:
+    "num1 = 10 மற்றும் num2 = 20 என்ற இரண்டு Integer Variables-ஐ உருவாக்கி தனித்தனி வரிகளில் Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Declare two variables and use two println statements.",
+
+  hintTamil:
+    "இரண்டு Variables மற்றும் இரண்டு println Statements பயன்படுத்துங்கள்.",
+
+  expectedOutput: `10
+20`,
+
+  expectedOutputTamil: `10
+20`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int num1 = 10;
+        int num2 = 20;
+
+        System.out.println(num1);
+        System.out.println(num2);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 7,
         title: "Question 7", 
