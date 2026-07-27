@@ -54,6 +54,10 @@ const questions = [
   hintTamil:
     "System.out.println() Statement-ஐ பயன்படுத்துங்கள்.",
 
+  expectedOutput: `Deepak`,
+
+  expectedOutputTamil: `Deepak`,
+
   solution: `public class Main {
 
     public static void main(String[] args) {
@@ -65,9 +69,7 @@ const questions = [
 }`,
 
   challenge: false,
-
   locked: false,
-
   completed: false,
 },
 {
