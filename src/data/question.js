@@ -378,11 +378,41 @@ Fun`,
 
     questions: [
       {
-         id: 1,
-         title: "Question 1", 
-         locked: false, 
-         completed: false 
-        },
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Declare an integer variable named age with the value 20 and print it.",
+
+  questionTamil:
+    "age என்ற Integer Variable-ஐ 20 என்ற மதிப்புடன் உருவாக்கி அதை Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use int age = 20; and System.out.println().",
+
+  hintTamil:
+    "int age = 20; மற்றும் System.out.println() பயன்படுத்துங்கள்.",
+
+  expectedOutput: `20`,
+
+  expectedOutputTamil: `20`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int age = 20;
+
+        System.out.println(age);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2", 
