@@ -521,12 +521,42 @@ Fun`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 5, 
-        title: "Question 5", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Declare a boolean variable named isPassed with the value true and print it.",
+
+  questionTamil:
+    "isPassed என்ற boolean Variable-ஐ true என்ற மதிப்புடன் உருவாக்கி Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use boolean isPassed = true;",
+
+  hintTamil:
+    "boolean isPassed = true; பயன்படுத்துங்கள்.",
+
+  expectedOutput: `true`,
+
+  expectedOutputTamil: `true`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        boolean isPassed = true;
+
+        System.out.println(isPassed);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 6, 
         title: "Question 6", 
