@@ -27,9 +27,13 @@ function Question() {
 
       {topic.questions.map((question) => (
         <div key={question.id} style={{ marginBottom: "15px" }}>
-          <button>
-            {question.title}
-          </button>
+          <button
+  onClick={() =>
+    navigate(`/question/${id}/${question.id}`)
+  }
+>
+  {question.title}
+</button>
         </div>
       ))}
     </>
