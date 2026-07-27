@@ -449,12 +449,42 @@ Fun`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 3, 
-        title: "Question 3", 
-        locked: false, 
-        completed: false 
-        },
+     {
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Declare a double variable named salary with the value 25000.50 and print it.",
+
+  questionTamil:
+    "salary என்ற Double Variable-ஐ 25000.50 என்ற மதிப்புடன் உருவாக்கி Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use the double data type.",
+
+  hintTamil:
+    "double Data Type-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `25000.5`,
+
+  expectedOutputTamil: `25000.5`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        double salary = 25000.50;
+
+        System.out.println(salary);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 4,
         title: "Question 4",
