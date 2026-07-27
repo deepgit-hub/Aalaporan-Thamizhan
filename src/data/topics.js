@@ -3472,15 +3472,7 @@ try Block-ல் Exception ஏற்படக்கூடிய Code இரு�
 
   completed: false
 },
-  {
-    id: 35,
-    title: "Finally",
-    englishDefinition: "",
-    tamilDefinition: "",
-    realWorldUsage: "",
-    locked: true,
-    completed: false,
-  },
+  
   {
     id: 36,
     title: "Throw",
