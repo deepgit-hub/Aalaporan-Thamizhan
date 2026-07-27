@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import questions from "../data/questions";
+import questions from "../data/question";
 
 function Question() {
   const navigate = useNavigate();
