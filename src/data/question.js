@@ -2636,23 +2636,121 @@ Remainder = 0`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 7,
-        title: "Question 7", 
-        locked: false, 
-        completed: false 
-        },
-      { 
-        id: 8, 
-        title: "Question 8", 
-        locked: false, 
-        completed: false 
-        },
-      { id: 9,
-        title: "Challenge Question 9", 
-        locked: true,
-        completed: false 
-        },
+      {
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Write a Java program to check whether a business made a Profit or Loss.",
+
+  questionTamil:
+    "ஒரு வணிகத்தில் Profit அல்லது Loss என்பதை if-else பயன்படுத்தி கண்டறியும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "If selling price is greater than cost price, it is Profit.",
+
+  hintTamil:
+    "Selling Price > Cost Price என்றால் Profit.",
+
+  expectedOutput: `Profit`,
+
+  expectedOutputTamil: `Profit`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int costPrice = 500;
+        int sellingPrice = 700;
+
+        if (sellingPrice > costPrice) {
+
+            System.out.println("Profit");
+
+        } else {
+
+            System.out.println("Loss");
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
+      {
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to check whether a number is divisible by 5.",
+
+  questionTamil:
+    "ஒரு எண் 5-ஆல் வகுபடுகிறதா என்பதை if-else பயன்படுத்தி கண்டறியும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use % operator.",
+
+  hintTamil:
+    "% Operator பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Divisible by 5`,
+
+  expectedOutputTamil: `Divisible by 5`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int number = 20;
+
+        if (number % 5 == 0) {
+
+            System.out.println("Divisible by 5");
+
+        } else {
+
+            System.out.println("Not Divisible by 5");
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
+     {
+  id: 9,
+  title: "Challenge Question 9",
+
+  questionEnglish:
+    "Write a Java program to check whether a year is a leap year or not.",
+
+  questionTamil:
+    "ஒரு ஆண்டு Leap Year ஆக உள்ளதா இல்லையா என்பதை if-else பயன்படுத்தி கண்டறியும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use the % operator.",
+
+  hintTamil:
+    "% Operator பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Leap Year`,
+
+  expectedOutputTamil: `Leap Year`,
+
+  solution: "NO SOLUTION!!!",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
       { 
         id: 10, 
         title: "Challenge Question 10", 
