@@ -1461,12 +1461,40 @@ Enter second number:
   locked: true,
  completed: false,
 },
-      { 
-        id: 10, 
-        title: "Challenge Question 10", 
-        locked: true, 
-        completed: false 
-        },
+      {
+  id: 10,
+  title: "Challenge Question 10",
+
+  questionEnglish:
+    "Read a student's name, age, percentage, grade, and pass status from the user and print all the values.",
+
+  questionTamil:
+    "மாணவரின் பெயர், வயது, சதவீதம், Grade மற்றும் Pass Status ஆகியவற்றை Input ஆக பெற்று அனைத்தையும் Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use nextLine(), nextInt(), nextDouble(), next().charAt(0), and nextBoolean().",
+
+  hintTamil:
+    "nextLine(), nextInt(), nextDouble(), next().charAt(0), மற்றும் nextBoolean() பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Rahul
+18
+92.5
+A
+true`,
+
+  expectedOutputTamil: `Rahul
+18
+92.5
+A
+true`,
+
+  solution: "",
+
+  challenge: true,
+  locked: true,
+ completed: false,
+},
     ],
   },
   {
