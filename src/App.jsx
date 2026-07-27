@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Topic from "./pages/Topic";
-
+import Question from "./pages/Question";
 function App() {
   return (
     <Routes>
