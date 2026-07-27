@@ -68,7 +68,7 @@ const questions = [
 
   {
     topicId: 2,
-    title: "Introduction to Programming",
+    title: "",
 
     questions: [
       {
