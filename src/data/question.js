@@ -398,7 +398,7 @@ const questions = [
   },
   {
     topicId: 7,
-    title: "If Statement",
+    title: "If Else Statement",
 
     questions: [
       {
