@@ -1700,12 +1700,45 @@ true`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 3, 
-        title: "Question 3", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to multiply two numbers and print the result.",
+
+  questionTamil:
+    "இரண்டு எண்களை பெருக்கி அதன் முடிவை Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use the * operator.",
+
+  hintTamil:
+    "* Operator-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Product = 50`,
+
+  expectedOutputTamil: `Product = 50`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int a = 10;
+        int b = 5;
+
+        int product = a * b;
+
+        System.out.println("Product = " + product);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 4,
         title: "Question 4",
