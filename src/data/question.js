@@ -2592,12 +2592,50 @@ Remainder = 0`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 6, 
-        title: "Question 6", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 6,
+  title: "Question 6",
+
+  questionEnglish:
+    "Write a Java program to check whether a person is an Adult or Minor.",
+
+  questionTamil:
+    "ஒருவர் Adult அல்லது Minor என்பதை if-else பயன்படுத்தி கண்டறியும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Adult age is 18 or above.",
+
+  hintTamil:
+    "18 அல்லது அதற்கு மேல் Adult.",
+
+  expectedOutput: `Adult`,
+
+  expectedOutputTamil: `Adult`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int age = 22;
+
+        if (age >= 18) {
+
+            System.out.println("Adult");
+
+        } else {
+
+            System.out.println("Minor");
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 7,
         title: "Question 7", 
