@@ -348,19 +348,28 @@ Welcome to Java
     '"Java Programming is Fun" என்பதை ஒரு System.out.println() Statement மட்டும் பயன்படுத்தி Print செய்யும் Java Program-ஐ எழுதுங்கள்.',
 
   hintEnglish:
-    "Use newline characters (\\n).",
+    "Use newline characters (\\n) inside one System.out.println() statement.",
 
   hintTamil:
-    "புதிய வரிக்கு (\\n) பயன்படுத்துங்கள்.",
+    "ஒரே System.out.println() Statement-ல் (\\n)-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Java
+Programming
+is
+Fun`,
+
+  expectedOutputTamil: `Java
+Programming
+is
+Fun`,
 
   solution: "",
 
   challenge: true,
-
   locked: true,
-
   completed: false,
-},  ],
+},
+  ],
   },
 
   {
