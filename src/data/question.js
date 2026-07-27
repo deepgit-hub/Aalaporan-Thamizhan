@@ -1189,8 +1189,8 @@ const questions = [
     ],
   },
   {
-    topicId: 12,
-    title: "Do While Loop",
+    topicId: 19,
+  title: "Array Operations",
 
     questions: [
       {
