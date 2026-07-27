@@ -1956,7 +1956,7 @@ Product = 200
 Quotient = 2
 Remainder = 0`,
 
-  solution: "",
+  solution: "NO SOLUTION!!!",
 
   challenge: true,
   locked: true,
@@ -1982,7 +1982,7 @@ Remainder = 0`,
 
   expectedOutputTamil: `22`,
 
-  solution: "",
+  solution: "NO SOLUTION!!!",
 
   challenge: true,
   locked: true,
