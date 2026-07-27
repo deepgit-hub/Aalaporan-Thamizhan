@@ -3664,7 +3664,7 @@ Exception ஏற்பட்டாலும், ஏற்படாவிட்�
 💡 Note 
 The throw keyword is used to manually create and throw an exception. It is commonly used to validate conditions and stop the normal execution of a program when invalid data is found.
 
-💡 குறிப்பு (Tamil)
+💡 குறிப்பு 
 throw Keyword மூலம் Exception-ஐ நாமே உருவாக்கி Throw செய்யலாம். தவறான தகவல்கள் (Invalid Data) அல்லது தவறான சூழ்நிலைகள் ஏற்பட்டால் Program-ஐ கட்டுப்படுத்த இது பயன்படுகிறது.`,
 
   locked: true,
