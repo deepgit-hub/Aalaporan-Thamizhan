@@ -1134,11 +1134,53 @@ E`,
 
     questions: [
       {
-         id: 1,
-         title: "Question 1", 
-         locked: false, 
-         completed: false 
-        },
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Write a Java program to read an integer from the user and print it.",
+
+  questionTamil:
+    "பயனரிடமிருந்து ஒரு Integer மதிப்பை பெற்று அதை Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use Scanner and nextInt().",
+
+  hintTamil:
+    "Scanner மற்றும் nextInt() பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Enter a number:
+25
+
+You entered: 25`,
+
+  expectedOutputTamil: `Enter a number:
+25
+
+You entered: 25`,
+
+  solution: `import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter a number:");
+
+        int number = input.nextInt();
+
+        System.out.println("You entered: " + number);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2", 
