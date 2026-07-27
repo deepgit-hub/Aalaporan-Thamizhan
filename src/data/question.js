@@ -1303,7 +1303,23 @@ A
 
 Grade: A`,
 
-  solution: "",
+  solution: `import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter grade:");
+
+        char grade = input.next().charAt(0);
+
+        System.out.println("Grade: " + grade);
+
+    }
+
+}`,
 
   challenge: false,
   locked: false,
