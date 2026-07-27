@@ -854,12 +854,42 @@ Java`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 4,
-        title: "Question 4",
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Declare a boolean variable named isStudent with the value true and print it.",
+
+  questionTamil:
+    "true என்ற மதிப்புடன் isStudent என்ற boolean Variable-ஐ உருவாக்கி Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use the boolean data type.",
+
+  hintTamil:
+    "boolean Data Type-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `true`,
+
+  expectedOutputTamil: `true`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        boolean isStudent = true;
+
+        System.out.println(isStudent);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 5, 
         title: "Question 5", 
