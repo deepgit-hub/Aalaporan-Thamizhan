@@ -1928,11 +1928,40 @@ true`,
   locked: false,
   completed: false,
 },
-      { id: 9,
-        title: "Challenge Question 9", 
-        locked: true,
-        completed: false 
-        },
+ {
+  id: 9,
+  title: "Challenge Question 9",
+
+  questionEnglish:
+    "Write a Java program to calculate the sum, difference, product, quotient, and remainder of two numbers and print all the results.",
+
+  questionTamil:
+    "இரண்டு எண்களின் கூட்டல், கழித்தல், பெருக்கல், வகுத்தல் மற்றும் மீதியை கணக்கிட்டு அனைத்தையும் Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use +, -, *, /, and % operators.",
+
+  hintTamil:
+    "+, -, *, / மற்றும் % Operators-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Sum = 30
+Difference = 10
+Product = 200
+Quotient = 2
+Remainder = 0`,
+
+  expectedOutputTamil: `Sum = 30
+Difference = 10
+Product = 200
+Quotient = 2
+Remainder = 0`,
+
+  solution: "",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
       { 
         id: 10, 
         title: "Challenge Question 10", 
