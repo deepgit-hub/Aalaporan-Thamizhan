@@ -9,23 +9,21 @@ function Question() {
   );
 
   if (!topic) {
-    return <h2>Topic not found</h2>;
+    return <h2>Topic Not Found</h2>;
   }
 
   return (
-    <div className="question-page">
+    <>
       <h1>Question on "{topic.title}"</h1>
 
       <h2>All the best</h2>
 
-      <div className="question-list">
-        {topic.questions.map((question) => (
-          <button key={question.id}>
-            {question.title}
-          </button>
-        ))}
-      </div>
-    </div>
+      {topic.questions.map((question) => (
+        <div key={question.id}>
+          <button>{question.title}</button>
+        </div>
+      ))}
+    </>
   );
 }
 
