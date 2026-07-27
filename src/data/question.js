@@ -1852,12 +1852,44 @@ true`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 7,
-        title: "Question 7", 
-        locked: false, 
-        completed: false 
-        },
+     {
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Write a Java program to decrease a variable by 1 using the -- operator and print it.",
+
+  questionTamil:
+    "-- Operator-ஐ பயன்படுத்தி ஒரு Variable-ன் மதிப்பை 1 குறைத்து Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use the -- operator.",
+
+  hintTamil:
+    "-- Operator-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `9`,
+
+  expectedOutputTamil: `9`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int number = 10;
+
+        number--;
+
+        System.out.println(number);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 8, 
         title: "Question 8", 
