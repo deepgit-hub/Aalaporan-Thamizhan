@@ -2416,11 +2416,49 @@ Remainder = 0`,
   completed: false,
 },
       {
-        id: 2,
-        title: "Question 2", 
-        locked: false, 
-        completed: false 
-        },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to check whether a number is even or odd.",
+
+  questionTamil:
+    "ஒரு எண் Even அல்லது Odd என்பதை if-else பயன்படுத்தி கண்டறியும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use % 2 == 0.",
+
+  hintTamil:
+    "% 2 == 0 பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Even Number`,
+
+  expectedOutputTamil: `Even Number`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int number = 8;
+
+        if (number % 2 == 0) {
+
+            System.out.println("Even Number");
+
+        } else {
+
+            System.out.println("Odd Number");
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 3, 
         title: "Question 3", 
