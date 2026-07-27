@@ -1,11 +1,28 @@
 import { useNavigate, useParams } from "react-router-dom";
 import topics from "../data/topics";
 import { useState } from "react";
+
 function Topic() {
   const navigate = useNavigate();
   const { id } = useParams();
 
-  const topic = topics.find((topic) => topic.id === Number(id));
+  const [allTopics, setAllTopics] = useState(topics);
+
+  const topic = allTopics.find((topic) => topic.id === Number(id));
+
+  const handleMarkAsLearned = () => {
+    const updatedTopics = [...allTopics];
+
+    updatedTopics[topic.id - 1].completed = true;
+
+    if (updatedTopics[topic.id]) {
+      updatedTopics[topic.id].locked = false;
+    }
+
+    setAllTopics(updatedTopics);
+
+    alert("🎉 Topic Completed! Next Topic Unlocked.");
+  };
 
   return (
     <>
@@ -29,8 +46,10 @@ function Topic() {
       <p>{topic.realWorldUsage}</p>
 
       <hr />
+
       <h2>🌍 நிஜ வாழ்க்கையில் பயன்பாடு</h2>
       <p>{topic.realWorldUsageTamil}</p>
+
       <hr />
 
       <h2>💻 Syntax</h2>
@@ -94,14 +113,16 @@ function Topic() {
       <pre>
         <code>{topic.output}</code>
       </pre>
+
       <hr />
 
-<button onClick={() => navigate(`/question/${topic.id}`)}>
-  Start Code
-</button>
-<button onClick={handleMarkAsLearned}>
-    ✅ Mark as Learned
-</button>
+      <button onClick={() => navigate(`/question/${topic.id}`)}>
+        Start Code
+      </button>
+
+      <button onClick={handleMarkAsLearned}>
+        ✅ Mark as Learned
+      </button>
     </>
   );
 }
