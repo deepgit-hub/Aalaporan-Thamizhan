@@ -1325,12 +1325,44 @@ Status: true`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 6, 
-        title: "Question 6", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 6,
+  title: "Question 6",
+
+  questionEnglish:
+    "Read a student's name and age from the user and print both.",
+
+  questionTamil:
+    "பயனரிடமிருந்து மாணவரின் பெயர் மற்றும் வயதை பெற்று இரண்டையும் Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use nextLine() and nextInt().",
+
+  hintTamil:
+    "nextLine() மற்றும் nextInt() பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Enter name:
+Rahul
+Enter age:
+18
+
+Rahul
+18`,
+
+  expectedOutputTamil: `Enter name:
+Rahul
+Enter age:
+18
+
+Rahul
+18`,
+
+  solution: "",
+
+  challenge: false,
+  locked: false,
+ completed: false,
+},
       { 
         id: 7,
         title: "Question 7", 
