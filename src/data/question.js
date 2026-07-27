@@ -2371,12 +2371,50 @@ Remainder = 0`,
     title: "If Else Statement",
 
     questions: [
-      {
-         id: 1,
-         title: "Question 1", 
-         locked: false, 
-         completed: false 
-        },
+    {
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Write a Java program to check whether a number is positive or negative.",
+
+  questionTamil:
+    "ஒரு எண் Positive அல்லது Negative என்பதை if-else பயன்படுத்தி கண்டறியும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use if-else with > 0.",
+
+  hintTamil:
+    "> 0 உடன் if-else பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Positive Number`,
+
+  expectedOutputTamil: `Positive Number`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int number = 10;
+
+        if (number > 0) {
+
+            System.out.println("Positive Number");
+
+        } else {
+
+            System.out.println("Negative Number");
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2", 
