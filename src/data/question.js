@@ -485,12 +485,42 @@ Fun`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 4,
-        title: "Question 4",
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Declare a char variable named grade with the value 'A' and print it.",
+
+  questionTamil:
+    "grade என்ற char Variable-ஐ 'A' என்ற மதிப்புடன் உருவாக்கி Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use single quotes for char values.",
+
+  hintTamil:
+    "char மதிப்பிற்கு Single Quotes பயன்படுத்துங்கள்.",
+
+  expectedOutput: `A`,
+
+  expectedOutputTamil: `A`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        char grade = 'A';
+
+        System.out.println(grade);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 5, 
         title: "Question 5", 
