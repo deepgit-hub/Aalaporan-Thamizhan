@@ -134,7 +134,7 @@ const questions = [
   },
   {
     topicId: 3,
-    title: "Introduction to Programming",
+    title: "Data Types",
 
     questions: [
       {
