@@ -82,7 +82,7 @@ function QuestionDetails() {
         </button>
       )}
 
-      <button>✅ Done</button>
+      
 
       {showSolution && (
         <>
