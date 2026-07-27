@@ -1363,12 +1363,44 @@ Rahul
   locked: false,
  completed: false,
 },
-      { 
-        id: 7,
-        title: "Question 7", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Read two integers from the user and print them on separate lines.",
+
+  questionTamil:
+    "பயனரிடமிருந்து இரண்டு Integer எண்களை பெற்று தனித்தனி வரிகளில் Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use nextInt() twice.",
+
+  hintTamil:
+    "nextInt() இரண்டு முறை பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Enter first number:
+10
+Enter second number:
+20
+
+10
+20`,
+
+  expectedOutputTamil: `Enter first number:
+10
+Enter second number:
+20
+
+10
+20`,
+
+  solution: "",
+
+  challenge: false,
+  locked: false,
+ completed: false,
+},
       { 
         id: 8, 
         title: "Question 8", 
