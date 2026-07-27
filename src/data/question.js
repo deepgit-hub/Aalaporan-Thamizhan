@@ -746,12 +746,42 @@ Java`,
     title: "Data Types",
 
     questions: [
-      {
-         id: 1,
-         title: "Question 1", 
-         locked: false, 
-         completed: false 
-        },
+     {
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Declare an int variable named age with the value 20 and print it.",
+
+  questionTamil:
+    "20 என்ற மதிப்புடன் age என்ற int Variable-ஐ உருவாக்கி அதை Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use the int data type.",
+
+  hintTamil:
+    "int Data Type-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `20`,
+
+  expectedOutputTamil: `20`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int age = 20;
+
+        System.out.println(age);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2", 
