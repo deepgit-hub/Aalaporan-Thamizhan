@@ -1,0 +1,40 @@
+.question-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.question-page h1 {
+  font-size: 48px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.question-page h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.question-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.question-list button {
+  width: 110px;
+  padding: 10px;
+  border: 2px solid royalblue;
+  border-radius: 30px;
+  background: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.question-list button:hover {
+  background: royalblue;
+  color: white;
+}
