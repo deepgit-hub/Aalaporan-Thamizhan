@@ -728,7 +728,7 @@ const questions = [
   },
   {
     topicId: 12,
-    title: "While Loop",
+    title: "Do While Loop",
 
     questions: [
       {
