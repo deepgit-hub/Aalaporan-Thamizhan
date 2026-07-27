@@ -5,11 +5,37 @@ const questions = [
 
     questions: [
       {
-         id: 1,
-         title: "Question 1", 
-         locked: false, 
-         completed: false 
-        },
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    'Write a Java program to print "Hello World" on the console.',
+
+  questionTamil:
+    '"Hello World" என்பதை Console-ல் Print செய்யும் Java Program-ஐ எழுதுங்கள்.',
+
+  hintEnglish:
+    "Use the System.out.println() statement.",
+
+  hintTamil:
+    "System.out.println() Statement-ஐ பயன்படுத்துங்கள்.",
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.println("Hello World");
+
+    }
+
+}`,
+
+  challenge: false,
+
+  locked: false,
+
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2", 
