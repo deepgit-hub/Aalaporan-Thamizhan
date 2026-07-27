@@ -596,7 +596,7 @@ const questions = [
   },
   {
     topicId: 10,
-    title: "",
+    title: "Ternary Operator",
 
     questions: [
       {
