@@ -1058,11 +1058,40 @@ Java`,
   locked: false,
   completed: false,
 },
-      { id: 9,
-        title: "Challenge Question 9", 
-        locked: true,
-        completed: false 
-        },
+      {
+  id: 9,
+  title: "Challenge Question 9",
+
+  questionEnglish:
+    "Declare variables to store a student's name, age, percentage, grade, and pass status. Print all the values.",
+
+  questionTamil:
+    "ஒரு மாணவரின் பெயர், வயது, சதவீதம், Grade மற்றும் Pass Status ஆகியவற்றை சேமிக்க Variables உருவாக்கி அனைத்தையும் Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Choose the correct data type for each value.",
+
+  hintTamil:
+    "ஒவ்வொரு மதிப்பிற்கும் சரியான Data Type-ஐ தேர்வு செய்யுங்கள்.",
+
+  expectedOutput: `Rahul
+18
+92.5
+A
+true`,
+
+  expectedOutputTamil: `Rahul
+18
+92.5
+A
+true`,
+
+  solution: "",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
       { 
         id: 10, 
         title: "Challenge Question 10", 
