@@ -1351,7 +1351,23 @@ true
 
 Status: true`,
 
-  solution: "",
+  solution: `import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter status:");
+
+        boolean status = input.nextBoolean();
+
+        System.out.println("Status: " + status);
+
+    }
+
+}`,
 
   challenge: false,
   locked: false,
