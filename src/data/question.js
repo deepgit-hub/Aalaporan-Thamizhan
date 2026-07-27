@@ -635,12 +635,46 @@ Fun`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 8, 
-        title: "Question 8", 
-        locked: false, 
-        completed: false 
-        },
+     {
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Declare variables for your name and age, then print them on separate lines.",
+
+  questionTamil:
+    "உங்கள் பெயர் மற்றும் வயதிற்கான Variables-ஐ உருவாக்கி தனித்தனி வரிகளில் Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use String and int variables.",
+
+  hintTamil:
+    "String மற்றும் int Variables பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Deepak
+20`,
+
+  expectedOutputTamil: `Deepak
+20`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        String name = "Deepak";
+        int age = 20;
+
+        System.out.println(name);
+        System.out.println(age);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { id: 9,
         title: "Challenge Question 9", 
         locked: true,
