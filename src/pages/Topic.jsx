@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 import topics from "../data/topics";
-
+import { useState } from "react";
 function Topic() {
   const navigate = useNavigate();
   const { id } = useParams();
