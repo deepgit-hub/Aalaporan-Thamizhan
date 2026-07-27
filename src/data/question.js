@@ -597,12 +597,44 @@ Fun`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 7,
-        title: "Question 7", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Declare an integer variable score with the value 50. Change its value to 100 and print it.",
+
+  questionTamil:
+    "score என்ற Integer Variable-ஐ 50 என்ற மதிப்புடன் உருவாக்குங்கள். பின்னர் அதன் மதிப்பை 100 ஆக மாற்றி Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Variables can store new values.",
+
+  hintTamil:
+    "Variable-இன் மதிப்பை மாற்றலாம்.",
+
+  expectedOutput: `100`,
+
+  expectedOutputTamil: `100`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int score = 50;
+
+        score = 100;
+
+        System.out.println(score);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 8, 
         title: "Question 8", 
