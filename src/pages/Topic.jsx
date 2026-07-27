@@ -99,6 +99,9 @@ function Topic() {
 <button onClick={() => navigate(`/question/${topic.id}`)}>
   Start Code
 </button>
+<button onClick={handleMarkAsLearned}>
+    ✅ Mark as Learned
+</button>
     </>
   );
 }
