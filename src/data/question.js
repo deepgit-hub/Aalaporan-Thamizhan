@@ -36,60 +36,287 @@ const questions = [
 
   completed: false,
 },
-      {
-        id: 2,
-        title: "Question 2", 
-        locked: false, 
-        completed: false 
-        },
-      { 
-        id: 3, 
-        title: "Question 3", 
-        locked: false, 
-        completed: false 
-        },
-      { 
-        id: 4,
-        title: "Question 4",
-        locked: false, 
-        completed: false 
-        },
-      { 
-        id: 5, 
-        title: "Question 5", 
-        locked: false, 
-        completed: false 
-        },
-      { 
-        id: 6, 
-        title: "Question 6", 
-        locked: false, 
-        completed: false 
-        },
-      { 
-        id: 7,
-        title: "Question 7", 
-        locked: false, 
-        completed: false 
-        },
-      { 
-        id: 8, 
-        title: "Question 8", 
-        locked: false, 
-        completed: false 
-        },
-      { id: 9,
-        title: "Challenge Question 9", 
-        locked: true,
-        completed: false 
-        },
-      { 
-        id: 10, 
-        title: "Challenge Question 10", 
-        locked: true, 
-        completed: false 
-        },
-    ],
+{
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to print your name on the console.",
+
+  questionTamil:
+    "உங்கள் பெயரை Console-ல் Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use the System.out.println() statement.",
+
+  hintTamil:
+    "System.out.println() Statement-ஐ பயன்படுத்துங்கள்.",
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.println("Deepak");
+
+    }
+
+}`,
+
+  challenge: false,
+
+  locked: false,
+
+  completed: false,
+},
+{
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to print your name and your goal on separate lines.",
+
+  questionTamil:
+    "உங்கள் பெயரையும் உங்கள் இலக்கையும் (Goal) தனித்தனி வரிகளில் Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use two System.out.println() statements.",
+
+  hintTamil:
+    "இரண்டு System.out.println() Statements-ஐ பயன்படுத்துங்கள்.",
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.println("Deepak");
+        System.out.println("Cyber Security");
+
+    }
+
+}`,
+
+  challenge: false,
+
+  locked: false,
+
+  completed: false,
+},
+{
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to print your college name.",
+
+  questionTamil:
+    "உங்கள் கல்லூரியின் பெயரை Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use one System.out.println() statement.",
+
+  hintTamil:
+    "ஒரு System.out.println() Statement-ஐ பயன்படுத்துங்கள்.",
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.println("ABC Engineering College");
+
+    }
+
+}`,
+
+  challenge: false,
+
+  locked: false,
+
+  completed: false,
+},
+{
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to print your department and your favorite programming language.",
+
+  questionTamil:
+    "உங்கள் Department மற்றும் உங்களுக்கு பிடித்த Programming Language-ஐ Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use two System.out.println() statements.",
+
+  hintTamil:
+    "இரண்டு System.out.println() Statements-ஐ பயன்படுத்துங்கள்.",
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.println("Computer Science and Engineering");
+        System.out.println("Java");
+
+    }
+
+}`,
+
+  challenge: false,
+
+  locked: false,
+
+  completed: false,
+},
+{
+  id: 6,
+  title: "Question 6",
+
+  questionEnglish:
+    "Write a Java program to print the following output:\n\nWelcome\nTo\nJava\nProgramming",
+
+  questionTamil:
+    "கீழே கொடுக்கப்பட்டுள்ள Output-ஐ Print செய்யும் Java Program-ஐ எழுதுங்கள்:\n\nWelcome\nTo\nJava\nProgramming",
+
+  hintEnglish:
+    "Use four System.out.println() statements.",
+
+  hintTamil:
+    "நான்கு System.out.println() Statements-ஐ பயன்படுத்துங்கள்.",
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.println("Welcome");
+        System.out.println("To");
+        System.out.println("Java");
+        System.out.println("Programming");
+
+    }
+
+}`,
+
+  challenge: false,
+
+  locked: false,
+
+  completed: false,
+},
+{
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Write a Java program to print your Name, Age, and Goal on separate lines.",
+
+  questionTamil:
+    "உங்கள் பெயர், வயது மற்றும் இலக்கை (Goal) தனித்தனி வரிகளில் Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use three System.out.println() statements.",
+
+  hintTamil:
+    "மூன்று System.out.println() Statements-ஐ பயன்படுத்துங்கள்.",
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.println("Deepak");
+        System.out.println("20");
+        System.out.println("Cyber Security");
+
+    }
+
+}`,
+
+  challenge: false,
+
+  locked: false,
+
+  completed: false,
+},
+{
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to print the following output:\n\n************\nWelcome to Java\n************",
+
+  questionTamil:
+    "கீழே கொடுக்கப்பட்டுள்ள Output-ஐ Print செய்யும் Java Program-ஐ எழுதுங்கள்:\n\n************\nWelcome to Java\n************",
+
+  hintEnglish:
+    "Print each line separately.",
+
+  hintTamil:
+    "ஒவ்வொரு வரியையும் தனித்தனியாக Print செய்யுங்கள்.",
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.println("************");
+        System.out.println("Welcome to Java");
+        System.out.println("************");
+
+    }
+
+}`,
+
+  challenge: false,
+
+  locked: false,
+
+  completed: false,
+},
+{
+  id: 9,
+  title: "Challenge Question 9",
+
+  questionEnglish:
+    "Write a Java program to print the following pattern:\n\n*\n**\n***\n****\n*****",
+
+  questionTamil:
+    "கீழே கொடுக்கப்பட்டுள்ள Pattern-ஐ Print செய்யும் Java Program-ஐ எழுதுங்கள்:\n\n*\n**\n***\n****\n*****",
+
+  hintEnglish:
+    "Use multiple System.out.println() statements.",
+
+  hintTamil:
+    "பல System.out.println() Statements-ஐ பயன்படுத்துங்கள்.",
+
+  solution: "",
+
+  challenge: true,
+
+  locked: true,
+
+  completed: false,
+},
+{
+  id: 10,
+  title: "Challenge Question 10",
+
+  questionEnglish:
+    'Write a Java program to print "Java Programming is Fun" using only one System.out.println() statement.',
+
+  questionTamil:
+    '"Java Programming is Fun" என்பதை ஒரு System.out.println() Statement மட்டும் பயன்படுத்தி Print செய்யும் Java Program-ஐ எழுதுங்கள்.',
+
+  hintEnglish:
+    "Use newline characters (\\n).",
+
+  hintTamil:
+    "புதிய வரிக்கு (\\n) பயன்படுத்துங்கள்.",
+
+  solution: "",
+
+  challenge: true,
+
+  locked: true,
+
+  completed: false,
+},  ],
   },
 
   {
