@@ -1255,7 +1255,23 @@ Price: 99.99`,
 
 Price: 99.99`,
 
-  solution: "",
+ solution: `import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter price:");
+
+        double price = input.nextDouble();
+
+        System.out.println("Price: " + price);
+
+    }
+
+}`,
 
   challenge: false,
   locked: false,
