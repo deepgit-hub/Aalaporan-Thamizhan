@@ -1181,12 +1181,54 @@ public class Main {
   locked: false,
   completed: false,
 },
-      {
-        id: 2,
-        title: "Question 2", 
-        locked: false, 
-        completed: false 
-        },
+     {
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to read a student's name and print it.",
+
+  questionTamil:
+    "ஒரு மாணவரின் பெயரை Input ஆக பெற்று அதை Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use Scanner and nextLine().",
+
+  hintTamil:
+    "Scanner மற்றும் nextLine() பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Enter your name:
+Deepak
+
+Your name is: Deepak`,
+
+  expectedOutputTamil: `Enter your name:
+Deepak
+
+Your name is: Deepak`,
+
+  solution: `import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter your name:");
+
+        String name = input.nextLine();
+
+        System.out.println("Your name is: " + name);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 3, 
         title: "Question 3", 
