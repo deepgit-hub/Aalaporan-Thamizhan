@@ -331,7 +331,7 @@ Welcome to Java
 ****
 *****`,
 
-  solution: "",
+  solution: "NO SOLUTION!!!",
 
   challenge: true,
   locked: true,
@@ -363,7 +363,7 @@ Programming
 is
 Fun`,
 
-  solution: "",
+  solution: "NO SOLUTION!!!",
 
   challenge: true,
   locked: true,
@@ -699,7 +699,7 @@ Computer Science and Engineering`,
 20
 Computer Science and Engineering`,
 
-  solution: "",
+  solution: "NO SOLUTION!!!",
 
   challenge: true,
   locked: true,
@@ -733,7 +733,7 @@ A
 true
 Java`,
 
-  solution: "",
+  solution: "NO SOLUTION!!!",
 
   challenge: true,
   locked: true,
@@ -1086,7 +1086,7 @@ true`,
 A
 true`,
 
-  solution: "",
+  solution: "NO SOLUTION!!!",
 
   challenge: true,
   locked: true,
@@ -1120,7 +1120,7 @@ E`,
 true
 E`,
 
-  solution: "",
+  solution: "NO SOLUTION!!!",
 
   challenge: true,
   locked: true,
@@ -1575,7 +1575,7 @@ public class Main {
 55000
 5`,
 
-  solution: "",
+  solution: "NO SOLUTION!!!",
 
   challenge: true,
   locked: true,
@@ -1609,7 +1609,7 @@ true`,
 A
 true`,
 
-  solution: "",
+  solution: "NO SOLUTION!!!",
 
   challenge: true,
   locked: true,
