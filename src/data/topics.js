@@ -3661,7 +3661,7 @@ Exception ஏற்பட்டாலும், ஏற்படாவிட்�
 
   output: `Age must be 18 or above.
 
-💡 Note (English)
+💡 Note 
 The throw keyword is used to manually create and throw an exception. It is commonly used to validate conditions and stop the normal execution of a program when invalid data is found.
 
 💡 குறிப்பு (Tamil)
