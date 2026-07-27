@@ -926,12 +926,46 @@ Java`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 6, 
-        title: "Question 6", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 6,
+  title: "Question 6",
+
+  questionEnglish:
+    "Declare an int variable rollNo = 25 and a String variable name = \"Rahul\". Print both values on separate lines.",
+
+  questionTamil:
+    "rollNo = 25 என்ற int Variable மற்றும் name = \"Rahul\" என்ற String Variable-ஐ உருவாக்கி தனித்தனி வரிகளில் Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use two different data types.",
+
+  hintTamil:
+    "இரண்டு வெவ்வேறு Data Types-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `25
+Rahul`,
+
+  expectedOutputTamil: `25
+Rahul`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int rollNo = 25;
+        String name = "Rahul";
+
+        System.out.println(rollNo);
+        System.out.println(name);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 7,
         title: "Question 7", 
