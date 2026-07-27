@@ -331,8 +331,8 @@ const questions = [
     ],
   },
   {
-    topicId: 5,
-    title: "Operators",
+    topicId: 6,
+    title: "",
 
     questions: [
       {
