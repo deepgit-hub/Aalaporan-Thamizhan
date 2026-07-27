@@ -783,11 +783,41 @@ Java`,
   completed: false,
 },
       {
-        id: 2,
-        title: "Question 2", 
-        locked: false, 
-        completed: false 
-        },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Declare a double variable named price with the value 99.99 and print it.",
+
+  questionTamil:
+    "99.99 என்ற மதிப்புடன் price என்ற double Variable-ஐ உருவாக்கி Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use the double data type.",
+
+  hintTamil:
+    "double Data Type-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `99.99`,
+
+  expectedOutputTamil: `99.99`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        double price = 99.99;
+
+        System.out.println(price);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 3, 
         title: "Question 3", 
