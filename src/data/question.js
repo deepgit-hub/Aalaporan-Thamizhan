@@ -125,6 +125,10 @@ Cyber Security`,
   hintTamil:
     "ஒரு System.out.println() Statement-ஐ பயன்படுத்துங்கள்.",
 
+  expectedOutput: `ABC Engineering College`,
+
+  expectedOutputTamil: `ABC Engineering College`,
+
   solution: `public class Main {
 
     public static void main(String[] args) {
@@ -136,9 +140,7 @@ Cyber Security`,
 }`,
 
   challenge: false,
-
   locked: false,
-
   completed: false,
 },
 {
