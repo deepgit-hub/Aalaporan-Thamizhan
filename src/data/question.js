@@ -1982,8 +1982,8 @@ const questions = [
     ],
   },
   {
-    topicId: 12,
-    title: "Do While Loop",
+    topicId: 31,
+  title: "Multiple Inheritance",
 
     questions: [
       {
