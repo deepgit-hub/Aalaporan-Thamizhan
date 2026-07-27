@@ -1814,12 +1814,44 @@ true`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 6, 
-        title: "Question 6", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 6,
+  title: "Question 6",
+
+  questionEnglish:
+    "Write a Java program to increase a variable by 1 using the ++ operator and print it.",
+
+  questionTamil:
+    "++ Operator-ஐ பயன்படுத்தி ஒரு Variable-ன் மதிப்பை 1 அதிகரித்து Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use the ++ operator.",
+
+  hintTamil:
+    "++ Operator-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `11`,
+
+  expectedOutputTamil: `11`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int number = 10;
+
+        number++;
+
+        System.out.println(number);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 7,
         title: "Question 7", 
