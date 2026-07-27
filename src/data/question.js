@@ -1739,12 +1739,45 @@ true`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 4,
-        title: "Question 4",
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to divide two numbers and print the result.",
+
+  questionTamil:
+    "இரண்டு எண்களை வகுத்து அதன் முடிவை Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use the / operator.",
+
+  hintTamil:
+    "/ Operator-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Quotient = 5`,
+
+  expectedOutputTamil: `Quotient = 5`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int a = 20;
+        int b = 4;
+
+        int quotient = a / b;
+
+        System.out.println("Quotient = " + quotient);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 5, 
         title: "Question 5", 
