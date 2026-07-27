@@ -2547,12 +2547,51 @@ Remainder = 0`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 5, 
-        title: "Question 5", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to find the greater of two numbers.",
+
+  questionTamil:
+    "இரண்டு எண்களில் பெரிய எண்ணை if-else பயன்படுத்தி கண்டறியும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Compare two numbers using >.",
+
+  hintTamil:
+    "> Operator பயன்படுத்துங்கள்.",
+
+  expectedOutput: `20 is Greater`,
+
+  expectedOutputTamil: `20 is Greater`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int a = 20;
+        int b = 10;
+
+        if (a > b) {
+
+            System.out.println(a + " is Greater");
+
+        } else {
+
+            System.out.println(b + " is Greater");
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 6, 
         title: "Question 6", 
