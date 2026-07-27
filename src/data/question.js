@@ -1261,18 +1261,70 @@ Price: 99.99`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 4,
-        title: "Question 4",
-        locked: false, 
-        completed: false 
-        },
-      { 
-        id: 5, 
-        title: "Question 5", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Read a character from the user and print it.",
+
+  questionTamil:
+    "பயனரிடமிருந்து ஒரு Character-ஐ பெற்று அதை Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use next().charAt(0).",
+
+  hintTamil:
+    "next().charAt(0) பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Enter grade:
+A
+
+Grade: A`,
+
+  expectedOutputTamil: `Enter grade:
+A
+
+Grade: A`,
+
+  solution: "",
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
+      {
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Read a boolean value from the user and print it.",
+
+  questionTamil:
+    "பயனரிடமிருந்து ஒரு Boolean மதிப்பை பெற்று அதை Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use nextBoolean().",
+
+  hintTamil:
+    "nextBoolean() பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Enter status:
+true
+
+Status: true`,
+
+  expectedOutputTamil: `Enter status:
+true
+
+Status: true`,
+
+  solution: "",
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 6, 
         title: "Question 6", 
