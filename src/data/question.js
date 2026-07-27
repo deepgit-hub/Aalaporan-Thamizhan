@@ -2751,12 +2751,32 @@ Remainder = 0`,
   locked: true,
   completed: false,
 },
-      { 
-        id: 10, 
-        title: "Challenge Question 10", 
-        locked: true, 
-        completed: false 
-        },
+      {
+  id: 10,
+  title: "Challenge Question 10",
+
+  questionEnglish:
+    "Write a Java program to check whether a person is eligible for a senior citizen discount (age 60 or above).",
+
+  questionTamil:
+    "ஒருவரின் வயது 60 அல்லது அதற்கு மேல் இருந்தால் Senior Citizen Discount-க்கு தகுதியானவரா என்பதை if-else பயன்படுத்தி கண்டறியும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use >= operator.",
+
+  hintTamil:
+    ">= Operator பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Eligible for Discount`,
+
+  expectedOutputTamil: `Eligible for Discount`,
+
+  solution: "NO SOLUTION!!!",
+
+  challenge: true,
+  locked: true,
+ completed: false,
+},
     ],
   },
   {
