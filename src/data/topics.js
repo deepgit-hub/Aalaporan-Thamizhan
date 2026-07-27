@@ -3472,7 +3472,113 @@ try Block-ல் Exception ஏற்படக்கூடிய Code இரு�
 
   completed: false
 },
-  
+  {
+  id: 35,
+
+  title: "Finally Block",
+
+  englishDefinition:
+    "The finally block is used to execute important code after the try and catch blocks. It always executes whether an exception occurs or not.",
+
+  tamilDefinition:
+    "finally Block என்பது try மற்றும் catch Blocks-க்கு பிறகு முக்கியமான Code-ஐ இயக்க பயன்படுத்தப்படுகிறது. Exception ஏற்பட்டாலும், ஏற்படாவிட்டாலும் finally Block எப்போதும் செயல்படும்.",
+
+  realWorldUsage:
+    "Developers use the finally block to perform cleanup tasks such as closing files, releasing database connections, or freeing other resources.",
+
+  realWorldUsageTamil:
+    "Files-ஐ மூடுதல், Database Connections-ஐ முடித்தல் அல்லது பயன்படுத்தப்பட்ட Resources-ஐ வெளியிடுதல் போன்ற Cleanup Tasks-ஐ செய்ய Developers finally Block-ஐ பயன்படுத்துகின்றனர்.",
+
+  syntax: `try{
+
+    // Code that may cause an exception
+
+}
+catch(ExceptionType e){
+
+    // Code to handle the exception
+
+}
+finally{
+
+    // Code that always executes
+
+}`,
+
+  syntaxExplanationEnglish: [
+    "The try block contains code that may generate an exception.",
+    "The catch block handles the exception if it occurs.",
+    "The finally block always executes after the try and catch blocks.",
+    "The finally block is commonly used for cleanup operations."
+  ],
+
+  syntaxExplanationTamil: [
+    "try Block-ல் Exception ஏற்படக்கூடிய Code எழுதப்படுகிறது.",
+    "Exception ஏற்பட்டால் catch Block அதை கையாளும்.",
+    "try மற்றும் catch Blocks-க்கு பிறகு finally Block எப்போதும் செயல்படும்.",
+    "Cleanup Operations செய்ய பொதுவாக finally Block பயன்படுத்தப்படுகிறது."
+  ],
+
+  exampleProgram: `public class Main{
+
+    public static void main(String[] args){
+
+        try{
+
+            int result = 20 / 0;
+
+            System.out.println(result);
+
+        }
+        catch(ArithmeticException e){
+
+            System.out.println("Cannot divide by zero.");
+
+        }
+        finally{
+
+            System.out.println("Finally Block Executed.");
+
+        }
+
+        System.out.println("Program Continues.");
+
+    }
+
+}`,
+
+  programExplanationEnglish: [
+    "Line 5: The try block begins.",
+    "Line 7: Dividing 20 by 0 generates an ArithmeticException.",
+    "Line 13: The catch block handles the exception.",
+    "Line 19: The finally block executes after the catch block.",
+    "Line 23: The program continues executing normally.",
+    "The finally block runs regardless of whether an exception occurs."
+  ],
+
+  programExplanationTamil: [
+    "வரி 5: try Block தொடங்குகிறது.",
+    "வரி 7: 20-ஐ 0-ஆல் வகுப்பதால் ArithmeticException ஏற்படுகிறது.",
+    "வரி 13: catch Block Exception-ஐ கையாளுகிறது.",
+    "வரி 19: catch Block-க்கு பிறகு finally Block செயல்படுகிறது.",
+    "வரி 23: Program தொடர்ந்து இயங்குகிறது.",
+    "Exception ஏற்பட்டாலும், ஏற்படாவிட்டாலும் finally Block எப்போதும் செயல்படும்."
+  ],
+
+  output: `Cannot divide by zero.
+Finally Block Executed.
+Program Continues.
+
+💡 Note (English)
+The finally block always executes after the try and catch blocks, whether an exception occurs or not. It is commonly used to perform cleanup operations such as closing files or releasing resources.
+
+💡 குறிப்பு (Tamil)
+Exception ஏற்பட்டாலும், ஏற்படாவிட்டாலும் try மற்றும் catch Blocks-க்கு பிறகு finally Block எப்போதும் செயல்படும். Files-ஐ மூடுதல் அல்லது Resources-ஐ வெளியிடுதல் போன்ற Cleanup Operations-க்கு இது பொதுவாக பயன்படுத்தப்படுகிறது.`,
+
+  locked: true,
+
+  completed: false
+},
   {
     id: 36,
     title: "Throw",
