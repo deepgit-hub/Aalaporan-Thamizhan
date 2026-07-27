@@ -1890,12 +1890,44 @@ true`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 8, 
-        title: "Question 8", 
-        locked: false, 
-        completed: false 
-        },
+     {
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to add 5 to a variable using the += operator and print the result.",
+
+  questionTamil:
+    "+= Operator-ஐ பயன்படுத்தி ஒரு Variable-க்கு 5-ஐ சேர்த்து Print செய்யும் Java Program-ஐ எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use the += operator.",
+
+  hintTamil:
+    "+= Operator-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `15`,
+
+  expectedOutputTamil: `15`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int number = 10;
+
+        number += 5;
+
+        System.out.println(number);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { id: 9,
         title: "Challenge Question 9", 
         locked: true,
