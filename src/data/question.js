@@ -239,6 +239,14 @@ Programming`,
   hintTamil:
     "மூன்று System.out.println() Statements-ஐ பயன்படுத்துங்கள்.",
 
+  expectedOutput: `Deepak
+20
+Cyber Security`,
+
+  expectedOutputTamil: `Deepak
+20
+Cyber Security`,
+
   solution: `public class Main {
 
     public static void main(String[] args) {
@@ -252,9 +260,7 @@ Programming`,
 }`,
 
   challenge: false,
-
   locked: false,
-
   completed: false,
 },
 {
