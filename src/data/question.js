@@ -1092,12 +1092,40 @@ true`,
   locked: true,
   completed: false,
 },
-      { 
-        id: 10, 
-        title: "Challenge Question 10", 
-        locked: true, 
-        completed: false 
-        },
+      {
+  id: 10,
+  title: "Challenge Question 10",
+
+  questionEnglish:
+    "Create variables for a product's name, price, quantity, availability, and category code. Print all the values.",
+
+  questionTamil:
+    "ஒரு பொருளின் பெயர், விலை, அளவு, கிடைப்புநிலை மற்றும் Category Code ஆகியவற்றிற்கு Variables உருவாக்கி அனைத்தையும் Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use String, double, int, boolean, and char appropriately.",
+
+  hintTamil:
+    "String, double, int, boolean மற்றும் char ஆகியவற்றை சரியாக பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Laptop
+55000.0
+5
+true
+E`,
+
+  expectedOutputTamil: `Laptop
+55000.0
+5
+true
+E`,
+
+  solution: "",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
     ],
   },
   {
