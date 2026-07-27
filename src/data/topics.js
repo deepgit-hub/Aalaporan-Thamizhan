@@ -3579,7 +3579,98 @@ Exception ஏற்பட்டாலும், ஏற்படாவிட்�
 
   completed: false
 },
-  
+  {
+  id: 36,
+
+  title: "Throw Keyword",
+
+  englishDefinition:
+    "The throw keyword is used to manually create and throw an exception in Java.",
+
+  tamilDefinition:
+    "Java-வில் throw Keyword என்பது ஒரு Exception-ஐ Program-ல் நாமே உருவாக்கி (Manually) Throw செய்ய பயன்படுகிறது.",
+
+  realWorldUsage:
+    "Developers use the throw keyword to generate exceptions when invalid conditions occur, such as an invalid age, negative balance, or incorrect input.",
+
+  realWorldUsageTamil:
+    "தவறான வயது (Invalid Age), Negative Balance அல்லது தவறான Input போன்ற தவறான சூழ்நிலைகள் ஏற்பட்டால் Exception-ஐ உருவாக்க Developers throw Keyword-ஐ பயன்படுத்துகின்றனர்.",
+
+  syntax: `throw new ExceptionType("Error Message");`,
+
+  syntaxExplanationEnglish: [
+    "throw is the keyword used to throw an exception.",
+    "new creates a new exception object.",
+    "ExceptionType specifies the type of exception.",
+    "The message describes the reason for the exception."
+  ],
+
+  syntaxExplanationTamil: [
+    "throw என்பது Exception-ஐ Throw செய்ய பயன்படும் Keyword ஆகும்.",
+    "new என்பது புதிய Exception Object-ஐ உருவாக்குகிறது.",
+    "ExceptionType என்பது எந்த வகையான Exception என்பதை குறிப்பிடுகிறது.",
+    "Message என்பது Exception ஏற்பட்ட காரணத்தை விளக்குகிறது."
+  ],
+
+  exampleProgram: `public class Main{
+
+    public static void main(String[] args){
+
+        int age = 15;
+
+        try{
+
+            if(age < 18){
+
+                throw new ArithmeticException("Age must be 18 or above.");
+
+            }
+
+            System.out.println("Eligible");
+
+        }
+        catch(ArithmeticException e){
+
+            System.out.println(e.getMessage());
+
+        }
+
+    }
+
+}`,
+
+  programExplanationEnglish: [
+    "Line 5: Declares the age variable.",
+    "Line 7: The try block begins.",
+    "Line 9: Checks whether the age is less than 18.",
+    "Line 11: The throw keyword manually creates and throws an ArithmeticException.",
+    "Line 15: This statement executes only if no exception is thrown.",
+    "Line 19: The catch block catches the thrown exception.",
+    "Line 21: Displays the exception message using getMessage()."
+  ],
+
+  programExplanationTamil: [
+    "வரி 5: age என்ற Variable அறிவிக்கப்படுகிறது.",
+    "வரி 7: try Block தொடங்குகிறது.",
+    "வரி 9: வயது 18-க்கு குறைவா என்பதை சரிபார்க்கிறது.",
+    "வரி 11: throw Keyword மூலம் ArithmeticException-ஐ நாமே உருவாக்கி Throw செய்கிறோம்.",
+    "வரி 15: Exception ஏற்படவில்லை என்றால் மட்டும் இந்த Statement செயல்படும்.",
+    "வரி 19: catch Block Throw செய்யப்பட்ட Exception-ஐ கையாளுகிறது.",
+    "வரி 21: getMessage() மூலம் Exception Message Console-ல் காட்டப்படுகிறது."
+  ],
+
+  output: `Age must be 18 or above.
+
+💡 Note (English)
+The throw keyword is used to manually create and throw an exception. It is commonly used to validate conditions and stop the normal execution of a program when invalid data is found.
+
+💡 குறிப்பு (Tamil)
+throw Keyword மூலம் Exception-ஐ நாமே உருவாக்கி Throw செய்யலாம். தவறான தகவல்கள் (Invalid Data) அல்லது தவறான சூழ்நிலைகள் ஏற்பட்டால் Program-ஐ கட்டுப்படுத்த இது பயன்படுகிறது.`,
+
+  locked: true,
+
+  completed: false
+}
 ];
 
 export default topics;
