@@ -1,6 +1,8 @@
 import { useNavigate, useParams } from "react-router-dom";
-import topics from "../data/topics";
 import { useState } from "react";
+import topics from "../data/topics";
+
+import "../styles/Topic.css";
 
 function Topic() {
   const navigate = useNavigate();
@@ -25,105 +27,194 @@ function Topic() {
   };
 
   return (
-    <>
-      <button onClick={() => navigate("/")}>⬅ Back</button>
+    <div className="topic-page">
+      <div className="container">
 
-      <h1>{topic.title}</h1>
+        {/* Header */}
 
-      <hr />
+        <div className="topic-header">
 
-      <h2>📖 English Definition</h2>
-      <p>{topic.englishDefinition}</p>
+          <button
+            className="back-btn"
+            onClick={() => navigate("/")}
+          >
+            ← Back
+          </button>
 
-      <hr />
+          <h1 className="topic-title">{topic.title}</h1>
 
-      <h2>📖 Tamil Definition</h2>
-      <p>{topic.tamilDefinition}</p>
+        </div>
 
-      <hr />
+        {/* English */}
 
-      <h2>🌍 Real World Usage</h2>
-      <p>{topic.realWorldUsage}</p>
+        <div className="topic-section">
 
-      <hr />
+          <h2>📖 English Definition</h2>
 
-      <h2>🌍 நிஜ வாழ்க்கையில் பயன்பாடு</h2>
-      <p>{topic.realWorldUsageTamil}</p>
+          <p>{topic.englishDefinition}</p>
 
-      <hr />
+        </div>
 
-      <h2>💻 Syntax</h2>
+        {/* Tamil */}
 
-      <pre>
-        <code>{topic.syntax}</code>
-      </pre>
+        <div className="topic-section">
 
-      <hr />
+          <h2>📖 Tamil Definition</h2>
 
-      <h2>📘 Syntax Explanation (English)</h2>
+          <p>{topic.tamilDefinition}</p>
 
-      <ul>
-        {topic.syntaxExplanationEnglish.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
+        </div>
 
-      <hr />
+        {/* Real World */}
 
-      <h2>📗 Syntax Explanation (Tamil)</h2>
+        <div className="topic-section">
 
-      <ul>
-        {topic.syntaxExplanationTamil.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
+          <h2>🌍 Real World Usage</h2>
 
-      <hr />
+          <p>{topic.realWorldUsage}</p>
 
-      <h2>🖥 Example Program</h2>
+        </div>
 
-      <pre>
-        <code>{topic.exampleProgram}</code>
-      </pre>
+        {/* Tamil Real World */}
 
-      <hr />
+        <div className="topic-section">
 
-      <h2>📘 Program Explanation (English)</h2>
+          <h2>🌍 நிஜ வாழ்க்கையில் பயன்பாடு</h2>
 
-      <ul>
-        {topic.programExplanationEnglish.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
+          <p>{topic.realWorldUsageTamil}</p>
 
-      <hr />
+        </div>
 
-      <h2>📗 Program Explanation (Tamil)</h2>
+        {/* Syntax */}
 
-      <ul>
-        {topic.programExplanationTamil.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
+        <div className="topic-section">
 
-      <hr />
+          <h2>💻 Syntax</h2>
 
-      <h2>🖥 Output</h2>
+          <pre className="code-box">
+            <code>{topic.syntax}</code>
+          </pre>
 
-      <pre>
-        <code>{topic.output}</code>
-      </pre>
+        </div>
 
-      <hr />
+        {/* Syntax Explanation English */}
 
-      <button onClick={() => navigate(`/question/${topic.id}`)}>
-        Start Code
-      </button>
+        <div className="topic-section">
 
-      <button onClick={handleMarkAsLearned}>
-        ✅ Mark as Learned
-      </button>
-    </>
+          <h2>📘 Syntax Explanation (English)</h2>
+
+          <ul className="topic-list">
+
+            {topic.syntaxExplanationEnglish.map((item, index) => (
+
+              <li key={index}>{item}</li>
+
+            ))}
+
+          </ul>
+
+        </div>
+
+        {/* Syntax Explanation Tamil */}
+
+        <div className="topic-section">
+
+          <h2>📗 Syntax Explanation (Tamil)</h2>
+
+          <ul className="topic-list">
+
+            {topic.syntaxExplanationTamil.map((item, index) => (
+
+              <li key={index}>{item}</li>
+
+            ))}
+
+          </ul>
+
+        </div>
+
+        {/* Example Program */}
+
+        <div className="topic-section">
+
+          <h2>🖥 Example Program</h2>
+
+          <pre className="code-box">
+            <code>{topic.exampleProgram}</code>
+          </pre>
+
+        </div>
+
+        {/* Program Explanation English */}
+
+        <div className="topic-section">
+
+          <h2>📘 Program Explanation (English)</h2>
+
+          <ul className="topic-list">
+
+            {topic.programExplanationEnglish.map((item, index) => (
+
+              <li key={index}>{item}</li>
+
+            ))}
+
+          </ul>
+
+        </div>
+
+        {/* Program Explanation Tamil */}
+
+        <div className="topic-section">
+
+          <h2>📗 Program Explanation (Tamil)</h2>
+
+          <ul className="topic-list">
+
+            {topic.programExplanationTamil.map((item, index) => (
+
+              <li key={index}>{item}</li>
+
+            ))}
+
+          </ul>
+
+        </div>
+
+        {/* Output */}
+
+        <div className="topic-section">
+
+          <h2>🖥 Output</h2>
+
+          <pre className="code-box">
+            <code>{topic.output}</code>
+          </pre>
+
+        </div>
+
+        {/* Buttons */}
+
+        <div className="topic-buttons">
+
+          <button
+            className="start-btn"
+            onClick={() => navigate(`/question/${topic.id}`)}
+          >
+            🚀 Start Coding
+          </button>
+
+          <button
+            className="complete-btn"
+            onClick={handleMarkAsLearned}
+          >
+            ✅ Mark as Learned
+          </button>
+
+        </div>
+
+      </div>
+    </div>
   );
 }
 
