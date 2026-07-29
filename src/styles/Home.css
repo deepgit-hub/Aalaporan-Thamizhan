@@ -2,158 +2,135 @@
    HOME PAGE
 ========================================== */
 
-.home-page{
-
-    min-height:100vh;
-
-    background:#f8fafc;
-
-    padding:50px 0;
-
+.home-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 50px 0;
 }
 
 /* ==========================================
    HERO
 ========================================== */
 
-.hero{
-
-    background:white;
-
-    border-radius:20px;
-
-    padding:50px;
-
-    margin-bottom:45px;
-
-    box-shadow:0 8px 20px rgba(0,0,0,.06);
-
-    border:1px solid #e2e8f0;
-
+.hero {
+  background: white;
+  border-radius: 20px;
+  padding: 60px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  margin-bottom: 50px;
 }
 
-.hero-badge{
-
-    display:inline-block;
-
-    background:#dbeafe;
-
-    color:#2563eb;
-
-    padding:8px 18px;
-
-    border-radius:999px;
-
-    font-size:14px;
-
-    font-weight:600;
-
-    margin-bottom:20px;
-
+.hero-content {
+  max-width: 850px;
 }
 
-.hero-title{
-
-    font-size:3rem;
-
-    font-weight:800;
-
-    color:#0f172a;
-
-    margin-bottom:20px;
-
-    line-height:1.2;
-
+.hero-badge {
+  display: inline-block;
+  background: #dbeafe;
+  color: #2563eb;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 25px;
 }
 
-.hero-description{
+.hero-title {
+  font-size: 3.3rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
 
-    font-size:18px;
+.hero-description {
+  font-size: 18px;
+  color: #64748b;
+  line-height: 1.9;
+  margin-bottom: 15px;
+}
 
-    color:#64748b;
-
-    max-width:700px;
-
-    line-height:1.8;
-
+.hero-description strong {
+  color: #0f172a;
 }
 
 /* ==========================================
-   TOPIC SECTION
+   ROADMAP
 ========================================== */
 
-.topics-section{
-
-    margin-top:20px;
-
+.topics-section {
+  margin-top: 20px;
 }
 
-.section-header{
-
-    margin-bottom:30px;
-
+.section-header {
+  margin-bottom: 35px;
 }
 
-.section-header h2{
-
-    font-size:2rem;
-
-    color:#0f172a;
-
-    margin-bottom:10px;
-
+.section-header h2 {
+  font-size: 2.2rem;
+  color: #0f172a;
+  margin-bottom: 10px;
 }
 
-.section-header p{
-
-    color:#64748b;
-
-    font-size:16px;
-
+.section-header p {
+  color: #64748b;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 700px;
 }
 
 /* ==========================================
-   GRID
+   TOPIC GRID
 ========================================== */
 
-.topics-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-    gap:28px;
-
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
 }
 
 /* ==========================================
    RESPONSIVE
 ========================================== */
 
-@media(max-width:768px){
+@media (max-width: 992px) {
 
-    .hero{
+  .hero {
+    padding: 40px;
+  }
 
-        padding:30px;
+  .hero-title {
+    font-size: 2.6rem;
+  }
 
-    }
+}
 
-    .hero-title{
+@media (max-width: 768px) {
 
-        font-size:2.2rem;
+  .hero {
+    padding: 30px;
+  }
 
-    }
+  .hero-title {
+    font-size: 2rem;
+  }
 
-    .hero-description{
+  .hero-description {
+    font-size: 16px;
+  }
 
-        font-size:16px;
+  .section-header h2 {
+    font-size: 1.7rem;
+  }
 
-    }
+  .section-header p {
+    font-size: 15px;
+  }
 
-    .section-header h2{
-
-        font-size:1.6rem;
-
-    }
+  .topics-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 
 }
