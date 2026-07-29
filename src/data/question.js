@@ -6795,12 +6795,88 @@ Exit Selected`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 6, 
-        title: "Question 6", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 6,
+  title: "Question 6",
+
+  questionEnglish:
+    "Write a Java program to print numbers from 1 to 30. Skip all numbers that are divisible by 3 using the continue statement.",
+
+  questionTamil:
+    "1 முதல் 30 வரை உள்ள எண்களை Print செய்யுங்கள். 3-ஆல் வகுபடும் அனைத்து எண்களையும் Continue Statement-ஐ பயன்படுத்தி Skip செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use the modulus (%) operator to check whether a number is divisible by 3.",
+
+  hintTamil:
+    "ஒரு எண் 3-ஆல் வகுபடுகிறதா என்பதை Modulus (%) Operator மூலம் சரிபார்க்கவும்.",
+
+  expectedOutput: `1
+2
+4
+5
+7
+8
+10
+11
+13
+14
+16
+17
+19
+20
+22
+23
+25
+26
+28
+29`,
+
+  expectedOutputTamil: `1
+2
+4
+5
+7
+8
+10
+11
+13
+14
+16
+17
+19
+20
+22
+23
+25
+26
+28
+29`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 30; i++) {
+
+            if (i % 3 == 0) {
+
+                continue;
+
+            }
+
+            System.out.println(i);
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 7,
         title: "Question 7", 
