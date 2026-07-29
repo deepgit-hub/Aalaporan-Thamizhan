@@ -5903,11 +5903,40 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { id: 9,
-        title: "Challenge Question 9", 
-        locked: true,
-        completed: false 
-        },
+      {
+  id: 9,
+  title: "Challenge Question 9",
+
+  questionEnglish:
+    "Write a Java program to print the following number triangle using nested for loops.",
+
+  questionTamil:
+    "Nested For Loop-ஐ பயன்படுத்தி கீழே கொடுக்கப்பட்ட Number Triangle-ஐ Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use the row number as the upper limit for the inner loop and print the column number.",
+
+  hintTamil:
+    "Inner Loop-ன் Upper Limit-ஆக Row Number-ஐ பயன்படுத்தி Column Number-ஐ Print செய்யுங்கள்.",
+
+  expectedOutput: `1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5`,
+
+  expectedOutputTamil: `1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5`,
+
+  solution: "NO SOLUTION",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
       { 
         id: 10, 
         title: "Challenge Question 10", 
