@@ -4099,11 +4099,32 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { id: 9,
-        title: "Challenge Question 9", 
-        locked: true,
-        completed: false 
-        },
+      {
+  id: 9,
+  title: "Challenge Question 9",
+
+  questionEnglish:
+    "Write a Java program to find the largest of two numbers using the ternary operator and display the result.",
+
+  questionTamil:
+    "Ternary Operator-ஐ பயன்படுத்தி இரண்டு எண்களில் பெரிய எண்ணை கண்டறிந்து Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use the ternary operator to compare the two numbers and store the larger value in a variable.",
+
+  hintTamil:
+    "Ternary Operator-ஐ பயன்படுத்தி இரண்டு எண்களையும் ஒப்பிட்டு பெரிய எண்ணை ஒரு Variable-ல் சேமிக்கவும்.",
+
+  expectedOutput: `Largest Number = 50`,
+
+  expectedOutputTamil: `Largest Number = 50`,
+
+  solution: "NO SOLUTION!!!",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
       { 
         id: 10, 
         title: "Challenge Question 10", 
