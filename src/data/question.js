@@ -8400,12 +8400,40 @@ Negative Count = 2`,
   locked: true,
   completed: false,
 },
-      { 
-        id: 10, 
-        title: "Challenge Question 10", 
-        locked: true, 
-        completed: false 
-        },
+      {
+  id: 10,
+  title: "Challenge Question 10",
+
+  questionEnglish:
+    "Write a Java program to sort an integer array in ascending order.",
+
+  questionTamil:
+    "ஒரு Integer Array-ல் உள்ள Elements-ஐ ஏறுவரிசையில் (Ascending Order) Sort செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use nested loops to compare and swap the elements whenever necessary.",
+
+  hintTamil:
+    "Nested Loop-ஐ பயன்படுத்தி Elements-ஐ ஒப்பிட்டு, தேவையான இடங்களில் Swap செய்யுங்கள்.",
+
+  expectedOutput: `10
+20
+30
+40
+50`,
+
+  expectedOutputTamil: `10
+20
+30
+40
+50`,
+
+  solution: "NO SOLUTION!!!",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
     ],
   },
   {
