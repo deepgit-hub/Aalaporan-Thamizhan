@@ -5536,11 +5536,31 @@ Eligible for Promotion`,
 
     questions: [
       {
-         id: 1,
-         title: "Question 1", 
-         locked: false, 
-         completed: false 
-        },
+  id: 10,
+  title: "Challenge Question 10",
+
+  questionEnglish:
+    "Write a Java program to reverse the digits of a given number using a for loop.",
+
+  questionTamil:
+    "For Loop-ஐ பயன்படுத்தி கொடுக்கப்பட்ட எண்ணின் இலக்கங்களை தலைகீழாக மாற்றி Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use modulus (%) to get the last digit and division (/) to remove the last digit inside the loop.",
+
+  hintTamil:
+    "Loop-க்குள் கடைசி இலக்கத்தை பெற Modulus (%) மற்றும் அதை நீக்க Division (/) பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Reversed Number = 54321`,
+
+  expectedOutputTamil: `தலைகீழ் எண் = 54321`,
+
+  solution: "",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2", 
