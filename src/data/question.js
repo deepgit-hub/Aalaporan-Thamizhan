@@ -5937,12 +5937,40 @@ Eligible for Promotion`,
   locked: true,
   completed: false,
 },
-      { 
-        id: 10, 
-        title: "Challenge Question 10", 
-        locked: true, 
-        completed: false 
-        },
+      {
+  id: 10,
+  title: "Challenge Question 10",
+
+  questionEnglish:
+    "Write a Java program to print the following star triangle using nested for loops.",
+
+  questionTamil:
+    "Nested For Loop-ஐ பயன்படுத்தி கீழே கொடுக்கப்பட்ட Star Triangle-ஐ Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "The inner loop should print stars up to the current row number.",
+
+  hintTamil:
+    "Inner Loop தற்போதைய Row Number வரை Star-களை Print செய்ய வேண்டும்.",
+
+  expectedOutput: `*
+* *
+* * *
+* * * *
+* * * * *`,
+
+  expectedOutputTamil: `*
+* *
+* * *
+* * * *
+* * * * *`,
+
+  solution: "NO SOLUTION!!!",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
     ],
   },
   {
