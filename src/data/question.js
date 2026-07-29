@@ -6380,12 +6380,52 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 8, 
-        title: "Question 8", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to search for the number 7 in an array. Stop searching when the number is found using the break statement.",
+
+  questionTamil:
+    "ஒரு Array-ல் 7 என்ற எண்ணை தேடுங்கள். அந்த எண் கிடைத்தவுடன் Break Statement பயன்படுத்தி Loop-ஐ நிறுத்துங்கள்.",
+
+  hintEnglish:
+    "Traverse the array using a loop. If the element is 7, print a message and use break.",
+
+  hintTamil:
+    "Loop மூலம் Array-ஐ Traverse செய்து, 7 கிடைத்தவுடன் Message-ஐ Print செய்து break பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Number Found`,
+
+  expectedOutputTamil: `எண் கண்டுபிடிக்கப்பட்டது`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {2, 4, 7, 9, 11};
+
+        for (int i = 0; i < numbers.length; i++) {
+
+            if (numbers[i] == 7) {
+
+                System.out.println("Number Found");
+
+                break;
+
+            }
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { id: 9,
         title: "Challenge Question 9", 
         locked: true,
