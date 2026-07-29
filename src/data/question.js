@@ -8394,7 +8394,7 @@ Negative Count = 2`,
 50
 60`,
 
-  solution: "",
+  solution: "NO SOLUTION!!!",
 
   challenge: true,
   locked: true,
