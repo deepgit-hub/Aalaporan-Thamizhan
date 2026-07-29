@@ -7437,11 +7437,32 @@ u`,
   locked: false,
   completed: false,
 },
-      { id: 9,
-        title: "Challenge Question 9", 
-        locked: true,
-        completed: false 
-        },
+      {
+  id: 9,
+  title: "Challenge Question 9",
+
+  questionEnglish:
+    "Write a Java program to search for a given element in an integer array and print 'Element Found' if it exists.",
+
+  questionTamil:
+    "ஒரு Integer Array-ல் கொடுக்கப்பட்ட Element-ஐ தேடி, அது இருந்தால் 'Element Found' என்று Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Traverse the array using a for loop and compare each element with the given value.",
+
+  hintTamil:
+    "For Loop மூலம் Array-ஐ Traverse செய்து ஒவ்வொரு Element-ஐயும் கொடுக்கப்பட்ட மதிப்புடன் ஒப்பிடுங்கள்.",
+
+  expectedOutput: `Element Found`,
+
+  expectedOutputTamil: `Element கண்டுபிடிக்கப்பட்டது`,
+
+  solution: "NO SOLUTION!!!",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
       { 
         id: 10, 
         title: "Challenge Question 10", 
