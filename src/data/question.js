@@ -2998,7 +2998,27 @@ High Salary`,
   expectedOutputTamil: `Salary Eligible
 High Salary`,
 
-  solution: "",
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int salary = 80000;
+
+        if (salary > 30000) {
+
+            System.out.println("Salary Eligible");
+
+            if (salary > 70000) {
+
+                System.out.println("High Salary");
+
+            }
+
+        }
+
+    }
+
+}`,
 
   challenge: false,
   locked: false,
