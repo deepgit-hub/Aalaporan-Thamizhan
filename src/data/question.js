@@ -5853,12 +5853,56 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 8, 
-        title: "Question 8", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to print the following inverted star pattern using nested for loops.",
+
+  questionTamil:
+    "Nested For Loop-ஐ பயன்படுத்தி கீழே கொடுக்கப்பட்ட தலைகீழ் Star Pattern-ஐ Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Start the outer loop from 4 and decrease it. The inner loop should run up to the current row value.",
+
+  hintTamil:
+    "Outer Loop-ஐ 4-ல் தொடங்கி குறையச் செய்யுங்கள். Inner Loop தற்போதைய Row Value வரை இயங்க வேண்டும்.",
+
+  expectedOutput: `* * * *
+* * *
+* *
+*`,
+
+  expectedOutputTamil: `* * * *
+* * *
+* *
+*`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        for (int i = 4; i >= 1; i--) {
+
+            for (int j = 1; j <= i; j++) {
+
+                System.out.print("* ");
+
+            }
+
+            System.out.println();
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { id: 9,
         title: "Challenge Question 9", 
         locked: true,
