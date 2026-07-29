@@ -2952,12 +2952,34 @@ Eligible for Exam`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 7,
-        title: "Question 7", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Write a Java program to check if a person has a driving license. If yes, then check whether the person's age is above 18 and print 'Can Drive'.",
+
+  questionTamil:
+    "ஒருவரிடம் Driving License உள்ளதா என்பதை சரிபார்க்கவும். இருந்தால் வயது 18-க்கு மேல் உள்ளதா என்று Nested If பயன்படுத்தி 'Can Drive' என்று Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use a boolean variable and nested if.",
+
+  hintTamil:
+    "Boolean Variable மற்றும் Nested If பயன்படுத்துங்கள்.",
+
+  expectedOutput: `License Verified
+Can Drive`,
+
+  expectedOutputTamil: `License Verified
+Can Drive`,
+
+  solution: "",
+
+  challenge: false,
+  locked: false,
+ completed: false,
+},
       { 
         id: 8, 
         title: "Question 8", 
