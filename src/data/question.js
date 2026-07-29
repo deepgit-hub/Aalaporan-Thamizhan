@@ -6488,11 +6488,65 @@ Exit Selected`,
 
     questions: [
       {
-         id: 1,
-         title: "Question 1", 
-         locked: false, 
-         completed: false 
-        },
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Write a Java program to print numbers from 1 to 10 using a for loop. Skip the number 5 using the continue statement.",
+
+  questionTamil:
+    "For Loop-ஐ பயன்படுத்தி 1 முதல் 10 வரை உள்ள எண்களை Print செய்யுங்கள். Continue Statement-ஐ பயன்படுத்தி 5 என்ற எண்ணை Skip செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use an if statement to check whether the number is 5. If true, use continue.",
+
+  hintTamil:
+    "எண் 5 ஆக உள்ளதா என்று if Statement மூலம் சரிபார்த்து continue பயன்படுத்துங்கள்.",
+
+  expectedOutput: `1
+2
+3
+4
+6
+7
+8
+9
+10`,
+
+  expectedOutputTamil: `1
+2
+3
+4
+6
+7
+8
+9
+10`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 10; i++) {
+
+            if (i == 5) {
+
+                continue;
+
+            }
+
+            System.out.println(i);
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2", 
