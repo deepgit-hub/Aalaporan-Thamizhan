@@ -2902,7 +2902,27 @@ Senior Citizen`,
   expectedOutputTamil: `Eligible to Vote
 Senior Citizen`,
 
-  solution: "",
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int age = 65;
+
+        if (age >= 18) {
+
+            System.out.println("Eligible to Vote");
+
+            if (age >= 60) {
+
+                System.out.println("Senior Citizen");
+
+            }
+
+        }
+
+    }
+
+}`,
 
   challenge: false,
   locked: false,
