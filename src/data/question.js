@@ -7391,12 +7391,52 @@ u`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 8, 
-        title: "Question 8", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to find and print the average of all elements in an integer array.",
+
+  questionTamil:
+    "ஒரு Integer Array-ல் உள்ள அனைத்து Elements-இன் சராசரியை (Average) கண்டறிந்து Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "First find the sum of all elements, then divide it by the number of elements.",
+
+  hintTamil:
+    "முதலில் அனைத்து Elements-இன் கூட்டுத்தொகையை கண்டறிந்து, அதை Elements-இன் எண்ணிக்கையால் வகுக்கவும்.",
+
+  expectedOutput: `Average = 30.0`,
+
+  expectedOutputTamil: `சராசரி = 30.0`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {10, 20, 30, 40, 50};
+
+        int sum = 0;
+
+        for (int i = 0; i < numbers.length; i++) {
+
+            sum = sum + numbers[i];
+
+        }
+
+        double average = (double) sum / numbers.length;
+
+        System.out.println("Average = " + average);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { id: 9,
         title: "Challenge Question 9", 
         locked: true,
