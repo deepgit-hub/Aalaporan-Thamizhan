@@ -8002,11 +8002,60 @@ Column 2 கூட்டுத்தொகை = 60`,
   completed: false,
 },
       {
-        id: 2,
-        title: "Question 2", 
-        locked: false, 
-        completed: false 
-        },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to copy all elements from one integer array to another array.",
+
+  questionTamil:
+    "ஒரு Integer Array-ல் உள்ள அனைத்து Elements-ஐ மற்றொரு Array-க்கு Copy செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use a for loop to copy each element one by one.",
+
+  hintTamil:
+    "ஒவ்வொரு Element-ஐயும் For Loop மூலம் ஒன்றன்பின் ஒன்றாக Copy செய்யுங்கள்.",
+
+  expectedOutput: `10
+20
+30
+40
+50`,
+
+  expectedOutputTamil: `10
+20
+30
+40
+50`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int[] source = {10, 20, 30, 40, 50};
+        int[] destination = new int[source.length];
+
+        for (int i = 0; i < source.length; i++) {
+
+            destination[i] = source[i];
+
+        }
+
+        for (int i = 0; i < destination.length; i++) {
+
+            System.out.println(destination[i]);
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 3, 
         title: "Question 3", 
