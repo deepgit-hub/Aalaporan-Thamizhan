@@ -8573,12 +8573,46 @@ Negative Count = 2`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 4,
-        title: "Question 4",
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to create a method that accepts two integer parameters and prints their sum.",
+
+  questionTamil:
+    "இரண்டு Integer Parameters-ஐ பெறும் Method-ஐ உருவாக்கி, அவற்றின் கூட்டுத்தொகையை Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create a method with two integer parameters and print their sum.",
+
+  hintTamil:
+    "இரண்டு Integer Parameters கொண்ட Method-ஐ உருவாக்கி, அவற்றின் கூட்டுத்தொகையை Print செய்யுங்கள்.",
+
+  expectedOutput: `Sum = 30`,
+
+  expectedOutputTamil: `கூட்டுத்தொகை = 30`,
+
+  solution: `public class Main {
+
+    static void addNumbers(int a, int b) {
+
+        System.out.println("Sum = " + (a + b));
+
+    }
+
+    public static void main(String[] args) {
+
+        addNumbers(10, 20);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 5, 
         title: "Question 5", 
