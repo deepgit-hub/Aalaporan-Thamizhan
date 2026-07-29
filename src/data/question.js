@@ -6548,11 +6548,67 @@ Exit Selected`,
   completed: false,
 },
       {
-        id: 2,
-        title: "Question 2", 
-        locked: false, 
-        completed: false 
-        },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to print numbers from 1 to 20. Skip all even numbers using the continue statement.",
+
+  questionTamil:
+    "1 முதல் 20 வரை உள்ள எண்களை Print செய்யுங்கள். Continue Statement-ஐ பயன்படுத்தி அனைத்து Even எண்களையும் Skip செய்யுங்கள்.",
+
+  hintEnglish:
+    "Check whether the number is divisible by 2. If true, use continue.",
+
+  hintTamil:
+    "எண் 2-ஆல் வகுபடுகிறதா என்று சரிபார்த்து continue பயன்படுத்துங்கள்.",
+
+  expectedOutput: `1
+3
+5
+7
+9
+11
+13
+15
+17
+19`,
+
+  expectedOutputTamil: `1
+3
+5
+7
+9
+11
+13
+15
+17
+19`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 20; i++) {
+
+            if (i % 2 == 0) {
+
+                continue;
+
+            }
+
+            System.out.println(i);
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 3, 
         title: "Question 3", 
