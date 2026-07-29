@@ -16,7 +16,7 @@ function Home() {
         <section className="hero">
 
           <span className="hero-badge">
-            🚀 A Learning Platform by  DEEPAK 
+            🚀 A Learning Platform by  your Supreme Senior DEEPAK 
           </span>
 
           <h1 className="hero-title">
@@ -45,9 +45,10 @@ function Home() {
 
             <div className="feature-card">
 
-              <div className="feature-icon">📖</div>
-
-              <h3>English + Tamil</h3>
+              <div className="feature-header">
+  <span className="feature-icon">📖</span>
+  <h3>English + Tamil</h3>
+</div>
 
               <p>
                 Every topic is explained in both languages for better
@@ -58,9 +59,10 @@ function Home() {
 
             <div className="feature-card">
 
-              <div className="feature-icon">🌍</div>
-
-              <h3>Real-World Learning</h3>
+             <div className="feature-header">
+  <span className="feature-icon">🌍</span>
+  <h3>Real-World Learning</h3>
+</div>
 
               <p>
                 Learn where every programming concept is actually used in
@@ -71,9 +73,10 @@ function Home() {
 
             <div className="feature-card">
 
-              <div className="feature-icon">💻</div>
-
-              <h3>Practice While Learning</h3>
+              <div className="feature-header">
+  <span className="feature-icon">💻</span>
+  <h3>Practice While Learning</h3>
+</div>
 
               <p>
                 Solve coding questions immediately after every topic and
