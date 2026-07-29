@@ -5979,29 +5979,209 @@ Eligible for Promotion`,
 
     questions: [
       {
-         id: 1,
-         title: "Question 1", 
-         locked: false, 
-         completed: false 
-        },
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Write a Java program to print numbers from 1 to 10 using a for loop. Stop the loop when the number becomes 5 using the break statement.",
+
+  questionTamil:
+    "For Loop-ஐ பயன்படுத்தி 1 முதல் 10 வரை உள்ள எண்களை Print செய்யுங்கள். எண் 5 ஆனவுடன் Break Statement பயன்படுத்தி Loop-ஐ நிறுத்துங்கள்.",
+
+  hintEnglish:
+    "Use an if statement to check whether the number is 5. If true, use break.",
+
+  hintTamil:
+    "எண் 5 ஆக உள்ளதா என்று if Statement மூலம் சரிபார்த்து break பயன்படுத்துங்கள்.",
+
+  expectedOutput: `1
+2
+3
+4`,
+
+  expectedOutputTamil: `1
+2
+3
+4`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 10; i++) {
+
+            if (i == 5) {
+
+                break;
+
+            }
+
+            System.out.println(i);
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
-        id: 2,
-        title: "Question 2", 
-        locked: false, 
-        completed: false 
-        },
-      { 
-        id: 3, 
-        title: "Question 3", 
-        locked: false, 
-        completed: false 
-        },
-      { 
-        id: 4,
-        title: "Question 4",
-        locked: false, 
-        completed: false 
-        },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to print numbers from 10 to 1 using a for loop. Stop the loop when the number becomes 6 using the break statement.",
+
+  questionTamil:
+    "For Loop-ஐ பயன்படுத்தி 10 முதல் 1 வரை உள்ள எண்களை Print செய்யுங்கள். எண் 6 ஆனவுடன் Break Statement பயன்படுத்தி Loop-ஐ நிறுத்துங்கள்.",
+
+  hintEnglish:
+    "Check whether the number is 6 before printing it.",
+
+  hintTamil:
+    "Print செய்வதற்கு முன் எண் 6 ஆக உள்ளதா என்று சரிபார்க்கவும்.",
+
+  expectedOutput: `10
+9
+8
+7`,
+
+  expectedOutputTamil: `10
+9
+8
+7`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        for (int i = 10; i >= 1; i--) {
+
+            if (i == 6) {
+
+                break;
+
+            }
+
+            System.out.println(i);
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
+      {
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to print even numbers from 2 to 20. Stop the loop when the number becomes 12 using the break statement.",
+
+  questionTamil:
+    "2 முதல் 20 வரை உள்ள Even எண்களை Print செய்யுங்கள். எண் 12 ஆனவுடன் Break Statement பயன்படுத்தி Loop-ஐ நிறுத்துங்கள்.",
+
+  hintEnglish:
+    "Increment the loop variable by 2 and use break when the value becomes 12.",
+
+  hintTamil:
+    "Loop Variable-ஐ 2-ஆல் Increment செய்து, 12 ஆனவுடன் break பயன்படுத்துங்கள்.",
+
+  expectedOutput: `2
+4
+6
+8
+10`,
+
+  expectedOutputTamil: `2
+4
+6
+8
+10`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        for (int i = 2; i <= 20; i += 2) {
+
+            if (i == 12) {
+
+                break;
+
+            }
+
+            System.out.println(i);
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+ completed: false,
+},
+      {
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to print the multiplication table of 5. Stop printing when the multiplier becomes 6 using the break statement.",
+
+  questionTamil:
+    "5-ன் பெருக்கல் வாய்ப்பாட்டை Print செய்யுங்கள். Multiplier 6 ஆனவுடன் Break Statement பயன்படுத்தி Loop-ஐ நிறுத்துங்கள்.",
+
+  hintEnglish:
+    "Use break before printing when the multiplier reaches 6.",
+
+  hintTamil:
+    "Multiplier 6 ஆனவுடன் Print செய்வதற்கு முன் break பயன்படுத்துங்கள்.",
+
+  expectedOutput: `5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25`,
+
+  expectedOutputTamil: `5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 10; i++) {
+
+            if (i == 6) {
+
+                break;
+
+            }
+
+            System.out.println("5 x " + i + " = " + (5 * i));
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+ locked: false,
+ completed: false,
+},
       { 
         id: 5, 
         title: "Question 5", 
