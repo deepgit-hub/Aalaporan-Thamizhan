@@ -7004,11 +7004,42 @@ Exit Selected`,
   locked: false,
   completed: false,
 },
-      { id: 9,
-        title: "Challenge Question 9", 
-        locked: true,
-        completed: false 
-        },
+      {
+  id: 9,
+  title: "Challenge Question 9",
+
+  questionEnglish:
+    "Write a Java program to print all odd numbers from 1 to 50. Skip all even numbers using the continue statement.",
+
+  questionTamil:
+    "1 முதல் 50 வரை உள்ள அனைத்து Odd எண்களையும் Print செய்யுங்கள். அனைத்து Even எண்களையும் Continue Statement-ஐ பயன்படுத்தி Skip செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use the modulus (%) operator to identify even numbers and skip them.",
+
+  hintTamil:
+    "Even எண்களை கண்டறிய Modulus (%) Operator-ஐ பயன்படுத்தி continue செய்யுங்கள்.",
+
+  expectedOutput: `1
+3
+5
+...
+47
+49`,
+
+  expectedOutputTamil: `1
+3
+5
+...
+47
+49`,
+
+  solution: "NO SOLUTION!!!",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
       { 
         id: 10, 
         title: "Challenge Question 10", 
