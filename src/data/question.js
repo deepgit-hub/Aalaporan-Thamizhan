@@ -7633,12 +7633,59 @@ u`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 4,
-        title: "Question 4",
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to change the element at index [1][0] to 100 and print the entire 2 × 2 array.",
+
+  questionTamil:
+    "2 × 2 Integer Array-ல் [1][0] Index-ல் உள்ள Element-ஐ 100 ஆக மாற்றி, முழு Array-ஐ Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Update the element before printing the array using nested loops.",
+
+  hintTamil:
+    "Nested Loop மூலம் Array-ஐ Print செய்வதற்கு முன் Element-ஐ மாற்றுங்கள்.",
+
+  expectedOutput: `10 20
+100 40`,
+
+  expectedOutputTamil: `10 20
+100 40`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int[][] numbers = {
+            {10, 20},
+            {30, 40}
+        };
+
+        numbers[1][0] = 100;
+
+        for (int i = 0; i < numbers.length; i++) {
+
+            for (int j = 0; j < numbers[i].length; j++) {
+
+                System.out.print(numbers[i][j] + " ");
+
+            }
+
+            System.out.println();
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 5, 
         title: "Question 5", 
