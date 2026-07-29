@@ -3395,12 +3395,65 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 3, 
-        title: "Question 3", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to perform basic arithmetic operations (+, -, *, /) using switch case.",
+
+  questionTamil:
+    "Switch Case பயன்படுத்தி (+, -, *, /) கணித செயல்பாடுகளை செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use a character variable for the operator.",
+
+  hintTamil:
+    "Operator-ஐ Character Variable-ல் சேமித்து Switch பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Addition = 30`,
+
+  expectedOutputTamil: `Addition = 30`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int a = 10;
+        int b = 20;
+        char operator = '+';
+
+        switch (operator) {
+
+            case '+':
+                System.out.println("Addition = " + (a + b));
+                break;
+
+            case '-':
+                System.out.println("Subtraction = " + (a - b));
+                break;
+
+            case '*':
+                System.out.println("Multiplication = " + (a * b));
+                break;
+
+            case '/':
+                System.out.println("Division = " + (a / b));
+                break;
+
+            default:
+                System.out.println("Invalid Operator");
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 4,
         title: "Question 4",
