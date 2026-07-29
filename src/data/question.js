@@ -4125,12 +4125,32 @@ Eligible for Promotion`,
   locked: true,
   completed: false,
 },
-      { 
-        id: 10, 
-        title: "Challenge Question 10", 
-        locked: true, 
-        completed: false 
-        },
+      {
+  id: 10,
+  title: "Challenge Question 10",
+
+  questionEnglish:
+    "Write a Java program to assign a grade using the ternary operator. Print 'Pass' if the mark is 35 or above; otherwise print 'Fail'.",
+
+  questionTamil:
+    "Ternary Operator-ஐ பயன்படுத்தி மாணவரின் மதிப்பெண்ணை அடிப்படையாகக் கொண்டு 'Pass' அல்லது 'Fail' என்பதை Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use the ternary operator with the condition (mark >= 35).",
+
+  hintTamil:
+    "(mark >= 35) என்ற நிபந்தனையுடன் Ternary Operator-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Pass`,
+
+  expectedOutputTamil: `Pass`,
+
+  solution: "NO SOLUTION!!!",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
     ],
   },
    {
