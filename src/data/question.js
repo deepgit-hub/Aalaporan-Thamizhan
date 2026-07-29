@@ -8533,12 +8533,46 @@ Negative Count = 2`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 3, 
-        title: "Question 3", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to create a method that accepts an integer parameter and prints its square.",
+
+  questionTamil:
+    "ஒரு Integer Parameter-ஐ பெறும் Method-ஐ உருவாக்கி, அந்த எண்ணின் Square-ஐ Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create a method with one integer parameter and print number * number.",
+
+  hintTamil:
+    "ஒரு Integer Parameter கொண்ட Method-ஐ உருவாக்கி number * number-ஐ Print செய்யுங்கள்.",
+
+  expectedOutput: `Square = 25`,
+
+  expectedOutputTamil: `Square = 25`,
+
+  solution: `public class Main {
+
+    static void findSquare(int number) {
+
+        System.out.println("Square = " + (number * number));
+
+    }
+
+    public static void main(String[] args) {
+
+        findSquare(5);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 4,
         title: "Question 4",
