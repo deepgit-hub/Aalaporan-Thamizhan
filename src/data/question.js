@@ -3833,11 +3833,43 @@ Eligible for Promotion`,
   completed: false,
 },
       {
-        id: 2,
-        title: "Question 2", 
-        locked: false, 
-        completed: false 
-        },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to check whether a number is even or odd using the ternary operator.",
+
+  questionTamil:
+    "Ternary Operator-ஐ பயன்படுத்தி ஒரு எண் Even அல்லது Odd என்பதை கண்டறியும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Check the remainder using the modulus (%) operator.",
+
+  hintTamil:
+    "Modulus (%) Operator-ஐ பயன்படுத்தி மீதியை சரிபார்க்கவும்.",
+
+  expectedOutput: `Even`,
+
+  expectedOutputTamil: `Even`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int number = 20;
+
+        String result = (number % 2 == 0) ? "Even" : "Odd";
+
+        System.out.println(result);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 3, 
         title: "Question 3", 
