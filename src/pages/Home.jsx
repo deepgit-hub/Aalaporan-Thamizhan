@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import TopicCard from "../components/TopicCard";
 import topics from "../data/topics";
-import { BookOpen, Globe, Code2 } from "lucide-react";
+import { Languages, Globe2, CodeXml, } from "lucide-react";
 import "../styles/Home.css";
 
 function Home() {
