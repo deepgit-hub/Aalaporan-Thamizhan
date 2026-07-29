@@ -7040,12 +7040,40 @@ Exit Selected`,
   locked: true,
   completed: false,
 },
-      { 
-        id: 10, 
-        title: "Challenge Question 10", 
-        locked: true, 
-        completed: false 
-        },
+      {
+  id: 10,
+  title: "Challenge Question 10",
+
+  questionEnglish:
+    "Write a Java program to print all vowels from a string. Skip all consonants using the continue statement.",
+
+  questionTamil:
+    "ஒரு String-ல் உள்ள அனைத்து உயிரெழுத்துகளையும் (Vowels) Print செய்யுங்கள். மெய்யெழுத்துகளை (Consonants) Continue Statement-ஐ பயன்படுத்தி Skip செய்யுங்கள்.",
+
+  hintEnglish:
+    "Traverse each character of the string. If the character is not a vowel, use continue.",
+
+  hintTamil:
+    "String-ன் ஒவ்வொரு Character-ஐ Traverse செய்யுங்கள். அது Vowel இல்லையெனில் continue பயன்படுத்துங்கள்.",
+
+  expectedOutput: `a
+e
+i
+o
+u`,
+
+  expectedOutputTamil: `a
+e
+i
+o
+u`,
+
+  solution: "NO SOLUTION!!!",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
     ],
   },
   {
