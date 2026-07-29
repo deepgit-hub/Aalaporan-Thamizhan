@@ -7902,11 +7902,34 @@ u`,
   locked: false,
   completed: false,
 },
-      { id: 9,
-        title: "Challenge Question 9", 
-        locked: true,
-        completed: false 
-        },
+      {
+  id: 9,
+  title: "Challenge Question 9",
+
+  questionEnglish:
+    "Write a Java program to find and print the sum of each row in a 2 × 2 integer array.",
+
+  questionTamil:
+    "2 × 2 Integer Array-ல் உள்ள ஒவ்வொரு Row-வின் கூட்டுத்தொகையையும் கண்டறிந்து Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use the outer loop for rows. Reset the sum variable for each row.",
+
+  hintTamil:
+    "Outer Loop-ஐ Row-களுக்குப் பயன்படுத்துங்கள். ஒவ்வொரு Row-க்கும் Sum Variable-ஐ மீண்டும் 0 ஆக மாற்றுங்கள்.",
+
+  expectedOutput: `Row 1 Sum = 30
+Row 2 Sum = 70`,
+
+  expectedOutputTamil: `Row 1 கூட்டுத்தொகை = 30
+Row 2 கூட்டுத்தொகை = 70`,
+
+  solution: "NO SOLUTION!!!",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
       { 
         id: 10, 
         title: "Challenge Question 10", 
