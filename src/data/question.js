@@ -3909,12 +3909,44 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 4,
-        title: "Question 4",
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to check whether a student passed or failed using the ternary operator. (Pass mark is 35)",
+
+  questionTamil:
+    "Ternary Operator-ஐ பயன்படுத்தி மாணவர் Pass அல்லது Fail என்பதை கண்டறியும் Java Program எழுதுங்கள். (Pass Mark = 35)",
+
+  hintEnglish:
+    "Check whether the mark is greater than or equal to 35.",
+
+  hintTamil:
+    "Mark 35 அல்லது அதற்கு மேல் உள்ளதா என்று சரிபார்க்கவும்.",
+
+  expectedOutput: `Pass`,
+
+  expectedOutputTamil: `Pass`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int mark = 75;
+
+        String result = (mark >= 35) ? "Pass" : "Fail";
+
+        System.out.println(result);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 5, 
         title: "Question 5", 
