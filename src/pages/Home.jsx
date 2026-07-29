@@ -11,39 +11,82 @@ function Home() {
     <div className="home-page">
       <div className="container">
 
-        {/* ================= HERO ================= */}
+        {/* Hero Section */}
 
         <section className="hero">
 
-          <div className="hero-content">
+          <span className="hero-badge">
+            🚀 A Learning Platform by  DEEPAK 
+          </span>
 
-            <span className="hero-badge">
-              🚀 A Learning Platform by DEEPAK
-            </span>
+          <h1 className="hero-title">
+            Master Java Through Real Learning,
+            <br />
+            Not Just Theory.
+          </h1>
 
-            <h1 className="hero-title">
-              Master Java Through Real Learning,
-              <br />
-              Not Just Theory
-            </h1>
+          <p className="hero-description">
+            Welcome to a bilingual coding platform where every Java concept
+            is taught in both <strong>English</strong> and <strong>Tamil</strong>.
+            Learn with simple explanations, real-world applications,
+            practical examples, coding exercises, and challenge questions.
+          </p>
 
-            <p className="hero-description">
-              Learn Java in both <strong>English</strong> and <strong>Tamil</strong> through
-              simple explanations, real-world applications, practical examples,
-              coding exercises, and challenge questions.
-            </p>
+          <p className="hero-description">
+            This platform is designed to help students understand not only
+            <strong> how to code</strong>, but also
+            <strong> where</strong>,
+            <strong> why</strong>, and
+            <strong> when</strong> every concept is used in real software
+            development.
+          </p>
 
-            <p className="hero-description">
-              Don't just memorize syntax. Understand
-              <strong> where</strong>, <strong>why</strong>, and <strong>how</strong> every concept
-              is used in real software development.
-            </p>
+          <div className="hero-features">
+
+            <div className="feature-card">
+
+              <div className="feature-icon">📖</div>
+
+              <h3>English + Tamil</h3>
+
+              <p>
+                Every topic is explained in both languages for better
+                understanding.
+              </p>
+
+            </div>
+
+            <div className="feature-card">
+
+              <div className="feature-icon">🌍</div>
+
+              <h3>Real-World Learning</h3>
+
+              <p>
+                Learn where every programming concept is actually used in
+                software development.
+              </p>
+
+            </div>
+
+            <div className="feature-card">
+
+              <div className="feature-icon">💻</div>
+
+              <h3>Practice While Learning</h3>
+
+              <p>
+                Solve coding questions immediately after every topic and
+                strengthen your understanding.
+              </p>
+
+            </div>
 
           </div>
 
         </section>
 
-        {/* ================= ROADMAP ================= */}
+        {/* Learning Roadmap */}
 
         <section className="topics-section">
 
@@ -52,9 +95,8 @@ function Home() {
             <h2>📚 Java Learning Roadmap</h2>
 
             <p>
-              Complete each topic step by step. Every lesson unlocks
-              practical coding questions, explanations, and real-world
-              programming scenarios.
+              Complete every topic in order. Each lesson builds your
+              programming skills step by step before unlocking the next one.
             </p>
 
           </div>
