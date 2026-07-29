@@ -8364,11 +8364,42 @@ Negative Count = 2`,
   locked: false,
   completed: false,
 },
-      { id: 9,
-        title: "Challenge Question 9", 
-        locked: true,
-        completed: false 
-        },
+      {
+  id: 9,
+  title: "Challenge Question 9",
+
+  questionEnglish:
+    "Write a Java program to merge two integer arrays into a single array.",
+
+  questionTamil:
+    "இரண்டு Integer Array-களை ஒன்றாக இணைத்து (Merge) ஒரு புதிய Array உருவாக்கும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create a new array with enough size to store both arrays and copy the elements one by one.",
+
+  hintTamil:
+    "இரண்டு Array-களின் Elements-ஐ சேமிக்க போதுமான அளவு கொண்ட புதிய Array உருவாக்கி, ஒவ்வொரு Element-ஐயும் Copy செய்யுங்கள்.",
+
+  expectedOutput: `10
+20
+30
+40
+50
+60`,
+
+  expectedOutputTamil: `10
+20
+30
+40
+50
+60`,
+
+  solution: "",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
       { 
         id: 10, 
         title: "Challenge Question 10", 
