@@ -2840,12 +2840,34 @@ Excellent`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 3, 
-        title: "Question 3", 
-        locked: false, 
-        completed: false 
-        },
+     {
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to check if a person is eligible to vote. If eligible, then check if the age is above 60 and print 'Senior Citizen'.",
+
+  questionTamil:
+    "ஒருவர் Vote செய்ய தகுதியானவரா என்பதை சரிபார்க்கவும். தகுதி இருந்தால் வயது 60-க்கு மேல் உள்ளதா என்று Nested If பயன்படுத்தி 'Senior Citizen' என்று Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use age >=18 and another if for age >=60.",
+
+  hintTamil:
+    "முதலில் age >=18, பிறகு age >=60 என்று சரிபார்க்கவும்.",
+
+  expectedOutput: `Eligible to Vote
+Senior Citizen`,
+
+  expectedOutputTamil: `Eligible to Vote
+Senior Citizen`,
+
+  solution: "",
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 4,
         title: "Question 4",
