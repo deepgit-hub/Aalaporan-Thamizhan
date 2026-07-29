@@ -3761,12 +3761,32 @@ Eligible for Promotion`,
   locked: true,
   completed: false,
 },
-      { 
-        id: 10, 
-        title: "Challenge Question 10", 
-        locked: true, 
-        completed: false 
-        },
+      {
+  id: 10,
+  title: "Challenge Question 10",
+
+  questionEnglish:
+    "Write a Java program to display a restaurant menu using switch case. Print the selected food item based on the menu number entered by the user.",
+
+  questionTamil:
+    "Menu Number-ஐ பயன்படுத்தி Restaurant Menu-வில் தேர்வு செய்யப்பட்ட உணவின் பெயரை Switch Case மூலம் Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create different cases for different menu numbers and print the corresponding food item.",
+
+  hintTamil:
+    "ஒவ்வொரு Menu Number-க்கும் தனித்தனி Case-ஐ உருவாக்கி அதற்கான Food Item-ஐ Print செய்யுங்கள்.",
+
+  expectedOutput: `Selected Item: Dosa`,
+
+  expectedOutputTamil: `Selected Item: Dosa`,
+
+  solution: "",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
     ],
   },
   {
