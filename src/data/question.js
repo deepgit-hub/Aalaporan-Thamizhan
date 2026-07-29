@@ -4821,12 +4821,66 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 5, 
-        title: "Question 5", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to print the multiplication table of 5 using a do while loop.",
+
+  questionTamil:
+    "Do While Loop-ஐ பயன்படுத்தி 5-ன் பெருக்கல் வாய்ப்பாட்டை Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Start from 1 and continue until 10. Multiply each value by 5.",
+
+  hintTamil:
+    "1 முதல் 10 வரை Loop செய்து ஒவ்வொரு எண்ணையும் 5-ஆல் பெருக்குங்கள்.",
+
+  expectedOutput: `5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50`,
+
+  expectedOutputTamil: `5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int i = 1;
+
+        do {
+
+            System.out.println("5 x " + i + " = " + (5 * i));
+
+            i++;
+
+        } while (i <= 10);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 6, 
         title: "Question 6", 
