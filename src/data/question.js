@@ -3146,7 +3146,29 @@ Discount Applied`,
   expectedOutputTamil: `Purchase Eligible
 Discount Applied`,
 
-  solution: "",
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int purchaseAmount = 150;
+
+        boolean isPremiumMember = true;
+
+        if (purchaseAmount > 100) {
+
+            System.out.println("Purchase Eligible");
+
+            if (isPremiumMember) {
+
+                System.out.println("Discount Applied");
+
+            }
+
+        }
+
+    }
+
+}`,
 
   challenge: false,
   locked: false,
