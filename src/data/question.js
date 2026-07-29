@@ -7201,12 +7201,56 @@ u`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 4,
-        title: "Question 4",
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to change the third element of an integer array to 100 and print all the elements.",
+
+  questionTamil:
+    "ஒரு Integer Array-இன் மூன்றாவது Element-ஐ 100 ஆக மாற்றி, அனைத்து Elements-ஐயும் Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "The third element is at index 2. Update it before printing the array.",
+
+  hintTamil:
+    "மூன்றாவது Element-ன் Index 2 ஆகும். அதை மாற்றிய பிறகு Array-ஐ Print செய்யுங்கள்.",
+
+  expectedOutput: `10
+20
+100
+40
+50`,
+
+  expectedOutputTamil: `10
+20
+100
+40
+50`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {10, 20, 30, 40, 50};
+
+        numbers[2] = 100;
+
+        for (int i = 0; i < numbers.length; i++) {
+
+            System.out.println(numbers[i]);
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 5, 
         title: "Question 5", 
