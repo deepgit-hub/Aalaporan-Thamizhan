@@ -4672,11 +4672,55 @@ Eligible for Promotion`,
   completed: false,
 },
       {
-        id: 2,
-        title: "Question 2", 
-        locked: false, 
-        completed: false 
-        },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to print numbers from 5 to 1 using a do while loop.",
+
+  questionTamil:
+    "Do While Loop-ஐ பயன்படுத்தி 5 முதல் 1 வரை உள்ள எண்களை Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Initialize the variable to 5 and decrement it inside the loop.",
+
+  hintTamil:
+    "Variable-ஐ 5-ல் தொடங்கி ஒவ்வொரு முறையும் Decrement செய்யுங்கள்.",
+
+  expectedOutput: `5
+4
+3
+2
+1`,
+
+  expectedOutputTamil: `5
+4
+3
+2
+1`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int i = 5;
+
+        do {
+
+            System.out.println(i);
+
+            i--;
+
+        } while (i >= 1);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 3, 
         title: "Question 3", 
