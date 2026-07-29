@@ -5707,12 +5707,54 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 5, 
-        title: "Question 5", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to print the following pattern using nested for loops.",
+
+  questionTamil:
+    "Nested For Loop-ஐ பயன்படுத்தி கீழே கொடுக்கப்பட்ட Pattern-ஐ Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "The inner loop should run only up to the current row number.",
+
+  hintTamil:
+    "Inner Loop தற்போதைய Row Number வரை மட்டுமே இயங்க வேண்டும்.",
+
+  expectedOutput: `*
+* *
+* * *`,
+
+  expectedOutputTamil: `*
+* *
+* * *`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 3; i++) {
+
+            for (int j = 1; j <= i; j++) {
+
+                System.out.print("* ");
+
+            }
+
+            System.out.println();
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 6, 
         title: "Question 6", 
