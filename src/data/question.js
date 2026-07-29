@@ -5611,12 +5611,54 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 3, 
-        title: "Question 3", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to print the row number in each row using nested for loops.",
+
+  questionTamil:
+    "Nested For Loop-ஐ பயன்படுத்தி ஒவ்வொரு Row-விலும் அந்த Row Number-ஐ Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Print the outer loop variable inside the inner loop.",
+
+  hintTamil:
+    "Inner Loop-க்குள் Outer Loop Variable-ஐ Print செய்யுங்கள்.",
+
+  expectedOutput: `1 1 1
+2 2 2
+3 3 3`,
+
+  expectedOutputTamil: `1 1 1
+2 2 2
+3 3 3`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 3; i++) {
+
+            for (int j = 1; j <= 3; j++) {
+
+                System.out.print(i + " ");
+
+            }
+
+            System.out.println();
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 4,
         title: "Question 4",
