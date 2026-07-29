@@ -134,3 +134,30 @@
   }
 
 }
+.feature-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:16px;
+
+}
+
+.feature-header h3{
+
+    margin:0;
+
+    font-size:1.3rem;
+
+    color:#0f172a;
+
+}
+
+.feature-icon{
+
+    font-size:1.6rem;
+
+}
