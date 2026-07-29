@@ -5020,11 +5020,38 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 } ,
-      { id: 9,
-        title: "Challenge Question 9", 
-        locked: true,
-        completed: false 
-        },
+      {
+  id: 9,
+  title: "Challenge Question 9",
+
+  questionEnglish:
+    "Write a Java program to print the multiplication table of a given number using a do while loop.",
+
+  questionTamil:
+    "Do While Loop-ஐ பயன்படுத்தி கொடுக்கப்பட்ட எண்ணின் பெருக்கல் வாய்ப்பாட்டை Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use a counter from 1 to 10 and multiply it by the given number.",
+
+  hintTamil:
+    "1 முதல் 10 வரை Counter-ஐ பயன்படுத்தி கொடுக்கப்பட்ட எண்ணுடன் பெருக்குங்கள்.",
+
+  expectedOutput: `7 x 1 = 7
+7 x 2 = 14
+...
+7 x 10 = 70`,
+
+  expectedOutputTamil: `7 x 1 = 7
+7 x 2 = 14
+...
+7 x 10 = 70`,
+
+  solution: "NO SOLUTION!!!",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
       { 
         id: 10, 
         title: "Challenge Question 10", 
