@@ -2806,7 +2806,27 @@ Even Number`,
   expectedOutputTamil: `Positive Number
 Even Number`,
 
-  solution: "",
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int number = 20;
+
+        if (number > 0) {
+
+            System.out.println("Positive Number");
+
+            if (number % 2 == 0) {
+
+                System.out.println("Even Number");
+
+            }
+
+        }
+
+    }
+
+}`,
 
   challenge: false,
   locked: false,
