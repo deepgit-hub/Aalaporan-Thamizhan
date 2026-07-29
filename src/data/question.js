@@ -3030,7 +3030,7 @@ Distinction`,
   expectedOutputTamil: `Passed All Subjects
 Distinction`,
 
-  solution: "",
+  solution: "NO SOLUTION!!!",
 
   challenge: true,
   locked: true,
@@ -3058,7 +3058,7 @@ Eligible for Promotion`,
   expectedOutputTamil: `Service Requirement Met
 Eligible for Promotion`,
 
-  solution: "",
+  solution: "NO SOLUTION!!!",
 
   challenge: true,
   locked: true,
