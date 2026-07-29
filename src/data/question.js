@@ -4462,12 +4462,51 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 7,
-        title: "Question 7", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Write a Java program to find the factorial of a number using a while loop.",
+
+  questionTamil:
+    "While Loop-ஐ பயன்படுத்தி ஒரு எண்ணின் Factorial-ஐ கண்டறியும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Multiply the numbers from 1 to the given number using a while loop.",
+
+  hintTamil:
+    "1 முதல் கொடுக்கப்பட்ட எண் வரை உள்ள எண்களை While Loop மூலம் பெருக்குங்கள்.",
+
+  expectedOutput: `Factorial = 120`,
+
+  expectedOutputTamil: `Factorial = 120`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int number = 5;
+        int i = 1;
+        int factorial = 1;
+
+        while (i <= number) {
+
+            factorial = factorial * i;
+            i++;
+
+        }
+
+        System.out.println("Factorial = " + factorial);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 8, 
         title: "Question 8", 
