@@ -7153,12 +7153,54 @@ u`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 3, 
-        title: "Question 3", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to create an integer array with 5 elements and print all the elements using a for loop.",
+
+  questionTamil:
+    "5 Integer Elements கொண்ட ஒரு Array-ஐ உருவாக்கி, அனைத்து Elements-ஐயும் For Loop-ஐ பயன்படுத்தி Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use a for loop from index 0 to array length - 1.",
+
+  hintTamil:
+    "Index 0 முதல் Array Length - 1 வரை For Loop-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `10
+20
+30
+40
+50`,
+
+  expectedOutputTamil: `10
+20
+30
+40
+50`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {10, 20, 30, 40, 50};
+
+        for (int i = 0; i < numbers.length; i++) {
+
+            System.out.println(numbers[i]);
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 4,
         title: "Question 4",
