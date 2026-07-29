@@ -5132,11 +5132,51 @@ Eligible for Promotion`,
   completed: false,
 },
       {
-        id: 2,
-        title: "Question 2", 
-        locked: false, 
-        completed: false 
-        },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to print numbers from 5 to 1 using a for loop.",
+
+  questionTamil:
+    "For Loop-ஐ பயன்படுத்தி 5 முதல் 1 வரை உள்ள எண்களை Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Start the loop from 5 and decrement the value until it reaches 1.",
+
+  hintTamil:
+    "Loop-ஐ 5-ல் தொடங்கி ஒவ்வொரு முறையும் 1-ஆல் குறையச் செய்யுங்கள்.",
+
+  expectedOutput: `5
+4
+3
+2
+1`,
+
+  expectedOutputTamil: `5
+4
+3
+2
+1`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        for (int i = 5; i >= 1; i--) {
+
+            System.out.println(i);
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 3, 
         title: "Question 3", 
