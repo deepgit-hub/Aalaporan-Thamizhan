@@ -2868,12 +2868,34 @@ Senior Citizen`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 4,
-        title: "Question 4",
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to check if a number is divisible by 5. If it is divisible, then check whether it is also divisible by 10.",
+
+  questionTamil:
+    "ஒரு எண் 5-ஆல் வகுபடுகிறதா என்பதை சரிபார்க்கவும். வகுபட்டால் அது 10-ஆலும் வகுபடுகிறதா என்பதை Nested If பயன்படுத்தி சரிபார்க்கவும்.",
+
+  hintEnglish:
+    "Use two if statements with % operator.",
+
+  hintTamil:
+    "% Operator உடன் இரண்டு if Statements பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Divisible by 5
+Divisible by 10`,
+
+  expectedOutputTamil: `Divisible by 5
+Divisible by 10`,
+
+  solution: "",
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 5, 
         title: "Question 5", 
