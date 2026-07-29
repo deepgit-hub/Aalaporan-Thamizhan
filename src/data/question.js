@@ -7737,12 +7737,61 @@ u`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 6, 
-        title: "Question 6", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 6,
+  title: "Question 6",
+
+  questionEnglish:
+    "Write a Java program to find and print the largest element in a 2 × 2 integer array.",
+
+  questionTamil:
+    "2 × 2 Integer Array-ல் உள்ள மிகப்பெரிய Element-ஐ கண்டறிந்து Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Assume the first element is the largest. Compare it with every element using nested for loops.",
+
+  hintTamil:
+    "முதல் Element-ஐ மிகப்பெரியது என்று எடுத்துக்கொண்டு, Nested For Loop மூலம் அனைத்து Elements-உடனும் ஒப்பிடுங்கள்.",
+
+  expectedOutput: `Largest Element = 40`,
+
+  expectedOutputTamil: `மிகப்பெரிய Element = 40`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int[][] numbers = {
+            {10, 20},
+            {30, 40}
+        };
+
+        int largest = numbers[0][0];
+
+        for (int i = 0; i < numbers.length; i++) {
+
+            for (int j = 0; j < numbers[i].length; j++) {
+
+                if (numbers[i][j] > largest) {
+
+                    largest = numbers[i][j];
+
+                }
+
+            }
+
+        }
+
+        System.out.println("Largest Element = " + largest);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 7,
         title: "Question 7", 
