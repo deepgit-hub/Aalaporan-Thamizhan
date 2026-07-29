@@ -7082,11 +7082,41 @@ u`,
 
     questions: [
       {
-         id: 1,
-         title: "Question 1", 
-         locked: false, 
-         completed: false 
-        },
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Write a Java program to create an integer array with 5 elements and print the first element.",
+
+  questionTamil:
+    "5 Integer Elements கொண்ட ஒரு Array-ஐ உருவாக்கி, அதன் முதல் Element-ஐ Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create an array using curly braces {} and access the first element using index 0.",
+
+  hintTamil:
+    "{} பயன்படுத்தி Array-ஐ உருவாக்கி, முதல் Element-ஐ Index 0 மூலம் அணுகுங்கள்.",
+
+  expectedOutput: `10`,
+
+  expectedOutputTamil: `10`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {10, 20, 30, 40, 50};
+
+        System.out.println(numbers[0]);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2", 
