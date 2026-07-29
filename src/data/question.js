@@ -8655,12 +8655,56 @@ Negative Count = 2`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 6, 
-        title: "Question 6", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 6,
+  title: "Question 6",
+
+  questionEnglish:
+    "Write a Java program to create a method that returns the largest of two integers and print the returned value.",
+
+  questionTamil:
+    "இரண்டு Integer-களில் பெரிய எண்ணை Return செய்யும் Method-ஐ உருவாக்கி, Return செய்யப்பட்ட மதிப்பை Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use an if-else statement inside the method and return the larger number.",
+
+  hintTamil:
+    "Method-க்குள் if-else Statement பயன்படுத்தி பெரிய எண்ணை Return செய்யுங்கள்.",
+
+  expectedOutput: `Largest = 20`,
+
+  expectedOutputTamil: `பெரிய எண் = 20`,
+
+  solution: `public class Main {
+
+    static int findLargest(int a, int b) {
+
+        if (a > b) {
+
+            return a;
+
+        } else {
+
+            return b;
+
+        }
+
+    }
+
+    public static void main(String[] args) {
+
+        int largest = findLargest(10, 20);
+
+        System.out.println("Largest = " + largest);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 7,
         title: "Question 7", 
