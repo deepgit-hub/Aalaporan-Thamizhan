@@ -2854,7 +2854,27 @@ Excellent`,
   expectedOutputTamil: `Pass
 Excellent`,
 
-  solution: "",
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int mark = 95;
+
+        if (mark >= 35) {
+
+            System.out.println("Pass");
+
+            if (mark > 90) {
+
+                System.out.println("Excellent");
+
+            }
+
+        }
+
+    }
+
+}`,
 
   challenge: false,
   locked: false,
