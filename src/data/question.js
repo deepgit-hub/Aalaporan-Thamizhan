@@ -3564,12 +3564,63 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 6, 
-        title: "Question 6", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to print a grade based on marks using switch case. (Use grade characters A, B, C and D)",
+
+  questionTamil:
+    "Grade Character (A, B, C, D)-ஐ பயன்படுத்தி அதற்கான செய்தியை Switch Case மூலம் Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Store the grade in a character variable.",
+
+  hintTamil:
+    "Grade-ஐ Character Variable-ல் சேமித்து Switch பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Excellent`,
+
+  expectedOutputTamil: `Excellent`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        char grade = 'A';
+
+        switch (grade) {
+
+            case 'A':
+                System.out.println("Excellent");
+                break;
+
+            case 'B':
+                System.out.println("Very Good");
+                break;
+
+            case 'C':
+                System.out.println("Good");
+                break;
+
+            case 'D':
+                System.out.println("Pass");
+                break;
+
+            default:
+                System.out.println("Invalid Grade");
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 7,
         title: "Question 7", 
