@@ -7686,12 +7686,57 @@ u`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 5, 
-        title: "Question 5", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to find and print the sum of all elements in a 2 × 2 integer array.",
+
+  questionTamil:
+    "2 × 2 Integer Array-ல் உள்ள அனைத்து Elements-இன் கூட்டுத்தொகையை கண்டறிந்து Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use nested for loops to traverse the array and add each element to a sum variable.",
+
+  hintTamil:
+    "Nested For Loop-ஐ பயன்படுத்தி அனைத்து Elements-ஐ Traverse செய்து Sum Variable-ல் சேர்க்கவும்.",
+
+  expectedOutput: `Sum = 100`,
+
+  expectedOutputTamil: `கூட்டுத்தொகை = 100`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int[][] numbers = {
+            {10, 20},
+            {30, 40}
+        };
+
+        int sum = 0;
+
+        for (int i = 0; i < numbers.length; i++) {
+
+            for (int j = 0; j < numbers[i].length; j++) {
+
+                sum = sum + numbers[i][j];
+
+            }
+
+        }
+
+        System.out.println("Sum = " + sum);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 6, 
         title: "Question 6", 
