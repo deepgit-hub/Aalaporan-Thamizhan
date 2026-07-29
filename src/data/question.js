@@ -6671,12 +6671,70 @@ Exit Selected`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 4,
-        title: "Question 4",
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to print numbers from 1 to 10 using a while loop. Skip the number 5 using the continue statement.",
+
+  questionTamil:
+    "While Loop-ஐ பயன்படுத்தி 1 முதல் 10 வரை உள்ள எண்களை Print செய்யுங்கள். Continue Statement-ஐ பயன்படுத்தி 5 என்ற எண்ணை Skip செய்யுங்கள்.",
+
+  hintEnglish:
+    "Remember to increment the variable before using continue to avoid an infinite loop.",
+
+  hintTamil:
+    "Infinite Loop வராமல் இருக்க continue பயன்படுத்துவதற்கு முன் Variable-ஐ Increment செய்ய நினைவில் கொள்ளுங்கள்.",
+
+  expectedOutput: `1
+2
+3
+4
+6
+7
+8
+9
+10`,
+
+  expectedOutputTamil: `1
+2
+3
+4
+6
+7
+8
+9
+10`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int i = 1;
+
+        while (i <= 10) {
+
+            if (i == 5) {
+
+                i++;
+                continue;
+
+            }
+
+            System.out.println(i);
+            i++;
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 5, 
         title: "Question 5", 
