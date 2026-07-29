@@ -3238,11 +3238,74 @@ Eligible for Promotion`,
 
     questions: [
       {
-         id: 1,
-         title: "Question 1", 
-         locked: false, 
-         completed: false 
-        },
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Write a Java program to print the day of the week based on a number (1-7) using switch case.",
+
+  questionTamil:
+    "1 முதல் 7 வரை உள்ள எண்ணை பயன்படுத்தி வாரத்தின் நாளை Switch Case மூலம் Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use switch with case values from 1 to 7.",
+
+  hintTamil:
+    "1 முதல் 7 வரை case-களை பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Monday`,
+
+  expectedOutputTamil: `Monday`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int day = 1;
+
+        switch (day) {
+
+            case 1:
+                System.out.println("Monday");
+                break;
+
+            case 2:
+                System.out.println("Tuesday");
+                break;
+
+            case 3:
+                System.out.println("Wednesday");
+                break;
+
+            case 4:
+                System.out.println("Thursday");
+                break;
+
+            case 5:
+                System.out.println("Friday");
+                break;
+
+            case 6:
+                System.out.println("Saturday");
+                break;
+
+            case 7:
+                System.out.println("Sunday");
+                break;
+
+            default:
+                System.out.println("Invalid Day");
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2", 
