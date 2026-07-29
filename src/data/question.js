@@ -4970,12 +4970,56 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 8, 
-        title: "Question 8", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to print the squares of numbers from 1 to 5 using a do while loop.",
+
+  questionTamil:
+    "Do While Loop-ஐ பயன்படுத்தி 1 முதல் 5 வரை உள்ள எண்களின் Square-ஐ Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Print the square of each number inside the do while loop.",
+
+  hintTamil:
+    "Do While Loop-க்குள் ஒவ்வொரு எண்ணின் Square-ஐ Print செய்யுங்கள்.",
+
+  expectedOutput: `1
+4
+9
+16
+25`,
+
+  expectedOutputTamil: `1
+4
+9
+16
+25`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int i = 1;
+
+        do {
+
+            System.out.println(i * i);
+
+            i++;
+
+        } while (i <= 5);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+} ,
       { id: 9,
         title: "Challenge Question 9", 
         locked: true,
