@@ -5269,12 +5269,62 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 5, 
-        title: "Question 5", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to print the multiplication table of 5 using a for loop.",
+
+  questionTamil:
+    "For Loop-ஐ பயன்படுத்தி 5-ன் பெருக்கல் வாய்ப்பாட்டை Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Run the loop from 1 to 10 and multiply each value by 5.",
+
+  hintTamil:
+    "Loop-ஐ 1 முதல் 10 வரை இயக்கி ஒவ்வொரு எண்ணையும் 5-ஆல் பெருக்குங்கள்.",
+
+  expectedOutput: `5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50`,
+
+  expectedOutputTamil: `5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 10; i++) {
+
+            System.out.println("5 x " + i + " = " + (5 * i));
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 6, 
         title: "Question 6", 
