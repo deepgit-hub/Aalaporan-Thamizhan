@@ -7505,11 +7505,44 @@ u`,
 
     questions: [
       {
-         id: 1,
-         title: "Question 1", 
-         locked: false, 
-         completed: false 
-        },
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Write a Java program to create a 2 × 2 integer array and print the first element.",
+
+  questionTamil:
+    "2 × 2 Integer Array-ஐ உருவாக்கி, அதன் முதல் Element-ஐ Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create a 2D array using nested curly braces and access the first element using index [0][0].",
+
+  hintTamil:
+    "Nested Curly Braces பயன்படுத்தி 2D Array-ஐ உருவாக்கி, முதல் Element-ஐ [0][0] Index மூலம் அணுகுங்கள்.",
+
+  expectedOutput: `10`,
+
+  expectedOutputTamil: `10`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int[][] numbers = {
+            {10, 20},
+            {30, 40}
+        };
+
+        System.out.println(numbers[0][0]);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2", 
