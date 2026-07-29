@@ -8442,11 +8442,45 @@ Negative Count = 2`,
 
     questions: [
       {
-         id: 1,
-         title: "Question 1", 
-         locked: false, 
-         completed: false 
-        },
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Write a Java program to create a method named displayMessage() that prints 'Welcome to Java'. Call the method from the main method.",
+
+  questionTamil:
+    "displayMessage() என்ற Method-ஐ உருவாக்கி 'Welcome to Java' என்று Print செய்யுங்கள். அந்த Method-ஐ main Method-லிருந்து Call செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create a static method named displayMessage() and call it inside the main method.",
+
+  hintTamil:
+    "displayMessage() என்ற Static Method-ஐ உருவாக்கி, main Method-க்குள் Call செய்யுங்கள்.",
+
+  expectedOutput: `Welcome to Java`,
+
+  expectedOutputTamil: `Welcome to Java`,
+
+  solution: `public class Main {
+
+    static void displayMessage() {
+
+        System.out.println("Welcome to Java");
+
+    }
+
+    public static void main(String[] args) {
+
+        displayMessage();
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2", 
