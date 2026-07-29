@@ -2980,12 +2980,34 @@ Can Drive`,
   locked: false,
  completed: false,
 },
-      { 
-        id: 8, 
-        title: "Question 8", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to check if a customer purchased items worth more than $100. If yes, then check whether the customer is a premium member and print 'Discount Applied'.",
+
+  questionTamil:
+    "ஒரு Customer $100-க்கு மேல் பொருட்கள் வாங்கியுள்ளாரா என்பதை சரிபார்க்கவும். வாங்கியிருந்தால் அவர் Premium Member ஆவாரா என்பதை Nested If பயன்படுத்தி 'Discount Applied' என்று Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use one if inside another if.",
+
+  hintTamil:
+    "ஒரு if Statement-க்குள் மற்றொரு if Statement பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Purchase Eligible
+Discount Applied`,
+
+  expectedOutputTamil: `Purchase Eligible
+Discount Applied`,
+
+  solution: "",
+
+  challenge: false,
+  locked: false,
+ completed: false,
+},
       { id: 9,
         title: "Challenge Question 9", 
         locked: true,
