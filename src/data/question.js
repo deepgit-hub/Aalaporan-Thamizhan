@@ -5223,12 +5223,52 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 4,
-        title: "Question 4",
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to print all odd numbers from 1 to 9 using a for loop.",
+
+  questionTamil:
+    "For Loop-ஐ பயன்படுத்தி 1 முதல் 9 வரை உள்ள அனைத்து Odd எண்களையும் Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Start from 1 and increment the loop variable by 2.",
+
+  hintTamil:
+    "1-ல் தொடங்கி ஒவ்வொரு முறையும் 2-ஆல் Increment செய்யுங்கள்.",
+
+  expectedOutput: `1
+3
+5
+7
+9`,
+
+  expectedOutputTamil: `1
+3
+5
+7
+9`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 9; i += 2) {
+
+            System.out.println(i);
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 5, 
         title: "Question 5", 
