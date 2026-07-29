@@ -7118,11 +7118,41 @@ u`,
   completed: false,
 },
       {
-        id: 2,
-        title: "Question 2", 
-        locked: false, 
-        completed: false 
-        },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to create an integer array with 5 elements and print the last element.",
+
+  questionTamil:
+    "5 Integer Elements கொண்ட ஒரு Array-ஐ உருவாக்கி, அதன் கடைசி Element-ஐ Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "The last element of a 5-element array is at index 4.",
+
+  hintTamil:
+    "5 Elements கொண்ட Array-இன் கடைசி Element-ன் Index 4 ஆகும்.",
+
+  expectedOutput: `50`,
+
+  expectedOutputTamil: `50`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {10, 20, 30, 40, 50};
+
+        System.out.println(numbers[4]);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 3, 
         title: "Question 3", 
