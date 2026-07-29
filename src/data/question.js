@@ -2896,12 +2896,34 @@ Divisible by 10`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 5, 
-        title: "Question 5", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to check if a salary is greater than 30000. If yes, then check whether it is greater than 70000 and print 'High Salary'.",
+
+  questionTamil:
+    "சம்பளம் 30000-ஐ விட அதிகமா என்பதை சரிபார்க்கவும். அதிகமாக இருந்தால் அது 70000-ஐ விட அதிகமா என்று Nested If பயன்படுத்தி 'High Salary' என்று Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Check salary >30000, then salary >70000.",
+
+  hintTamil:
+    "முதலில் salary >30000, பிறகு salary >70000.",
+
+  expectedOutput: `Salary Eligible
+High Salary`,
+
+  expectedOutputTamil: `Salary Eligible
+High Salary`,
+
+  solution: "",
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 6, 
         title: "Question 6", 
