@@ -5085,12 +5085,52 @@ Eligible for Promotion`,
   title: "For Loop",
 
     questions: [
-      {
-         id: 1,
-         title: "Question 1", 
-         locked: false, 
-         completed: false 
-        },
+     {
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Write a Java program to print numbers from 1 to 5 using a for loop.",
+
+  questionTamil:
+    "For Loop-ஐ பயன்படுத்தி 1 முதல் 5 வரை உள்ள எண்களை Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Initialize the loop variable to 1 and continue until it reaches 5.",
+
+  hintTamil:
+    "Loop Variable-ஐ 1-ல் தொடங்கி 5 வரை இயக்குங்கள்.",
+
+  expectedOutput: `1
+2
+3
+4
+5`,
+
+  expectedOutputTamil: `1
+2
+3
+4
+5`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 5; i++) {
+
+            System.out.println(i);
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2", 
