@@ -7463,12 +7463,40 @@ u`,
   locked: true,
   completed: false,
 },
-      { 
-        id: 10, 
-        title: "Challenge Question 10", 
-        locked: true, 
-        completed: false 
-        },
+      {
+  id: 10,
+  title: "Challenge Question 10",
+
+  questionEnglish:
+    "Write a Java program to print the elements of an integer array in reverse order.",
+
+  questionTamil:
+    "ஒரு Integer Array-ல் உள்ள அனைத்து Elements-ஐ தலைகீழ் வரிசையில் (Reverse Order) Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Start the loop from the last index and move towards index 0.",
+
+  hintTamil:
+    "Loop-ஐ கடைசி Index-ல் இருந்து தொடங்கி, Index 0 வரை பின்னோக்கி இயக்குங்கள்.",
+
+  expectedOutput: `50
+40
+30
+20
+10`,
+
+  expectedOutputTamil: `50
+40
+30
+20
+10`,
+
+  solution: "NO SOLTUION!!!",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
     ],
   },
   {
