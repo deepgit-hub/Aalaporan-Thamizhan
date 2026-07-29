@@ -5562,11 +5562,55 @@ Eligible for Promotion`,
   completed: false,
 },
       {
-        id: 2,
-        title: "Question 2", 
-        locked: false, 
-        completed: false 
-        },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to print a 4 × 4 number pattern using nested for loops.",
+
+  questionTamil:
+    "Nested For Loop-ஐ பயன்படுத்தி 4 × 4 Number Pattern-ஐ Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Print the number 1 in every column for each row.",
+
+  hintTamil:
+    "ஒவ்வொரு Row-விலும் Column-களில் 1-ஐ Print செய்யுங்கள்.",
+
+  expectedOutput: `1 1 1 1
+1 1 1 1
+1 1 1 1
+1 1 1 1`,
+
+  expectedOutputTamil: `1 1 1 1
+1 1 1 1
+1 1 1 1
+1 1 1 1`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 4; i++) {
+
+            for (int j = 1; j <= 4; j++) {
+
+                System.out.print("1 ");
+
+            }
+
+            System.out.println();
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 3, 
         title: "Question 3", 
