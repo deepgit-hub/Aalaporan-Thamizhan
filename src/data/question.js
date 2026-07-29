@@ -7966,11 +7966,41 @@ Column 2 கூட்டுத்தொகை = 60`,
 
     questions: [
       {
-         id: 1,
-         title: "Question 1", 
-         locked: false, 
-         completed: false 
-        },
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Write a Java program to count the total number of elements in an integer array.",
+
+  questionTamil:
+    "ஒரு Integer Array-ல் உள்ள மொத்த Elements-இன் எண்ணிக்கையை கண்டறிந்து Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use the length property of the array.",
+
+  hintTamil:
+    "Array-ன் length Property-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Total Elements = 5`,
+
+  expectedOutputTamil: `மொத்த Elements = 5`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {10, 20, 30, 40, 50};
+
+        System.out.println("Total Elements = " + numbers.length);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2", 
