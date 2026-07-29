@@ -6446,7 +6446,7 @@ Eligible for Promotion`,
 
   expectedOutputTamil: `எண் கண்டுபிடிக்கப்பட்டது`,
 
-  solution: "",
+  solution: "NO SOLUTION!!!",
 
   challenge: true,
   locked: true,
