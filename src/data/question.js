@@ -8482,11 +8482,57 @@ Negative Count = 2`,
   completed: false,
 },
       {
-        id: 2,
-        title: "Question 2", 
-        locked: false, 
-        completed: false 
-        },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to create a method that prints numbers from 1 to 5. Call the method from the main method.",
+
+  questionTamil:
+    "1 முதல் 5 வரை உள்ள எண்களை Print செய்யும் Method-ஐ உருவாக்கி, அதை main Method-லிருந்து Call செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Place the for loop inside a separate method and call it from main.",
+
+  hintTamil:
+    "For Loop-ஐ தனி Method-க்குள் எழுதி, அதை main Method-லிருந்து Call செய்யுங்கள்.",
+
+  expectedOutput: `1
+2
+3
+4
+5`,
+
+  expectedOutputTamil: `1
+2
+3
+4
+5`,
+
+  solution: `public class Main {
+
+    static void printNumbers() {
+
+        for (int i = 1; i <= 5; i++) {
+
+            System.out.println(i);
+
+        }
+
+    }
+
+    public static void main(String[] args) {
+
+        printNumbers();
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 3, 
         title: "Question 3", 
