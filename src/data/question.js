@@ -3046,7 +3046,29 @@ Eligible for Exam`,
   expectedOutputTamil: `Attendance OK
 Eligible for Exam`,
 
-  solution: "",
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int attendance = 80;
+
+        int mark = 65;
+
+        if (attendance > 75) {
+
+            System.out.println("Attendance OK");
+
+            if (mark > 50) {
+
+                System.out.println("Eligible for Exam");
+
+            }
+
+        }
+
+    }
+
+}`,
 
   challenge: false,
   locked: false,
