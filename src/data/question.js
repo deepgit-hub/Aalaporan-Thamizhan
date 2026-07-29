@@ -2950,7 +2950,27 @@ Divisible by 10`,
   expectedOutputTamil: `Divisible by 5
 Divisible by 10`,
 
-  solution: "",
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int number = 20;
+
+        if (number % 5 == 0) {
+
+            System.out.println("Divisible by 5");
+
+            if (number % 10 == 0) {
+
+                System.out.println("Divisible by 10");
+
+            }
+
+        }
+
+    }
+
+}`,
 
   challenge: false,
   locked: false,
