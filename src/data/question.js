@@ -6452,12 +6452,34 @@ Eligible for Promotion`,
   locked: true,
   completed: false,
 },
-      { 
-        id: 10, 
-        title: "Challenge Question 10", 
-        locked: true, 
-        completed: false 
-        },
+      {
+  id: 10,
+  title: "Challenge Question 10",
+
+  questionEnglish:
+    "Write a Java program to display a menu repeatedly until the user selects the Exit option using the break statement.",
+
+  questionTamil:
+    "Break Statement-ஐ பயன்படுத்தி பயனர் Exit Option-ஐ தேர்வு செய்யும் வரை Menu-ஐ மீண்டும் மீண்டும் காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use an infinite loop and stop it when the Exit option is selected using break.",
+
+  hintTamil:
+    "Infinite Loop-ஐ பயன்படுத்தி, Exit Option தேர்வு செய்யப்பட்டவுடன் break மூலம் Loop-ஐ நிறுத்துங்கள்.",
+
+  expectedOutput: `Menu Displayed
+Exit Selected`,
+
+  expectedOutputTamil: `மெனு காட்டப்பட்டது
+வெளியேறும் விருப்பம் தேர்வு செய்யப்பட்டது`,
+
+  solution: "NO SOLUTION!!!",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
     ],
   },
   {
