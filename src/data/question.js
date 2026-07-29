@@ -6609,12 +6609,68 @@ Exit Selected`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 3, 
-        title: "Question 3", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to print numbers from 1 to 20. Skip all odd numbers using the continue statement.",
+
+  questionTamil:
+    "1 முதல் 20 வரை உள்ள எண்களை Print செய்யுங்கள். Continue Statement-ஐ பயன்படுத்தி அனைத்து Odd எண்களையும் Skip செய்யுங்கள்.",
+
+  hintEnglish:
+    "Check whether the number is not divisible by 2. If true, use continue.",
+
+  hintTamil:
+    "எண் 2-ஆல் வகுபடவில்லையா என்று சரிபார்த்து continue பயன்படுத்துங்கள்.",
+
+  expectedOutput: `2
+4
+6
+8
+10
+12
+14
+16
+18
+20`,
+
+  expectedOutputTamil: `2
+4
+6
+8
+10
+12
+14
+16
+18
+20`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 20; i++) {
+
+            if (i % 2 != 0) {
+
+                continue;
+
+            }
+
+            System.out.println(i);
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 4,
         title: "Question 4",
