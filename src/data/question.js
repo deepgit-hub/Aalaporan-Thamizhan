@@ -7251,12 +7251,50 @@ u`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 5, 
-        title: "Question 5", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to find and print the sum of all elements in an integer array.",
+
+  questionTamil:
+    "ஒரு Integer Array-ல் உள்ள அனைத்து Elements-இன் கூட்டுத்தொகையை கண்டறிந்து Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use a variable to store the sum and add each array element inside a for loop.",
+
+  hintTamil:
+    "கூட்டுத்தொகையை சேமிக்க ஒரு Variable பயன்படுத்தி, For Loop-க்குள் ஒவ்வொரு Array Element-ஐயும் சேர்க்கவும்.",
+
+  expectedOutput: `Sum = 150`,
+
+  expectedOutputTamil: `கூட்டுத்தொகை = 150`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {10, 20, 30, 40, 50};
+
+        int sum = 0;
+
+        for (int i = 0; i < numbers.length; i++) {
+
+            sum = sum + numbers[i];
+
+        }
+
+        System.out.println("Sum = " + sum);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 6, 
         title: "Question 6", 
