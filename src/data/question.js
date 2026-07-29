@@ -8613,12 +8613,48 @@ Negative Count = 2`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 5, 
-        title: "Question 5", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to create a method that returns the sum of two integers and print the returned value.",
+
+  questionTamil:
+    "இரண்டு Integer-களின் கூட்டுத்தொகையை Return செய்யும் Method-ஐ உருவாக்கி, Return செய்யப்பட்ட மதிப்பை Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use the return keyword to return the sum and store it in a variable inside the main method.",
+
+  hintTamil:
+    "return Keyword-ஐ பயன்படுத்தி கூட்டுத்தொகையை Return செய்து, main Method-ல் ஒரு Variable-ல் சேமித்து Print செய்யுங்கள்.",
+
+  expectedOutput: `Sum = 30`,
+
+  expectedOutputTamil: `கூட்டுத்தொகை = 30`,
+
+  solution: `public class Main {
+
+    static int addNumbers(int a, int b) {
+
+        return a + b;
+
+    }
+
+    public static void main(String[] args) {
+
+        int sum = addNumbers(10, 20);
+
+        System.out.println("Sum = " + sum);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 6, 
         title: "Question 6", 
