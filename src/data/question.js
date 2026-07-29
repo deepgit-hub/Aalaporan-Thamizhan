@@ -3735,11 +3735,32 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { id: 9,
-        title: "Challenge Question 9", 
-        locked: true,
-        completed: false 
-        },
+      {
+  id: 9,
+  title: "Challenge Question 9",
+
+  questionEnglish:
+    "Write a Java program to build a simple calculator using switch case. Perform Addition, Subtraction, Multiplication and Division based on the operator entered by the user.",
+
+  questionTamil:
+    "பயனர் கொடுக்கும் Operator (+, -, *, /)-ஐ பயன்படுத்தி Switch Case மூலம் ஒரு Simple Calculator Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use a character variable to represent the operator and create separate cases for '+', '-', '*', and '/'.",
+
+  hintTamil:
+    "Operator-ஐ Character Variable-ல் சேமித்து '+', '-', '*', '/' ஆகியவற்றிற்கு தனித்தனி Case-களை உருவாக்குங்கள்.",
+
+  expectedOutput: `Addition = 30`,
+
+  expectedOutputTamil: `Addition = 30`,
+
+  solution: "NO SOLUTION!!!",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
       { 
         id: 10, 
         title: "Challenge Question 10", 
