@@ -6952,12 +6952,58 @@ Exit Selected`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 8, 
-        title: "Question 8", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to print all positive numbers from an array. Skip the negative numbers using the continue statement.",
+
+  questionTamil:
+    "ஒரு Array-ல் உள்ள அனைத்து Positive எண்களையும் Print செய்யுங்கள். Negative எண்களை Continue Statement-ஐ பயன்படுத்தி Skip செய்யுங்கள்.",
+
+  hintEnglish:
+    "Traverse the array. If an element is negative, use continue.",
+
+  hintTamil:
+    "Array-ஐ Traverse செய்யுங்கள். ஒரு Element Negative ஆக இருந்தால் continue பயன்படுத்துங்கள்.",
+
+  expectedOutput: `5
+8
+12
+7`,
+
+  expectedOutputTamil: `5
+8
+12
+7`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {5, -2, 8, -6, 12, -1, 7};
+
+        for (int i = 0; i < numbers.length; i++) {
+
+            if (numbers[i] < 0) {
+
+                continue;
+
+            }
+
+            System.out.println(numbers[i]);
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { id: 9,
         title: "Challenge Question 9", 
         locked: true,
