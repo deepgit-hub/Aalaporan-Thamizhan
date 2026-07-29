@@ -6426,11 +6426,32 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { id: 9,
-        title: "Challenge Question 9", 
-        locked: true,
-        completed: false 
-        },
+      {
+  id: 9,
+  title: "Challenge Question 9",
+
+  questionEnglish:
+    "Write a Java program to search for a given number in an array. Stop searching immediately when the number is found using the break statement.",
+
+  questionTamil:
+    "ஒரு Array-ல் கொடுக்கப்பட்ட எண்ணை தேடுங்கள். அந்த எண் கிடைத்தவுடன் Break Statement பயன்படுத்தி Loop-ஐ உடனடியாக நிறுத்துங்கள்.",
+
+  hintEnglish:
+    "Use a loop to traverse the array and compare each element with the given number. Use break when a match is found.",
+
+  hintTamil:
+    "Loop மூலம் Array-ஐ Traverse செய்து ஒவ்வொரு Element-ஐயும் கொடுக்கப்பட்ட எண்ணுடன் ஒப்பிடுங்கள். பொருந்தினால் break பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Number Found`,
+
+  expectedOutputTamil: `எண் கண்டுபிடிக்கப்பட்டது`,
+
+  solution: "",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
       { 
         id: 10, 
         title: "Challenge Question 10", 
