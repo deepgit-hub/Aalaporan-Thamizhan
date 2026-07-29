@@ -3621,12 +3621,63 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 7,
-        title: "Question 7", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Write a Java program to print the name of a season based on a number (1-4) using switch case.",
+
+  questionTamil:
+    "1 முதல் 4 வரை உள்ள எண்ணை பயன்படுத்தி பருவ காலத்தின் பெயரை Switch Case மூலம் Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create four cases for the four seasons.",
+
+  hintTamil:
+    "நான்கு Seasons-க்கு நான்கு case-களை உருவாக்குங்கள்.",
+
+  expectedOutput: `Summer`,
+
+  expectedOutputTamil: `Summer`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int season = 2;
+
+        switch (season) {
+
+            case 1:
+                System.out.println("Winter");
+                break;
+
+            case 2:
+                System.out.println("Summer");
+                break;
+
+            case 3:
+                System.out.println("Rainy");
+                break;
+
+            case 4:
+                System.out.println("Spring");
+                break;
+
+            default:
+                System.out.println("Invalid Season");
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 8, 
         title: "Question 8", 
