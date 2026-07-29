@@ -11,35 +11,50 @@ function Home() {
     <div className="home-page">
       <div className="container">
 
-        {/* Hero Section */}
+        {/* ================= HERO ================= */}
 
         <section className="hero">
 
-          <span className="hero-badge">
-            Java Learning Platform
-          </span>
+          <div className="hero-content">
 
-          <h1 className="hero-title">
-            Learn Java from Beginner to Advanced
-          </h1>
+            <span className="hero-badge">
+              🚀 A Learning Platform by DEEPAK
+            </span>
 
-          <p className="hero-description">
-            Master Java step by step through concepts, examples,
-            explanations, and coding practice.
-          </p>
+            <h1 className="hero-title">
+              Master Java Through Real Learning,
+              <br />
+              Not Just Theory
+            </h1>
+
+            <p className="hero-description">
+              Learn Java in both <strong>English</strong> and <strong>Tamil</strong> through
+              simple explanations, real-world applications, practical examples,
+              coding exercises, and challenge questions.
+            </p>
+
+            <p className="hero-description">
+              Don't just memorize syntax. Understand
+              <strong> where</strong>, <strong>why</strong>, and <strong>how</strong> every concept
+              is used in real software development.
+            </p>
+
+          </div>
 
         </section>
 
-        {/* Topic Section */}
+        {/* ================= ROADMAP ================= */}
 
         <section className="topics-section">
 
           <div className="section-header">
 
-            <h2>📚 Learning Roadmap</h2>
+            <h2>📚 Java Learning Roadmap</h2>
 
             <p>
-              Complete each topic to unlock the next one.
+              Complete each topic step by step. Every lesson unlocks
+              practical coding questions, explanations, and real-world
+              programming scenarios.
             </p>
 
           </div>
