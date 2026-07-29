@@ -8200,24 +8200,170 @@ Column 2 கூட்டுத்தொகை = 60`,
   locked: false,
  completed: false,
 },
-      { 
-        id: 6, 
-        title: "Question 6", 
-        locked: false, 
-        completed: false 
-        },
-      { 
-        id: 7,
-        title: "Question 7", 
-        locked: false, 
-        completed: false 
-        },
-      { 
-        id: 8, 
-        title: "Question 8", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 6,
+  title: "Question 6",
+
+  questionEnglish:
+    "Write a Java program to find and print the second largest element in an integer array.",
+
+  questionTamil:
+    "ஒரு Integer Array-ல் உள்ள இரண்டாவது மிகப்பெரிய Element-ஐ கண்டறிந்து Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "First find the largest element, then find the largest element smaller than it.",
+
+  hintTamil:
+    "முதலில் மிகப்பெரிய Element-ஐ கண்டறியுங்கள். பின்னர் அதைவிட சிறியவற்றில் மிகப்பெரிய Element-ஐ கண்டறியுங்கள்.",
+
+  expectedOutput: `Second Largest Element = 40`,
+
+  expectedOutputTamil: `இரண்டாவது மிகப்பெரிய Element = 40`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {10, 20, 30, 40, 50};
+
+        int largest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
+
+        for (int i = 0; i < numbers.length; i++) {
+
+            if (numbers[i] > largest) {
+
+                secondLargest = largest;
+                largest = numbers[i];
+
+            } else if (numbers[i] > secondLargest && numbers[i] != largest) {
+
+                secondLargest = numbers[i];
+
+            }
+
+        }
+
+        System.out.println("Second Largest Element = " + secondLargest);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
+      {
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Write a Java program to find and print the second smallest element in an integer array.",
+
+  questionTamil:
+    "ஒரு Integer Array-ல் உள்ள இரண்டாவது மிகச்சிறிய Element-ஐ கண்டறிந்து Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "First find the smallest element, then find the smallest element greater than it.",
+
+  hintTamil:
+    "முதலில் மிகச்சிறிய Element-ஐ கண்டறியுங்கள். பின்னர் அதைவிட பெரியவற்றில் மிகச்சிறிய Element-ஐ கண்டறியுங்கள்.",
+
+  expectedOutput: `Second Smallest Element = 20`,
+
+  expectedOutputTamil: `இரண்டாவது மிகச்சிறிய Element = 20`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {10, 20, 30, 40, 50};
+
+        int smallest = Integer.MAX_VALUE;
+        int secondSmallest = Integer.MAX_VALUE;
+
+        for (int i = 0; i < numbers.length; i++) {
+
+            if (numbers[i] < smallest) {
+
+                secondSmallest = smallest;
+                smallest = numbers[i];
+
+            } else if (numbers[i] < secondSmallest && numbers[i] != smallest) {
+
+                secondSmallest = numbers[i];
+
+            }
+
+        }
+
+        System.out.println("Second Smallest Element = " + secondSmallest);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
+      {
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to count the positive and negative numbers in an integer array.",
+
+  questionTamil:
+    "ஒரு Integer Array-ல் உள்ள Positive மற்றும் Negative எண்களின் எண்ணிக்கையை கண்டறிந்து Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use two variables to count positive and negative numbers while traversing the array.",
+
+  hintTamil:
+    "Array-ஐ Traverse செய்யும் போது Positive மற்றும் Negative எண்களை எண்ண இரண்டு Variables பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Positive Count = 3
+Negative Count = 2`,
+
+  expectedOutputTamil: `Positive Count = 3
+Negative Count = 2`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {10, -5, 20, -8, 30};
+
+        int positive = 0;
+        int negative = 0;
+
+        for (int i = 0; i < numbers.length; i++) {
+
+            if (numbers[i] >= 0) {
+
+                positive++;
+
+            } else {
+
+                negative++;
+
+            }
+
+        }
+
+        System.out.println("Positive Count = " + positive);
+        System.out.println("Negative Count = " + negative);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { id: 9,
         title: "Challenge Question 9", 
         locked: true,
