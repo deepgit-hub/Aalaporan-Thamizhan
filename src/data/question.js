@@ -4721,12 +4721,56 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 3, 
-        title: "Question 3", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to print all even numbers from 2 to 10 using a do while loop.",
+
+  questionTamil:
+    "Do While Loop-ஐ பயன்படுத்தி 2 முதல் 10 வரை உள்ள அனைத்து Even எண்களையும் Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Start from 2 and increase the value by 2 each time.",
+
+  hintTamil:
+    "2-ல் தொடங்கி ஒவ்வொரு முறையும் 2-ஆல் Increment செய்யுங்கள்.",
+
+  expectedOutput: `2
+4
+6
+8
+10`,
+
+  expectedOutputTamil: `2
+4
+6
+8
+10`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int i = 2;
+
+        do {
+
+            System.out.println(i);
+
+            i += 2;
+
+        } while (i <= 10);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 4,
         title: "Question 4",
