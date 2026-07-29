@@ -6187,7 +6187,7 @@ Eligible for Promotion`,
         title: "Question 5", 
         locked: false, 
         completed: false 
-        },
+        } ,
       { 
         id: 6, 
         title: "Question 6", 
