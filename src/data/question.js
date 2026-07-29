@@ -4308,12 +4308,56 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 4,
-        title: "Question 4",
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to print all odd numbers from 1 to 9 using a while loop.",
+
+  questionTamil:
+    "While Loop-ஐ பயன்படுத்தி 1 முதல் 9 வரை உள்ள அனைத்து Odd எண்களையும் Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Start from 1 and increase the value by 2 each time.",
+
+  hintTamil:
+    "1-ல் தொடங்கி ஒவ்வொரு முறையும் 2-ஆல் Increment செய்யுங்கள்.",
+
+  expectedOutput: `1
+3
+5
+7
+9`,
+
+  expectedOutputTamil: `1
+3
+5
+7
+9`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int i = 1;
+
+        while (i <= 9) {
+
+            System.out.println(i);
+
+            i += 2;
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 5, 
         title: "Question 5", 
