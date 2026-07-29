@@ -7544,17 +7544,95 @@ u`,
   completed: false,
 },
       {
-        id: 2,
-        title: "Question 2", 
-        locked: false, 
-        completed: false 
-        },
-      { 
-        id: 3, 
-        title: "Question 3", 
-        locked: false, 
-        completed: false 
-        },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to create a 2 × 2 integer array and print the last element.",
+
+  questionTamil:
+    "2 × 2 Integer Array-ஐ உருவாக்கி, அதன் கடைசி Element-ஐ Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "The last element of a 2 × 2 array is at index [1][1].",
+
+  hintTamil:
+    "2 × 2 Array-இன் கடைசி Element-ன் Index [1][1] ஆகும்.",
+
+  expectedOutput: `40`,
+
+  expectedOutputTamil: `40`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int[][] numbers = {
+            {10, 20},
+            {30, 40}
+        };
+
+        System.out.println(numbers[1][1]);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
+      {
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to print all elements of a 2 × 2 integer array using nested for loops.",
+
+  questionTamil:
+    "Nested For Loop-ஐ பயன்படுத்தி 2 × 2 Integer Array-ல் உள்ள அனைத்து Elements-ஐ Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use one loop for rows and another loop for columns.",
+
+  hintTamil:
+    "ஒரு Loop-ஐ Row-க்கும் மற்றொரு Loop-ஐ Column-க்கும் பயன்படுத்துங்கள்.",
+
+  expectedOutput: `10 20
+30 40`,
+
+  expectedOutputTamil: `10 20
+30 40`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int[][] numbers = {
+            {10, 20},
+            {30, 40}
+        };
+
+        for (int i = 0; i < numbers.length; i++) {
+
+            for (int j = 0; j < numbers[i].length; j++) {
+
+                System.out.print(numbers[i][j] + " ");
+
+            }
+
+            System.out.println();
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 4,
         title: "Question 4",
