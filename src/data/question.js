@@ -5803,12 +5803,56 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 7,
-        title: "Question 7", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Write a Java program to print the following pattern using nested for loops.",
+
+  questionTamil:
+    "Nested For Loop-ஐ பயன்படுத்தி கீழே கொடுக்கப்பட்ட Pattern-ஐ Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Print the row number in each column. The inner loop should run up to the current row number.",
+
+  hintTamil:
+    "ஒவ்வொரு Column-லும் Row Number-ஐ Print செய்யுங்கள். Inner Loop தற்போதைய Row Number வரை இயங்க வேண்டும்.",
+
+  expectedOutput: `1
+2 2
+3 3 3
+4 4 4 4`,
+
+  expectedOutputTamil: `1
+2 2
+3 3 3
+4 4 4 4`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 4; i++) {
+
+            for (int j = 1; j <= i; j++) {
+
+                System.out.print(i + " ");
+
+            }
+
+            System.out.println();
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 8, 
         title: "Question 8", 
