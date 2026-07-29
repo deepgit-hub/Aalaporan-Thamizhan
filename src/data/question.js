@@ -3678,12 +3678,63 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 8, 
-        title: "Question 8", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to print the name of a department based on a department code using switch case. (1-CSE, 2-IT, 3-ECE, 4-MECH)",
+
+  questionTamil:
+    "Department Code-ஐ பயன்படுத்தி Department பெயரை Switch Case மூலம் Print செய்யும் Java Program எழுதுங்கள். (1-CSE, 2-IT, 3-ECE, 4-MECH)",
+
+  hintEnglish:
+    "Use the department code in the switch statement.",
+
+  hintTamil:
+    "Department Code-ஐ Switch Statement-ல் பயன்படுத்துங்கள்.",
+
+  expectedOutput: `CSE`,
+
+  expectedOutputTamil: `CSE`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int department = 1;
+
+        switch (department) {
+
+            case 1:
+                System.out.println("CSE");
+                break;
+
+            case 2:
+                System.out.println("IT");
+                break;
+
+            case 3:
+                System.out.println("ECE");
+                break;
+
+            case 4:
+                System.out.println("MECH");
+                break;
+
+            default:
+                System.out.println("Invalid Department");
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { id: 9,
         title: "Challenge Question 9", 
         locked: true,
