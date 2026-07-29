@@ -3985,12 +3985,44 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 6, 
-        title: "Question 6", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to check whether a person is eligible to vote using the ternary operator.",
+
+  questionTamil:
+    "Ternary Operator-ஐ பயன்படுத்தி ஒருவர் வாக்களிக்க தகுதியானவரா என்பதை கண்டறியும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Check whether the age is greater than or equal to 18.",
+
+  hintTamil:
+    "Age 18 அல்லது அதற்கு மேல் உள்ளதா என்று சரிபார்க்கவும்.",
+
+  expectedOutput: `Eligible to Vote`,
+
+  expectedOutputTamil: `Eligible to Vote`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int age = 20;
+
+        String result = (age >= 18) ? "Eligible to Vote" : "Not Eligible to Vote";
+
+        System.out.println(result);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 7,
         title: "Question 7", 
