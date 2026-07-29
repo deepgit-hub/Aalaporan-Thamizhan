@@ -4159,11 +4159,55 @@ Eligible for Promotion`,
 
     questions: [
       {
-         id: 1,
-         title: "Question 1", 
-         locked: false, 
-         completed: false 
-        },
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Write a Java program to print numbers from 1 to 5 using a while loop.",
+
+  questionTamil:
+    "While Loop-ஐ பயன்படுத்தி 1 முதல் 5 வரை உள்ள எண்களை Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Initialize a variable to 1 and increment it until it reaches 5.",
+
+  hintTamil:
+    "ஒரு Variable-ஐ 1-ல் தொடங்கி 5 வரை Increment செய்யுங்கள்.",
+
+  expectedOutput: `1
+2
+3
+4
+5`,
+
+  expectedOutputTamil: `1
+2
+3
+4
+5`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int i = 1;
+
+        while (i <= 5) {
+
+            System.out.println(i);
+
+            i++;
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2", 
