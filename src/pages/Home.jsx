@@ -41,7 +41,7 @@ function Home() {
           <div className="hero-features">
             <div className="feature-card">
               <div className="feature-header">
-                <BookOpen className="feature-icon" />
+                <Languages className="feature-icon" />
 
                 <h3>English + Tamil</h3>
               </div>
@@ -54,7 +54,7 @@ function Home() {
 
             <div className="feature-card">
               <div className="feature-header">
-                <Globe className="feature-icon" />
+                <Globe2  className="feature-icon" />
 
                 <h3>Real-World Learning</h3>
               </div>
@@ -67,7 +67,7 @@ function Home() {
 
             <div className="feature-card">
               <div className="feature-header">
-                <Code2 className="feature-icon" />
+                <CodeXml  className="feature-icon" />
 
                 <h3>Practice While Learning</h3>
               </div>
