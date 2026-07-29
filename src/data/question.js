@@ -3307,11 +3307,94 @@ Eligible for Promotion`,
   completed: false,
 },
       {
-        id: 2,
-        title: "Question 2", 
-        locked: false, 
-        completed: false 
-        },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to print the month name based on a number (1-12) using switch case.",
+
+  questionTamil:
+    "1 முதல் 12 வரை உள்ள எண்ணை பயன்படுத்தி மாதத்தின் பெயரை Switch Case மூலம் Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create cases from 1 to 12.",
+
+  hintTamil:
+    "1 முதல் 12 வரை case-களை பயன்படுத்துங்கள்.",
+
+  expectedOutput: `March`,
+
+  expectedOutputTamil: `March`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int month = 3;
+
+        switch (month) {
+
+            case 1:
+                System.out.println("January");
+                break;
+
+            case 2:
+                System.out.println("February");
+                break;
+
+            case 3:
+                System.out.println("March");
+                break;
+
+            case 4:
+                System.out.println("April");
+                break;
+
+            case 5:
+                System.out.println("May");
+                break;
+
+            case 6:
+                System.out.println("June");
+                break;
+
+            case 7:
+                System.out.println("July");
+                break;
+
+            case 8:
+                System.out.println("August");
+                break;
+
+            case 9:
+                System.out.println("September");
+                break;
+
+            case 10:
+                System.out.println("October");
+                break;
+
+            case 11:
+                System.out.println("November");
+                break;
+
+            case 12:
+                System.out.println("December");
+                break;
+
+            default:
+                System.out.println("Invalid Month");
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 3, 
         title: "Question 3", 
