@@ -8152,12 +8152,54 @@ Column 2 கூட்டுத்தொகை = 60`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 5, 
-        title: "Question 5", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to count the odd numbers in an integer array.",
+
+  questionTamil:
+    "ஒரு Integer Array-ல் உள்ள Odd எண்களின் எண்ணிக்கையை கண்டறிந்து Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Traverse the array and check whether each element is not divisible by 2.",
+
+  hintTamil:
+    "Array-ஐ Traverse செய்து ஒவ்வொரு Element-மும் 2-ஆல் வகுபடவில்லையா என்று சரிபார்க்கவும்.",
+
+  expectedOutput: `Odd Count = 3`,
+
+  expectedOutputTamil: `Odd Count = 3`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {10, 15, 20, 25, 31};
+
+        int count = 0;
+
+        for (int i = 0; i < numbers.length; i++) {
+
+            if (numbers[i] % 2 != 0) {
+
+                count++;
+
+            }
+
+        }
+
+        System.out.println("Odd Count = " + count);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+ completed: false,
+},
       { 
         id: 6, 
         title: "Question 6", 
