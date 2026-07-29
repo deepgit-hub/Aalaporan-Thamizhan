@@ -2924,12 +2924,34 @@ High Salary`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 6, 
-        title: "Question 6", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 6,
+  title: "Question 6",
+
+  questionEnglish:
+    "Write a Java program to check if a student has attendance above 75%. If yes, then check whether the mark is above 50 and print 'Eligible for Exam'.",
+
+  questionTamil:
+    "மாணவரின் Attendance 75%-க்கு மேல் உள்ளதா என்பதை சரிபார்க்கவும். இருந்தால் மதிப்பெண் 50-க்கு மேல் உள்ளதா என்று Nested If பயன்படுத்தி 'Eligible for Exam' என்று Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use two nested conditions.",
+
+  hintTamil:
+    "Nested If பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Attendance OK
+Eligible for Exam`,
+
+  expectedOutputTamil: `Attendance OK
+Eligible for Exam`,
+
+  solution: "",
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 7,
         title: "Question 7", 
