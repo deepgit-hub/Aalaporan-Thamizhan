@@ -3096,7 +3096,29 @@ Can Drive`,
   expectedOutputTamil: `License Verified
 Can Drive`,
 
-  solution: "",
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        boolean hasLicense = true;
+
+        int age = 20;
+
+        if (hasLicense) {
+
+            System.out.println("License Verified");
+
+            if (age >= 18) {
+
+                System.out.println("Can Drive");
+
+            }
+
+        }
+
+    }
+
+}`,
 
   challenge: false,
   locked: false,
