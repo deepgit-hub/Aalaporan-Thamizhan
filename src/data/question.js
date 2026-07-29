@@ -4418,12 +4418,50 @@ Eligible for Promotion`,
   locked: false,
  completed: false,
 },
-      { 
-        id: 6, 
-        title: "Question 6", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 6,
+  title: "Question 6",
+
+  questionEnglish:
+    "Write a Java program to find the sum of numbers from 1 to 10 using a while loop.",
+
+  questionTamil:
+    "While Loop-ஐ பயன்படுத்தி 1 முதல் 10 வரை உள்ள எண்களின் கூட்டுத்தொகையை கண்டறியும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use a variable to store the sum and keep adding the current number inside the loop.",
+
+  hintTamil:
+    "கூட்டுத்தொகையை சேமிக்க ஒரு Variable பயன்படுத்தி, Loop-க்குள் ஒவ்வொரு எண்ணையும் சேர்க்கவும்.",
+
+  expectedOutput: `Sum = 55`,
+
+  expectedOutputTamil: `கூட்டுத்தொகை = 55`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int i = 1;
+        int sum = 0;
+
+        while (i <= 10) {
+
+            sum = sum + i;
+            i++;
+
+        }
+
+        System.out.println("Sum = " + sum);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 7,
         title: "Question 7", 
