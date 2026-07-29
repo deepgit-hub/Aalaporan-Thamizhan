@@ -7343,12 +7343,54 @@ u`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 7,
-        title: "Question 7", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Write a Java program to find and print the smallest element in an integer array.",
+
+  questionTamil:
+    "ஒரு Integer Array-ல் உள்ள மிகச்சிறிய Element-ஐ கண்டறிந்து Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Assume the first element is the smallest. Compare it with the remaining elements using a for loop.",
+
+  hintTamil:
+    "முதல் Element-ஐ மிகச்சிறியது என்று எடுத்துக்கொண்டு, மீதமுள்ள Elements-உடன் For Loop மூலம் ஒப்பிடுங்கள்.",
+
+  expectedOutput: `Smallest Element = 10`,
+
+  expectedOutputTamil: `மிகச்சிறிய Element = 10`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {10, 20, 30, 40, 50};
+
+        int smallest = numbers[0];
+
+        for (int i = 1; i < numbers.length; i++) {
+
+            if (numbers[i] < smallest) {
+
+                smallest = numbers[i];
+
+            }
+
+        }
+
+        System.out.println("Smallest Element = " + smallest);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 8, 
         title: "Question 8", 
