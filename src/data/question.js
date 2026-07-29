@@ -7930,12 +7930,34 @@ Row 2 கூட்டுத்தொகை = 70`,
   locked: true,
   completed: false,
 },
-      { 
-        id: 10, 
-        title: "Challenge Question 10", 
-        locked: true, 
-        completed: false 
-        },
+     {
+  id: 10,
+  title: "Challenge Question 10",
+
+  questionEnglish:
+    "Write a Java program to find and print the sum of each column in a 2 × 2 integer array.",
+
+  questionTamil:
+    "2 × 2 Integer Array-ல் உள்ள ஒவ்வொரு Column-ன் கூட்டுத்தொகையையும் கண்டறிந்து Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use the outer loop for columns and the inner loop for rows.",
+
+  hintTamil:
+    "Outer Loop-ஐ Column-களுக்கும் Inner Loop-ஐ Row-களுக்கும் பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Column 1 Sum = 40
+Column 2 Sum = 60`,
+
+  expectedOutputTamil: `Column 1 கூட்டுத்தொகை = 40
+Column 2 கூட்டுத்தொகை = 60`,
+
+  solution: "",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
     ],
   },
   {
