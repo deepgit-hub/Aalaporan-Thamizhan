@@ -5072,7 +5072,7 @@ Eligible for Promotion`,
 
   expectedOutputTamil: `தலைகீழ் எண் = 54321`,
 
-  solution: "",
+  solution: "NO SOLUTION!!!",
 
   challenge: true,
   locked: true,
