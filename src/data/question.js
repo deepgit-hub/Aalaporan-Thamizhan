@@ -3870,12 +3870,45 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 3, 
-        title: "Question 3", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to find the greater of two numbers using the ternary operator.",
+
+  questionTamil:
+    "Ternary Operator-ஐ பயன்படுத்தி இரண்டு எண்களில் பெரிய எண்ணை கண்டறியும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Compare the two numbers using the greater than (>) operator.",
+
+  hintTamil:
+    "(>) Operator-ஐ பயன்படுத்தி இரண்டு எண்களையும் ஒப்பிடுங்கள்.",
+
+  expectedOutput: `Greater Number = 25`,
+
+  expectedOutputTamil: `Greater Number = 25`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int a = 15;
+        int b = 25;
+
+        int greater = (a > b) ? a : b;
+
+        System.out.println("Greater Number = " + greater);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 4,
         title: "Question 4",
