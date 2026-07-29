@@ -4061,12 +4061,44 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 8, 
-        title: "Question 8", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to check whether a customer is eligible for a discount. A customer is eligible if the purchase amount is greater than 1000.",
+
+  questionTamil:
+    "Ternary Operator-ஐ பயன்படுத்தி ஒரு Customer Discount பெற தகுதியானவரா என்பதை கண்டறியும் Java Program எழுதுங்கள். Purchase Amount 1000-க்கு மேல் இருந்தால் Discount கிடைக்கும்.",
+
+  hintEnglish:
+    "Check whether the purchase amount is greater than 1000.",
+
+  hintTamil:
+    "Purchase Amount 1000-க்கு மேல் உள்ளதா என்று சரிபார்க்கவும்.",
+
+  expectedOutput: `Discount Eligible`,
+
+  expectedOutputTamil: `Discount Eligible`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int purchaseAmount = 1500;
+
+        String result = (purchaseAmount > 1000) ? "Discount Eligible" : "Discount Not Eligible";
+
+        System.out.println(result);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { id: 9,
         title: "Challenge Question 9", 
         locked: true,
