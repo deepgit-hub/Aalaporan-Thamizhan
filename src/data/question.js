@@ -8104,12 +8104,54 @@ Column 2 கூட்டுத்தொகை = 60`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 4,
-        title: "Question 4",
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to count the even numbers in an integer array.",
+
+  questionTamil:
+    "ஒரு Integer Array-ல் உள்ள Even எண்களின் எண்ணிக்கையை கண்டறிந்து Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Traverse the array and check whether each element is divisible by 2.",
+
+  hintTamil:
+    "Array-ஐ Traverse செய்து ஒவ்வொரு Element-மும் 2-ஆல் வகுபடுகிறதா என்று சரிபார்க்கவும்.",
+
+  expectedOutput: `Even Count = 2`,
+
+  expectedOutputTamil: `Even Count = 2`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {10, 15, 20, 25, 31};
+
+        int count = 0;
+
+        for (int i = 0; i < numbers.length; i++) {
+
+            if (numbers[i] % 2 == 0) {
+
+                count++;
+
+            }
+
+        }
+
+        System.out.println("Even Count = " + count);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 5, 
         title: "Question 5", 
