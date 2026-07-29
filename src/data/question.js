@@ -8056,12 +8056,54 @@ Column 2 கூட்டுத்தொகை = 60`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 3, 
-        title: "Question 3", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to print the elements of an integer array in reverse order.",
+
+  questionTamil:
+    "ஒரு Integer Array-ல் உள்ள அனைத்து Elements-ஐ தலைகீழ் வரிசையில் (Reverse Order) Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Start the loop from the last index and move towards index 0.",
+
+  hintTamil:
+    "Loop-ஐ கடைசி Index-ல் இருந்து தொடங்கி Index 0 வரை பின்னோக்கி இயக்குங்கள்.",
+
+  expectedOutput: `50
+40
+30
+20
+10`,
+
+  expectedOutputTamil: `50
+40
+30
+20
+10`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {10, 20, 30, 40, 50};
+
+        for (int i = numbers.length - 1; i >= 0; i--) {
+
+            System.out.println(numbers[i]);
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 4,
         title: "Question 4",
