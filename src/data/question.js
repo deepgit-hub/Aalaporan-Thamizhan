@@ -3454,12 +3454,59 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 4,
-        title: "Question 4",
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to print the name of a traffic signal color using switch case.",
+
+  questionTamil:
+    "Traffic Signal Number-ஐ பயன்படுத்தி அதன் நிறத்தை Switch Case மூலம் Print செய்யும் Java Program எழுதுங்கள். (1-Red, 2-Yellow, 3-Green)",
+
+  hintEnglish:
+    "Use numbers 1, 2 and 3 in switch.",
+
+  hintTamil:
+    "1, 2, 3 ஆகிய case-களை பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Green`,
+
+  expectedOutputTamil: `Green`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int signal = 3;
+
+        switch (signal) {
+
+            case 1:
+                System.out.println("Red");
+                break;
+
+            case 2:
+                System.out.println("Yellow");
+                break;
+
+            case 3:
+                System.out.println("Green");
+                break;
+
+            default:
+                System.out.println("Invalid Signal");
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 5, 
         title: "Question 5", 
