@@ -2785,11 +2785,33 @@ Remainder = 0`,
 
     questions: [
       {
-         id: 1,
-         title: "Question 1", 
-         locked: false, 
-         completed: false 
-        },
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Write a Java program to check if a number is positive. If it is positive, then check whether it is even.",
+
+  questionTamil:
+    "ஒரு எண் Positive ஆக உள்ளதா என்று சரிபார்க்கவும். அது Positive என்றால் அது Even ஆக உள்ளதா என்றும் Nested If பயன்படுத்தி சரிபார்க்கவும்.",
+
+  hintEnglish:
+    "Use one if statement inside another if statement.",
+
+  hintTamil:
+    "ஒரு if Statement-க்குள் மற்றொரு if Statement பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Positive Number
+Even Number`,
+
+  expectedOutputTamil: `Positive Number
+Even Number`,
+
+  solution: "",
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2", 
