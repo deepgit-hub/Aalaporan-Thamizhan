@@ -6877,12 +6877,81 @@ Exit Selected`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 7,
-        title: "Question 7", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Write a Java program to print numbers from 1 to 15 using a do while loop. Skip the number 8 using the continue statement.",
+
+  questionTamil:
+    "Do While Loop-ஐ பயன்படுத்தி 1 முதல் 15 வரை உள்ள எண்களை Print செய்யுங்கள். Continue Statement-ஐ பயன்படுத்தி 8 என்ற எண்ணை Skip செய்யுங்கள்.",
+
+  hintEnglish:
+    "Increment the variable before using continue.",
+
+  hintTamil:
+    "Continue பயன்படுத்துவதற்கு முன் Variable-ஐ Increment செய்யுங்கள்.",
+
+  expectedOutput: `1
+2
+3
+4
+5
+6
+7
+9
+10
+11
+12
+13
+14
+15`,
+
+  expectedOutputTamil: `1
+2
+3
+4
+5
+6
+7
+9
+10
+11
+12
+13
+14
+15`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int i = 1;
+
+        do {
+
+            if (i == 8) {
+
+                i++;
+                continue;
+
+            }
+
+            System.out.println(i);
+
+            i++;
+
+        } while (i <= 15);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 8, 
         title: "Question 8", 
