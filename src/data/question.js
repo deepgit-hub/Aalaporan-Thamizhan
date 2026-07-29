@@ -4023,12 +4023,44 @@ Eligible for Promotion`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 7,
-        title: "Question 7", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Write a Java program to check whether a year is a leap year or not using the ternary operator. (Assume the year is divisible by 4.)",
+
+  questionTamil:
+    "Ternary Operator-ஐ பயன்படுத்தி ஒரு ஆண்டு Leap Year ஆக உள்ளதா என்பதை கண்டறியும் Java Program எழுதுங்கள். (4-ஆல் வகுபடும் ஆண்டுகளை மட்டும் கருதுங்கள்.)",
+
+  hintEnglish:
+    "Check whether the year is divisible by 4 using the modulus (%) operator.",
+
+  hintTamil:
+    "Modulus (%) Operator-ஐ பயன்படுத்தி ஆண்டு 4-ஆல் வகுபடுகிறதா என்று சரிபார்க்கவும்.",
+
+  expectedOutput: `Leap Year`,
+
+  expectedOutputTamil: `Leap Year`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int year = 2024;
+
+        String result = (year % 4 == 0) ? "Leap Year" : "Not a Leap Year";
+
+        System.out.println(result);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 8, 
         title: "Question 8", 
