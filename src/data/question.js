@@ -3008,11 +3008,34 @@ Discount Applied`,
   locked: false,
  completed: false,
 },
-      { id: 9,
-        title: "Challenge Question 9", 
-        locked: true,
-        completed: false 
-        },
+      {
+  id: 9,
+  title: "Challenge Question 9",
+
+  questionEnglish:
+    "Write a Java program to check if a student passed all subjects. If yes, then check whether the average mark is above 85 and print 'Distinction'.",
+
+  questionTamil:
+    "மாணவர் அனைத்து பாடங்களிலும் Pass ஆனாரா என்பதை சரிபார்க்கவும். Pass ஆனால் Average Mark 85-க்கு மேல் உள்ளதா என்பதை Nested If பயன்படுத்தி 'Distinction' என்று Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use nested if statements with two conditions.",
+
+  hintTamil:
+    "இரண்டு Nested If Conditions பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Passed All Subjects
+Distinction`,
+
+  expectedOutputTamil: `Passed All Subjects
+Distinction`,
+
+  solution: "",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
       { 
         id: 10, 
         title: "Challenge Question 10", 
