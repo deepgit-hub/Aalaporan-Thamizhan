@@ -3795,11 +3795,43 @@ Eligible for Promotion`,
 
     questions: [
       {
-         id: 1,
-         title: "Question 1", 
-         locked: false, 
-         completed: false 
-        },
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Write a Java program to check whether a number is positive or negative using the ternary operator.",
+
+  questionTamil:
+    "Ternary Operator-ஐ பயன்படுத்தி ஒரு எண் Positive அல்லது Negative என்பதை கண்டறியும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use the condition (number > 0) ? \"Positive\" : \"Negative\".",
+
+  hintTamil:
+    "(number > 0) ? \"Positive\" : \"Negative\" என்ற வடிவத்தை பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Positive`,
+
+  expectedOutputTamil: `Positive`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int number = 15;
+
+        String result = (number > 0) ? "Positive" : "Negative";
+
+        System.out.println(result);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2", 
