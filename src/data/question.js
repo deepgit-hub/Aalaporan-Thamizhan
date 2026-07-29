@@ -2813,11 +2813,33 @@ Even Number`,
   completed: false,
 },
       {
-        id: 2,
-        title: "Question 2", 
-        locked: false, 
-        completed: false 
-        },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to check if a student passed. If the student passed, then check whether the mark is above 90 and print 'Excellent'.",
+
+  questionTamil:
+    "மாணவர் Pass ஆனாரா என்பதை சரிபார்க்கவும். Pass ஆனால் மதிப்பெண் 90-க்கு மேல் உள்ளதா என்று Nested If பயன்படுத்தி 'Excellent' என்று Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "First check Pass, then check mark > 90.",
+
+  hintTamil:
+    "முதலில் Pass என்பதை சரிபார்த்து, பிறகு Mark 90-க்கு மேல் உள்ளதா என்று சரிபார்க்கவும்.",
+
+  expectedOutput: `Pass
+Excellent`,
+
+  expectedOutputTamil: `Pass
+Excellent`,
+
+  solution: "",
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 3, 
         title: "Question 3", 
