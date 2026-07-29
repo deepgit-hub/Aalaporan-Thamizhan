@@ -3036,12 +3036,34 @@ Distinction`,
   locked: true,
   completed: false,
 },
-      { 
-        id: 10, 
-        title: "Challenge Question 10", 
-        locked: true, 
-        completed: false 
-        },
+      {
+  id: 10,
+  title: "Challenge Question 10",
+
+  questionEnglish:
+    "Write a Java program to check if an employee has completed more than 5 years of service. If yes, then check whether the performance rating is above 4 and print 'Eligible for Promotion'.",
+
+  questionTamil:
+    "ஒரு Employee 5 ஆண்டுகளுக்கு மேல் வேலை செய்துள்ளாரா என்பதை சரிபார்க்கவும். இருந்தால் Performance Rating 4-க்கு மேல் உள்ளதா என்பதை Nested If பயன்படுத்தி 'Eligible for Promotion' என்று Print செய்யுங்கள்.",
+
+  hintEnglish:
+    "Use nested if statements.",
+
+  hintTamil:
+    "Nested If Statements பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Service Requirement Met
+Eligible for Promotion`,
+
+  expectedOutputTamil: `Service Requirement Met
+Eligible for Promotion`,
+
+  solution: "",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
     ],
   },
   {
