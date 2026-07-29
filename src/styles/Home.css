@@ -140,9 +140,9 @@
 
     align-items:center;
 
-    gap:12px;
+    gap:14px;
 
-    margin-bottom:16px;
+    margin-bottom:18px;
 
 }
 
@@ -152,12 +152,20 @@
 
     font-size:1.3rem;
 
+    font-weight:700;
+
     color:#0f172a;
 
 }
 
 .feature-icon{
 
-    font-size:1.6rem;
+    width:28px;
+
+    height:28px;
+
+    color:#2563eb;
+
+    flex-shrink:0;
 
 }
