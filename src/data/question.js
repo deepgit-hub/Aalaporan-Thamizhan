@@ -6182,12 +6182,72 @@ Eligible for Promotion`,
  locked: false,
  completed: false,
 },
-      { 
-        id: 5, 
-        title: "Question 5", 
-        locked: false, 
-        completed: false 
-        } ,
+      {
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to print numbers from 1 to 20 using a while loop. Stop the loop when the number becomes 11 using the break statement.",
+
+  questionTamil:
+    "While Loop-ஐ பயன்படுத்தி 1 முதல் 20 வரை உள்ள எண்களை Print செய்யுங்கள். எண் 11 ஆனவுடன் Break Statement பயன்படுத்தி Loop-ஐ நிறுத்துங்கள்.",
+
+  hintEnglish:
+    "Use an if statement inside the while loop to check whether the number is 11.",
+
+  hintTamil:
+    "While Loop-க்குள் if Statement பயன்படுத்தி எண் 11 ஆக உள்ளதா என்று சரிபார்க்கவும்.",
+
+  expectedOutput: `1
+2
+3
+4
+5
+6
+7
+8
+9
+10`,
+
+  expectedOutputTamil: `1
+2
+3
+4
+5
+6
+7
+8
+9
+10`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int i = 1;
+
+        while (i <= 20) {
+
+            if (i == 11) {
+
+                break;
+
+            }
+
+            System.out.println(i);
+
+            i++;
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+} ,
       { 
         id: 6, 
         title: "Question 6", 
