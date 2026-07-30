@@ -8705,12 +8705,56 @@ Negative Count = 2`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 7,
-        title: "Question 7", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Write a Java program to create a method that returns the factorial of a given number.",
+
+  questionTamil:
+    "கொடுக்கப்பட்ட ஒரு எண்ணின் Factorial-ஐ Return செய்யும் Method-ஐ உருவாக்கி, Return செய்யப்பட்ட மதிப்பை Print செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Calculate the factorial inside the method and return the result.",
+
+  hintTamil:
+    "Method-க்குள் Factorial-ஐ கணக்கிட்டு அதன் மதிப்பை Return செய்யுங்கள்.",
+
+  expectedOutput: `Factorial = 120`,
+
+  expectedOutputTamil: `Factorial = 120`,
+
+  solution: `public class Main {
+
+    static int factorial(int number) {
+
+        int fact = 1;
+
+        for (int i = 1; i <= number; i++) {
+
+            fact = fact * i;
+
+        }
+
+        return fact;
+
+    }
+
+    public static void main(String[] args) {
+
+        int result = factorial(5);
+
+        System.out.println("Factorial = " + result);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 8, 
         title: "Question 8", 
