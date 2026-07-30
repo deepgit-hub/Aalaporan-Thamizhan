@@ -9795,12 +9795,56 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { 
-        id: 3, 
-        title: "Question 3", 
-        locked: false, 
-        completed: false 
-        },
+ {
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to create a class named Employee with variables employeeName, employeeId, and salary, and display their values.",
+
+  questionTamil:
+    "employeeName, employeeId மற்றும் salary என்ற Variable-களைக் கொண்ட Employee என்ற Class-ஐ உருவாக்கி அதன் மதிப்புகளை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create an Employee class with three variables and access them using an object.",
+
+  hintTamil:
+    "மூன்று Variable-களுடன் Employee Class-ஐ உருவாக்கி Object மூலம் அணுகுங்கள்.",
+
+  expectedOutput: `Employee Name = Arun
+Employee ID = 101
+Salary = 30000.0`,
+
+  expectedOutputTamil: `பணியாளர் பெயர் = Arun
+பணியாளர் ஐடி = 101
+சம்பளம் = 30000.0`,
+
+  solution: `class Employee {
+
+    String employeeName = "Arun";
+    int employeeId = 101;
+    double salary = 30000.0;
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Employee employee = new Employee();
+
+        System.out.println("Employee Name = " + employee.employeeName);
+        System.out.println("Employee ID = " + employee.employeeId);
+        System.out.println("Salary = " + employee.salary);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 4,
         title: "Question 4",
