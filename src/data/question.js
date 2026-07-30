@@ -9226,12 +9226,32 @@ Negative Count = 2`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 10, 
-        title: "Challenge Question 10", 
-        locked: true, 
-        completed: false 
-        },
+      {
+  id: 10,
+  title: "Question 10",
+
+  questionEnglish:
+    "Create a method that accepts two integers and an operator (+, -, *, /) and returns the calculated result.",
+
+  questionTamil:
+    "இரண்டு Integer-களையும் ஒரு Operator (+, -, *, /)-ஐயும் பெற்று, கணக்கிடப்பட்ட முடிவை Return செய்யும் Method-ஐ உருவாக்குங்கள்.",
+
+  hintEnglish:
+    "Use a switch statement inside the method and return the calculated value.",
+
+  hintTamil:
+    "Method-க்குள் switch Statement-ஐ பயன்படுத்தி கணக்கிடப்பட்ட மதிப்பை Return செய்யுங்கள்.",
+
+  expectedOutput: `Result = 30`,
+
+  expectedOutputTamil: `முடிவு = 30`,
+
+  solution: "NO SOLUTION!!!",
+
+  challenge: true,
+  locked: false,
+  completed: false,
+},
     ],
   },
   {
