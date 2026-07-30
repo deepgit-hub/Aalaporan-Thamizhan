@@ -9708,11 +9708,47 @@ Power = 125`,
 
     questions: [
       {
-         id: 1,
-         title: "Question 1", 
-         locked: false, 
-         completed: false 
-        },
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Write a Java program to create a class named Student with a variable studentName and display its value.",
+
+  questionTamil:
+    "studentName என்ற Variable-ஐ கொண்ட Student என்ற Class-ஐ உருவாக்கி அதன் மதிப்பை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create a class named Student with a String variable and access it using an object.",
+
+  hintTamil:
+    "Student என்ற Class-ஐ உருவாக்கி, ஒரு String Variable-ஐ அறிவித்து Object மூலம் அணுகுங்கள்.",
+
+  expectedOutput: `Student Name = Deepak`,
+
+  expectedOutputTamil: `மாணவர் பெயர் = Deepak`,
+
+  solution: `class Student {
+
+    String studentName = "Deepak";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Student student = new Student();
+
+        System.out.println("Student Name = " + student.studentName);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2", 
