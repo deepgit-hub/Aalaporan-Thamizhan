@@ -10935,12 +10935,59 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { 
-        id: 6, 
-        title: "Question 6", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 6,
+  title: "Question 6",
+
+  questionEnglish:
+    "Write a Java program to create a parameterized constructor that initializes the brand and model of a car.",
+
+  questionTamil:
+    "Car-இன் Brand மற்றும் Model-ஐ Initialize செய்யும் Parameterized Constructor-ஐ உருவாக்கும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Pass two String values to the constructor and assign them to the variables.",
+
+  hintTamil:
+    "Constructor-க்கு இரண்டு String Parameters-ஐ அனுப்பி அவற்றை Variable-களுக்கு Assign செய்யுங்கள்.",
+
+  expectedOutput: `Brand = Toyota
+Model = Fortuner`,
+
+  expectedOutputTamil: `பிராண்ட் = Toyota
+மாடல் = Fortuner`,
+
+  solution: `class Car {
+
+    String brand;
+    String model;
+
+    Car(String brand, String model) {
+
+        this.brand = brand;
+        this.model = model;
+
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Car car = new Car("Toyota", "Fortuner");
+
+        System.out.println("Brand = " + car.brand);
+        System.out.println("Model = " + car.model);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 7,
         title: "Question 7", 
