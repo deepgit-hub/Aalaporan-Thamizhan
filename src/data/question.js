@@ -10690,11 +10690,49 @@ Student 3 = Kumar, Age = 22`,
 
     questions: [
       {
-         id: 1,
-         title: "Question 1", 
-         locked: false, 
-         completed: false 
-        },
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Write a Java program to create a constructor in the Student class that displays 'Constructor Called'.",
+
+  questionTamil:
+    "Student Class-இல் 'Constructor Called' என்று காட்டும் Constructor-ஐ உருவாக்கும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create a constructor with the same name as the class. It has no return type.",
+
+  hintTamil:
+    "Class பெயரிலேயே Constructor-ஐ உருவாக்குங்கள். Constructor-க்கு Return Type இருக்காது.",
+
+  expectedOutput: `Constructor Called`,
+
+  expectedOutputTamil: `Constructor Called`,
+
+  solution: `class Student {
+
+    Student() {
+
+        System.out.println("Constructor Called");
+
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Student student = new Student();
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2", 
