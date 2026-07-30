@@ -10544,12 +10544,76 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { 
-        id: 8, 
-        title: "Question 8", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to create two objects of the BankAccount class and display their details.",
+
+  questionTamil:
+    "BankAccount Class-இன் இரண்டு Object-களை உருவாக்கி அவற்றின் விவரங்களை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create two BankAccount objects and assign different values using the object names.",
+
+  hintTamil:
+    "இரண்டு BankAccount Object-களை உருவாக்கி Object பெயர்களைப் பயன்படுத்தி வெவ்வேறு மதிப்புகளை வழங்குங்கள்.",
+
+  expectedOutput: `Account 1
+Holder = Deepak
+Balance = 50000.0
+
+Account 2
+Holder = Arun
+Balance = 35000.0`,
+
+  expectedOutputTamil: `கணக்கு 1
+கணக்கு வைத்திருப்பவர் = Deepak
+இருப்பு = 50000.0
+
+கணக்கு 2
+கணக்கு வைத்திருப்பவர் = Arun
+இருப்பு = 35000.0`,
+
+  solution: `class BankAccount {
+
+    String accountHolder;
+    double balance;
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        BankAccount account1 = new BankAccount();
+        BankAccount account2 = new BankAccount();
+
+        account1.accountHolder = "Deepak";
+        account1.balance = 50000.0;
+
+        account2.accountHolder = "Arun";
+        account2.balance = 35000.0;
+
+        System.out.println("Account 1");
+        System.out.println("Holder = " + account1.accountHolder);
+        System.out.println("Balance = " + account1.balance);
+
+        System.out.println();
+
+        System.out.println("Account 2");
+        System.out.println("Holder = " + account2.accountHolder);
+        System.out.println("Balance = " + account2.balance);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { id: 9,
         title: "Challenge Question 9", 
         locked: true,
