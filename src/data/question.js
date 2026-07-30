@@ -9260,11 +9260,50 @@ Negative Count = 2`,
 
     questions: [
       {
-         id: 1,
-         title: "Question 1", 
-         locked: false, 
-         completed: false 
-        },
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Write a Java program to create two methods with the same name to add two integers and three integers using method overloading.",
+
+  questionTamil:
+    "Method Overloading-ஐ பயன்படுத்தி இரண்டு Integer-களையும் மூன்று Integer-களையும் கூட்டும் ஒரே பெயருடைய இரண்டு Method-களை உருவாக்கும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create two methods with the same name but different number of parameters.",
+
+  hintTamil:
+    "ஒரே பெயருடன், வேறுபட்ட எண்ணிக்கையிலான Parameters கொண்ட இரண்டு Method-களை உருவாக்குங்கள்.",
+
+  expectedOutput: `Sum of 2 Numbers = 30
+Sum of 3 Numbers = 60`,
+
+  expectedOutputTamil: `2 எண்களின் கூட்டுத்தொகை = 30
+3 எண்களின் கூட்டுத்தொகை = 60`,
+
+  solution: `public class Main {
+
+    static int add(int a, int b) {
+        return a + b;
+    }
+
+    static int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("Sum of 2 Numbers = " + add(10, 20));
+        System.out.println("Sum of 3 Numbers = " + add(10, 20, 30));
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2", 
