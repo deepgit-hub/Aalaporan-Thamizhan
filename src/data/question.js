@@ -9394,12 +9394,51 @@ Double = 10.5`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 4,
-        title: "Question 4",
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to overload a method that displays one name and another that displays first name and last name.",
+
+  questionTamil:
+    "Method Overloading-ஐ பயன்படுத்தி ஒரு பெயரையும், முதல் பெயர் மற்றும் கடைசி பெயரையும் காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use methods with one and two String parameters.",
+
+  hintTamil:
+    "ஒரு String மற்றும் இரண்டு String Parameters கொண்ட Method-களை பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Name = Deepak
+Full Name = Deepak Kumar`,
+
+  expectedOutputTamil: `பெயர் = Deepak
+முழுப் பெயர் = Deepak Kumar`,
+
+  solution: `public class Main {
+
+    static void display(String name) {
+        System.out.println("Name = " + name);
+    }
+
+    static void display(String firstName, String lastName) {
+        System.out.println("Full Name = " + firstName + " " + lastName);
+    }
+
+    public static void main(String[] args) {
+
+        display("Deepak");
+        display("Deepak", "Kumar");
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 5, 
         title: "Question 5", 
