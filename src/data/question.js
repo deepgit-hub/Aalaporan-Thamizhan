@@ -8803,11 +8803,32 @@ Negative Count = 2`,
   locked: false,
   completed: false,
 },
-      { id: 9,
-        title: "Challenge Question 9", 
-        locked: true,
-        completed: false 
-        },
+      {
+  id: 9,
+  title: "Challenge Question 9",
+
+  questionEnglish:
+    "Write a Java program to create a method that checks whether a given number is prime and returns true or false.",
+
+  questionTamil:
+    "கொடுக்கப்பட்ட ஒரு எண் Prime Number ஆக உள்ளதா என்பதை சரிபார்த்து true அல்லது false Return செய்யும் Method-ஐ உருவாக்கும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Check divisibility from 2 to number / 2. Return false if any divisor is found; otherwise return true.",
+
+  hintTamil:
+    "2 முதல் number / 2 வரை வகுபடுகிறதா என்று சரிபார்க்கவும். வகுபட்டால் false இல்லையெனில் true Return செய்யுங்கள்.",
+
+  expectedOutput: `true`,
+
+  expectedOutputTamil: `true`,
+
+  solution: "",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
       { 
         id: 10, 
         title: "Challenge Question 10", 
