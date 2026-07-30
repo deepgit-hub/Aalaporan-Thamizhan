@@ -8823,7 +8823,7 @@ Negative Count = 2`,
 
   expectedOutputTamil: `true`,
 
-  solution: "",
+  solution: "NO SOLUTION!!!",
 
   challenge: true,
   locked: true,
