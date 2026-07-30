@@ -10734,11 +10734,53 @@ public class Main {
   completed: false,
 },
       {
-        id: 2,
-        title: "Question 2", 
-        locked: false, 
-        completed: false 
-        },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to create a constructor that initializes and displays the student's name.",
+
+  questionTamil:
+    "மாணவரின் பெயரை Initialize செய்து காட்டும் Constructor-ஐ உருவாக்கும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Assign a value to the variable inside the constructor.",
+
+  hintTamil:
+    "Constructor-க்குள் Variable-க்கு ஒரு மதிப்பை Assign செய்யுங்கள்.",
+
+  expectedOutput: `Student Name = Deepak`,
+
+  expectedOutputTamil: `மாணவர் பெயர் = Deepak`,
+
+  solution: `class Student {
+
+    String studentName;
+
+    Student() {
+
+        studentName = "Deepak";
+
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Student student = new Student();
+
+        System.out.println("Student Name = " + student.studentName);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 3, 
         title: "Question 3", 
