@@ -9672,12 +9672,34 @@ Minimum of 3 Numbers = 10`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 10, 
-        title: "Challenge Question 10", 
-        locked: true, 
-        completed: false 
-        },
+      {
+  id: 10,
+  title: "Question 10",
+
+  questionEnglish:
+    "Write a Java program to overload a method that calculates the power of a number using one parameter (square) and two parameters (base and exponent).",
+
+  questionTamil:
+    "Method Overloading-ஐ பயன்படுத்தி ஒரு Parameter (Square) மற்றும் இரண்டு Parameters (Base மற்றும் Exponent) கொண்டு ஒரு எண்ணின் Power-ஐ கணக்கிடும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create two methods with the same name but different numbers of parameters.",
+
+  hintTamil:
+    "ஒரே பெயருடன் வேறுபட்ட எண்ணிக்கையிலான Parameters கொண்ட இரண்டு Method-களை உருவாக்குங்கள்.",
+
+  expectedOutput: `Square = 25
+Power = 125`,
+
+  expectedOutputTamil: `Square = 25
+Power = 125`,
+
+  solution: ``,
+
+  challenge: true,
+  locked: false,
+ completed: false,
+},
     ],
   },
   {
