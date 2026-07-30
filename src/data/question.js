@@ -10091,11 +10091,38 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { id: 9,
-        title: "Challenge Question 9", 
-        locked: true,
-        completed: false 
-        },
+      {
+  id: 9,
+  title: "Question 9",
+
+  questionEnglish:
+    "Write a Java program to create a class named Laptop with variables brand, processor, RAM, and price, then display their values.",
+
+  questionTamil:
+    "brand, processor, RAM மற்றும் price என்ற Variable-களைக் கொண்ட Laptop என்ற Class-ஐ உருவாக்கி அதன் மதிப்புகளை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create a Laptop class with four variables and access them using an object.",
+
+  hintTamil:
+    "நான்கு Variable-களுடன் Laptop Class-ஐ உருவாக்கி Object மூலம் அணுகுங்கள்.",
+
+  expectedOutput: `Brand = Dell
+Processor = Intel i5
+RAM = 16 GB
+Price = 65000.0`,
+
+  expectedOutputTamil: `பிராண்ட் = Dell
+Processor = Intel i5
+RAM = 16 GB
+விலை = 65000.0`,
+
+  solution: ``,
+
+  challenge: true,
+  locked: false,
+  completed: false,
+},
       { 
         id: 10, 
         title: "Challenge Question 10", 
