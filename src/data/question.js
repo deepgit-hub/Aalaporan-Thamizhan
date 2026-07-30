@@ -11245,12 +11245,64 @@ public class Main {
   locked: false,
   completed: false,
 },
-      {
-        id: 7,
-        title: "Question 7",
-        locked: false,
-        completed: false,
-      },
+ {
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Write a Java program to use the this keyword to initialize the details of a Book.",
+
+  questionTamil:
+    "Book-இன் விவரங்களை Initialize செய்ய this Keyword-ஐ பயன்படுத்தும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use this keyword to initialize title, author, and price.",
+
+  hintTamil:
+    "title, author மற்றும் price ஆகியவற்றை Initialize செய்ய this Keyword-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Title = Java Programming
+Author = James Gosling
+Price = 499.0`,
+
+  expectedOutputTamil: `தலைப்பு = Java Programming
+ஆசிரியர் = James Gosling
+விலை = 499.0`,
+
+  solution: `class Book {
+
+    String title;
+    String author;
+    double price;
+
+    Book(String title, String author, double price) {
+
+        this.title = title;
+        this.author = author;
+        this.price = price;
+
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Book book = new Book("Java Programming", "James Gosling", 499.0);
+
+        System.out.println("Title = " + book.title);
+        System.out.println("Author = " + book.author);
+        System.out.println("Price = " + book.price);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 8,
         title: "Question 8",
