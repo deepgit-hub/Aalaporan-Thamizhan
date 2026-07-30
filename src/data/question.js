@@ -11393,11 +11393,35 @@ Department = CSE`,
   completed: false,
 },
       {
-        id: 10,
-        title: "Challenge Question 10",
-        locked: true,
-        completed: false,
-      },
+  id: 10,
+  title: "Question 10",
+
+  questionEnglish:
+    "Write a Java program to use this() for constructor chaining with three constructors.",
+
+  questionTamil:
+    "மூன்று Constructor-களை இணைக்க this() பயன்படுத்தி Constructor Chaining செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use this() to call another constructor from each constructor.",
+
+  hintTamil:
+    "ஒவ்வொரு Constructor-லிருந்தும் மற்றொரு Constructor-ஐ this() மூலம் அழைக்குங்கள்.",
+
+  expectedOutput: `Student Name = Deepak
+Age = 20
+Department = CSE`,
+
+  expectedOutputTamil: `மாணவர் பெயர் = Deepak
+வயது = 20
+துறை = CSE`,
+
+  solution: ``,
+
+  challenge: true,
+  locked: false,
+  completed: false,
+},
     ],
   },
 
