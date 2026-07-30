@@ -10882,12 +10882,59 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { 
-        id: 5, 
-        title: "Question 5", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to create a parameterized constructor that initializes the product name and price.",
+
+  questionTamil:
+    "Product-இன் பெயர் மற்றும் விலையை Initialize செய்யும் Parameterized Constructor-ஐ உருவாக்கும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Pass two parameters to the constructor and assign them to the variables.",
+
+  hintTamil:
+    "Constructor-க்கு இரண்டு Parameters அனுப்பி அவற்றை Variable-களுக்கு Assign செய்யுங்கள்.",
+
+  expectedOutput: `Product Name = Laptop
+Price = 65000.0`,
+
+  expectedOutputTamil: `பொருளின் பெயர் = Laptop
+விலை = 65000.0`,
+
+  solution: `class Product {
+
+    String productName;
+    double price;
+
+    Product(String name, double amount) {
+
+        productName = name;
+        price = amount;
+
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Product product = new Product("Laptop", 65000.0);
+
+        System.out.println("Product Name = " + product.productName);
+        System.out.println("Price = " + product.price);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 6, 
         title: "Question 6", 
