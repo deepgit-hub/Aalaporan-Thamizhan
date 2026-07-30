@@ -9200,11 +9200,32 @@ Negative Count = 2`,
   locked: false,
   completed: false,
 },
-      { id: 9,
-        title: "Challenge Question 9", 
-        locked: true,
-        completed: false 
-        },
+      {
+  id: 9,
+  title: "Question 9",
+
+  questionEnglish:
+    "Create a method that returns true if a given number is prime; otherwise return false.",
+
+  questionTamil:
+    "கொடுக்கப்பட்ட எண் Prime Number ஆக இருந்தால் true-வும், இல்லையெனில் false-வும் Return செய்யும் Method-ஐ உருவாக்குங்கள்.",
+
+  hintEnglish:
+    "Use a boolean return type and a loop to check whether the number is prime.",
+
+  hintTamil:
+    "boolean Return Type மற்றும் Loop-ஐ பயன்படுத்தி Prime Number என்பதை சரிபார்க்குங்கள்.",
+
+  expectedOutput: `true`,
+
+  expectedOutputTamil: `true`,
+
+  solution: ``,
+
+  challenge: true,
+  locked: false,
+  completed: false,
+},
       { 
         id: 10, 
         title: "Challenge Question 10", 
