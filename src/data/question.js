@@ -11088,11 +11088,58 @@ public class Main {
   completed: false,
 },
       {
-        id: 4,
-        title: "Question 4",
-        locked: false,
-        completed: false,
-      },
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to use the this keyword to initialize the employee's name and salary.",
+
+  questionTamil:
+    "பணியாளரின் பெயர் மற்றும் சம்பளத்தை Initialize செய்ய this Keyword-ஐ பயன்படுத்தும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use this keyword to assign constructor parameters to instance variables.",
+
+  hintTamil:
+    "Constructor Parameters-ஐ Instance Variables-க்கு Assign செய்ய this Keyword-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Employee Name = Arun
+Salary = 30000.0`,
+
+  expectedOutputTamil: `பணியாளர் பெயர் = Arun
+சம்பளம் = 30000.0`,
+
+  solution: `class Employee {
+
+    String employeeName;
+    double salary;
+
+    Employee(String employeeName, double salary) {
+
+        this.employeeName = employeeName;
+        this.salary = salary;
+
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Employee employee = new Employee("Arun", 30000.0);
+
+        System.out.println("Employee Name = " + employee.employeeName);
+        System.out.println("Salary = " + employee.salary);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 5,
         title: "Question 5",
