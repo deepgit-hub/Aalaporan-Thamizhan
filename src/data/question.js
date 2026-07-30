@@ -8849,7 +8849,7 @@ Negative Count = 2`,
 
   expectedOutputTamil: `முடிவு = 30`,
 
-  solution: "",
+  solution: "NO SOLUTION!!!",
 
   challenge: true,
   locked: true,
