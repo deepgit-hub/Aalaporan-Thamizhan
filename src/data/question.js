@@ -9118,12 +9118,46 @@ Negative Count = 2`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 7,
-        title: "Question 7", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Write a Java program to create a method that returns true if a number is even, otherwise returns false.",
+
+  questionTamil:
+    "ஒரு எண் Even ஆக இருந்தால் true-வும், இல்லையெனில் false-வும் Return செய்யும் Method-ஐ உருவாக்கும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use a boolean return type and return the result of number % 2 == 0.",
+
+  hintTamil:
+    "boolean Return Type-ஐ பயன்படுத்தி number % 2 == 0 என்ற நிபந்தனையை Return செய்யுங்கள்.",
+
+  expectedOutput: `true`,
+
+  expectedOutputTamil: `true`,
+
+  solution: `public class Main {
+
+    static boolean isEven(int number) {
+
+        return number % 2 == 0;
+
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println(isEven(10));
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 8, 
         title: "Question 8", 
