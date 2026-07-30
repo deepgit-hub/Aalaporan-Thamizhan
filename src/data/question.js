@@ -10948,11 +10948,43 @@ Salary = 45000.0`,
 
     questions: [
       {
-        id: 1,
-        title: "Question 1",
-        locked: false,
-        completed: false,
-      },
+  id: 10,
+  title: "Question 10",
+
+  questionEnglish:
+    "Write a Java program to create two Employee objects using a parameterized constructor and display their details.",
+
+  questionTamil:
+    "Parameterized Constructor-ஐ பயன்படுத்தி இரண்டு Employee Object-களை உருவாக்கி அவற்றின் விவரங்களை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create two Employee objects by passing different values to the constructor.",
+
+  hintTamil:
+    "Constructor-க்கு வெவ்வேறு மதிப்புகளை அனுப்பி இரண்டு Employee Object-களை உருவாக்குங்கள்.",
+
+  expectedOutput: `Employee 1
+Name = Arun
+Salary = 30000.0
+
+Employee 2
+Name = Kumar
+Salary = 45000.0`,
+
+  expectedOutputTamil: `பணியாளர் 1
+பெயர் = Arun
+சம்பளம் = 30000.0
+
+பணியாளர் 2
+பெயர் = Kumar
+சம்பளம் = 45000.0`,
+
+  solution: ``,
+
+  challenge: true,
+  locked: false,
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2",
