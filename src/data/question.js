@@ -10123,12 +10123,36 @@ RAM = 16 GB
   locked: false,
   completed: false,
 },
-      { 
-        id: 10, 
-        title: "Challenge Question 10", 
-        locked: true, 
-        completed: false 
-        },
+      {
+  id: 10,
+  title: "Question 10",
+
+  questionEnglish:
+    "Write a Java program to create a class named Hospital with variables hospitalName, doctorName, and numberOfPatients, then display their values.",
+
+  questionTamil:
+    "hospitalName, doctorName மற்றும் numberOfPatients என்ற Variable-களைக் கொண்ட Hospital என்ற Class-ஐ உருவாக்கி அதன் மதிப்புகளை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create a Hospital class with three variables and access them using an object.",
+
+  hintTamil:
+    "மூன்று Variable-களுடன் Hospital Class-ஐ உருவாக்கி Object மூலம் அணுகுங்கள்.",
+
+  expectedOutput: `Hospital Name = City Hospital
+Doctor Name = Dr. Kumar
+Number of Patients = 120`,
+
+  expectedOutputTamil: `மருத்துவமனை பெயர் = City Hospital
+மருத்துவர் பெயர் = Dr. Kumar
+நோயாளிகளின் எண்ணிக்கை = 120`,
+
+  solution: ``,
+
+  challenge: true,
+  locked: false,
+  completed: false,
+},
     ],
   },
   {
