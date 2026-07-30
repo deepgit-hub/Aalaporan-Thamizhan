@@ -11304,11 +11304,64 @@ public class Main {
   completed: false,
 },
       {
-        id: 8,
-        title: "Question 8",
-        locked: false,
-        completed: false,
-      },
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to use this() to call another constructor in the same class.",
+
+  questionTamil:
+    "அதே Class-இல் உள்ள மற்றொரு Constructor-ஐ அழைக்க this() பயன்படுத்தும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use this() as the first statement inside a constructor.",
+
+  hintTamil:
+    "Constructor-ன் முதல் Statement-ஆக this()-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Student Name = Deepak
+Age = 20`,
+
+  expectedOutputTamil: `மாணவர் பெயர் = Deepak
+வயது = 20`,
+
+  solution: `class Student {
+
+    String studentName;
+    int age;
+
+    Student() {
+
+        this("Deepak", 20);
+
+    }
+
+    Student(String studentName, int age) {
+
+        this.studentName = studentName;
+        this.age = age;
+
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Student student = new Student();
+
+        System.out.println("Student Name = " + student.studentName);
+        System.out.println("Age = " + student.age);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { id: 9, title: "Challenge Question 9", locked: true, completed: false },
       {
         id: 10,
