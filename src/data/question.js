@@ -10239,12 +10239,55 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { 
-        id: 3, 
-        title: "Question 3", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to create an object of the Car class and display the brand and model.",
+
+  questionTamil:
+    "Car Class-இன் ஒரு Object-ஐ உருவாக்கி Brand மற்றும் Model-ஐ காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create an object and assign values to the variables using the object.",
+
+  hintTamil:
+    "Object-ஐ உருவாக்கி அதன் மூலம் Variable-களுக்கு மதிப்புகளை வழங்குங்கள்.",
+
+  expectedOutput: `Brand = Toyota
+Model = Fortuner`,
+
+  expectedOutputTamil: `பிராண்ட் = Toyota
+மாடல் = Fortuner`,
+
+  solution: `class Car {
+
+    String brand;
+    String model;
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Car car = new Car();
+
+        car.brand = "Toyota";
+        car.model = "Fortuner";
+
+        System.out.println("Brand = " + car.brand);
+        System.out.println("Model = " + car.model);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 4,
         title: "Question 4",
