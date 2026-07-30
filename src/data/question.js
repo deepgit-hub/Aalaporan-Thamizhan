@@ -10988,12 +10988,58 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { 
-        id: 7,
-        title: "Question 7", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Write a Java program to create two objects using a parameterized constructor and display their details.",
+
+  questionTamil:
+    "Parameterized Constructor-ஐ பயன்படுத்தி இரண்டு Object-களை உருவாக்கி அவற்றின் விவரங்களை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create two objects by passing different values to the constructor.",
+
+  hintTamil:
+    "Constructor-க்கு வெவ்வேறு மதிப்புகளை அனுப்பி இரண்டு Object-களை உருவாக்குங்கள்.",
+
+  expectedOutput: `Student 1 = Deepak
+Student 2 = Arun`,
+
+  expectedOutputTamil: `மாணவர் 1 = Deepak
+மாணவர் 2 = Arun`,
+
+  solution: `class Student {
+
+    String studentName;
+
+    Student(String studentName) {
+
+        this.studentName = studentName;
+
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Student student1 = new Student("Deepak");
+        Student student2 = new Student("Arun");
+
+        System.out.println("Student 1 = " + student1.studentName);
+        System.out.println("Student 2 = " + student2.studentName);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 8, 
         title: "Question 8", 
