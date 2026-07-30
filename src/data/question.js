@@ -9439,12 +9439,65 @@ Full Name = Deepak Kumar`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 5, 
-        title: "Question 5", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to overload a method that finds the maximum of two numbers and three numbers.",
+
+  questionTamil:
+    "Method Overloading-ஐ பயன்படுத்தி இரண்டு எண்களிலும், மூன்று எண்களிலும் பெரிய எண்ணை கண்டறியும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create two methods with different numbers of parameters.",
+
+  hintTamil:
+    "வேறுபட்ட எண்ணிக்கையிலான Parameters கொண்ட இரண்டு Method-களை உருவாக்குங்கள்.",
+
+  expectedOutput: `Maximum of 2 Numbers = 20
+Maximum of 3 Numbers = 30`,
+
+  expectedOutputTamil: `2 எண்களில் பெரியது = 20
+3 எண்களில் பெரியது = 30`,
+
+  solution: `public class Main {
+
+    static int maximum(int a, int b) {
+
+        if (a > b) {
+            return a;
+        } else {
+            return b;
+        }
+
+    }
+
+    static int maximum(int a, int b, int c) {
+
+        if (a > b && a > c) {
+            return a;
+        } else if (b > c) {
+            return b;
+        } else {
+            return c;
+        }
+
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("Maximum of 2 Numbers = " + maximum(10, 20));
+        System.out.println("Maximum of 3 Numbers = " + maximum(10, 20, 30));
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 6, 
         title: "Question 6", 
