@@ -9158,12 +9158,48 @@ Negative Count = 2`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 8, 
-        title: "Question 8", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to create a method that returns the first character of a given string.",
+
+  questionTamil:
+    "கொடுக்கப்பட்ட String-இன் முதல் எழுத்தை Return செய்யும் Method-ஐ உருவாக்கும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use a char return type and return text.charAt(0).",
+
+  hintTamil:
+    "char Return Type-ஐ பயன்படுத்தி text.charAt(0)-ஐ Return செய்யுங்கள்.",
+
+  expectedOutput: `First Character = J`,
+
+  expectedOutputTamil: `முதல் எழுத்து = J`,
+
+  solution: `public class Main {
+
+    static char firstCharacter(String text) {
+
+        return text.charAt(0);
+
+    }
+
+    public static void main(String[] args) {
+
+        char result = firstCharacter("Java");
+
+        System.out.println("First Character = " + result);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { id: 9,
         title: "Challenge Question 9", 
         locked: true,
