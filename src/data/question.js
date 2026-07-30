@@ -10834,12 +10834,54 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { 
-        id: 4,
-        title: "Question 4",
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to create a parameterized constructor that initializes the student's name.",
+
+  questionTamil:
+    "மாணவரின் பெயரை Initialize செய்யும் Parameterized Constructor-ஐ உருவாக்கும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Pass the student's name as a parameter to the constructor.",
+
+  hintTamil:
+    "Constructor-க்கு மாணவரின் பெயரை Parameter ஆக அனுப்புங்கள்.",
+
+  expectedOutput: `Student Name = Deepak`,
+
+  expectedOutputTamil: `மாணவர் பெயர் = Deepak`,
+
+  solution: `class Student {
+
+    String studentName;
+
+    Student(String name) {
+
+        studentName = name;
+
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Student student = new Student("Deepak");
+
+        System.out.println("Student Name = " + student.studentName);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 5, 
         title: "Question 5", 
