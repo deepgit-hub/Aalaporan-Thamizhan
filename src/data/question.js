@@ -10341,12 +10341,60 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { 
-        id: 5, 
-        title: "Question 5", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to create an object of the Employee class and display the employee's name, ID, and salary.",
+
+  questionTamil:
+    "Employee Class-இன் ஒரு Object-ஐ உருவாக்கி பணியாளரின் பெயர், ஐடி மற்றும் சம்பளத்தை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create an object and assign values to all the variables using the object.",
+
+  hintTamil:
+    "Object-ஐ உருவாக்கி அனைத்து Variable-களுக்கும் Object மூலம் மதிப்புகளை வழங்குங்கள்.",
+
+  expectedOutput: `Employee Name = Arun
+Employee ID = 101
+Salary = 30000.0`,
+
+  expectedOutputTamil: `பணியாளர் பெயர் = Arun
+பணியாளர் ஐடி = 101
+சம்பளம் = 30000.0`,
+
+  solution: `class Employee {
+
+    String employeeName;
+    int employeeId;
+    double salary;
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Employee employee = new Employee();
+
+        employee.employeeName = "Arun";
+        employee.employeeId = 101;
+        employee.salary = 30000.0;
+
+        System.out.println("Employee Name = " + employee.employeeName);
+        System.out.println("Employee ID = " + employee.employeeId);
+        System.out.println("Salary = " + employee.salary);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 6, 
         title: "Question 6", 
