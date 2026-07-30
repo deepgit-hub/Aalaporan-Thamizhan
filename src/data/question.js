@@ -10652,12 +10652,36 @@ RAM = 8 GB`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 10, 
-        title: "Challenge Question 10", 
-        locked: true, 
-        completed: false 
-        },
+      {
+  id: 10,
+  title: "Question 10",
+
+  questionEnglish:
+    "Write a Java program to create three objects of the Student class and display their names and ages.",
+
+  questionTamil:
+    "Student Class-இன் மூன்று Object-களை உருவாக்கி அவற்றின் பெயர் மற்றும் வயதை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create three Student objects and assign different values to each object.",
+
+  hintTamil:
+    "மூன்று Student Object-களை உருவாக்கி ஒவ்வொன்றிற்கும் வெவ்வேறு மதிப்புகளை வழங்குங்கள்.",
+
+  expectedOutput: `Student 1 = Deepak, Age = 20
+Student 2 = Arun, Age = 21
+Student 3 = Kumar, Age = 22`,
+
+  expectedOutputTamil: `மாணவர் 1 = Deepak, வயது = 20
+மாணவர் 2 = Arun, வயது = 21
+மாணவர் 3 = Kumar, வயது = 22`,
+
+  solution: ``,
+
+  challenge: true,
+  locked: false,
+  completed: false,
+},
     ],
   },
   {
