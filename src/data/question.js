@@ -9595,12 +9595,55 @@ Age = 20`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 8, 
-        title: "Question 8", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to overload a method that calculates the salary of an employee with basic salary only and with basic salary plus bonus.",
+
+  questionTamil:
+    "Method Overloading-ஐ பயன்படுத்தி அடிப்படை சம்பளம் மட்டும் மற்றும் அடிப்படை சம்பளம் + Bonus ஆகியவற்றின் மொத்த சம்பளத்தை கணக்கிடும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create two salary() methods with different numbers of parameters.",
+
+  hintTamil:
+    "வேறுபட்ட எண்ணிக்கையிலான Parameters கொண்ட இரண்டு salary() Method-களை உருவாக்குங்கள்.",
+
+  expectedOutput: `Salary = 25000
+Salary = 30000`,
+
+  expectedOutputTamil: `சம்பளம் = 25000
+சம்பளம் = 30000`,
+
+  solution: `public class Main {
+
+    static int salary(int basicSalary) {
+
+        return basicSalary;
+
+    }
+
+    static int salary(int basicSalary, int bonus) {
+
+        return basicSalary + bonus;
+
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("Salary = " + salary(25000));
+        System.out.println("Salary = " + salary(25000, 5000));
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { id: 9,
         title: "Challenge Question 9", 
         locked: true,
