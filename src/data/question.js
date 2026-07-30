@@ -10781,12 +10781,59 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { 
-        id: 3, 
-        title: "Question 3", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to create a constructor that initializes the employee's name and salary, then display them.",
+
+  questionTamil:
+    "பணியாளரின் பெயர் மற்றும் சம்பளத்தை Initialize செய்யும் Constructor-ஐ உருவாக்கி அவற்றை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Initialize multiple variables inside the constructor.",
+
+  hintTamil:
+    "Constructor-க்குள் பல Variable-களுக்கு மதிப்புகளை Assign செய்யுங்கள்.",
+
+  expectedOutput: `Employee Name = Arun
+Salary = 30000.0`,
+
+  expectedOutputTamil: `பணியாளர் பெயர் = Arun
+சம்பளம் = 30000.0`,
+
+  solution: `class Employee {
+
+    String employeeName;
+    double salary;
+
+    Employee() {
+
+        employeeName = "Arun";
+        salary = 30000.0;
+
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Employee employee = new Employee();
+
+        System.out.println("Employee Name = " + employee.employeeName);
+        System.out.println("Salary = " + employee.salary);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 4,
         title: "Question 4",
