@@ -8755,12 +8755,54 @@ Negative Count = 2`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 8, 
-        title: "Question 8", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to create a method that checks whether a number is even or odd and prints the result.",
+
+  questionTamil:
+    "ஒரு எண் Even அல்லது Odd என்பதை சரிபார்த்து முடிவை Print செய்யும் Method-ஐ உருவாக்கும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Pass the number as a parameter and use the modulus (%) operator inside the method.",
+
+  hintTamil:
+    "எண்ணை Parameter-ஆக அனுப்பி, Method-க்குள் Modulus (%) Operator-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Even Number`,
+
+  expectedOutputTamil: `Even எண்`,
+
+  solution: `public class Main {
+
+    static void checkEvenOdd(int number) {
+
+        if (number % 2 == 0) {
+
+            System.out.println("Even Number");
+
+        } else {
+
+            System.out.println("Odd Number");
+
+        }
+
+    }
+
+    public static void main(String[] args) {
+
+        checkEvenOdd(10);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { id: 9,
         title: "Challenge Question 9", 
         locked: true,
