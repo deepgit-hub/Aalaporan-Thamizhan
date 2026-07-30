@@ -11040,12 +11040,59 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { 
-        id: 8, 
-        title: "Question 8", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to create constructor overloading with one constructor having no parameters and another having one parameter.",
+
+  questionTamil:
+    "ஒரு Parameter இல்லாத Constructor மற்றும் ஒரு Parameter கொண்ட Constructor ஆகியவற்றைப் பயன்படுத்தி Constructor Overloading செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create two constructors with different parameter lists.",
+
+  hintTamil:
+    "வேறுபட்ட Parameter-களுடன் இரண்டு Constructor-களை உருவாக்குங்கள்.",
+
+  expectedOutput: `Default Constructor
+Student Name = Deepak`,
+
+  expectedOutputTamil: `இயல்புநிலை Constructor
+மாணவர் பெயர் = Deepak`,
+
+  solution: `class Student {
+
+    Student() {
+
+        System.out.println("Default Constructor");
+
+    }
+
+    Student(String name) {
+
+        System.out.println("Student Name = " + name);
+
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Student student1 = new Student();
+        Student student2 = new Student("Deepak");
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { id: 9,
         title: "Challenge Question 9", 
         locked: true,
