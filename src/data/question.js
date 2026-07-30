@@ -8905,11 +8905,47 @@ Negative Count = 2`,
   completed: false,
 },
       {
-        id: 2,
-        title: "Question 2", 
-        locked: false, 
-        completed: false 
-        },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to create a method that returns the difference of two integers.",
+
+  questionTamil:
+    "இரண்டு Integer-களின் வித்தியாசத்தை Return செய்யும் Method-ஐ உருவாக்கும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create a method with return type int and return the difference of the two numbers.",
+
+  hintTamil:
+    "int Return Type கொண்ட Method-ஐ உருவாக்கி, இரண்டு எண்களின் வித்தியாசத்தை Return செய்யுங்கள்.",
+
+  expectedOutput: `Difference = 10`,
+
+  expectedOutputTamil: `வித்தியாசம் = 10`,
+
+  solution: `public class Main {
+
+    static int subtract(int a, int b) {
+
+        return a - b;
+
+    }
+
+    public static void main(String[] args) {
+
+        int difference = subtract(20, 10);
+
+        System.out.println("Difference = " + difference);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 3, 
         title: "Question 3", 
