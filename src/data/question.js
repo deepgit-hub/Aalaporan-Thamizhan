@@ -10986,11 +10986,54 @@ Salary = 45000.0`,
   completed: false,
 },
       {
-        id: 2,
-        title: "Question 2",
-        locked: false,
-        completed: false,
-      },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to use the this keyword to initialize the name and age of a student.",
+
+  questionTamil:
+    "மாணவரின் பெயர் மற்றும் வயதை Initialize செய்ய this Keyword-ஐ பயன்படுத்தும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use this keyword to assign both constructor parameters to instance variables.",
+
+  hintTamil:
+    "Constructor Parameters-ஐ Instance Variables-க்கு Assign செய்ய this Keyword-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Student Name = Deepak
+Student Age = 20`,
+
+  expectedOutputTamil: `மாணவர் பெயர் = Deepak
+மாணவர் வயது = 20`,
+
+  solution: `class Student {
+
+    String studentName;
+    int studentAge;
+
+    Student(String studentName, int studentAge) {
+
+        this.studentName = studentName;
+        this.studentAge = studentAge;
+
+    }
+
+    public static void main(String[] args) {
+
+        Student student = new Student("Deepak", 20);
+
+        System.out.println("Student Name = " + student.studentName);
+        System.out.println("Student Age = " + student.studentAge);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 3,
         title: "Question 3",
