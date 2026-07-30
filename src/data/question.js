@@ -9845,12 +9845,52 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { 
-        id: 4,
-        title: "Question 4",
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to create a class named Car with variables brand and model, and display their values.",
+
+  questionTamil:
+    "brand மற்றும் model என்ற Variable-களைக் கொண்ட Car என்ற Class-ஐ உருவாக்கி அதன் மதிப்புகளை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create a Car class with two String variables and access them using an object.",
+
+  hintTamil:
+    "இரண்டு String Variable-களுடன் Car Class-ஐ உருவாக்கி Object மூலம் அணுகுங்கள்.",
+
+  expectedOutput: `Brand = Toyota
+Model = Fortuner`,
+
+  expectedOutputTamil: `பிராண்ட் = Toyota
+மாடல் = Fortuner`,
+
+  solution: `class Car {
+
+    String brand = "Toyota";
+    String model = "Fortuner";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Car car = new Car();
+
+        System.out.println("Brand = " + car.brand);
+        System.out.println("Model = " + car.model);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 5, 
         title: "Question 5", 
