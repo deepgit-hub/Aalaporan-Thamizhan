@@ -9030,12 +9030,48 @@ Negative Count = 2`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 5, 
-        title: "Question 5", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to create a method that returns the square of a given number.",
+
+  questionTamil:
+    "கொடுக்கப்பட்ட ஒரு எண்ணின் Square-ஐ Return செய்யும் Method-ஐ உருவாக்கும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use return type int and return number * number.",
+
+  hintTamil:
+    "int Return Type பயன்படுத்தி number * number-ஐ Return செய்யுங்கள்.",
+
+  expectedOutput: `Square = 25`,
+
+  expectedOutputTamil: `Square = 25`,
+
+  solution: `public class Main {
+
+    static int square(int number) {
+
+        return number * number;
+
+    }
+
+    public static void main(String[] args) {
+
+        int result = square(5);
+
+        System.out.println("Square = " + result);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 6, 
         title: "Question 6", 
