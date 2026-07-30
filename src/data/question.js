@@ -9305,11 +9305,50 @@ Sum of 3 Numbers = 60`,
   completed: false,
 },
       {
-        id: 2,
-        title: "Question 2", 
-        locked: false, 
-        completed: false 
-        },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to overload a method that calculates the area of a square and a rectangle.",
+
+  questionTamil:
+    "Method Overloading-ஐ பயன்படுத்தி Square மற்றும் Rectangle-இன் Area-வை கணக்கிடும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use one method with one parameter and another with two parameters.",
+
+  hintTamil:
+    "ஒரு Method-ல் ஒரு Parameter மற்றும் மற்றொரு Method-ல் இரண்டு Parameters பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Square Area = 25
+Rectangle Area = 50`,
+
+  expectedOutputTamil: `சதுரத்தின் பரப்பளவு = 25
+செவ்வகத்தின் பரப்பளவு = 50`,
+
+  solution: `public class Main {
+
+    static int area(int side) {
+        return side * side;
+    }
+
+    static int area(int length, int width) {
+        return length * width;
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("Square Area = " + area(5));
+        System.out.println("Rectangle Area = " + area(10, 5));
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 3, 
         title: "Question 3", 
