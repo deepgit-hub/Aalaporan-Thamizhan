@@ -10288,12 +10288,59 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { 
-        id: 4,
-        title: "Question 4",
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to create two objects of the Car class and display their details.",
+
+  questionTamil:
+    "Car Class-இன் இரண்டு Object-களை உருவாக்கி அவற்றின் விவரங்களை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create two objects and assign different values to each object.",
+
+  hintTamil:
+    "இரண்டு Object-களை உருவாக்கி ஒவ்வொன்றிற்கும் வெவ்வேறு மதிப்புகளை வழங்குங்கள்.",
+
+  expectedOutput: `Car 1 = Toyota Fortuner
+Car 2 = Hyundai Creta`,
+
+  expectedOutputTamil: `கார் 1 = Toyota Fortuner
+கார் 2 = Hyundai Creta`,
+
+  solution: `class Car {
+
+    String brand;
+    String model;
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Car car1 = new Car();
+        Car car2 = new Car();
+
+        car1.brand = "Toyota";
+        car1.model = "Fortuner";
+
+        car2.brand = "Hyundai";
+        car2.model = "Creta";
+
+        System.out.println("Car 1 = " + car1.brand + " " + car1.model);
+        System.out.println("Car 2 = " + car2.brand + " " + car2.model);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 5, 
         title: "Question 5", 
