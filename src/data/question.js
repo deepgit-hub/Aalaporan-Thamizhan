@@ -11194,11 +11194,57 @@ public class Main {
   completed: false,
 },
       {
-        id: 6,
-        title: "Question 6",
-        locked: false,
-        completed: false,
-      },
+  id: 6,
+  title: "Question 6",
+
+  questionEnglish:
+    "Write a Java program to use the this keyword to initialize two Student objects with different values.",
+
+  questionTamil:
+    "this Keyword-ஐ பயன்படுத்தி இரண்டு Student Object-களை வெவ்வேறு மதிப்புகளுடன் Initialize செய்யும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create two objects and pass different values to the constructor. Use this keyword to assign the values.",
+
+  hintTamil:
+    "இரண்டு Object-களை உருவாக்கி Constructor-க்கு வெவ்வேறு மதிப்புகளை அனுப்புங்கள். மதிப்புகளை Assign செய்ய this Keyword-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Student 1 = Deepak
+Student 2 = Arun`,
+
+  expectedOutputTamil: `மாணவர் 1 = Deepak
+மாணவர் 2 = Arun`,
+
+  solution: `class Student {
+
+    String studentName;
+
+    Student(String studentName) {
+
+        this.studentName = studentName;
+
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Student student1 = new Student("Deepak");
+        Student student2 = new Student("Arun");
+
+        System.out.println("Student 1 = " + student1.studentName);
+        System.out.println("Student 2 = " + student2.studentName);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 7,
         title: "Question 7",
