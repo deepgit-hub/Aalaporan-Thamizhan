@@ -11035,11 +11035,58 @@ Student Age = 20`,
   completed: false,
 },
       {
-        id: 3,
-        title: "Question 3",
-        locked: false,
-        completed: false,
-      },
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to use the this keyword to initialize the brand and model of a car.",
+
+  questionTamil:
+    "Car-இன் Brand மற்றும் Model-ஐ Initialize செய்ய this Keyword-ஐ பயன்படுத்தும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Assign the constructor parameters to instance variables using this keyword.",
+
+  hintTamil:
+    "Constructor Parameters-ஐ Instance Variables-க்கு Assign செய்ய this Keyword-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Brand = Toyota
+Model = Fortuner`,
+
+  expectedOutputTamil: `பிராண்ட் = Toyota
+மாடல் = Fortuner`,
+
+  solution: `class Car {
+
+    String brand;
+    String model;
+
+    Car(String brand, String model) {
+
+        this.brand = brand;
+        this.model = model;
+
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Car car = new Car("Toyota", "Fortuner");
+
+        System.out.println("Brand = " + car.brand);
+        System.out.println("Model = " + car.model);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 4,
         title: "Question 4",
