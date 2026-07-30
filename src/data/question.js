@@ -8829,12 +8829,32 @@ Negative Count = 2`,
   locked: true,
   completed: false,
 },
-      { 
-        id: 10, 
-        title: "Challenge Question 10", 
-        locked: true, 
-        completed: false 
-        },
+      {
+  id: 10,
+  title: "Challenge Question 10",
+
+  questionEnglish:
+    "Write a Java program to create a method that accepts two integers and an operator (+, -, *, /) and returns the calculated result.",
+
+  questionTamil:
+    "இரண்டு Integer-களையும் ஒரு Operator (+, -, *, /)-ஐயும் Parameter-ஆக பெற்று, கணக்கிடப்பட்ட முடிவை Return செய்யும் Method-ஐ உருவாக்கும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use a switch statement inside the method to perform the required operation and return the result.",
+
+  hintTamil:
+    "Method-க்குள் Switch Statement பயன்படுத்தி தேவையான கணக்கை செய்து அதன் முடிவை Return செய்யுங்கள்.",
+
+  expectedOutput: `Result = 30`,
+
+  expectedOutputTamil: `முடிவு = 30`,
+
+  solution: "",
+
+  challenge: true,
+  locked: true,
+  completed: false,
+},
     ],
   },
   {
