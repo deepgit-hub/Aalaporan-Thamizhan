@@ -9991,12 +9991,56 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { 
-        id: 7,
-        title: "Question 7", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Write a Java program to create a class named College with variables collegeName, location, and university, and display their values.",
+
+  questionTamil:
+    "collegeName, location மற்றும் university என்ற Variable-களைக் கொண்ட College என்ற Class-ஐ உருவாக்கி அதன் மதிப்புகளை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create a College class with three variables and access them using an object.",
+
+  hintTamil:
+    "மூன்று Variable-களுடன் College Class-ஐ உருவாக்கி Object மூலம் அணுகுங்கள்.",
+
+  expectedOutput: `College Name = ABC College
+Location = Chennai
+University = Anna University`,
+
+  expectedOutputTamil: `கல்லூரி பெயர் = ABC College
+இடம் = Chennai
+பல்கலைக்கழகம் = Anna University`,
+
+  solution: `class College {
+
+    String collegeName = "ABC College";
+    String location = "Chennai";
+    String university = "Anna University";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        College college = new College();
+
+        System.out.println("College Name = " + college.collegeName);
+        System.out.println("Location = " + college.location);
+        System.out.println("University = " + college.university);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 8, 
         title: "Question 8", 
