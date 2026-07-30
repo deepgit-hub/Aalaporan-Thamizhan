@@ -9349,12 +9349,51 @@ Rectangle Area = 50`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 3, 
-        title: "Question 3", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to overload a method that prints an integer and a double value.",
+
+  questionTamil:
+    "Method Overloading-ஐ பயன்படுத்தி ஒரு Integer மற்றும் ஒரு Double மதிப்பை அச்சிடும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create two methods with the same name but different parameter types.",
+
+  hintTamil:
+    "ஒரே பெயரில் வேறுபட்ட Parameter Type கொண்ட இரண்டு Method-களை உருவாக்குங்கள்.",
+
+  expectedOutput: `Integer = 10
+Double = 10.5`,
+
+  expectedOutputTamil: `முழு எண் = 10
+Double = 10.5`,
+
+  solution: `public class Main {
+
+    static void display(int number) {
+        System.out.println("Integer = " + number);
+    }
+
+    static void display(double number) {
+        System.out.println("Double = " + number);
+    }
+
+    public static void main(String[] args) {
+
+        display(10);
+        display(10.5);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 4,
         title: "Question 4",
