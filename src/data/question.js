@@ -8988,12 +8988,48 @@ Negative Count = 2`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 4,
-        title: "Question 4",
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to create a method that returns the average of two numbers.",
+
+  questionTamil:
+    "இரண்டு எண்களின் சராசரியை (Average) Return செய்யும் Method-ஐ உருவாக்கும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use return type double and return the average of the two numbers.",
+
+  hintTamil:
+    "double Return Type பயன்படுத்தி இரண்டு எண்களின் சராசரியை Return செய்யுங்கள்.",
+
+  expectedOutput: `Average = 15.0`,
+
+  expectedOutputTamil: `சராசரி = 15.0`,
+
+  solution: `public class Main {
+
+    static double average(int a, int b) {
+
+        return (a + b) / 2.0;
+
+    }
+
+    public static void main(String[] args) {
+
+        double average = average(10, 20);
+
+        System.out.println("Average = " + average);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 5, 
         title: "Question 5", 
