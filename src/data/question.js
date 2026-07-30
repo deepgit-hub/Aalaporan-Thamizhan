@@ -9941,12 +9941,56 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { 
-        id: 6, 
-        title: "Question 6", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 6,
+  title: "Question 6",
+
+  questionEnglish:
+    "Write a Java program to create a class named Mobile with variables brand, model, and price, and display their values.",
+
+  questionTamil:
+    "brand, model மற்றும் price என்ற Variable-களைக் கொண்ட Mobile என்ற Class-ஐ உருவாக்கி அதன் மதிப்புகளை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create a Mobile class with three variables and access them using an object.",
+
+  hintTamil:
+    "மூன்று Variable-களுடன் Mobile Class-ஐ உருவாக்கி Object மூலம் அணுகுங்கள்.",
+
+  expectedOutput: `Brand = Samsung
+Model = Galaxy S24
+Price = 79999.0`,
+
+  expectedOutputTamil: `பிராண்ட் = Samsung
+மாடல் = Galaxy S24
+விலை = 79999.0`,
+
+  solution: `class Mobile {
+
+    String brand = "Samsung";
+    String model = "Galaxy S24";
+    double price = 79999.0;
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Mobile mobile = new Mobile();
+
+        System.out.println("Brand = " + mobile.brand);
+        System.out.println("Model = " + mobile.model);
+        System.out.println("Price = " + mobile.price);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 7,
         title: "Question 7", 
