@@ -10191,11 +10191,54 @@ Number of Patients = 120`,
   completed: false,
 },
       {
-        id: 2,
-        title: "Question 2", 
-        locked: false, 
-        completed: false 
-        },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to create two objects of the Student class and display their names.",
+
+  questionTamil:
+    "Student Class-இன் இரண்டு Object-களை உருவாக்கி அவற்றின் பெயர்களை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create two objects and assign different values using the object names.",
+
+  hintTamil:
+    "இரண்டு Object-களை உருவாக்கி Object பெயர்களைப் பயன்படுத்தி வெவ்வேறு மதிப்புகளை வழங்குங்கள்.",
+
+  expectedOutput: `Student 1 = Deepak
+Student 2 = Arun`,
+
+  expectedOutputTamil: `மாணவர் 1 = Deepak
+மாணவர் 2 = Arun`,
+
+  solution: `class Student {
+
+    String studentName;
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Student student1 = new Student();
+        Student student2 = new Student();
+
+        student1.studentName = "Deepak";
+        student2.studentName = "Arun";
+
+        System.out.println("Student 1 = " + student1.studentName);
+        System.out.println("Student 2 = " + student2.studentName);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 3, 
         title: "Question 3", 
