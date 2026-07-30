@@ -10041,12 +10041,56 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { 
-        id: 8, 
-        title: "Question 8", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to create a class named BankAccount with variables accountHolder, accountNumber, and balance, and display their values.",
+
+  questionTamil:
+    "accountHolder, accountNumber மற்றும் balance என்ற Variable-களைக் கொண்ட BankAccount என்ற Class-ஐ உருவாக்கி அதன் மதிப்புகளை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create a BankAccount class with three variables and access them using an object.",
+
+  hintTamil:
+    "மூன்று Variable-களுடன் BankAccount Class-ஐ உருவாக்கி Object மூலம் அணுகுங்கள்.",
+
+  expectedOutput: `Account Holder = Deepak
+Account Number = 123456789
+Balance = 50000.0`,
+
+  expectedOutputTamil: `கணக்கு வைத்திருப்பவர் = Deepak
+கணக்கு எண் = 123456789
+இருப்பு = 50000.0`,
+
+  solution: `class BankAccount {
+
+    String accountHolder = "Deepak";
+    long accountNumber = 123456789;
+    double balance = 50000.0;
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        BankAccount account = new BankAccount();
+
+        System.out.println("Account Holder = " + account.accountHolder);
+        System.out.println("Account Number = " + account.accountNumber);
+        System.out.println("Balance = " + account.balance);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { id: 9,
         title: "Challenge Question 9", 
         locked: true,
