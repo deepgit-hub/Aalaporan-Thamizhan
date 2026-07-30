@@ -9543,12 +9543,58 @@ Double-இன் Square = 30.25`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 7,
-        title: "Question 7", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Write a Java program to overload a method that displays the details of a student with one parameter (name) and two parameters (name and age).",
+
+  questionTamil:
+    "Method Overloading-ஐ பயன்படுத்தி ஒரு Parameter (பெயர்) மற்றும் இரண்டு Parameters (பெயர் மற்றும் வயது) கொண்டு மாணவர் விவரங்களை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create two display() methods with different numbers of parameters.",
+
+  hintTamil:
+    "வேறுபட்ட எண்ணிக்கையிலான Parameters கொண்ட இரண்டு display() Method-களை உருவாக்குங்கள்.",
+
+  expectedOutput: `Student Name = Deepak
+Student Name = Deepak
+Age = 20`,
+
+  expectedOutputTamil: `மாணவர் பெயர் = Deepak
+மாணவர் பெயர் = Deepak
+வயது = 20`,
+
+  solution: `public class Main {
+
+    static void display(String name) {
+
+        System.out.println("Student Name = " + name);
+
+    }
+
+    static void display(String name, int age) {
+
+        System.out.println("Student Name = " + name);
+        System.out.println("Age = " + age);
+
+    }
+
+    public static void main(String[] args) {
+
+        display("Deepak");
+        display("Deepak", 20);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 8, 
         title: "Question 8", 
