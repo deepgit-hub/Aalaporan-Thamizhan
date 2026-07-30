@@ -9891,12 +9891,56 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { 
-        id: 5, 
-        title: "Question 5", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to create a class named Book with variables title, author, and price, and display their values.",
+
+  questionTamil:
+    "title, author மற்றும் price என்ற Variable-களைக் கொண்ட Book என்ற Class-ஐ உருவாக்கி அதன் மதிப்புகளை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create a Book class with three variables and access them using an object.",
+
+  hintTamil:
+    "மூன்று Variable-களுடன் Book Class-ஐ உருவாக்கி Object மூலம் அணுகுங்கள்.",
+
+  expectedOutput: `Title = Java Programming
+Author = James Gosling
+Price = 499.0`,
+
+  expectedOutputTamil: `தலைப்பு = Java Programming
+ஆசிரியர் = James Gosling
+விலை = 499.0`,
+
+  solution: `class Book {
+
+    String title = "Java Programming";
+    String author = "James Gosling";
+    double price = 499.0;
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Book book = new Book();
+
+        System.out.println("Title = " + book.title);
+        System.out.println("Author = " + book.author);
+        System.out.println("Price = " + book.price);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 6, 
         title: "Question 6", 
