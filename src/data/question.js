@@ -11141,11 +11141,58 @@ public class Main {
   completed: false,
 },
       {
-        id: 5,
-        title: "Question 5",
-        locked: false,
-        completed: false,
-      },
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to use the this keyword to initialize the product name and price.",
+
+  questionTamil:
+    "Product-இன் பெயர் மற்றும் விலையை Initialize செய்ய this Keyword-ஐ பயன்படுத்தும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use this keyword for both String and double instance variables.",
+
+  hintTamil:
+    "String மற்றும் double Instance Variables-க்கு this Keyword-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Product Name = Laptop
+Price = 65000.0`,
+
+  expectedOutputTamil: `பொருளின் பெயர் = Laptop
+விலை = 65000.0`,
+
+  solution: `class Product {
+
+    String productName;
+    double price;
+
+    Product(String productName, double price) {
+
+        this.productName = productName;
+        this.price = price;
+
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Product product = new Product("Laptop", 65000.0);
+
+        System.out.println("Product Name = " + product.productName);
+        System.out.println("Price = " + product.price);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 6,
         title: "Question 6",
