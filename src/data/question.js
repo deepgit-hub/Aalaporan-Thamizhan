@@ -10614,11 +10614,44 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { id: 9,
-        title: "Challenge Question 9", 
-        locked: true,
-        completed: false 
-        },
+      {
+  id: 9,
+  title: "Question 9",
+
+  questionEnglish:
+    "Write a Java program to create two objects of the Laptop class and display their details.",
+
+  questionTamil:
+    "Laptop Class-இன் இரண்டு Object-களை உருவாக்கி அவற்றின் விவரங்களை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create two Laptop objects and assign different values to each object.",
+
+  hintTamil:
+    "இரண்டு Laptop Object-களை உருவாக்கி ஒவ்வொரு Object-க்கும் வெவ்வேறு மதிப்புகளை வழங்குங்கள்.",
+
+  expectedOutput: `Laptop 1
+Brand = Dell
+RAM = 16 GB
+
+Laptop 2
+Brand = HP
+RAM = 8 GB`,
+
+  expectedOutputTamil: `மடிக்கணினி 1
+பிராண்ட் = Dell
+RAM = 16 GB
+
+மடிக்கணினி 2
+பிராண்ட் = HP
+RAM = 8 GB`,
+
+  solution: ``,
+
+  challenge: true,
+  locked: false,
+  completed: false,
+},
       { 
         id: 10, 
         title: "Challenge Question 10", 
