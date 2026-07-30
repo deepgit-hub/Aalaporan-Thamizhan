@@ -8946,12 +8946,48 @@ Negative Count = 2`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 3, 
-        title: "Question 3", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to create a method that returns the product of two integers.",
+
+  questionTamil:
+    "இரண்டு Integer-களின் பெருக்கல் மதிப்பை Return செய்யும் Method-ஐ உருவாக்கும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create a method with return type int and return the product of the two numbers.",
+
+  hintTamil:
+    "int Return Type கொண்ட Method-ஐ உருவாக்கி, இரண்டு எண்களின் பெருக்கல் மதிப்பை Return செய்யுங்கள்.",
+
+  expectedOutput: `Product = 200`,
+
+  expectedOutputTamil: `பெருக்கல் = 200`,
+
+  solution: `public class Main {
+
+    static int multiply(int a, int b) {
+
+        return a * b;
+
+    }
+
+    public static void main(String[] args) {
+
+        int product = multiply(10, 20);
+
+        System.out.println("Product = " + product);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 4,
         title: "Question 4",
