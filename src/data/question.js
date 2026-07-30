@@ -8863,11 +8863,47 @@ Negative Count = 2`,
 
     questions: [
       {
-         id: 1,
-         title: "Question 1", 
-         locked: false, 
-         completed: false 
-        },
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Write a Java program to create a method that returns the sum of two integers.",
+
+  questionTamil:
+    "இரண்டு Integer-களின் கூட்டுத்தொகையை Return செய்யும் Method-ஐ உருவாக்கும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create a method with return type int and use the return keyword to return the sum.",
+
+  hintTamil:
+    "int Return Type கொண்ட Method-ஐ உருவாக்கி, return Keyword-ஐ பயன்படுத்தி கூட்டுத்தொகையை Return செய்யுங்கள்.",
+
+  expectedOutput: `Sum = 30`,
+
+  expectedOutputTamil: `கூட்டுத்தொகை = 30`,
+
+  solution: `public class Main {
+
+    static int add(int a, int b) {
+
+        return a + b;
+
+    }
+
+    public static void main(String[] args) {
+
+        int sum = add(10, 20);
+
+        System.out.println("Sum = " + sum);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2", 
