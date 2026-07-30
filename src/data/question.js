@@ -11093,11 +11093,36 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { id: 9,
-        title: "Challenge Question 9", 
-        locked: true,
-        completed: false 
-        },
+      {
+  id: 9,
+  title: "Question 9",
+
+  questionEnglish:
+    "Write a Java program to create constructor overloading with constructors having one, two, and three parameters.",
+
+  questionTamil:
+    "ஒரு, இரண்டு மற்றும் மூன்று Parameters கொண்ட Constructor Overloading-ஐ உருவாக்கும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create three constructors with different numbers of parameters.",
+
+  hintTamil:
+    "வேறுபட்ட எண்ணிக்கையிலான Parameters கொண்ட மூன்று Constructor-களை உருவாக்குங்கள்.",
+
+  expectedOutput: `Name = Deepak
+Name = Deepak Age = 20
+Name = Deepak Age = 20 Department = CSE`,
+
+  expectedOutputTamil: `பெயர் = Deepak
+பெயர் = Deepak வயது = 20
+பெயர் = Deepak வயது = 20 துறை = CSE`,
+
+  solution: ``,
+
+  challenge: true,
+  locked: false,
+  completed: false,
+},
       { 
         id: 10, 
         title: "Challenge Question 10", 
