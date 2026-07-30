@@ -10395,12 +10395,85 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { 
-        id: 6, 
-        title: "Question 6", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 6,
+  title: "Question 6",
+
+  questionEnglish:
+    "Write a Java program to create two objects of the Book class and display their details.",
+
+  questionTamil:
+    "Book Class-இன் இரண்டு Object-களை உருவாக்கி அவற்றின் விவரங்களை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create two Book objects and assign different values using the object names.",
+
+  hintTamil:
+    "இரண்டு Book Object-களை உருவாக்கி Object பெயர்களைப் பயன்படுத்தி வெவ்வேறு மதிப்புகளை வழங்குங்கள்.",
+
+  expectedOutput: `Book 1
+Title = Java Programming
+Author = James Gosling
+Price = 499.0
+
+Book 2
+Title = Python Basics
+Author = Guido van Rossum
+Price = 399.0`,
+
+  expectedOutputTamil: `புத்தகம் 1
+தலைப்பு = Java Programming
+ஆசிரியர் = James Gosling
+விலை = 499.0
+
+புத்தகம் 2
+தலைப்பு = Python Basics
+ஆசிரியர் = Guido van Rossum
+விலை = 399.0`,
+
+  solution: `class Book {
+
+    String title;
+    String author;
+    double price;
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Book book1 = new Book();
+        Book book2 = new Book();
+
+        book1.title = "Java Programming";
+        book1.author = "James Gosling";
+        book1.price = 499.0;
+
+        book2.title = "Python Basics";
+        book2.author = "Guido van Rossum";
+        book2.price = 399.0;
+
+        System.out.println("Book 1");
+        System.out.println("Title = " + book1.title);
+        System.out.println("Author = " + book1.author);
+        System.out.println("Price = " + book1.price);
+
+        System.out.println();
+
+        System.out.println("Book 2");
+        System.out.println("Title = " + book2.title);
+        System.out.println("Author = " + book2.author);
+        System.out.println("Price = " + book2.price);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 7,
         title: "Question 7", 
