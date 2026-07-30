@@ -9750,11 +9750,51 @@ public class Main {
   completed: false,
 },
       {
-        id: 2,
-        title: "Question 2", 
-        locked: false, 
-        completed: false 
-        },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to create a class named Student with two variables studentName and studentAge, and display their values.",
+
+  questionTamil:
+    "studentName மற்றும் studentAge என்ற இரண்டு Variable-களைக் கொண்ட Student என்ற Class-ஐ உருவாக்கி அதன் மதிப்புகளை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create a class with two variables and access them using an object.",
+
+  hintTamil:
+    "இரண்டு Variable-களுடன் ஒரு Class-ஐ உருவாக்கி, Object மூலம் அவற்றை அணுகுங்கள்.",
+
+  expectedOutput: `Student Name = Deepak
+Student Age = 20`,
+
+  expectedOutputTamil: `மாணவர் பெயர் = Deepak
+மாணவர் வயது = 20`,
+
+  solution: `class Student {
+
+    String studentName = "Deepak";
+    int studentAge = 20;
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Student student = new Student();
+
+        System.out.println("Student Name = " + student.studentName);
+        System.out.println("Student Age = " + student.studentAge);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 3, 
         title: "Question 3", 
