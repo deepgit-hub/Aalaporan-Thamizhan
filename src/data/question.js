@@ -11362,7 +11362,36 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { id: 9, title: "Challenge Question 9", locked: true, completed: false },
+      {
+  id: 9,
+  title: "Question 9",
+
+  questionEnglish:
+    "Write a Java program to use the this keyword to initialize three instance variables using a parameterized constructor.",
+
+  questionTamil:
+    "Parameterized Constructor-ஐ பயன்படுத்தி மூன்று Instance Variable-களை Initialize செய்ய this Keyword-ஐ பயன்படுத்தும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create a constructor with three parameters and assign them using this keyword.",
+
+  hintTamil:
+    "மூன்று Parameters கொண்ட Constructor-ஐ உருவாக்கி this Keyword மூலம் மதிப்புகளை Assign செய்யுங்கள்.",
+
+  expectedOutput: `Name = Deepak
+Age = 20
+Department = CSE`,
+
+  expectedOutputTamil: `பெயர் = Deepak
+வயது = 20
+துறை = CSE`,
+
+  solution: ``,
+
+  challenge: true,
+  locked: false,
+  completed: false,
+},
       {
         id: 10,
         title: "Challenge Question 10",
