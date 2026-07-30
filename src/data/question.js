@@ -9498,12 +9498,51 @@ Maximum of 3 Numbers = 30`,
   locked: false,
   completed: false,
 },
-      { 
-        id: 6, 
-        title: "Question 6", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 6,
+  title: "Question 6",
+
+  questionEnglish:
+    "Write a Java program to overload a method that calculates the square of an integer and the square of a double value.",
+
+  questionTamil:
+    "Method Overloading-ஐ பயன்படுத்தி ஒரு Integer மற்றும் ஒரு Double மதிப்பின் Square-ஐ கணக்கிடும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create two methods with the same name but different parameter types.",
+
+  hintTamil:
+    "ஒரே பெயருடன் வேறுபட்ட Parameter Type கொண்ட இரண்டு Method-களை உருவாக்குங்கள்.",
+
+  expectedOutput: `Square of Integer = 25
+Square of Double = 30.25`,
+
+  expectedOutputTamil: `Integer-இன் Square = 25
+Double-இன் Square = 30.25`,
+
+  solution: `public class Main {
+
+    static int square(int number) {
+        return number * number;
+    }
+
+    static double square(double number) {
+        return number * number;
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("Square of Integer = " + square(5));
+        System.out.println("Square of Double = " + square(5.5));
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 7,
         title: "Question 7", 
