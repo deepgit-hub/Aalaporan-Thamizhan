@@ -10474,12 +10474,76 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { 
-        id: 7,
-        title: "Question 7", 
-        locked: false, 
-        completed: false 
-        },
+      {
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Write a Java program to create two objects of the Mobile class and display their details.",
+
+  questionTamil:
+    "Mobile Class-இன் இரண்டு Object-களை உருவாக்கி அவற்றின் விவரங்களை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create two Mobile objects and assign different values to each object.",
+
+  hintTamil:
+    "இரண்டு Mobile Object-களை உருவாக்கி ஒவ்வொரு Object-க்கும் வெவ்வேறு மதிப்புகளை வழங்குங்கள்.",
+
+  expectedOutput: `Mobile 1
+Brand = Samsung
+Model = Galaxy S24
+
+Mobile 2
+Brand = Apple
+Model = iPhone 16`,
+
+  expectedOutputTamil: `மொபைல் 1
+பிராண்ட் = Samsung
+மாடல் = Galaxy S24
+
+மொபைல் 2
+பிராண்ட் = Apple
+மாடல் = iPhone 16`,
+
+  solution: `class Mobile {
+
+    String brand;
+    String model;
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Mobile mobile1 = new Mobile();
+        Mobile mobile2 = new Mobile();
+
+        mobile1.brand = "Samsung";
+        mobile1.model = "Galaxy S24";
+
+        mobile2.brand = "Apple";
+        mobile2.model = "iPhone 16";
+
+        System.out.println("Mobile 1");
+        System.out.println("Brand = " + mobile1.brand);
+        System.out.println("Model = " + mobile1.model);
+
+        System.out.println();
+
+        System.out.println("Mobile 2");
+        System.out.println("Brand = " + mobile2.brand);
+        System.out.println("Model = " + mobile2.model);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { 
         id: 8, 
         title: "Question 8", 
