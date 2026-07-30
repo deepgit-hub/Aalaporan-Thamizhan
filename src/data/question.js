@@ -9644,11 +9644,34 @@ Salary = 30000`,
   locked: false,
   completed: false,
 },
-      { id: 9,
-        title: "Challenge Question 9", 
-        locked: true,
-        completed: false 
-        },
+      {
+  id: 9,
+  title: "Question 9",
+
+  questionEnglish:
+    "Write a Java program to overload a method that finds the minimum of two integers and three integers.",
+
+  questionTamil:
+    "Method Overloading-ஐ பயன்படுத்தி இரண்டு Integer-களிலும் மூன்று Integer-களிலும் சிறிய எண்ணை கண்டறியும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create two methods with different numbers of parameters and return the smallest value.",
+
+  hintTamil:
+    "வேறுபட்ட எண்ணிக்கையிலான Parameters கொண்ட இரண்டு Method-களை உருவாக்கி சிறிய மதிப்பை Return செய்யுங்கள்.",
+
+  expectedOutput: `Minimum of 2 Numbers = 10
+Minimum of 3 Numbers = 10`,
+
+  expectedOutputTamil: `2 எண்களில் சிறியது = 10
+3 எண்களில் சிறியது = 10`,
+
+  solution: ``,
+
+  challenge: true,
+  locked: false,
+  completed: false,
+},
       { 
         id: 10, 
         title: "Challenge Question 10", 
