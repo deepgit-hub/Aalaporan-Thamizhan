@@ -13432,7 +13432,11 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { id: 9, title: "Challenge Question 9", locked: true, completed: false },
+      { id: 9, 
+        title: "Challenge Question 9", 
+        locked: true, 
+        completed: false 
+      },
       {
         id: 10,
         title: "Challenge Question 10",
