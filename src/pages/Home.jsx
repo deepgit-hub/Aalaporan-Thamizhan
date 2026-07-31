@@ -87,8 +87,7 @@ function Home() {
             <h2>📚 Java Learning Roadmap</h2>
 
             <p>
-              Complete every topic in order. Each lesson builds your programming
-              skills step by step before unlocking the next one.
+             Learn Java at your own pace. Explore any topic, practice coding, and track your progress as you master each concept.
             </p>
           </div>
 
