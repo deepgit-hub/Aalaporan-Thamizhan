@@ -134,8 +134,7 @@ function Home() {
             <h2>🌾 Aalaporan Thamizhan</h2>
 
             <p>
-              Empowering Tamil students to learn, build,
-              and lead the future of technology.
+              Empowering Tamil students to rise, innovate, and lead the future of technology.
             </p>
 
             <p className="footer-quote">
