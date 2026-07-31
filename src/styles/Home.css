@@ -18,37 +18,37 @@
   padding: 60px;
   border: 1px solid #e2e8f0;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .hero-content {
-  max-width: 850px;
+  max-width: 900px;
 }
 
 .hero-badge {
   display: inline-block;
   background: #dbeafe;
   color: #2563eb;
-  padding: 8px 18px;
+  padding: 10px 22px;
   border-radius: 999px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .hero-title {
-  font-size: 3.8rem;
+  font-size: 4.2rem;
   font-weight: 800;
   color: #0f172a;
   line-height: 1.2;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .hero-description {
-  font-size: 25px;
+  font-size: 26px;
   color: #64748b;
   line-height: 1.9;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .hero-description strong {
@@ -56,29 +56,82 @@
 }
 
 /* ==========================================
+   FEATURE CARDS
+========================================== */
+
+.hero-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 30px;
+  margin-top: 55px;
+}
+
+.feature-card {
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 35px;
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  border-color: #2563eb;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.feature-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.feature-icon {
+  width: 42px;
+  height: 42px;
+  color: #2563eb;
+  flex-shrink: 0;
+}
+
+.feature-header h3 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.feature-card p {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.9;
+  color: #475569;
+}
+
+/* ==========================================
    ROADMAP
 ========================================== */
 
 .topics-section {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .section-header {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .section-header h2 {
-  font-size: 2.9rem;
+  font-size: 3rem;
   color: #0f172a;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   margin-left: 50px;
 }
 
 .section-header p {
   color: #64748b;
-  font-size: 25px;
-  line-height: 1.7;
-  max-width: 700px;
+  font-size: 24px;
+  line-height: 1.8;
+  max-width: 850px;
   margin-left: 50px;
 }
 
@@ -86,69 +139,18 @@
    TOPIC GRID
 ========================================== */
 
-.topics-grid{
-
-    display:flex;
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-    gap:35px;
-
-    margin-top:45px;
-
+.topics-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 45px;
 }
+
 /* ==========================================
    RESPONSIVE
 ========================================== */
 
-.feature-header{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:14px;
-
-    margin-bottom:18px;
-
-}
-
-.feature-header h3{
-
-    margin:0;
-
-    font-size:30px;
-
-    font-weight:700;
-
-    color:#0f172a;
-
-}
-
-.feature-header p{
-
-    margin:0;
-
-    font-size:30px;
-
-    font-weight:700;
-
-    color:#0f172a;
-
-}
-.feature-icon{
-
-    width:36px;
-
-    height:36px;
-
-    color:#2563eb;
-
-    flex-shrink:0;
-
-}
 @media (max-width: 992px) {
 
   .hero {
@@ -156,7 +158,19 @@
   }
 
   .hero-title {
-    font-size: 2.6rem;
+    font-size: 3rem;
+  }
+
+  .hero-description {
+    font-size: 22px;
+  }
+
+  .feature-header h3 {
+    font-size: 28px;
+  }
+
+  .feature-card p {
+    font-size: 20px;
   }
 
 }
@@ -168,23 +182,46 @@
   }
 
   .hero-title {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
 
   .hero-description {
+    font-size: 18px;
+  }
+
+  .hero-badge {
     font-size: 16px;
   }
 
+  .feature-card {
+    padding: 25px;
+  }
+
+  .feature-header h3 {
+    font-size: 24px;
+  }
+
+  .feature-card p {
+    font-size: 18px;
+  }
+
+  .feature-icon {
+    width: 34px;
+    height: 34px;
+  }
+
   .section-header h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
+    margin-left: 0;
   }
 
   .section-header p {
-    font-size: 15px;
+    font-size: 18px;
+    margin-left: 0;
   }
 
   .topics-grid {
-    grid-template-columns: 1fr;
+    justify-content: center;
     gap: 20px;
   }
 
