@@ -1,7 +1,7 @@
 .question-page {
     width: 100%;
     min-height: 100vh;
-    padding: 40px 50px;
+    padding: 40px 70px;
     background: #f8fafc;
     box-sizing: border-box;
 }
@@ -37,6 +37,7 @@
     padding: 40px;
     margin-bottom: 35px;
     box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    width: 100%;
 }
 
 .question-header h1 {
@@ -60,6 +61,7 @@
     padding: 30px;
     margin-bottom: 40px;
     box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    width: 100%;
 }
 
 .best-card h2 {
@@ -75,10 +77,16 @@
 
 /* ================= GRID ================= */
 
-.question-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-    gap: 28px;
+.question-grid{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:28px;
+
 }
 
 /* ================= QUESTION CARD ================= */
