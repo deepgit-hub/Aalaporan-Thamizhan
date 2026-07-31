@@ -3030,127 +3030,6 @@ Hierarchical Inheritance-ல் பல Child Classes ஒரே Parent Class-இ�
 {
   id: 31,
 
-  title: "Multiple Inheritance",
-
-  englishDefinition:
-    "Multiple Inheritance is a type of inheritance in which one child class inherits the properties and methods of more than one parent class. Java does not support Multiple Inheritance using classes, but it can be achieved using interfaces.",
-
-  tamilDefinition:
-    "Multiple Inheritance என்பது ஒரு Child Class, ஒன்றுக்கும் மேற்பட்ட Parent Classes-இலிருந்து Properties மற்றும் Methods-ஐ பெறும் Inheritance வகையாகும். Java-வில் Classes மூலம் Multiple Inheritance ஆதரிக்கப்படாது. ஆனால் Interfaces மூலம் இதை செயல்படுத்த முடியும்.",
-
-  realWorldUsage:
-    "Developers use Multiple Inheritance when a class needs the features of multiple sources. In Java, this is achieved using interfaces instead of classes.",
-
-  realWorldUsageTamil:
-    "ஒரு Class-க்கு பல Parent Sources-ன் அம்சங்கள் தேவைப்படும் போது Developers Multiple Inheritance-ஐ பயன்படுத்துகின்றனர். Java-வில் இது Classes மூலம் அல்ல, Interfaces மூலம் செயல்படுத்தப்படுகிறது.",
-
-  syntax: `interface Parent1{
-
-}
-
-interface Parent2{
-
-}
-
-class ChildClass implements Parent1, Parent2{
-
-}`,
-
-  syntaxExplanationEnglish: [
-    "Parent1 and Parent2 are interfaces.",
-    "implements is the keyword used to implement interfaces.",
-    "A class can implement multiple interfaces in Java.",
-    "Java does not allow a class to extend multiple classes."
-  ],
-
-  syntaxExplanationTamil: [
-    "Parent1 மற்றும் Parent2 ஆகியவை Interfaces ஆகும்.",
-    "implements என்பது Interface-ஐ செயல்படுத்த (Implement) பயன்படும் Keyword ஆகும்.",
-    "ஒரு Class பல Interfaces-ஐ Implement செய்ய முடியும்.",
-    "Java-வில் ஒரு Class பல Classes-ஐ Extend செய்ய அனுமதிக்கப்படாது."
-  ],
-
-  exampleProgram: `interface Sports{
-
-    void play();
-
-}
-
-interface Cultural{
-
-    void dance();
-
-}
-
-class Student implements Sports, Cultural{
-
-    public void play(){
-
-        System.out.println("Playing Football");
-
-    }
-
-    public void dance(){
-
-        System.out.println("Performing Cultural Dance");
-
-    }
-
-}
-
-public class Main{
-
-    public static void main(String[] args){
-
-        Student student = new Student();
-
-        student.play();
-        student.dance();
-
-    }
-
-}`,
-
-  programExplanationEnglish: [
-    "Line 1: Creates the Sports interface.",
-    "Line 3: Declares the play() method.",
-    "Line 7: Creates the Cultural interface.",
-    "Line 9: Declares the dance() method.",
-    "Line 13: Student implements both interfaces using the implements keyword.",
-    "Lines 15-27: Provides implementations for both interface methods.",
-    "Line 35: Creates a Student object.",
-    "Lines 37-38: Calls methods from both interfaces.",
-    "This demonstrates Multiple Inheritance in Java using interfaces."
-  ],
-
-  programExplanationTamil: [
-    "வரி 1: Sports என்ற Interface உருவாக்கப்படுகிறது.",
-    "வரி 3: play() Method அறிவிக்கப்படுகிறது.",
-    "வரி 7: Cultural என்ற Interface உருவாக்கப்படுகிறது.",
-    "வரி 9: dance() Method அறிவிக்கப்படுகிறது.",
-    "வரி 13: Student Class, implements Keyword மூலம் இரண்டு Interfaces-ஐ செயல்படுத்துகிறது.",
-    "வரி 15-27: இரண்டு Interface Methods-க்கும் செயல்பாடு (Implementation) வழங்கப்படுகிறது.",
-    "வரி 35: Student Object உருவாக்கப்படுகிறது.",
-    "வரி 37-38: இரண்டு Interfaces-ன் Methods-உம் அழைக்கப்படுகின்றன.",
-    "இதன் மூலம் Java-வில் Interfaces பயன்படுத்தி Multiple Inheritance செயல்படுத்தப்படுவது காட்டப்படுகிறது."
-  ],
-
-  output: `Playing Football
-Performing Cultural Dance
-
-💡 Note 
-Java does not support Multiple Inheritance using classes because it can create ambiguity (Diamond Problem). Instead, Java allows a class to implement multiple interfaces.
-
-💡 குறிப்பு
-Java-வில் Classes மூலம் Multiple Inheritance ஆதரிக்கப்படாது. ஏனெனில் அது Diamond Problem போன்ற குழப்பங்களை ஏற்படுத்தும். அதற்கு பதிலாக Java, ஒரு Class பல Interfaces-ஐ Implement செய்ய அனுமதிக்கிறது.`,
-
-  locked: true,
-
-  completed: false
-},
-{
-  id: 32,
-
   title: "Hybrid Inheritance",
 
   englishDefinition:
@@ -3282,7 +3161,7 @@ Java-வில் Classes மூலம் Hybrid Inheritance ஆதரிக்�
   completed: false
 },
   {
-  id: 33,
+  id: 32,
 
   title: "Exception Handling",
 
@@ -3377,7 +3256,7 @@ Exception Handling மூலம் Program திடீரென நிற்க
   completed: false
 },
   {
-  id: 34,
+  id: 33,
 
   title: "Try Catch",
 
