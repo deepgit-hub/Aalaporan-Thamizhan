@@ -1,0 +1,85 @@
+.mentor-btn{
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    background:#173476;
+
+    color:white;
+
+    border:none;
+
+    padding:16px 26px;
+
+    border-radius:50px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    box-shadow:0 12px 25px rgba(23,52,118,.35);
+
+    transition:.3s;
+
+    z-index:1000;
+
+}
+
+.mentor-btn:hover{
+
+    background:#21479c;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 35px rgba(23,52,118,.45);
+
+}
+
+@media(max-width:768px){
+
+    .mentor-btn{
+
+        width:65px;
+
+        height:65px;
+
+        border-radius:50%;
+
+        padding:0;
+
+        font-size:28px;
+
+    }
+
+    .mentor-btn{
+
+        color:transparent;
+
+    }
+
+    .mentor-btn::after{
+
+        content:"💬";
+
+        color:white;
+
+        position:absolute;
+
+        inset:0;
+
+        display:flex;
+
+        justify-content:center;
+
+        align-items:center;
+
+        font-size:28px;
+
+    }
+
+}
