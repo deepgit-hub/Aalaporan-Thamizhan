@@ -11753,11 +11753,56 @@ public class Main {
   completed: false,
 },
       {
-        id: 7,
-        title: "Question 7",
-        locked: false,
-        completed: false,
-      },
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Write a Java program to create a class College and inherit it into a class Department. Display the college name and department name.",
+
+  questionTamil:
+    "College என்ற Class-ஐ உருவாக்கி அதை Department என்ற Class-ல் Inherit செய்து கல்லூரி பெயர் மற்றும் துறை பெயரை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Store the college name in the parent class and the department name in the child class.",
+
+  hintTamil:
+    "Parent Class-ல் College Name-ஐயும் Child Class-ல் Department Name-ஐயும் உருவாக்குங்கள்.",
+
+  expectedOutput: `College = ABC College
+Department = Computer Science`,
+
+  expectedOutputTamil: `கல்லூரி = ABC College
+துறை = Computer Science`,
+
+  solution: `class College {
+
+    String collegeName = "ABC College";
+
+}
+
+class Department extends College {
+
+    String departmentName = "Computer Science";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Department department = new Department();
+
+        System.out.println("College = " + department.collegeName);
+        System.out.println("Department = " + department.departmentName);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 8,
         title: "Question 8",
