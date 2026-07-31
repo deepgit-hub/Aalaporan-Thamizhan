@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import TopicCard from "../components/TopicCard";
 import topics from "../data/topics";
-import MentorSupport from "../components/MentorSupport";
+import MentorSupport from "../components/MentorSupportButton";
 import {
   Languages,
   Globe2,
