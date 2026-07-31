@@ -12124,11 +12124,56 @@ public class Main {
   completed: false,
 },
       {
-        id: 5,
-        title: "Question 5",
-        locked: false,
-        completed: false,
-      },
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to create a class Book with a variable title and inherit it into a class LibraryBook with a variable shelfNumber. Display both values.",
+
+  questionTamil:
+    "title என்ற Variable-ஐ கொண்ட Book என்ற Class-ஐ உருவாக்கி, அதை shelfNumber என்ற Variable-ஐ கொண்ட LibraryBook என்ற Class-ல் Inherit செய்து இரண்டு மதிப்புகளையும் காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "The parent class stores the book title and the child class stores the shelf number.",
+
+  hintTamil:
+    "Parent Class-ல் Book Title-ஐயும் Child Class-ல் Shelf Number-ஐயும் உருவாக்குங்கள்.",
+
+  expectedOutput: `Book = Java Programming
+Shelf Number = A12`,
+
+  expectedOutputTamil: `புத்தகம் = Java Programming
+அலமாரி எண் = A12`,
+
+  solution: `class Book {
+
+    String title = "Java Programming";
+
+}
+
+class LibraryBook extends Book {
+
+    String shelfNumber = "A12";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        LibraryBook book = new LibraryBook();
+
+        System.out.println("Book = " + book.title);
+        System.out.println("Shelf Number = " + book.shelfNumber);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 6,
         title: "Question 6",
