@@ -13005,11 +13005,66 @@ public class Main {
   completed: false,
 },
       {
-        id: 2,
-        title: "Question 2",
-        locked: false,
-        completed: false,
-      },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to create a class Vehicle and inherit it into Car and Bike. Display the vehicle brand, car model, and bike model.",
+
+  questionTamil:
+    "Vehicle என்ற Class-ஐ உருவாக்கி, அதை Car மற்றும் Bike என்ற Class-களுக்கு Inherit செய்து, வாகனத்தின் பிராண்ட், கார் மாடல் மற்றும் பைக் மாடலை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create two child classes from the same parent class.",
+
+  hintTamil:
+    "ஒரே Parent Class-லிருந்து இரண்டு Child Class-களை உருவாக்குங்கள்.",
+
+  expectedOutput: `Brand = Toyota
+Car Model = Fortuner
+Bike Model = R15`,
+
+  expectedOutputTamil: `பிராண்ட் = Toyota
+கார் மாடல் = Fortuner
+பைக் மாடல் = R15`,
+
+  solution: `class Vehicle {
+
+    String brand = "Toyota";
+
+}
+
+class Car extends Vehicle {
+
+    String carModel = "Fortuner";
+
+}
+
+class Bike extends Vehicle {
+
+    String bikeModel = "R15";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Car car = new Car();
+        Bike bike = new Bike();
+
+        System.out.println("Brand = " + car.brand);
+        System.out.println("Car Model = " + car.carModel);
+        System.out.println("Bike Model = " + bike.bikeModel);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 3,
         title: "Question 3",
