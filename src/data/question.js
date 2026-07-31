@@ -12022,11 +12022,56 @@ public class Main {
   completed: false,
 },
       {
-        id: 3,
-        title: "Question 3",
-        locked: false,
-        completed: false,
-      },
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to create a class Animal with a variable animalName and inherit it into a class Dog with a variable breed. Display both values.",
+
+  questionTamil:
+    "animalName என்ற Variable-ஐ கொண்ட Animal என்ற Class-ஐ உருவாக்கி, அதை breed என்ற Variable-ஐ கொண்ட Dog என்ற Class-ல் Inherit செய்து இரண்டு மதிப்புகளையும் காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use inheritance to access the parent class variable in the child class.",
+
+  hintTamil:
+    "Inheritance மூலம் Parent Class Variable-ஐ Child Class-ல் பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Animal = Dog
+Breed = Labrador`,
+
+  expectedOutputTamil: `விலங்கு = Dog
+இனம் = Labrador`,
+
+  solution: `class Animal {
+
+    String animalName = "Dog";
+
+}
+
+class Dog extends Animal {
+
+    String breed = "Labrador";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Dog dog = new Dog();
+
+        System.out.println("Animal = " + dog.animalName);
+        System.out.println("Breed = " + dog.breed);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 4,
         title: "Question 4",
