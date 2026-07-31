@@ -13587,11 +13587,48 @@ Designing Software = Figma`,
   completed: false,
 },
       {
-        id: 3,
-        title: "Question 3",
-        locked: false,
-        completed: false,
-      },
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to handle a NumberFormatException using a try-catch block.",
+
+  questionTamil:
+    "NumberFormatException-ஐ try-catch Block-ஐ பயன்படுத்தி கையாளும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Convert an invalid string into an integer inside the try block.",
+
+  hintTamil:
+    "தவறான String-ஐ Integer-ஆக மாற்ற முயற்சிக்கவும்.",
+
+  expectedOutput: `Exception Caught: For input string: "Java"`,
+
+  expectedOutputTamil: `Exception பிடிக்கப்பட்டது: For input string: "Java"`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            int number = Integer.parseInt("Java");
+            System.out.println(number);
+
+        } catch (NumberFormatException e) {
+
+            System.out.println("Exception Caught: " + e.getMessage());
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 4,
         title: "Question 4",
