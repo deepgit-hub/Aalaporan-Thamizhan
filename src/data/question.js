@@ -12397,11 +12397,65 @@ Storage = 512 GB SSD`,
 
     questions: [
       {
-        id: 1,
-        title: "Question 1",
-        locked: false,
-        completed: false,
-      },
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Write a Java program to create a class Person, inherit it into Employee, and then inherit Employee into Manager. Display the person's name, employee ID, and department.",
+
+  questionTamil:
+    "Person என்ற Class-ஐ Employee Class-க்கு Inherit செய்து, Employee Class-ஐ Manager Class-க்கு Inherit செய்து, பெயர், பணியாளர் எண் மற்றும் துறையை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create three classes using multilevel inheritance with the extends keyword.",
+
+  hintTamil:
+    "extends Keyword-ஐ பயன்படுத்தி மூன்று Class-களை Multilevel Inheritance மூலம் உருவாக்குங்கள்.",
+
+  expectedOutput: `Name = Deepak
+Employee ID = 101
+Department = HR`,
+
+  expectedOutputTamil: `பெயர் = Deepak
+பணியாளர் எண் = 101
+துறை = HR`,
+
+  solution: `class Person {
+
+    String name = "Deepak";
+
+}
+
+class Employee extends Person {
+
+    int employeeId = 101;
+
+}
+
+class Manager extends Employee {
+
+    String department = "HR";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Manager manager = new Manager();
+
+        System.out.println("Name = " + manager.name);
+        System.out.println("Employee ID = " + manager.employeeId);
+        System.out.println("Department = " + manager.department);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2",
