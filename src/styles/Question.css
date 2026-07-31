@@ -94,6 +94,8 @@
     border: 2px solid transparent;
     box-shadow: 0 10px 25px rgba(0,0,0,.08);
     transition: all .35s ease;
+     min-height: 170px;
+    padding: 40px 20px;
 }
 
 .question-card:hover {
