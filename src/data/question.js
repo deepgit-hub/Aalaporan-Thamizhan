@@ -13066,11 +13066,66 @@ public class Main {
   completed: false,
 },
       {
-        id: 3,
-        title: "Question 3",
-        locked: false,
-        completed: false,
-      },
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to create a class Person and inherit it into Student and Teacher. Display the person's name, student roll number, and teacher subject.",
+
+  questionTamil:
+    "Person என்ற Class-ஐ உருவாக்கி, அதை Student மற்றும் Teacher என்ற Class-களுக்கு Inherit செய்து, பெயர், மாணவர் பதிவு எண் மற்றும் ஆசிரியர் பாடத்தை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Both Student and Teacher should inherit from Person.",
+
+  hintTamil:
+    "Student மற்றும் Teacher ஆகிய இரண்டு Class-களும் Person Class-ஐ Inherit செய்ய வேண்டும்.",
+
+  expectedOutput: `Name = Deepak
+Roll Number = 101
+Subject = Java`,
+
+  expectedOutputTamil: `பெயர் = Deepak
+பதிவு எண் = 101
+பாடம் = Java`,
+
+  solution: `class Person {
+
+    String name = "Deepak";
+
+}
+
+class Student extends Person {
+
+    int rollNumber = 101;
+
+}
+
+class Teacher extends Person {
+
+    String subject = "Java";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Student student = new Student();
+        Teacher teacher = new Teacher();
+
+        System.out.println("Name = " + student.name);
+        System.out.println("Roll Number = " + student.rollNumber);
+        System.out.println("Subject = " + teacher.subject);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 4,
         title: "Question 4",
