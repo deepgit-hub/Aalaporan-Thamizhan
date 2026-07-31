@@ -13811,11 +13811,53 @@ Designing Software = Figma`,
   completed: false,
 },
       {
-        id: 8,
-        title: "Question 8",
-        locked: false,
-        completed: false,
-      },
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to use the throws keyword in a method and handle the exception in the main method.",
+
+  questionTamil:
+    "ஒரு Method-ல் throws Keyword-ஐ பயன்படுத்தி Exception-ஐ main Method-ல் கையாளும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create a method with the throws keyword and call it inside a try-catch block.",
+
+  hintTamil:
+    "throws Keyword-உடன் ஒரு Method-ஐ உருவாக்கி, அதை try-catch Block-ல் அழைக்குங்கள்.",
+
+  expectedOutput: `Exception Caught: Number cannot be zero`,
+
+  expectedOutputTamil: `Exception பிடிக்கப்பட்டது: Number cannot be zero`,
+
+  solution: `public class Main {
+
+    static void checkNumber() throws ArithmeticException {
+
+        throw new ArithmeticException("Number cannot be zero");
+
+    }
+
+    public static void main(String[] args) {
+
+        try {
+
+            checkNumber();
+
+        } catch (ArithmeticException e) {
+
+            System.out.println("Exception Caught: " + e.getMessage());
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { id: 9, title: "Challenge Question 9", locked: true, completed: false },
       {
         id: 10,
