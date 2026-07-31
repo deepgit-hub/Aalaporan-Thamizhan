@@ -12905,13 +12905,37 @@ Department = Information Technology`,
   challenge: true,
   locked: false,
   completed: false,
-}
+},
       {
-        id: 10,
-        title: "Challenge Question 10",
-        locked: true,
-        completed: false,
-      },
+  id: 10,
+  title: "Question 10",
+
+  questionEnglish:
+    "Write a Java program to create a class LivingThing, inherit it into Animal, and then inherit Animal into Bird. Display the category, animal name, and bird name.",
+
+  questionTamil:
+    "LivingThing என்ற Class-ஐ Animal Class-க்கு Inherit செய்து, Animal Class-ஐ Bird Class-க்கு Inherit செய்து, உயிரின வகை, விலங்கின் பெயர் மற்றும் பறவையின் பெயரை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create three classes using multilevel inheritance and access all variables through the final child class.",
+
+  hintTamil:
+    "Multilevel Inheritance பயன்படுத்தி மூன்று Class-களை உருவாக்கி இறுதி Child Class மூலம் அனைத்து Variable-களையும் அணுகுங்கள்.",
+
+  expectedOutput: `Category = Living Organism
+Animal = Bird
+Bird = Peacock`,
+
+  expectedOutputTamil: `வகை = உயிரினம்
+விலங்கு = Bird
+பறவை = Peacock`,
+
+  solution: ``,
+
+  challenge: true,
+  locked: false,
+  completed: false,
+},
     ],
   },
   {
