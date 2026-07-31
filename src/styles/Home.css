@@ -103,6 +103,41 @@
    RESPONSIVE
 ========================================== */
 
+.feature-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    margin-bottom:18px;
+
+}
+
+.feature-header h3{
+
+    margin:0;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+.feature-icon{
+
+    width:36px;
+
+    height:36px;
+
+    color:#2563eb;
+
+    flex-shrink:0;
+
+}
 @media (max-width: 992px) {
 
   .hero {
@@ -141,40 +176,5 @@
     grid-template-columns: 1fr;
     gap: 20px;
   }
-
-}
-.feature-header{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:14px;
-
-    margin-bottom:18px;
-
-}
-
-.feature-header h3{
-
-    margin:0;
-
-    font-size:30px;
-
-    font-weight:700;
-
-    color:#0f172a;
-
-}
-
-.feature-icon{
-
-    width:36px;
-
-    height:36px;
-
-    color:#2563eb;
-
-    flex-shrink:0;
 
 }
