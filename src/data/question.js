@@ -11920,30 +11920,53 @@ Bike Brand = Yamaha`,
 
     questions: [
       {
-  id: 10,
-  title: "Question 10",
+  id: 1,
+  title: "Question 1",
 
   questionEnglish:
-    "Write a Java program to create a class Vehicle and inherit it into Car and Bike (Hierarchical Inheritance). Display the details.",
+    "Write a Java program to create a class Person with a variable name and inherit it into a class Student with a variable rollNumber. Display both values.",
 
   questionTamil:
-    "Vehicle Class-ஐ Car மற்றும் Bike Class-களுக்கு Inherit செய்து (Hierarchical Inheritance) விவரங்களை காட்டும் Java Program எழுதுங்கள்.",
+    "name என்ற Variable-ஐ கொண்ட Person என்ற Class-ஐ உருவாக்கி, அதை rollNumber என்ற Variable-ஐ கொண்ட Student என்ற Class-ல் Inherit செய்து இரண்டு மதிப்புகளையும் காட்டும் Java Program எழுதுங்கள்.",
 
   hintEnglish:
-    "Create one parent class and two child classes using the extends keyword.",
+    "Use the extends keyword to inherit the Person class into the Student class.",
 
   hintTamil:
-    "ஒரு Parent Class மற்றும் இரண்டு Child Class-களை extends Keyword-ஐ பயன்படுத்தி உருவாக்குங்கள்.",
+    "Person Class-ஐ Student Class-ல் Inherit செய்ய extends Keyword-ஐ பயன்படுத்துங்கள்.",
 
-  expectedOutput: `Car Brand = Toyota
-Bike Brand = Yamaha`,
+  expectedOutput: `Name = Deepak
+Roll Number = 101`,
 
-  expectedOutputTamil: `கார் பிராண்ட் = Toyota
-பைக் பிராண்ட் = Yamaha`,
+  expectedOutputTamil: `பெயர் = Deepak
+பதிவு எண் = 101`,
 
-  solution: ``,
+  solution: `class Person {
 
-  challenge: true,
+    String name = "Deepak";
+
+}
+
+class Student extends Person {
+
+    int rollNumber = 101;
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Student student = new Student();
+
+        System.out.println("Name = " + student.name);
+        System.out.println("Roll Number = " + student.rollNumber);
+
+    }
+
+}`,
+
+  challenge: false,
   locked: false,
   completed: false,
 },
