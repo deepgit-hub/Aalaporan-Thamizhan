@@ -1,20 +1,195 @@
-.topic-card {
-  width: 220px;
-  padding: 12px;
-  margin: 10px;
-  border: 2px solid #2563eb;
-  border-radius: 25px;
-  background: white;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: bold;
+.topic-card{
+
+    background:white;
+
+    border:none;
+
+    border-radius:18px;
+
+    padding:30px 20px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    text-align:center;
+
+    min-height:220px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border:3px solid transparent;
+
 }
 
-.topic-card:hover {
-  background: #2563eb;
-  color: white;
+.topic-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+
 }
 
-.completed {
-  border-color: green;
+/* ================= ICON ================= */
+
+.topic-icon{
+
+    font-size:50px;
+
+    margin-bottom:18px;
+
+}
+
+/* ================= TITLE ================= */
+
+.topic-card h3{
+
+    font-size:24px;
+
+    color:#173476;
+
+    margin-bottom:12px;
+
+    font-weight:700;
+
+}
+
+/* ================= STATUS ================= */
+
+.topic-card p{
+
+    font-size:17px;
+
+    font-weight:600;
+
+}
+
+/* ================= AVAILABLE ================= */
+
+.available{
+
+    border-color:#173476;
+
+}
+
+.available p{
+
+    color:#173476;
+
+}
+
+.available:hover{
+
+    background:#173476;
+
+}
+
+.available:hover h3,
+
+.available:hover p{
+
+    color:white;
+
+}
+
+/* ================= COMPLETED ================= */
+
+.completed{
+
+    border-color:#16a34a;
+
+}
+
+.completed h3,
+
+.completed p{
+
+    color:#16a34a;
+
+}
+
+.completed:hover{
+
+    background:#16a34a;
+
+}
+
+.completed:hover h3,
+
+.completed:hover p{
+
+    color:white;
+
+}
+
+/* ================= LOCKED ================= */
+
+.locked{
+
+    border-color:#d1d5db;
+
+    background:#f8fafc;
+
+}
+
+.locked h3{
+
+    color:#6b7280;
+
+}
+
+.locked p{
+
+    color:#9ca3af;
+
+}
+
+.locked:hover{
+
+    transform:none;
+
+    cursor:not-allowed;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    .topic-card{
+
+        min-height:180px;
+
+        padding:25px 18px;
+
+    }
+
+    .topic-icon{
+
+        font-size:42px;
+
+    }
+
+    .topic-card h3{
+
+        font-size:20px;
+
+    }
+
+    .topic-card p{
+
+        font-size:15px;
+
+    }
+
 }
