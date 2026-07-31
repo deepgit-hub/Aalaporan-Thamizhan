@@ -1,9 +1,9 @@
 .question-page {
-    max-width: 1200px;
-    margin: auto;
-    padding: 40px 20px;
+    width: 100%;
     min-height: 100vh;
+    padding: 40px 50px;
     background: #f8fafc;
+    box-sizing: border-box;
 }
 
 /* ================= BACK BUTTON ================= */
