@@ -166,7 +166,7 @@ function Home() {
                 )
               }
             >
-              🌐 Visit My Portfolio
+              👨‍💻 Know More About Me
             </button>
 
           </div>
