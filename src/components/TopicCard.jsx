@@ -2,34 +2,25 @@ import "../styles/TopicCard.css";
 
 function TopicCard({
   title,
-  locked,
   completed = false,
   onClick,
 }) {
   return (
     <button
       className={`topic-card ${
-        completed
-          ? "completed"
-          : locked
-          ? "locked"
-          : "available"
+        completed ? "completed" : "not-completed"
       }`}
       onClick={onClick}
     >
       <div className="topic-icon">
-        {completed ? "✅" : locked ? "🔒" : "📘"}
+        {completed ? "✅" : "📘"}
       </div>
 
       <h3>{title}</h3>
 
-      <p>
-        {completed
-          ? "Completed"
-          : locked
-          ? "Locked"
-          : "Start Learning"}
-      </p>
+      <span className="topic-status">
+        {completed ? "Completed" : "Learn Now"}
+      </span>
     </button>
   );
 }
