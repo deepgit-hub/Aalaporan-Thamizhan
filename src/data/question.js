@@ -12358,11 +12358,37 @@ Width = 10`,
   completed: false,
 },
       {
-        id: 10,
-        title: "Challenge Question 10",
-        locked: true,
-        completed: false,
-      },
+  id: 10,
+  title: "Question 10",
+
+  questionEnglish:
+    "Write a Java program to create a class Computer with a variable brand and inherit it into a class Laptop with variables processor, RAM, and storage. Display all the values.",
+
+  questionTamil:
+    "brand என்ற Variable-ஐ கொண்ட Computer என்ற Class-ஐ உருவாக்கி, அதை processor, RAM மற்றும் storage என்ற Variable-களை கொண்ட Laptop என்ற Class-ல் Inherit செய்து அனைத்து மதிப்புகளையும் காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Store the brand in the parent class and the remaining details in the child class.",
+
+  hintTamil:
+    "Brand-ஐ Parent Class-லிலும் மற்ற விவரங்களை Child Class-லிலும் உருவாக்குங்கள்.",
+
+  expectedOutput: `Brand = Dell
+Processor = Intel i5
+RAM = 16 GB
+Storage = 512 GB SSD`,
+
+  expectedOutputTamil: `பிராண்ட் = Dell
+Processor = Intel i5
+RAM = 16 GB
+Storage = 512 GB SSD`,
+
+  solution: ``,
+
+  challenge: true,
+  locked: false,
+ completed: false,
+},
     ],
   },
   {
