@@ -13769,11 +13769,47 @@ Designing Software = Figma`,
   completed: false,
 },
       {
-        id: 7,
-        title: "Question 7",
-        locked: false,
-        completed: false,
-      },
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Write a Java program to throw an ArithmeticException using the throw keyword.",
+
+  questionTamil:
+    "throw Keyword-ஐ பயன்படுத்தி ArithmeticException-ஐ உருவாக்கும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use the throw keyword inside the try block.",
+
+  hintTamil:
+    "try Block-ல் throw Keyword-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Exception Caught: Number cannot be zero`,
+
+  expectedOutputTamil: `Exception பிடிக்கப்பட்டது: Number cannot be zero`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            throw new ArithmeticException("Number cannot be zero");
+
+        } catch (ArithmeticException e) {
+
+            System.out.println("Exception Caught: " + e.getMessage());
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 8,
         title: "Question 8",
