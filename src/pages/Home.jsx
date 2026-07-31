@@ -131,7 +131,7 @@ function Home() {
 
           <div className="footer-left">
 
-            <h2>🌾 Alaporan Tamilan</h2>
+            <h2>🌾 Aalaporan Thamizhan</h2>
 
             <p>
               Empowering Tamil students to learn, build,
