@@ -178,7 +178,7 @@ function Home() {
         <hr />
 
         <p className="copyright">
-          © 2026 Alaporan Tamilan • Designed & Developed by Deepak
+          © 2026 Alaporan Tamilan • Designed & Developed by deep-AK
         </p>
 
       </footer>
