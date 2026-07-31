@@ -13189,11 +13189,66 @@ public class Main {
   completed: false,
 },
       {
-        id: 5,
-        title: "Question 5",
-        locked: false,
-        completed: false,
-      },
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to create a class Employee and inherit it into Manager and Developer. Display the employee name, manager department, and programming language.",
+
+  questionTamil:
+    "Employee என்ற Class-ஐ உருவாக்கி, அதை Manager மற்றும் Developer என்ற Class-களுக்கு Inherit செய்து, பணியாளரின் பெயர், மேலாளர் துறை மற்றும் Programming Language-ஐ காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create two child classes from Employee and access the inherited variable.",
+
+  hintTamil:
+    "Employee Class-லிருந்து இரண்டு Child Class-களை உருவாக்கி Parent Variable-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Employee = Rahul
+Department = HR
+Programming Language = Java`,
+
+  expectedOutputTamil: `பணியாளர் = Rahul
+துறை = HR
+Programming Language = Java`,
+
+  solution: `class Employee {
+
+    String employeeName = "Rahul";
+
+}
+
+class Manager extends Employee {
+
+    String department = "HR";
+
+}
+
+class Developer extends Employee {
+
+    String language = "Java";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Manager manager = new Manager();
+        Developer developer = new Developer();
+
+        System.out.println("Employee = " + manager.employeeName);
+        System.out.println("Department = " + manager.department);
+        System.out.println("Programming Language = " + developer.language);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 6,
         title: "Question 6",
