@@ -1,12 +1,18 @@
+/* ==========================================
+   TOPIC CARD
+========================================== */
+
 .topic-card{
+
+    width:100%;
 
     background:white;
 
     border:none;
 
-    border-radius:18px;
+    border-radius:20px;
 
-    padding:30px 20px;
+    padding:35px 25px;
 
     cursor:pointer;
 
@@ -14,21 +20,23 @@
 
     box-shadow:0 10px 25px rgba(0,0,0,.08);
 
-    text-align:center;
-
-    min-height:220px;
-
     display:flex;
 
     flex-direction:column;
 
-    justify-content:center;
-
     align-items:center;
 
-    border:3px solid transparent;
+    justify-content:center;
+
+    gap:18px;
+
+    min-height:230px;
 
 }
+
+/* ==========================================
+   HOVER
+========================================== */
 
 .topic-card:hover{
 
@@ -38,81 +46,127 @@
 
 }
 
-/* ================= ICON ================= */
+/* ==========================================
+   ICON
+========================================== */
 
 .topic-icon{
 
-    font-size:50px;
-
-    margin-bottom:18px;
+    font-size:52px;
 
 }
 
-/* ================= TITLE ================= */
+/* ==========================================
+   TITLE
+========================================== */
 
 .topic-card h3{
 
-    font-size:24px;
-
-    color:#173476;
-
-    margin-bottom:12px;
+    font-size:25px;
 
     font-weight:700;
 
+    text-align:center;
+
+    line-height:1.5;
+
+    margin:0;
+
 }
 
-/* ================= STATUS ================= */
+/* ==========================================
+   STATUS
+========================================== */
 
-.topic-card p{
+.topic-status{
 
-    font-size:17px;
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:16px;
 
     font-weight:600;
 
 }
 
-/* ================= AVAILABLE ================= */
+/* ==========================================
+   NOT COMPLETED
+========================================== */
 
-.available{
+.not-completed{
 
-    border-color:#173476;
+    border:3px solid #173476;
 
 }
 
-.available p{
+.not-completed .topic-icon{
 
     color:#173476;
 
 }
 
-.available:hover{
+.not-completed h3{
 
-    background:#173476;
+    color:#173476;
 
 }
 
-.available:hover h3,
+.not-completed .topic-status{
 
-.available:hover p{
+    background:#173476;
 
     color:white;
 
 }
 
-/* ================= COMPLETED ================= */
+.not-completed:hover{
 
-.completed{
-
-    border-color:#16a34a;
+    background:#173476;
 
 }
 
-.completed h3,
+.not-completed:hover h3{
 
-.completed p{
+    color:white;
+
+}
+
+.not-completed:hover .topic-status{
+
+    background:white;
+
+    color:#173476;
+
+}
+
+/* ==========================================
+   COMPLETED
+========================================== */
+
+.completed{
+
+    border:3px solid #16a34a;
+
+}
+
+.completed .topic-icon{
 
     color:#16a34a;
+
+}
+
+.completed h3{
+
+    color:#16a34a;
+
+}
+
+.completed .topic-status{
+
+    background:#16a34a;
+
+    color:white;
 
 }
 
@@ -122,53 +176,29 @@
 
 }
 
-.completed:hover h3,
-
-.completed:hover p{
+.completed:hover h3{
 
     color:white;
 
 }
 
-/* ================= LOCKED ================= */
+.completed:hover .topic-status{
 
-.locked{
+    background:white;
 
-    border-color:#d1d5db;
-
-    background:#f8fafc;
+    color:#16a34a;
 
 }
 
-.locked h3{
-
-    color:#6b7280;
-
-}
-
-.locked p{
-
-    color:#9ca3af;
-
-}
-
-.locked:hover{
-
-    transform:none;
-
-    cursor:not-allowed;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-
-}
-
-/* ================= RESPONSIVE ================= */
+/* ==========================================
+   RESPONSIVE
+========================================== */
 
 @media(max-width:768px){
 
     .topic-card{
 
-        min-height:180px;
+        min-height:190px;
 
         padding:25px 18px;
 
@@ -186,9 +216,9 @@
 
     }
 
-    .topic-card p{
+    .topic-status{
 
-        font-size:15px;
+        font-size:14px;
 
     }
 
