@@ -12697,11 +12697,65 @@ public class Main {
   completed: false,
 },
       {
-        id: 6,
-        title: "Question 6",
-        locked: false,
-        completed: false,
-      },
+  id: 6,
+  title: "Question 6",
+
+  questionEnglish:
+    "Write a Java program to create a class Book, inherit it into LibraryBook, and then inherit LibraryBook into DigitalBook. Display the title, shelf number, and file format.",
+
+  questionTamil:
+    "Book என்ற Class-ஐ LibraryBook Class-க்கு Inherit செய்து, LibraryBook Class-ஐ DigitalBook Class-க்கு Inherit செய்து, புத்தகத்தின் தலைப்பு, அலமாரி எண் மற்றும் கோப்பு வடிவத்தை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use three classes where each child class adds one new variable.",
+
+  hintTamil:
+    "மூன்று Class-களை உருவாக்கி ஒவ்வொரு Child Class-லும் ஒரு புதிய Variable-ஐ சேர்க்குங்கள்.",
+
+  expectedOutput: `Title = Java Programming
+Shelf Number = A12
+File Format = PDF`,
+
+  expectedOutputTamil: `தலைப்பு = Java Programming
+அலமாரி எண் = A12
+கோப்பு வடிவம் = PDF`,
+
+  solution: `class Book {
+
+    String title = "Java Programming";
+
+}
+
+class LibraryBook extends Book {
+
+    String shelfNumber = "A12";
+
+}
+
+class DigitalBook extends LibraryBook {
+
+    String fileFormat = "PDF";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        DigitalBook book = new DigitalBook();
+
+        System.out.println("Title = " + book.title);
+        System.out.println("Shelf Number = " + book.shelfNumber);
+        System.out.println("File Format = " + book.fileFormat);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 7,
         title: "Question 7",
