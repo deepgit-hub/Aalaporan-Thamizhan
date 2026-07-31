@@ -63,21 +63,18 @@
 ========================================== */
 
 .topic-card h3{
-
     font-size:26px;
-
     font-weight:700;
-
     color:#173476;
-
     text-align:center;
-
     line-height:1.4;
-
     margin:0;
 
+    height:80px;          /* Reserve space for up to 3 lines */
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
-
 /* ==========================================
    STATUS
 ========================================== */
