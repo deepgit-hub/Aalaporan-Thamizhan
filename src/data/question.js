@@ -13127,11 +13127,67 @@ public class Main {
   completed: false,
 },
       {
-        id: 4,
-        title: "Question 4",
-        locked: false,
-        completed: false,
-      },
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to create a class Shape and inherit it into Circle and Rectangle. Display the shape name, circle radius, and rectangle dimensions.",
+
+  questionTamil:
+    "Shape என்ற Class-ஐ உருவாக்கி, அதை Circle மற்றும் Rectangle என்ற Class-களுக்கு Inherit செய்து, வடிவத்தின் பெயர், வட்டத்தின் ஆரம் மற்றும் செவ்வகத்தின் அளவுகளை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use one parent class with two child classes.",
+
+  hintTamil:
+    "ஒரு Parent Class மற்றும் இரண்டு Child Class-களை பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Shape = Shape
+Circle Radius = 7
+Rectangle = 10 x 5`,
+
+  expectedOutputTamil: `வடிவம் = Shape
+வட்டத்தின் ஆரம் = 7
+செவ்வகம் = 10 x 5`,
+
+  solution: `class Shape {
+
+    String shapeName = "Shape";
+
+}
+
+class Circle extends Shape {
+
+    int radius = 7;
+
+}
+
+class Rectangle extends Shape {
+
+    int length = 10;
+    int width = 5;
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Circle circle = new Circle();
+        Rectangle rectangle = new Rectangle();
+
+        System.out.println("Shape = " + circle.shapeName);
+        System.out.println("Circle Radius = " + circle.radius);
+        System.out.println("Rectangle = " + rectangle.length + " x " + rectangle.width);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 5,
         title: "Question 5",
