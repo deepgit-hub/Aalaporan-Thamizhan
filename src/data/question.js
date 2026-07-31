@@ -11592,11 +11592,56 @@ public class Main {
   completed: false,
 },
       {
-        id: 4,
-        title: "Question 4",
-        locked: false,
-        completed: false,
-      },
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to create a class Employee and inherit it into a class Manager. Display the employee name and department.",
+
+  questionTamil:
+    "Employee என்ற Class-ஐ உருவாக்கி அதை Manager என்ற Class-ல் Inherit செய்து பணியாளர் பெயர் மற்றும் துறையை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create the employee name in the parent class and the department in the child class.",
+
+  hintTamil:
+    "Parent Class-ல் Employee Name-ஐயும் Child Class-ல் Department-ஐயும் உருவாக்குங்கள்.",
+
+  expectedOutput: `Employee Name = Arun
+Department = HR`,
+
+  expectedOutputTamil: `பணியாளர் பெயர் = Arun
+துறை = HR`,
+
+  solution: `class Employee {
+
+    String employeeName = "Arun";
+
+}
+
+class Manager extends Employee {
+
+    String department = "HR";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Manager manager = new Manager();
+
+        System.out.println("Employee Name = " + manager.employeeName);
+        System.out.println("Department = " + manager.department);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 5,
         title: "Question 5",
