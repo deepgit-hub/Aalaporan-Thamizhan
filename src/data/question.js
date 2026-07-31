@@ -13250,11 +13250,66 @@ public class Main {
   completed: false,
 },
       {
-        id: 6,
-        title: "Question 6",
-        locked: false,
-        completed: false,
-      },
+  id: 6,
+  title: "Question 6",
+
+  questionEnglish:
+    "Write a Java program to create a class Electronics and inherit it into Mobile and Laptop. Display the category, mobile brand, and laptop brand.",
+
+  questionTamil:
+    "Electronics என்ற Class-ஐ உருவாக்கி, அதை Mobile மற்றும் Laptop என்ற Class-களுக்கு Inherit செய்து, வகை, மொபைல் பிராண்ட் மற்றும் லேப்டாப் பிராண்டை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create one parent class and two child classes using the extends keyword.",
+
+  hintTamil:
+    "ஒரு Parent Class மற்றும் இரண்டு Child Class-களை extends Keyword-ஐ பயன்படுத்தி உருவாக்குங்கள்.",
+
+  expectedOutput: `Category = Electronics
+Mobile Brand = Samsung
+Laptop Brand = Dell`,
+
+  expectedOutputTamil: `வகை = Electronics
+மொபைல் பிராண்ட் = Samsung
+லேப்டாப் பிராண்ட் = Dell`,
+
+  solution: `class Electronics {
+
+    String category = "Electronics";
+
+}
+
+class Mobile extends Electronics {
+
+    String mobileBrand = "Samsung";
+
+}
+
+class Laptop extends Electronics {
+
+    String laptopBrand = "Dell";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Mobile mobile = new Mobile();
+        Laptop laptop = new Laptop();
+
+        System.out.println("Category = " + mobile.category);
+        System.out.println("Mobile Brand = " + mobile.mobileBrand);
+        System.out.println("Laptop Brand = " + laptop.laptopBrand);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 7,
         title: "Question 7",
