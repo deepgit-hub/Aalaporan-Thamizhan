@@ -31,13 +31,13 @@
   color: #2563eb;
   padding: 8px 18px;
   border-radius: 999px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 25px;
 }
 
 .hero-title {
-  font-size: 3.3rem;
+  font-size: 3.8rem;
   font-weight: 800;
   color: #0f172a;
   line-height: 1.2;
@@ -45,7 +45,7 @@
 }
 
 .hero-description {
-  font-size: 18px;
+  font-size: 25px;
   color: #64748b;
   line-height: 1.9;
   margin-bottom: 15px;
