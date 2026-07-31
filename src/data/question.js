@@ -11702,11 +11702,56 @@ public class Main {
   completed: false,
 },
       {
-        id: 6,
-        title: "Question 6",
-        locked: false,
-        completed: false,
-      },
+  id: 6,
+  title: "Question 6",
+
+  questionEnglish:
+    "Write a Java program to create a class Animal and inherit it into a class Dog. Display the animal name and dog breed.",
+
+  questionTamil:
+    "Animal என்ற Class-ஐ உருவாக்கி அதை Dog என்ற Class-ல் Inherit செய்து விலங்கின் பெயர் மற்றும் நாயின் இனத்தை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Store the animal name in the parent class and the dog breed in the child class.",
+
+  hintTamil:
+    "Parent Class-ல் Animal Name-ஐயும் Child Class-ல் Dog Breed-ஐயும் உருவாக்குங்கள்.",
+
+  expectedOutput: `Animal = Dog
+Breed = Labrador`,
+
+  expectedOutputTamil: `விலங்கு = Dog
+இனம் = Labrador`,
+
+  solution: `class Animal {
+
+    String animalName = "Dog";
+
+}
+
+class Dog extends Animal {
+
+    String breed = "Labrador";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Dog dog = new Dog();
+
+        System.out.println("Animal = " + dog.animalName);
+        System.out.println("Breed = " + dog.breed);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 7,
         title: "Question 7",
