@@ -84,7 +84,7 @@ function Home() {
 
         <section className="topics-section">
           <div className="section-header">
-            <h2>📚 Java Learning Roadmap</h2>
+            <h2>📚 Java Learning Hub</h2>
 
             <p>
              Learn Java at your own pace. Explore any topic, practice coding, and track your progress as you master each concept.
