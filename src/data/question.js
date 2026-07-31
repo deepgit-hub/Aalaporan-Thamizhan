@@ -12457,11 +12457,65 @@ public class Main {
   completed: false,
 },
       {
-        id: 2,
-        title: "Question 2",
-        locked: false,
-        completed: false,
-      },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to create a class Animal, inherit it into Mammal, and then inherit Mammal into Dog. Display the animal name, type, and breed.",
+
+  questionTamil:
+    "Animal என்ற Class-ஐ Mammal Class-க்கு Inherit செய்து, Mammal Class-ஐ Dog Class-க்கு Inherit செய்து, விலங்கின் பெயர், வகை மற்றும் இனத்தை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use three classes connected through multilevel inheritance.",
+
+  hintTamil:
+    "Multilevel Inheritance மூலம் மூன்று Class-களை இணைக்குங்கள்.",
+
+  expectedOutput: `Animal = Dog
+Type = Mammal
+Breed = Labrador`,
+
+  expectedOutputTamil: `விலங்கு = Dog
+வகை = Mammal
+இனம் = Labrador`,
+
+  solution: `class Animal {
+
+    String animalName = "Dog";
+
+}
+
+class Mammal extends Animal {
+
+    String type = "Mammal";
+
+}
+
+class Dog extends Mammal {
+
+    String breed = "Labrador";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Dog dog = new Dog();
+
+        System.out.println("Animal = " + dog.animalName);
+        System.out.println("Type = " + dog.type);
+        System.out.println("Breed = " + dog.breed);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 3,
         title: "Question 3",
