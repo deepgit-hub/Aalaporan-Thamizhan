@@ -201,3 +201,22 @@
         width: 100%;
     }
 }
+/* ================= EXPECTED OUTPUT ================= */
+
+.output-card {
+    border-left: 8px solid #173476;
+}
+
+.output-card h2 {
+    color: #173476;
+}
+
+/* ================= SOLUTION ================= */
+
+.solution-card {
+    border-left: 8px solid #16a34a;
+}
+
+.solution-card h2 {
+    color: #16a34a;
+}
