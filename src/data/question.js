@@ -11885,11 +11885,33 @@ Department = HR`,
   completed: false,
 },
       {
-        id: 10,
-        title: "Challenge Question 10",
-        locked: true,
-        completed: false,
-      },
+  id: 10,
+  title: "Question 10",
+
+  questionEnglish:
+    "Write a Java program to create a class Vehicle and inherit it into Car and Bike (Hierarchical Inheritance). Display the details.",
+
+  questionTamil:
+    "Vehicle Class-ஐ Car மற்றும் Bike Class-களுக்கு Inherit செய்து (Hierarchical Inheritance) விவரங்களை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create one parent class and two child classes using the extends keyword.",
+
+  hintTamil:
+    "ஒரு Parent Class மற்றும் இரண்டு Child Class-களை extends Keyword-ஐ பயன்படுத்தி உருவாக்குங்கள்.",
+
+  expectedOutput: `Car Brand = Toyota
+Bike Brand = Yamaha`,
+
+  expectedOutputTamil: `கார் பிராண்ட் = Toyota
+பைக் பிராண்ட் = Yamaha`,
+
+  solution: ``,
+
+  challenge: true,
+  locked: false,
+  completed: false,
+},
     ],
   },
   {
