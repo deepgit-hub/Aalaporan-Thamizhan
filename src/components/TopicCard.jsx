@@ -1,4 +1,5 @@
 import "../styles/TopicCard.css";
+import { BookOpen } from "lucide-react";
 
 function TopicCard({
   title,
