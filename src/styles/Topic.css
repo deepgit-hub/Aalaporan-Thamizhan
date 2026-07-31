@@ -233,7 +233,17 @@
     flex-wrap:wrap;
 
 }
+.topic-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+}
 
+.topic-icon svg {
+    width: 52px;
+    height: 52px;
+}
 /* ==========================================
    START BUTTON
 ========================================== */
