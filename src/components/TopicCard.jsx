@@ -1,5 +1,5 @@
 import "../styles/TopicCard.css";
-import { BookOpen } from "lucide-react";
+import { BookOpen, CheckCircle2 } from "lucide-react";
 
 function TopicCard({
   title,
@@ -14,8 +14,8 @@ function TopicCard({
       onClick={onClick}
     >
       <div className="topic-icon">
-        {completed ? "✅" : "📘"}
-      </div>
+  {completed ? <CheckCircle2 /> : <BookOpen />}
+</div>
 
       <h3>{title}</h3>
 
