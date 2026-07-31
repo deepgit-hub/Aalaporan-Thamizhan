@@ -13463,11 +13463,35 @@ Refrigerator Capacity = 250 L`,
   completed: false,
 },
       {
-        id: 10,
-        title: "Challenge Question 10",
-        locked: true,
-        completed: false,
-      },
+  id: 10,
+  title: "Question 10",
+
+  questionEnglish:
+    "Write a Java program to create a class Employee and inherit it into Tester and Designer. Display the employee name, testing tool, and designing software.",
+
+  questionTamil:
+    "Employee என்ற Class-ஐ உருவாக்கி, அதை Tester மற்றும் Designer என்ற Class-களுக்கு Inherit செய்து, பணியாளரின் பெயர், Testing Tool மற்றும் Designing Software-ஐ காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use one parent class with two child classes and display all values.",
+
+  hintTamil:
+    "ஒரு Parent Class மற்றும் இரண்டு Child Class-களை பயன்படுத்தி அனைத்து மதிப்புகளையும் காட்டுங்கள்.",
+
+  expectedOutput: `Employee = Deepak
+Testing Tool = Selenium
+Designing Software = Figma`,
+
+  expectedOutputTamil: `பணியாளர் = Deepak
+Testing Tool = Selenium
+Designing Software = Figma`,
+
+  solution: ``,
+
+  challenge: true,
+  locked: false,
+  completed: false,
+},
     ],
   },
   {
