@@ -11541,11 +11541,56 @@ public class Main {
   completed: false,
 },
       {
-        id: 3,
-        title: "Question 3",
-        locked: false,
-        completed: false,
-      },
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to create a class Vehicle and inherit it into a class Car. Display the brand and model.",
+
+  questionTamil:
+    "Vehicle என்ற Class-ஐ உருவாக்கி அதை Car என்ற Class-ல் Inherit செய்து Brand மற்றும் Model-ஐ காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Store the brand in the parent class and the model in the child class.",
+
+  hintTamil:
+    "Brand-ஐ Parent Class-லும் Model-ஐ Child Class-லும் உருவாக்குங்கள்.",
+
+  expectedOutput: `Brand = Toyota
+Model = Fortuner`,
+
+  expectedOutputTamil: `பிராண்ட் = Toyota
+மாடல் = Fortuner`,
+
+  solution: `class Vehicle {
+
+    String brand = "Toyota";
+
+}
+
+class Car extends Vehicle {
+
+    String model = "Fortuner";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Car car = new Car();
+
+        System.out.println("Brand = " + car.brand);
+        System.out.println("Model = " + car.model);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 4,
         title: "Question 4",
