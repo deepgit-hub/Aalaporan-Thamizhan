@@ -75,7 +75,7 @@ function QuestionDetails() {
 
       </div>
 
-      <div className="code-card">
+      <div className="code-card output-card">
 
         <h2>🎯 Expected Output</h2>
 
@@ -114,7 +114,7 @@ function QuestionDetails() {
 
       {showSolution && (
 
-        <div className="code-card">
+        <div className="code-card solution-card">
 
           <h2>📖 Solution</h2>
 
