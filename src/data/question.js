@@ -13630,11 +13630,48 @@ Designing Software = Figma`,
   completed: false,
 },
       {
-        id: 4,
-        title: "Question 4",
-        locked: false,
-        completed: false,
-      },
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to handle a NullPointerException using a try-catch block.",
+
+  questionTamil:
+    "NullPointerException-ஐ try-catch Block-ஐ பயன்படுத்தி கையாளும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Call a method using a null object inside the try block.",
+
+  hintTamil:
+    "null Object-ஐ பயன்படுத்தி ஒரு Method-ஐ அழைக்கவும்.",
+
+  expectedOutput: `Exception Caught: Cannot invoke "String.length()" because "<local1>" is null`,
+
+  expectedOutputTamil: `Exception பிடிக்கப்பட்டது: Null Object காரணமாக Method-ஐ அழைக்க முடியவில்லை`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            String text = null;
+            System.out.println(text.length());
+
+        } catch (NullPointerException e) {
+
+            System.out.println("Exception Caught: " + e.getMessage());
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 5,
         title: "Question 5",
