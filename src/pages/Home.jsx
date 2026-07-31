@@ -163,7 +163,7 @@ function Home() {
               className="portfolio-btn"
               onClick={() =>
                 window.open(
-                  "https://your-portfolio-link.com",
+                  "https://deepgit-hub.github.io/Digital-Portfolio/",
                   "_blank"
                 )
               }
