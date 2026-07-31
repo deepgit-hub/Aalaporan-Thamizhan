@@ -13543,11 +13543,49 @@ Designing Software = Figma`,
   completed: false,
 },
       {
-        id: 2,
-        title: "Question 2",
-        locked: false,
-        completed: false,
-      },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to handle an ArrayIndexOutOfBoundsException using a try-catch block.",
+
+  questionTamil:
+    "ArrayIndexOutOfBoundsException-ஐ try-catch Block-ஐ பயன்படுத்தி கையாளும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Access an invalid array index inside the try block.",
+
+  hintTamil:
+    "try Block-ல் தவறான Array Index-ஐ அணுகுங்கள்.",
+
+  expectedOutput: `Exception Caught: Index 5 out of bounds for length 3`,
+
+  expectedOutputTamil: `Exception பிடிக்கப்பட்டது: Index 5 out of bounds for length 3`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {10, 20, 30};
+
+        try {
+
+            System.out.println(numbers[5]);
+
+        } catch (ArrayIndexOutOfBoundsException e) {
+
+            System.out.println("Exception Caught: " + e.getMessage());
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 3,
         title: "Question 3",
