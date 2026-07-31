@@ -1,3 +1,4 @@
+import "../styles/MentorSupport.css";
 function MentorSupport() {
 
   const handleClick = () => {
