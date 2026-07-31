@@ -11854,11 +11854,36 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { id: 9, 
-        title: "Challenge Question 9", 
-        locked: true, 
-        completed: false 
-      },
+      {
+  id: 9,
+  title: "Question 9",
+
+  questionEnglish:
+    "Write a Java program to create a class Person and inherit it into Employee and then into Manager (Multilevel Inheritance). Display the details.",
+
+  questionTamil:
+    "Person Class-ஐ Employee Class-க்கும், Employee Class-ஐ Manager Class-க்கும் Inherit செய்து (Multilevel Inheritance) விவரங்களை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create three classes using multilevel inheritance with the extends keyword.",
+
+  hintTamil:
+    "extends Keyword-ஐ பயன்படுத்தி மூன்று Class-களை Multilevel Inheritance மூலம் உருவாக்குங்கள்.",
+
+  expectedOutput: `Name = Deepak
+Employee ID = 101
+Department = HR`,
+
+  expectedOutputTamil: `பெயர் = Deepak
+பணியாளர் ஐடி = 101
+துறை = HR`,
+
+  solution: ``,
+
+  challenge: true,
+  locked: false,
+  completed: false,
+},
       {
         id: 10,
         title: "Challenge Question 10",
