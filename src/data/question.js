@@ -13311,11 +13311,66 @@ public class Main {
   completed: false,
 },
       {
-        id: 7,
-        title: "Question 7",
-        locked: false,
-        completed: false,
-      },
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Write a Java program to create a class BankAccount and inherit it into SavingsAccount and CurrentAccount. Display the account holder, interest rate, and minimum balance.",
+
+  questionTamil:
+    "BankAccount என்ற Class-ஐ உருவாக்கி, அதை SavingsAccount மற்றும் CurrentAccount என்ற Class-களுக்கு Inherit செய்து, கணக்கு வைத்திருப்பவர், வட்டி விகிதம் மற்றும் குறைந்தபட்ச இருப்பை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Both child classes should inherit from the same parent class.",
+
+  hintTamil:
+    "இரண்டு Child Class-களும் ஒரே Parent Class-ஐ Inherit செய்ய வேண்டும்.",
+
+  expectedOutput: `Account Holder = Deepak
+Interest Rate = 7.5%
+Minimum Balance = 5000`,
+
+  expectedOutputTamil: `கணக்கு வைத்திருப்பவர் = Deepak
+வட்டி விகிதம் = 7.5%
+குறைந்தபட்ச இருப்பு = 5000`,
+
+  solution: `class BankAccount {
+
+    String accountHolder = "Deepak";
+
+}
+
+class SavingsAccount extends BankAccount {
+
+    double interestRate = 7.5;
+
+}
+
+class CurrentAccount extends BankAccount {
+
+    int minimumBalance = 5000;
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        SavingsAccount savings = new SavingsAccount();
+        CurrentAccount current = new CurrentAccount();
+
+        System.out.println("Account Holder = " + savings.accountHolder);
+        System.out.println("Interest Rate = " + savings.interestRate + "%");
+        System.out.println("Minimum Balance = " + current.minimumBalance);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 8,
         title: "Question 8",
