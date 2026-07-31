@@ -13858,7 +13858,32 @@ Designing Software = Figma`,
   locked: false,
   completed: false,
 },
-      { id: 9, title: "Challenge Question 9", locked: true, completed: false },
+      {
+  id: 9,
+  title: "Question 9",
+
+  questionEnglish:
+    "Write a Java program to handle both NumberFormatException and NullPointerException using multiple catch blocks.",
+
+  questionTamil:
+    "NumberFormatException மற்றும் NullPointerException ஆகியவற்றை Multiple Catch Block-களை பயன்படுத்தி கையாளும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Write separate catch blocks for both exceptions.",
+
+  hintTamil:
+    "இரண்டு Exception-களுக்கும் தனித்தனி catch Block-களை பயன்படுத்துங்கள்.",
+
+  expectedOutput: `Number Format Exception Caught: For input string: "Java"`,
+
+  expectedOutputTamil: `Number Format Exception பிடிக்கப்பட்டது: For input string: "Java"`,
+
+  solution: ``,
+
+  challenge: true,
+  locked: false,
+  completed: false,
+},
       {
         id: 10,
         title: "Challenge Question 10",
