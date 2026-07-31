@@ -1,3 +1,17 @@
+:root {
+  --primary: #0f172a;
+  --primary-hover: #1e293b;
+
+  --background: #f8fafc;
+  --card: #ffffff;
+
+  --border: #e5e7eb;
+
+  --text: #0f172a;
+  --subtext: #64748b;
+
+  --challenge: #f59e0b;
+}
 * {
   font-family: "Noto Sans Tamil", "Noto Sans", sans-serif;
 }
