@@ -3027,141 +3027,8 @@ Hierarchical Inheritance-ல் பல Child Classes ஒரே Parent Class-இ�
 
   completed: false
 },
-{
-  id: 31,
-
-  title: "Hybrid Inheritance",
-
-  englishDefinition:
-    "Hybrid Inheritance is a type of inheritance that combines two or more types of inheritance, such as Single, Multilevel, and Hierarchical Inheritance. Java does not support Hybrid Inheritance using classes, but it can be achieved using interfaces.",
-
-  tamilDefinition:
-    "Hybrid Inheritance என்பது இரண்டு அல்லது அதற்கு மேற்பட்ட Inheritance வகைகளை (Single, Multilevel, Hierarchical போன்றவை) இணைத்து உருவாக்கப்படும் Inheritance வகையாகும். Java-வில் Classes மூலம் Hybrid Inheritance ஆதரிக்கப்படாது. ஆனால் Interfaces மூலம் இதை செயல்படுத்த முடியும்.",
-
-  realWorldUsage:
-    "Developers use Hybrid Inheritance in large applications where a class needs features from different inheritance structures. In Java, this is implemented using interfaces.",
-
-  realWorldUsageTamil:
-    "பெரிய Software Applications-ல் ஒரு Class-க்கு பல Inheritance அமைப்புகளின் (Inheritance Structures) அம்சங்கள் தேவைப்படும் போது Developers Hybrid Inheritance-ஐ பயன்படுத்துகின்றனர். Java-வில் இது Interfaces மூலம் செயல்படுத்தப்படுகிறது.",
-
-  syntax: `interface Parent1{
-
-}
-
-interface Parent2{
-
-}
-
-class ChildClass implements Parent1, Parent2{
-
-}`,
-
-  syntaxExplanationEnglish: [
-    "Parent1 and Parent2 are interfaces.",
-    "implements is the keyword used to implement interfaces.",
-    "A class can implement multiple interfaces.",
-    "Hybrid Inheritance is achieved in Java using interfaces."
-  ],
-
-  syntaxExplanationTamil: [
-    "Parent1 மற்றும் Parent2 ஆகியவை Interfaces ஆகும்.",
-    "implements என்பது Interface-ஐ செயல்படுத்த பயன்படும் Keyword ஆகும்.",
-    "ஒரு Class பல Interfaces-ஐ Implement செய்ய முடியும்.",
-    "Java-வில் Hybrid Inheritance Interfaces மூலம் செயல்படுத்தப்படுகிறது."
-  ],
-
-  exampleProgram: `interface Sports{
-
-    void play();
-
-}
-
-interface Cultural{
-
-    void dance();
-
-}
-
-class Student{
-
-    void display(){
-
-        System.out.println("Student Details");
-
-    }
-
-}
-
-class GraduateStudent extends Student implements Sports, Cultural{
-
-    public void play(){
-
-        System.out.println("Playing Football");
-
-    }
-
-    public void dance(){
-
-        System.out.println("Performing Cultural Dance");
-
-    }
-
-}
-
-public class Main{
-
-    public static void main(String[] args){
-
-        GraduateStudent student = new GraduateStudent();
-
-        student.display();
-        student.play();
-        student.dance();
-
-    }
-
-}`,
-
-  programExplanationEnglish: [
-    "Line 1: Creates the Sports interface.",
-    "Line 7: Creates the Cultural interface.",
-    "Line 13: Creates the Student class.",
-    "Lines 15-19: Defines the display() method.",
-    "Line 23: GraduateStudent extends Student and implements Sports and Cultural interfaces.",
-    "Lines 25-37: Implements the play() and dance() methods.",
-    "Line 45: Creates a GraduateStudent object.",
-    "Lines 47-49: Calls methods inherited from the Student class and implemented from both interfaces.",
-    "This demonstrates Hybrid Inheritance in Java using interfaces."
-  ],
-
-  programExplanationTamil: [
-    "வரி 1: Sports என்ற Interface உருவாக்கப்படுகிறது.",
-    "வரி 7: Cultural என்ற Interface உருவாக்கப்படுகிறது.",
-    "வரி 13: Student என்ற Class உருவாக்கப்படுகிறது.",
-    "வரி 15-19: display() Method உருவாக்கப்படுகிறது.",
-    "வரி 23: GraduateStudent, Student Class-ஐ Extend செய்து Sports மற்றும் Cultural Interfaces-ஐ Implement செய்கிறது.",
-    "வரி 25-37: play() மற்றும் dance() Methods-க்கு செயல்பாடு வழங்கப்படுகிறது.",
-    "வரி 45: GraduateStudent Object உருவாக்கப்படுகிறது.",
-    "வரி 47-49: Student Class-ன் Method மற்றும் இரண்டு Interfaces-ன் Methods அழைக்கப்படுகின்றன.",
-    "இதன் மூலம் Java-வில் Interfaces பயன்படுத்தி Hybrid Inheritance செயல்படுத்தப்படுவது காட்டப்படுகிறது."
-  ],
-
-  output: `Student Details
-Playing Football
-Performing Cultural Dance
-
-💡 Note 
-Java does not support Hybrid Inheritance using classes because it may create ambiguity. Hybrid Inheritance can be implemented in Java by combining class inheritance with multiple interfaces.
-
-💡 குறிப்பு 
-Java-வில் Classes மூலம் Hybrid Inheritance ஆதரிக்கப்படாது. ஏனெனில் அது குழப்பங்களை (Ambiguity) ஏற்படுத்தும். ஆனால் ஒரு Class-ஐ Extend செய்து, பல Interfaces-ஐ Implement செய்வதன் மூலம் Hybrid Inheritance-ஐ Java-வில் செயல்படுத்த முடியும்.`,
-
-  locked: true,
-
-  completed: false
-},
   {
-  id: 32,
+  id: 31,
 
   title: "Exception Handling",
 
@@ -3256,7 +3123,7 @@ Exception Handling மூலம் Program திடீரென நிற்க
   completed: false
 },
   {
-  id: 33,
+  id: 32,
 
   title: "Try Catch",
 
