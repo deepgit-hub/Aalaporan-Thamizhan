@@ -13914,68 +13914,7 @@ Finally Block செயல்படுத்தப்பட்டது`,
 },
     ],
   },
-  {
-    topicId: 32,
-    title: "Try Catch",
-
-    questions: [
-      {
-        id: 1,
-        title: "Question 1",
-        locked: false,
-        completed: false,
-      },
-      {
-        id: 2,
-        title: "Question 2",
-        locked: false,
-        completed: false,
-      },
-      {
-        id: 3,
-        title: "Question 3",
-        locked: false,
-        completed: false,
-      },
-      {
-        id: 4,
-        title: "Question 4",
-        locked: false,
-        completed: false,
-      },
-      {
-        id: 5,
-        title: "Question 5",
-        locked: false,
-        completed: false,
-      },
-      {
-        id: 6,
-        title: "Question 6",
-        locked: false,
-        completed: false,
-      },
-      {
-        id: 7,
-        title: "Question 7",
-        locked: false,
-        completed: false,
-      },
-      {
-        id: 8,
-        title: "Question 8",
-        locked: false,
-        completed: false,
-      },
-      { id: 9, title: "Challenge Question 9", locked: true, completed: false },
-      {
-        id: 10,
-        title: "Challenge Question 10",
-        locked: true,
-        completed: false,
-      },
-    ],
-  },
+  
  
 ];
 
