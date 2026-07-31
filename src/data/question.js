@@ -5345,8 +5345,8 @@ Eligible for Promotion`,
 
     questions: [
       {
-        id: 10,
-        title: "Challenge Question 10",
+        id: 1,
+        title: "Question 1",
 
         questionEnglish:
           "Write a Java program to reverse the digits of a given number using a for loop.",
@@ -5366,7 +5366,7 @@ Eligible for Promotion`,
 
         solution: "",
 
-        challenge: true,
+        challenge: false,
         locked: true,
         completed: false,
       },
