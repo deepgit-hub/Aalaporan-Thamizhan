@@ -11431,17 +11431,115 @@ Department = CSE`,
 
     questions: [
       {
-        id: 1,
-        title: "Question 1",
-        locked: false,
-        completed: false,
-      },
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Write a Java program to create a class Animal and inherit it into a class Dog. Display a message from both classes.",
+
+  questionTamil:
+    "Animal என்ற Class-ஐ உருவாக்கி அதை Dog என்ற Class-ல் Inherit செய்து, இரண்டு Class-களிலிருந்தும் ஒரு செய்தியை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use the extends keyword to inherit the Animal class into the Dog class.",
+
+  hintTamil:
+    "Animal Class-ஐ Dog Class-ல் Inherit செய்ய extends Keyword-ஐ பயன்படுத்துங்கள்.",
+
+  expectedOutput: `This is an Animal.
+This is a Dog.`,
+
+  expectedOutputTamil: `இது ஒரு விலங்கு.
+இது ஒரு நாய்.`,
+
+  solution: `class Animal {
+
+    void displayAnimal() {
+
+        System.out.println("This is an Animal.");
+
+    }
+
+}
+
+class Dog extends Animal {
+
+    void displayDog() {
+
+        System.out.println("This is a Dog.");
+
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Dog dog = new Dog();
+
+        dog.displayAnimal();
+        dog.displayDog();
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
-        id: 2,
-        title: "Question 2",
-        locked: false,
-        completed: false,
-      },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to create a class Person and inherit it into a class Student. Display the name and roll number.",
+
+  questionTamil:
+    "Person என்ற Class-ஐ உருவாக்கி அதை Student என்ற Class-ல் Inherit செய்து, பெயர் மற்றும் Roll Number-ஐ காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Access the inherited variable and the child class variable using an object of the child class.",
+
+  hintTamil:
+    "Child Class Object மூலம் Parent Class Variable மற்றும் Child Class Variable-ஐ அணுகுங்கள்.",
+
+  expectedOutput: `Name = Deepak
+Roll Number = 101`,
+
+  expectedOutputTamil: `பெயர் = Deepak
+பதிவு எண் = 101`,
+
+  solution: `class Person {
+
+    String name = "Deepak";
+
+}
+
+class Student extends Person {
+
+    int rollNumber = 101;
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Student student = new Student();
+
+        System.out.println("Name = " + student.name);
+        System.out.println("Roll Number = " + student.rollNumber);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 3,
         title: "Question 3",
