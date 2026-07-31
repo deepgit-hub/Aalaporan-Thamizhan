@@ -11971,11 +11971,56 @@ public class Main {
   completed: false,
 },
       {
-        id: 2,
-        title: "Question 2",
-        locked: false,
-        completed: false,
-      },
+  id: 2,
+  title: "Question 2",
+
+  questionEnglish:
+    "Write a Java program to create a class Vehicle with a variable brand and inherit it into a class Car with a variable model. Display both values.",
+
+  questionTamil:
+    "brand என்ற Variable-ஐ கொண்ட Vehicle என்ற Class-ஐ உருவாக்கி, அதை model என்ற Variable-ஐ கொண்ட Car என்ற Class-ல் Inherit செய்து இரண்டு மதிப்புகளையும் காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create a parent class Vehicle and a child class Car using extends.",
+
+  hintTamil:
+    "Vehicle என்ற Parent Class மற்றும் Car என்ற Child Class-ஐ extends மூலம் உருவாக்குங்கள்.",
+
+  expectedOutput: `Brand = Toyota
+Model = Fortuner`,
+
+  expectedOutputTamil: `பிராண்ட் = Toyota
+மாடல் = Fortuner`,
+
+  solution: `class Vehicle {
+
+    String brand = "Toyota";
+
+}
+
+class Car extends Vehicle {
+
+    String model = "Fortuner";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Car car = new Car();
+
+        System.out.println("Brand = " + car.brand);
+        System.out.println("Model = " + car.model);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 3,
         title: "Question 3",
