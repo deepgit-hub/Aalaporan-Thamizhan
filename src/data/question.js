@@ -13500,11 +13500,48 @@ Designing Software = Figma`,
 
     questions: [
       {
-        id: 1,
-        title: "Question 1",
-        locked: false,
-        completed: false,
-      },
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Write a Java program to handle an ArithmeticException that occurs when dividing a number by zero using a try-catch block.",
+
+  questionTamil:
+    "ஒரு எண்ணை பூஜ்ஜியத்தால் வகுக்கும் போது ஏற்படும் ArithmeticException-ஐ try-catch Block-ஐ பயன்படுத்தி கையாளும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Place the division statement inside the try block and handle the exception in the catch block.",
+
+  hintTamil:
+    "Division Statement-ஐ try Block-ல் வைத்து, Exception-ஐ catch Block-ல் கையாளுங்கள்.",
+
+  expectedOutput: `Exception Caught: / by zero`,
+
+  expectedOutputTamil: `Exception பிடிக்கப்பட்டது: / by zero`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            int result = 10 / 0;
+            System.out.println(result);
+
+        } catch (ArithmeticException e) {
+
+            System.out.println("Exception Caught: " + e.getMessage());
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2",
