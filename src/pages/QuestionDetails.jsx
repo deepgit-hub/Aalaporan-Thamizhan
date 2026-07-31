@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import questions from "../data/question";
 
+
 function QuestionDetails() {
   const navigate = useNavigate();
   const { topicId, questionId } = useParams();
@@ -25,75 +26,104 @@ function QuestionDetails() {
   }
 
   return (
-    <div className="question-page">
+    <div className="question-details-page">
 
-      <button onClick={() => navigate(`/question/${topicId}`)}>
+      <button
+        className="back-btn"
+        onClick={() => navigate(`/question/${topicId}`)}
+      >
         ⬅ Back
       </button>
 
-      <h1>{topic.title}</h1>
+      <div className="details-header">
 
-      <h2>{question.title}</h2>
+        <h1>{topic.title}</h1>
 
-      <hr />
+        <p>{question.title}</p>
 
-      <h2>📝 Question (English)</h2>
-      <p>{question.questionEnglish}</p>
+      </div>
 
-      <hr />
+      <div className="info-card">
 
-      <h2>📝 கேள்வி (Tamil)</h2>
-      <p>{question.questionTamil}</p>
+        <h2>📝 Question (English)</h2>
 
-      <hr />
+        <p>{question.questionEnglish}</p>
 
-      <h2>💡 Hint (English)</h2>
-      <p>{question.hintEnglish}</p>
+      </div>
 
-      <hr />
+      <div className="info-card">
 
-      <h2>💡 குறிப்பு (Tamil)</h2>
-      <p>{question.hintTamil}</p>
+        <h2>🌐 Question (Tamil)</h2>
 
-      <hr />
+        <p>{question.questionTamil}</p>
 
-      <h2>🎯 Expected Output</h2>
+      </div>
 
-      <pre>{question.expectedOutput}</pre>
+      <div className="info-card">
 
-      <hr />
+        <h2>💡 Hint (English)</h2>
 
-      <button
-  onClick={() =>
-    window.open(
-      "https://onecompiler.com/java#draft-fvge",
-      "_blank"
-    )
-  }
->
-  💻 Run Code
-</button>
+        <p>{question.hintEnglish}</p>
 
-      {!question.challenge && (
+      </div>
+
+      <div className="info-card">
+
+        <h2>💡 Hint (Tamil)</h2>
+
+        <p>{question.hintTamil}</p>
+
+      </div>
+
+      <div className="code-card">
+
+        <h2>🎯 Expected Output</h2>
+
+        <pre>{question.expectedOutput}</pre>
+
+      </div>
+
+      <div className="button-group">
+
         <button
-          onClick={() => setShowSolution(!showSolution)}
+          className="run-btn"
+          onClick={() =>
+            window.open(
+              "https://onecompiler.com/java#draft-fvge",
+              "_blank"
+            )
+          }
         >
-          {showSolution ? "Hide Solution" : "📖 Solution"}
+          💻 Run Code
         </button>
-      )}
 
-      
+        {!question.challenge && (
+
+          <button
+            className="solution-btn"
+            onClick={() => setShowSolution(!showSolution)}
+          >
+            {showSolution
+              ? "Hide Solution"
+              : "📖 View Solution"}
+          </button>
+
+        )}
+
+      </div>
 
       {showSolution && (
-        <>
-          <hr />
+
+        <div className="code-card">
 
           <h2>📖 Solution</h2>
 
           <pre>
             <code>{question.solution}</code>
           </pre>
-        </>
+
+        </div>
+
       )}
 
     </div>
