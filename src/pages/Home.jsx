@@ -47,7 +47,7 @@ function Home() {
               </div>
 
               <p>
-                Every topic is explained in both languages for better
+                Every topic is explained in both தமிழ் and English  languages for better
                 understanding.
               </p>
             </div>
