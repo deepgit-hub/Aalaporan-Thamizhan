@@ -12876,7 +12876,36 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { id: 9, title: "Challenge Question 9", locked: true, completed: false },
+      {
+  id: 9,
+  title: "Question 9",
+
+  questionEnglish:
+    "Write a Java program to create a class University, inherit it into College, and then inherit College into Department. Display the university name, college name, and department name.",
+
+  questionTamil:
+    "University என்ற Class-ஐ College Class-க்கு Inherit செய்து, College Class-ஐ Department Class-க்கு Inherit செய்து, பல்கலைக்கழகத்தின் பெயர், கல்லூரியின் பெயர் மற்றும் துறையின் பெயரை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Use multilevel inheritance with three classes and display all inherited variables.",
+
+  hintTamil:
+    "மூன்று Class-களை Multilevel Inheritance மூலம் உருவாக்கி அனைத்து Variable-களையும் காட்டுங்கள்.",
+
+  expectedOutput: `University = Anna University
+College = XYZ Engineering College
+Department = Information Technology`,
+
+  expectedOutputTamil: `பல்கலைக்கழகம் = Anna University
+கல்லூரி = XYZ Engineering College
+துறை = Information Technology`,
+
+  solution: ``,
+
+  challenge: true,
+  locked: false,
+  completed: false,
+}
       {
         id: 10,
         title: "Challenge Question 10",
