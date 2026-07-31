@@ -13721,11 +13721,53 @@ Designing Software = Figma`,
   completed: false,
 },
       {
-        id: 6,
-        title: "Question 6",
-        locked: false,
-        completed: false,
-      },
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to handle both ArithmeticException and ArrayIndexOutOfBoundsException using multiple catch blocks.",
+
+  questionTamil:
+    "ArithmeticException மற்றும் ArrayIndexOutOfBoundsException ஆகியவற்றை Multiple Catch Block-களை பயன்படுத்தி கையாளும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Write separate catch blocks for each exception.",
+
+  hintTamil:
+    "ஒவ்வொரு Exception-க்கும் தனித்தனி catch Block-களை எழுதுங்கள்.",
+
+  expectedOutput: `Arithmetic Exception Caught: / by zero`,
+
+  expectedOutputTamil: `Arithmetic Exception பிடிக்கப்பட்டது: / by zero`,
+
+  solution: `public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            int result = 10 / 0;
+            int[] numbers = {1, 2, 3};
+            System.out.println(numbers[5]);
+
+        } catch (ArithmeticException e) {
+
+            System.out.println("Arithmetic Exception Caught: " + e.getMessage());
+
+        } catch (ArrayIndexOutOfBoundsException e) {
+
+            System.out.println("Array Exception Caught: " + e.getMessage());
+
+        }
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 7,
         title: "Question 7",
