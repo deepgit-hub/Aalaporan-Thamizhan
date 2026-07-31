@@ -12327,7 +12327,36 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { id: 9, title: "Challenge Question 9", locked: true, completed: false },
+      {
+  id: 9,
+  title: "Question 9",
+
+  questionEnglish:
+    "Write a Java program to create a class Shape with a variable shapeName and inherit it into a class Rectangle with variables length and width. Display all the values.",
+
+  questionTamil:
+    "shapeName என்ற Variable-ஐ கொண்ட Shape என்ற Class-ஐ உருவாக்கி, அதை length மற்றும் width என்ற Variable-களை கொண்ட Rectangle என்ற Class-ல் Inherit செய்து அனைத்து மதிப்புகளையும் காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create a parent class and inherit it into the Rectangle class using the extends keyword.",
+
+  hintTamil:
+    "extends Keyword-ஐ பயன்படுத்தி Shape Class-ஐ Rectangle Class-ல் Inherit செய்யுங்கள்.",
+
+  expectedOutput: `Shape = Rectangle
+Length = 15
+Width = 10`,
+
+  expectedOutputTamil: `வடிவம் = Rectangle
+நீளம் = 15
+அகலம் = 10`,
+
+  solution: ``,
+
+  challenge: true,
+  locked: false,
+  completed: false,
+},
       {
         id: 10,
         title: "Challenge Question 10",
