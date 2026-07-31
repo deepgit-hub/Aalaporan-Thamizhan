@@ -12637,11 +12637,65 @@ public class Main {
   completed: false,
 },
       {
-        id: 5,
-        title: "Question 5",
-        locked: false,
-        completed: false,
-      },
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to create a class Electronics, inherit it into Mobile, and then inherit Mobile into Smartphone. Display the category, brand, and operating system.",
+
+  questionTamil:
+    "Electronics என்ற Class-ஐ Mobile Class-க்கு Inherit செய்து, Mobile Class-ஐ Smartphone Class-க்கு Inherit செய்து, வகை, பிராண்ட் மற்றும் இயக்க முறைமையை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "The final child class should access variables from all parent classes.",
+
+  hintTamil:
+    "இறுதி Child Class அனைத்து Parent Class Variable-களையும் பயன்படுத்த வேண்டும்.",
+
+  expectedOutput: `Category = Electronics
+Brand = Samsung
+Operating System = Android`,
+
+  expectedOutputTamil: `வகை = Electronics
+பிராண்ட் = Samsung
+இயக்க முறைமை = Android`,
+
+  solution: `class Electronics {
+
+    String category = "Electronics";
+
+}
+
+class Mobile extends Electronics {
+
+    String brand = "Samsung";
+
+}
+
+class Smartphone extends Mobile {
+
+    String operatingSystem = "Android";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Smartphone phone = new Smartphone();
+
+        System.out.println("Category = " + phone.category);
+        System.out.println("Brand = " + phone.brand);
+        System.out.println("Operating System = " + phone.operatingSystem);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 6,
         title: "Question 6",
