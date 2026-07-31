@@ -14,18 +14,18 @@
     border: none;
     border-radius: 10px;
     padding: 12px 22px;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 600;
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
     margin-bottom: 30px;
-    box-shadow: 0 6px 15px rgba(23,52,118,.25);
+    box-shadow: 0 6px 15px rgba(23, 52, 118, 0.25);
 }
 
 .back-btn:hover {
     background: #21479c;
     transform: translateY(-2px);
-    box-shadow: 0 10px 22px rgba(23,52,118,.35);
+    box-shadow: 0 10px 22px rgba(23, 52, 118, 0.35);
 }
 
 /* ================= HEADER ================= */
@@ -33,21 +33,21 @@
 .details-header {
     background: white;
     border-radius: 18px;
-    padding: 40px;
+    padding: 45px;
     text-align: center;
     margin-bottom: 35px;
-    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
 }
 
 .details-header h1 {
-    font-size: 42px;
+    font-size: 48px;
     color: #173476;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .details-header p {
     color: #64748b;
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 600;
 }
 
@@ -56,47 +56,53 @@
 .info-card {
     background: white;
     border-radius: 18px;
-    padding: 30px;
-    margin-bottom: 25px;
-    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, .12);
 }
 
 .info-card h2 {
     color: #173476;
-    margin-bottom: 18px;
-    font-size: 28px;
+    font-size: 32px;
+    margin-bottom: 22px;
 }
 
 .info-card p {
     color: #374151;
-    font-size: 18px;
-    line-height: 1.8;
+    font-size: 22px;
+    line-height: 1.9;
 }
 
-/* ================= CODE BLOCK ================= */
+/* ================= CODE CARDS ================= */
 
 .code-card {
     background: white;
     border-radius: 18px;
-    padding: 30px;
+    padding: 40px;
     margin-bottom: 30px;
-    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
 }
 
 .code-card h2 {
     color: #173476;
-    margin-bottom: 18px;
-    font-size: 28px;
+    font-size: 32px;
+    margin-bottom: 22px;
 }
 
 .code-card pre {
     background: #0f172a;
     color: #f8fafc;
-    padding: 25px;
+    padding: 30px;
     border-radius: 14px;
     overflow-x: auto;
-    line-height: 1.8;
-    font-size: 16px;
+    line-height: 1.9;
+    font-size: 18px;
     font-family: Consolas, monospace;
 }
 
@@ -105,7 +111,7 @@
 .button-group {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     margin-bottom: 35px;
     flex-wrap: wrap;
 }
@@ -116,19 +122,34 @@
     color: white;
     border: none;
     border-radius: 10px;
-    padding: 14px 28px;
-    font-size: 17px;
+    padding: 15px 30px;
+    font-size: 18px;
     font-weight: 600;
     cursor: pointer;
-    transition: .3s;
-    box-shadow: 0 6px 15px rgba(23,52,118,.25);
+    transition: 0.3s;
+    box-shadow: 0 6px 15px rgba(23, 52, 118, .25);
 }
 
 .run-btn:hover,
 .solution-btn:hover {
     background: #21479c;
     transform: translateY(-3px);
-    box-shadow: 0 12px 24px rgba(23,52,118,.35);
+    box-shadow: 0 12px 24px rgba(23, 52, 118, .35);
+}
+
+/* ================= SCROLLBAR ================= */
+
+.code-card pre::-webkit-scrollbar {
+    height: 8px;
+}
+
+.code-card pre::-webkit-scrollbar-thumb {
+    background: #475569;
+    border-radius: 10px;
+}
+
+.code-card pre::-webkit-scrollbar-track {
+    background: #1e293b;
 }
 
 /* ================= RESPONSIVE ================= */
@@ -145,25 +166,30 @@
     }
 
     .details-header h1 {
-        font-size: 32px;
+        font-size: 34px;
     }
 
     .details-header p {
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .info-card,
     .code-card {
-        padding: 22px;
+        padding: 25px;
     }
 
     .info-card h2,
     .code-card h2 {
-        font-size: 24px;
+        font-size: 26px;
     }
 
     .info-card p {
+        font-size: 18px;
+    }
+
+    .code-card pre {
         font-size: 16px;
+        padding: 20px;
     }
 
     .button-group {
