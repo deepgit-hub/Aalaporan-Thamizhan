@@ -12175,11 +12175,56 @@ public class Main {
   completed: false,
 },
       {
-        id: 6,
-        title: "Question 6",
-        locked: false,
-        completed: false,
-      },
+  id: 6,
+  title: "Question 6",
+
+  questionEnglish:
+    "Write a Java program to create a class Mobile with a variable brand and inherit it into a class Smartphone with a variable operatingSystem. Display both values.",
+
+  questionTamil:
+    "brand என்ற Variable-ஐ கொண்ட Mobile என்ற Class-ஐ உருவாக்கி, அதை operatingSystem என்ற Variable-ஐ கொண்ட Smartphone என்ற Class-ல் Inherit செய்து இரண்டு மதிப்புகளையும் காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Store the mobile brand in the parent class and the operating system in the child class.",
+
+  hintTamil:
+    "Parent Class-ல் Mobile Brand-ஐயும் Child Class-ல் Operating System-ஐயும் உருவாக்குங்கள்.",
+
+  expectedOutput: `Brand = Samsung
+Operating System = Android`,
+
+  expectedOutputTamil: `பிராண்ட் = Samsung
+இயக்க முறைமை = Android`,
+
+  solution: `class Mobile {
+
+    String brand = "Samsung";
+
+}
+
+class Smartphone extends Mobile {
+
+    String operatingSystem = "Android";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Smartphone phone = new Smartphone();
+
+        System.out.println("Brand = " + phone.brand);
+        System.out.println("Operating System = " + phone.operatingSystem);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 7,
         title: "Question 7",
