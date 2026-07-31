@@ -13432,11 +13432,36 @@ public class Main {
   locked: false,
   completed: false,
 },
-      { id: 9, 
-        title: "Challenge Question 9", 
-        locked: true, 
-        completed: false 
-      },
+      {
+  id: 9,
+  title: "Question 9",
+
+  questionEnglish:
+    "Write a Java program to create a class Appliance and inherit it into WashingMachine and Refrigerator. Display the appliance category, washing machine capacity, and refrigerator capacity.",
+
+  questionTamil:
+    "Appliance என்ற Class-ஐ உருவாக்கி, அதை WashingMachine மற்றும் Refrigerator என்ற Class-களுக்கு Inherit செய்து, சாதன வகை, வாஷிங் மெஷின் கொள்ளளவு மற்றும் குளிர்சாதனப் பெட்டியின் கொள்ளளவை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create one parent class and two child classes using hierarchical inheritance.",
+
+  hintTamil:
+    "Hierarchical Inheritance பயன்படுத்தி ஒரு Parent Class மற்றும் இரண்டு Child Class-களை உருவாக்குங்கள்.",
+
+  expectedOutput: `Category = Home Appliance
+Washing Machine Capacity = 8 kg
+Refrigerator Capacity = 250 L`,
+
+  expectedOutputTamil: `வகை = வீட்டு உபகரணம்
+வாஷிங் மெஷின் கொள்ளளவு = 8 kg
+குளிர்சாதனப் பெட்டி கொள்ளளவு = 250 L`,
+
+  solution: ``,
+
+  challenge: true,
+  locked: false,
+  completed: false,
+},
       {
         id: 10,
         title: "Challenge Question 10",
