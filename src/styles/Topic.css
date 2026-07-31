@@ -244,6 +244,13 @@
     width: 52px;
     height: 52px;
 }
+.not-completed .topic-icon svg {
+    color: #173476;
+}
+
+.completed .topic-icon svg {
+    color: #16a34a;
+}
 /* ==========================================
    START BUTTON
 ========================================== */
