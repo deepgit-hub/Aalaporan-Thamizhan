@@ -142,7 +142,9 @@ function Home() {
               "From Tamil classrooms to global companies —
               your journey starts with a single line of code."
             </p>
-
+            <p className="footer-quote">
+              Every expert programmer was once a beginner. Start today, stay consistent, and let your code speak for itself.
+            </p>
           </div>
 
           <div className="footer-center">
