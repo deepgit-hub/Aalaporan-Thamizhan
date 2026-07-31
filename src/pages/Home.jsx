@@ -87,7 +87,9 @@ function Home() {
             <h2>📚 Java Learning Hub</h2>
 
             <p>
-             Learn Java at your own pace. Explore any topic, practice coding, and track your progress as you master each concept.
+             Learn Java at your own pace.
+             </p><p>
+             Explore any topic, practice coding, and track your progress as you master each concept.
             </p>
           </div>
 
