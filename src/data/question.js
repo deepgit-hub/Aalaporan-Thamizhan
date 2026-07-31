@@ -13885,11 +13885,33 @@ Designing Software = Figma`,
   completed: false,
 },
       {
-        id: 10,
-        title: "Challenge Question 10",
-        locked: true,
-        completed: false,
-      },
+  id: 10,
+  title: "Question 10",
+
+  questionEnglish:
+    "Write a Java program to demonstrate the use of try, catch, finally, and throw in a single program.",
+
+  questionTamil:
+    "try, catch, finally மற்றும் throw ஆகியவற்றை ஒரே Java Program-ல் பயன்படுத்தி செயல்படுத்துங்கள்.",
+
+  hintEnglish:
+    "Use the throw keyword inside the try block, handle it in the catch block, and always execute the finally block.",
+
+  hintTamil:
+    "try Block-ல் throw Keyword-ஐ பயன்படுத்தி, catch Block-ல் Exception-ஐ கையாளுங்கள். இறுதியாக finally Block-ஐ இயக்குங்கள்.",
+
+  expectedOutput: `Exception Caught: Invalid Number
+Finally Block Executed`,
+
+  expectedOutputTamil: `Exception பிடிக்கப்பட்டது: Invalid Number
+Finally Block செயல்படுத்தப்பட்டது`,
+
+  solution: ``,
+
+  challenge: true,
+  locked: false,
+  completed: false,
+},
     ],
   },
   {
