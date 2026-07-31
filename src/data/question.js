@@ -12517,11 +12517,65 @@ public class Main {
   completed: false,
 },
       {
-        id: 3,
-        title: "Question 3",
-        locked: false,
-        completed: false,
-      },
+  id: 3,
+  title: "Question 3",
+
+  questionEnglish:
+    "Write a Java program to create a class Vehicle, inherit it into Car, and then inherit Car into SportsCar. Display the brand, model, and top speed.",
+
+  questionTamil:
+    "Vehicle என்ற Class-ஐ Car Class-க்கு Inherit செய்து, Car Class-ஐ SportsCar Class-க்கு Inherit செய்து, பிராண்ட், மாடல் மற்றும் அதிகபட்ச வேகத்தை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Each child class should add one new variable.",
+
+  hintTamil:
+    "ஒவ்வொரு Child Class-லும் ஒரு புதிய Variable-ஐ சேர்க்குங்கள்.",
+
+  expectedOutput: `Brand = Toyota
+Model = Supra
+Top Speed = 250 km/h`,
+
+  expectedOutputTamil: `பிராண்ட் = Toyota
+மாடல் = Supra
+அதிகபட்ச வேகம் = 250 km/h`,
+
+  solution: `class Vehicle {
+
+    String brand = "Toyota";
+
+}
+
+class Car extends Vehicle {
+
+    String model = "Supra";
+
+}
+
+class SportsCar extends Car {
+
+    String topSpeed = "250 km/h";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        SportsCar car = new SportsCar();
+
+        System.out.println("Brand = " + car.brand);
+        System.out.println("Model = " + car.model);
+        System.out.println("Top Speed = " + car.topSpeed);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 4,
         title: "Question 4",
