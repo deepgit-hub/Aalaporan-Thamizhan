@@ -12277,11 +12277,56 @@ public class Main {
   completed: false,
 },
       {
-        id: 8,
-        title: "Question 8",
-        locked: false,
-        completed: false,
-      },
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to create a class BankAccount with a variable accountHolder and inherit it into a class SavingsAccount with a variable interestRate. Display both values.",
+
+  questionTamil:
+    "accountHolder என்ற Variable-ஐ கொண்ட BankAccount என்ற Class-ஐ உருவாக்கி, அதை interestRate என்ற Variable-ஐ கொண்ட SavingsAccount என்ற Class-ல் Inherit செய்து இரண்டு மதிப்புகளையும் காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create a parent class for account details and a child class for the interest rate.",
+
+  hintTamil:
+    "Account விவரங்களை Parent Class-லிலும் Interest Rate-ஐ Child Class-லிலும் உருவாக்குங்கள்.",
+
+  expectedOutput: `Account Holder = Deepak
+Interest Rate = 7.5%`,
+
+  expectedOutputTamil: `கணக்கு வைத்திருப்பவர் = Deepak
+வட்டி விகிதம் = 7.5%`,
+
+  solution: `class BankAccount {
+
+    String accountHolder = "Deepak";
+
+}
+
+class SavingsAccount extends BankAccount {
+
+    double interestRate = 7.5;
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        SavingsAccount account = new SavingsAccount();
+
+        System.out.println("Account Holder = " + account.accountHolder);
+        System.out.println("Interest Rate = " + account.interestRate + "%");
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { id: 9, title: "Challenge Question 9", locked: true, completed: false },
       {
         id: 10,
