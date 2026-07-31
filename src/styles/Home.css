@@ -226,3 +226,258 @@
   }
 
 }
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer{
+
+    background:#0f172a;
+
+    color:white;
+
+    margin-top:80px;
+
+    padding:70px 0 30px;
+
+}
+
+.footer-container{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:0 50px;
+
+    display:grid;
+
+    grid-template-columns:1.3fr 1.3fr 1fr;
+
+    gap:60px;
+
+    align-items:start;
+
+}
+
+/* ==========================================
+   LEFT
+========================================== */
+
+.footer-left h2{
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+    color:white;
+
+}
+
+.footer-left p{
+
+    font-size:22px;
+
+    color:#cbd5e1;
+
+    line-height:1.9;
+
+    margin-bottom:18px;
+
+}
+
+.footer-quote{
+
+    font-style:italic;
+
+    color:#93c5fd;
+
+    font-size:20px;
+
+}
+
+/* ==========================================
+   CENTER
+========================================== */
+
+.footer-center h3{
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+    color:white;
+
+}
+
+.footer-center p{
+
+    font-size:21px;
+
+    line-height:1.9;
+
+    color:#cbd5e1;
+
+}
+
+/* ==========================================
+   RIGHT
+========================================== */
+
+.footer-right{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:100%;
+
+}
+
+.portfolio-btn{
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:18px 34px;
+
+    border-radius:14px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 12px 25px rgba(37,99,235,.35);
+
+}
+
+.portfolio-btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 35px rgba(37,99,235,.45);
+
+}
+
+/* ==========================================
+   COPYRIGHT
+========================================== */
+
+.footer hr{
+
+    margin:60px auto 25px;
+
+    width:92%;
+
+    border:none;
+
+    height:1px;
+
+    background:#334155;
+
+}
+
+.copyright{
+
+    text-align:center;
+
+    color:#94a3b8;
+
+    font-size:18px;
+
+    letter-spacing:.5px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.footer-container{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+    gap:45px;
+
+}
+
+.footer-right{
+
+    justify-content:center;
+
+}
+
+.footer-left h2{
+
+    font-size:34px;
+
+}
+
+.footer-center h3{
+
+    font-size:28px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.footer{
+
+    padding:50px 20px 25px;
+
+}
+
+.footer-container{
+
+    padding:0;
+
+}
+
+.footer-left h2{
+
+    font-size:30px;
+
+}
+
+.footer-left p,
+
+.footer-center p{
+
+    font-size:18px;
+
+}
+
+.portfolio-btn{
+
+    width:100%;
+
+    max-width:320px;
+
+    font-size:18px;
+
+}
+
+.copyright{
+
+    font-size:16px;
+
+}
+
+}
