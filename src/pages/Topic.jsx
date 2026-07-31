@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useState } from "react";
 import topics from "../data/topics";
-
+import MentorSupport from "../components/MentorSupportButton";
 import "../styles/Topic.css";
 
 function Topic() {
@@ -214,6 +214,8 @@ function Topic() {
         </div>
 
       </div>
+        <MentorSupport />
+
     </div>
   );
 }
