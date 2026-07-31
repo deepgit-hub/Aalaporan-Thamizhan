@@ -11804,12 +11804,61 @@ public class Main {
   completed: false,
 },
       {
-        id: 8,
-        title: "Question 8",
-        locked: false,
-        completed: false,
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to create a class Book and inherit it into a class Library. Display the book title and library name.",
+
+  questionTamil:
+    "Book என்ற Class-ஐ உருவாக்கி அதை Library என்ற Class-ல் Inherit செய்து புத்தகத்தின் தலைப்பு மற்றும் நூலகத்தின் பெயரை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Store the book title in the parent class and the library name in the child class.",
+
+  hintTamil:
+    "Parent Class-ல் Book Title-ஐயும் Child Class-ல் Library Name-ஐயும் உருவாக்குங்கள்.",
+
+  expectedOutput: `Book = Java Programming
+Library = Central Library`,
+
+  expectedOutputTamil: `புத்தகம் = Java Programming
+நூலகம் = Central Library`,
+
+  solution: `class Book {
+
+    String title = "Java Programming";
+
+}
+
+class Library extends Book {
+
+    String libraryName = "Central Library";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Library library = new Library();
+
+        System.out.println("Book = " + library.title);
+        System.out.println("Library = " + library.libraryName);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
+      { id: 9, 
+        title: "Challenge Question 9", 
+        locked: true, 
+        completed: false 
       },
-      { id: 9, title: "Challenge Question 9", locked: true, completed: false },
       {
         id: 10,
         title: "Challenge Question 10",
