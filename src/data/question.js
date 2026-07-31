@@ -12817,11 +12817,65 @@ public class Main {
   completed: false,
 },
       {
-        id: 8,
-        title: "Question 8",
-        locked: false,
-        completed: false,
-      },
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to create a class Device, inherit it into Computer, and then inherit Computer into Laptop. Display the device type, processor, and RAM.",
+
+  questionTamil:
+    "Device என்ற Class-ஐ Computer Class-க்கு Inherit செய்து, Computer Class-ஐ Laptop Class-க்கு Inherit செய்து, சாதன வகை, Processor மற்றும் RAM-ஐ காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create three classes connected using multilevel inheritance.",
+
+  hintTamil:
+    "Multilevel Inheritance மூலம் மூன்று Class-களை இணைக்குங்கள்.",
+
+  expectedOutput: `Device = Computer
+Processor = Intel i5
+RAM = 16 GB`,
+
+  expectedOutputTamil: `சாதனம் = Computer
+Processor = Intel i5
+RAM = 16 GB`,
+
+  solution: `class Device {
+
+    String deviceType = "Computer";
+
+}
+
+class Computer extends Device {
+
+    String processor = "Intel i5";
+
+}
+
+class Laptop extends Computer {
+
+    String ram = "16 GB";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Laptop laptop = new Laptop();
+
+        System.out.println("Device = " + laptop.deviceType);
+        System.out.println("Processor = " + laptop.processor);
+        System.out.println("RAM = " + laptop.ram);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { id: 9, title: "Challenge Question 9", locked: true, completed: false },
       {
         id: 10,
