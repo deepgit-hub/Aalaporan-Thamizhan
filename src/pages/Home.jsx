@@ -43,7 +43,7 @@ function Home() {
               <div className="feature-header">
                 <Languages className="feature-icon" />
 
-                <h3>English + Tamil</h3>
+                <h3>Bilingual Learning</h3>
               </div>
 
               <p>
@@ -56,7 +56,7 @@ function Home() {
               <div className="feature-header">
                 <Globe2  className="feature-icon" />
 
-                <h3>Real-World Learning</h3>
+                <h3>Real-World Applications</h3>
               </div>
 
               <p>
@@ -69,7 +69,7 @@ function Home() {
               <div className="feature-header">
                 <CodeXml  className="feature-icon" />
 
-                <h3>Practice While Learning</h3>
+                <h3>Practice as You Learn</h3>
               </div>
 
               <p>
