@@ -4,15 +4,17 @@
 
 .topic-card{
 
-    width:100%;
+    width:240px;
+
+    height:230px;
 
     background:white;
 
-    border:none;
+    border:3px solid #173476;
 
     border-radius:20px;
 
-    padding:35px 25px;
+    padding:25px;
 
     cursor:pointer;
 
@@ -24,13 +26,11 @@
 
     flex-direction:column;
 
-    align-items:center;
-
     justify-content:center;
 
-    gap:18px;
+    align-items:center;
 
-    min-height:230px;
+    gap:18px;
 
 }
 
@@ -52,7 +52,9 @@
 
 .topic-icon{
 
-    font-size:52px;
+    font-size:56px;
+
+    margin-bottom:5px;
 
 }
 
@@ -62,13 +64,15 @@
 
 .topic-card h3{
 
-    font-size:25px;
+    font-size:26px;
 
     font-weight:700;
 
+    color:#173476;
+
     text-align:center;
 
-    line-height:1.5;
+    line-height:1.4;
 
     margin:0;
 
@@ -80,7 +84,7 @@
 
 .topic-status{
 
-    padding:8px 18px;
+    padding:8px 20px;
 
     border-radius:30px;
 
@@ -96,19 +100,7 @@
 
 .not-completed{
 
-    border:3px solid #173476;
-
-}
-
-.not-completed .topic-icon{
-
-    color:#173476;
-
-}
-
-.not-completed h3{
-
-    color:#173476;
+    border-color:#173476;
 
 }
 
@@ -146,13 +138,7 @@
 
 .completed{
 
-    border:3px solid #16a34a;
-
-}
-
-.completed .topic-icon{
-
-    color:#16a34a;
+    border-color:#16a34a;
 
 }
 
@@ -198,27 +184,23 @@
 
     .topic-card{
 
-        min-height:190px;
+        width:100%;
 
-        padding:25px 18px;
+        max-width:320px;
+
+        height:210px;
 
     }
 
     .topic-icon{
 
-        font-size:42px;
+        font-size:46px;
 
     }
 
     .topic-card h3{
 
-        font-size:20px;
-
-    }
-
-    .topic-status{
-
-        font-size:14px;
+        font-size:22px;
 
     }
 
