@@ -12577,11 +12577,65 @@ public class Main {
   completed: false,
 },
       {
-        id: 4,
-        title: "Question 4",
-        locked: false,
-        completed: false,
-      },
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to create a class College, inherit it into Department, and then inherit Department into Student. Display the college name, department name, and student name.",
+
+  questionTamil:
+    "College என்ற Class-ஐ Department Class-க்கு Inherit செய்து, Department Class-ஐ Student Class-க்கு Inherit செய்து, கல்லூரி பெயர், துறை பெயர் மற்றும் மாணவர் பெயரை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create three classes and access all variables using the Student object.",
+
+  hintTamil:
+    "மூன்று Class-களை உருவாக்கி Student Object மூலம் அனைத்து Variable-களையும் அணுகுங்கள்.",
+
+  expectedOutput: `College = ABC College
+Department = Computer Science
+Student = Deepak`,
+
+  expectedOutputTamil: `கல்லூரி = ABC College
+துறை = Computer Science
+மாணவர் = Deepak`,
+
+  solution: `class College {
+
+    String collegeName = "ABC College";
+
+}
+
+class Department extends College {
+
+    String departmentName = "Computer Science";
+
+}
+
+class Student extends Department {
+
+    String studentName = "Deepak";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Student student = new Student();
+
+        System.out.println("College = " + student.collegeName);
+        System.out.println("Department = " + student.departmentName);
+        System.out.println("Student = " + student.studentName);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 5,
         title: "Question 5",
