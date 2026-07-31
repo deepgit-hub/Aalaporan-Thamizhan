@@ -12944,11 +12944,66 @@ Bird = Peacock`,
 
     questions: [
       {
-        id: 1,
-        title: "Question 1",
-        locked: false,
-        completed: false,
-      },
+  id: 1,
+  title: "Question 1",
+
+  questionEnglish:
+    "Write a Java program to create a class Animal and inherit it into Dog and Cat. Display the animal name, dog breed, and cat breed.",
+
+  questionTamil:
+    "Animal என்ற Class-ஐ உருவாக்கி, அதை Dog மற்றும் Cat என்ற Class-களுக்கு Inherit செய்து, விலங்கின் பெயர், நாயின் இனம் மற்றும் பூனையின் இனத்தை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create one parent class and two child classes using the extends keyword.",
+
+  hintTamil:
+    "ஒரு Parent Class மற்றும் இரண்டு Child Class-களை extends Keyword-ஐ பயன்படுத்தி உருவாக்குங்கள்.",
+
+  expectedOutput: `Animal = Pet
+Dog Breed = Labrador
+Cat Breed = Persian`,
+
+  expectedOutputTamil: `விலங்கு = செல்லப்பிராணி
+நாய் இனம் = Labrador
+பூனை இனம் = Persian`,
+
+  solution: `class Animal {
+
+    String animalName = "Pet";
+
+}
+
+class Dog extends Animal {
+
+    String dogBreed = "Labrador";
+
+}
+
+class Cat extends Animal {
+
+    String catBreed = "Persian";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Dog dog = new Dog();
+        Cat cat = new Cat();
+
+        System.out.println("Animal = " + dog.animalName);
+        System.out.println("Dog Breed = " + dog.dogBreed);
+        System.out.println("Cat Breed = " + cat.catBreed);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 2,
         title: "Question 2",
