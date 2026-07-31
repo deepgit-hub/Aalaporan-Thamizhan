@@ -12073,11 +12073,56 @@ public class Main {
   completed: false,
 },
       {
-        id: 4,
-        title: "Question 4",
-        locked: false,
-        completed: false,
-      },
+  id: 4,
+  title: "Question 4",
+
+  questionEnglish:
+    "Write a Java program to create a class Employee with a variable employeeName and inherit it into a class Manager with a variable department. Display both values.",
+
+  questionTamil:
+    "employeeName என்ற Variable-ஐ கொண்ட Employee என்ற Class-ஐ உருவாக்கி, அதை department என்ற Variable-ஐ கொண்ட Manager என்ற Class-ல் Inherit செய்து இரண்டு மதிப்புகளையும் காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create an Employee object through the Manager class using inheritance.",
+
+  hintTamil:
+    "Inheritance மூலம் Manager Object-ஐ பயன்படுத்தி Parent Variable-ஐ அணுகுங்கள்.",
+
+  expectedOutput: `Employee = Rahul
+Department = HR`,
+
+  expectedOutputTamil: `பணியாளர் = Rahul
+துறை = HR`,
+
+  solution: `class Employee {
+
+    String employeeName = "Rahul";
+
+}
+
+class Manager extends Employee {
+
+    String department = "HR";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Manager manager = new Manager();
+
+        System.out.println("Employee = " + manager.employeeName);
+        System.out.println("Department = " + manager.department);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 5,
         title: "Question 5",
