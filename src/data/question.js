@@ -13495,7 +13495,7 @@ Designing Software = Figma`,
     ],
   },
   {
-    topicId: 32,
+    topicId: 31,
     title: "Exception Handling",
 
     questions: [
@@ -13557,7 +13557,7 @@ Designing Software = Figma`,
     ],
   },
   {
-    topicId: 33,
+    topicId: 32,
     title: "Try Catch",
 
     questions: [
