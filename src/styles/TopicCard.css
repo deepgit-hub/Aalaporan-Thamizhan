@@ -4,9 +4,8 @@
 
 .topic-card{
 
-    width:240px;
-
-    height:230px;
+    width:250px;
+    height:280px;
 
     background:white;
 
@@ -26,17 +25,11 @@
 
     flex-direction:column;
 
-    justify-content:center;
-
     align-items:center;
 
-    gap:18px;
+    justify-content:flex-start;
 
 }
-
-/* ==========================================
-   HOVER
-========================================== */
 
 .topic-card:hover{
 
@@ -54,7 +47,7 @@
 
     font-size:56px;
 
-    margin-bottom:5px;
+    margin-bottom:18px;
 
 }
 
@@ -63,25 +56,38 @@
 ========================================== */
 
 .topic-card h3{
-    font-size:26px;
+
+    font-size:24px;
+
     font-weight:700;
+
     color:#173476;
+
     text-align:center;
+
     line-height:1.4;
+
     margin:0;
 
-    height:80px;          /* Reserve space for up to 3 lines */
+    height:105px;
+
     display:flex;
+
     align-items:center;
+
     justify-content:center;
+
 }
+
 /* ==========================================
    STATUS
 ========================================== */
 
 .topic-status{
 
-    padding:8px 20px;
+    margin-top:auto;
+
+    padding:10px 22px;
 
     border-radius:30px;
 
@@ -182,10 +188,8 @@
     .topic-card{
 
         width:100%;
-
         max-width:320px;
-
-        height:210px;
+        height:250px;
 
     }
 
@@ -198,6 +202,13 @@
     .topic-card h3{
 
         font-size:22px;
+        height:90px;
+
+    }
+
+    .topic-status{
+
+        font-size:15px;
 
     }
 
