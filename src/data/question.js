@@ -12226,11 +12226,56 @@ public class Main {
   completed: false,
 },
       {
-        id: 7,
-        title: "Question 7",
-        locked: false,
-        completed: false,
-      },
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Write a Java program to create a class College with a variable collegeName and inherit it into a class Department with a variable departmentName. Display both values.",
+
+  questionTamil:
+    "collegeName என்ற Variable-ஐ கொண்ட College என்ற Class-ஐ உருவாக்கி, அதை departmentName என்ற Variable-ஐ கொண்ட Department என்ற Class-ல் Inherit செய்து இரண்டு மதிப்புகளையும் காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Access both the parent and child class variables using a Department object.",
+
+  hintTamil:
+    "Department Object மூலம் Parent மற்றும் Child Class Variable-களை அணுகுங்கள்.",
+
+  expectedOutput: `College = ABC College
+Department = Computer Science`,
+
+  expectedOutputTamil: `கல்லூரி = ABC College
+துறை = Computer Science`,
+
+  solution: `class College {
+
+    String collegeName = "ABC College";
+
+}
+
+class Department extends College {
+
+    String departmentName = "Computer Science";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Department department = new Department();
+
+        System.out.println("College = " + department.collegeName);
+        System.out.println("Department = " + department.departmentName);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 8,
         title: "Question 8",
