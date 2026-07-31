@@ -13372,11 +13372,66 @@ public class Main {
   completed: false,
 },
       {
-        id: 8,
-        title: "Question 8",
-        locked: false,
-        completed: false,
-      },
+  id: 8,
+  title: "Question 8",
+
+  questionEnglish:
+    "Write a Java program to create a class Fruit and inherit it into Apple and Mango. Display the fruit category, apple color, and mango variety.",
+
+  questionTamil:
+    "Fruit என்ற Class-ஐ உருவாக்கி, அதை Apple மற்றும் Mango என்ற Class-களுக்கு Inherit செய்து, பழத்தின் வகை, ஆப்பிளின் நிறம் மற்றும் மாம்பழத்தின் வகையை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create one parent class and two child classes with different variables.",
+
+  hintTamil:
+    "ஒரு Parent Class மற்றும் இரண்டு Child Class-களை வெவ்வேறு Variable-களுடன் உருவாக்குங்கள்.",
+
+  expectedOutput: `Category = Fruits
+Apple Color = Red
+Mango Variety = Alphonso`,
+
+  expectedOutputTamil: `வகை = பழங்கள்
+ஆப்பிள் நிறம் = சிவப்பு
+மாம்பழ வகை = Alphonso`,
+
+  solution: `class Fruit {
+
+    String category = "Fruits";
+
+}
+
+class Apple extends Fruit {
+
+    String color = "Red";
+
+}
+
+class Mango extends Fruit {
+
+    String variety = "Alphonso";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Apple apple = new Apple();
+        Mango mango = new Mango();
+
+        System.out.println("Category = " + apple.category);
+        System.out.println("Apple Color = " + apple.color);
+        System.out.println("Mango Variety = " + mango.variety);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       { id: 9, title: "Challenge Question 9", locked: true, completed: false },
       {
         id: 10,
