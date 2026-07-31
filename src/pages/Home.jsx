@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import TopicCard from "../components/TopicCard";
 import topics from "../data/topics";
+import MentorSupport from "../components/MentorSupport";
 import {
   Languages,
   Globe2,
@@ -120,7 +121,7 @@ function Home() {
           </div>
 
         </section>
-
+<MentorSupport />
       </div>
 
       {/* ================= FOOTER ================= */}
