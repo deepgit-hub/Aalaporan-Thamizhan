@@ -32,11 +32,11 @@
 
     border:2px solid #2563eb;
 
-    padding:12px 22px;
+    padding:14px 24px;
 
     border-radius:12px;
 
-    font-size:15px;
+    font-size:18px;
 
     font-weight:600;
 
@@ -58,13 +58,13 @@
 
 .topic-title{
 
-    font-size:2.8rem;
+    font-size:3.5rem;
 
     font-weight:800;
 
     color:#0f172a;
 
-    margin-bottom:10px;
+    margin-bottom:12px;
 
 }
 
@@ -72,7 +72,7 @@
 
     color:#64748b;
 
-    font-size:1rem;
+    font-size:1.4rem;
 
 }
 
@@ -84,9 +84,9 @@
 
     background:white;
 
-    padding:30px;
+    padding:40px;
 
-    margin-bottom:28px;
+    margin-bottom:32px;
 
     border-radius:18px;
 
@@ -114,15 +114,15 @@
 
     color:#0f172a;
 
-    font-size:1.45rem;
+    font-size:2rem;
 
-    margin-bottom:18px;
+    margin-bottom:22px;
 
     display:flex;
 
     align-items:center;
 
-    gap:10px;
+    gap:12px;
 
 }
 
@@ -134,9 +134,9 @@
 
     color:#475569;
 
-    line-height:1.9;
+    line-height:2;
 
-    font-size:16px;
+    font-size:22px;
 
 }
 
@@ -146,7 +146,7 @@
 
 .topic-list{
 
-    margin-top:10px;
+    margin-top:15px;
 
     padding-left:10px;
 
@@ -156,15 +156,17 @@
 
     list-style:none;
 
-    margin-bottom:14px;
+    margin-bottom:18px;
 
     color:#334155;
 
-    line-height:1.7;
+    line-height:2;
 
     position:relative;
 
-    padding-left:28px;
+    padding-left:32px;
+
+    font-size:21px;
 
 }
 
@@ -192,17 +194,17 @@
 
     color:#f8fafc;
 
-    padding:25px;
+    padding:30px;
 
     border-radius:16px;
 
     overflow-x:auto;
 
-    margin-top:18px;
+    margin-top:22px;
 
-    font-size:15px;
+    font-size:19px;
 
-    line-height:1.8;
+    line-height:2;
 
     box-shadow:0 10px 25px rgba(0,0,0,.15);
 
@@ -244,11 +246,11 @@
 
     border:none;
 
-    padding:16px 34px;
+    padding:18px 36px;
 
     border-radius:14px;
 
-    font-size:17px;
+    font-size:19px;
 
     font-weight:600;
 
@@ -280,11 +282,11 @@
 
     border:2px solid #22c55e;
 
-    padding:16px 34px;
+    padding:18px 36px;
 
     border-radius:14px;
 
-    font-size:17px;
+    font-size:19px;
 
     font-weight:600;
 
@@ -301,5 +303,55 @@
     color:white;
 
     transform:translateY(-3px);
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+    .topic-page{
+        padding:30px 15px;
+    }
+
+    .topic-title{
+        font-size:2.5rem;
+    }
+
+    .topic-subtitle{
+        font-size:1.1rem;
+    }
+
+    .topic-section{
+        padding:25px;
+    }
+
+    .topic-section h2{
+        font-size:1.6rem;
+    }
+
+    .topic-section p{
+        font-size:18px;
+    }
+
+    .topic-list li{
+        font-size:18px;
+    }
+
+    .code-box{
+        font-size:16px;
+        padding:20px;
+    }
+
+    .topic-buttons{
+        flex-direction:column;
+    }
+
+    .start-btn,
+    .complete-btn{
+        width:100%;
+    }
 
 }
