@@ -84,12 +84,19 @@
    TOPIC GRID
 ========================================== */
 
-.topics-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-}
+.topics-grid{
 
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:35px;
+
+    margin-top:45px;
+
+}
 /* ==========================================
    RESPONSIVE
 ========================================== */
