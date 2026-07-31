@@ -11643,11 +11643,64 @@ public class Main {
   completed: false,
 },
       {
-        id: 5,
-        title: "Question 5",
-        locked: false,
-        completed: false,
-      },
+  id: 5,
+  title: "Question 5",
+
+  questionEnglish:
+    "Write a Java program to create a class Shape and inherit it into a class Circle. Display a message from both classes.",
+
+  questionTamil:
+    "Shape என்ற Class-ஐ உருவாக்கி அதை Circle என்ற Class-ல் Inherit செய்து இரண்டு Class-களிலிருந்தும் ஒரு செய்தியை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Create one method in each class and call both methods using the child class object.",
+
+  hintTamil:
+    "ஒவ்வொரு Class-லிலும் ஒரு Method உருவாக்கி Child Class Object மூலம் இரண்டு Method-களையும் அழையுங்கள்.",
+
+  expectedOutput: `This is a Shape.
+This is a Circle.`,
+
+  expectedOutputTamil: `இது ஒரு வடிவம்.
+இது ஒரு வட்டம்.`,
+
+  solution: `class Shape {
+
+    void displayShape() {
+
+        System.out.println("This is a Shape.");
+
+    }
+
+}
+
+class Circle extends Shape {
+
+    void displayCircle() {
+
+        System.out.println("This is a Circle.");
+
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Circle circle = new Circle();
+
+        circle.displayShape();
+        circle.displayCircle();
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 6,
         title: "Question 6",
