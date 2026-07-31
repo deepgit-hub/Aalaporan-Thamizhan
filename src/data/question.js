@@ -12757,11 +12757,65 @@ public class Main {
   completed: false,
 },
       {
-        id: 7,
-        title: "Question 7",
-        locked: false,
-        completed: false,
-      },
+  id: 7,
+  title: "Question 7",
+
+  questionEnglish:
+    "Write a Java program to create a class Account, inherit it into SavingsAccount, and then inherit SavingsAccount into FixedDeposit. Display the account holder, interest rate, and deposit amount.",
+
+  questionTamil:
+    "Account என்ற Class-ஐ SavingsAccount Class-க்கு Inherit செய்து, SavingsAccount Class-ஐ FixedDeposit Class-க்கு Inherit செய்து, கணக்கு வைத்திருப்பவர், வட்டி விகிதம் மற்றும் வைப்பு தொகையை காட்டும் Java Program எழுதுங்கள்.",
+
+  hintEnglish:
+    "Access all variables using the FixedDeposit object.",
+
+  hintTamil:
+    "FixedDeposit Object மூலம் அனைத்து Variable-களையும் அணுகுங்கள்.",
+
+  expectedOutput: `Account Holder = Deepak
+Interest Rate = 7.5%
+Deposit Amount = 100000`,
+
+  expectedOutputTamil: `கணக்கு வைத்திருப்பவர் = Deepak
+வட்டி விகிதம் = 7.5%
+வைப்பு தொகை = 100000`,
+
+  solution: `class Account {
+
+    String accountHolder = "Deepak";
+
+}
+
+class SavingsAccount extends Account {
+
+    double interestRate = 7.5;
+
+}
+
+class FixedDeposit extends SavingsAccount {
+
+    int depositAmount = 100000;
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        FixedDeposit fd = new FixedDeposit();
+
+        System.out.println("Account Holder = " + fd.accountHolder);
+        System.out.println("Interest Rate = " + fd.interestRate + "%");
+        System.out.println("Deposit Amount = " + fd.depositAmount);
+
+    }
+
+}`,
+
+  challenge: false,
+  locked: false,
+  completed: false,
+},
       {
         id: 8,
         title: "Question 8",
