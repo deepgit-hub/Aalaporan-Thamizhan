@@ -359,7 +359,7 @@ body{
 
 }
 
-.portfolio-btn{
+.portfolio-btn1{
 
     background:#2563eb;
 
@@ -385,10 +385,44 @@ body{
   
 
 }
+.portfolio-btn2{
 
-.portfolio-btn:hover{
+    background:#d00ed0;
+
+    color:white;
+
+    border:none;
+
+    padding:18px 34px;
+
+    border-radius:14px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 12px 25px rgba(37,99,235,.35);
+    
+    
+  
+
+}
+.portfolio-btn1:hover{
 
     background:#1d4ed8;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 35px rgba(37,99,235,.45);
+
+}
+.portfolio-btn2:hover{
+
+    background:#9508b5;
 
     transform:translateY(-4px);
 
