@@ -206,6 +206,17 @@ function Home() {
             >
               👨‍💻 Know More DEEPAK
             </button>
+            <button
+              className="portfolio-btn"
+              onClick={() =>
+                window.open(
+                  "https://deepgit-hub.github.io/Digital-Portfolio/",
+                  "_blank"
+                )
+              }
+            >
+              👨‍💻 Know More DEEPAK
+            </button>
 
           </div>
 
