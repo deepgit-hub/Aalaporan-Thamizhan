@@ -504,3 +504,170 @@ body{
 }
 
 }
+/* ==========================================
+   PROGRESS CARD
+========================================== */
+
+.progress-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px 40px;
+
+    margin:40px 50px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    border:1px solid #e2e8f0;
+
+}
+
+.progress-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.progress-top h3{
+
+    font-size:30px;
+
+    color:#0f172a;
+
+}
+
+.progress-percent{
+
+    font-size:32px;
+
+    font-weight:800;
+
+    color:#2563eb;
+
+}
+
+.progress-bar{
+
+    width:100%;
+
+    height:18px;
+
+    background:#e2e8f0;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    margin-bottom:25px;
+
+}
+
+.progress-fill{
+
+    width:0%;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        #2563eb,
+        #3b82f6
+    );
+
+    border-radius:30px;
+
+    transition:.6s;
+
+}
+
+.progress-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.progress-bottom p{
+
+    margin:0;
+
+    font-size:21px;
+
+    color:#475569;
+
+}
+
+.progress-message{
+
+    color:#2563eb !important;
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.progress-card{
+
+    margin:30px 0;
+
+    padding:25px;
+
+}
+
+.progress-top{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:10px;
+
+}
+
+.progress-top h3{
+
+    font-size:24px;
+
+}
+
+.progress-percent{
+
+    font-size:28px;
+
+}
+
+.progress-bottom{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+.progress-bottom p{
+
+    font-size:18px;
+
+}
+
+}
