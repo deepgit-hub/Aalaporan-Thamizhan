@@ -801,7 +801,77 @@ Keep Learning with Alaporan Thamizhan!`,
 
   completed: false,
 },
+{
+  id: 11,
 
+  title: "Ternary Operator",
+
+  englishDefinition:
+    "The Ternary Operator is a shorthand way of writing an if-else statement in Python. It allows you to assign or display a value based on a condition using a single line of code. It makes the code shorter and easier to read for simple decisions.",
+
+  tamilDefinition:
+    "Ternary Operator என்பது Python-ல் If-Else Statement-ஐ ஒரே வரியில் (Single Line) எழுத பயன்படும் ஒரு சுருக்கமான (Shorthand) முறையாகும். ஒரு Condition-ஐ அடிப்படையாகக் கொண்டு ஒரு Value-ஐ Assign செய்யவோ அல்லது Display செய்யவோ இது பயன்படுகிறது. எளிய முடிவெடுக்கும் செயல்பாடுகளில் இது Code-ஐ சுருக்கமாகவும் படிக்க எளிதாகவும் மாற்றுகிறது.",
+
+  realWorldUsage:
+    "The Ternary Operator is commonly used in software applications for simple decisions. For example, an online examination system displays 'Pass' or 'Fail' based on a student's marks. Similarly, an e-commerce website can display 'In Stock' or 'Out of Stock' depending on product availability.",
+
+  realWorldUsageTamil:
+    "Ternary Operator எளிய முடிவெடுக்கும் செயல்பாடுகளுக்கு Software Applications-ல் அதிகமாக பயன்படுத்தப்படுகிறது. உதாரணமாக, Online Examination System-ல் மாணவரின் மதிப்பெண்ணை பொறுத்து 'Pass' அல்லது 'Fail' என்று காட்டலாம். அதேபோல் E-commerce Website-ல் பொருள் கிடைக்கிறதா என்பதை பொறுத்து 'In Stock' அல்லது 'Out of Stock' என்று காட்டலாம்.",
+
+  syntax: `result = "Value if True" if condition else "Value if False"`,
+
+  syntaxExplanationEnglish: [
+    "The condition is evaluated first.",
+    "If the condition is True, the first value is selected.",
+    "If the condition is False, the value after 'else' is selected.",
+    "The result is stored in a variable or displayed directly.",
+    "The Ternary Operator is suitable for simple if-else conditions."
+  ],
+
+  syntaxExplanationTamil: [
+    "முதலில் Condition சரிபார்க்கப்படுகிறது.",
+    "Condition True ஆக இருந்தால் முதல் Value தேர்வு செய்யப்படுகிறது.",
+    "Condition False ஆக இருந்தால் 'else'க்கு பிறகு உள்ள Value தேர்வு செய்யப்படுகிறது.",
+    "தேர்வு செய்யப்பட்ட Value ஒரு Variable-ல் சேமிக்கப்படலாம் அல்லது நேரடியாக Display செய்யப்படலாம்.",
+    "எளிய If-Else Conditions-க்கு மட்டுமே Ternary Operator பயன்படுத்துவது சிறந்தது."
+  ],
+
+  exampleProgram: `python_marks = 82
+
+result = "Pass" if python_marks >= 50 else "Fail"
+
+print("Student : Deepak")
+
+print("Result :", result)
+
+print("Keep Learning with Alaporan Thamizhan!")`,
+
+  programExplanationEnglish: [
+    "Line 1: A variable named 'python_marks' is created and assigned the value 82.",
+    "Line 3: The Ternary Operator checks whether 'python_marks' is greater than or equal to 50. Since the condition is True, 'Pass' is stored in the variable 'result'.",
+    "Line 5: print() displays the student's name.",
+    "Line 7: print() displays the result stored in the variable 'result'.",
+    "Line 9: print() displays the motivational message.",
+    "The program demonstrates how the Ternary Operator performs an if-else decision in a single line."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: 'python_marks' என்ற Variable உருவாக்கப்பட்டு அதில் 82 என்ற மதிப்பு சேமிக்கப்படுகிறது.",
+    "வரி 3: Ternary Operator, 'python_marks' 50 அல்லது அதற்கு மேல் உள்ளதா என்பதை சரிபார்க்கிறது. Condition True என்பதால் 'Pass' என்ற Value, 'result' Variable-ல் சேமிக்கப்படுகிறது.",
+    "வரி 5: print() மூலம் மாணவரின் பெயர் திரையில் காட்டப்படுகிறது.",
+    "வரி 7: print() மூலம் 'result' Variable-ல் சேமிக்கப்பட்டுள்ள முடிவு (Result) திரையில் காட்டப்படுகிறது.",
+    "வரி 9: print() மூலம் 'Keep Learning with Alaporan Thamizhan!' என்ற ஊக்கமளிக்கும் செய்தி திரையில் காட்டப்படுகிறது.",
+    "இந்த Program, ஒரே வரியில் If-Else முடிவை Ternary Operator மூலம் எப்படி எடுக்கலாம் என்பதை விளக்குகிறது."
+  ],
+
+  output: `Student : Deepak
+Result : Pass
+Keep Learning with Alaporan Thamizhan!`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
