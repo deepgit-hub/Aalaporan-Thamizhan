@@ -2135,6 +2135,124 @@ Constructor Called Successfully!`,
 
   completed: false,
 },
+{
+  id: 25,
+
+  title: "Single Inheritance",
+
+  englishDefinition:
+    "Single Inheritance is a type of inheritance in which one derived class inherits the properties and behaviors of one base class. It allows the derived class to reuse the data members and member functions of the base class.",
+
+  tamilDefinition:
+    "Single Inheritance என்பது ஒரு வகையான Inheritance ஆகும். இதில் ஒரு Derived Class, ஒரு Base Class-இன் Properties மற்றும் Behaviors-ஐ பெறுகிறது. இதன் மூலம் Base Class-ல் உள்ள Data Members மற்றும் Member Functions-ஐ மீண்டும் எழுதாமல் பயன்படுத்த முடியும்.",
+
+  realWorldUsage:
+    "Single Inheritance is widely used in software development. For example, in a Student Management System, a Student class can inherit the common details such as name and age from a Person class. This reduces code duplication and improves maintainability.",
+
+  realWorldUsageTamil:
+    "Single Inheritance பல Software-களில் பயன்படுத்தப்படுகிறது. உதாரணமாக, Student Management System-ல் Student Class, Person Class-இல் இருக்கும் Name மற்றும் Age போன்ற பொதுவான தகவல்களை பெறுகிறது. இதனால் ஒரே Code-ஐ மீண்டும் எழுத வேண்டிய அவசியம் இல்லாமல் Program எளிதாக பராமரிக்கப்படுகிறது.",
+
+  syntax: `class BaseClass
+{
+    // Members
+};
+
+class DerivedClass : public BaseClass
+{
+    // Additional Members
+};`,
+
+  syntaxExplanationEnglish: [
+    "The first class is called the Base Class (Parent Class).",
+    "The second class is called the Derived Class (Child Class).",
+    "The 'public' keyword allows the derived class to access the public members of the base class.",
+    "The derived class inherits all accessible members of the base class.",
+    "Additional members can also be added inside the derived class."
+  ],
+
+  syntaxExplanationTamil: [
+    "முதல் Class, Base Class (Parent Class) என அழைக்கப்படுகிறது.",
+    "இரண்டாவது Class, Derived Class (Child Class) என அழைக்கப்படுகிறது.",
+    "'public' Keyword மூலம் Derived Class, Base Class-இன் Public Members-ஐ அணுக முடியும்.",
+    "Derived Class, Base Class-இன் அனைத்து அணுகக்கூடிய Members-ஐ பெறுகிறது.",
+    "Derived Class-க்குள் கூடுதலாக புதிய Members-ஐ உருவாக்கலாம்."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+class Person
+{
+public:
+    void introduce()
+    {
+        cout << "Welcome to Alaporan Tamilan!" << endl;
+    }
+};
+
+class Student : public Person
+{
+public:
+    void study()
+    {
+        cout << "Deepak is learning C++." << endl;
+    }
+};
+
+int main()
+{
+    Student student;
+
+    student.introduce();
+
+    student.study();
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: A base class named 'Person' is created.",
+    "Line 7: public: makes the members accessible.",
+    "Line 9: The function 'introduce()' is created inside the base class.",
+    "Line 11: cout displays the welcome message.",
+    "Line 15: A derived class named 'Student' inherits from the Person class.",
+    "Line 17: The function 'study()' is created inside the derived class.",
+    "Line 19: cout displays that Deepak is learning C++.",
+    "Line 23: int main() is the starting point of the program.",
+    "Line 25: An object named 'student' is created from the Student class.",
+    "Line 27: student.introduce() calls the inherited function from the Person class.",
+    "Line 29: student.study() calls the function defined inside the Student class.",
+    "Line 31: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: 'Person' என்ற Base Class உருவாக்கப்படுகிறது.",
+    "வரி 7: public: மூலம் Members-ஐ வெளியிலிருந்து அணுக முடிகிறது.",
+    "வரி 9: Base Class-க்குள் 'introduce()' என்ற Function உருவாக்கப்படுகிறது.",
+    "வரி 11: cout மூலம் Welcome Message திரையில் காட்டப்படுகிறது.",
+    "வரி 15: 'Student' என்ற Derived Class, Person Class-இல் இருந்து Inherit செய்கிறது.",
+    "வரி 17: Derived Class-க்குள் 'study()' என்ற Function உருவாக்கப்படுகிறது.",
+    "வரி 19: cout மூலம் 'Deepak is learning C++.' என்ற செய்தி காட்டப்படுகிறது.",
+    "வரி 23: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 25: Student Class-இல் இருந்து 'student' என்ற Object உருவாக்கப்படுகிறது.",
+    "வரி 27: student.introduce() மூலம் Base Class-இல் இருந்து Inherit செய்யப்பட்ட Function அழைக்கப்படுகிறது.",
+    "வரி 29: student.study() மூலம் Derived Class-இன் Function அழைக்கப்படுகிறது.",
+    "வரி 31: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `Welcome to Alaporan Tamilan!
+Deepak is learning C++.`,
+
+  locked: false,
+
+  completed: false,
+},
+
 ];
 
 export default topics;
