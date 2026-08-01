@@ -1187,6 +1187,90 @@ int main()
 
   completed: false,
 },
+{
+  id: 15,
+
+  title: "Break Statement",
+
+  englishDefinition:
+    "The Break Statement is used to immediately terminate a loop or switch statement. When the break statement is encountered, the control exits the loop or switch and continues with the next statement after it.",
+
+  tamilDefinition:
+    "Break Statement என்பது Loop அல்லது Switch Statement-ஐ உடனடியாக நிறுத்த பயன்படுத்தப்படுகிறது. Program-ல் break Statement வந்தவுடன் Loop அல்லது Switch-இல் இருந்து வெளியேறி, அதற்கு அடுத்துள்ள Statement இயக்கப்படும்.",
+
+  realWorldUsage:
+    "The Break Statement is used in many real-world applications. For example, an ATM stops asking for the PIN once the correct PIN is entered, a search operation stops when the required record is found, and a game exits a level when the player wins.",
+
+  realWorldUsageTamil:
+    "Break Statement பல Software-களில் பயன்படுத்தப்படுகிறது. உதாரணமாக, ATM-ல் சரியான PIN உள்ளிடப்பட்டவுடன் மீண்டும் PIN கேட்பதை நிறுத்துவது, Search Operation-ல் தேவையான Record கிடைத்தவுடன் Search-ஐ நிறுத்துவது, மற்றும் Game-ல் Player வெற்றி பெற்றவுடன் அந்த Level-ஐ முடிப்பது போன்ற இடங்களில் பயன்படுத்தப்படுகிறது.",
+
+  syntax: `break;`,
+
+  syntaxExplanationEnglish: [
+    "The 'break' keyword immediately exits the current loop or switch statement.",
+    "It is usually used inside an if statement within a loop.",
+    "After break executes, the remaining loop iterations are skipped.",
+    "Program execution continues with the statement after the loop or switch."
+  ],
+
+  syntaxExplanationTamil: [
+    "'break' Keyword தற்போதைய Loop அல்லது Switch Statement-இல் இருந்து உடனடியாக வெளியேறுகிறது.",
+    "இது பொதுவாக Loop-க்குள் உள்ள if Statement-இல் பயன்படுத்தப்படுகிறது.",
+    "break இயக்கப்பட்ட பிறகு மீதமுள்ள Loop Iteration-கள் இயக்கப்படாது.",
+    "அதன் பிறகு Program, Loop அல்லது Switch-க்கு அடுத்துள்ள Statement-ஐ இயக்கும்."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    for(int day = 1; day <= 10; day++)
+    {
+        if(day == 6)
+        {
+            break;
+        }
+
+        cout << "Day " << day << " : Deepak practiced C++." << endl;
+    }
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: int main() is the starting point of the program.",
+    "Line 7: The for loop starts from day 1 and is set to run until day 10.",
+    "Line 9: The if statement checks whether the value of day is equal to 6.",
+    "Line 11: When day becomes 6, the break statement immediately terminates the loop.",
+    "Line 14: cout displays the practice message for days 1 to 5 only.",
+    "Line 17: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 7: For Loop, day = 1 முதல் day = 10 வரை இயக்கப்படுமாறு தொடங்குகிறது.",
+    "வரி 9: if Statement, day-ன் மதிப்பு 6 ஆக உள்ளதா என்பதை சரிபார்க்கிறது.",
+    "வரி 11: day 6 ஆனவுடன் break Statement Loop-ஐ உடனடியாக நிறுத்துகிறது.",
+    "வரி 14: cout மூலம் Day 1 முதல் Day 5 வரை மட்டுமே Practice Message திரையில் காட்டப்படுகிறது.",
+    "வரி 17: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `Day 1 : Deepak practiced C++.
+Day 2 : Deepak practiced C++.
+Day 3 : Deepak practiced C++.
+Day 4 : Deepak practiced C++.
+Day 5 : Deepak practiced C++.`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
