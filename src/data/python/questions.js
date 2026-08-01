@@ -302,6 +302,100 @@ Python`,
     },
   ],
 },
+{
+  topicId: 2,
+  title: "Variables",
+
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to create a variable named 'name' and store 'Deepak'. Then print the variable.",
+
+      questionTamil:
+        "'name' என்ற Variable-ஐ உருவாக்கி அதில் 'Deepak' என்ற மதிப்பை சேமித்து, அதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Assign the value using '=' and use print().",
+
+      hintTamil:
+        "'=' பயன்படுத்தி Value-ஐ Assign செய்து, print() மூலம் காட்டுங்கள்.",
+
+      expectedOutput: `Deepak`,
+
+      expectedOutputTamil: `Deepak`,
+
+      solution: `name = "Deepak"
+
+print(name)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to create a variable named 'college' and store 'Don Bosco College'. Print the variable.",
+
+      questionTamil:
+        "'college' என்ற Variable-ஐ உருவாக்கி அதில் 'Don Bosco College' என்ற மதிப்பை சேமித்து Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a string variable and print it.",
+
+      hintTamil:
+        "ஒரு String Variable உருவாக்கி அதை Print செய்யுங்கள்.",
+
+      expectedOutput: `Don Bosco College`,
+
+      expectedOutputTamil: `Don Bosco College`,
+
+      solution: `college = "Don Bosco College"
+
+print(college)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to create a variable named 'language' and store 'Python'. Print the variable.",
+
+      questionTamil:
+        "'language' என்ற Variable-ஐ உருவாக்கி அதில் 'Python' என்ற மதிப்பை சேமித்து Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Store the value inside a variable and print it.",
+
+      hintTamil:
+        "Value-ஐ Variable-ல் சேமித்து அதை Print செய்யுங்கள்.",
+
+      expectedOutput: `Python`,
+
+      expectedOutputTamil: `Python`,
+
+      solution: `language = "Python"
+
+print(language)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
