@@ -1245,7 +1245,78 @@ Loop Completed Successfully!`,
 
   completed: false,
 },
+{
+  id: 17,
 
+  title: "Lists",
+
+  englishDefinition:
+    "A List is an ordered and mutable collection in Python that can store multiple values in a single variable. Lists can contain elements of different data types and allow adding, removing, and modifying elements.",
+
+  tamilDefinition:
+    "List என்பது Python-ல் பல Values-ஐ ஒரே Variable-ல் சேமிக்க பயன்படும் Ordered மற்றும் Mutable Collection ஆகும். List-ல் வெவ்வேறு Data Types-ஐ சேர்ந்த Values-ஐ சேமிக்கலாம். மேலும் Elements-ஐ Add, Remove மற்றும் Modify செய்ய முடியும்.",
+
+  realWorldUsage:
+    "Lists are widely used in software applications. For example, an online shopping website stores product names in a list, a music application stores playlists, and a college management system stores the names of students in a class.",
+
+  realWorldUsageTamil:
+    "List பல Software Applications-லிலும் பயன்படுத்தப்படுகிறது. உதாரணமாக, Online Shopping Website-ல் Product Names, Music Application-ல் Playlist Songs மற்றும் College Management System-ல் ஒரு வகுப்பில் உள்ள மாணவர்களின் பெயர்கள் List-ல் சேமிக்கப்படுகின்றன.",
+
+  syntax: `list_name = [value1, value2, value3]`,
+
+  syntaxExplanationEnglish: [
+    "Square brackets [] are used to create a list.",
+    "Multiple elements are separated using commas.",
+    "A list can store different types of values.",
+    "Elements are stored in the order they are added.",
+    "List elements can be accessed using their index."
+  ],
+
+  syntaxExplanationTamil: [
+    "Square Brackets [] பயன்படுத்தி List உருவாக்கப்படுகிறது.",
+    "ஒவ்வொரு Element-மும் Comma (,) மூலம் பிரிக்கப்படுகிறது.",
+    "ஒரே List-ல் வெவ்வேறு Data Types-ஐ சேமிக்கலாம்.",
+    "Elements சேர்க்கப்பட்ட வரிசைப்படியே (Order) சேமிக்கப்படுகின்றன.",
+    "Index பயன்படுத்தி List Elements-ஐ அணுகலாம்."
+  ],
+
+  exampleProgram: `students = ["Deepak", "Arun", "Kavin", "Priya"]
+
+print("First Student :", students[0])
+
+print("Second Student :", students[1])
+
+print("Total Students :", len(students))
+
+print("Keep Learning with Alaporan Thamizhan!")`,
+
+  programExplanationEnglish: [
+    "Line 1: A list named 'students' is created with four student names.",
+    "Line 3: The first element of the list is accessed using index 0 and displayed.",
+    "Line 5: The second element of the list is accessed using index 1 and displayed.",
+    "Line 7: len() returns the total number of elements in the list.",
+    "Line 9: print() displays a motivational message.",
+    "The program demonstrates how to create a list and access its elements using indexes."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: 'students' என்ற List உருவாக்கப்பட்டு அதில் நான்கு மாணவர்களின் பெயர்கள் சேமிக்கப்படுகின்றன.",
+    "வரி 3: Index 0 பயன்படுத்தி முதல் Element திரையில் காட்டப்படுகிறது.",
+    "வரி 5: Index 1 பயன்படுத்தி இரண்டாவது Element திரையில் காட்டப்படுகிறது.",
+    "வரி 7: len() Function List-ல் உள்ள மொத்த Elements எண்ணிக்கையை காட்டுகிறது.",
+    "வரி 9: print() மூலம் 'Keep Learning with Alaporan Thamizhan!' என்ற ஊக்கமளிக்கும் செய்தி காட்டப்படுகிறது.",
+    "இந்த Program, List உருவாக்குவது மற்றும் Index மூலம் Elements-ஐ அணுகுவது எப்படி என்பதை விளக்குகிறது."
+  ],
+
+  output: `First Student : Deepak
+Second Student : Arun
+Total Students : 4
+Keep Learning with Alaporan Thamizhan!`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
