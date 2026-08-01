@@ -1639,7 +1639,98 @@ Average Marks : 87.2`,
 
   completed: false,
 },
+{
+  id: 20,
 
+  title: "Functions",
+
+  englishDefinition:
+    "A Function is a reusable block of code that performs a specific task. Instead of writing the same code multiple times, we can place it inside a function and call it whenever needed. Functions improve code reusability, readability, and maintainability.",
+
+  tamilDefinition:
+    "Function என்பது ஒரு குறிப்பிட்ட பணியை செய்யும் மீண்டும் பயன்படுத்தக்கூடிய (Reusable) Code Block ஆகும். ஒரே Code-ஐ பல முறை எழுதுவதற்கு பதிலாக அதை Function-க்குள் எழுதி, தேவையான போது அழைக்கலாம். Functions Program-ஐ எளிதாக படிக்கவும், பராமரிக்கவும் மற்றும் மீண்டும் பயன்படுத்தவும் உதவுகின்றன.",
+
+  realWorldUsage:
+    "Functions are used in every software application. For example, in an online shopping website, one function calculates the total bill, another function processes the payment, and another function sends the confirmation email. Each function performs a specific task.",
+
+  realWorldUsageTamil:
+    "Functions அனைத்து Software-களிலும் பயன்படுத்தப்படுகின்றன. உதாரணமாக, Online Shopping Website-ல் ஒரு Function Bill-ஐ கணக்கிடும், மற்றொரு Function Payment-ஐ செயல்படுத்தும், இன்னொரு Function Confirmation Email அனுப்பும். ஒவ்வொரு Function-க்கும் தனித்தனி பொறுப்பு இருக்கும்.",
+
+  syntax: `returnType functionName()
+{
+    // Code
+}
+
+int main()
+{
+    functionName();
+}`,
+
+  syntaxExplanationEnglish: [
+    "returnType specifies the type of value returned by the function.",
+    "functionName is the name of the function.",
+    "The statements inside the function perform a specific task.",
+    "A function is executed only when it is called.",
+    "The function call is usually made inside the main() function."
+  ],
+
+  syntaxExplanationTamil: [
+    "returnType என்பது Function எந்த வகையான மதிப்பை திருப்பி வழங்குகிறது என்பதை குறிப்பிடுகிறது.",
+    "functionName என்பது Function-க்கு கொடுக்கப்படும் பெயராகும்.",
+    "Function-க்குள் இருக்கும் Statements ஒரு குறிப்பிட்ட பணியை செய்கின்றன.",
+    "Function அழைக்கப்பட்ட (Called) பிறகே அது இயக்கப்படும்.",
+    "பொதுவாக Function Call, main() Function-க்குள் செய்யப்படுகிறது."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+void greet()
+{
+    cout << "Welcome to Alaporan Tamilan!" << endl;
+
+    cout << "Keep Learning with Deepak!" << endl;
+}
+
+int main()
+{
+    greet();
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: A function named 'greet()' is created.",
+    "Line 7: cout displays the welcome message.",
+    "Line 9: cout displays the motivational message.",
+    "Line 12: int main() is the starting point of the program.",
+    "Line 14: The function 'greet()' is called.",
+    "Line 7-9: When greet() is called, the statements inside the function execute.",
+    "Line 16: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: 'greet()' என்ற Function உருவாக்கப்படுகிறது.",
+    "வரி 7: cout மூலம் Welcome Message திரையில் காட்டப்படுகிறது.",
+    "வரி 9: cout மூலம் Motivation Message திரையில் காட்டப்படுகிறது.",
+    "வரி 12: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 14: greet() Function அழைக்கப்படுகிறது.",
+    "வரி 7-9: Function Call செய்யப்பட்டவுடன் Function-க்குள் இருக்கும் Statements இயக்கப்படுகின்றன.",
+    "வரி 16: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `Welcome to Alaporan Tamilan!
+Keep Learning with Deepak!`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
