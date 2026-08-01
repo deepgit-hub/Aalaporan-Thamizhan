@@ -173,7 +173,133 @@ print("Welcome to Alaporan Thamizhan")`,
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a Python program to print your name, college name, and favorite programming language on separate lines.",
+
+      questionTamil:
+        "உங்கள் பெயர், College பெயர் மற்றும் உங்களுக்கு பிடித்த Programming Language ஆகியவற்றை தனித்தனி வரிகளில் Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use three print() statements.",
+
+      hintTamil:
+        "மூன்று print() Statements-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Deepak
+Don Bosco College
+Python`,
+
+      expectedOutputTamil: `Deepak
+Don Bosco College
+Python`,
+
+      solution: `print("Deepak")
+print("Don Bosco College")
+print("Python")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        'Write a Python program to print the following message:\n"Python is easy to learn."\n"Practice every day."\n"Success will follow."', 
+
+      questionTamil:
+        "கீழே கொடுக்கப்பட்டுள்ள செய்தியை Print செய்யும் Python Program-ஐ எழுதுங்கள்.\n\"Python is easy to learn.\"\n\"Practice every day.\"\n\"Success will follow.\"", 
+
+      hintEnglish:
+        "Use three print() statements.",
+
+      hintTamil:
+        "மூன்று print() Statements-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Python is easy to learn.
+Practice every day.
+Success will follow.`,
+
+      expectedOutputTamil: `Python is easy to learn.
+Practice every day.
+Success will follow.`,
+
+      solution: `print("Python is easy to learn.")
+print("Practice every day.")
+print("Success will follow.")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a Python program to print your name, college name, department, and favorite programming language, each on a separate line.",
+
+      questionTamil:
+        "உங்கள் பெயர், College பெயர், Department மற்றும் உங்களுக்கு பிடித்த Programming Language ஆகியவற்றை தனித்தனி வரிகளில் Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use four print() statements.",
+
+      hintTamil:
+        "நான்கு print() Statements-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Deepak
+Don Bosco College
+Computer Science
+Python`,
+
+      expectedOutputTamil: `Deepak
+Don Bosco College
+Computer Science
+Python`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        'Write a Python program to print the following quote exactly as shown:\n"Learning never stops."\n"- Alaporan Thamizhan"',
+
+      questionTamil:
+        "கீழே கொடுக்கப்பட்டுள்ள Quote-ஐ அதேபோல் Print செய்யும் Python Program-ஐ எழுதுங்கள்.\n\"Learning never stops.\"\n\"- Alaporan Thamizhan\"",
+
+      hintEnglish:
+        "Use multiple print() statements.",
+
+      hintTamil:
+        "பல print() Statements-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Learning never stops.
+- Alaporan Thamizhan`,
+
+      expectedOutputTamil: `Learning never stops.
+- Alaporan Thamizhan`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
