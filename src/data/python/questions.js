@@ -497,9 +497,148 @@ print("I am learning", course + ".")`,
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a Python program to create variables for a student's name, college, department, and favorite programming language. Print all the variables.",
+
+      questionTamil:
+        "ஒரு மாணவரின் பெயர், College, Department மற்றும் Favorite Programming Language ஆகியவற்றிற்கு Variables உருவாக்கி, அவற்றை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create four variables and print each one using print().",
+
+      hintTamil:
+        "நான்கு Variables உருவாக்கி, ஒவ்வொன்றையும் print() மூலம் Print செய்யுங்கள்.",
+
+      expectedOutput: `Deepak
+Don Bosco College
+Computer Science
+Python`,
+
+      expectedOutputTamil: `Deepak
+Don Bosco College
+Computer Science
+Python`,
+
+      solution: `name = "Deepak"
+
+college = "Don Bosco College"
+
+department = "Computer Science"
+
+language = "Python"
+
+print(name)
+
+print(college)
+
+print(department)
+
+print(language)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a Python program to create variables named 'student1' and 'student2'. Store 'Deepak' and 'Kathir' respectively, then print the sentence 'Deepak and Kathir are learning Python.' using the variables.",
+
+      questionTamil:
+        "'student1' மற்றும் 'student2' என்ற Variables-ஐ உருவாக்கி, அவற்றில் 'Deepak' மற்றும் 'Kathir' என்ற மதிப்புகளை சேமியுங்கள். பின்னர் Variables-ஐ பயன்படுத்தி 'Deepak and Kathir are learning Python.' என்ற வாக்கியத்தை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use variables inside the print() statement.",
+
+      hintTamil:
+        "print() Statement-ல் Variables-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Deepak and Kathir are learning Python.`,
+
+      expectedOutputTamil: `Deepak and Kathir are learning Python.`,
+
+      solution: `student1 = "Deepak"
+
+student2 = "Kathir"
+
+print(student1, "and", student2, "are learning Python.")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a Python program to create variables for your name, age, college, department, and city. Print all the values on separate lines.",
+
+      questionTamil:
+        "உங்கள் பெயர், வயது, College, Department மற்றும் City ஆகியவற்றிற்கு Variables உருவாக்கி, அனைத்து Values-ஐ தனித்தனி வரிகளில் Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create five variables and use five print() statements.",
+
+      hintTamil:
+        "ஐந்து Variables உருவாக்கி, ஐந்து print() Statements-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Deepak
+20
+Don Bosco College
+Computer Science
+Chennai`,
+
+      expectedOutputTamil: `Deepak
+20
+Don Bosco College
+Computer Science
+Chennai`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a Python program to create variables for two students' names, one college name, one department, and one programming language. Print a meaningful message using all the variables.",
+
+      questionTamil:
+        "இரண்டு மாணவர்களின் பெயர்கள், ஒரு College பெயர், ஒரு Department மற்றும் ஒரு Programming Language ஆகியவற்றிற்கு Variables உருவாக்கி, அனைத்து Variables-ஐ பயன்படுத்தி ஒரு பொருத்தமான (Meaningful) செய்தியை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create five variables and use them inside one or more print() statements.",
+
+      hintTamil:
+        "ஐந்து Variables உருவாக்கி, அவற்றை print() Statements-ல் பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Deepak and Kathir are studying Computer Science at Don Bosco College and learning Python.`,
+
+      expectedOutputTamil: `Deepak and Kathir are studying Computer Science at Don Bosco College and learning Python.`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
+
 ];
 
 export default questions;
