@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import questions from "../data/question";
+import questions from "../data/java/question";
 import "../styles/Question.css";
 
 function Question() {
