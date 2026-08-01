@@ -363,7 +363,103 @@ Keep Learning with Deepak!`,
 
   completed: false,
 },
+{
+  id: 5,
 
+  title: "Operators",
+
+  englishDefinition:
+    "Operators are special symbols used to perform operations on variables and values. They help us perform arithmetic calculations, compare values, assign values, and make logical decisions in a C++ program.",
+
+  tamilDefinition:
+    "Operators என்பது Variables மற்றும் Values மீது செயல்பாடுகளை செய்ய பயன்படும் சிறப்பு குறியீடுகள் (Symbols) ஆகும். C++ Program-இல் கணிதக் கணக்குகள் செய்வது, மதிப்புகளை ஒப்பிடுவது, மதிப்புகளை Assign செய்வது மற்றும் Logical முடிவுகளை எடுப்பது போன்ற செயல்களுக்கு Operators பயன்படுத்தப்படுகின்றன.",
+
+  realWorldUsage:
+    "Operators are used in every software application. For example, a calculator uses arithmetic operators, an ATM compares the entered PIN using comparison operators, and an e-commerce website calculates the total bill using arithmetic operators.",
+
+  realWorldUsageTamil:
+    "Operators அனைத்து Software-களிலும் பயன்படுத்தப்படுகின்றன. உதாரணமாக, Calculator-ல் Arithmetic Operators, ATM-ல் PIN சரிபார்க்க Comparison Operators, E-commerce Website-ல் Bill கணக்கிட Arithmetic Operators பயன்படுத்தப்படுகின்றன.",
+
+  syntax: `int a = 10;
+int b = 5;
+
+cout << a + b;
+cout << a - b;
+cout << a * b;
+cout << a / b;
+cout << a % b;`,
+
+  syntaxExplanationEnglish: [
+    "+ is the Addition Operator.",
+    "- is the Subtraction Operator.",
+    "* is the Multiplication Operator.",
+    "/ is the Division Operator.",
+    "% is the Modulus Operator that returns the remainder after division."
+  ],
+
+  syntaxExplanationTamil: [
+    "+ என்பது கூட்டல் (Addition) Operator ஆகும்.",
+    "- என்பது கழித்தல் (Subtraction) Operator ஆகும்.",
+    "* என்பது பெருக்கல் (Multiplication) Operator ஆகும்.",
+    "/ என்பது வகுத்தல் (Division) Operator ஆகும்.",
+    "% என்பது Modulus Operator ஆகும். இது வகுத்த பிறகு மீதமுள்ள மதிப்பை (Remainder) வழங்குகிறது."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int deepakMarks = 90;
+
+    int practicalMarks = 10;
+
+    int total = deepakMarks + practicalMarks;
+
+    cout << "Theory Marks : " << deepakMarks << endl;
+
+    cout << "Practical Marks : " << practicalMarks << endl;
+
+    cout << "Total Marks : " << total << endl;
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: int main() is the starting point of the program.",
+    "Line 7: An integer variable 'deepakMarks' is created and stores 90.",
+    "Line 9: An integer variable 'practicalMarks' is created and stores 10.",
+    "Line 11: The Addition Operator (+) adds both marks and stores the result in 'total'.",
+    "Line 13: Displays the theory marks.",
+    "Line 15: Displays the practical marks.",
+    "Line 17: Displays the total marks.",
+    "Line 19: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 7: 'deepakMarks' என்ற Integer Variable-ல் 90 சேமிக்கப்படுகிறது.",
+    "வரி 9: 'practicalMarks' என்ற Integer Variable-ல் 10 சேமிக்கப்படுகிறது.",
+    "வரி 11: Addition Operator (+) இரண்டு மதிப்புகளையும் கூட்டி 'total' Variable-ல் சேமிக்கிறது.",
+    "வரி 13: Theory Marks திரையில் காட்டப்படுகிறது.",
+    "வரி 15: Practical Marks திரையில் காட்டப்படுகிறது.",
+    "வரி 17: Total Marks திரையில் காட்டப்படுகிறது.",
+    "வரி 19: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `Theory Marks : 90
+Practical Marks : 10
+Total Marks : 100`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
