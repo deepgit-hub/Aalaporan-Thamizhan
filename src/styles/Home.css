@@ -442,6 +442,39 @@ body{
     align-items:center;
 
 }
+.linkedin-btn{
+
+    background:#1a51de;
+
+    color:white;
+
+    border:none;
+
+    padding:18px 34px;
+
+    border-radius:14px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 12px 25px rgba(11, 42, 216, 0.35);
+
+}
+
+.linkedin-btn:hover{
+
+    background:#021077;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 35px rgba(5, 45, 146, 0.45);
+
+}
 /* ==========================================
    COPYRIGHT
 ========================================== */
