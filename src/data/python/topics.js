@@ -1165,7 +1165,86 @@ Loop Stopped Successfully!`,
 
   completed: false,
 },
+{
+  id: 16,
 
+  title: "Continue Statement",
+
+  englishDefinition:
+    "The Continue Statement is used to skip the current iteration of a loop and continue with the next iteration. Unlike the break statement, continue does not terminate the loop; it simply skips the remaining statements of the current iteration.",
+
+  tamilDefinition:
+    "Continue Statement என்பது Loop-இன் தற்போதைய Iteration-ஐ (Current Iteration) மட்டும் தவிர்த்து (Skip செய்து), அடுத்த Iteration-க்கு செல்ல பயன்படுத்தப்படுகிறது. Break Statement போல Loop-ஐ முழுவதுமாக நிறுத்தாது. தற்போதைய Iteration-ல் மீதமுள்ள Statements மட்டும் தவிர்க்கப்பட்டு Loop தொடர்ந்து இயக்கப்படும்.",
+
+  realWorldUsage:
+    "The Continue Statement is used in many software applications. For example, while processing student records, a program can skip absent students and continue processing the remaining students. Similarly, an online shopping system can skip unavailable products while displaying the available ones.",
+
+  realWorldUsageTamil:
+    "Continue Statement பல Software Applications-லிலும் பயன்படுத்தப்படுகிறது. உதாரணமாக, மாணவர்களின் பதிவுகளை (Student Records) செயல்படுத்தும் போது, வராத (Absent) மாணவர்களை Skip செய்து மற்ற மாணவர்களை தொடர்ந்து செயல்படுத்தலாம். அதேபோல் Online Shopping Website-ல் கிடைக்காத (Unavailable) Products-ஐ தவிர்த்து மற்ற பொருட்களை காட்ட பயன்படுத்தப்படுகிறது.",
+
+  syntax: `for variable in range(start, end):
+    if condition:
+        continue
+
+    # Statements`,
+
+  syntaxExplanationEnglish: [
+    "The loop starts normally.",
+    "The if statement checks a specified condition.",
+    "If the condition becomes True, the continue statement is executed.",
+    "The remaining statements of the current iteration are skipped.",
+    "The loop immediately moves to the next iteration."
+  ],
+
+  syntaxExplanationTamil: [
+    "Loop வழக்கம்போல் தொடங்குகிறது.",
+    "if Statement ஒரு குறிப்பிட்ட Condition-ஐ சரிபார்க்கிறது.",
+    "Condition True ஆனால் continue Statement இயக்கப்படுகிறது.",
+    "தற்போதைய Iteration-ல் உள்ள மீதமுள்ள Statements Skip செய்யப்படுகின்றன.",
+    "Loop உடனடியாக அடுத்த Iteration-க்கு செல்கிறது."
+  ],
+
+  exampleProgram: `for number in range(1, 11):
+    if number == 6:
+        continue
+
+    print(number)
+
+print("Loop Completed Successfully!")`,
+
+  programExplanationEnglish: [
+    "Line 1: The for loop generates numbers from 1 to 10.",
+    "Line 2: The if statement checks whether the value of 'number' is equal to 6.",
+    "Line 3: When 'number' becomes 6, the continue statement skips the current iteration.",
+    "Line 5: All numbers except 6 are displayed on the screen.",
+    "Line 7: After completing all iterations, this statement is executed.",
+    "The program demonstrates how the continue statement skips only one iteration without stopping the loop."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: For Loop, 1 முதல் 10 வரை எண்களை உருவாக்குகிறது.",
+    "வரி 2: 'number' 6-க்கு சமமா என்பதை if Statement சரிபார்க்கிறது.",
+    "வரி 3: 'number' 6 ஆனவுடன் continue Statement தற்போதைய Iteration-ஐ மட்டும் Skip செய்கிறது.",
+    "வரி 5: 6-ஐ தவிர மற்ற அனைத்து எண்களும் திரையில் காட்டப்படுகின்றன.",
+    "வரி 7: அனைத்து Iterations-மும் முடிந்த பிறகு இந்த Statement இயக்கப்படுகிறது.",
+    "இந்த Program, Continue Statement Loop-ஐ நிறுத்தாமல் தற்போதைய Iteration-ஐ மட்டும் Skip செய்வதை விளக்குகிறது."
+  ],
+
+  output: `1
+2
+3
+4
+5
+7
+8
+9
+10
+Loop Completed Successfully!`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
