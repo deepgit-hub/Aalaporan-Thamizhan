@@ -1456,6 +1456,173 @@ Keep Learning with Alaporan Thamizhan!`,
 
   completed: false,
 },
+{
+  id: 20,
+
+  title: "Dictionaries",
+
+  englishDefinition:
+    "A Dictionary is a mutable collection in Python that stores data in the form of key-value pairs. Each key is unique and is used to access its corresponding value. Dictionaries are useful for storing related information together.",
+
+  tamilDefinition:
+    "Dictionary என்பது Python-ல் Key-Value Pair வடிவில் தகவல்களை சேமிக்கும் Mutable Collection ஆகும். ஒவ்வொரு Key-மும் தனித்துவமானதாக (Unique) இருக்கும். அந்த Key-ஐ பயன்படுத்தி அதனுடன் தொடர்புடைய Value-ஐ அணுகலாம். தொடர்புடைய தகவல்களை ஒன்றாக சேமிக்க Dictionary மிகவும் பயனுள்ளதாகும்.",
+
+  realWorldUsage:
+    "Dictionaries are widely used in software applications. For example, a college management system stores a student's name, department, age, and CGPA using keys and values. Similarly, an online shopping website stores product details such as name, price, and stock in a dictionary.",
+
+  realWorldUsageTamil:
+    "Dictionary பல Software Applications-லிலும் பயன்படுத்தப்படுகிறது. உதாரணமாக, College Management System-ல் ஒரு மாணவரின் பெயர், துறை, வயது மற்றும் CGPA போன்ற தகவல்கள் Key-Value Pair வடிவில் சேமிக்கப்படுகின்றன. அதேபோல் Online Shopping Website-ல் Product Name, Price மற்றும் Stock போன்ற விவரங்களும் Dictionary-ல் சேமிக்கப்படுகின்றன.",
+
+  syntax: `dictionary_name = {
+    "key1": value1,
+    "key2": value2
+}`,
+
+  syntaxExplanationEnglish: [
+    "Curly braces {} are used to create a dictionary.",
+    "Each item consists of a key and a value.",
+    "A colon (:) separates the key and value.",
+    "Each key must be unique within the dictionary.",
+    "Values are accessed using their corresponding keys."
+  ],
+
+  syntaxExplanationTamil: [
+    "Curly Braces {} பயன்படுத்தி Dictionary உருவாக்கப்படுகிறது.",
+    "ஒவ்வொரு Item-மும் ஒரு Key மற்றும் ஒரு Value-ஐ கொண்டிருக்கும்.",
+    "Key மற்றும் Value ஆகியவற்றை Colon (:) பிரிக்கிறது.",
+    "ஒரே Dictionary-ல் ஒவ்வொரு Key-மும் Unique ஆக இருக்க வேண்டும்.",
+    "Keys பயன்படுத்தி அதற்குரிய Values-ஐ அணுகலாம்."
+  ],
+
+  exampleProgram: `student = {
+    "name": "Deepak",
+    "friend": "Kathir",
+    "college": "Don Bosco College",
+    "course": "Python"
+}
+
+print("Student Name :", student["name"])
+
+print("Friend :", student["friend"])
+
+print("College :", student["college"])
+
+print("Course :", student["course"])
+
+print("Keep Learning with Alaporan Thamizhan!")`,
+
+  programExplanationEnglish: [
+    "Line 1: A dictionary named 'student' is created.",
+    "Line 2: The key 'name' stores the value 'Deepak'.",
+    "Line 3: The key 'friend' stores the value 'Kathir'.",
+    "Line 4: The key 'college' stores the value 'Don Bosco College'.",
+    "Line 5: The key 'course' stores the value 'Python'.",
+    "Line 8: The value of the key 'name' is displayed.",
+    "Line 10: The value of the key 'friend' is displayed.",
+    "Line 12: The value of the key 'college' is displayed.",
+    "Line 14: The value of the key 'course' is displayed.",
+    "Line 16: print() displays the motivational message.",
+    "The program demonstrates how to create a dictionary and access values using keys."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: 'student' என்ற Dictionary உருவாக்கப்படுகிறது.",
+    "வரி 2: 'name' என்ற Key-ல் 'Deepak' என்ற Value சேமிக்கப்படுகிறது.",
+    "வரி 3: 'friend' என்ற Key-ல் 'Kathir' என்ற Value சேமிக்கப்படுகிறது.",
+    "வரி 4: 'college' என்ற Key-ல் 'Don Bosco College' என்ற Value சேமிக்கப்படுகிறது.",
+    "வரி 5: 'course' என்ற Key-ல் 'Python' என்ற Value சேமிக்கப்படுகிறது.",
+    "வரி 8: 'name' என்ற Key-க்கு உரிய Value திரையில் காட்டப்படுகிறது.",
+    "வரி 10: 'friend' என்ற Key-க்கு உரிய Value திரையில் காட்டப்படுகிறது.",
+    "வரி 12: 'college' என்ற Key-க்கு உரிய Value திரையில் காட்டப்படுகிறது.",
+    "வரி 14: 'course' என்ற Key-க்கு உரிய Value திரையில் காட்டப்படுகிறது.",
+    "வரி 16: print() மூலம் 'Keep Learning with Alaporan Thamizhan!' என்ற ஊக்கமளிக்கும் செய்தி காட்டப்படுகிறது.",
+    "இந்த Program, Dictionary உருவாக்குவது மற்றும் Keys பயன்படுத்தி Values-ஐ அணுகுவது எப்படி என்பதை விளக்குகிறது."
+  ],
+
+  output: `Student Name : Deepak
+Friend : Kathir
+College : Don Bosco College
+Course : Python
+Keep Learning with Alaporan Thamizhan!`,
+
+  locked: false,
+
+  completed: false,
+},
+{
+  id: 21,
+
+  title: "Functions",
+
+  englishDefinition:
+    "A Function is a reusable block of code that performs a specific task. Instead of writing the same code multiple times, a function allows you to write it once and call it whenever needed. Functions improve code readability, reduce duplication, and make programs easier to maintain.",
+
+  tamilDefinition:
+    "Function என்பது ஒரு குறிப்பிட்ட பணியை (Specific Task) செய்ய உருவாக்கப்படும் Reusable Code Block ஆகும். ஒரே Code-ஐ பலமுறை எழுதுவதற்கு பதிலாக, Function-ஐ ஒருமுறை உருவாக்கி தேவையான இடங்களில் பலமுறை அழைக்கலாம். இதனால் Code படிக்க எளிதாகவும், மீண்டும் எழுத வேண்டிய அவசியம் இல்லாமலும், Program-ஐ பராமரிக்க (Maintain) எளிதாகவும் இருக்கும்.",
+
+  realWorldUsage:
+    "Functions are used in almost every software application. For example, an online shopping website has separate functions for user login, payment processing, and order confirmation. Similarly, a college management system uses different functions to add students, calculate marks, and generate reports.",
+
+  realWorldUsageTamil:
+    "Functions அனைத்து Software Applications-லிலும் பயன்படுத்தப்படுகின்றன. உதாரணமாக, Online Shopping Website-ல் User Login, Payment Processing மற்றும் Order Confirmation ஆகியவற்றிற்கு தனித்தனி Functions பயன்படுத்தப்படுகின்றன. அதேபோல் College Management System-ல் Student சேர்ப்பது, Marks கணக்கிடுவது மற்றும் Reports உருவாக்குவது போன்ற பணிகளுக்கு Functions பயன்படுத்தப்படுகின்றன.",
+
+  syntax: `def function_name():
+    # Statements
+
+function_name()`,
+
+  syntaxExplanationEnglish: [
+    "The 'def' keyword is used to define a function.",
+    "function_name is the name of the function.",
+    "Parentheses () can contain parameters if required.",
+    "The function body must be properly indented.",
+    "The function is executed only when it is called."
+  ],
+
+  syntaxExplanationTamil: [
+    "'def' Keyword Function உருவாக்க பயன்படுத்தப்படுகிறது.",
+    "function_name என்பது Function-ன் பெயராகும்.",
+    "தேவைப்பட்டால் Parentheses()-க்குள் Parameters கொடுக்கலாம்.",
+    "Function-க்குள் உள்ள Statements சரியான Indentation-உடன் எழுதப்பட வேண்டும்.",
+    "Function உருவாக்கப்பட்டாலும் Call செய்த பிறகே அது இயக்கப்படும்."
+  ],
+
+  exampleProgram: `def welcome():
+    print("Welcome Deepak!")
+
+    print("Welcome to Alaporan Thamizhan!")
+
+welcome()
+
+print("Keep Practicing Python!")`,
+
+  programExplanationEnglish: [
+    "Line 1: A function named 'welcome' is created using the def keyword.",
+    "Line 2: The first print() statement is placed inside the function.",
+    "Line 4: The second print() statement is also placed inside the function.",
+    "Line 6: The function 'welcome()' is called, so the statements inside it are executed.",
+    "Line 8: This print() statement is outside the function and executes after the function call.",
+    "The program demonstrates how to create and call a function in Python."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: 'def' Keyword பயன்படுத்தி 'welcome' என்ற Function உருவாக்கப்படுகிறது.",
+    "வரி 2: முதல் print() Statement Function-க்குள் எழுதப்பட்டுள்ளது.",
+    "வரி 4: இரண்டாவது print() Statement-மும் Function-க்குள் உள்ளது.",
+    "வரி 6: welcome() Function Call செய்யப்படுவதால் அதன் உள்ளே உள்ள Statements இயக்கப்படுகின்றன.",
+    "வரி 8: இந்த print() Statement Function-க்கு வெளியே இருப்பதால் Function முடிந்த பிறகு இயக்கப்படுகிறது.",
+    "இந்த Program, Python-ல் Function உருவாக்குவது மற்றும் Call செய்வது எப்படி என்பதை விளக்குகிறது."
+  ],
+
+  output: `Welcome Deepak!
+Welcome to Alaporan Thamizhan!
+Keep Practicing Python!`,
+
+  locked: false,
+
+  completed: false,
+},
+
 ];
 
 export default topics;
