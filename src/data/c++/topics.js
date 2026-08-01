@@ -1731,7 +1731,105 @@ Keep Learning with Deepak!`,
 
   completed: false,
 },
+{
+  id: 21,
 
+  title: "Function Overloading",
+
+  englishDefinition:
+    "Function Overloading is a feature in C++ that allows multiple functions to have the same name but different parameters. The compiler identifies which function to call based on the number or type of arguments passed.",
+
+  tamilDefinition:
+    "Function Overloading என்பது C++-இன் ஒரு முக்கிய அம்சமாகும். இதில் ஒரே பெயரில் (Same Name) பல Functions உருவாக்கலாம். ஆனால் அவற்றின் Parameters (எண்ணிக்கை அல்லது Data Type) வேறுபட வேண்டும். Function Call செய்யும் போது கொடுக்கப்படும் Arguments அடிப்படையில் Compiler சரியான Function-ஐ தேர்வு செய்கிறது.",
+
+  realWorldUsage:
+    "Function Overloading is used in software development when similar operations need to be performed on different types of data. For example, a calculator application may use one function to add two integers and another function with the same name to add two decimal numbers.",
+
+  realWorldUsageTamil:
+    "Function Overloading பல Software-களில் ஒரே செயல்பாட்டை வெவ்வேறு Data Types-க்கு பயன்படுத்த உதவுகிறது. உதாரணமாக, Calculator Application-ல் Integer Numbers-ஐ கூட்ட ஒரு Function மற்றும் Decimal Numbers-ஐ கூட்ட அதே பெயரில் மற்றொரு Function பயன்படுத்தப்படுகிறது.",
+
+  syntax: `returnType functionName(parameter1)
+{
+    // Code
+}
+
+returnType functionName(parameter1, parameter2)
+{
+    // Code
+}`,
+
+  syntaxExplanationEnglish: [
+    "Multiple functions can have the same name.",
+    "Each overloaded function must have different parameters.",
+    "The difference can be in the number of parameters or their data types.",
+    "The compiler automatically selects the correct function during function call.",
+    "Changing only the return type does not create function overloading."
+  ],
+
+  syntaxExplanationTamil: [
+    "பல Functions ஒரே பெயரை கொண்டிருக்கலாம்.",
+    "ஒவ்வொரு Function-க்கும் வேறுபட்ட Parameters இருக்க வேண்டும்.",
+    "Parameters-ன் எண்ணிக்கை அல்லது Data Type வேறுபட வேண்டும்.",
+    "Function Call செய்யும் போது Compiler சரியான Function-ஐ தானாக தேர்வு செய்கிறது.",
+    "Return Type மட்டும் மாற்றினால் அது Function Overloading ஆகாது."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+void display()
+{
+    cout << "Welcome to Alaporan Tamilan!" << endl;
+}
+
+void display(string name)
+{
+    cout << "Welcome " << name << "!" << endl;
+}
+
+int main()
+{
+    display();
+
+    display("Deepak");
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: The first function 'display()' is created without parameters.",
+    "Line 7: cout displays a general welcome message.",
+    "Line 10: Another function named 'display()' is created with one string parameter.",
+    "Line 12: cout displays a personalized welcome message using the parameter.",
+    "Line 15: int main() is the starting point of the program.",
+    "Line 17: display() calls the first overloaded function.",
+    "Line 19: display(\"Deepak\") calls the second overloaded function because it receives one string argument.",
+    "Line 21: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: Parameters இல்லாத முதல் 'display()' Function உருவாக்கப்படுகிறது.",
+    "வரி 7: cout மூலம் பொதுவான Welcome Message திரையில் காட்டப்படுகிறது.",
+    "வரி 10: ஒரே பெயரில் ஒரு String Parameter கொண்ட மற்றொரு 'display()' Function உருவாக்கப்படுகிறது.",
+    "வரி 12: Parameter பயன்படுத்தி Personalized Welcome Message காட்டப்படுகிறது.",
+    "வரி 15: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 17: display() அழைக்கப்படுவதால் முதல் Function இயக்கப்படுகிறது.",
+    "வரி 19: display(\"Deepak\") அழைக்கப்படுவதால் ஒரு String Argument பெறும் இரண்டாவது Function இயக்கப்படுகிறது.",
+    "வரி 21: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `Welcome to Alaporan Tamilan!
+Welcome Deepak!`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
