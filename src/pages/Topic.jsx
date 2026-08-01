@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useState } from "react";
-import topics from "../data/topics";
+import topics from "../data/java/topics";
 import MentorSupport from "../components/MentorSupportButton";
 import "../styles/Topic.css";
 
