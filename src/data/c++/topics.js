@@ -1356,7 +1356,96 @@ Day 5 : Deepak practiced C++.`,
 
   completed: false,
 },
+{
+  id: 17,
 
+  title: "One-Dimensional Array",
+
+  englishDefinition:
+    "A One-Dimensional Array is a collection of elements of the same data type stored in contiguous memory locations. Each element is accessed using an index, which starts from 0. Arrays are used to store multiple values using a single variable name.",
+
+  tamilDefinition:
+    "One-Dimensional Array என்பது ஒரே Data Type-ஐ சேர்ந்த பல மதிப்புகளை (Values) தொடர்ச்சியான Memory Locations-ல் சேமிக்கும் ஒரு Data Structure ஆகும். Array-இல் உள்ள ஒவ்வொரு Element-மும் Index மூலம் அணுகப்படுகிறது. Index எப்போதும் 0-இல் இருந்து தொடங்கும். பல மதிப்புகளை ஒரே Variable Name மூலம் நிர்வகிக்க Array பயன்படுத்தப்படுகிறது.",
+
+  realWorldUsage:
+    "One-Dimensional Arrays are used in many software applications. For example, storing students' marks, daily temperatures, product prices, employee salaries, and monthly sales data.",
+
+  realWorldUsageTamil:
+    "One-Dimensional Array பல Software-களில் பயன்படுத்தப்படுகிறது. உதாரணமாக, மாணவர்களின் மதிப்பெண்கள், தினசரி வெப்பநிலை, பொருட்களின் விலை, ஊழியர்களின் சம்பளம் மற்றும் மாதாந்திர விற்பனை தகவல்களை சேமிக்க பயன்படுத்தப்படுகிறது.",
+
+  syntax: `dataType arrayName[size];
+
+Example:
+int marks[5];`,
+
+  syntaxExplanationEnglish: [
+    "dataType specifies the type of values stored in the array.",
+    "arrayName is the name of the array.",
+    "size specifies the maximum number of elements the array can store.",
+    "Array indexing starts from 0.",
+    "Elements are accessed using arrayName[index]."
+  ],
+
+  syntaxExplanationTamil: [
+    "dataType என்பது Array-ல் சேமிக்கப்படும் Data Type-ஐ குறிப்பிடுகிறது.",
+    "arrayName என்பது Array-க்கு கொடுக்கப்படும் பெயராகும்.",
+    "size என்பது Array-ல் எத்தனை Elements சேமிக்க முடியும் என்பதை குறிப்பிடுகிறது.",
+    "Array Index எப்போதும் 0-இல் இருந்து தொடங்கும்.",
+    "Elements-ஐ arrayName[index] மூலம் அணுகலாம்."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int marks[5] = {85, 90, 78, 95, 88};
+
+    for(int i = 0; i < 5; i++)
+    {
+        cout << "Deepak's Subject " << i + 1 << " Marks : " << marks[i] << endl;
+    }
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: int main() is the starting point of the program.",
+    "Line 7: An integer array named 'marks' is created with 5 elements.",
+    "Line 9: The for loop starts with i = 0.",
+    "Line 9: The loop continues until i becomes less than 5.",
+    "Line 11: cout displays the subject number and the corresponding mark stored in the array.",
+    "Line 11: marks[i] accesses each element of the array using its index.",
+    "Line 9: After every iteration, i is incremented by 1.",
+    "Line 14: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 7: 'marks' என்ற Integer Array 5 Elements-உடன் உருவாக்கப்படுகிறது.",
+    "வரி 9: For Loop, i = 0-இல் இருந்து தொடங்குகிறது.",
+    "வரி 9: i < 5 இருக்கும் வரை Loop இயக்கப்படுகிறது.",
+    "வரி 11: cout மூலம் Subject Number மற்றும் அதற்கான Mark திரையில் காட்டப்படுகிறது.",
+    "வரி 11: marks[i] மூலம் Array-இன் ஒவ்வொரு Element-மும் Index பயன்படுத்தி அணுகப்படுகிறது.",
+    "வரி 9: ஒவ்வொரு Iteration-க்கும் பிறகு i-ன் மதிப்பு 1 அதிகரிக்கப்படுகிறது.",
+    "வரி 14: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `Deepak's Subject 1 Marks : 85
+Deepak's Subject 2 Marks : 90
+Deepak's Subject 3 Marks : 78
+Deepak's Subject 4 Marks : 95
+Deepak's Subject 5 Marks : 88`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
