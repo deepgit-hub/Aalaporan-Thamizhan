@@ -312,6 +312,94 @@ Keep Learning with Alaporan Thamizhan!`,
 
   completed: false,
 },
+{
+  id: 5,
+
+  title: "Operators",
+
+  englishDefinition:
+    "Operators are special symbols used to perform operations on variables and values. Python provides different types of operators such as Arithmetic, Comparison, Logical, Assignment, and Membership Operators. They help perform calculations, comparisons, and decision-making in programs.",
+
+  tamilDefinition:
+    "Operators என்பது Variables மற்றும் Values மீது பல்வேறு செயல்பாடுகளை செய்ய பயன்படும் சிறப்பு குறியீடுகள் (Special Symbols) ஆகும். Python-ல் Arithmetic, Comparison, Logical, Assignment மற்றும் Membership போன்ற பல வகையான Operators உள்ளன. இவை கணக்கீடுகள், ஒப்பீடுகள் மற்றும் முடிவெடுக்கும் செயல்பாடுகளுக்கு பயன்படுத்தப்படுகின்றன.",
+
+  realWorldUsage:
+    "Operators are used in every software application. For example, an online shopping website uses arithmetic operators to calculate the total bill, comparison operators to check discounts, and logical operators to verify multiple conditions before processing an order.",
+
+  realWorldUsageTamil:
+    "Operators அனைத்து Software Applications-லிலும் பயன்படுத்தப்படுகின்றன. உதாரணமாக, Online Shopping Website-ல் மொத்த Bill-ஐ கணக்கிட Arithmetic Operators, Discount வழங்க Comparison Operators மற்றும் Order Process செய்வதற்கு முன் பல நிபந்தனைகளை சரிபார்க்க Logical Operators பயன்படுத்தப்படுகின்றன.",
+
+  syntax: `a = 20
+
+b = 10
+
+print(a + b)
+
+print(a > b)
+
+print(a == b)`,
+
+  syntaxExplanationEnglish: [
+    "Variables 'a' and 'b' store numeric values.",
+    "The '+' operator performs addition.",
+    "The '>' operator compares whether the first value is greater than the second value.",
+    "The '==' operator checks whether two values are equal.",
+    "Python evaluates the expression first and then displays the result using print()."
+  ],
+
+  syntaxExplanationTamil: [
+    "'a' மற்றும் 'b' Variables எண் மதிப்புகளை (Numeric Values) சேமிக்கின்றன.",
+    "'+' Operator இரண்டு எண்களை கூட்ட பயன்படுகிறது.",
+    "'>' Operator முதல் மதிப்பு இரண்டாவது மதிப்பை விட பெரியதா என்பதை சரிபார்க்கிறது.",
+    "'==' Operator இரண்டு மதிப்புகளும் சமமா என்பதை சரிபார்க்கிறது.",
+    "Python முதலில் Expression-ஐ Evaluate செய்து பின்னர் print() மூலம் முடிவை திரையில் காட்டுகிறது."
+  ],
+
+  exampleProgram: `python_course_fee = 2500
+
+discount = 500
+
+final_fee = python_course_fee - discount
+
+print("Original Fee :", python_course_fee)
+
+print("Discount :", discount)
+
+print("Final Fee :", final_fee)
+
+print("Is Final Fee less than Original Fee?", final_fee < python_course_fee)`,
+
+  programExplanationEnglish: [
+    "Line 1: A variable named 'python_course_fee' is created and assigned the value 2500.",
+    "Line 3: A variable named 'discount' is created and assigned the value 500.",
+    "Line 5: The subtraction operator (-) calculates the final fee after discount and stores it in 'final_fee'.",
+    "Line 7: print() displays the original course fee.",
+    "Line 9: print() displays the discount amount.",
+    "Line 11: print() displays the final course fee after applying the discount.",
+    "Line 13: The comparison operator (<) checks whether the final fee is less than the original fee and displays the result.",
+    "The program demonstrates both arithmetic and comparison operators."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: 'python_course_fee' என்ற Variable உருவாக்கப்பட்டு அதில் 2500 என்ற மதிப்பு சேமிக்கப்படுகிறது.",
+    "வரி 3: 'discount' என்ற Variable உருவாக்கப்பட்டு அதில் 500 என்ற மதிப்பு சேமிக்கப்படுகிறது.",
+    "வரி 5: கழித்தல் Operator (-) பயன்படுத்தி Discount கழிக்கப்பட்ட Final Fee 'final_fee' என்ற Variable-ல் சேமிக்கப்படுகிறது.",
+    "வரி 7: print() மூலம் Original Course Fee திரையில் காட்டப்படுகிறது.",
+    "வரி 9: print() மூலம் Discount Amount திரையில் காட்டப்படுகிறது.",
+    "வரி 11: print() மூலம் Discount கழித்த பிறகான Final Fee திரையில் காட்டப்படுகிறது.",
+    "வரி 13: Comparison Operator (<) பயன்படுத்தி Final Fee, Original Fee-ஐ விட குறைவா என்பதை சரிபார்த்து முடிவை காட்டுகிறது.",
+    "இந்த Program Arithmetic மற்றும் Comparison Operators பயன்பாட்டை விளக்குகிறது."
+  ],
+
+  output: `Original Fee : 2500
+Discount : 500
+Final Fee : 2000
+Is Final Fee less than Original Fee? True`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
