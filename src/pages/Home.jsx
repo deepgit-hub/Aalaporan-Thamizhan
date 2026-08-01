@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import TopicCard from "../components/TopicCard";
-import topics from "../data/topics";
+import topics from "../data/java/topics";
 import MentorSupport from "../components/MentorSupportButton";
 import {
   Languages,
