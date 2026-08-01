@@ -1944,6 +1944,90 @@ Keep Learning with Alaporan Thamizhan!`,
 
   completed: false,
 },
+{
+  id: 26,
+
+  title: "Single Inheritance",
+
+  englishDefinition:
+    "Single Inheritance is a type of inheritance in which one child class inherits the properties and methods of one parent class. It allows code reusability by enabling the child class to use the features of the parent class.",
+
+  tamilDefinition:
+    "Single Inheritance என்பது ஒரு Child Class, ஒரு Parent Class-இன் Properties மற்றும் Methods-ஐ பெறும் Inheritance வகையாகும். இதன் மூலம் Parent Class-ல் உள்ள Code-ஐ மீண்டும் பயன்படுத்த (Code Reusability) முடியும்.",
+
+  realWorldUsage:
+    "Single Inheritance is used in many software applications. For example, in a College Management System, a Student class can inherit common information such as college name and welcome message from a Person class. This avoids writing the same code multiple times.",
+
+  realWorldUsageTamil:
+    "Single Inheritance பல Software Applications-லிலும் பயன்படுத்தப்படுகிறது. உதாரணமாக, College Management System-ல் Student Class, Person Class-இல் இருந்து College Name மற்றும் Welcome Message போன்ற பொதுவான தகவல்களை பெறலாம். இதனால் ஒரே Code-ஐ மீண்டும் மீண்டும் எழுத வேண்டிய அவசியம் இருக்காது.",
+
+  syntax: `class Parent:
+    # Parent Members
+
+class Child(Parent):
+    # Child Members`,
+
+  syntaxExplanationEnglish: [
+    "The parent class contains common attributes and methods.",
+    "The child class is created by passing the parent class name inside parentheses.",
+    "The child class automatically inherits the parent class members.",
+    "The child class can also have its own attributes and methods.",
+    "Single Inheritance involves only one parent class and one child class."
+  ],
+
+  syntaxExplanationTamil: [
+    "Parent Class பொதுவான Attributes மற்றும் Methods-ஐ கொண்டிருக்கும்.",
+    "Parent Class பெயரை Parentheses()-க்குள் கொடுத்து Child Class உருவாக்கப்படுகிறது.",
+    "Child Class, Parent Class-இன் Members-ஐ தானாகவே பெறுகிறது.",
+    "Child Class-க்கு தனிப்பட்ட Attributes மற்றும் Methods இருக்கலாம்.",
+    "Single Inheritance-ல் ஒரு Parent Class மற்றும் ஒரு Child Class மட்டுமே இருக்கும்."
+  ],
+
+  exampleProgram: `class Person:
+
+    def welcome(self):
+        print("Welcome to Alaporan Thamizhan!")
+
+class Student(Person):
+
+    def study(self):
+        print("Deepak is learning Python.")
+
+student = Student()
+
+student.welcome()
+
+student.study()`,
+
+  programExplanationEnglish: [
+    "Line 1: A parent class named 'Person' is created.",
+    "Line 3: The welcome() method is defined inside the Person class.",
+    "Line 6: A child class named 'Student' inherits from the Person class.",
+    "Line 8: The study() method is defined inside the Student class.",
+    "Line 11: An object named 'student' is created from the Student class.",
+    "Line 13: The inherited welcome() method is called using the child object.",
+    "Line 15: The study() method of the Student class is called.",
+    "The program demonstrates how a child class inherits the methods of its parent class."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: 'Person' என்ற Parent Class உருவாக்கப்படுகிறது.",
+    "வரி 3: Person Class-க்குள் welcome() Method உருவாக்கப்படுகிறது.",
+    "வரி 6: 'Student' என்ற Child Class, Person Class-இல் இருந்து Inherit செய்கிறது.",
+    "வரி 8: Student Class-க்குள் study() Method உருவாக்கப்படுகிறது.",
+    "வரி 11: Student Class-இல் இருந்து 'student' என்ற Object உருவாக்கப்படுகிறது.",
+    "வரி 13: Parent Class-இல் இருந்து பெறப்பட்ட welcome() Method அழைக்கப்படுகிறது.",
+    "வரி 15: Student Class-இன் study() Method அழைக்கப்படுகிறது.",
+    "இந்த Program, Child Class எப்படி Parent Class-இன் Methods-ஐ பெறுகிறது என்பதை விளக்குகிறது."
+  ],
+
+  output: `Welcome to Alaporan Thamizhan!
+Deepak is learning Python.`,
+
+  locked: false,
+
+  completed: false,
+},
 
 ];
 
