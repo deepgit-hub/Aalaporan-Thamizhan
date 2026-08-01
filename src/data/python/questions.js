@@ -87,6 +87,92 @@ print("Don Bosco College")`,
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        'Write a Python program to print "I Love Python".',
+
+      questionTamil:
+        '"I Love Python" என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.',
+
+      hintEnglish:
+        "Use the print() function.",
+
+      hintTamil:
+        "print() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `I Love Python`,
+
+      expectedOutputTamil: `I Love Python`,
+
+      solution: `print("I Love Python")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        'Write a Python program to print the following three lines:\n1. Welcome Deepak\n2. Welcome Kathir\n3. Welcome to Alaporan Thamizhan',
+
+      questionTamil:
+        "கீழே கொடுக்கப்பட்டுள்ள மூன்று வரிகளையும் Print செய்யும் Python Program-ஐ எழுதுங்கள்.\n1. Welcome Deepak\n2. Welcome Kathir\n3. Welcome to Alaporan Thamizhan",
+
+      hintEnglish:
+        "Use three print() statements.",
+
+      hintTamil:
+        "மூன்று print() Statements-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Welcome Deepak
+Welcome Kathir
+Welcome to Alaporan Thamizhan`,
+
+      expectedOutputTamil: `Welcome Deepak
+Welcome Kathir
+Welcome to Alaporan Thamizhan`,
+
+      solution: `print("Welcome Deepak")
+print("Welcome Kathir")
+print("Welcome to Alaporan Thamizhan")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to print your favorite programming language.",
+
+      questionTamil:
+        "உங்களுக்கு பிடித்த Programming Language-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the print() function with a string.",
+
+      hintTamil:
+        "ஒரு String-ஐ print() Function மூலம் Print செய்யுங்கள்.",
+
+      expectedOutput: `Python`,
+
+      expectedOutputTamil: `Python`,
+
+      solution: `print("Python")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
     
   ],
 },
