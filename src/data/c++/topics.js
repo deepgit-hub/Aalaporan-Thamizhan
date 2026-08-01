@@ -2374,7 +2374,151 @@ Browsing the Internet...`,
 
   completed: false,
 },
+{
+  id: 27,
 
+  title: "Hierarchical Inheritance",
+
+  englishDefinition:
+    "Hierarchical Inheritance is a type of inheritance in which multiple derived classes inherit the properties and behaviors of a single base class. This allows different child classes to reuse the common features of one parent class.",
+
+  tamilDefinition:
+    "Hierarchical Inheritance என்பது ஒரு வகையான Inheritance ஆகும். இதில் ஒரு Base Class-இல் இருந்து பல Derived Classes Properties மற்றும் Behaviors-ஐ பெறுகின்றன. இதன் மூலம் பல Child Classes ஒரே Parent Class-இன் பொதுவான அம்சங்களை மீண்டும் பயன்படுத்த முடியும்.",
+
+  realWorldUsage:
+    "Hierarchical Inheritance is used when multiple classes share common features. For example, in a college management system, Student, Teacher, and Staff classes can all inherit common information such as name and age from a Person class.",
+
+  realWorldUsageTamil:
+    "Hierarchical Inheritance பல Classes ஒரே பொதுவான அம்சங்களை பகிர்ந்து கொள்ளும் போது பயன்படுத்தப்படுகிறது. உதாரணமாக, College Management System-ல் Student, Teacher மற்றும் Staff Classes அனைத்தும் Person Class-இல் இருந்து Name மற்றும் Age போன்ற பொதுவான தகவல்களை பெறுகின்றன.",
+
+  syntax: `class BaseClass
+{
+    // Members
+};
+
+class DerivedClass1 : public BaseClass
+{
+    // Members
+};
+
+class DerivedClass2 : public BaseClass
+{
+    // Members
+};`,
+
+  syntaxExplanationEnglish: [
+    "One Base Class can have multiple Derived Classes.",
+    "Each Derived Class inherits the public members of the Base Class.",
+    "Every Child Class can also have its own additional members.",
+    "Hierarchical Inheritance promotes code reusability.",
+    "The common features are written only once inside the Base Class."
+  ],
+
+  syntaxExplanationTamil: [
+    "ஒரு Base Class-இல் இருந்து பல Derived Classes உருவாக்கப்படலாம்.",
+    "ஒவ்வொரு Derived Class-மும் Base Class-இன் Public Members-ஐ பெறுகிறது.",
+    "ஒவ்வொரு Child Class-க்கும் தனிப்பட்ட Members இருக்கலாம்.",
+    "Hierarchical Inheritance மூலம் Code Reusability அதிகரிக்கிறது.",
+    "பொதுவான அம்சங்கள் Base Class-ல் ஒரே முறை மட்டுமே எழுதப்படுகின்றன."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+class Person
+{
+public:
+    void introduce()
+    {
+        cout << "Welcome to Alaporan Tamilan!" << endl;
+    }
+};
+
+class Student : public Person
+{
+public:
+    void study()
+    {
+        cout << "Deepak is studying C++." << endl;
+    }
+};
+
+class Teacher : public Person
+{
+public:
+    void teach()
+    {
+        cout << "Teacher is teaching C++." << endl;
+    }
+};
+
+int main()
+{
+    Student student;
+
+    Teacher teacher;
+
+    student.introduce();
+
+    student.study();
+
+    teacher.introduce();
+
+    teacher.teach();
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: A base class named 'Person' is created.",
+    "Line 7: public: makes the members accessible.",
+    "Line 9: The function 'introduce()' is created inside the Person class.",
+    "Line 15: The Student class inherits from the Person class.",
+    "Line 17: The function 'study()' is created inside the Student class.",
+    "Line 23: The Teacher class also inherits from the Person class.",
+    "Line 25: The function 'teach()' is created inside the Teacher class.",
+    "Line 31: int main() is the starting point of the program.",
+    "Line 33: An object named 'student' is created.",
+    "Line 35: An object named 'teacher' is created.",
+    "Line 37: student.introduce() calls the inherited function from the Person class.",
+    "Line 39: student.study() calls the Student class function.",
+    "Line 41: teacher.introduce() also calls the inherited function from the Person class.",
+    "Line 43: teacher.teach() calls the Teacher class function.",
+    "Line 45: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: 'Person' என்ற Base Class உருவாக்கப்படுகிறது.",
+    "வரி 7: public: மூலம் Members-ஐ வெளியிலிருந்து அணுக முடிகிறது.",
+    "வரி 9: Person Class-க்குள் 'introduce()' Function உருவாக்கப்படுகிறது.",
+    "வரி 15: Student Class, Person Class-இல் இருந்து Inherit செய்கிறது.",
+    "வரி 17: Student Class-க்குள் 'study()' Function உருவாக்கப்படுகிறது.",
+    "வரி 23: Teacher Class-மும் Person Class-இல் இருந்து Inherit செய்கிறது.",
+    "வரி 25: Teacher Class-க்குள் 'teach()' Function உருவாக்கப்படுகிறது.",
+    "வரி 31: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 33: 'student' என்ற Object உருவாக்கப்படுகிறது.",
+    "வரி 35: 'teacher' என்ற Object உருவாக்கப்படுகிறது.",
+    "வரி 37: student.introduce() மூலம் Person Class-இன் Function அழைக்கப்படுகிறது.",
+    "வரி 39: student.study() மூலம் Student Class-இன் Function அழைக்கப்படுகிறது.",
+    "வரி 41: teacher.introduce() மூலமும் Person Class-இன் Function அழைக்கப்படுகிறது.",
+    "வரி 43: teacher.teach() மூலம் Teacher Class-இன் Function அழைக்கப்படுகிறது.",
+    "வரி 45: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `Welcome to Alaporan Tamilan!
+Deepak is studying C++.
+Welcome to Alaporan Tamilan!
+Teacher is teaching C++.`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
