@@ -1383,7 +1383,112 @@ Deepak and Kathir are studying Computer Science at Don Bosco College and learnin
     },
   ],
 },
+{
+  topicId: 5,
+  title: "Operators",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to add two numbers 10 and 20 using the addition operator and print the result.",
+
+      questionTamil:
+        "10 மற்றும் 20 ஆகிய இரண்டு எண்களை Addition Operator பயன்படுத்தி கூட்டி அதன் முடிவை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the '+' operator.",
+
+      hintTamil:
+        "'+' Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `30`,
+
+      expectedOutputTamil: `30`,
+
+      solution: `num1 = 10
+
+num2 = 20
+
+result = num1 + num2
+
+print(result)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to subtract 15 from 50 and print the result.",
+
+      questionTamil:
+        "50-ல் இருந்து 15-ஐ Subtraction Operator பயன்படுத்தி கழித்து அதன் முடிவை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the '-' operator.",
+
+      hintTamil:
+        "'-' Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `35`,
+
+      expectedOutputTamil: `35`,
+
+      solution: `num1 = 50
+
+num2 = 15
+
+result = num1 - num2
+
+print(result)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to multiply 8 and 6 using the multiplication operator and print the result.",
+
+      questionTamil:
+        "8 மற்றும் 6 ஆகிய எண்களை Multiplication Operator பயன்படுத்தி பெருக்கி அதன் முடிவை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the '*' operator.",
+
+      hintTamil:
+        "'*' Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `48`,
+
+      expectedOutputTamil: `48`,
+
+      solution: `num1 = 8
+
+num2 = 6
+
+result = num1 * num2
+
+print(result)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
