@@ -1,0 +1,32 @@
+| No | Topic                    |
+| -- | ------------------------ |
+| 1  | Introduction to Python   |
+| 2  | Variables                |
+| 3  | Data Types               |
+| 4  | Input and Output         |
+| 5  | Operators                |
+| 6  | If Statement             |
+| 7  | If-Else Statement        |
+| 8  | Nested If Statement      |
+| 9  | Match-Case Statement     |
+| 10 | Ternary Operator         |
+| 11 | While Loop               |
+| 12 | For Loop                 |
+| 13 | Nested Loops             |
+| 14 | Break Statement          |
+| 15 | Continue Statement       |
+| 16 | Lists                    |
+| 17 | Tuples                   |
+| 18 | Sets                     |
+| 19 | Dictionaries             |
+| 20 | Functions                |
+| 21 | Lambda Functions         |
+| 22 | Classes                  |
+| 23 | Objects                  |
+| 24 | Constructors (**init**)  |
+| 25 | Single Inheritance       |
+| 26 | Multiple Inheritance     |
+| 27 | Hierarchical Inheritance |
+| 28 | Multilevel Inheritance   |
+| 29 | Hybrid Inheritance       |
+| 30 | File Handling            |
