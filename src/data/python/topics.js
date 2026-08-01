@@ -2239,7 +2239,107 @@ Kathir is teaching Python.`,
 
   completed: false,
 },
+{
+  id: 29,
 
+  title: "Multilevel Inheritance",
+
+  englishDefinition:
+    "Multilevel Inheritance is a type of inheritance in which a child class inherits from another child class. In this type of inheritance, a class acts as both a parent class and a child class. It forms a chain of inheritance, allowing properties and methods to be passed through multiple levels.",
+
+  tamilDefinition:
+    "Multilevel Inheritance என்பது ஒரு Child Class, மற்றொரு Child Class-இல் இருந்து Inherit செய்யும் Inheritance வகையாகும். இதில் ஒரு Class, Parent Class ஆகவும் Child Class ஆகவும் செயல்படும். இதன் மூலம் Properties மற்றும் Methods பல நிலைகள் (Levels) வழியாக பரிமாறப்படுகின்றன.",
+
+  realWorldUsage:
+    "Multilevel Inheritance is used in software applications where features are built step by step. For example, in a College Management System, the Person class contains common information, the Student class inherits from Person, and the PlacementStudent class inherits from Student to add placement-related features.",
+
+  realWorldUsageTamil:
+    "Multilevel Inheritance பல Software Applications-ல் படிப்படியாக (Step by Step) Features உருவாக்க பயன்படுத்தப்படுகிறது. உதாரணமாக, College Management System-ல் Person Class பொதுவான தகவல்களை கொண்டிருக்கும். Student Class, Person Class-இல் இருந்து Inherit செய்யும். பின்னர் PlacementStudent Class, Student Class-இல் இருந்து Inherit செய்து Placement தொடர்பான புதிய வசதிகளை சேர்க்கும்.",
+
+  syntax: `class GrandParent:
+    # Members
+
+class Parent(GrandParent):
+    # Members
+
+class Child(Parent):
+    # Members`,
+
+  syntaxExplanationEnglish: [
+    "The first class acts as the Grandparent class.",
+    "The second class inherits from the Grandparent class.",
+    "The third class inherits from the Parent class.",
+    "The Child class can access members from both Parent and Grandparent classes.",
+    "Multilevel Inheritance creates a chain of inheritance."
+  ],
+
+  syntaxExplanationTamil: [
+    "முதல் Class Grandparent Class ஆக செயல்படுகிறது.",
+    "இரண்டாவது Class, Grandparent Class-இல் இருந்து Inherit செய்கிறது.",
+    "மூன்றாவது Class, Parent Class-இல் இருந்து Inherit செய்கிறது.",
+    "Child Class, Parent மற்றும் Grandparent Classes-இன் Members-ஐ பயன்படுத்த முடியும்.",
+    "Multilevel Inheritance ஒரு Inheritance Chain-ஐ உருவாக்குகிறது."
+  ],
+
+  exampleProgram: `class Person:
+
+    def welcome(self):
+        print("Welcome to Alaporan Thamizhan!")
+
+class Student(Person):
+
+    def study(self):
+        print("Deepak is learning Python.")
+
+class PlacementStudent(Student):
+
+    def placement(self):
+        print("Kathir got placed in a Software Company.")
+
+student = PlacementStudent()
+
+student.welcome()
+
+student.study()
+
+student.placement()`,
+
+  programExplanationEnglish: [
+    "Line 1: A Grandparent class named 'Person' is created.",
+    "Line 3: The welcome() method is defined inside the Person class.",
+    "Line 6: A Parent class named 'Student' inherits from the Person class.",
+    "Line 8: The study() method is defined inside the Student class.",
+    "Line 11: A Child class named 'PlacementStudent' inherits from the Student class.",
+    "Line 13: The placement() method is defined inside the PlacementStudent class.",
+    "Line 16: An object named 'student' is created from the PlacementStudent class.",
+    "Line 18: The inherited welcome() method from the Person class is called.",
+    "Line 20: The inherited study() method from the Student class is called.",
+    "Line 22: The placement() method of the PlacementStudent class is called.",
+    "The program demonstrates how a child class inherits members through multiple inheritance levels."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: 'Person' என்ற Grandparent Class உருவாக்கப்படுகிறது.",
+    "வரி 3: Person Class-க்குள் welcome() Method உருவாக்கப்படுகிறது.",
+    "வரி 6: 'Student' என்ற Parent Class, Person Class-இல் இருந்து Inherit செய்கிறது.",
+    "வரி 8: Student Class-க்குள் study() Method உருவாக்கப்படுகிறது.",
+    "வரி 11: 'PlacementStudent' என்ற Child Class, Student Class-இல் இருந்து Inherit செய்கிறது.",
+    "வரி 13: PlacementStudent Class-க்குள் placement() Method உருவாக்கப்படுகிறது.",
+    "வரி 16: PlacementStudent Class-இல் இருந்து 'student' என்ற Object உருவாக்கப்படுகிறது.",
+    "வரி 18: Person Class-இன் welcome() Method அழைக்கப்படுகிறது.",
+    "வரி 20: Student Class-இன் study() Method அழைக்கப்படுகிறது.",
+    "வரி 22: PlacementStudent Class-இன் placement() Method அழைக்கப்படுகிறது.",
+    "இந்த Program, பல நிலைகள் (Levels) வழியாக Inheritance எப்படி செயல்படுகிறது என்பதை விளக்குகிறது."
+  ],
+
+  output: `Welcome to Alaporan Thamizhan!
+Deepak is learning Python.
+Kathir got placed in a Software Company.`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
