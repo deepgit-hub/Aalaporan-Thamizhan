@@ -194,7 +194,7 @@ function Home() {
           </div>
 
           <div className="footer-right">
-
+<div className="footer-buttons">
             <button
               className="portfolio-btn"
               onClick={() =>
@@ -217,7 +217,7 @@ function Home() {
             >
               👨‍💻 Know More DEEPAK
             </button>
-
+</div>
           </div>
 
         </div>
