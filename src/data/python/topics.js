@@ -232,7 +232,86 @@ Student : True`,
 
   completed: false,
 },
+{
+  id: 4,
 
+  title: "Input and Output",
+
+  englishDefinition:
+    "Input and Output are fundamental operations in Python programming. Input allows the user to provide data to a program, while Output displays the processed information on the screen. Python uses the input() function to receive input and the print() function to display output.",
+
+  tamilDefinition:
+    "Input மற்றும் Output என்பது Python Programming-இன் அடிப்படை செயல்பாடுகளாகும். Input மூலம் பயனர் Program-க்கு தேவையான தகவல்களை வழங்குகிறார். Output மூலம் Program செயல்படுத்திய முடிவுகள் திரையில் காட்டப்படுகின்றன. Python-ல் Input பெற input() Function மற்றும் Output காட்ட print() Function பயன்படுத்தப்படுகிறது.",
+
+  realWorldUsage:
+    "Input and Output are used in every software application. For example, a login page accepts the user's username and password as input, while the welcome message or login status is displayed as output. Similarly, ATM machines receive the PIN as input and display the account balance as output.",
+
+  realWorldUsageTamil:
+    "Input மற்றும் Output அனைத்து Software Applications-லிலும் பயன்படுத்தப்படுகின்றன. உதாரணமாக, Login Page-ல் Username மற்றும் Password Input ஆக பெறப்படுகிறது. பின்னர் Welcome Message அல்லது Login Status Output ஆக காட்டப்படுகிறது. அதேபோல் ATM-ல் PIN Input ஆக பெறப்பட்டு Account Balance Output ஆக காட்டப்படுகிறது.",
+
+  syntax: `name = input("Enter your name: ")
+
+print(name)`,
+
+  syntaxExplanationEnglish: [
+    "input() is a built-in Python function used to receive input from the user.",
+    "The message inside input() is called a prompt and guides the user.",
+    "The entered value is stored in a variable.",
+    "print() is used to display the value stored in the variable.",
+    "By default, input() returns the entered value as a string."
+  ],
+
+  syntaxExplanationTamil: [
+    "input() என்பது பயனரிடமிருந்து தகவல்களை பெற பயன்படுத்தப்படும் Built-in Function ஆகும்.",
+    "input() Function-க்குள் எழுதப்படும் Message Prompt எனப்படும். இது பயனருக்கு வழிகாட்டுகிறது.",
+    "பயனர் உள்ளிடும் தகவல் ஒரு Variable-ல் சேமிக்கப்படுகிறது.",
+    "print() மூலம் Variable-ல் உள்ள தகவல் திரையில் காட்டப்படுகிறது.",
+    "இயல்பாக (Default), input() Function பெறும் Value String ஆக சேமிக்கப்படுகிறது."
+  ],
+
+  exampleProgram: `name = input("Enter your name: ")
+
+college = input("Enter your college: ")
+
+print()
+
+print("Welcome", name)
+
+print("College :", college)
+
+print("Keep Learning with Alaporan Thamizhan!")`,
+
+  programExplanationEnglish: [
+    "Line 1: input() asks the user to enter their name and stores it in the variable 'name'.",
+    "Line 3: input() asks the user to enter their college name and stores it in the variable 'college'.",
+    "Line 5: print() displays a blank line to improve the readability of the output.",
+    "Line 7: print() displays a welcome message along with the user's name.",
+    "Line 9: print() displays the college name entered by the user.",
+    "Line 11: print() displays the motivational message 'Keep Learning with Alaporan Thamizhan!'.",
+    "The program receives input from the user and displays the entered information on the screen."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: input() மூலம் பயனரின் பெயர் பெறப்பட்டு 'name' என்ற Variable-ல் சேமிக்கப்படுகிறது.",
+    "வரி 3: input() மூலம் பயனரின் College Name பெறப்பட்டு 'college' என்ற Variable-ல் சேமிக்கப்படுகிறது.",
+    "வரி 5: print() மூலம் ஒரு காலி வரி (Blank Line) காட்டப்பட்டு Output படிக்க எளிதாக மாற்றப்படுகிறது.",
+    "வரி 7: print() மூலம் பயனரின் பெயருடன் Welcome Message திரையில் காட்டப்படுகிறது.",
+    "வரி 9: print() மூலம் பயனர் உள்ளிட்ட College Name திரையில் காட்டப்படுகிறது.",
+    "வரி 11: print() மூலம் 'Keep Learning with Alaporan Thamizhan!' என்ற ஊக்கமளிக்கும் செய்தி திரையில் காட்டப்படுகிறது.",
+    "Program, பயனரிடமிருந்து Input பெற்று, அந்த தகவல்களை Output ஆக திரையில் காட்டுகிறது."
+  ],
+
+  output: `Enter your name: Deepak
+Enter your college: Don Bosco College
+
+Welcome Deepak
+College : Don Bosco College
+Keep Learning with Alaporan Thamizhan!`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
