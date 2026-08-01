@@ -823,6 +823,98 @@ Excellent Work Deepak!`,
 
   completed: false,
 },
+{
+  id: 11,
+
+  title: "While Loop",
+
+  englishDefinition:
+    "A While Loop is a looping statement that repeatedly executes a block of code as long as the given condition is true. It is mainly used when the number of iterations is not known in advance.",
+
+  tamilDefinition:
+    "While Loop என்பது ஒரு Looping Statement ஆகும். கொடுக்கப்பட்டுள்ள Condition True ஆக இருக்கும் வரை, அதற்குள் இருக்கும் Code மீண்டும் மீண்டும் இயக்கப்படும். எத்தனை முறை Loop இயங்க வேண்டும் என்பது முன்கூட்டியே தெரியாத போது While Loop பயன்படுத்தப்படுகிறது.",
+
+  realWorldUsage:
+    "While Loops are used in many real-world applications. For example, an ATM repeatedly asks the user to enter the correct PIN until it is valid, a login page continues asking for credentials until the correct username and password are entered, and a game keeps running until the player quits.",
+
+  realWorldUsageTamil:
+    "While Loop பல Software-களில் பயன்படுத்தப்படுகிறது. உதாரணமாக, ATM-ல் சரியான PIN உள்ளிடும் வரை மீண்டும் கேட்பது, Login System-ல் சரியான Username மற்றும் Password கிடைக்கும் வரை கேட்பது, மற்றும் Game-ல் Player வெளியேறும் வரை Game இயங்குவது போன்ற இடங்களில் பயன்படுத்தப்படுகிறது.",
+
+  syntax: `while(condition)
+{
+    // Code to execute
+}`,
+
+  syntaxExplanationEnglish: [
+    "The keyword 'while' starts the loop.",
+    "The condition is written inside parentheses ().",
+    "The loop continues executing as long as the condition is true.",
+    "When the condition becomes false, the loop stops.",
+    "The loop variable should be updated inside the loop to avoid an infinite loop."
+  ],
+
+  syntaxExplanationTamil: [
+    "'while' என்பது Loop-ஐ தொடங்கும் Keyword ஆகும்.",
+    "Condition எப்போதும் Parentheses () உள்ளே எழுதப்படுகிறது.",
+    "Condition True ஆக இருக்கும் வரை Loop தொடர்ந்து இயக்கப்படும்.",
+    "Condition False ஆனவுடன் Loop நிறுத்தப்படும்.",
+    "Infinite Loop ஏற்படாமல் இருக்க Loop Variable-ஐ Loop-க்குள் Update செய்ய வேண்டும்."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int day = 1;
+
+    while(day <= 5)
+    {
+        cout << "Day " << day << " : Deepak practiced C++." << endl;
+
+        day++;
+    }
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: int main() is the starting point of the program.",
+    "Line 7: An integer variable 'day' is created and initialized with 1.",
+    "Line 9: The while loop checks whether day is less than or equal to 5.",
+    "Line 11: cout displays the current day and the practice message.",
+    "Line 13: day++ increases the value of day by 1.",
+    "Line 9: The condition is checked again after every iteration.",
+    "Line 9: When day becomes 6, the condition becomes false and the loop stops.",
+    "Line 16: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 7: 'day' என்ற Integer Variable உருவாக்கப்பட்டு 1 சேமிக்கப்படுகிறது.",
+    "வரி 9: while Loop, day 5-க்கு சமமா அல்லது அதைவிட குறைவா என்பதை சரிபார்க்கிறது.",
+    "வரி 11: தற்போதைய நாளும் Practice Message-உம் திரையில் காட்டப்படுகிறது.",
+    "வரி 13: day++ மூலம் day-ன் மதிப்பு 1 அதிகரிக்கப்படுகிறது.",
+    "வரி 9: ஒவ்வொரு Iteration-க்கும் பிறகு Condition மீண்டும் சரிபார்க்கப்படுகிறது.",
+    "வரி 9: day-ன் மதிப்பு 6 ஆனவுடன் Condition False ஆகி Loop நிறுத்தப்படுகிறது.",
+    "வரி 16: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `Day 1 : Deepak practiced C++.
+Day 2 : Deepak practiced C++.
+Day 3 : Deepak practiced C++.
+Day 4 : Deepak practiced C++.
+Day 5 : Deepak practiced C++.`,
+
+  locked: false,
+
+  completed: false,
+},
 
 ];
 
