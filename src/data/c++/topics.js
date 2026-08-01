@@ -252,7 +252,117 @@ Programmer : 1`,
 
   completed: false,
 },
+{
+  id: 4,
 
+  title: "Input and Output",
+
+  englishDefinition:
+    "Input and Output (I/O) are used to interact with the user. In C++, 'cin' is used to receive input from the user, and 'cout' is used to display output on the screen.",
+
+  tamilDefinition:
+    "Input மற்றும் Output (I/O) என்பது பயனருடன் தொடர்பு கொள்ள பயன்படுகிறது. C++-ல் 'cin' என்பது பயனரிடமிருந்து Input பெற பயன்படுத்தப்படுகிறது. 'cout' என்பது Output-ஐ திரையில் காட்ட பயன்படுத்தப்படுகிறது.",
+
+  realWorldUsage:
+    "Input and Output are used in almost every software application. For example, ATM machines ask users to enter their PIN, online shopping websites ask users to enter delivery details, and college portals ask students to enter their registration number.",
+
+  realWorldUsageTamil:
+    "Input மற்றும் Output அனைத்து Software-களிலும் பயன்படுத்தப்படுகின்றன. உதாரணமாக, ATM-ல் PIN Number கேட்பது, Online Shopping Website-ல் Address பெறுவது, College Portal-ல் Register Number பெறுவது ஆகியவை Input மற்றும் Output பயன்பாடுகளாகும்.",
+
+  syntax: `cout << "Message";
+
+cin >> variableName;`,
+
+  syntaxExplanationEnglish: [
+    "cout is used to display output on the screen.",
+    "<< is called the insertion operator.",
+    "cin is used to receive input from the user.",
+    ">> is called the extraction operator.",
+    "The value entered by the user is stored in the specified variable."
+  ],
+
+  syntaxExplanationTamil: [
+    "cout என்பது Output-ஐ திரையில் காட்ட பயன்படுத்தப்படுகிறது.",
+    "<< என்பது Insertion Operator எனப்படுகிறது.",
+    "cin என்பது பயனரிடமிருந்து Input பெற பயன்படுத்தப்படுகிறது.",
+    ">> என்பது Extraction Operator எனப்படுகிறது.",
+    "பயனர் கொடுக்கும் மதிப்பு குறிப்பிடப்பட்ட Variable-ல் சேமிக்கப்படுகிறது."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string name;
+
+    int age;
+
+    cout << "Enter your name: ";
+
+    cin >> name;
+
+    cout << "Enter your age: ";
+
+    cin >> age;
+
+    cout << endl;
+
+    cout << "Welcome " << name << "!" << endl;
+
+    cout << "Age : " << age << endl;
+
+    cout << "Keep Learning with Deepak!" << endl;
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cin and cout without writing std::.",
+    "Line 5: int main() is the starting point of the program.",
+    "Line 7: A string variable named 'name' is declared.",
+    "Line 9: An integer variable named 'age' is declared.",
+    "Line 11: cout asks the user to enter their name.",
+    "Line 13: cin receives the user's name and stores it in the variable 'name'.",
+    "Line 15: cout asks the user to enter their age.",
+    "Line 17: cin receives the user's age and stores it in the variable 'age'.",
+    "Line 19: cout << endl; moves the cursor to the next line.",
+    "Line 21: Displays a welcome message with the user's name.",
+    "Line 23: Displays the user's age.",
+    "Line 25: Displays a motivational message.",
+    "Line 27: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 7: 'name' என்ற String Variable உருவாக்கப்படுகிறது.",
+    "வரி 9: 'age' என்ற Integer Variable உருவாக்கப்படுகிறது.",
+    "வரி 11: cout மூலம் பயனரின் பெயர் கேட்கப்படுகிறது.",
+    "வரி 13: cin மூலம் பயனர் உள்ளிடும் பெயர் 'name' Variable-ல் சேமிக்கப்படுகிறது.",
+    "வரி 15: cout மூலம் பயனரின் வயது கேட்கப்படுகிறது.",
+    "வரி 17: cin மூலம் பயனர் உள்ளிடும் வயது 'age' Variable-ல் சேமிக்கப்படுகிறது.",
+    "வரி 19: endl அடுத்த வரிக்கு Cursor-ஐ நகர்த்துகிறது.",
+    "வரி 21: பயனரின் பெயருடன் வரவேற்பு செய்தி காட்டப்படுகிறது.",
+    "வரி 23: பயனரின் வயது திரையில் காட்டப்படுகிறது.",
+    "வரி 25: ஒரு ஊக்கமளிக்கும் செய்தி திரையில் காட்டப்படுகிறது.",
+    "வரி 27: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `Enter your name: Deepak
+Enter your age: 20
+
+Welcome Deepak!
+Age : 20
+Keep Learning with Deepak!`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
