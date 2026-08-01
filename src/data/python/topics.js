@@ -629,6 +629,89 @@ Welcome to Alaporan Thamizhan!`,
 
   completed: false,
 },
+{
+  id: 9,
+
+  title: "Type Casting",
+
+  englishDefinition:
+    "Type Casting is the process of converting one data type into another. In Python, functions like int(), float(), str(), and bool() are used to convert values from one data type to another. Type Casting is commonly used when taking input from users because input() always returns a string.",
+
+  tamilDefinition:
+    "Type Casting என்பது ஒரு Data Type-ல் உள்ள Value-ஐ மற்றொரு Data Type-ஆக மாற்றும் செயல்முறையாகும். Python-ல் int(), float(), str(), மற்றும் bool() போன்ற Functions பயன்படுத்தி Data Types மாற்றப்படுகின்றன. குறிப்பாக input() Function எப்போதும் String-ஆக Value-ஐ Return செய்வதால் Type Casting அதிகமாக பயன்படுத்தப்படுகிறது.",
+
+  realWorldUsage:
+    "Type Casting is used in almost every Python application. For example, when a user enters their age on a registration form, the value is received as a string. It must be converted into an integer before performing calculations or checking eligibility.",
+
+  realWorldUsageTamil:
+    "Type Casting அனைத்து Python Applications-லிலும் பயன்படுத்தப்படுகிறது. உதாரணமாக, Registration Form-ல் பயனர் தனது வயதை உள்ளிடும்போது அது String ஆக பெறப்படுகிறது. பின்னர் கணக்கீடுகள் செய்வதற்கும் அல்லது Eligibility சரிபார்ப்பதற்கும் அது Integer ஆக மாற்றப்படுகிறது.",
+
+  syntax: `number = int(input("Enter a number: "))
+
+price = float(input("Enter price: "))
+
+name = str(100)
+
+status = bool(1)`,
+
+  syntaxExplanationEnglish: [
+    "int() converts a value into an integer.",
+    "float() converts a value into a decimal number.",
+    "str() converts a value into a string.",
+    "bool() converts a value into either True or False.",
+    "Type Casting is mainly used after receiving user input."
+  ],
+
+  syntaxExplanationTamil: [
+    "int() ஒரு Value-ஐ Integer ஆக மாற்றுகிறது.",
+    "float() ஒரு Value-ஐ Decimal Number ஆக மாற்றுகிறது.",
+    "str() ஒரு Value-ஐ String ஆக மாற்றுகிறது.",
+    "bool() ஒரு Value-ஐ True அல்லது False ஆக மாற்றுகிறது.",
+    "Type Casting பெரும்பாலும் User Input பெற்ற பிறகு பயன்படுத்தப்படுகிறது."
+  ],
+
+  exampleProgram: `age = int(input("Enter your age: "))
+
+next_age = age + 1
+
+print()
+
+print("Current Age :", age)
+
+print("Next Year Age :", next_age)
+
+print("Keep Learning with Alaporan Thamizhan!")`,
+
+  programExplanationEnglish: [
+    "Line 1: input() receives the user's age as a string and int() converts it into an integer.",
+    "Line 3: The value of 'age' is increased by 1 and stored in the variable 'next_age'.",
+    "Line 5: print() displays a blank line for better readability.",
+    "Line 7: print() displays the current age entered by the user.",
+    "Line 9: print() displays the age for the next year.",
+    "Line 11: print() displays a motivational message.",
+    "The program demonstrates how Type Casting allows mathematical operations on user input."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: input() மூலம் பெறப்பட்ட வயது முதலில் String ஆக இருக்கும். int() பயன்படுத்தி அது Integer ஆக மாற்றப்படுகிறது.",
+    "வரி 3: 'age' Variable-ன் மதிப்புடன் 1 சேர்த்து 'next_age' என்ற Variable-ல் சேமிக்கப்படுகிறது.",
+    "வரி 5: print() மூலம் ஒரு காலி வரி (Blank Line) காட்டப்படுகிறது.",
+    "வரி 7: print() மூலம் பயனர் உள்ளிட்ட தற்போதைய வயது திரையில் காட்டப்படுகிறது.",
+    "வரி 9: print() மூலம் அடுத்த வருட வயது திரையில் காட்டப்படுகிறது.",
+    "வரி 11: print() மூலம் ஊக்கமளிக்கும் செய்தி திரையில் காட்டப்படுகிறது.",
+    "இந்த Program, Type Casting பயன்படுத்தி User Input-ஐ கணக்கீட்டிற்கு பயன்படுத்துவது எப்படி என்பதை விளக்குகிறது."
+  ],
+
+  output: `Enter your age: 20
+
+Current Age : 20
+Next Year Age : 21
+Keep Learning with Alaporan Thamizhan!`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
