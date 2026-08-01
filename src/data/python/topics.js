@@ -142,6 +142,96 @@ Age : 20`,
 
   completed: false,
 },
+{
+  id: 3,
+
+  title: "Data Types",
+
+  englishDefinition:
+    "A Data Type specifies the type of data that a variable can store. Python automatically determines the data type based on the value assigned to the variable. Some of the most commonly used data types in Python are int, float, str, and bool.",
+
+  tamilDefinition:
+    "Data Type என்பது ஒரு Variable எந்த வகையான Data-வை சேமிக்கிறது என்பதை குறிக்கிறது. Python-ல் Variable-க்கு வழங்கப்படும் Value-ஐ அடிப்படையாகக் கொண்டு Data Type தானாகவே (Automatically) கண்டறியப்படுகிறது. Python-ல் அதிகமாக பயன்படுத்தப்படும் Data Types-ல் int, float, str மற்றும் bool ஆகியவை முக்கியமானவை.",
+
+  realWorldUsage:
+    "Data Types are used in every software application. For example, a student's age is stored as an integer (int), CGPA as a float, name as a string (str), and attendance status as a boolean (bool).",
+
+  realWorldUsageTamil:
+    "Data Types அனைத்து Software Applications-லிலும் பயன்படுத்தப்படுகின்றன. உதாரணமாக, மாணவரின் வயது Integer (int), CGPA Float, பெயர் String (str), மற்றும் Attendance Status Boolean (bool) ஆக சேமிக்கப்படுகிறது.",
+
+  syntax: `age = 20
+
+cgpa = 8.75
+
+name = "Deepak"
+
+isStudent = True`,
+
+  syntaxExplanationEnglish: [
+    "Python automatically determines the data type from the assigned value.",
+    "int is used to store whole numbers.",
+    "float is used to store decimal numbers.",
+    "str is used to store text values.",
+    "bool is used to store either True or False."
+  ],
+
+  syntaxExplanationTamil: [
+    "Assign செய்யப்பட்ட Value-ஐ வைத்து Python தானாகவே Data Type-ஐ கண்டறிகிறது.",
+    "int என்பது முழு எண்களை (Whole Numbers) சேமிக்க பயன்படுகிறது.",
+    "float என்பது Decimal Numbers-ஐ சேமிக்க பயன்படுகிறது.",
+    "str என்பது Text அல்லது Characters-ஐ சேமிக்க பயன்படுகிறது.",
+    "bool என்பது True அல்லது False ஆகிய Logical Values-ஐ சேமிக்க பயன்படுகிறது."
+  ],
+
+  exampleProgram: `age = 20
+
+cgpa = 8.75
+
+name = "Deepak"
+
+isStudent = True
+
+print("Age :", age)
+
+print("CGPA :", cgpa)
+
+print("Name :", name)
+
+print("Student :", isStudent)`,
+
+  programExplanationEnglish: [
+    "Line 1: A variable named 'age' is created and stores the integer value 20.",
+    "Line 3: A variable named 'cgpa' is created and stores the float value 8.75.",
+    "Line 5: A variable named 'name' is created and stores the string value 'Deepak'.",
+    "Line 7: A variable named 'isStudent' is created and stores the boolean value True.",
+    "Line 9: print() displays the integer value stored in 'age'.",
+    "Line 11: print() displays the float value stored in 'cgpa'.",
+    "Line 13: print() displays the string value stored in 'name'.",
+    "Line 15: print() displays the boolean value stored in 'isStudent'.",
+    "The program displays variables of different data types on the screen."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: 'age' என்ற Variable உருவாக்கப்பட்டு அதில் Integer Value 20 சேமிக்கப்படுகிறது.",
+    "வரி 3: 'cgpa' என்ற Variable உருவாக்கப்பட்டு அதில் Float Value 8.75 சேமிக்கப்படுகிறது.",
+    "வரி 5: 'name' என்ற Variable உருவாக்கப்பட்டு அதில் String Value 'Deepak' சேமிக்கப்படுகிறது.",
+    "வரி 7: 'isStudent' என்ற Variable உருவாக்கப்பட்டு அதில் Boolean Value True சேமிக்கப்படுகிறது.",
+    "வரி 9: print() மூலம் 'age' Variable-ல் உள்ள Integer Value திரையில் காட்டப்படுகிறது.",
+    "வரி 11: print() மூலம் 'cgpa' Variable-ல் உள்ள Float Value திரையில் காட்டப்படுகிறது.",
+    "வரி 13: print() மூலம் 'name' Variable-ல் உள்ள String Value திரையில் காட்டப்படுகிறது.",
+    "வரி 15: print() மூலம் 'isStudent' Variable-ல் உள்ள Boolean Value திரையில் காட்டப்படுகிறது.",
+    "Program, வெவ்வேறு Data Types-ல் உள்ள Values-ஐ திரையில் காட்டுகிறது."
+  ],
+
+  output: `Age : 20
+CGPA : 8.75
+Name : Deepak
+Student : True`,
+
+  locked: false,
+
+  completed: false,
+},
 
 ];
 
