@@ -1018,6 +1018,107 @@ Python Completed: True`,
       locked: false,
       completed: false,
     },
+    
+  ],
+},
+{
+  topicId: 4,
+  title: "Input and Output",
+
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to accept your name from the user and print it.",
+
+      questionTamil:
+        "பயனரிடமிருந்து உங்கள் பெயரை Input ஆக பெற்று அதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input() to get the name and print() to display it.",
+
+      hintTamil:
+        "பெயரை பெற input() மற்றும் காட்ட print() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter your name: Deepak
+Deepak`,
+
+      expectedOutputTamil: `Enter your name: Deepak
+Deepak`,
+
+      solution: `name = input("Enter your name: ")
+
+print(name)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to accept your college name from the user and print it.",
+
+      questionTamil:
+        "பயனரிடமிருந்து உங்கள் College பெயரை Input ஆக பெற்று அதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Store the input in a variable and print it.",
+
+      hintTamil:
+        "Input-ஐ ஒரு Variable-ல் சேமித்து Print செய்யுங்கள்.",
+
+      expectedOutput: `Enter your college: Don Bosco College
+Don Bosco College`,
+
+      expectedOutputTamil: `Enter your college: Don Bosco College
+Don Bosco College`,
+
+      solution: `college = input("Enter your college: ")
+
+print(college)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to accept your favorite programming language from the user and print it.",
+
+      questionTamil:
+        "பயனரிடமிருந்து உங்களுக்கு பிடித்த Programming Language-ஐ Input ஆக பெற்று அதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input() and print().",
+
+      hintTamil:
+        "input() மற்றும் print() Functions-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter your favorite language: Python
+Python`,
+
+      expectedOutputTamil: `Enter your favorite language: Python
+Python`,
+
+      solution: `language = input("Enter your favorite language: ")
+
+print(language)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
   ],
 },
 ];
