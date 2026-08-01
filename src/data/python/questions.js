@@ -393,6 +393,110 @@ print(language)`,
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to create two variables named 'student' and 'friend'. Store 'Deepak' and 'Kathir' respectively, then print both variables.",
+
+      questionTamil:
+        "'student' மற்றும் 'friend' என்ற இரண்டு Variables-ஐ உருவாக்கி, அவற்றில் 'Deepak' மற்றும் 'Kathir' என்ற மதிப்புகளை சேமித்து Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create two variables and print them using two print() statements.",
+
+      hintTamil:
+        "இரண்டு Variables உருவாக்கி, இரண்டு print() Statements மூலம் Print செய்யுங்கள்.",
+
+      expectedOutput: `Deepak
+Kathir`,
+
+      expectedOutputTamil: `Deepak
+Kathir`,
+
+      solution: `student = "Deepak"
+
+friend = "Kathir"
+
+print(student)
+
+print(friend)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to create variables for your name, college, and programming language. Print all the variables.",
+
+      questionTamil:
+        "உங்கள் பெயர், College மற்றும் Programming Language ஆகியவற்றிற்கு Variables உருவாக்கி, அவற்றை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create three variables and print each variable.",
+
+      hintTamil:
+        "மூன்று Variables உருவாக்கி ஒவ்வொன்றையும் Print செய்யுங்கள்.",
+
+      expectedOutput: `Deepak
+Don Bosco College
+Python`,
+
+      expectedOutputTamil: `Deepak
+Don Bosco College
+Python`,
+
+      solution: `name = "Deepak"
+
+college = "Don Bosco College"
+
+language = "Python"
+
+print(name)
+
+print(college)
+
+print(language)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to create a variable named 'course' and store 'Python Programming'. Print the sentence 'I am learning Python Programming.' using the variable.",
+
+      questionTamil:
+        "'course' என்ற Variable-ஐ உருவாக்கி அதில் 'Python Programming' என்ற மதிப்பை சேமியுங்கள். பின்னர் Variable-ஐ பயன்படுத்தி 'I am learning Python Programming.' என்ற வாக்கியத்தை Print செய்யும் Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Store the course name in a variable and use it inside print().",
+
+      hintTamil:
+        "Course பெயரை Variable-ல் சேமித்து, print() Statement-ல் பயன்படுத்துங்கள்.",
+
+      expectedOutput: `I am learning Python Programming.`,
+
+      expectedOutputTamil: `I am learning Python Programming.`,
+
+      solution: `course = "Python Programming"
+
+print("I am learning", course + ".")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
     
   ],
 },
