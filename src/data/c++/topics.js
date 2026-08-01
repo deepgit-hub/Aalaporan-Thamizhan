@@ -2655,7 +2655,257 @@ Deepak is doing Research.`,
 
   completed: false,
 },
+{
+  id: 29,
 
+  title: "Hybrid Inheritance",
+
+  englishDefinition:
+    "Hybrid Inheritance is a combination of two or more types of inheritance such as Single, Multiple, Hierarchical, or Multilevel Inheritance. It is used to build complex class relationships by combining different inheritance structures.",
+
+  tamilDefinition:
+    "Hybrid Inheritance என்பது இரண்டு அல்லது அதற்கு மேற்பட்ட Inheritance வகைகளான Single, Multiple, Hierarchical அல்லது Multilevel Inheritance ஆகியவற்றின் இணைப்பாகும். பல்வேறு Inheritance அமைப்புகளை ஒன்றாக இணைத்து சிக்கலான (Complex) Class Relationships உருவாக்க இது பயன்படுத்தப்படுகிறது.",
+
+  realWorldUsage:
+    "Hybrid Inheritance is used in large software applications where different inheritance relationships are required. For example, in a Smart College Management System, a Student class may inherit common details from a Person class, while also inheriting login features from another class. This combines multiple inheritance structures into one system.",
+
+  realWorldUsageTamil:
+    "Hybrid Inheritance பெரிய Software Applications-ல் பல்வேறு Inheritance அமைப்புகள் தேவைப்படும் போது பயன்படுத்தப்படுகிறது. உதாரணமாக, Smart College Management System-ல் Student Class, Person Class-இல் இருந்து பொதுவான தகவல்களையும், மற்றொரு Login Class-இல் இருந்து Login வசதிகளையும் பெறலாம். இதன் மூலம் பல Inheritance வகைகள் ஒன்றாக இணைக்கப்படுகின்றன.",
+
+  syntax: `class Person
+{
+    // Members
+};
+
+class Student : public Person
+{
+    // Members
+};
+
+class Login
+{
+    // Members
+};
+
+class SmartStudent : public Student, public Login
+{
+    // Members
+};`,
+
+  syntaxExplanationEnglish: [
+    "Hybrid Inheritance combines two or more inheritance types.",
+    "A derived class can inherit through multiple inheritance paths.",
+    "It helps in building complex software systems.",
+    "The derived class can access members inherited from different parent classes.",
+    "Hybrid Inheritance provides maximum code reusability."
+  ],
+
+  syntaxExplanationTamil: [
+    "Hybrid Inheritance என்பது இரண்டு அல்லது அதற்கு மேற்பட்ட Inheritance வகைகளை இணைக்கிறது.",
+    "Derived Class பல Inheritance வழிகளின் மூலம் Members-ஐ பெற முடியும்.",
+    "இது சிக்கலான Software Systems உருவாக்க பயன்படுகிறது.",
+    "Derived Class, வெவ்வேறு Parent Classes-இல் இருந்து பெறப்பட்ட Members-ஐ அணுக முடியும்.",
+    "Hybrid Inheritance அதிக Code Reusability-ஐ வழங்குகிறது."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+class Person
+{
+public:
+    void introduce()
+    {
+        cout << "Welcome to Alaporan Tamilan!" << endl;
+    }
+};
+
+class Student : public Person
+{
+public:
+    void study()
+    {
+        cout << "Deepak is studying C++." << endl;
+    }
+};
+
+class Login
+{
+public:
+    void login()
+    {
+        cout << "Login Successful." << endl;
+    }
+};
+
+class SmartStudent : public Student, public Login
+{
+public:
+    void project()
+    {
+        cout << "Deepak submitted the C++ project." << endl;
+    }
+};
+
+int main()
+{
+    SmartStudent student;
+
+    student.introduce();
+
+    student.study();
+
+    student.login();
+
+    student.project();
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: A base class named 'Person' is created.",
+    "Line 9: The function 'introduce()' is created inside the Person class.",
+    "Line 15: The Student class inherits from the Person class (Single Inheritance).",
+    "Line 19: The function 'study()' is created inside the Student class.",
+    "Line 24: A separate class named 'Login' is created.",
+    "Line 28: The function 'login()' is created inside the Login class.",
+    "Line 33: The SmartStudent class inherits from both Student and Login classes, forming Hybrid Inheritance.",
+    "Line 35: The function 'project()' is created inside the SmartStudent class.",
+    "Line 42: int main() is the starting point of the program.",
+    "Line 44: An object named 'student' is created.",
+    "Line 46: student.introduce() calls the inherited function from the Person class.",
+    "Line 48: student.study() calls the inherited function from the Student class.",
+    "Line 50: student.login() calls the inherited function from the Login class.",
+    "Line 52: student.project() calls the function of the SmartStudent class.",
+    "Line 54: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: 'Person' என்ற Base Class உருவாக்கப்படுகிறது.",
+    "வரி 9: Person Class-க்குள் 'introduce()' Function உருவாக்கப்படுகிறது.",
+    "வரி 15: Student Class, Person Class-இல் இருந்து Inherit செய்கிறது (Single Inheritance).",
+    "வரி 19: Student Class-க்குள் 'study()' Function உருவாக்கப்படுகிறது.",
+    "வரி 24: 'Login' என்ற தனி Class உருவாக்கப்படுகிறது.",
+    "வரி 28: Login Class-க்குள் 'login()' Function உருவாக்கப்படுகிறது.",
+    "வரி 33: SmartStudent Class, Student மற்றும் Login ஆகிய இரண்டு Classes-இல் இருந்தும் Inherit செய்வதால் Hybrid Inheritance உருவாகிறது.",
+    "வரி 35: SmartStudent Class-க்குள் 'project()' Function உருவாக்கப்படுகிறது.",
+    "வரி 42: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 44: 'student' என்ற Object உருவாக்கப்படுகிறது.",
+    "வரி 46: student.introduce() மூலம் Person Class-இன் Function அழைக்கப்படுகிறது.",
+    "வரி 48: student.study() மூலம் Student Class-இன் Function அழைக்கப்படுகிறது.",
+    "வரி 50: student.login() மூலம் Login Class-இன் Function அழைக்கப்படுகிறது.",
+    "வரி 52: student.project() மூலம் SmartStudent Class-இன் Function அழைக்கப்படுகிறது.",
+    "வரி 54: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `Welcome to Alaporan Tamilan!
+Deepak is studying C++.
+Login Successful.
+Deepak submitted the C++ project.`,
+
+  locked: false,
+
+  completed: false,
+},
+{
+  id: 30,
+
+  title: "File Handling",
+
+  englishDefinition:
+    "File Handling is a feature in C++ that allows a program to create, read, write, and update files stored on a computer. It helps in storing data permanently, even after the program is closed. C++ provides the <fstream> library for performing file operations.",
+
+  tamilDefinition:
+    "File Handling என்பது C++-இல் கணினியில் உள்ள Files-ஐ உருவாக்க, படிக்க, எழுத மற்றும் புதுப்பிக்க பயன்படும் ஒரு அம்சமாகும். Program முடிந்த பிறகும் Data நிரந்தரமாக (Permanently) சேமிக்க File Handling பயன்படுகிறது. C++-இல் File Operations செய்ய <fstream> Library பயன்படுத்தப்படுகிறது.",
+
+  realWorldUsage:
+    "File Handling is used in almost every software application. For example, storing student records in a college management system, saving customer details in a banking application, writing bills in an e-commerce website, and storing game progress.",
+
+  realWorldUsageTamil:
+    "File Handling அனைத்து Software Applications-லிலும் பயன்படுத்தப்படுகிறது. உதாரணமாக, College Management System-ல் Student Records சேமிப்பது, Banking Application-ல் Customer Details சேமிப்பது, E-commerce Website-ல் Bills உருவாக்குவது மற்றும் Game Progress-ஐ சேமிப்பது போன்ற இடங்களில் பயன்படுத்தப்படுகிறது.",
+
+  syntax: `#include <fstream>
+
+ofstream file("student.txt");
+
+file << "Hello World";
+
+file.close();`,
+
+  syntaxExplanationEnglish: [
+    "#include <fstream> includes the file handling library.",
+    "ofstream is used to create and write data into a file.",
+    "The file name is specified inside parentheses.",
+    "The << operator writes data into the file.",
+    "close() closes the file after completing the operation."
+  ],
+
+  syntaxExplanationTamil: [
+    "#include <fstream> என்பது File Handling Library-ஐ இணைக்கிறது.",
+    "ofstream என்பது புதிய File உருவாக்கவும் அதில் Data எழுதவும் பயன்படுகிறது.",
+    "File-ன் பெயர் Parentheses () உள்ளே குறிப்பிடப்படுகிறது.",
+    "<< Operator மூலம் File-ல் Data எழுதப்படுகிறது.",
+    "close() மூலம் File Operation முடிந்த பிறகு File மூடப்படுகிறது."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+#include <fstream>
+
+using namespace std;
+
+int main()
+{
+    ofstream file("student.txt");
+
+    file << "Welcome to Alaporan Tamilan!" << endl;
+
+    file << "Deepak is learning C++ File Handling.";
+
+    file.close();
+
+    cout << "Data written successfully into the file.";
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: #include <fstream> includes the file handling library.",
+    "Line 5: using namespace std; allows us to use standard library objects without std::.",
+    "Line 7: int main() is the starting point of the program.",
+    "Line 9: An ofstream object named 'file' is created and opens 'student.txt' for writing.",
+    "Line 11: The first line of text is written into the file.",
+    "Line 13: Another line is written into the file.",
+    "Line 15: file.close() closes the file after writing.",
+    "Line 17: cout displays a success message on the screen.",
+    "Line 19: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: #include <fstream> என்பது File Handling Library-ஐ இணைக்கிறது.",
+    "வரி 5: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 7: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 9: 'file' என்ற ofstream Object உருவாக்கப்பட்டு 'student.txt' என்ற File எழுதுவதற்காக திறக்கப்படுகிறது.",
+    "வரி 11: முதல் Message File-ல் எழுதப்படுகிறது.",
+    "வரி 13: இரண்டாவது Message File-ல் எழுதப்படுகிறது.",
+    "வரி 15: file.close() மூலம் File மூடப்படுகிறது.",
+    "வரி 17: cout மூலம் Success Message திரையில் காட்டப்படுகிறது.",
+    "வரி 19: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `Data written successfully into the file.`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
