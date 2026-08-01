@@ -105,6 +105,42 @@ function Home() {
             </p>
 
           </div>
+          {/* ================= PROGRESS CARD ================= */}
+
+  <div className="progress-card">
+
+    <div className="progress-top">
+
+      <h3>📈 Overall Progress</h3>
+
+      <span className="progress-percent">
+        0%
+      </span>
+
+    </div>
+
+    <div className="progress-bar">
+
+      <div
+        className="progress-fill"
+        style={{ width: "0%" }}
+      ></div>
+
+    </div>
+
+    <div className="progress-bottom">
+
+      <p>
+        <strong>0</strong> / <strong>30</strong> Topics Completed
+      </p>
+
+      <p className="progress-message">
+        🚀 Start learning today and become a Java expert.
+      </p>
+
+    </div>
+
+  </div>
   {/* ================= TOPICS ================= */}
           <div className="topics-grid">
 
