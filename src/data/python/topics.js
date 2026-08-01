@@ -1091,6 +1091,80 @@ Loop Completed Successfully!`,
 
   completed: false,
 },
+{
+  id: 15,
+
+  title: "Break Statement",
+
+  englishDefinition:
+    "The Break Statement is used to immediately terminate a loop before it finishes all its iterations. When the break statement is executed, the control exits the loop and continues with the next statement after the loop.",
+
+  tamilDefinition:
+    "Break Statement என்பது ஒரு Loop முழுமையாக முடிவடைவதற்கு முன்பே அதை உடனடியாக (Immediately) நிறுத்த பயன்படுத்தப்படுகிறது. Break Statement இயக்கப்பட்டவுடன் Loop-ல் இருந்து வெளியேறி, அதற்கு அடுத்துள்ள Statement இயக்கப்படும்.",
+
+  realWorldUsage:
+    "The Break Statement is used in many software applications. For example, when searching for a student's roll number in a database, the search stops immediately after finding the correct record instead of checking the remaining records.",
+
+  realWorldUsageTamil:
+    "Break Statement பல Software Applications-லிலும் பயன்படுத்தப்படுகிறது. உதாரணமாக, ஒரு Database-ல் மாணவரின் Roll Number-ஐ தேடும் போது, சரியான Record கிடைத்தவுடன் மீதமுள்ள Records-ஐ தேடாமல் Search உடனடியாக நிறுத்தப்படுகிறது.",
+
+  syntax: `for variable in range(start, end):
+    if condition:
+        break`,
+
+  syntaxExplanationEnglish: [
+    "The loop starts normally.",
+    "The if statement checks a specified condition.",
+    "If the condition becomes True, the break statement is executed.",
+    "The loop immediately terminates.",
+    "Program execution continues with the statement after the loop."
+  ],
+
+  syntaxExplanationTamil: [
+    "Loop வழக்கம்போல் தொடங்குகிறது.",
+    "if Statement ஒரு குறிப்பிட்ட Condition-ஐ சரிபார்க்கிறது.",
+    "Condition True ஆனால் break Statement இயக்கப்படுகிறது.",
+    "Loop உடனடியாக நிறுத்தப்படுகிறது.",
+    "Program, Loop-க்கு அடுத்துள்ள Statement-ஐ இயக்கத் தொடங்குகிறது."
+  ],
+
+  exampleProgram: `for number in range(1, 11):
+    if number == 6:
+        break
+
+    print(number)
+
+print("Loop Stopped Successfully!")`,
+
+  programExplanationEnglish: [
+    "Line 1: The for loop generates numbers from 1 to 10.",
+    "Line 2: The if statement checks whether the value of 'number' is equal to 6.",
+    "Line 3: When 'number' becomes 6, the break statement terminates the loop immediately.",
+    "Line 5: Numbers from 1 to 5 are displayed before the loop stops.",
+    "Line 7: After the loop terminates, this statement is executed.",
+    "The program demonstrates how the break statement exits a loop before all iterations are completed."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: For Loop, 1 முதல் 10 வரை எண்களை உருவாக்குகிறது.",
+    "வரி 2: 'number' 6-க்கு சமமா என்பதை if Statement சரிபார்க்கிறது.",
+    "வரி 3: 'number' 6 ஆனவுடன் break Statement Loop-ஐ உடனடியாக நிறுத்துகிறது.",
+    "வரி 5: Loop நிறுத்தப்படுவதற்கு முன் 1 முதல் 5 வரை உள்ள எண்கள் திரையில் காட்டப்படுகின்றன.",
+    "வரி 7: Loop முடிந்த பிறகு இந்த Statement இயக்கப்படுகிறது.",
+    "இந்த Program, அனைத்து Iterations முடிவதற்கு முன்பே break Statement Loop-ஐ எப்படி நிறுத்துகிறது என்பதை விளக்குகிறது."
+  ],
+
+  output: `1
+2
+3
+4
+5
+Loop Stopped Successfully!`,
+
+  locked: false,
+
+  completed: false,
+},
 
 ];
 
