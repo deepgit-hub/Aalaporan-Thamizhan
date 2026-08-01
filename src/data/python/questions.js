@@ -1118,7 +1118,110 @@ print(language)`,
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to accept your age from the user and print it.",
+
+      questionTamil:
+        "பயனரிடமிருந்து உங்கள் வயதை Input ஆக பெற்று அதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input() to receive the age and print() to display it.",
+
+      hintTamil:
+        "வயதை பெற input() மற்றும் காட்ட print() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter your age: 20
+20`,
+
+      expectedOutputTamil: `Enter your age: 20
+20`,
+
+      solution: `age = input("Enter your age: ")
+
+print(age)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to accept your name and college name from the user, then print both values on separate lines.",
+
+      questionTamil:
+        "பயனரிடமிருந்து உங்கள் பெயர் மற்றும் College பெயரை Input ஆக பெற்று, அவற்றை தனித்தனி வரிகளில் Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use two input() statements and two print() statements.",
+
+      hintTamil:
+        "இரண்டு input() Statements மற்றும் இரண்டு print() Statements-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter your name: Deepak
+Enter your college: Don Bosco College
+Deepak
+Don Bosco College`,
+
+      expectedOutputTamil: `Enter your name: Deepak
+Enter your college: Don Bosco College
+Deepak
+Don Bosco College`,
+
+      solution: `name = input("Enter your name: ")
+
+college = input("Enter your college: ")
+
+print(name)
+
+print(college)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to accept your name and favorite programming language from the user. Print the sentence '<name> is learning <language>.'",
+
+      questionTamil:
+        "பயனரிடமிருந்து உங்கள் பெயர் மற்றும் உங்களுக்கு பிடித்த Programming Language-ஐ Input ஆக பெற்று, '<பெயர்> is learning <Language>.' என்ற வாக்கியத்தை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Store both inputs in variables and use them inside print().",
+
+      hintTamil:
+        "இரண்டு Input-களையும் Variables-ல் சேமித்து print() Statement-ல் பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter your name: Deepak
+Enter your favorite language: Python
+Deepak is learning Python.`,
+
+      expectedOutputTamil: `Enter your name: Deepak
+Enter your favorite language: Python
+Deepak is learning Python.`,
+
+      solution: `name = input("Enter your name: ")
+
+language = input("Enter your favorite language: ")
+
+print(name, "is learning", language + ".")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },  
   ],
 },
 ];
