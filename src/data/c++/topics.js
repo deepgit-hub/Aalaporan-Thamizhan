@@ -540,7 +540,98 @@ int main()
 
   completed: false,
 },
+{
+  id: 7,
 
+  title: "If-Else Statement",
+
+  englishDefinition:
+    "The if-else statement is a decision-making statement used to execute one block of code when a condition is true and another block of code when the condition is false. It allows a program to choose between two different actions.",
+
+  tamilDefinition:
+    "If-Else Statement என்பது ஒரு Decision Making Statement ஆகும். கொடுக்கப்பட்டுள்ள Condition உண்மையாக (True) இருந்தால் if Block-இல் உள்ள Code இயங்கும். Condition தவறாக (False) இருந்தால் else Block-இல் உள்ள Code இயங்கும். இதன் மூலம் Program இரண்டு செயல்களில் ஒன்றை தேர்வு செய்து இயக்க முடியும்.",
+
+  realWorldUsage:
+    "If-Else statements are used in many real-world applications. For example, a login system checks whether the username and password are correct, an ATM verifies whether the entered PIN is valid, and an online shopping website checks whether a product is available before allowing a purchase.",
+
+  realWorldUsageTamil:
+    "If-Else Statement பல Software-களில் பயன்படுத்தப்படுகிறது. உதாரணமாக, Login System-ல் Username மற்றும் Password சரியானதா என்பதை சரிபார்ப்பது, ATM-ல் PIN சரியானதா என்பதை சரிபார்ப்பது, Online Shopping Website-ல் Product கிடைக்கிறதா என்பதை சரிபார்ப்பது போன்ற இடங்களில் பயன்படுத்தப்படுகிறது.",
+
+  syntax: `if(condition)
+{
+    // Executes if the condition is true
+}
+else
+{
+    // Executes if the condition is false
+}`,
+
+  syntaxExplanationEnglish: [
+    "The 'if' keyword checks the given condition.",
+    "If the condition is true, the code inside the if block executes.",
+    "The 'else' keyword executes when the condition is false.",
+    "Only one block (if or else) executes at a time.",
+    "Curly braces {} contain the statements to be executed."
+  ],
+
+  syntaxExplanationTamil: [
+    "'if' Keyword கொடுக்கப்பட்டுள்ள Condition-ஐ சரிபார்க்கிறது.",
+    "Condition True ஆக இருந்தால் if Block உள்ளே இருக்கும் Code இயக்கப்படும்.",
+    "'else' Keyword, Condition False ஆக இருந்தால் இயக்கப்படும்.",
+    "ஒரே நேரத்தில் if அல்லது else ஆகியவற்றில் ஒன்று மட்டுமே இயக்கப்படும்.",
+    "Curly Braces {} உள்ளே இயக்க வேண்டிய Statements எழுதப்படுகின்றன."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int deepakMarks = 45;
+
+    if(deepakMarks >= 50)
+    {
+        cout << "Congratulations Deepak! You Passed.";
+    }
+    else
+    {
+        cout << "Don't Give Up Deepak! Better Luck Next Time.";
+    }
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: int main() is the starting point of the program.",
+    "Line 7: An integer variable 'deepakMarks' is created and stores the value 45.",
+    "Line 9: The if statement checks whether deepakMarks is greater than or equal to 50.",
+    "Line 10: Since the condition is false, the if block is skipped.",
+    "Line 13: The else block executes because the condition is false.",
+    "Line 15: cout displays the message 'Don't Give Up Deepak! Better Luck Next Time.'",
+    "Line 18: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 7: 'deepakMarks' என்ற Integer Variable-ல் 45 சேமிக்கப்படுகிறது.",
+    "வரி 9: if Statement, deepakMarks 50-க்கு சமமா அல்லது அதைவிட பெரியதா என்பதை சரிபார்க்கிறது.",
+    "வரி 10: Condition False ஆக இருப்பதால் if Block இயக்கப்படாது.",
+    "வரி 13: Condition False என்பதால் else Block இயக்கப்படுகிறது.",
+    "வரி 15: cout மூலம் 'Don't Give Up Deepak! Better Luck Next Time.' என்ற செய்தி திரையில் காட்டப்படுகிறது.",
+    "வரி 18: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `Don't Give Up Deepak! Better Luck Next Time.`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
