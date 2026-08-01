@@ -638,7 +638,388 @@ Chennai`,
     },
   ],
 },
+{
+  topicId: 3,
+  title: "Data Types",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to create an integer variable named 'age' with the value 20 and print it.",
+
+      questionTamil:
+        "'age' என்ற Integer Variable-ஐ உருவாக்கி அதில் 20 என்ற மதிப்பை சேமித்து Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create an integer variable and use print().",
+
+      hintTamil:
+        "ஒரு Integer Variable உருவாக்கி print() மூலம் Print செய்யுங்கள்.",
+
+      expectedOutput: `20`,
+
+      expectedOutputTamil: `20`,
+
+      solution: `age = 20
+
+print(age)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to create a float variable named 'cgpa' with the value 8.5 and print it.",
+
+      questionTamil:
+        "'cgpa' என்ற Float Variable-ஐ உருவாக்கி அதில் 8.5 என்ற மதிப்பை சேமித்து Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Store a decimal value in a variable and print it.",
+
+      hintTamil:
+        "ஒரு Decimal Value-ஐ Variable-ல் சேமித்து Print செய்யுங்கள்.",
+
+      expectedOutput: `8.5`,
+
+      expectedOutputTamil: `8.5`,
+
+      solution: `cgpa = 8.5
+
+print(cgpa)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to create a string variable named 'college' with the value 'Don Bosco College' and print it.",
+
+      questionTamil:
+        "'college' என்ற String Variable-ஐ உருவாக்கி அதில் 'Don Bosco College' என்ற மதிப்பை சேமித்து Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Store the text inside double quotes.",
+
+      hintTamil:
+        "Text-ஐ Double Quotes-க்குள் சேமியுங்கள்.",
+
+      expectedOutput: `Don Bosco College`,
+
+      expectedOutputTamil: `Don Bosco College`,
+
+      solution: `college = "Don Bosco College"
+
+print(college)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to create a Boolean variable named 'isStudent' with the value True and print it.",
+
+      questionTamil:
+        "'isStudent' என்ற Boolean Variable-ஐ உருவாக்கி அதில் True என்ற மதிப்பை சேமித்து Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Store the value True in a variable and print it.",
+
+      hintTamil:
+        "True என்ற மதிப்பை Variable-ல் சேமித்து print() மூலம் Print செய்யுங்கள்.",
+
+      expectedOutput: `True`,
+
+      expectedOutputTamil: `True`,
+
+      solution: `isStudent = True
+
+print(isStudent)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to create four variables: an integer (age), a float (cgpa), a string (name), and a Boolean (isStudent). Print all the variables.",
+
+      questionTamil:
+        "ஒரு Integer (age), Float (cgpa), String (name) மற்றும் Boolean (isStudent) ஆகிய நான்கு Variables-ஐ உருவாக்கி, அனைத்தையும் Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create variables of different data types and print each one.",
+
+      hintTamil:
+        "வெவ்வேறு Data Types-இல் Variables உருவாக்கி ஒவ்வொன்றையும் Print செய்யுங்கள்.",
+
+      expectedOutput: `20
+8.5
+Deepak
+True`,
+
+      expectedOutputTamil: `20
+8.5
+Deepak
+True`,
+
+      solution: `age = 20
+
+cgpa = 8.5
+
+name = "Deepak"
+
+isStudent = True
+
+print(age)
+
+print(cgpa)
+
+print(name)
+
+print(isStudent)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to create variables for your name, age, CGPA, and whether you are a student. Print all the values.",
+
+      questionTamil:
+        "உங்கள் பெயர், வயது, CGPA மற்றும் நீங்கள் Student-ஆ இல்லையா என்பதற்கான Variables-ஐ உருவாக்கி, அனைத்து Values-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use String, Integer, Float, and Boolean data types.",
+
+      hintTamil:
+        "String, Integer, Float மற்றும் Boolean Data Types-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Deepak
+20
+8.5
+True`,
+
+      expectedOutputTamil: `Deepak
+20
+8.5
+True`,
+
+      solution: `name = "Deepak"
+
+age = 20
+
+cgpa = 8.5
+
+isStudent = True
+
+print(name)
+
+print(age)
+
+print(cgpa)
+
+print(isStudent)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a Python program to create variables for your name (String), age (Integer), CGPA (Float), and whether you have completed Python (Boolean). Print all the values.",
+
+      questionTamil:
+        "உங்கள் பெயர் (String), வயது (Integer), CGPA (Float) மற்றும் Python முடித்துள்ளீர்களா (Boolean) என்பதற்கான Variables-ஐ உருவாக்கி, அனைத்து Values-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use String, Integer, Float, and Boolean data types.",
+
+      hintTamil:
+        "String, Integer, Float மற்றும் Boolean Data Types-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Deepak
+20
+8.5
+True`,
+
+      expectedOutputTamil: `Deepak
+20
+8.5
+True`,
+
+      solution: `name = "Deepak"
+
+age = 20
+
+cgpa = 8.5
+
+completedPython = True
+
+print(name)
+
+print(age)
+
+print(cgpa)
+
+print(completedPython)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a Python program to create variables for two students' names, one integer age, one float CGPA, and one Boolean value. Print all the variables.",
+
+      questionTamil:
+        "இரண்டு மாணவர்களின் பெயர்கள், ஒரு Integer வயது, ஒரு Float CGPA மற்றும் ஒரு Boolean Value ஆகியவற்றிற்கு Variables உருவாக்கி, அனைத்தையும் Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use different data types and print each variable.",
+
+      hintTamil:
+        "வெவ்வேறு Data Types-ஐ பயன்படுத்தி Variables உருவாக்கி, ஒவ்வொன்றையும் Print செய்யுங்கள்.",
+
+      expectedOutput: `Deepak
+Kathir
+20
+8.5
+True`,
+
+      expectedOutputTamil: `Deepak
+Kathir
+20
+8.5
+True`,
+
+      solution: `student1 = "Deepak"
+
+student2 = "Kathir"
+
+age = 20
+
+cgpa = 8.5
+
+isStudent = True
+
+print(student1)
+
+print(student2)
+
+print(age)
+
+print(cgpa)
+
+print(isStudent)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a Python program to create variables for your name, age, department, CGPA, college name, and whether you are placed. Print all the values on separate lines.",
+
+      questionTamil:
+        "உங்கள் பெயர், வயது, Department, CGPA, College பெயர் மற்றும் நீங்கள் Placed ஆக உள்ளீர்களா என்பதற்கான Variables-ஐ உருவாக்கி, அனைத்து Values-ஐ தனித்தனி வரிகளில் Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use String, Integer, Float, and Boolean data types.",
+
+      hintTamil:
+        "String, Integer, Float மற்றும் Boolean Data Types-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Deepak
+20
+Computer Science
+8.5
+Don Bosco College
+False`,
+
+      expectedOutputTamil: `Deepak
+20
+Computer Science
+8.5
+Don Bosco College
+False`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a Python program to create variables for two students' names, one college name, one department, one CGPA, and one Boolean value indicating whether they completed Python. Print a meaningful message using all the variables.",
+
+      questionTamil:
+        "இரண்டு மாணவர்களின் பெயர்கள், ஒரு College பெயர், ஒரு Department, ஒரு CGPA மற்றும் அவர்கள் Python முடித்துள்ளார்களா என்பதை குறிக்கும் Boolean Variable ஆகியவற்றை உருவாக்கி, அனைத்து Variables-ஐ பயன்படுத்தி ஒரு பொருத்தமான (Meaningful) செய்தியை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create variables of different data types and use them inside one or more print() statements.",
+
+      hintTamil:
+        "வெவ்வேறு Data Types-இல் Variables உருவாக்கி, அவற்றை print() Statements-ல் பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Deepak and Kathir are studying Computer Science at Don Bosco College.
+CGPA: 8.5
+Python Completed: True`,
+
+      expectedOutputTamil: `Deepak and Kathir are studying Computer Science at Don Bosco College.
+CGPA: 8.5
+Python Completed: True`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+  ],
+},
 ];
 
 export default questions;
