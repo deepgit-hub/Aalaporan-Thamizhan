@@ -1095,7 +1095,98 @@ Day 5 : Deepak practiced C++.`,
 
   completed: false,
 },
+{
+  id: 14,
 
+  title: "Nested Loops",
+
+  englishDefinition:
+    "A Nested Loop is a loop inside another loop. The inner loop executes completely for every single iteration of the outer loop. Nested loops are commonly used for pattern printing, tables, matrices, and multidimensional data.",
+
+  tamilDefinition:
+    "Nested Loop என்பது ஒரு Loop-க்குள் மற்றொரு Loop இருப்பதாகும். Outer Loop ஒரு முறை இயங்கும் ஒவ்வொரு முறையும், Inner Loop முழுமையாக இயங்கும். Pattern Printing, Tables, Matrix மற்றும் பல பரிமாண (Multidimensional) தரவுகளை செயல்படுத்த Nested Loop பயன்படுத்தப்படுகிறது.",
+
+  realWorldUsage:
+    "Nested Loops are used in many real-world applications. For example, displaying rows and columns in an Excel sheet, processing seats in a theatre, printing calendars, and working with matrices in image processing.",
+
+  realWorldUsageTamil:
+    "Nested Loop பல Software-களில் பயன்படுத்தப்படுகிறது. உதாரணமாக, Excel Sheet-ல் Rows மற்றும் Columns-ஐ செயல்படுத்துவது, Theatre Seat Arrangement, Calendar Printing மற்றும் Image Processing-ல் Matrix Data-வை செயல்படுத்துவது போன்ற இடங்களில் பயன்படுத்தப்படுகிறது.",
+
+  syntax: `for(initialization; condition; increment)
+{
+    for(initialization; condition; increment)
+    {
+        // Code to execute
+    }
+}`,
+
+  syntaxExplanationEnglish: [
+    "The outer loop controls the number of rows.",
+    "The inner loop controls the number of columns.",
+    "For every iteration of the outer loop, the inner loop executes completely.",
+    "Nested loops are mainly used for pattern printing and matrix operations.",
+    "The outer loop finishes only after the inner loop completes all its iterations."
+  ],
+
+  syntaxExplanationTamil: [
+    "Outer Loop என்பது Rows-ஐ கட்டுப்படுத்துகிறது.",
+    "Inner Loop என்பது Columns-ஐ கட்டுப்படுத்துகிறது.",
+    "Outer Loop ஒரு முறை இயங்கும் ஒவ்வொரு முறையும் Inner Loop முழுமையாக இயக்கப்படும்.",
+    "Nested Loop முக்கியமாக Pattern Printing மற்றும் Matrix Operations-க்கு பயன்படுத்தப்படுகிறது.",
+    "Inner Loop முழுவதும் முடிந்த பிறகே Outer Loop அடுத்த Iteration-க்கு செல்லும்."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    for(int row = 1; row <= 3; row++)
+    {
+        for(int column = 1; column <= 4; column++)
+        {
+            cout << "* ";
+        }
+
+        cout << endl;
+    }
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: int main() is the starting point of the program.",
+    "Line 7: The outer loop controls the number of rows and runs 3 times.",
+    "Line 9: The inner loop controls the number of columns and runs 4 times for every row.",
+    "Line 11: cout prints '* ' on the same line.",
+    "Line 14: cout << endl; moves the cursor to the next line after completing one row.",
+    "Line 7: The process repeats until all rows are printed.",
+    "Line 17: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 7: Outer Loop, 3 Rows உருவாக்குகிறது.",
+    "வரி 9: ஒவ்வொரு Row-க்கும் Inner Loop, 4 Columns உருவாக்குகிறது.",
+    "வரி 11: cout மூலம் '* ' திரையில் அச்சிடப்படுகிறது.",
+    "வரி 14: cout << endl; ஒரு Row முடிந்த பிறகு அடுத்த வரிக்கு Cursor-ஐ நகர்த்துகிறது.",
+    "வரி 7: அனைத்து Rows முடியும் வரை இந்த செயல்முறை தொடர்கிறது.",
+    "வரி 17: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `* * * *
+* * * *
+* * * *`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
