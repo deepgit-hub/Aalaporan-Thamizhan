@@ -471,7 +471,85 @@ Keep Learning with Alaporan Thamizhan!`,
 
   completed: false,
 },
+{
+  id: 7,
 
+  title: "If-Else Statement",
+
+  englishDefinition:
+    "An If-Else Statement is a decision-making statement used to execute one block of code when a condition is True and another block of code when the condition is False. It helps a program choose between two possible actions.",
+
+  tamilDefinition:
+    "If-Else Statement என்பது ஒரு Decision-Making Statement ஆகும். கொடுக்கப்பட்டுள்ள Condition True ஆக இருந்தால் ஒரு Block இயக்கப்படும். Condition False ஆக இருந்தால் மற்றொரு Block இயக்கப்படும். இதன் மூலம் Program இரண்டு செயல்களில் ஒன்றை தேர்வு செய்ய முடியும்.",
+
+  realWorldUsage:
+    "If-Else Statements are widely used in software applications. For example, a login system displays 'Login Successful' if the username and password are correct; otherwise, it displays 'Invalid Credentials'. Similarly, an online exam portal displays 'Pass' or 'Fail' based on the student's marks.",
+
+  realWorldUsageTamil:
+    "If-Else Statement அனைத்து Software Applications-லிலும் அதிகமாக பயன்படுத்தப்படுகிறது. உதாரணமாக, Login System-ல் சரியான Username மற்றும் Password கொடுக்கப்பட்டால் 'Login Successful' என்று காட்டப்படும். இல்லையெனில் 'Invalid Credentials' என்று காட்டப்படும். அதேபோல் Online Exam Portal-ல் மாணவரின் மதிப்பெண்ணைப் பொறுத்து 'Pass' அல்லது 'Fail' என்று காட்டப்படுகிறது.",
+
+  syntax: `if condition:
+    # Statements if condition is True
+else:
+    # Statements if condition is False`,
+
+  syntaxExplanationEnglish: [
+    "The 'if' keyword checks the specified condition.",
+    "If the condition is True, the statements inside the if block are executed.",
+    "If the condition is False, the statements inside the else block are executed.",
+    "A colon (:) must be placed after both the if and else statements.",
+    "Proper indentation is mandatory for both blocks."
+  ],
+
+  syntaxExplanationTamil: [
+    "'if' Keyword கொடுக்கப்பட்டுள்ள Condition-ஐ சரிபார்க்கிறது.",
+    "Condition True ஆக இருந்தால் if Block-க்குள் உள்ள Statements இயக்கப்படும்.",
+    "Condition False ஆக இருந்தால் else Block-க்குள் உள்ள Statements இயக்கப்படும்.",
+    "if மற்றும் else Statements-ன் முடிவில் Colon (:) கட்டாயமாக இட வேண்டும்.",
+    "இரண்டு Blocks-க்கும் சரியான Indentation அவசியம்."
+  ],
+
+  exampleProgram: `python_marks = 42
+
+if python_marks >= 50:
+    print("Congratulations Deepak!")
+
+    print("You Passed the Python Exam.")
+else:
+    print("Don't Give Up Deepak!")
+
+    print("Practice More and Try Again.")
+
+print("Keep Learning with Alaporan Thamizhan!")`,
+
+  programExplanationEnglish: [
+    "Line 1: A variable named 'python_marks' is created and assigned the value 42.",
+    "Line 3: The if statement checks whether 'python_marks' is greater than or equal to 50.",
+    "Line 4-6: These statements execute only if the condition is True.",
+    "Line 7: The else block begins.",
+    "Line 8-10: Since the condition is False, these statements are executed.",
+    "Line 12: This print() statement is outside the if-else block, so it always executes.",
+    "The program demonstrates how if-else selects one of two possible execution paths."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: 'python_marks' என்ற Variable உருவாக்கப்பட்டு அதில் 42 என்ற மதிப்பு சேமிக்கப்படுகிறது.",
+    "வரி 3: if Statement, 'python_marks' 50 அல்லது அதற்கு மேல் உள்ளதா என்பதை சரிபார்க்கிறது.",
+    "வரி 4-6: Condition True ஆக இருந்தால் மட்டுமே இந்த Statements இயக்கப்படும்.",
+    "வரி 7: else Block தொடங்குகிறது.",
+    "வரி 8-10: Condition False என்பதால் இந்த Statements இயக்கப்படுகின்றன.",
+    "வரி 12: இந்த print() Statement if-else Block-க்கு வெளியே இருப்பதால் எப்போதும் இயக்கப்படும்.",
+    "இந்த Program, Condition-ஐ பொறுத்து if அல்லது else Block-ல் ஒன்றை மட்டும் இயக்குவதை விளக்குகிறது."
+  ],
+
+  output: `Don't Give Up Deepak!
+Practice More and Try Again.
+Keep Learning with Alaporan Thamizhan!`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
