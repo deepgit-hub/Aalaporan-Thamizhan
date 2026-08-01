@@ -872,7 +872,86 @@ Keep Learning with Alaporan Thamizhan!`,
 
   completed: false,
 },
+{
+  id: 12,
 
+  title: "While Loop",
+
+  englishDefinition:
+    "A While Loop is a looping statement used to execute a block of code repeatedly as long as a specified condition is True. The loop stops automatically when the condition becomes False.",
+
+  tamilDefinition:
+    "While Loop என்பது ஒரு குறிப்பிட்ட Condition True ஆக இருக்கும் வரை ஒரு Code Block-ஐ மீண்டும் மீண்டும் (Repeatedly) இயக்க பயன்படும் Looping Statement ஆகும். Condition False ஆனவுடன் Loop தானாகவே நிறுத்தப்படுகிறது.",
+
+  realWorldUsage:
+    "While Loops are used in many software applications. For example, an ATM repeatedly asks the user to enter the correct PIN until the correct PIN is entered. Similarly, a login page keeps asking for the password until the user enters the correct one.",
+
+  realWorldUsageTamil:
+    "While Loop பல Software Applications-லிலும் பயன்படுத்தப்படுகிறது. உதாரணமாக, ATM-ல் சரியான PIN உள்ளிடும் வரை மீண்டும் மீண்டும் PIN கேட்கப்படுகிறது. அதேபோல் Login Page-ல் சரியான Password வழங்கும் வரை பயனரிடம் Password கேட்கப்படுகிறது.",
+
+  syntax: `while condition:
+    # Statements
+
+    # Update Variable`,
+
+  syntaxExplanationEnglish: [
+    "The 'while' keyword starts the loop.",
+    "The condition is checked before every iteration.",
+    "A colon (:) must be placed at the end of the condition.",
+    "The statements inside the loop must be properly indented.",
+    "The loop variable should be updated inside the loop to avoid an infinite loop."
+  ],
+
+  syntaxExplanationTamil: [
+    "'while' Keyword Loop-ஐ தொடங்க பயன்படுத்தப்படுகிறது.",
+    "ஒவ்வொரு முறையும் Loop இயக்கப்படுவதற்கு முன் Condition சரிபார்க்கப்படுகிறது.",
+    "Condition-ன் முடிவில் Colon (:) கட்டாயமாக இட வேண்டும்.",
+    "Loop-க்குள் உள்ள Statements சரியான Indentation-உடன் எழுதப்பட வேண்டும்.",
+    "Infinite Loop ஏற்படாமல் இருக்க Loop Variable-ஐ Loop-க்குள் Update செய்ய வேண்டும்."
+  ],
+
+  exampleProgram: `count = 1
+
+while count <= 5:
+    print("Welcome to Alaporan Thamizhan")
+
+    count = count + 1
+
+print("Loop Completed Successfully!")`,
+
+  programExplanationEnglish: [
+    "Line 1: A variable named 'count' is created and assigned the value 1.",
+    "Line 3: The while loop checks whether 'count' is less than or equal to 5.",
+    "Line 4: Since the condition is True, the message is displayed.",
+    "Line 6: The value of 'count' is increased by 1.",
+    "Line 3: The condition is checked again after updating the value.",
+    "The loop continues until 'count' becomes 6.",
+    "Line 8: Once the condition becomes False, the loop ends and this statement is executed.",
+    "The program demonstrates how a while loop repeats a block of code based on a condition."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: 'count' என்ற Variable உருவாக்கப்பட்டு அதில் 1 என்ற மதிப்பு சேமிக்கப்படுகிறது.",
+    "வரி 3: While Loop, 'count' 5 அல்லது அதற்கு குறைவா என்பதை சரிபார்க்கிறது.",
+    "வரி 4: Condition True என்பதால் 'Welcome to Alaporan Thamizhan' என்ற செய்தி திரையில் காட்டப்படுகிறது.",
+    "வரி 6: 'count' Variable-ன் மதிப்பு 1 அதிகரிக்கப்படுகிறது.",
+    "வரி 3: புதிய மதிப்புடன் Condition மீண்டும் சரிபார்க்கப்படுகிறது.",
+    "'count' மதிப்பு 6 ஆகும் வரை Loop தொடர்ந்து இயக்கப்படுகிறது.",
+    "வரி 8: Condition False ஆனவுடன் Loop முடிந்து இந்த Statement இயக்கப்படுகிறது.",
+    "இந்த Program, Condition True ஆக இருக்கும் வரை While Loop எப்படி மீண்டும் மீண்டும் இயக்கப்படுகிறது என்பதை விளக்குகிறது."
+  ],
+
+  output: `Welcome to Alaporan Thamizhan
+Welcome to Alaporan Thamizhan
+Welcome to Alaporan Thamizhan
+Welcome to Alaporan Thamizhan
+Welcome to Alaporan Thamizhan
+Loop Completed Successfully!`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
