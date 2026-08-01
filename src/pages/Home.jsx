@@ -196,7 +196,7 @@ function Home() {
           <div className="footer-right">
 <div className="footer-buttons">
             <button
-              className="portfolio-btn"
+              className="portfolio-btn1"
               onClick={() =>
                 window.open(
                   "https://deepgit-hub.github.io/Digital-Portfolio/",
@@ -207,7 +207,7 @@ function Home() {
               👨‍💻 Know More DEEPAK
             </button>
             <button
-              className="portfolio-btn"
+              className="portfolio-btn2"
               onClick={() =>
                 window.open(
                   "https://deepgit-hub.github.io/Digital-Portfolio/",
