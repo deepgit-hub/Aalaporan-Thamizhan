@@ -460,6 +460,86 @@ Total Marks : 100`,
 
   completed: false,
 },
+{
+  id: 6,
+
+  title: "If Statement",
+
+  englishDefinition:
+    "The if statement is a decision-making statement used to execute a block of code only when a specified condition is true. If the condition is false, the block of code inside the if statement is skipped.",
+
+  tamilDefinition:
+    "If Statement என்பது ஒரு Decision Making Statement ஆகும். கொடுக்கப்பட்டுள்ள Condition உண்மையாக (True) இருந்தால் மட்டுமே அதன் உள்ளே உள்ள Code இயங்கும். Condition தவறாக (False) இருந்தால் அந்த Code இயக்கப்படாது.",
+
+  realWorldUsage:
+    "If statements are used in almost every software application. For example, an ATM checks whether the entered PIN is correct, a college portal verifies whether attendance is above 75%, and an e-commerce website checks whether a product is in stock before allowing a purchase.",
+
+  realWorldUsageTamil:
+    "If Statement அனைத்து Software-களிலும் பயன்படுத்தப்படுகிறது. உதாரணமாக, ATM-ல் PIN சரியானதா என்பதை சரிபார்ப்பது, College Portal-ல் Attendance 75% மேல் உள்ளதா என்பதை சரிபார்ப்பது, E-commerce Website-ல் Product Stock உள்ளதா என்பதை சரிபார்ப்பது போன்ற இடங்களில் பயன்படுத்தப்படுகிறது.",
+
+  syntax: `if(condition)
+{
+    // Code to execute if the condition is true
+}`,
+
+  syntaxExplanationEnglish: [
+    "The keyword 'if' starts the conditional statement.",
+    "The condition is written inside parentheses ().",
+    "If the condition is true, the code inside the curly braces {} executes.",
+    "If the condition is false, the code inside the curly braces is skipped."
+  ],
+
+  syntaxExplanationTamil: [
+    "'if' என்பது Conditional Statement-ஐ தொடங்கும் Keyword ஆகும்.",
+    "Condition எப்போதும் Parentheses () உள்ளே எழுதப்படுகிறது.",
+    "Condition True ஆக இருந்தால் Curly Braces {} உள்ளே இருக்கும் Code இயக்கப்படும்.",
+    "Condition False ஆக இருந்தால் Curly Braces உள்ளே இருக்கும் Code இயக்கப்படாது."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int deepakMarks = 95;
+
+    if(deepakMarks >= 50)
+    {
+        cout << "Congratulations Deepak! You Passed.";
+    }
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: int main() is the starting point of the program.",
+    "Line 7: An integer variable 'deepakMarks' is created and stores the value 95.",
+    "Line 9: The if statement checks whether deepakMarks is greater than or equal to 50.",
+    "Line 10: Since the condition is true, the code inside the if block executes.",
+    "Line 11: cout displays the message 'Congratulations Deepak! You Passed.'",
+    "Line 14: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 7: 'deepakMarks' என்ற Integer Variable-ல் 95 சேமிக்கப்படுகிறது.",
+    "வரி 9: if Statement, deepakMarks 50-க்கு சமமா அல்லது அதைவிட பெரியதா என்பதை சரிபார்க்கிறது.",
+    "வரி 10: Condition True ஆக இருப்பதால் if Block உள்ளே இருக்கும் Code இயக்கப்படுகிறது.",
+    "வரி 11: cout மூலம் 'Congratulations Deepak! You Passed.' என்ற செய்தி திரையில் காட்டப்படுகிறது.",
+    "வரி 14: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `Congratulations Deepak! You Passed.`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
