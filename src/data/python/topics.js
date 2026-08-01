@@ -2129,6 +2129,116 @@ Deepak and Kathir are learning Python.`,
 
   completed: false,
 },
+{
+  id: 28,
+
+  title: "Hierarchical Inheritance",
+
+  englishDefinition:
+    "Hierarchical Inheritance is a type of inheritance in which multiple child classes inherit the properties and methods of a single parent class. This allows all child classes to reuse the common features of the parent class while having their own unique features.",
+
+  tamilDefinition:
+    "Hierarchical Inheritance என்பது ஒரு Parent Class-இன் Properties மற்றும் Methods-ஐ பல Child Classes பெறும் Inheritance வகையாகும். இதன் மூலம் அனைத்து Child Classes-மும் Parent Class-இன் பொதுவான அம்சங்களை (Common Features) பயன்படுத்தி, தங்களுக்கென தனிப்பட்ட அம்சங்களையும் கொண்டிருக்க முடியும்.",
+
+  realWorldUsage:
+    "Hierarchical Inheritance is commonly used in software applications. For example, in a College Management System, both Student and Teacher classes can inherit common information such as college name and welcome message from a single Person class while having their own individual features.",
+
+  realWorldUsageTamil:
+    "Hierarchical Inheritance பல Software Applications-லிலும் பயன்படுத்தப்படுகிறது. உதாரணமாக, College Management System-ல் Student மற்றும் Teacher ஆகிய இரண்டு Classes-மும் Person Class-இல் இருந்து College Name மற்றும் Welcome Message போன்ற பொதுவான தகவல்களை பெறலாம். ஆனால் ஒவ்வொரு Class-க்கும் தனிப்பட்ட செயல்பாடுகள் இருக்கும்.",
+
+  syntax: `class Parent:
+    # Parent Members
+
+class Child1(Parent):
+    # Child1 Members
+
+class Child2(Parent):
+    # Child2 Members`,
+
+  syntaxExplanationEnglish: [
+    "A single parent class is created first.",
+    "Multiple child classes inherit from the same parent class.",
+    "Each child class can access the parent's attributes and methods.",
+    "Each child class can also have its own unique methods.",
+    "Hierarchical Inheritance promotes code reusability."
+  ],
+
+  syntaxExplanationTamil: [
+    "முதலில் ஒரு Parent Class உருவாக்கப்படுகிறது.",
+    "அதே Parent Class-இல் இருந்து பல Child Classes உருவாக்கப்படுகின்றன.",
+    "ஒவ்வொரு Child Class-மும் Parent Class-இன் Attributes மற்றும் Methods-ஐ பயன்படுத்த முடியும்.",
+    "ஒவ்வொரு Child Class-க்கும் தனிப்பட்ட Methods இருக்கலாம்.",
+    "Hierarchical Inheritance Code Reusability-ஐ அதிகரிக்கிறது."
+  ],
+
+  exampleProgram: `class Person:
+
+    def welcome(self):
+        print("Welcome to Alaporan Thamizhan!")
+
+class Student(Person):
+
+    def study(self):
+        print("Deepak is learning Python.")
+
+class Teacher(Person):
+
+    def teach(self):
+        print("Kathir is teaching Python.")
+
+student = Student()
+
+teacher = Teacher()
+
+student.welcome()
+
+student.study()
+
+teacher.welcome()
+
+teacher.teach()`,
+
+  programExplanationEnglish: [
+    "Line 1: A parent class named 'Person' is created.",
+    "Line 3: The welcome() method is defined inside the Person class.",
+    "Line 6: A child class named 'Student' inherits from the Person class.",
+    "Line 8: The study() method is created inside the Student class.",
+    "Line 11: Another child class named 'Teacher' inherits from the Person class.",
+    "Line 13: The teach() method is created inside the Teacher class.",
+    "Line 16: An object named 'student' is created.",
+    "Line 18: An object named 'teacher' is created.",
+    "Line 20: The inherited welcome() method is called using the student object.",
+    "Line 22: The study() method is called using the student object.",
+    "Line 24: The inherited welcome() method is called using the teacher object.",
+    "Line 26: The teach() method is called using the teacher object.",
+    "The program demonstrates how multiple child classes inherit from a single parent class."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: 'Person' என்ற Parent Class உருவாக்கப்படுகிறது.",
+    "வரி 3: Person Class-க்குள் welcome() Method உருவாக்கப்படுகிறது.",
+    "வரி 6: 'Student' என்ற Child Class, Person Class-இல் இருந்து Inherit செய்கிறது.",
+    "வரி 8: Student Class-க்குள் study() Method உருவாக்கப்படுகிறது.",
+    "வரி 11: 'Teacher' என்ற மற்றொரு Child Class, Person Class-இல் இருந்து Inherit செய்கிறது.",
+    "வரி 13: Teacher Class-க்குள் teach() Method உருவாக்கப்படுகிறது.",
+    "வரி 16: 'student' என்ற Object உருவாக்கப்படுகிறது.",
+    "வரி 18: 'teacher' என்ற Object உருவாக்கப்படுகிறது.",
+    "வரி 20: Student Object மூலம் Parent Class-இன் welcome() Method அழைக்கப்படுகிறது.",
+    "வரி 22: Student Class-இன் study() Method அழைக்கப்படுகிறது.",
+    "வரி 24: Teacher Object மூலம் Parent Class-இன் welcome() Method அழைக்கப்படுகிறது.",
+    "வரி 26: Teacher Class-இன் teach() Method அழைக்கப்படுகிறது.",
+    "இந்த Program, ஒரு Parent Class-இல் இருந்து பல Child Classes எப்படி Inherit செய்கின்றன என்பதை விளக்குகிறது."
+  ],
+
+  output: `Welcome to Alaporan Thamizhan!
+Deepak is learning Python.
+Welcome to Alaporan Thamizhan!
+Kathir is teaching Python.`,
+
+  locked: false,
+
+  completed: false,
+},
 
 ];
 
