@@ -740,7 +740,89 @@ int main()
 
   completed: false,
 },
+{
+  id: 10,
 
+  title: "Ternary Operator",
+
+  englishDefinition:
+    "The Ternary Operator is a shorthand way of writing an if-else statement. It checks a condition and returns one value if the condition is true and another value if the condition is false. It makes simple decision-making statements shorter and easier to read.",
+
+  tamilDefinition:
+    "Ternary Operator என்பது If-Else Statement-ன் சுருக்கமான (Short Form) வடிவமாகும். இது ஒரு Condition-ஐ சரிபார்த்து, அது True ஆக இருந்தால் ஒரு மதிப்பையும், False ஆக இருந்தால் மற்றொரு மதிப்பையும் வழங்குகிறது. எளிய Decision Making Program-களை குறுகிய வடிவில் எழுத இது பயன்படுகிறது.",
+
+  realWorldUsage:
+    "The Ternary Operator is used in software applications where a simple decision is required. For example, displaying 'Pass' or 'Fail' based on marks, showing 'Online' or 'Offline' status, and checking whether a user is eligible for a service.",
+
+  realWorldUsageTamil:
+    "Ternary Operator எளிய முடிவுகளை எடுக்க வேண்டிய Software-களில் பயன்படுத்தப்படுகிறது. உதாரணமாக, மாணவர் Pass அல்லது Fail என்பதை காட்டுவது, User Online அல்லது Offline என்பதை காட்டுவது, மற்றும் ஒரு சேவைக்கு தகுதியானவரா என்பதை சரிபார்ப்பது போன்ற இடங்களில் பயன்படுத்தப்படுகிறது.",
+
+  syntax: `variable = (condition) ? value_if_true : value_if_false;`,
+
+  syntaxExplanationEnglish: [
+    "The condition is written inside parentheses ().",
+    "The '?' symbol separates the condition from the true value.",
+    "If the condition is true, the value before ':' is selected.",
+    "If the condition is false, the value after ':' is selected.",
+    "The selected value is stored in the specified variable."
+  ],
+
+  syntaxExplanationTamil: [
+    "Condition எப்போதும் Parentheses () உள்ளே எழுதப்படுகிறது.",
+    "'?' Symbol என்பது Condition மற்றும் True Value-ஐ பிரிக்கிறது.",
+    "Condition True ஆக இருந்தால் ':'-க்கு முன் இருக்கும் Value தேர்வு செய்யப்படும்.",
+    "Condition False ஆக இருந்தால் ':'-க்கு பின் இருக்கும் Value தேர்வு செய்யப்படும்.",
+    "தேர்வு செய்யப்பட்ட Value குறிப்பிடப்பட்ட Variable-ல் சேமிக்கப்படுகிறது."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int marks = 82;
+
+    string result = (marks >= 50) ? "Pass" : "Fail";
+
+    cout << "Result : " << result << endl;
+
+    cout << "Excellent Work Deepak!" << endl;
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: int main() is the starting point of the program.",
+    "Line 7: An integer variable 'marks' is created and stores the value 82.",
+    "Line 9: The Ternary Operator checks whether marks are greater than or equal to 50.",
+    "Line 9: Since the condition is true, 'Pass' is stored in the variable 'result'.",
+    "Line 11: cout displays the student's result.",
+    "Line 13: cout displays a motivational message.",
+    "Line 15: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 7: 'marks' என்ற Integer Variable-ல் 82 சேமிக்கப்படுகிறது.",
+    "வரி 9: Ternary Operator, Marks 50 அல்லது அதற்கு மேல் உள்ளதா என்பதை சரிபார்க்கிறது.",
+    "வரி 9: Condition True ஆக இருப்பதால் 'Pass' என்ற மதிப்பு 'result' Variable-ல் சேமிக்கப்படுகிறது.",
+    "வரி 11: cout மூலம் Result திரையில் காட்டப்படுகிறது.",
+    "வரி 13: cout மூலம் ஒரு ஊக்கமளிக்கும் செய்தி திரையில் காட்டப்படுகிறது.",
+    "வரி 15: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `Result : Pass
+Excellent Work Deepak!`,
+
+  locked: false,
+
+  completed: false,
+},
 
 ];
 
