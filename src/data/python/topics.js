@@ -1022,7 +1022,75 @@ Loop Completed Successfully!`,
 
   completed: false,
 },
+{
+  id: 14,
 
+  title: "Nested Loop",
+
+  englishDefinition:
+    "A Nested Loop is a loop placed inside another loop. The inner loop executes completely for every iteration of the outer loop. Nested Loops are commonly used to work with patterns, tables, and two-dimensional data.",
+
+  tamilDefinition:
+    "Nested Loop என்பது ஒரு Loop-க்குள் மற்றொரு Loop இருப்பதாகும். Outer Loop ஒவ்வொரு முறை இயங்கும் போதும், Inner Loop முழுமையாக இயக்கப்படும். Pattern Printing, Tables மற்றும் Two-Dimensional Data போன்றவற்றில் Nested Loop அதிகமாக பயன்படுத்தப்படுகிறது.",
+
+  realWorldUsage:
+    "Nested Loops are used in many software applications. For example, displaying seats in a cinema hall, creating multiplication tables, processing rows and columns in spreadsheets, and displaying products in an online shopping website.",
+
+  realWorldUsageTamil:
+    "Nested Loop பல Software Applications-லிலும் பயன்படுத்தப்படுகிறது. உதாரணமாக, Cinema Hall Seat Arrangement, Multiplication Tables உருவாக்குவது, Spreadsheet-ல் Rows மற்றும் Columns-ஐ செயல்படுத்துவது மற்றும் Online Shopping Website-ல் Products-ஐ Grid வடிவில் காட்டுவது போன்ற இடங்களில் பயன்படுத்தப்படுகிறது.",
+
+  syntax: `for i in range(rows):
+    for j in range(columns):
+        # Statements`,
+
+  syntaxExplanationEnglish: [
+    "The outer loop controls the number of rows.",
+    "The inner loop controls the number of columns.",
+    "The inner loop executes completely for every iteration of the outer loop.",
+    "Proper indentation is required for both loops.",
+    "Nested Loops are mainly used for patterns and two-dimensional data."
+  ],
+
+  syntaxExplanationTamil: [
+    "Outer Loop, Rows-ன் எண்ணிக்கையை கட்டுப்படுத்துகிறது.",
+    "Inner Loop, Columns-ன் எண்ணிக்கையை கட்டுப்படுத்துகிறது.",
+    "Outer Loop ஒவ்வொரு முறை இயங்கும் போதும் Inner Loop முழுமையாக இயக்கப்படும்.",
+    "இரண்டு Loops-க்கும் சரியான Indentation அவசியம்.",
+    "Nested Loops பெரும்பாலும் Pattern Printing மற்றும் Two-Dimensional Data-க்கு பயன்படுத்தப்படுகின்றன."
+  ],
+
+  exampleProgram: `for row in range(3):
+    for column in range(4):
+        print("*", end=" ")
+
+    print()`,
+
+  programExplanationEnglish: [
+    "Line 1: The outer loop executes 3 times to create 3 rows.",
+    "Line 2: The inner loop executes 4 times for every row.",
+    "Line 3: print() displays '*' without moving to the next line because of end=' '.",
+    "Line 5: print() moves the cursor to the next line after completing one row.",
+    "The process repeats until all rows are printed.",
+    "The program demonstrates how Nested Loops are used to create patterns."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: Outer Loop, 3 Rows உருவாக்குவதற்காக மூன்று முறை இயக்கப்படுகிறது.",
+    "வரி 2: ஒவ்வொரு Row-க்கும் Inner Loop நான்கு முறை இயக்கப்படுகிறது.",
+    "வரி 3: end=' ' பயன்படுத்தப்பட்டதால் '*' ஒரே வரியில் இடைவெளியுடன் காட்டப்படுகிறது.",
+    "வரி 5: ஒரு Row முடிந்த பிறகு print() அடுத்த வரிக்கு செல்கிறது.",
+    "அனைத்து Rows-மும் முடியும் வரை இந்த செயல்முறை தொடர்கிறது.",
+    "இந்த Program, Pattern உருவாக்க Nested Loop எப்படி பயன்படுத்தப்படுகிறது என்பதை விளக்குகிறது."
+  ],
+
+  output: `* * * *
+* * * *
+* * * *`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
