@@ -210,7 +210,7 @@ const topics = [
   completed: false,
 },
   {
-  id: 1,
+  id: 6,
 
   title: "",
 
@@ -252,7 +252,7 @@ const topics = [
   completed: false,
 },
   {
-  id: 1,
+  id: 7,
 
   title: "",
 
