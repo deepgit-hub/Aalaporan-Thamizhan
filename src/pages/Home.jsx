@@ -105,7 +105,7 @@ function Home() {
             </p>
 
           </div>
-
+  {/* ================= TOPICS ================= */}
           <div className="topics-grid">
 
             {topics.map((topic) => (
