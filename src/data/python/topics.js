@@ -1622,7 +1622,72 @@ Keep Practicing Python!`,
 
   completed: false,
 },
+{
+  id: 22,
 
+  title: "Lambda Functions",
+
+  englishDefinition:
+    "A Lambda Function is a small anonymous function in Python that can have any number of arguments but only one expression. It is mainly used to write short functions without using the def keyword.",
+
+  tamilDefinition:
+    "Lambda Function என்பது Python-ல் பெயரில்லாத (Anonymous) சிறிய Function ஆகும். இது எத்தனை Arguments வேண்டுமானாலும் ஏற்க முடியும். ஆனால் ஒரே ஒரு Expression மட்டும் கொண்டிருக்கும். சிறிய Functions-ஐ def Keyword பயன்படுத்தாமல் சுருக்கமாக எழுத Lambda Function பயன்படுத்தப்படுகிறது.",
+
+  realWorldUsage:
+    "Lambda Functions are commonly used in software applications for short operations such as sorting data, filtering records, and performing simple calculations. They are frequently used with functions like map(), filter(), and sorted().",
+
+  realWorldUsageTamil:
+    "Lambda Function சிறிய செயல்பாடுகளுக்கு Software Applications-ல் அதிகமாக பயன்படுத்தப்படுகிறது. உதாரணமாக, Data Sorting, Records Filtering மற்றும் எளிய கணக்கீடுகள் செய்ய Lambda Function பயன்படுகிறது. குறிப்பாக map(), filter() மற்றும் sorted() போன்ற Functions-உடன் அதிகமாக பயன்படுத்தப்படுகிறது.",
+
+  syntax: `function_name = lambda arguments: expression`,
+
+  syntaxExplanationEnglish: [
+    "The 'lambda' keyword is used to create an anonymous function.",
+    "Arguments are written before the colon (:).",
+    "The expression is written after the colon.",
+    "The expression is automatically returned.",
+    "Lambda Functions are suitable for simple one-line operations."
+  ],
+
+  syntaxExplanationTamil: [
+    "'lambda' Keyword பயன்படுத்தி Anonymous Function உருவாக்கப்படுகிறது.",
+    "Arguments Colon (:) முன் எழுதப்படுகின்றன.",
+    "Expression Colon (:) பிறகு எழுதப்படுகிறது.",
+    "Expression-ன் Result தானாகவே Return செய்யப்படுகிறது.",
+    "Lambda Function எளிய ஒரு வரி (Single Line) செயல்பாடுகளுக்கு மிகவும் பொருத்தமானது."
+  ],
+
+  exampleProgram: `square = lambda number: number * number
+
+result = square(5)
+
+print("Square :", result)
+
+print("Keep Learning with Alaporan Thamizhan!")`,
+
+  programExplanationEnglish: [
+    "Line 1: A Lambda Function named 'square' is created to calculate the square of a number.",
+    "Line 3: The Lambda Function is called with the value 5, and the result is stored in the variable 'result'.",
+    "Line 5: print() displays the square of the given number.",
+    "Line 7: print() displays the motivational message.",
+    "The program demonstrates how to create and use a simple Lambda Function."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: ஒரு எண்ணின் Square-ஐ கணக்கிட 'square' என்ற Lambda Function உருவாக்கப்படுகிறது.",
+    "வரி 3: Lambda Function-க்கு 5 அனுப்பப்பட்டு அதன் முடிவு 'result' என்ற Variable-ல் சேமிக்கப்படுகிறது.",
+    "வரி 5: print() மூலம் எண்ணின் Square திரையில் காட்டப்படுகிறது.",
+    "வரி 7: print() மூலம் 'Keep Learning with Alaporan Thamizhan!' என்ற ஊக்கமளிக்கும் செய்தி காட்டப்படுகிறது.",
+    "இந்த Program, Lambda Function உருவாக்குவது மற்றும் பயன்படுத்துவது எப்படி என்பதை விளக்குகிறது."
+  ],
+
+  output: `Square : 25
+Keep Learning with Alaporan Thamizhan!`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
