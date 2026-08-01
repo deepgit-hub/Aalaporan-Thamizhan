@@ -1731,6 +1731,7 @@ Keep Learning with Deepak!`,
 
   completed: false,
 },
+
 ];
 
 export default topics;
