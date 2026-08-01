@@ -204,7 +204,7 @@ function Home() {
                 )
               }
             >
-              👨‍💻 Know More DEEPAK
+              👨‍💻  Know More DEEPAK
             </button>
             <button
               className="portfolio-btn2"
@@ -215,7 +215,7 @@ function Home() {
                 )
               }
             >
-              👨‍💻 To Built WEBSITES
+              🌏︎ To Built WEBSITES
             </button>
 </div>
           </div>
