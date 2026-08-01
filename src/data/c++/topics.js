@@ -2519,7 +2519,142 @@ Teacher is teaching C++.`,
 
   completed: false,
 },
+{
+  id: 28,
 
+  title: "Multilevel Inheritance",
+
+  englishDefinition:
+    "Multilevel Inheritance is a type of inheritance in which one class inherits from another derived class. In other words, a class becomes both a child class and a parent class. This forms a chain of inheritance.",
+
+  tamilDefinition:
+    "Multilevel Inheritance என்பது ஒரு வகையான Inheritance ஆகும். இதில் ஒரு Class, மற்றொரு Derived Class-இல் இருந்து Inherit செய்கிறது. அதாவது, ஒரு Class ஒரே நேரத்தில் Child Class ஆகவும் Parent Class ஆகவும் செயல்படுகிறது. இதனால் ஒரு Chain போன்ற Inheritance உருவாகிறது.",
+
+  realWorldUsage:
+    "Multilevel Inheritance is used when software is designed in multiple levels. For example, in a college management system, a Person class can be inherited by a Student class, and the Student class can further be inherited by a PGStudent class. This allows code reuse across multiple levels.",
+
+  realWorldUsageTamil:
+    "Multilevel Inheritance பல நிலைகளில் (Multiple Levels) Software உருவாக்கப்படும் போது பயன்படுத்தப்படுகிறது. உதாரணமாக, College Management System-ல் Person Class-இல் இருந்து Student Class உருவாகிறது. பின்னர் Student Class-இல் இருந்து PGStudent Class உருவாகிறது. இதனால் பல நிலைகளில் Code-ஐ மீண்டும் பயன்படுத்த முடிகிறது.",
+
+  syntax: `class BaseClass
+{
+    // Members
+};
+
+class DerivedClass : public BaseClass
+{
+    // Members
+};
+
+class ChildClass : public DerivedClass
+{
+    // Members
+};`,
+
+  syntaxExplanationEnglish: [
+    "The first class is called the Base Class.",
+    "The second class inherits from the Base Class.",
+    "The third class inherits from the second class.",
+    "The last derived class can access the inherited public members from all previous classes.",
+    "This creates a chain of inheritance."
+  ],
+
+  syntaxExplanationTamil: [
+    "முதல் Class, Base Class என அழைக்கப்படுகிறது.",
+    "இரண்டாவது Class, Base Class-இல் இருந்து Inherit செய்கிறது.",
+    "மூன்றாவது Class, இரண்டாவது Class-இல் இருந்து Inherit செய்கிறது.",
+    "கடைசி Derived Class, முந்தைய அனைத்து Classes-இன் Public Members-ஐ அணுக முடியும்.",
+    "இது ஒரு Chain போன்ற Inheritance-ஐ உருவாக்குகிறது."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+class Person
+{
+public:
+    void introduce()
+    {
+        cout << "Welcome to Alaporan Tamilan!" << endl;
+    }
+};
+
+class Student : public Person
+{
+public:
+    void study()
+    {
+        cout << "Deepak is studying C++." << endl;
+    }
+};
+
+class PGStudent : public Student
+{
+public:
+    void research()
+    {
+        cout << "Deepak is doing Research." << endl;
+    }
+};
+
+int main()
+{
+    PGStudent student;
+
+    student.introduce();
+
+    student.study();
+
+    student.research();
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: A base class named 'Person' is created.",
+    "Line 7: public: makes the members accessible.",
+    "Line 9: The function 'introduce()' is created inside the Person class.",
+    "Line 15: The Student class inherits from the Person class.",
+    "Line 17: The function 'study()' is created inside the Student class.",
+    "Line 23: The PGStudent class inherits from the Student class.",
+    "Line 25: The function 'research()' is created inside the PGStudent class.",
+    "Line 31: int main() is the starting point of the program.",
+    "Line 33: An object named 'student' is created from the PGStudent class.",
+    "Line 35: student.introduce() calls the inherited function from the Person class.",
+    "Line 37: student.study() calls the inherited function from the Student class.",
+    "Line 39: student.research() calls the function defined inside the PGStudent class.",
+    "Line 41: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: 'Person' என்ற Base Class உருவாக்கப்படுகிறது.",
+    "வரி 7: public: மூலம் Members-ஐ வெளியிலிருந்து அணுக முடிகிறது.",
+    "வரி 9: Person Class-க்குள் 'introduce()' Function உருவாக்கப்படுகிறது.",
+    "வரி 15: Student Class, Person Class-இல் இருந்து Inherit செய்கிறது.",
+    "வரி 17: Student Class-க்குள் 'study()' Function உருவாக்கப்படுகிறது.",
+    "வரி 23: PGStudent Class, Student Class-இல் இருந்து Inherit செய்கிறது.",
+    "வரி 25: PGStudent Class-க்குள் 'research()' Function உருவாக்கப்படுகிறது.",
+    "வரி 31: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 33: PGStudent Class-இல் இருந்து 'student' என்ற Object உருவாக்கப்படுகிறது.",
+    "வரி 35: student.introduce() மூலம் Person Class-இன் Function அழைக்கப்படுகிறது.",
+    "வரி 37: student.study() மூலம் Student Class-இன் Function அழைக்கப்படுகிறது.",
+    "வரி 39: student.research() மூலம் PGStudent Class-இன் Function அழைக்கப்படுகிறது.",
+    "வரி 41: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `Welcome to Alaporan Tamilan!
+Deepak is studying C++.
+Deepak is doing Research.`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
