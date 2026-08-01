@@ -395,7 +395,19 @@ body{
     box-shadow:0 18px 35px rgba(37,99,235,.45);
 
 }
+.footer-buttons{
 
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    width:100%;
+
+    align-items:center;
+
+}
 /* ==========================================
    COPYRIGHT
 ========================================== */
