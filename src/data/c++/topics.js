@@ -1271,6 +1271,7 @@ Day 5 : Deepak practiced C++.`,
 
   completed: false,
 },
+
 ];
 
 export default topics;
