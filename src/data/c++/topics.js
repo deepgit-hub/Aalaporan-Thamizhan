@@ -1830,7 +1830,108 @@ Welcome Deepak!`,
 
   completed: false,
 },
+{
+  id: 22,
 
+  title: "Classes",
+
+  englishDefinition:
+    "A Class is a user-defined data type in C++ that acts as a blueprint for creating objects. It groups together data members (variables) and member functions (methods) into a single unit. Classes are one of the fundamental concepts of Object-Oriented Programming (OOP).",
+
+  tamilDefinition:
+    "Class என்பது C++-இல் User-Defined Data Type ஆகும். இது Objects உருவாக்குவதற்கான Blueprint ஆக செயல்படுகிறது. ஒரு Class-க்குள் Data Members (Variables) மற்றும் Member Functions (Methods) ஒன்றாக சேர்க்கப்படுகின்றன. Class என்பது Object-Oriented Programming (OOP)-இன் முக்கியமான அடிப்படை கருத்துகளில் ஒன்றாகும்.",
+
+  realWorldUsage:
+    "Classes are used in every Object-Oriented Software Application. For example, a Student Management System can have a Student class, a Banking Application can have an Account class, and an E-commerce Website can have a Product class.",
+
+  realWorldUsageTamil:
+    "Classes அனைத்து Object-Oriented Software-களிலும் பயன்படுத்தப்படுகின்றன. உதாரணமாக, Student Management System-ல் Student Class, Banking Application-ல் Account Class மற்றும் E-commerce Website-ல் Product Class போன்றவை பயன்படுத்தப்படுகின்றன.",
+
+  syntax: `class ClassName
+{
+public:
+    // Data Members
+
+    // Member Functions
+};`,
+
+  syntaxExplanationEnglish: [
+    "The 'class' keyword is used to create a class.",
+    "ClassName is the name of the class.",
+    "public: specifies that the members can be accessed from outside the class.",
+    "Data Members store the data of the class.",
+    "Member Functions define the behavior of the class."
+  ],
+
+  syntaxExplanationTamil: [
+    "'class' Keyword ஒரு Class உருவாக்க பயன்படுத்தப்படுகிறது.",
+    "ClassName என்பது Class-க்கு கொடுக்கப்படும் பெயராகும்.",
+    "'public:' மூலம் Class Members-ஐ வெளியிலிருந்து அணுக முடியும்.",
+    "Data Members என்பது Class-இன் தகவல்களை சேமிக்கின்றன.",
+    "Member Functions என்பது Class-இன் செயல்பாடுகளை வரையறுக்கின்றன."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+class Student
+{
+public:
+    string name = "Deepak";
+
+    void display()
+    {
+        cout << "Welcome to Alaporan Tamilan!" << endl;
+
+        cout << "Student Name : " << name << endl;
+    }
+};
+
+int main()
+{
+    Student student;
+
+    student.display();
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: A class named 'Student' is created.",
+    "Line 7: public: makes the class members accessible from outside the class.",
+    "Line 9: A data member named 'name' is created and initialized with 'Deepak'.",
+    "Line 11: A member function named 'display()' is created.",
+    "Lines 13-15: The function displays the welcome message and student name.",
+    "Line 19: int main() is the starting point of the program.",
+    "Line 21: An object named 'student' is created from the Student class.",
+    "Line 23: The display() function is called using the object.",
+    "Line 25: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: 'Student' என்ற Class உருவாக்கப்படுகிறது.",
+    "வரி 7: public: மூலம் Class Members-ஐ வெளியிலிருந்து அணுக முடிகிறது.",
+    "வரி 9: 'name' என்ற Data Member உருவாக்கப்பட்டு 'Deepak' சேமிக்கப்படுகிறது.",
+    "வரி 11: 'display()' என்ற Member Function உருவாக்கப்படுகிறது.",
+    "வரி 13-15: இந்த Function Welcome Message மற்றும் Student Name-ஐ திரையில் காட்டுகிறது.",
+    "வரி 19: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 21: Student Class-இல் இருந்து 'student' என்ற Object உருவாக்கப்படுகிறது.",
+    "வரி 23: Object பயன்படுத்தி display() Function அழைக்கப்படுகிறது.",
+    "வரி 25: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `Welcome to Alaporan Tamilan!
+Student Name : Deepak`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
