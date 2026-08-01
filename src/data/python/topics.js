@@ -2028,6 +2028,107 @@ Deepak is learning Python.`,
 
   completed: false,
 },
+{
+  id: 27,
+
+  title: "Multiple Inheritance",
+
+  englishDefinition:
+    "Multiple Inheritance is a type of inheritance in which one child class inherits the properties and methods of two or more parent classes. This allows the child class to use the features of all its parent classes, promoting code reusability.",
+
+  tamilDefinition:
+    "Multiple Inheritance என்பது ஒரு Child Class, இரண்டு அல்லது அதற்கு மேற்பட்ட Parent Classes-இன் Properties மற்றும் Methods-ஐ பெறும் Inheritance வகையாகும். இதன் மூலம் Child Class அனைத்து Parent Classes-இன் அம்சங்களையும் பயன்படுத்தி Code Reusability-ஐ அதிகரிக்க முடியும்.",
+
+  realWorldUsage:
+    "Multiple Inheritance is used in complex software applications. For example, in a College Management System, a Student class can inherit personal information from a Person class and login features from an Account class. This combines the functionalities of multiple parent classes into a single child class.",
+
+  realWorldUsageTamil:
+    "Multiple Inheritance சிக்கலான Software Applications-ல் பயன்படுத்தப்படுகிறது. உதாரணமாக, College Management System-ல் Student Class, Person Class-இல் இருந்து Personal Details-ஐயும், Account Class-இல் இருந்து Login வசதிகளையும் பெறலாம். இதன் மூலம் பல Parent Classes-இன் அம்சங்களை ஒரே Child Class பயன்படுத்த முடியும்.",
+
+  syntax: `class Parent1:
+    # Parent1 Members
+
+class Parent2:
+    # Parent2 Members
+
+class Child(Parent1, Parent2):
+    # Child Members`,
+
+  syntaxExplanationEnglish: [
+    "Multiple parent classes are created first.",
+    "The child class inherits from all parent classes by listing them inside parentheses.",
+    "The child class can access the members of every parent class.",
+    "The child class can also have its own methods and attributes.",
+    "Multiple Inheritance improves code reusability by combining features from multiple classes."
+  ],
+
+  syntaxExplanationTamil: [
+    "முதலில் பல Parent Classes உருவாக்கப்படுகின்றன.",
+    "Parentheses()-க்குள் Parent Class பெயர்களை கொடுத்து Child Class உருவாக்கப்படுகிறது.",
+    "Child Class அனைத்து Parent Classes-இன் Members-ஐ அணுக முடியும்.",
+    "Child Class-க்கு தனிப்பட்ட Methods மற்றும் Attributes இருக்கலாம்.",
+    "Multiple Inheritance பல Classes-இன் அம்சங்களை இணைத்து Code Reusability-ஐ அதிகரிக்கிறது."
+  ],
+
+  exampleProgram: `class Person:
+
+    def welcome(self):
+        print("Welcome to Alaporan Thamizhan!")
+
+class Account:
+
+    def login(self):
+        print("Login Successful!")
+
+class Student(Person, Account):
+
+    def study(self):
+        print("Deepak and Kathir are learning Python.")
+
+student = Student()
+
+student.welcome()
+
+student.login()
+
+student.study()`,
+
+  programExplanationEnglish: [
+    "Line 1: A parent class named 'Person' is created.",
+    "Line 3: The welcome() method is defined inside the Person class.",
+    "Line 6: Another parent class named 'Account' is created.",
+    "Line 8: The login() method is defined inside the Account class.",
+    "Line 11: The Student class inherits from both Person and Account classes.",
+    "Line 13: The study() method is created inside the Student class.",
+    "Line 16: An object named 'student' is created.",
+    "Line 18: The inherited welcome() method is called.",
+    "Line 20: The inherited login() method is called.",
+    "Line 22: The study() method of the Student class is called.",
+    "The program demonstrates how one child class inherits methods from multiple parent classes."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: 'Person' என்ற Parent Class உருவாக்கப்படுகிறது.",
+    "வரி 3: Person Class-க்குள் welcome() Method உருவாக்கப்படுகிறது.",
+    "வரி 6: 'Account' என்ற மற்றொரு Parent Class உருவாக்கப்படுகிறது.",
+    "வரி 8: Account Class-க்குள் login() Method உருவாக்கப்படுகிறது.",
+    "வரி 11: Student Class, Person மற்றும் Account ஆகிய இரண்டு Parent Classes-இல் இருந்தும் Inherit செய்கிறது.",
+    "வரி 13: Student Class-க்குள் study() Method உருவாக்கப்படுகிறது.",
+    "வரி 16: 'student' என்ற Object உருவாக்கப்படுகிறது.",
+    "வரி 18: Person Class-இன் welcome() Method அழைக்கப்படுகிறது.",
+    "வரி 20: Account Class-இன் login() Method அழைக்கப்படுகிறது.",
+    "வரி 22: Student Class-இன் study() Method அழைக்கப்படுகிறது.",
+    "இந்த Program, ஒரு Child Class பல Parent Classes-இன் Methods-ஐ எப்படி பயன்படுத்துகிறது என்பதை விளக்குகிறது."
+  ],
+
+  output: `Welcome to Alaporan Thamizhan!
+Login Successful!
+Deepak and Kathir are learning Python.`,
+
+  locked: false,
+
+  completed: false,
+},
 
 ];
 
