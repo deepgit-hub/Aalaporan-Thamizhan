@@ -1932,6 +1932,110 @@ Student Name : Deepak`,
 
   completed: false,
 },
+{
+  id: 23,
+
+  title: "Objects",
+
+  englishDefinition:
+    "An Object is an instance of a class. It is created using a class and is used to access the data members and member functions defined inside the class. While a class is a blueprint, an object is the real entity created from that blueprint.",
+
+  tamilDefinition:
+    "Object என்பது ஒரு Class-இன் Instance ஆகும். இது ஒரு Class-ஐ பயன்படுத்தி உருவாக்கப்படுகிறது. Class-க்குள் இருக்கும் Data Members மற்றும் Member Functions-ஐ அணுக Object பயன்படுத்தப்படுகிறது. Class என்பது Blueprint என்றால், Object என்பது அந்த Blueprint-இல் இருந்து உருவாக்கப்படும் உண்மையான பொருளாகும்.",
+
+  realWorldUsage:
+    "Objects are used in every Object-Oriented Application. For example, in a Student Management System, each student is an object of the Student class. In a Banking Application, each bank account is an object of the Account class.",
+
+  realWorldUsageTamil:
+    "Objects அனைத்து Object-Oriented Software-களிலும் பயன்படுத்தப்படுகின்றன. உதாரணமாக, Student Management System-ல் ஒவ்வொரு மாணவரும் Student Class-இன் Object ஆகும். Banking Application-ல் ஒவ்வொரு Account-மும் Account Class-இன் Object ஆகும்.",
+
+  syntax: `ClassName objectName;
+
+objectName.memberFunction();`,
+
+  syntaxExplanationEnglish: [
+    "ClassName specifies the class from which the object is created.",
+    "objectName is the name of the object.",
+    "An object is used to access the members of a class.",
+    "The dot (.) operator is used to access member variables and member functions.",
+    "Multiple objects can be created from the same class."
+  ],
+
+  syntaxExplanationTamil: [
+    "ClassName என்பது எந்த Class-இல் இருந்து Object உருவாக்கப்படுகிறது என்பதை குறிப்பிடுகிறது.",
+    "objectName என்பது Object-க்கு கொடுக்கப்படும் பெயராகும்.",
+    "Object மூலம் Class Members-ஐ அணுகலாம்.",
+    "Dot (.) Operator பயன்படுத்தி Member Variables மற்றும் Member Functions-ஐ அணுகலாம்.",
+    "ஒரே Class-இல் இருந்து பல Objects உருவாக்க முடியும்."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+class Student
+{
+public:
+    string name = "Deepak";
+
+    void display()
+    {
+        cout << "Student Name : " << name << endl;
+    }
+};
+
+int main()
+{
+    Student student1;
+
+    Student student2;
+
+    student1.display();
+
+    student2.display();
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: A class named 'Student' is created.",
+    "Line 7: public: makes the class members accessible from outside the class.",
+    "Line 9: A data member named 'name' is created and initialized with 'Deepak'.",
+    "Line 11: A member function named 'display()' is created.",
+    "Line 13: cout displays the student's name.",
+    "Line 17: int main() is the starting point of the program.",
+    "Line 19: An object named 'student1' is created from the Student class.",
+    "Line 21: Another object named 'student2' is created from the same Student class.",
+    "Line 23: student1 calls the display() function.",
+    "Line 25: student2 also calls the display() function.",
+    "Line 27: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: 'Student' என்ற Class உருவாக்கப்படுகிறது.",
+    "வரி 7: public: மூலம் Class Members-ஐ வெளியிலிருந்து அணுக முடிகிறது.",
+    "வரி 9: 'name' என்ற Data Member உருவாக்கப்பட்டு 'Deepak' சேமிக்கப்படுகிறது.",
+    "வரி 11: 'display()' என்ற Member Function உருவாக்கப்படுகிறது.",
+    "வரி 13: cout மூலம் Student Name திரையில் காட்டப்படுகிறது.",
+    "வரி 17: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 19: Student Class-இல் இருந்து 'student1' என்ற Object உருவாக்கப்படுகிறது.",
+    "வரி 21: அதே Student Class-இல் இருந்து 'student2' என்ற மற்றொரு Object உருவாக்கப்படுகிறது.",
+    "வரி 23: student1 மூலம் display() Function அழைக்கப்படுகிறது.",
+    "வரி 25: student2 மூலமும் display() Function அழைக்கப்படுகிறது.",
+    "வரி 27: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `Student Name : Deepak
+Student Name : Deepak`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
