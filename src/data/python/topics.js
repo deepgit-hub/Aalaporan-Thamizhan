@@ -64,6 +64,84 @@ Created by Deepak`,
 
   completed: false,
 },
+{
+  id: 2,
+
+  title: "Variables",
+
+  englishDefinition:
+    "A Variable is a named memory location used to store data in a program. The value stored in a variable can be changed during program execution. Unlike many programming languages, Python automatically determines the data type of a variable based on the value assigned to it.",
+
+  tamilDefinition:
+    "Variable என்பது Program-ல் Data-வை சேமிக்க பயன்படுத்தப்படும் பெயரிடப்பட்ட (Named) Memory Location ஆகும். Program இயங்கும் போது Variable-ல் உள்ள மதிப்பை மாற்றலாம். மற்ற பல Programming Languages-ஐ விட Python-ல் Variable-ன் Data Type-ஐ தனியாக குறிப்பிட தேவையில்லை. Assign செய்யப்படும் Value-ஐ வைத்து Python தானாகவே Data Type-ஐ கண்டறிகிறது.",
+
+  realWorldUsage:
+    "Variables are used in every software application. For example, an online shopping website stores the customer's name, total bill amount, and delivery address in variables. Similarly, a college management system stores a student's name, roll number, and marks using variables.",
+
+  realWorldUsageTamil:
+    "Variables அனைத்து Software Applications-லிலும் பயன்படுத்தப்படுகின்றன. உதாரணமாக, Online Shopping Website-ல் Customer Name, Total Bill Amount மற்றும் Delivery Address ஆகியவை Variables-ல் சேமிக்கப்படுகின்றன. அதேபோல் College Management System-ல் Student Name, Roll Number மற்றும் Marks போன்ற தகவல்கள் Variables மூலம் சேமிக்கப்படுகின்றன.",
+
+  syntax: `variableName = value
+
+name = "Deepak"
+age = 20`,
+
+  syntaxExplanationEnglish: [
+    "variableName is the name used to identify the stored data.",
+    "The assignment operator (=) assigns a value to the variable.",
+    "Python automatically identifies the data type of the assigned value.",
+    "String values are written inside quotation marks.",
+    "Variable names should be meaningful and easy to understand."
+  ],
+
+  syntaxExplanationTamil: [
+    "variableName என்பது Data-வை அடையாளம் காண பயன்படுத்தப்படும் பெயராகும்.",
+    "Assignment Operator (=) மூலம் Variable-க்கு Value வழங்கப்படுகிறது.",
+    "Assign செய்யப்பட்ட Value-ன் அடிப்படையில் Python தானாகவே Data Type-ஐ கண்டறிகிறது.",
+    "String Values எப்போதும் Quotation Marks-க்குள் எழுதப்படுகின்றன.",
+    "Variable Names எளிதில் புரியும் வகையில் Meaningful ஆக இருக்க வேண்டும்."
+  ],
+
+  exampleProgram: `name = "Deepak"
+
+college = "Alaporan Tamilan Academy"
+
+age = 20
+
+print("Student Name :", name)
+
+print("College :", college)
+
+print("Age :", age)`,
+
+  programExplanationEnglish: [
+    "Line 1: A variable named 'name' is created and assigned the value 'Deepak'.",
+    "Line 3: A variable named 'college' is created and assigned the value 'Alaporan Tamilan Academy'.",
+    "Line 5: A variable named 'age' is created and assigned the value 20.",
+    "Line 7: print() displays the student's name stored in the variable 'name'.",
+    "Line 9: print() displays the college name stored in the variable 'college'.",
+    "Line 11: print() displays the age stored in the variable 'age'.",
+    "The program reads the values from the variables and displays them on the screen."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: 'name' என்ற Variable உருவாக்கப்பட்டு அதில் 'Deepak' என்ற Value சேமிக்கப்படுகிறது.",
+    "வரி 3: 'college' என்ற Variable உருவாக்கப்பட்டு 'Alaporan Tamilan Academy' என்ற Value சேமிக்கப்படுகிறது.",
+    "வரி 5: 'age' என்ற Variable உருவாக்கப்பட்டு 20 என்ற Value சேமிக்கப்படுகிறது.",
+    "வரி 7: print() மூலம் 'name' Variable-ல் உள்ள Student Name திரையில் காட்டப்படுகிறது.",
+    "வரி 9: print() மூலம் 'college' Variable-ல் உள்ள College Name திரையில் காட்டப்படுகிறது.",
+    "வரி 11: print() மூலம் 'age' Variable-ல் உள்ள வயது திரையில் காட்டப்படுகிறது.",
+    "Program, Variables-ல் சேமிக்கப்பட்டுள்ள Values-ஐ படித்து திரையில் காட்டுகிறது."
+  ],
+
+  output: `Student Name : Deepak
+College : Alaporan Tamilan Academy
+Age : 20`,
+
+  locked: false,
+
+  completed: false,
+},
 
 ];
 
