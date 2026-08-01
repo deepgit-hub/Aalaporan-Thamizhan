@@ -1542,6 +1542,103 @@ int main()
 
   completed: false,
 },
+{
+  id: 19,
+
+  title: "Array Operations",
+
+  englishDefinition:
+    "Array Operations are the common tasks performed on arrays to process and manipulate data. Some of the most frequently used operations include traversing, searching, finding the maximum value, finding the minimum value, calculating the sum, and calculating the average of array elements.",
+
+  tamilDefinition:
+    "Array Operations என்பது Array-ல் இருக்கும் தரவுகளை செயல்படுத்த (Process) மற்றும் மாற்ற (Manipulate) செய்யப்படும் பொதுவான செயல்பாடுகளாகும். இதில் Traversing, Searching, Maximum Value கண்டறிதல், Minimum Value கண்டறிதல், Sum மற்றும் Average கணக்கிடுதல் போன்றவை அடங்கும்.",
+
+  realWorldUsage:
+    "Array Operations are used in many software applications. For example, calculating the average marks of students, finding the highest salary of employees, searching for a product ID in an inventory system, and calculating the total sales of a company.",
+
+  realWorldUsageTamil:
+    "Array Operations பல Software-களில் பயன்படுத்தப்படுகின்றன. உதாரணமாக, மாணவர்களின் சராசரி மதிப்பெண்களை கணக்கிடுவது, அதிகபட்ச ஊதியத்தை கண்டறிவது, Inventory System-ல் Product ID-ஐ தேடுவது மற்றும் ஒரு நிறுவனத்தின் மொத்த விற்பனையை கணக்கிடுவது போன்ற இடங்களில் பயன்படுத்தப்படுகிறது.",
+
+  syntax: `for(int i = 0; i < size; i++)
+{
+    // Perform operations on array elements
+}`,
+
+  syntaxExplanationEnglish: [
+    "A loop is used to access every element of the array.",
+    "The variable 'i' represents the index of the array.",
+    "Array elements are accessed using arrayName[i].",
+    "Operations such as sum, average, searching, maximum, and minimum are performed inside the loop.",
+    "The loop continues until all elements are processed."
+  ],
+
+  syntaxExplanationTamil: [
+    "Array-இன் அனைத்து Elements-ஐ அணுக Loop பயன்படுத்தப்படுகிறது.",
+    "'i' என்பது Array-இன் Index-ஐ குறிக்கிறது.",
+    "Array Elements arrayName[i] மூலம் அணுகப்படுகின்றன.",
+    "Sum, Average, Searching, Maximum மற்றும் Minimum போன்ற செயல்பாடுகள் Loop-க்குள் செய்யப்படுகின்றன.",
+    "அனைத்து Elements-மும் செயல்படுத்தப்படும் வரை Loop இயங்கும்."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int marks[5] = {85, 90, 78, 95, 88};
+
+    int sum = 0;
+
+    for(int i = 0; i < 5; i++)
+    {
+        sum = sum + marks[i];
+    }
+
+    float average = sum / 5.0;
+
+    cout << "Total Marks : " << sum << endl;
+
+    cout << "Average Marks : " << average << endl;
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: int main() is the starting point of the program.",
+    "Line 7: An integer array named 'marks' is created with five values.",
+    "Line 9: A variable named 'sum' is initialized with 0.",
+    "Line 11: The for loop starts from index 0 and continues until index 4.",
+    "Line 13: Each array element is added to the variable 'sum'.",
+    "Line 16: The average is calculated by dividing the total sum by 5.",
+    "Line 18: cout displays the total marks.",
+    "Line 20: cout displays the average marks.",
+    "Line 22: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 7: 'marks' என்ற Integer Array ஐந்து மதிப்புகளுடன் உருவாக்கப்படுகிறது.",
+    "வரி 9: 'sum' என்ற Variable-ல் ஆரம்பத்தில் 0 சேமிக்கப்படுகிறது.",
+    "வரி 11: For Loop, Index 0 முதல் Index 4 வரை இயக்கப்படுகிறது.",
+    "வரி 13: Array-இன் ஒவ்வொரு Element-மும் 'sum' Variable-உடன் சேர்க்கப்படுகிறது.",
+    "வரி 16: Total Sum-ஐ 5-ஆல் வகுத்து Average கணக்கிடப்படுகிறது.",
+    "வரி 18: cout மூலம் Total Marks திரையில் காட்டப்படுகிறது.",
+    "வரி 20: cout மூலம் Average Marks திரையில் காட்டப்படுகிறது.",
+    "வரி 22: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `Total Marks : 436
+Average Marks : 87.2`,
+
+  locked: false,
+
+  completed: false,
+},
 
 ];
 
