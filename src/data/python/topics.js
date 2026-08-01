@@ -712,6 +712,96 @@ Keep Learning with Alaporan Thamizhan!`,
 
   completed: false,
 },
+{
+  id: 10,
+
+  title: "Match-Case Statement",
+
+  englishDefinition:
+    "The Match-Case Statement is a decision-making statement introduced in Python 3.10. It allows a program to compare a value against multiple cases and execute the matching block of code. It works similarly to the Switch Statement in languages like C++ and Java.",
+
+  tamilDefinition:
+    "Match-Case Statement என்பது Python 3.10-ல் அறிமுகப்படுத்தப்பட்ட ஒரு Decision-Making Statement ஆகும். இது ஒரு Value-ஐ பல்வேறு Cases-உடன் ஒப்பிட்டு, பொருந்தும் (Matching) Case-ன் Code Block-ஐ இயக்குகிறது. இது C++ மற்றும் Java-வில் உள்ள Switch Statement போல செயல்படுகிறது.",
+
+  realWorldUsage:
+    "Match-Case Statements are useful when a program needs to handle multiple options. For example, an ATM system can display different services based on the user's choice, or a restaurant ordering system can display different menus based on the selected category.",
+
+  realWorldUsageTamil:
+    "Match-Case Statement ஒரு Program பல்வேறு தேர்வுகளை (Options) கையாள வேண்டிய சூழலில் பயன்படுத்தப்படுகிறது. உதாரணமாக, ATM-ல் பயனர் தேர்வு செய்யும் Option-ஐ பொறுத்து சேவைகள் காட்டப்படுகின்றன. அதேபோல் Restaurant Ordering System-ல் தேர்வு செய்யப்பட்ட Category-க்கு ஏற்ப Menu காட்டப்படுகிறது.",
+
+  syntax: `match variable:
+    case value1:
+        # Statements
+
+    case value2:
+        # Statements
+
+    case _:
+        # Default Statements`,
+
+  syntaxExplanationEnglish: [
+    "The 'match' keyword specifies the value to be checked.",
+    "Each 'case' represents one possible value.",
+    "The statements inside the matching case are executed.",
+    "The underscore (_) acts as the default case when no match is found.",
+    "Proper indentation is required for every case block."
+  ],
+
+  syntaxExplanationTamil: [
+    "'match' Keyword எந்த Value-ஐ சரிபார்க்க வேண்டும் என்பதை குறிப்பிடுகிறது.",
+    "ஒவ்வொரு 'case' ஒரு சாத்தியமான Value-ஐ குறிக்கிறது.",
+    "பொருந்தும் Case-க்குள் இருக்கும் Statements மட்டும் இயக்கப்படும்.",
+    "Underscore (_) என்பது Default Case ஆக செயல்படுகிறது.",
+    "ஒவ்வொரு Case Block-க்கும் சரியான Indentation அவசியம்."
+  ],
+
+  exampleProgram: `day = 2
+
+match day:
+    case 1:
+        print("Monday")
+
+    case 2:
+        print("Tuesday")
+
+    case 3:
+        print("Wednesday")
+
+    case _:
+        print("Invalid Day")
+
+print("Keep Learning with Alaporan Thamizhan!")`,
+
+  programExplanationEnglish: [
+    "Line 1: A variable named 'day' is created and assigned the value 2.",
+    "Line 3: The match statement checks the value of 'day'.",
+    "Line 4-5: Case 1 is skipped because the value is not 1.",
+    "Line 7-8: Case 2 matches the value, so 'Tuesday' is displayed.",
+    "Line 10-11: Case 3 is skipped because a matching case has already been found.",
+    "Line 13-14: The default case (_) is skipped because a match already exists.",
+    "Line 16: print() displays the motivational message.",
+    "The program demonstrates how Match-Case selects one matching block among multiple cases."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: 'day' என்ற Variable உருவாக்கப்பட்டு அதில் 2 என்ற மதிப்பு சேமிக்கப்படுகிறது.",
+    "வரி 3: match Statement, 'day' Variable-ன் மதிப்பை சரிபார்க்கிறது.",
+    "வரி 4-5: Value 1 இல்லாததால் முதல் Case இயக்கப்படவில்லை.",
+    "வரி 7-8: Value 2 பொருந்துவதால் 'Tuesday' திரையில் காட்டப்படுகிறது.",
+    "வரி 10-11: ஏற்கனவே பொருந்தும் Case கிடைத்ததால் Case 3 இயக்கப்படவில்லை.",
+    "வரி 13-14: பொருந்தும் Case கிடைத்ததால் Default Case (_) இயக்கப்படவில்லை.",
+    "வரி 16: print() மூலம் 'Keep Learning with Alaporan Thamizhan!' என்ற செய்தி காட்டப்படுகிறது.",
+    "இந்த Program, பல்வேறு Cases-ல் பொருந்தும் ஒன்றை மட்டும் Match-Case Statement எப்படி தேர்வு செய்கிறது என்பதை விளக்குகிறது."
+  ],
+
+  output: `Tuesday
+Keep Learning with Alaporan Thamizhan!`,
+
+  locked: false,
+
+  completed: false,
+},
+
 ];
 
 export default topics;
