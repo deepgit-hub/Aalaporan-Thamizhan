@@ -2036,7 +2036,105 @@ Student Name : Deepak`,
 
   completed: false,
 },
+{
+  id: 24,
 
+  title: "Constructors",
+
+  englishDefinition:
+    "A Constructor is a special member function of a class that is automatically called when an object is created. It is mainly used to initialize the data members of an object. A constructor has the same name as the class and does not have any return type.",
+
+  tamilDefinition:
+    "Constructor என்பது ஒரு Class-இன் சிறப்பு Member Function ஆகும். ஒரு Object உருவாக்கப்படும் போது Constructor தானாகவே (Automatically) அழைக்கப்படும். இது Object-இன் Data Members-ஐ ஆரம்ப மதிப்புகளுடன் (Initialize) அமைக்க பயன்படுகிறது. Constructor-க்கு Class-ன் பெயரே இருக்கும் மற்றும் இதற்கு Return Type இருக்காது.",
+
+  realWorldUsage:
+    "Constructors are used in every Object-Oriented Software Application. For example, when a new bank account is created, the constructor initializes the account number and balance. Similarly, when a new student record is created, the constructor initializes the student's details.",
+
+  realWorldUsageTamil:
+    "Constructors அனைத்து Object-Oriented Software-களிலும் பயன்படுத்தப்படுகின்றன. உதாரணமாக, புதிய Bank Account உருவாக்கப்படும் போது Account Number மற்றும் Balance ஆகியவற்றை Constructor ஆரம்ப மதிப்புகளுடன் அமைக்கிறது. அதேபோல் Student Record உருவாக்கப்படும் போது மாணவரின் தகவல்களை Initialize செய்கிறது.",
+
+  syntax: `class ClassName
+{
+public:
+    ClassName()
+    {
+        // Initialization Code
+    }
+};`,
+
+  syntaxExplanationEnglish: [
+    "The constructor name must be the same as the class name.",
+    "A constructor does not have any return type, not even void.",
+    "The constructor is automatically called when an object is created.",
+    "It is mainly used to initialize object data.",
+    "A class can have more than one constructor using constructor overloading."
+  ],
+
+  syntaxExplanationTamil: [
+    "Constructor-ன் பெயர் எப்போதும் Class-ன் பெயராகவே இருக்க வேண்டும்.",
+    "Constructor-க்கு Return Type இருக்காது. void கூட பயன்படுத்தப்படாது.",
+    "Object உருவாக்கப்படும் போது Constructor தானாகவே அழைக்கப்படும்.",
+    "Constructor முக்கியமாக Object-இன் Data Members-ஐ Initialize செய்ய பயன்படுத்தப்படுகிறது.",
+    "Constructor Overloading மூலம் ஒரு Class-ல் ஒன்றுக்கு மேற்பட்ட Constructors இருக்கலாம்."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+class Student
+{
+public:
+    Student()
+    {
+        cout << "Welcome to Alaporan Tamilan!" << endl;
+
+        cout << "Constructor Called Successfully!" << endl;
+    }
+};
+
+int main()
+{
+    Student deepak;
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: A class named 'Student' is created.",
+    "Line 7: public: makes the constructor accessible.",
+    "Line 9: A constructor named 'Student()' is created.",
+    "Line 11: cout displays the welcome message.",
+    "Line 13: cout displays that the constructor has been called successfully.",
+    "Line 17: int main() is the starting point of the program.",
+    "Line 19: An object named 'deepak' is created.",
+    "Line 19: As soon as the object is created, the constructor is automatically called.",
+    "Line 21: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: 'Student' என்ற Class உருவாக்கப்படுகிறது.",
+    "வரி 7: public: மூலம் Constructor-ஐ வெளியிலிருந்து அணுக முடிகிறது.",
+    "வரி 9: 'Student()' என்ற Constructor உருவாக்கப்படுகிறது.",
+    "வரி 11: cout மூலம் Welcome Message திரையில் காட்டப்படுகிறது.",
+    "வரி 13: Constructor வெற்றிகரமாக அழைக்கப்பட்டது என்ற செய்தி திரையில் காட்டப்படுகிறது.",
+    "வரி 17: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 19: 'deepak' என்ற Object உருவாக்கப்படுகிறது.",
+    "வரி 19: Object உருவாக்கப்பட்ட உடனே Constructor தானாகவே அழைக்கப்படுகிறது.",
+    "வரி 21: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `Welcome to Alaporan Tamilan!
+Constructor Called Successfully!`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
