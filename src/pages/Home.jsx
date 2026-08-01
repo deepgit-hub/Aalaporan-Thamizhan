@@ -135,7 +135,7 @@ function Home() {
       </p>
 
       <p className="progress-message">
-        🚀 Start learning today and become a Java expert.
+        🚀 Start learning today and build a strong foundation in JAVA.
       </p>
 
     </div>
