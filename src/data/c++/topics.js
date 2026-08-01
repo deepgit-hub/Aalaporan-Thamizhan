@@ -1271,7 +1271,91 @@ Day 5 : Deepak practiced C++.`,
 
   completed: false,
 },
+{
+  id: 16,
 
+  title: "Continue Statement",
+
+  englishDefinition:
+    "The Continue Statement is used to skip the current iteration of a loop and move directly to the next iteration. Unlike the break statement, it does not terminate the loop; instead, it continues executing the remaining iterations.",
+
+  tamilDefinition:
+    "Continue Statement என்பது Loop-இன் தற்போதைய Iteration-ஐ தவிர்த்து (Skip செய்து), அடுத்த Iteration-க்கு நேரடியாக செல்ல பயன்படுத்தப்படுகிறது. இது Break Statement போல Loop-ஐ நிறுத்தாது. அதற்கு பதிலாக, மீதமுள்ள Iteration-களை தொடர்ந்து இயக்கும்.",
+
+  realWorldUsage:
+    "The Continue Statement is used in many real-world applications. For example, while processing student records, invalid records can be skipped without stopping the entire process. Similarly, while filtering products in an online shopping website, unavailable products can be skipped while displaying the remaining products.",
+
+  realWorldUsageTamil:
+    "Continue Statement பல Software-களில் பயன்படுத்தப்படுகிறது. உதாரணமாக, மாணவர்களின் தகவல்களை செயல்படுத்தும் போது தவறான பதிவுகளை மட்டும் Skip செய்து, மற்ற பதிவுகளை தொடர்ந்து செயல்படுத்தலாம். அதேபோல் Online Shopping Website-ல் Stock இல்லாத பொருட்களை Skip செய்து, மற்ற பொருட்களை மட்டும் காட்டலாம்.",
+
+  syntax: `continue;`,
+
+  syntaxExplanationEnglish: [
+    "The 'continue' keyword skips the current iteration of a loop.",
+    "It is generally used inside an if statement.",
+    "The remaining statements of the current iteration are skipped.",
+    "The loop immediately proceeds to the next iteration."
+  ],
+
+  syntaxExplanationTamil: [
+    "'continue' Keyword தற்போதைய Iteration-ஐ Skip செய்கிறது.",
+    "இது பொதுவாக Loop-க்குள் உள்ள if Statement-இல் பயன்படுத்தப்படுகிறது.",
+    "தற்போதைய Iteration-ல் மீதமுள்ள Statements இயக்கப்படாது.",
+    "Loop உடனடியாக அடுத்த Iteration-க்கு செல்கிறது."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    for(int day = 1; day <= 5; day++)
+    {
+        if(day == 3)
+        {
+            continue;
+        }
+
+        cout << "Day " << day << " : Deepak practiced C++." << endl;
+    }
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: int main() is the starting point of the program.",
+    "Line 7: The for loop starts from day 1 and continues until day 5.",
+    "Line 9: The if statement checks whether the value of day is equal to 3.",
+    "Line 11: When day becomes 3, the continue statement skips the current iteration.",
+    "Line 14: Therefore, the cout statement is not executed for day 3.",
+    "Line 14: The loop continues with day 4 and day 5.",
+    "Line 17: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 7: For Loop, day = 1 முதல் day = 5 வரை இயக்கப்படுகிறது.",
+    "வரி 9: if Statement, day-ன் மதிப்பு 3 ஆக உள்ளதா என்பதை சரிபார்க்கிறது.",
+    "வரி 11: day 3 ஆனவுடன் continue Statement தற்போதைய Iteration-ஐ Skip செய்கிறது.",
+    "வரி 14: அதனால் Day 3-க்கான cout Statement இயக்கப்படாது.",
+    "வரி 14: Loop தொடர்ந்து Day 4 மற்றும் Day 5-ஐ இயக்குகிறது.",
+    "வரி 17: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `Day 1 : Deepak practiced C++.
+Day 2 : Deepak practiced C++.
+Day 4 : Deepak practiced C++.
+Day 5 : Deepak practiced C++.`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
