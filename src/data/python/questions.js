@@ -1222,6 +1222,165 @@ print(name, "is learning", language + ".")`,
       locked: false,
       completed: false,
     },  
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a Python program to accept your name, college name, and favorite programming language from the user. Print all the values on separate lines.",
+
+      questionTamil:
+        "பயனரிடமிருந்து உங்கள் பெயர், College பெயர் மற்றும் உங்களுக்கு பிடித்த Programming Language ஆகியவற்றை Input ஆக பெற்று, அவற்றை தனித்தனி வரிகளில் Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use three input() statements and three print() statements.",
+
+      hintTamil:
+        "மூன்று input() Statements மற்றும் மூன்று print() Statements-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter your name: Deepak
+Enter your college: Don Bosco College
+Enter your favorite language: Python
+Deepak
+Don Bosco College
+Python`,
+
+      expectedOutputTamil: `Enter your name: Deepak
+Enter your college: Don Bosco College
+Enter your favorite language: Python
+Deepak
+Don Bosco College
+Python`,
+
+      solution: `name = input("Enter your name: ")
+
+college = input("Enter your college: ")
+
+language = input("Enter your favorite language: ")
+
+print(name)
+
+print(college)
+
+print(language)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a Python program to accept two student names from the user and print the sentence '<student1> and <student2> are learning Python.'",
+
+      questionTamil:
+        "பயனரிடமிருந்து இரண்டு மாணவர்களின் பெயர்களை Input ஆக பெற்று, '<student1> and <student2> are learning Python.' என்ற வாக்கியத்தை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use two input() statements and use both variables inside print().",
+
+      hintTamil:
+        "இரண்டு input() Statements-ஐ பயன்படுத்தி, இரண்டு Variables-ஐயும் print() Statement-ல் பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter first student: Deepak
+Enter second student: Kathir
+Deepak and Kathir are learning Python.`,
+
+      expectedOutputTamil: `Enter first student: Deepak
+Enter second student: Kathir
+Deepak and Kathir are learning Python.`,
+
+      solution: `student1 = input("Enter first student: ")
+
+student2 = input("Enter second student: ")
+
+print(student1, "and", student2, "are learning Python.")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a Python program to accept your name, age, college name, and department from the user. Print all the values on separate lines.",
+
+      questionTamil:
+        "பயனரிடமிருந்து உங்கள் பெயர், வயது, College பெயர் மற்றும் Department ஆகியவற்றை Input ஆக பெற்று, அனைத்து Values-ஐ தனித்தனி வரிகளில் Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use four input() statements and four print() statements.",
+
+      hintTamil:
+        "நான்கு input() Statements மற்றும் நான்கு print() Statements-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter your name: Deepak
+Enter your age: 20
+Enter your college: Don Bosco College
+Enter your department: Computer Science
+Deepak
+20
+Don Bosco College
+Computer Science`,
+
+      expectedOutputTamil: `Enter your name: Deepak
+Enter your age: 20
+Enter your college: Don Bosco College
+Enter your department: Computer Science
+Deepak
+20
+Don Bosco College
+Computer Science`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a Python program to accept two student names, one college name, one department, and one favorite programming language from the user. Print a meaningful message using all the inputs.",
+
+      questionTamil:
+        "பயனரிடமிருந்து இரண்டு மாணவர்களின் பெயர்கள், ஒரு College பெயர், ஒரு Department மற்றும் ஒரு Favorite Programming Language ஆகியவற்றை Input ஆக பெற்று, அனைத்து Inputs-ஐ பயன்படுத்தி ஒரு பொருத்தமான (Meaningful) செய்தியை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use five input() statements and display the values in a meaningful sentence.",
+
+      hintTamil:
+        "ஐந்து input() Statements-ஐ பயன்படுத்தி, அனைத்து Values-ஐ ஒரு பொருத்தமான வாக்கியத்தில் Print செய்யுங்கள்.",
+
+      expectedOutput: `Enter first student: Deepak
+Enter second student: Kathir
+Enter your college: Don Bosco College
+Enter your department: Computer Science
+Enter your favorite language: Python
+Deepak and Kathir are studying Computer Science at Don Bosco College and learning Python.`,
+
+      expectedOutputTamil: `Enter first student: Deepak
+Enter second student: Kathir
+Enter your college: Don Bosco College
+Enter your department: Computer Science
+Enter your favorite language: Python
+Deepak and Kathir are studying Computer Science at Don Bosco College and learning Python.`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
