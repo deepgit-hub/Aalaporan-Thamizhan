@@ -1486,9 +1486,256 @@ print(result)`,
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to divide 100 by 5 using the division operator and print the result.",
+
+      questionTamil:
+        "100-ஐ 5-ஆல் Division Operator பயன்படுத்தி வகுத்து அதன் முடிவை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the '/' operator.",
+
+      hintTamil:
+        "'/' Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `20.0`,
+
+      expectedOutputTamil: `20.0`,
+
+      solution: `num1 = 100
+
+num2 = 5
+
+result = num1 / num2
+
+print(result)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to find the remainder when 17 is divided by 5 using the modulus operator and print the result.",
+
+      questionTamil:
+        "17-ஐ 5-ஆல் வகுத்த பிறகு கிடைக்கும் மீதியை Modulus Operator பயன்படுத்தி Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the '%' operator.",
+
+      hintTamil:
+        "'%' Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `2`,
+
+      expectedOutputTamil: `2`,
+
+      solution: `num1 = 17
+
+num2 = 5
+
+result = num1 % num2
+
+print(result)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to compare two numbers 25 and 25 using the equality operator and print the result.",
+
+      questionTamil:
+        "25 மற்றும் 25 ஆகிய இரண்டு எண்களை Equality Operator பயன்படுத்தி ஒப்பிட்டு அதன் முடிவை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the '==' operator.",
+
+      hintTamil:
+        "'==' Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `True`,
+
+      expectedOutputTamil: `True`,
+
+      solution: `num1 = 25
+
+num2 = 25
+
+result = num1 == num2
+
+print(result)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a Python program to compare two numbers 15 and 25 using the less than operator and print the result.",
+
+      questionTamil:
+        "15 மற்றும் 25 ஆகிய இரண்டு எண்களை Less Than Operator பயன்படுத்தி ஒப்பிட்டு அதன் முடிவை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the '<' operator.",
+
+      hintTamil:
+        "'<' Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `True`,
+
+      expectedOutputTamil: `True`,
+
+      solution: `num1 = 15
+
+num2 = 25
+
+result = num1 < num2
+
+print(result)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a Python program to compare two numbers 40 and 20 using the greater than operator and print the result.",
+
+      questionTamil:
+        "40 மற்றும் 20 ஆகிய இரண்டு எண்களை Greater Than Operator பயன்படுத்தி ஒப்பிட்டு அதன் முடிவை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the '>' operator.",
+
+      hintTamil:
+        "'>' Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `True`,
+
+      expectedOutputTamil: `True`,
+
+      solution: `num1 = 40
+
+num2 = 20
+
+result = num1 > num2
+
+print(result)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a Python program to perform addition, subtraction, multiplication, division, and modulus on two numbers entered by the user and print all the results.",
+
+      questionTamil:
+        "பயனரிடமிருந்து இரண்டு எண்களை Input ஆக பெற்று, அவற்றின் Addition, Subtraction, Multiplication, Division மற்றும் Modulus ஆகியவற்றின் முடிவுகளை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the operators +, -, *, /, and %.",
+
+      hintTamil:
+        "+, -, *, / மற்றும் % Operators-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter first number: 20
+Enter second number: 5
+Addition: 25
+Subtraction: 15
+Multiplication: 100
+Division: 4.0
+Modulus: 0`,
+
+      expectedOutputTamil: `Enter first number: 20
+Enter second number: 5
+Addition: 25
+Subtraction: 15
+Multiplication: 100
+Division: 4.0
+Modulus: 0`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a Python program to accept two numbers from the user and display the results of Arithmetic Operators (+, -, *, /), Comparison Operators (==, >, <), and Modulus Operator (%).",
+
+      questionTamil:
+        "பயனரிடமிருந்து இரண்டு எண்களை Input ஆக பெற்று, Arithmetic Operators (+, -, *, /), Comparison Operators (==, >, <) மற்றும் Modulus Operator (%) ஆகியவற்றின் முடிவுகளை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use all the operators learned in this topic.",
+
+      hintTamil:
+        "இந்த Topic-ல் கற்றுக்கொண்ட அனைத்து Operators-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter first number: 15
+Enter second number: 5
+Addition: 20
+Subtraction: 10
+Multiplication: 75
+Division: 3.0
+Modulus: 0
+Equal: False
+Greater: True
+Less: False`,
+
+      expectedOutputTamil: `Enter first number: 15
+Enter second number: 5
+Addition: 20
+Subtraction: 10
+Multiplication: 75
+Division: 3.0
+Modulus: 0
+Equal: False
+Greater: True
+Less: False`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
+
 ];
 
 export default questions;
