@@ -915,7 +915,100 @@ Day 5 : Deepak practiced C++.`,
 
   completed: false,
 },
+{
+  id: 12,
 
+  title: "Do-While Loop",
+
+  englishDefinition:
+    "A Do-While Loop is a looping statement that executes a block of code at least once before checking the condition. After the first execution, the condition is evaluated. If the condition is true, the loop continues; otherwise, it stops.",
+
+  tamilDefinition:
+    "Do-While Loop என்பது ஒரு Looping Statement ஆகும். இது முதலில் ஒரு முறை Code-ஐ இயக்கி, அதன் பிறகே Condition-ஐ சரிபார்க்கும். Condition True ஆக இருந்தால் Loop தொடர்ந்து இயங்கும். இல்லையெனில் Loop நிறுத்தப்படும்.",
+
+  realWorldUsage:
+    "The Do-While Loop is used when a task must be performed at least once. For example, an ATM displays the menu once before asking the user whether they want to perform another transaction, and a game menu is shown at least once before checking whether the player wants to continue.",
+
+  realWorldUsageTamil:
+    "Do-While Loop ஒரு செயலை குறைந்தது ஒரு முறை செய்ய வேண்டிய சூழலில் பயன்படுத்தப்படுகிறது. உதாரணமாக, ATM-ல் Menu முதலில் ஒரு முறை காட்டப்பட்ட பிறகு, மற்றொரு Transaction செய்ய வேண்டுமா என்று கேட்கப்படுகிறது. அதுபோல் Game Menu-வும் குறைந்தது ஒரு முறை காட்டப்படுகிறது.",
+
+  syntax: `do
+{
+    // Code to execute
+}
+while(condition);`,
+
+  syntaxExplanationEnglish: [
+    "The keyword 'do' starts the loop.",
+    "The statements inside the do block execute first.",
+    "After executing the block, the condition inside while() is checked.",
+    "If the condition is true, the loop executes again.",
+    "If the condition is false, the loop terminates."
+  ],
+
+  syntaxExplanationTamil: [
+    "'do' என்பது Loop-ஐ தொடங்கும் Keyword ஆகும்.",
+    "do Block-க்குள் இருக்கும் Statements முதலில் இயக்கப்படும்.",
+    "அதன் பிறகு while() உள்ளே இருக்கும் Condition சரிபார்க்கப்படும்.",
+    "Condition True ஆக இருந்தால் Loop மீண்டும் இயக்கப்படும்.",
+    "Condition False ஆக இருந்தால் Loop நிறுத்தப்படும்."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int day = 1;
+
+    do
+    {
+        cout << "Day " << day << " : Deepak practiced C++." << endl;
+
+        day++;
+    }
+    while(day <= 5);
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: int main() is the starting point of the program.",
+    "Line 7: An integer variable 'day' is created and initialized with 1.",
+    "Line 9: The do block starts.",
+    "Line 11: cout displays the current day and the practice message.",
+    "Line 13: day++ increases the value of day by 1.",
+    "Line 15: The while condition checks whether day is less than or equal to 5.",
+    "Line 15: If the condition is true, the loop executes again; otherwise, it stops.",
+    "Line 17: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 7: 'day' என்ற Integer Variable உருவாக்கப்பட்டு 1 சேமிக்கப்படுகிறது.",
+    "வரி 9: do Block தொடங்குகிறது.",
+    "வரி 11: தற்போதைய நாளும் Practice Message-உம் திரையில் காட்டப்படுகிறது.",
+    "வரி 13: day++ மூலம் day-ன் மதிப்பு 1 அதிகரிக்கப்படுகிறது.",
+    "வரி 15: while Condition, day 5-க்கு சமமா அல்லது அதைவிட குறைவா என்பதை சரிபார்க்கிறது.",
+    "வரி 15: Condition True ஆக இருந்தால் Loop மீண்டும் இயக்கப்படும். இல்லையெனில் Loop நிறுத்தப்படும்.",
+    "வரி 17: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `Day 1 : Deepak practiced C++.
+Day 2 : Deepak practiced C++.
+Day 3 : Deepak practiced C++.
+Day 4 : Deepak practiced C++.
+Day 5 : Deepak practiced C++.`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
