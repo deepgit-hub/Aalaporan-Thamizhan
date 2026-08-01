@@ -1855,6 +1855,96 @@ Welcome to Alaporan Thamizhan!`,
 
   completed: false,
 },
+{
+  id: 25,
+
+  title: "Constructors",
+
+  englishDefinition:
+    "A Constructor is a special method in Python that is automatically executed when an object is created. It is used to initialize the object's attributes with initial values. In Python, the constructor is created using the __init__() method.",
+
+  tamilDefinition:
+    "Constructor என்பது Python-ல் ஒரு Object உருவாக்கப்படும் போது தானாகவே (Automatically) இயக்கப்படும் சிறப்பு Method ஆகும். இது Object-ன் Attributes-க்கு ஆரம்ப (Initial) மதிப்புகளை வழங்க பயன்படுத்தப்படுகிறது. Python-ல் Constructor, __init__() Method மூலம் உருவாக்கப்படுகிறது.",
+
+  realWorldUsage:
+    "Constructors are used in almost every Object-Oriented software application. For example, when a student registers in a College Management System, the constructor automatically initializes the student's name, roll number, and department. Similarly, in an E-commerce website, a Product object is initialized with its name, price, and stock quantity.",
+
+  realWorldUsageTamil:
+    "Constructors அனைத்து Object-Oriented Software Applications-லிலும் பயன்படுத்தப்படுகின்றன. உதாரணமாக, College Management System-ல் ஒரு மாணவர் பதிவு செய்யும்போது, Constructor அவரது பெயர், Roll Number மற்றும் Department ஆகியவற்றை தானாகவே Initialize செய்கிறது. அதேபோல் E-commerce Website-ல் Product Name, Price மற்றும் Stock போன்ற தகவல்கள் Constructor மூலம் Initialize செய்யப்படுகின்றன.",
+
+  syntax: `class ClassName:
+    def __init__(self):
+        # Initialization Statements`,
+
+  syntaxExplanationEnglish: [
+    "__init__() is the constructor method in Python.",
+    "The constructor is automatically called whenever an object is created.",
+    "The 'self' parameter refers to the current object.",
+    "The constructor is mainly used to initialize object attributes.",
+    "Every object gets initialized automatically when it is created."
+  ],
+
+  syntaxExplanationTamil: [
+    "__init__() என்பது Python-ல் Constructor Method ஆகும்.",
+    "Object உருவாக்கப்படும் போது Constructor தானாகவே அழைக்கப்படுகிறது.",
+    "'self' என்பது தற்போதைய Object-ஐ குறிக்கிறது.",
+    "Constructor, Object-ன் Attributes-ஐ Initialize செய்ய பயன்படுகிறது.",
+    "ஒவ்வொரு Object-மும் உருவாக்கப்படும் போதே தானாக Initialize செய்யப்படுகிறது."
+  ],
+
+  exampleProgram: `class Student:
+
+    def __init__(self):
+        self.name = "Deepak"
+
+        self.college = "Don Bosco College"
+
+        print("Student Object Created Successfully!")
+
+student = Student()
+
+print("Student Name :", student.name)
+
+print("College :", student.college)
+
+print("Keep Learning with Alaporan Thamizhan!")`,
+
+  programExplanationEnglish: [
+    "Line 1: A class named 'Student' is created.",
+    "Line 3: The constructor __init__() is defined.",
+    "Line 4: The attribute 'name' is initialized with the value 'Deepak'.",
+    "Line 6: The attribute 'college' is initialized with the value 'Don Bosco College'.",
+    "Line 8: A message is displayed when the constructor executes.",
+    "Line 10: An object named 'student' is created, automatically calling the constructor.",
+    "Line 12: The value of the 'name' attribute is displayed.",
+    "Line 14: The value of the 'college' attribute is displayed.",
+    "Line 16: A motivational message is displayed.",
+    "The program demonstrates how a constructor automatically initializes object data."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: 'Student' என்ற Class உருவாக்கப்படுகிறது.",
+    "வரி 3: __init__() என்ற Constructor உருவாக்கப்படுகிறது.",
+    "வரி 4: 'name' Attribute-க்கு 'Deepak' என்ற ஆரம்ப மதிப்பு வழங்கப்படுகிறது.",
+    "வரி 6: 'college' Attribute-க்கு 'Don Bosco College' என்ற ஆரம்ப மதிப்பு வழங்கப்படுகிறது.",
+    "வரி 8: Constructor இயக்கப்படும் போது ஒரு செய்தி திரையில் காட்டப்படுகிறது.",
+    "வரி 10: 'student' என்ற Object உருவாக்கப்படும்போது Constructor தானாகவே அழைக்கப்படுகிறது.",
+    "வரி 12: 'name' Attribute-ன் மதிப்பு திரையில் காட்டப்படுகிறது.",
+    "வரி 14: 'college' Attribute-ன் மதிப்பு திரையில் காட்டப்படுகிறது.",
+    "வரி 16: 'Keep Learning with Alaporan Thamizhan!' என்ற ஊக்கமளிக்கும் செய்தி காட்டப்படுகிறது.",
+    "இந்த Program, Constructor மூலம் Object உருவாக்கப்படும் போதே Attributes எப்படி Initialize செய்யப்படுகின்றன என்பதை விளக்குகிறது."
+  ],
+
+  output: `Student Object Created Successfully!
+Student Name : Deepak
+College : Don Bosco College
+Keep Learning with Alaporan Thamizhan!`,
+
+  locked: false,
+
+  completed: false,
+},
+
 ];
 
 export default topics;
