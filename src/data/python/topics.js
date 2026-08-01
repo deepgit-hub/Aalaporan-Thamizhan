@@ -1688,6 +1688,85 @@ Keep Learning with Alaporan Thamizhan!`,
 
   completed: false,
 },
+{
+  id: 23,
+
+  title: "Classes",
+
+  englishDefinition:
+    "A Class is a blueprint or template used to create objects in Python. It defines the properties (attributes) and behaviors (methods) that an object will have. A class helps organize related data and functions into a single unit.",
+
+  tamilDefinition:
+    "Class என்பது Python-ல் Objects உருவாக்க பயன்படும் Blueprint அல்லது Template ஆகும். ஒரு Object-க்கு தேவையான Properties (Attributes) மற்றும் Behaviors (Methods) ஆகியவற்றை Class வரையறுக்கிறது. தொடர்புடைய Data மற்றும் Functions-ஐ ஒரே இடத்தில் ஒழுங்காக அமைக்க Class பயன்படுகிறது.",
+
+  realWorldUsage:
+    "Classes are used in almost every software application. For example, a College Management System can have a Student class containing student details and functions. Similarly, an E-commerce website can have a Product class to manage product information.",
+
+  realWorldUsageTamil:
+    "Class அனைத்து Software Applications-லிலும் பயன்படுத்தப்படுகிறது. உதாரணமாக, College Management System-ல் மாணவர்களின் தகவல்களை நிர்வகிக்க Student Class பயன்படுத்தப்படுகிறது. அதேபோல் E-commerce Website-ல் Product Details-ஐ நிர்வகிக்க Product Class பயன்படுத்தப்படுகிறது.",
+
+  syntax: `class ClassName:
+    # Attributes
+
+    # Methods`,
+
+  syntaxExplanationEnglish: [
+    "The 'class' keyword is used to create a class.",
+    "ClassName represents the name of the class.",
+    "Attributes store the data of the class.",
+    "Methods define the actions performed by the class.",
+    "Proper indentation is required inside the class."
+  ],
+
+  syntaxExplanationTamil: [
+    "'class' Keyword பயன்படுத்தி Class உருவாக்கப்படுகிறது.",
+    "ClassName என்பது Class-ன் பெயராகும்.",
+    "Attributes என்பது Class-ன் Data-வை சேமிக்க பயன்படுகிறது.",
+    "Methods என்பது Class செய்யும் செயல்களை வரையறுக்கிறது.",
+    "Class-க்குள் உள்ள அனைத்து Statements-க்கும் சரியான Indentation அவசியம்."
+  ],
+
+  exampleProgram: `class Student:
+    college = "Don Bosco College"
+
+    def welcome(self):
+        print("Welcome to Alaporan Thamizhan!")
+
+student = Student()
+
+print("College :", student.college)
+
+student.welcome()`,
+
+  programExplanationEnglish: [
+    "Line 1: A class named 'Student' is created.",
+    "Line 2: A class attribute named 'college' is created.",
+    "Line 4: A method named 'welcome()' is created inside the class.",
+    "Line 5: The method displays a welcome message.",
+    "Line 7: An object named 'student' is created from the Student class.",
+    "Line 9: The class attribute is accessed using the object.",
+    "Line 11: The welcome() method is called using the object.",
+    "The program demonstrates how to create and use a class."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: 'Student' என்ற Class உருவாக்கப்படுகிறது.",
+    "வரி 2: 'college' என்ற Class Attribute உருவாக்கப்படுகிறது.",
+    "வரி 4: Class-க்குள் 'welcome()' என்ற Method உருவாக்கப்படுகிறது.",
+    "வரி 5: இந்த Method ஒரு வரவேற்பு செய்தியை திரையில் காட்டுகிறது.",
+    "வரி 7: Student Class-இல் இருந்து 'student' என்ற Object உருவாக்கப்படுகிறது.",
+    "வரி 9: Object பயன்படுத்தி Class Attribute அணுகப்படுகிறது.",
+    "வரி 11: Object பயன்படுத்தி welcome() Method அழைக்கப்படுகிறது.",
+    "இந்த Program, Python-ல் Class உருவாக்குவது மற்றும் பயன்படுத்துவது எப்படி என்பதை விளக்குகிறது."
+  ],
+
+  output: `College : Don Bosco College
+Welcome to Alaporan Thamizhan!`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
