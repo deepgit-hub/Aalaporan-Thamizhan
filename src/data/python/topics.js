@@ -1389,7 +1389,73 @@ Keep Learning with Alaporan Thamizhan!`,
 
   completed: false,
 },
+{
+  id: 19,
 
+  title: "Sets",
+
+  englishDefinition:
+    "A Set is an unordered and mutable collection in Python that stores unique elements. Duplicate values are automatically removed, making sets useful when only distinct values are needed.",
+
+  tamilDefinition:
+    "Set என்பது Python-ல் Unique (தனித்துவமான) Values-ஐ மட்டும் சேமிக்கும் Unordered மற்றும் Mutable Collection ஆகும். ஒரே Value பலமுறை கொடுத்தாலும், Set அதனை ஒரே முறை மட்டுமே சேமிக்கும். எனவே Duplicate Values தானாகவே நீக்கப்படும்.",
+
+  realWorldUsage:
+    "Sets are used in many software applications where duplicate values are not allowed. For example, storing unique student IDs, unique email addresses, unique course names, or unique usernames in a website.",
+
+  realWorldUsageTamil:
+    "Duplicate Values அனுமதிக்கப்படாத Software Applications-ல் Set பயன்படுத்தப்படுகிறது. உதாரணமாக, Unique Student IDs, Unique Email Addresses, Unique Course Names மற்றும் Website-ல் Unique Usernames போன்றவற்றை சேமிக்க Set பயன்படுத்தப்படுகிறது.",
+
+  syntax: `set_name = {value1, value2, value3}`,
+
+  syntaxExplanationEnglish: [
+    "Curly braces {} are used to create a set.",
+    "Elements are separated using commas.",
+    "Duplicate values are automatically removed.",
+    "Sets are unordered, so elements may not appear in the order they were inserted.",
+    "Sets are mutable, which means elements can be added or removed."
+  ],
+
+  syntaxExplanationTamil: [
+    "Curly Braces {} பயன்படுத்தி Set உருவாக்கப்படுகிறது.",
+    "ஒவ்வொரு Element-மும் Comma (,) மூலம் பிரிக்கப்படுகிறது.",
+    "Duplicate Values தானாகவே நீக்கப்படும்.",
+    "Set என்பது Unordered Collection ஆகும். எனவே Elements சேர்க்கப்பட்ட வரிசையில் காட்டப்பட வேண்டிய அவசியமில்லை.",
+    "Set Mutable Collection என்பதால் புதிய Elements-ஐ சேர்க்கவும் நீக்கவும் முடியும்."
+  ],
+
+  exampleProgram: `students = {"Deepak", "Kathir", "Deepak", "Priya"}
+
+print("Students :", students)
+
+print("Total Unique Students :", len(students))
+
+print("Keep Learning with Alaporan Thamizhan!")`,
+
+  programExplanationEnglish: [
+    "Line 1: A set named 'students' is created. The duplicate value 'Deepak' is automatically removed.",
+    "Line 3: print() displays all the unique elements stored in the set.",
+    "Line 5: len() returns the total number of unique elements in the set.",
+    "Line 7: print() displays the motivational message.",
+    "The program demonstrates how a set stores only unique values."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: 'students' என்ற Set உருவாக்கப்படுகிறது. இதில் உள்ள Duplicate Value 'Deepak' தானாகவே நீக்கப்படுகிறது.",
+    "வரி 3: print() மூலம் Set-ல் உள்ள Unique Elements திரையில் காட்டப்படுகின்றன.",
+    "வரி 5: len() Function Set-ல் உள்ள மொத்த Unique Elements எண்ணிக்கையை காட்டுகிறது.",
+    "வரி 7: print() மூலம் 'Keep Learning with Alaporan Thamizhan!' என்ற ஊக்கமளிக்கும் செய்தி காட்டப்படுகிறது.",
+    "இந்த Program, Set Duplicate Values-ஐ சேமிக்காது என்பதை விளக்குகிறது."
+  ],
+
+  output: `Students : {'Deepak', 'Kathir', 'Priya'}
+Total Unique Students : 3
+Keep Learning with Alaporan Thamizhan!`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
