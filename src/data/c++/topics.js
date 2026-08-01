@@ -209,21 +209,37 @@ int main()
 }`,
 
   programExplanationEnglish: [
-    "A string variable stores the student's name.",
-    "An integer variable stores the student's age.",
-    "A float variable stores the CGPA with decimal values.",
-    "A character variable stores the student's grade.",
-    "A boolean variable stores whether the student is a programmer.",
-    "Finally, all values are displayed using cout."
+     "Line 1: #include <iostream> includes the input and output library.",
+  "Line 3: using namespace std; allows us to use cout without writing std::.",
+  "Line 5: int main() is the starting point of the program.",
+  "Line 7: A string variable named 'name' is created and stores 'Deepak'.",
+  "Line 9: An integer variable named 'age' stores the value 20.",
+  "Line 11: A float variable named 'cgpa' stores the decimal value 9.2.",
+  "Line 13: A character variable named 'grade' stores the character 'A'.",
+  "Line 15: A boolean variable named 'isProgrammer' stores the value true.",
+  "Line 17: cout displays the student's name.",
+  "Line 19: cout displays the student's age.",
+  "Line 21: cout displays the student's CGPA.",
+  "Line 23: cout displays the student's grade.",
+  "Line 25: cout displays whether the student is a programmer.",
+  "Line 27: return 0; ends the program successfully."
   ],
 
   programExplanationTamil: [
-    "String Variable-ல் மாணவரின் பெயர் சேமிக்கப்படுகிறது.",
-    "Integer Variable-ல் மாணவரின் வயது சேமிக்கப்படுகிறது.",
-    "Float Variable-ல் CGPA தசம மதிப்புடன் சேமிக்கப்படுகிறது.",
-    "Character Variable-ல் Grade சேமிக்கப்படுகிறது.",
-    "Boolean Variable-ல் மாணவர் Programmer ஆவாரா என்பதை சேமிக்கிறது.",
-    "இறுதியாக cout மூலம் அனைத்து மதிப்புகளும் திரையில் காட்டப்படுகின்றன."
+     "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+  "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+  "வரி 5: int main() என்பது Program தொடங்கும் இடமாகும்.",
+  "வரி 7: 'name' என்ற String Variable உருவாக்கப்பட்டு 'Deepak' சேமிக்கப்படுகிறது.",
+  "வரி 9: 'age' என்ற Integer Variable-ல் 20 சேமிக்கப்படுகிறது.",
+  "வரி 11: 'cgpa' என்ற Float Variable-ல் 9.2 சேமிக்கப்படுகிறது.",
+  "வரி 13: 'grade' என்ற Character Variable-ல் 'A' சேமிக்கப்படுகிறது.",
+  "வரி 15: 'isProgrammer' என்ற Boolean Variable-ல் true சேமிக்கப்படுகிறது.",
+  "வரி 17: cout மாணவரின் பெயரை திரையில் காட்டுகிறது.",
+  "வரி 19: cout மாணவரின் வயதை திரையில் காட்டுகிறது.",
+  "வரி 21: cout CGPA-வை திரையில் காட்டுகிறது.",
+  "வரி 23: cout Grade-ஐ திரையில் காட்டுகிறது.",
+  "வரி 25: cout Programmer தகவலை திரையில் காட்டுகிறது.",
+  "வரி 27: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
   ],
 
   output: `Name : Deepak
