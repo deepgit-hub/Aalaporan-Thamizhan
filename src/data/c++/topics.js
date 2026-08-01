@@ -632,6 +632,114 @@ int main()
 
   completed: false,
 },
+{
+  id: 9,
+
+  title: "Switch Statement",
+
+  englishDefinition:
+    "The Switch Statement is a decision-making statement used to execute one block of code from multiple available choices. It is a better alternative to multiple if-else statements when checking the value of a single variable.",
+
+  tamilDefinition:
+    "Switch Statement என்பது பல தேர்வுகளில் (Choices) ஒன்றை தேர்ந்தெடுத்து அதற்கான Code-ஐ இயக்க பயன்படும் ஒரு Decision Making Statement ஆகும். ஒரு Variable-ன் மதிப்பை பல முறை ஒப்பிட வேண்டிய சூழலில், பல if-else Statement-களுக்கு பதிலாக Switch Statement பயன்படுத்தப்படுகிறது.",
+
+  realWorldUsage:
+    "Switch Statements are widely used in menu-driven applications. For example, ATM machines allow users to select options like Balance Enquiry, Cash Withdrawal, Deposit, and Mini Statement. Based on the selected option, the corresponding operation is executed.",
+
+  realWorldUsageTamil:
+    "Switch Statement Menu Driven Software-களில் அதிகமாக பயன்படுத்தப்படுகிறது. உதாரணமாக, ATM-ல் Balance Enquiry, Cash Withdrawal, Deposit, Mini Statement போன்ற விருப்பங்களில் ஒன்றை தேர்வு செய்யும்போது, தேர்வு செய்யப்பட்ட Option-க்கு ஏற்ப Program செயல்படுகிறது.",
+
+  syntax: `switch(expression)
+{
+    case value1:
+        // Code
+        break;
+
+    case value2:
+        // Code
+        break;
+
+    default:
+        // Default Code
+}`,
+
+  syntaxExplanationEnglish: [
+    "switch checks the value of an expression.",
+    "Each case represents one possible value of the expression.",
+    "The break statement stops the execution after a matching case.",
+    "The default block executes when no case matches.",
+    "Switch statements improve readability when multiple choices are available."
+  ],
+
+  syntaxExplanationTamil: [
+    "switch என்பது Expression-ன் மதிப்பை சரிபார்க்கிறது.",
+    "ஒவ்வொரு case-மும் Expression-க்கு ஒரு சாத்தியமான மதிப்பைக் குறிக்கிறது.",
+    "break Statement, பொருந்திய Case முடிந்தவுடன் Switch Statement-இல் இருந்து வெளியேற உதவுகிறது.",
+    "எந்த Case-மும் பொருந்தவில்லை என்றால் default Block இயக்கப்படும்.",
+    "பல தேர்வுகள் இருக்கும் போது Switch Statement Program-ஐ எளிதாக புரிந்துகொள்ள உதவுகிறது."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int choice = 2;
+
+    switch(choice)
+    {
+        case 1:
+            cout << "Java";
+            break;
+
+        case 2:
+            cout << "C++";
+            break;
+
+        case 3:
+            cout << "Python";
+            break;
+
+        default:
+            cout << "Invalid Choice";
+    }
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: int main() is the starting point of the program.",
+    "Line 7: An integer variable 'choice' is created and stores the value 2.",
+    "Line 9: The switch statement checks the value stored in 'choice'.",
+    "Line 11: Case 1 is skipped because the value is not 1.",
+    "Line 15: Case 2 matches the value 2.",
+    "Line 17: cout displays 'C++'.",
+    "Line 19: break stops the execution of the switch statement.",
+    "Line 27: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 7: 'choice' என்ற Integer Variable-ல் 2 சேமிக்கப்படுகிறது.",
+    "வரி 9: switch Statement, 'choice' Variable-ன் மதிப்பை சரிபார்க்கிறது.",
+    "வரி 11: மதிப்பு 1 இல்லாததால் Case 1 இயக்கப்படாது.",
+    "வரி 15: மதிப்பு 2 என்பதால் Case 2 இயக்கப்படுகிறது.",
+    "வரி 17: cout மூலம் 'C++' திரையில் காட்டப்படுகிறது.",
+    "வரி 19: break Statement Switch Statement-இல் இருந்து வெளியேறுகிறது.",
+    "வரி 27: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `C++`,
+
+  locked: false,
+
+  completed: false,
+},
 
 ];
 
