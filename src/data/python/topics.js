@@ -1317,6 +1317,78 @@ Keep Learning with Alaporan Thamizhan!`,
 
   completed: false,
 },
+{
+  id: 18,
+
+  title: "Tuples",
+
+  englishDefinition:
+    "A Tuple is an ordered and immutable collection in Python that stores multiple values in a single variable. Once a tuple is created, its elements cannot be added, removed, or modified.",
+
+  tamilDefinition:
+    "Tuple என்பது Python-ல் பல Values-ஐ ஒரே Variable-ல் சேமிக்க பயன்படும் Ordered மற்றும் Immutable Collection ஆகும். ஒரு Tuple உருவாக்கப்பட்ட பிறகு அதிலுள்ள Elements-ஐ மாற்றவோ, நீக்கவோ அல்லது புதிதாக சேர்க்கவோ முடியாது.",
+
+  realWorldUsage:
+    "Tuples are used to store data that should not be changed. For example, storing the days of the week, months of the year, RGB color values, or a student's date of birth.",
+
+  realWorldUsageTamil:
+    "Tuple மாற்றக்கூடாத (Fixed) தகவல்களை சேமிக்க பயன்படுத்தப்படுகிறது. உதாரணமாக, வார நாட்கள், ஆண்டின் மாதங்கள், RGB Color Values அல்லது மாணவரின் பிறந்த தேதி போன்ற தகவல்கள் Tuple-ல் சேமிக்கப்படுகின்றன.",
+
+  syntax: `tuple_name = (value1, value2, value3)`,
+
+  syntaxExplanationEnglish: [
+    "Parentheses () are used to create a tuple.",
+    "Multiple elements are separated using commas.",
+    "Tuple elements are stored in order.",
+    "Tuple elements cannot be modified after creation.",
+    "Elements can be accessed using their index."
+  ],
+
+  syntaxExplanationTamil: [
+    "Parentheses () பயன்படுத்தி Tuple உருவாக்கப்படுகிறது.",
+    "ஒவ்வொரு Element-மும் Comma (,) மூலம் பிரிக்கப்படுகிறது.",
+    "Elements சேர்க்கப்பட்ட வரிசைப்படியே சேமிக்கப்படுகின்றன.",
+    "Tuple உருவாக்கப்பட்ட பிறகு அதன் Elements-ஐ மாற்ற முடியாது.",
+    "Index பயன்படுத்தி Tuple Elements-ஐ அணுகலாம்."
+  ],
+
+  exampleProgram: `students = ("Deepak", "Kathir", "Priya")
+
+print("First Student :", students[0])
+
+print("Second Student :", students[1])
+
+print("Total Students :", len(students))
+
+print("Keep Learning with Alaporan Thamizhan!")`,
+
+  programExplanationEnglish: [
+    "Line 1: A tuple named 'students' is created with three student names.",
+    "Line 3: The first element of the tuple is accessed using index 0.",
+    "Line 5: The second element of the tuple is accessed using index 1.",
+    "Line 7: len() returns the total number of elements in the tuple.",
+    "Line 9: print() displays a motivational message.",
+    "The program demonstrates how to create a tuple and access its elements."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: 'students' என்ற Tuple உருவாக்கப்பட்டு அதில் மூன்று மாணவர்களின் பெயர்கள் சேமிக்கப்படுகின்றன.",
+    "வரி 3: Index 0 பயன்படுத்தி முதல் Element திரையில் காட்டப்படுகிறது.",
+    "வரி 5: Index 1 பயன்படுத்தி இரண்டாவது Element திரையில் காட்டப்படுகிறது.",
+    "வரி 7: len() Function Tuple-ல் உள்ள மொத்த Elements எண்ணிக்கையை காட்டுகிறது.",
+    "வரி 9: print() மூலம் 'Keep Learning with Alaporan Thamizhan!' என்ற ஊக்கமளிக்கும் செய்தி காட்டப்படுகிறது.",
+    "இந்த Program, Tuple உருவாக்குவது மற்றும் அதன் Elements-ஐ Index மூலம் அணுகுவது எப்படி என்பதை விளக்குகிறது."
+  ],
+
+  output: `First Student : Deepak
+Second Student : Kathir
+Total Students : 3
+Keep Learning with Alaporan Thamizhan!`,
+
+  locked: false,
+
+  completed: false,
+},
 
 ];
 
