@@ -400,6 +400,77 @@ Is Final Fee less than Original Fee? True`,
 
   completed: false,
 },
+{
+  id: 6,
+
+  title: "If Statement",
+
+  englishDefinition:
+    "An If Statement is a decision-making statement used to execute a block of code only when a specified condition is True. If the condition is False, the statements inside the if block are skipped.",
+
+  tamilDefinition:
+    "If Statement என்பது ஒரு Decision-Making Statement ஆகும். கொடுக்கப்பட்டுள்ள Condition உண்மையாக (True) இருந்தால் மட்டுமே அதன் உள்ளே உள்ள Statements இயக்கப்படும். Condition False ஆக இருந்தால் அந்த Statements இயக்கப்படாது.",
+
+  realWorldUsage:
+    "If Statements are used in every software application. For example, an ATM allows cash withdrawal only if the entered PIN is correct. Similarly, an online shopping website applies a discount only if the purchase amount satisfies the required condition.",
+
+  realWorldUsageTamil:
+    "If Statement அனைத்து Software Applications-லிலும் பயன்படுத்தப்படுகிறது. உதாரணமாக, ATM-ல் சரியான PIN கொடுக்கப்பட்டால் மட்டுமே பணம் எடுக்க அனுமதிக்கப்படும். அதேபோல் Online Shopping Website-ல் குறிப்பிட்ட தொகைக்கு மேல் வாங்கினால் மட்டுமே Discount வழங்கப்படும்.",
+
+  syntax: `if condition:
+    # Statements`,
+
+  syntaxExplanationEnglish: [
+    "The 'if' keyword is used to make decisions.",
+    "The condition is written after the 'if' keyword.",
+    "A colon (:) must be placed at the end of the condition.",
+    "The statements inside the if block must be properly indented.",
+    "The statements execute only if the condition evaluates to True."
+  ],
+
+  syntaxExplanationTamil: [
+    "'if' Keyword முடிவெடுக்கும் செயல்பாட்டிற்கு பயன்படுத்தப்படுகிறது.",
+    "'if' Keyword-க்கு பிறகு Condition எழுதப்படுகிறது.",
+    "Condition-ன் முடிவில் Colon (:) கட்டாயமாக இட வேண்டும்.",
+    "if Block-க்குள் உள்ள Statements சரியான Indentation-உடன் எழுதப்பட வேண்டும்.",
+    "Condition True ஆக இருந்தால் மட்டுமே அந்த Statements இயக்கப்படும்."
+  ],
+
+  exampleProgram: `python_marks = 95
+
+if python_marks >= 50:
+    print("Congratulations Deepak!")
+
+    print("You Passed the Python Exam.")
+
+print("Keep Learning with Alaporan Thamizhan!")`,
+
+  programExplanationEnglish: [
+    "Line 1: A variable named 'python_marks' is created and assigned the value 95.",
+    "Line 3: The if statement checks whether the value of 'python_marks' is greater than or equal to 50.",
+    "Line 4: Since the condition is True, the first print() statement is executed.",
+    "Line 6: The second print() statement inside the if block is also executed.",
+    "Line 8: This print() statement is outside the if block, so it always executes.",
+    "The program demonstrates how an if statement executes code only when the condition is True."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: 'python_marks' என்ற Variable உருவாக்கப்பட்டு அதில் 95 என்ற மதிப்பு சேமிக்கப்படுகிறது.",
+    "வரி 3: if Statement, 'python_marks' 50 அல்லது அதற்கு மேல் உள்ளதா என்பதை சரிபார்க்கிறது.",
+    "வரி 4: Condition True என்பதால் முதல் print() Statement இயக்கப்படுகிறது.",
+    "வரி 6: if Block-க்குள் உள்ள இரண்டாவது print() Statement-மும் இயக்கப்படுகிறது.",
+    "வரி 8: இந்த print() Statement if Block-க்கு வெளியே இருப்பதால் எப்போதும் இயக்கப்படும்.",
+    "இந்த Program, Condition True ஆக இருக்கும் போது மட்டும் if Block இயங்குவதை விளக்குகிறது."
+  ],
+
+  output: `Congratulations Deepak!
+You Passed the Python Exam.
+Keep Learning with Alaporan Thamizhan!`,
+
+  locked: false,
+
+  completed: false,
+},
 
 ];
 
