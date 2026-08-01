@@ -2340,6 +2340,124 @@ Kathir got placed in a Software Company.`,
 
   completed: false,
 },
+{
+  id: 30,
+
+  title: "Hybrid Inheritance",
+
+  englishDefinition:
+    "Hybrid Inheritance is a combination of two or more types of inheritance such as Single, Multiple, Hierarchical, or Multilevel Inheritance. It is used to build complex class relationships by combining different inheritance structures.",
+
+  tamilDefinition:
+    "Hybrid Inheritance என்பது இரண்டு அல்லது அதற்கு மேற்பட்ட Inheritance வகைகளான Single, Multiple, Hierarchical அல்லது Multilevel Inheritance ஆகியவற்றின் இணைப்பாகும். பல்வேறு Inheritance அமைப்புகளை ஒன்றாக இணைத்து சிக்கலான (Complex) Class Relationships உருவாக்க இது பயன்படுத்தப்படுகிறது.",
+
+  realWorldUsage:
+    "Hybrid Inheritance is used in large software applications where different inheritance relationships are required. For example, in a College Management System, a PlacementStudent class can inherit common student details from the Student class while also inheriting login features from an Account class. This combines multiple inheritance structures into one system.",
+
+  realWorldUsageTamil:
+    "Hybrid Inheritance பெரிய Software Applications-ல் பல்வேறு Inheritance அமைப்புகள் தேவைப்படும் போது பயன்படுத்தப்படுகிறது. உதாரணமாக, College Management System-ல் PlacementStudent Class, Student Class-இல் இருந்து Student Details-ஐயும், Account Class-இல் இருந்து Login வசதிகளையும் பெறலாம். இதன் மூலம் பல Inheritance வகைகள் ஒன்றாக இணைக்கப்படுகின்றன.",
+
+  syntax: `class Person:
+    # Members
+
+class Student(Person):
+    # Members
+
+class Account:
+    # Members
+
+class PlacementStudent(Student, Account):
+    # Members`,
+
+  syntaxExplanationEnglish: [
+    "Hybrid Inheritance combines two or more inheritance types.",
+    "A child class can inherit through multiple inheritance paths.",
+    "The child class can access members inherited from different parent classes.",
+    "It helps in building complex software applications.",
+    "Hybrid Inheritance improves code reusability and flexibility."
+  ],
+
+  syntaxExplanationTamil: [
+    "Hybrid Inheritance என்பது இரண்டு அல்லது அதற்கு மேற்பட்ட Inheritance வகைகளை இணைக்கிறது.",
+    "Child Class பல Inheritance வழிகளின் மூலம் Parent Classes-இன் Members-ஐ பெறுகிறது.",
+    "வெவ்வேறு Parent Classes-இல் இருந்து பெறப்பட்ட Members-ஐ Child Class பயன்படுத்த முடியும்.",
+    "இது சிக்கலான Software Applications உருவாக்க பயன்படுகிறது.",
+    "Hybrid Inheritance Code Reusability மற்றும் Flexibility-ஐ அதிகரிக்கிறது."
+  ],
+
+  exampleProgram: `class Person:
+
+    def welcome(self):
+        print("Welcome to Alaporan Thamizhan!")
+
+class Student(Person):
+
+    def study(self):
+        print("Deepak is learning Python.")
+
+class Account:
+
+    def login(self):
+        print("Login Successful!")
+
+class PlacementStudent(Student, Account):
+
+    def placement(self):
+        print("Kathir got placed in a Software Company.")
+
+student = PlacementStudent()
+
+student.welcome()
+
+student.study()
+
+student.login()
+
+student.placement()`,
+
+  programExplanationEnglish: [
+    "Line 1: A base class named 'Person' is created.",
+    "Line 3: The welcome() method is defined inside the Person class.",
+    "Line 6: The Student class inherits from the Person class.",
+    "Line 8: The study() method is created inside the Student class.",
+    "Line 11: Another class named 'Account' is created.",
+    "Line 13: The login() method is defined inside the Account class.",
+    "Line 16: The PlacementStudent class inherits from both Student and Account classes, forming Hybrid Inheritance.",
+    "Line 18: The placement() method is created inside the PlacementStudent class.",
+    "Line 21: An object named 'student' is created.",
+    "Line 23: The inherited welcome() method from the Person class is called.",
+    "Line 25: The inherited study() method from the Student class is called.",
+    "Line 27: The inherited login() method from the Account class is called.",
+    "Line 29: The placement() method of the PlacementStudent class is called.",
+    "The program demonstrates how Hybrid Inheritance combines multiple inheritance structures."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: 'Person' என்ற Base Class உருவாக்கப்படுகிறது.",
+    "வரி 3: Person Class-க்குள் welcome() Method உருவாக்கப்படுகிறது.",
+    "வரி 6: Student Class, Person Class-இல் இருந்து Inherit செய்கிறது.",
+    "வரி 8: Student Class-க்குள் study() Method உருவாக்கப்படுகிறது.",
+    "வரி 11: 'Account' என்ற மற்றொரு Class உருவாக்கப்படுகிறது.",
+    "வரி 13: Account Class-க்குள் login() Method உருவாக்கப்படுகிறது.",
+    "வரி 16: PlacementStudent Class, Student மற்றும் Account ஆகிய இரண்டு Classes-இல் இருந்தும் Inherit செய்து Hybrid Inheritance உருவாக்குகிறது.",
+    "வரி 18: PlacementStudent Class-க்குள் placement() Method உருவாக்கப்படுகிறது.",
+    "வரி 21: 'student' என்ற Object உருவாக்கப்படுகிறது.",
+    "வரி 23: Person Class-இன் welcome() Method அழைக்கப்படுகிறது.",
+    "வரி 25: Student Class-இன் study() Method அழைக்கப்படுகிறது.",
+    "வரி 27: Account Class-இன் login() Method அழைக்கப்படுகிறது.",
+    "வரி 29: PlacementStudent Class-இன் placement() Method அழைக்கப்படுகிறது.",
+    "இந்த Program, Hybrid Inheritance மூலம் பல்வேறு Inheritance அமைப்புகள் ஒன்றாக இணைந்து செயல்படுவதை விளக்குகிறது."
+  ],
+
+  output: `Welcome to Alaporan Thamizhan!
+Deepak is learning Python.
+Login Successful!
+Kathir got placed in a Software Company.`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
