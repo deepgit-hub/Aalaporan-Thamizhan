@@ -550,6 +550,85 @@ Keep Learning with Alaporan Thamizhan!`,
 
   completed: false,
 },
+{
+  id: 8,
+
+  title: "Nested If Statement",
+
+  englishDefinition:
+    "A Nested If Statement is an if statement placed inside another if statement. The inner if statement is executed only if the outer if condition is True. It is used when multiple conditions need to be checked one after another.",
+
+  tamilDefinition:
+    "Nested If Statement என்பது ஒரு if Statement-க்குள் மற்றொரு if Statement இருப்பதாகும். வெளிப்புற (Outer) if Condition True ஆக இருந்தால் மட்டுமே உள்ளே இருக்கும் (Inner) if Statement இயக்கப்படும். பல நிபந்தனைகளை (Conditions) ஒன்றன் பின் ஒன்றாக சரிபார்க்க இது பயன்படுத்தப்படுகிறது.",
+
+  realWorldUsage:
+    "Nested If Statements are commonly used in software applications. For example, a college portal first checks whether a student has logged in successfully. If the login is successful, it then checks whether the student has paid the examination fee before allowing hall ticket download.",
+
+  realWorldUsageTamil:
+    "Nested If Statement பல Software Applications-லிலும் பயன்படுத்தப்படுகிறது. உதாரணமாக, College Portal முதலில் மாணவர் Login செய்துள்ளாரா என்பதை சரிபார்க்கும். Login வெற்றிகரமாக இருந்தால், மாணவர் Examination Fee செலுத்தியுள்ளாரா என்பதை சரிபார்த்து Hall Ticket Download செய்ய அனுமதிக்கும்.",
+
+  syntax: `if condition1:
+    if condition2:
+        # Statements`,
+
+  syntaxExplanationEnglish: [
+    "The outer if statement checks the first condition.",
+    "The inner if statement is executed only if the outer condition is True.",
+    "Each if statement must end with a colon (:).",
+    "Proper indentation is required for every block.",
+    "Nested If Statements help check multiple conditions step by step."
+  ],
+
+  syntaxExplanationTamil: [
+    "வெளிப்புற (Outer) if Statement முதல் Condition-ஐ சரிபார்க்கிறது.",
+    "Outer Condition True ஆக இருந்தால் மட்டுமே Inner if Statement இயக்கப்படும்.",
+    "ஒவ்வொரு if Statement-ன் முடிவிலும் Colon (:) கட்டாயமாக இட வேண்டும்.",
+    "ஒவ்வொரு Block-க்கும் சரியான Indentation அவசியம்.",
+    "Nested If Statement பல Conditions-ஐ படிப்படியாக (Step by Step) சரிபார்க்க உதவுகிறது."
+  ],
+
+  exampleProgram: `logged_in = True
+
+fee_paid = True
+
+if logged_in:
+    print("Login Successful")
+
+    if fee_paid:
+        print("Hall Ticket Download Allowed")
+
+print("Welcome to Alaporan Thamizhan!")`,
+
+  programExplanationEnglish: [
+    "Line 1: A variable named 'logged_in' is created and assigned the value True.",
+    "Line 3: A variable named 'fee_paid' is created and assigned the value True.",
+    "Line 5: The outer if statement checks whether the student has logged in successfully.",
+    "Line 6: Since the condition is True, 'Login Successful' is displayed.",
+    "Line 8: The inner if statement checks whether the examination fee has been paid.",
+    "Line 9: Since this condition is also True, 'Hall Ticket Download Allowed' is displayed.",
+    "Line 11: This print() statement is outside the Nested If block, so it always executes.",
+    "The program demonstrates how one condition is checked only after another condition becomes True."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: 'logged_in' என்ற Variable உருவாக்கப்பட்டு அதில் True என்ற மதிப்பு சேமிக்கப்படுகிறது.",
+    "வரி 3: 'fee_paid' என்ற Variable உருவாக்கப்பட்டு அதில் True என்ற மதிப்பு சேமிக்கப்படுகிறது.",
+    "வரி 5: வெளிப்புற if Statement, மாணவர் Login செய்துள்ளாரா என்பதை சரிபார்க்கிறது.",
+    "வரி 6: Condition True என்பதால் 'Login Successful' என்ற செய்தி காட்டப்படுகிறது.",
+    "வரி 8: உள்ளே இருக்கும் if Statement, Examination Fee செலுத்தப்பட்டுள்ளதா என்பதை சரிபார்க்கிறது.",
+    "வரி 9: இந்த Condition-மும் True என்பதால் 'Hall Ticket Download Allowed' என்ற செய்தி காட்டப்படுகிறது.",
+    "வரி 11: இந்த print() Statement Nested If Block-க்கு வெளியே இருப்பதால் எப்போதும் இயக்கப்படும்.",
+    "இந்த Program, முதல் Condition True ஆன பிறகே இரண்டாவது Condition சரிபார்க்கப்படுவதை விளக்குகிறது."
+  ],
+
+  output: `Login Successful
+Hall Ticket Download Allowed
+Welcome to Alaporan Thamizhan!`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
