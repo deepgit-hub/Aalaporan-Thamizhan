@@ -1009,6 +1009,92 @@ Day 5 : Deepak practiced C++.`,
 
   completed: false,
 },
+{
+  id: 13,
+
+  title: "For Loop",
+
+  englishDefinition:
+    "A For Loop is a looping statement used to execute a block of code repeatedly for a specified number of times. It is mainly used when the number of iterations is known in advance.",
+
+  tamilDefinition:
+    "For Loop என்பது ஒரு Looping Statement ஆகும். குறிப்பிட்ட எண்ணிக்கையிலான முறை ஒரு Code Block-ஐ மீண்டும் மீண்டும் இயக்க பயன்படுத்தப்படுகிறது. Loop எத்தனை முறை இயங்க வேண்டும் என்பது முன்கூட்டியே தெரிந்தால் For Loop பயன்படுத்தப்படுகிறது.",
+
+  realWorldUsage:
+    "For Loops are used in many software applications. For example, displaying a list of students, printing product details in an online shopping website, generating reports, and processing records in a database.",
+
+  realWorldUsageTamil:
+    "For Loop பல Software-களில் பயன்படுத்தப்படுகிறது. உதாரணமாக, மாணவர்களின் பட்டியலை காட்டுவது, Online Shopping Website-ல் Product List-ஐ காட்டுவது, Reports உருவாக்குவது மற்றும் Database Records-ஐ Process செய்வது போன்ற இடங்களில் பயன்படுத்தப்படுகிறது.",
+
+  syntax: `for(initialization; condition; increment/decrement)
+{
+    // Code to execute
+}`,
+
+  syntaxExplanationEnglish: [
+    "Initialization executes only once before the loop starts.",
+    "The condition is checked before every iteration.",
+    "If the condition is true, the code inside the loop executes.",
+    "After each iteration, the increment or decrement statement updates the loop variable.",
+    "The loop stops when the condition becomes false."
+  ],
+
+  syntaxExplanationTamil: [
+    "Initialization என்பது Loop தொடங்குவதற்கு முன் ஒரே ஒரு முறை மட்டுமே இயக்கப்படும்.",
+    "ஒவ்வொரு Iteration-க்கும் முன் Condition சரிபார்க்கப்படும்.",
+    "Condition True ஆக இருந்தால் Loop உள்ளே இருக்கும் Code இயக்கப்படும்.",
+    "ஒவ்வொரு Iteration முடிந்ததும் Increment அல்லது Decrement மூலம் Loop Variable Update செய்யப்படும்.",
+    "Condition False ஆனவுடன் Loop நிறுத்தப்படும்."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    for(int day = 1; day <= 5; day++)
+    {
+        cout << "Day " << day << " : Deepak practiced C++." << endl;
+    }
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: int main() is the starting point of the program.",
+    "Line 7: The for loop is initialized by creating the variable 'day' with the value 1.",
+    "Line 7: The condition 'day <= 5' is checked before every iteration.",
+    "Line 9: cout displays the current day along with the practice message.",
+    "Line 7: After every iteration, day++ increases the value of 'day' by 1.",
+    "Line 7: The loop continues until the condition becomes false.",
+    "Line 12: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 7: For Loop-ல் 'day' என்ற Variable உருவாக்கப்பட்டு 1 என்ற மதிப்பு கொடுக்கப்படுகிறது.",
+    "வரி 7: ஒவ்வொரு Iteration-க்கும் முன் 'day <= 5' என்ற Condition சரிபார்க்கப்படுகிறது.",
+    "வரி 9: தற்போதைய நாளும் Practice Message-உம் திரையில் காட்டப்படுகிறது.",
+    "வரி 7: ஒவ்வொரு Iteration முடிந்ததும் day++ மூலம் day-ன் மதிப்பு 1 அதிகரிக்கப்படுகிறது.",
+    "வரி 7: Condition False ஆகும் வரை Loop தொடர்ந்து இயங்கும்.",
+    "வரி 12: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `Day 1 : Deepak practiced C++.
+Day 2 : Deepak practiced C++.
+Day 3 : Deepak practiced C++.
+Day 4 : Deepak practiced C++.
+Day 5 : Deepak practiced C++.`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
