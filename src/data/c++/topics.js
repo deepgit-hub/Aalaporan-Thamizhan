@@ -141,6 +141,101 @@ int main()
 
   completed: false,
 },
+{
+  id: 3,
+
+  title: "Data Types",
+
+  englishDefinition:
+    "A data type specifies the type of data that a variable can store. Different data types occupy different amounts of memory and are used for different kinds of values such as numbers, characters, decimal values, and true or false.",
+
+  tamilDefinition:
+    "Data Type என்பது ஒரு Variable எந்த வகையான தரவை சேமிக்க முடியும் என்பதை குறிப்பிடுகிறது. ஒவ்வொரு Data Type-க்கும் தனித்தனி Memory அளவு இருக்கும். முழு எண்கள், தசம எண்கள், எழுத்துக்கள் மற்றும் True அல்லது False போன்ற மதிப்புகளை சேமிக்க வெவ்வேறு Data Types பயன்படுத்தப்படுகின்றன.",
+
+  realWorldUsage:
+    "Data types are used in every software application. For example, a student's age is stored as an integer, percentage as a float, grade as a character, and whether a student has paid the fees as a boolean value.",
+
+  realWorldUsageTamil:
+    "அனைத்து Software-களிலும் Data Types பயன்படுத்தப்படுகின்றன. உதாரணமாக, மாணவரின் வயது Integer ஆகவும், மதிப்பெண் சதவீதம் Float ஆகவும், Grade Character ஆகவும், Fees செலுத்தியுள்ளாரா என்பதை Boolean ஆகவும் சேமிக்கப்படுகிறது.",
+
+  syntax: `int age = 20;
+float percentage = 95.5;
+char grade = 'A';
+bool isPlaced = true;`,
+
+  syntaxExplanationEnglish: [
+    "int stores whole numbers.",
+    "float stores decimal numbers.",
+    "char stores a single character enclosed in single quotes.",
+    "bool stores either true or false values.",
+    "Each variable must be declared using an appropriate data type."
+  ],
+
+  syntaxExplanationTamil: [
+    "int முழு எண்களை (Whole Numbers) சேமிக்கிறது.",
+    "float தசம எண்களை (Decimal Numbers) சேமிக்கிறது.",
+    "char ஒரு எழுத்தை மட்டும் Single Quotes (' ') உள்ளே சேமிக்கிறது.",
+    "bool true அல்லது false என்ற இரண்டு மதிப்புகளை மட்டும் சேமிக்கிறது.",
+    "ஒவ்வொரு Variable-க்கும் சரியான Data Type பயன்படுத்த வேண்டும்."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string name = "Deepak";
+
+    int age = 20;
+
+    float cgpa = 9.2;
+
+    char grade = 'A';
+
+    bool isProgrammer = true;
+
+    cout << "Name : " << name << endl;
+
+    cout << "Age : " << age << endl;
+
+    cout << "CGPA : " << cgpa << endl;
+
+    cout << "Grade : " << grade << endl;
+
+    cout << "Programmer : " << isProgrammer << endl;
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "A string variable stores the student's name.",
+    "An integer variable stores the student's age.",
+    "A float variable stores the CGPA with decimal values.",
+    "A character variable stores the student's grade.",
+    "A boolean variable stores whether the student is a programmer.",
+    "Finally, all values are displayed using cout."
+  ],
+
+  programExplanationTamil: [
+    "String Variable-ல் மாணவரின் பெயர் சேமிக்கப்படுகிறது.",
+    "Integer Variable-ல் மாணவரின் வயது சேமிக்கப்படுகிறது.",
+    "Float Variable-ல் CGPA தசம மதிப்புடன் சேமிக்கப்படுகிறது.",
+    "Character Variable-ல் Grade சேமிக்கப்படுகிறது.",
+    "Boolean Variable-ல் மாணவர் Programmer ஆவாரா என்பதை சேமிக்கிறது.",
+    "இறுதியாக cout மூலம் அனைத்து மதிப்புகளும் திரையில் காட்டப்படுகின்றன."
+  ],
+
+  output: `Name : Deepak
+Age : 20
+CGPA : 9.2
+Grade : A
+Programmer : 1`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
