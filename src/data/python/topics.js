@@ -1767,6 +1767,94 @@ Welcome to Alaporan Thamizhan!`,
 
   completed: false,
 },
+{
+  id: 24,
+
+  title: "Objects",
+
+  englishDefinition:
+    "An Object is an instance of a class. It is created from a class and is used to access the attributes and methods defined inside the class. A single class can be used to create multiple objects.",
+
+  tamilDefinition:
+    "Object என்பது ஒரு Class-இன் Instance ஆகும். Class-இல் இருந்து Object உருவாக்கப்படுகிறது. Class-க்குள் உள்ள Attributes மற்றும் Methods-ஐ அணுக Object பயன்படுத்தப்படுகிறது. ஒரு Class-இல் இருந்து பல Objects உருவாக்க முடியும்.",
+
+  realWorldUsage:
+    "Objects are used in every Object-Oriented software application. For example, in a College Management System, each student can be represented as an object created from the Student class. Similarly, in an E-commerce website, every product is an object created from the Product class.",
+
+  realWorldUsageTamil:
+    "Objects அனைத்து Object-Oriented Software Applications-லிலும் பயன்படுத்தப்படுகின்றன. உதாரணமாக, College Management System-ல் ஒவ்வொரு மாணவரும் Student Class-இல் இருந்து உருவாக்கப்பட்ட ஒரு Object ஆக இருக்கும். அதேபோல் E-commerce Website-ல் ஒவ்வொரு Product-மும் Product Class-இல் இருந்து உருவாக்கப்பட்ட Object ஆகும்.",
+
+  syntax: `object_name = ClassName()`,
+
+  syntaxExplanationEnglish: [
+    "An object is created using the class name followed by parentheses ().",
+    "The object can access all public attributes of the class.",
+    "The object can also call all public methods of the class.",
+    "Multiple objects can be created from the same class.",
+    "Each object works independently."
+  ],
+
+  syntaxExplanationTamil: [
+    "Class Name-க்கு பிறகு Parentheses () பயன்படுத்தி Object உருவாக்கப்படுகிறது.",
+    "Object மூலம் Class-ன் அனைத்து Public Attributes-ஐ அணுகலாம்.",
+    "Object மூலம் Class-ன் அனைத்து Public Methods-ஐ அழைக்கலாம்.",
+    "ஒரே Class-இல் இருந்து பல Objects உருவாக்க முடியும்.",
+    "ஒவ்வொரு Object-மும் தனித்தனியாக செயல்படும்."
+  ],
+
+  exampleProgram: `class Student:
+    college = "Don Bosco College"
+
+    def welcome(self):
+        print("Welcome to Alaporan Thamizhan!")
+
+deepak = Student()
+
+kathir = Student()
+
+print("Deepak's College :", deepak.college)
+
+print("Kathir's College :", kathir.college)
+
+deepak.welcome()
+
+kathir.welcome()`,
+
+  programExplanationEnglish: [
+    "Line 1: A class named 'Student' is created.",
+    "Line 2: A class attribute named 'college' is created.",
+    "Line 4: A method named 'welcome()' is created inside the class.",
+    "Line 7: An object named 'deepak' is created from the Student class.",
+    "Line 9: Another object named 'kathir' is created from the same Student class.",
+    "Line 11: The 'college' attribute is accessed using the object 'deepak'.",
+    "Line 13: The 'college' attribute is accessed using the object 'kathir'.",
+    "Line 15: The welcome() method is called using the object 'deepak'.",
+    "Line 17: The welcome() method is called using the object 'kathir'.",
+    "The program demonstrates how multiple objects can be created from a single class."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: 'Student' என்ற Class உருவாக்கப்படுகிறது.",
+    "வரி 2: 'college' என்ற Class Attribute உருவாக்கப்படுகிறது.",
+    "வரி 4: Class-க்குள் 'welcome()' என்ற Method உருவாக்கப்படுகிறது.",
+    "வரி 7: Student Class-இல் இருந்து 'deepak' என்ற Object உருவாக்கப்படுகிறது.",
+    "வரி 9: அதே Student Class-இல் இருந்து 'kathir' என்ற மற்றொரு Object உருவாக்கப்படுகிறது.",
+    "வரி 11: 'deepak' Object பயன்படுத்தி 'college' Attribute அணுகப்படுகிறது.",
+    "வரி 13: 'kathir' Object பயன்படுத்தி 'college' Attribute அணுகப்படுகிறது.",
+    "வரி 15: 'deepak' Object மூலம் welcome() Method அழைக்கப்படுகிறது.",
+    "வரி 17: 'kathir' Object மூலம் welcome() Method அழைக்கப்படுகிறது.",
+    "இந்த Program, ஒரே Class-இல் இருந்து பல Objects உருவாக்கி பயன்படுத்துவது எப்படி என்பதை விளக்குகிறது."
+  ],
+
+  output: `Deepak's College : Don Bosco College
+Kathir's College : Don Bosco College
+Welcome to Alaporan Thamizhan!
+Welcome to Alaporan Thamizhan!`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
