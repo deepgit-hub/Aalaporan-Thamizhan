@@ -73,7 +73,74 @@ int main()
 
     completed: false,
   },
-  
+  {
+  id: 2,
+
+  title: "Variables",
+
+  englishDefinition:
+    "A variable is a named memory location used to store data. The value stored in a variable can be changed during program execution. Variables make it easy to store, retrieve, and manipulate data in a C++ program.",
+
+  tamilDefinition:
+    "Variable என்பது தரவுகளை (Data) சேமிக்க பயன்படும் பெயரிடப்பட்ட நினைவக இடமாகும். Program இயங்கும் போது அதில் இருக்கும் மதிப்பை மாற்றலாம். Variable-கள் தரவுகளை சேமிக்கவும், பயன்படுத்தவும், மாற்றவும் உதவுகின்றன.",
+
+  realWorldUsage:
+    "Variables are used in almost every software application. For example, a banking system stores the account balance in a variable, a game stores the player's score in a variable, and an e-commerce website stores the quantity of products selected by the user in variables.",
+
+  realWorldUsageTamil:
+    "Variable-கள் அனைத்து Software-களிலும் பயன்படுத்தப்படுகின்றன. உதாரணமாக, Banking Application-ல் Account Balance, Game-ல் Player Score, E-commerce Website-ல் Product Quantity போன்ற தகவல்கள் Variable-களில் சேமிக்கப்படுகின்றன.",
+
+  syntax: `dataType variableName = value;`,
+
+  syntaxExplanationEnglish: [
+    "dataType specifies the type of data to be stored, such as int, float, char, or bool.",
+    "variableName is the name given to the variable.",
+    "The assignment operator (=) stores the value into the variable.",
+    "The value must be compatible with the specified data type.",
+    "Each variable declaration ends with a semicolon (;)."
+  ],
+
+  syntaxExplanationTamil: [
+    "dataType என்பது எந்த வகையான தரவு சேமிக்கப்படுகிறது என்பதை குறிப்பிடுகிறது. (int, float, char, bool போன்றவை).",
+    "variableName என்பது Variable-க்கு கொடுக்கப்படும் பெயராகும்.",
+    "= Operator மூலம் Value Variable-இல் சேமிக்கப்படுகிறது.",
+    "கொடுக்கப்படும் Value, குறிப்பிடப்பட்ட Data Type-க்கு பொருத்தமானதாக இருக்க வேண்டும்.",
+    "ஒவ்வொரு Variable Declaration-மும் Semicolon (;) மூலம் முடிவடைகிறது."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int age = 20;
+
+    cout << "Age = " << age;
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "The variable 'age' of type int is created.",
+    "The value 20 is stored in the variable.",
+    "cout displays the text 'Age =' followed by the value stored in the variable.",
+    "Finally, the program ends successfully."
+  ],
+
+  programExplanationTamil: [
+    "'age' என்ற Integer Variable உருவாக்கப்படுகிறது.",
+    "அதில் 20 என்ற மதிப்பு சேமிக்கப்படுகிறது.",
+    "cout மூலம் 'Age =' மற்றும் Variable-இல் இருக்கும் மதிப்பு திரையில் காட்டப்படுகிறது.",
+    "இறுதியாக Program வெற்றிகரமாக முடிகிறது."
+  ],
+
+  output: `Age = 20`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
