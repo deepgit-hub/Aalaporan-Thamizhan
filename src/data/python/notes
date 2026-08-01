@@ -1,14 +1,4 @@
-| No | Topic                    |
-| -- | ------------------------ |
-| 1  | Introduction to Python   |
-| 2  | Variables                |
-| 3  | Data Types               |
-| 4  | Input and Output         |
-| 5  | Operators                |
-| 6  | If Statement             |
-| 7  | If-Else Statement        |
-| 8  | Nested If Statement      |
-| 9  | Match-Case Statement     |
+   |
 | 10 | Ternary Operator         |
 | 11 | While Loop               |
 | 12 | For Loop                 |
