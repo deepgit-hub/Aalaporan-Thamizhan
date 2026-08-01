@@ -1446,6 +1446,102 @@ Deepak's Subject 5 Marks : 88`,
 
   completed: false,
 },
+{
+  id: 18,
+
+  title: "Two-Dimensional Array",
+
+  englishDefinition:
+    "A Two-Dimensional Array is an array of arrays used to store data in rows and columns. It is commonly used to represent tables, matrices, spreadsheets, and other tabular data. Each element is accessed using two indexes: row and column.",
+
+  tamilDefinition:
+    "Two-Dimensional Array என்பது Rows மற்றும் Columns வடிவில் தரவுகளை சேமிக்க பயன்படும் Array ஆகும். இது Tables, Matrices, Spreadsheet போன்ற தகவல்களை சேமிக்க அதிகமாக பயன்படுத்தப்படுகிறது. இதில் ஒவ்வொரு Element-மும் Row Index மற்றும் Column Index மூலம் அணுகப்படுகிறது.",
+
+  realWorldUsage:
+    "Two-Dimensional Arrays are used in many real-world applications. For example, storing student marks for multiple subjects, seating arrangements in a classroom, game boards like Chess and Tic-Tac-Toe, and Excel spreadsheets.",
+
+  realWorldUsageTamil:
+    "Two-Dimensional Array பல Software-களில் பயன்படுத்தப்படுகிறது. உதாரணமாக, மாணவர்களின் பல பாட மதிப்பெண்கள், வகுப்பறை இருக்கை அமைப்பு, Chess மற்றும் Tic-Tac-Toe போன்ற Game Boards, மற்றும் Excel Spreadsheet தகவல்களை சேமிக்க பயன்படுத்தப்படுகிறது.",
+
+  syntax: `dataType arrayName[rows][columns];
+
+Example:
+int marks[3][4];`,
+
+  syntaxExplanationEnglish: [
+    "dataType specifies the type of values stored in the array.",
+    "arrayName is the name of the two-dimensional array.",
+    "The first size specifies the number of rows.",
+    "The second size specifies the number of columns.",
+    "Each element is accessed using arrayName[row][column]."
+  ],
+
+  syntaxExplanationTamil: [
+    "dataType என்பது Array-ல் சேமிக்கப்படும் Data Type-ஐ குறிப்பிடுகிறது.",
+    "arrayName என்பது Two-Dimensional Array-க்கு கொடுக்கப்படும் பெயராகும்.",
+    "முதல் Size என்பது Rows எண்ணிக்கையை குறிப்பிடுகிறது.",
+    "இரண்டாவது Size என்பது Columns எண்ணிக்கையை குறிப்பிடுகிறது.",
+    "ஒவ்வொரு Element-மும் arrayName[row][column] மூலம் அணுகப்படுகிறது."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int marks[2][3] =
+    {
+        {90, 85, 88},
+        {78, 95, 80}
+    };
+
+    for(int row = 0; row < 2; row++)
+    {
+        for(int column = 0; column < 3; column++)
+        {
+            cout << marks[row][column] << " ";
+        }
+
+        cout << endl;
+    }
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: int main() is the starting point of the program.",
+    "Line 7: A two-dimensional array named 'marks' with 2 rows and 3 columns is created.",
+    "Lines 9-12: The array is initialized with six values.",
+    "Line 14: The outer loop controls the rows.",
+    "Line 16: The inner loop controls the columns.",
+    "Line 18: cout displays each element of the array.",
+    "Line 21: cout << endl; moves the cursor to the next row.",
+    "Line 24: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 7: 'marks' என்ற Two-Dimensional Array, 2 Rows மற்றும் 3 Columns-உடன் உருவாக்கப்படுகிறது.",
+    "வரி 9-12: Array-ல் ஆறு மதிப்புகள் சேமிக்கப்படுகின்றன.",
+    "வரி 14: Outer Loop Rows-ஐ கட்டுப்படுத்துகிறது.",
+    "வரி 16: Inner Loop Columns-ஐ கட்டுப்படுத்துகிறது.",
+    "வரி 18: cout மூலம் Array-இன் ஒவ்வொரு Element-மும் திரையில் காட்டப்படுகிறது.",
+    "வரி 21: cout << endl; அடுத்த Row-க்கு Cursor-ஐ நகர்த்துகிறது.",
+    "வரி 24: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `90 85 88
+78 95 80`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
