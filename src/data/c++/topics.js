@@ -2252,7 +2252,128 @@ Deepak is learning C++.`,
 
   completed: false,
 },
+{
+  id: 26,
 
+  title: "Multiple Inheritance",
+
+  englishDefinition:
+    "Multiple Inheritance is a type of inheritance in which one derived class inherits the properties and behaviors of two or more base classes. It allows a class to combine the features of multiple parent classes into a single child class.",
+
+  tamilDefinition:
+    "Multiple Inheritance என்பது ஒரு வகையான Inheritance ஆகும். இதில் ஒரு Derived Class, இரண்டு அல்லது அதற்கு மேற்பட்ட Base Classes-இன் Properties மற்றும் Behaviors-ஐ பெறுகிறது. இதன் மூலம் பல Parent Classes-இன் அம்சங்களை ஒரு Child Class-ல் ஒன்றாக பயன்படுத்த முடியும்.",
+
+  realWorldUsage:
+    "Multiple Inheritance is used when a class needs the features of multiple parent classes. For example, in a Smart Device, one class can provide Camera features while another class provides Internet features. The Smart Device class inherits both functionalities.",
+
+  realWorldUsageTamil:
+    "Multiple Inheritance ஒரு Class-க்கு பல Parent Classes-இன் அம்சங்கள் தேவைப்படும் போது பயன்படுத்தப்படுகிறது. உதாரணமாக, Smart Device-ல் ஒரு Class Camera வசதியை வழங்குகிறது, மற்றொரு Class Internet வசதியை வழங்குகிறது. Smart Device Class இந்த இரண்டு Class-களிலிருந்தும் அம்சங்களை பெறுகிறது.",
+
+  syntax: `class BaseClass1
+{
+    // Members
+};
+
+class BaseClass2
+{
+    // Members
+};
+
+class DerivedClass : public BaseClass1, public BaseClass2
+{
+    // Members
+};`,
+
+  syntaxExplanationEnglish: [
+    "More than one base class can be inherited.",
+    "The derived class inherits the public members of all base classes.",
+    "Each base class is separated using a comma.",
+    "The derived class can access the members of all inherited classes.",
+    "Multiple Inheritance helps in code reuse from multiple classes."
+  ],
+
+  syntaxExplanationTamil: [
+    "ஒன்றுக்கு மேற்பட்ட Base Classes-இல் இருந்து Inherit செய்யலாம்.",
+    "Derived Class, அனைத்து Base Classes-இன் Public Members-ஐ பெறுகிறது.",
+    "ஒவ்வொரு Base Class-மும் Comma (,) மூலம் பிரிக்கப்படுகிறது.",
+    "Derived Class அனைத்து Parent Classes-இன் Members-ஐ அணுக முடியும்.",
+    "Multiple Inheritance மூலம் பல Class-களின் Code-ஐ மீண்டும் பயன்படுத்த முடியும்."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+class Camera
+{
+public:
+    void takePhoto()
+    {
+        cout << "Photo Captured!" << endl;
+    }
+};
+
+class Internet
+{
+public:
+    void browse()
+    {
+        cout << "Browsing the Internet..." << endl;
+    }
+};
+
+class SmartPhone : public Camera, public Internet
+{
+};
+
+int main()
+{
+    SmartPhone phone;
+
+    phone.takePhoto();
+
+    phone.browse();
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: A base class named 'Camera' is created.",
+    "Line 7: The function 'takePhoto()' is defined inside the Camera class.",
+    "Line 14: Another base class named 'Internet' is created.",
+    "Line 16: The function 'browse()' is defined inside the Internet class.",
+    "Line 23: The SmartPhone class inherits from both Camera and Internet classes.",
+    "Line 27: int main() is the starting point of the program.",
+    "Line 29: An object named 'phone' is created.",
+    "Line 31: phone.takePhoto() calls the inherited function from the Camera class.",
+    "Line 33: phone.browse() calls the inherited function from the Internet class.",
+    "Line 35: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: 'Camera' என்ற Base Class உருவாக்கப்படுகிறது.",
+    "வரி 7: Camera Class-க்குள் 'takePhoto()' Function உருவாக்கப்படுகிறது.",
+    "வரி 14: 'Internet' என்ற மற்றொரு Base Class உருவாக்கப்படுகிறது.",
+    "வரி 16: Internet Class-க்குள் 'browse()' Function உருவாக்கப்படுகிறது.",
+    "வரி 23: SmartPhone Class, Camera மற்றும் Internet ஆகிய இரண்டு Base Classes-இல் இருந்தும் Inherit செய்கிறது.",
+    "வரி 27: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 29: 'phone' என்ற Object உருவாக்கப்படுகிறது.",
+    "வரி 31: phone.takePhoto() மூலம் Camera Class-இன் Function அழைக்கப்படுகிறது.",
+    "வரி 33: phone.browse() மூலம் Internet Class-இன் Function அழைக்கப்படுகிறது.",
+    "வரி 35: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `Photo Captured!
+Browsing the Internet...`,
+
+  locked: false,
+
+  completed: false,
+},
 ];
 
 export default topics;
