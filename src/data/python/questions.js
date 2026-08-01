@@ -1735,7 +1735,103 @@ Less: False`,
     },
   ],
 },
+{
+  topicId: 6,
+  title: "If Statement",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to print 'Pass' if the marks are greater than or equal to 50. Use marks = 75.",
+
+      questionTamil:
+        "marks = 75 பயன்படுத்தி, மதிப்பெண் 50 அல்லது அதற்கு மேல் இருந்தால் 'Pass' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use an if statement with the '>=' operator.",
+
+      hintTamil:
+        "if Statement மற்றும் '>=' Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Pass`,
+
+      expectedOutputTamil: `Pass`,
+
+      solution: `marks = 75
+
+if marks >= 50:
+    print("Pass")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to print 'Eligible to Vote' if age is greater than or equal to 18. Use age = 20.",
+
+      questionTamil:
+        "age = 20 பயன்படுத்தி, வயது 18 அல்லது அதற்கு மேல் இருந்தால் 'Eligible to Vote' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Check the age using an if statement.",
+
+      hintTamil:
+        "if Statement பயன்படுத்தி வயதை சரிபாருங்கள்.",
+
+      expectedOutput: `Eligible to Vote`,
+
+      expectedOutputTamil: `Eligible to Vote`,
+
+      solution: `age = 20
+
+if age >= 18:
+    print("Eligible to Vote")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to print 'Welcome Deepak' if the variable name is 'Deepak'.",
+
+      questionTamil:
+        "name = 'Deepak' பயன்படுத்தி, பெயர் 'Deepak' ஆக இருந்தால் 'Welcome Deepak' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the '==' operator inside the if statement.",
+
+      hintTamil:
+        "if Statement-ல் '==' Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Welcome Deepak`,
+
+      expectedOutputTamil: `Welcome Deepak`,
+
+      solution: `name = "Deepak"
+
+if name == "Deepak":
+    print("Welcome Deepak")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
