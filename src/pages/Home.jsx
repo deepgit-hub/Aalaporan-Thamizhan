@@ -210,7 +210,7 @@ function Home() {
               className="portfolio-btn2"
               onClick={() =>
                 window.open(
-                  "https://deepgit-hub.github.io/Digital-Portfolio/",
+                  "https://thequeenslab.vercel.app/",
                   "_blank"
                 )
               }
