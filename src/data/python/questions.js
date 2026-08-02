@@ -2047,7 +2047,108 @@ Eligible`,
     },
   ],
 },
+{
+  topicId: 7,
+  title: "If Else Statement",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to print 'Pass' if marks are greater than or equal to 35; otherwise print 'Fail'. Use marks = 60.",
+
+      questionTamil:
+        "marks = 60 பயன்படுத்தி, மதிப்பெண் 35 அல்லது அதற்கு மேல் இருந்தால் 'Pass', இல்லையெனில் 'Fail' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use an if...else statement with the '>=' operator.",
+
+      hintTamil:
+        "if...else Statement மற்றும் '>=' Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Pass`,
+
+      expectedOutputTamil: `Pass`,
+
+      solution: `marks = 60
+
+if marks >= 35:
+    print("Pass")
+else:
+    print("Fail")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to print 'Eligible to Vote' if age is greater than or equal to 18; otherwise print 'Not Eligible'. Use age = 16.",
+
+      questionTamil:
+        "age = 16 பயன்படுத்தி, வயது 18 அல்லது அதற்கு மேல் இருந்தால் 'Eligible to Vote', இல்லையெனில் 'Not Eligible' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use an if...else statement.",
+
+      hintTamil:
+        "if...else Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Not Eligible`,
+
+      expectedOutputTamil: `Not Eligible`,
+
+      solution: `age = 16
+
+if age >= 18:
+    print("Eligible to Vote")
+else:
+    print("Not Eligible")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to print 'Welcome Deepak' if the name is 'Deepak'; otherwise print 'Unknown User'.",
+
+      questionTamil:
+        "பெயர் 'Deepak' ஆக இருந்தால் 'Welcome Deepak', இல்லையெனில் 'Unknown User' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the '==' operator inside an if...else statement.",
+
+      hintTamil:
+        "if...else Statement-ல் '==' Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Welcome Deepak`,
+
+      expectedOutputTamil: `Welcome Deepak`,
+
+      solution: `name = "Deepak"
+
+if name == "Deepak":
+    print("Welcome Deepak")
+else:
+    print("Unknown User")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+  ],
+},
 ];
 
 export default questions;
