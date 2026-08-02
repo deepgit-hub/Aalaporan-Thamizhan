@@ -5108,6 +5108,158 @@ for i in range(1, number + 1):
       locked: false,
       completed: false,
     },
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a Python program to print the multiplication table of a number entered by the user. Stop printing when the multiplier becomes 8 using the break statement.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, அதன் பெருக்கல் வாய்ப்பாட்டை Print செய்யுங்கள். Multiplier 8 ஆனவுடன் break Statement பயன்படுத்தி Loop-ஐ நிறுத்தும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input(), int(), a for loop, and break.",
+
+      hintTamil:
+        "input(), int(), For Loop மற்றும் break Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: 5
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35`,
+
+      expectedOutputTamil: `Enter a number: 5
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35`,
+
+      solution: `number = int(input("Enter a number: "))
+
+for i in range(1, 11):
+    if i == 8:
+        break
+    print(number, "x", i, "=", number * i)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a Python program to accept numbers continuously from the user. Stop the loop when the user enters 0 using the break statement.",
+
+      questionTamil:
+        "பயனரிடமிருந்து தொடர்ந்து எண்களை Input ஆக பெறுங்கள். பயனர் 0 கொடுத்தவுடன் break Statement பயன்படுத்தி Loop-ஐ நிறுத்தும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a while loop with input() and break.",
+
+      hintTamil:
+        "While Loop, input() மற்றும் break Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: 10
+Enter a number: 25
+Enter a number: 8
+Enter a number: 0`,
+
+      expectedOutputTamil: `Enter a number: 10
+Enter a number: 25
+Enter a number: 8
+Enter a number: 0`,
+
+      solution: `while True:
+    number = int(input("Enter a number: "))
+
+    if number == 0:
+        break`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a Python program to print numbers from 1 to 100. Stop the loop when the number becomes 50 using the break statement.",
+
+      questionTamil:
+        "1 முதல் 100 வரை உள்ள எண்களை Print செய்யுங்கள். எண் 50 ஆனவுடன் break Statement பயன்படுத்தி Loop-ஐ நிறுத்தும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a for loop with an if statement and break.",
+
+      hintTamil:
+        "For Loop, if Statement மற்றும் break Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `1
+2
+3
+...
+48
+49`,
+
+      expectedOutputTamil: `1
+2
+3
+...
+48
+49`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a Python program to continuously accept numbers from the user and stop the loop when the user enters a negative number using the break statement.",
+
+      questionTamil:
+        "பயனரிடமிருந்து தொடர்ந்து எண்களை Input ஆக பெறுங்கள். பயனர் Negative Number கொடுத்தவுடன் break Statement பயன்படுத்தி Loop-ஐ நிறுத்தும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a while loop with input() and break.",
+
+      hintTamil:
+        "While Loop, input() மற்றும் break Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: 15
+Enter a number: 28
+Enter a number: 9
+Enter a number: -1`,
+
+      expectedOutputTamil: `Enter a number: 15
+Enter a number: 28
+Enter a number: 9
+Enter a number: -1`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
