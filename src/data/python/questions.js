@@ -1829,6 +1829,97 @@ if name == "Deepak":
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to print 'Even Number' if number is equal to 10.",
+
+      questionTamil:
+        "number = 10 பயன்படுத்தி, எண் 10 ஆக இருந்தால் 'Even Number' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use an if statement with the '==' operator.",
+
+      hintTamil:
+        "if Statement மற்றும் '==' Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Even Number`,
+
+      expectedOutputTamil: `Even Number`,
+
+      solution: `number = 10
+
+if number == 10:
+    print("Even Number")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to print 'Positive Number' if number is greater than 0. Use number = 25.",
+
+      questionTamil:
+        "number = 25 பயன்படுத்தி, எண் 0-வை விட பெரியதாக இருந்தால் 'Positive Number' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the '>' operator inside the if statement.",
+
+      hintTamil:
+        "if Statement-ல் '>' Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Positive Number`,
+
+      expectedOutputTamil: `Positive Number`,
+
+      solution: `number = 25
+
+if number > 0:
+    print("Positive Number")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to accept a mark from the user and print 'Pass' if the mark is greater than or equal to 35.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு மதிப்பெண்ணை Input ஆக பெற்று, அது 35 அல்லது அதற்கு மேல் இருந்தால் 'Pass' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input(), int(), and an if statement.",
+
+      hintTamil:
+        "input(), int() மற்றும் if Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter mark: 80
+Pass`,
+
+      expectedOutputTamil: `Enter mark: 80
+Pass`,
+
+      solution: `mark = int(input("Enter mark: "))
+
+if mark >= 35:
+    print("Pass")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
     
   ],
 },
