@@ -2725,7 +2725,106 @@ Eligible`,
     },
   ],
 },
+{
+  topicId: 9,
+  title: "Type Casting",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to convert the string '25' into an integer and print the result.",
+
+      questionTamil:
+        "'25' என்ற String-ஐ Integer-ஆக மாற்றி அதன் மதிப்பை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the int() function.",
+
+      hintTamil:
+        "int() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `25`,
+
+      expectedOutputTamil: `25`,
+
+      solution: `number = "25"
+
+number = int(number)
+
+print(number)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to convert the integer 50 into a float and print the result.",
+
+      questionTamil:
+        "50 என்ற Integer-ஐ Float-ஆக மாற்றி அதன் மதிப்பை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the float() function.",
+
+      hintTamil:
+        "float() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `50.0`,
+
+      expectedOutputTamil: `50.0`,
+
+      solution: `number = 50
+
+number = float(number)
+
+print(number)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to convert the integer 100 into a string and print the result.",
+
+      questionTamil:
+        "100 என்ற Integer-ஐ String-ஆக மாற்றி அதன் மதிப்பை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the str() function.",
+
+      hintTamil:
+        "str() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `100`,
+
+      expectedOutputTamil: `100`,
+
+      solution: `number = 100
+
+number = str(number)
+
+print(number)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
