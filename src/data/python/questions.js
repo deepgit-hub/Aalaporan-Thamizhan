@@ -2244,7 +2244,135 @@ else:
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a Python program to accept the user's age. Print 'Eligible to Vote' if the age is greater than or equal to 18; otherwise print 'Not Eligible'.",
+
+      questionTamil:
+        "பயனரிடமிருந்து வயதை Input ஆக பெற்று, அது 18 அல்லது அதற்கு மேல் இருந்தால் 'Eligible to Vote', இல்லையெனில் 'Not Eligible' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input(), int(), and an if...else statement.",
+
+      hintTamil:
+        "input(), int() மற்றும் if...else Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter age: 20
+Eligible to Vote`,
+
+      expectedOutputTamil: `Enter age: 20
+Eligible to Vote`,
+
+      solution: `age = int(input("Enter age: "))
+
+if age >= 18:
+    print("Eligible to Vote")
+else:
+    print("Not Eligible")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a Python program to accept a number from the user. Print 'Even Number' if the number is even; otherwise print 'Odd Number'.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, அது Even ஆக இருந்தால் 'Even Number', இல்லையெனில் 'Odd Number' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the modulus (%) operator with an if...else statement.",
+
+      hintTamil:
+        "Modulus (%) Operator மற்றும் if...else Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter number: 8
+Even Number`,
+
+      expectedOutputTamil: `Enter number: 8
+Even Number`,
+
+      solution: `number = int(input("Enter number: "))
+
+if number % 2 == 0:
+    print("Even Number")
+else:
+    print("Odd Number")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a Python program to accept the user's mark. Print 'Pass' if the mark is greater than or equal to 35; otherwise print 'Fail'.",
+
+      questionTamil:
+        "பயனரிடமிருந்து மதிப்பெண்ணை Input ஆக பெற்று, அது 35 அல்லது அதற்கு மேல் இருந்தால் 'Pass', இல்லையெனில் 'Fail' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input(), int(), and an if...else statement.",
+
+      hintTamil:
+        "input(), int() மற்றும் if...else Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter mark: 75
+Pass`,
+
+      expectedOutputTamil: `Enter mark: 75
+Pass`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a Python program to accept a student's name and mark. Print 'Pass' if the mark is greater than or equal to 35; otherwise print 'Fail'. After that, print 'Welcome Deepak' if the name is 'Deepak'; otherwise print 'Welcome Student'.",
+
+      questionTamil:
+        "பயனரிடமிருந்து மாணவரின் பெயர் மற்றும் மதிப்பெண்ணை Input ஆக பெற்று, மதிப்பெண் 35 அல்லது அதற்கு மேல் இருந்தால் 'Pass', இல்லையெனில் 'Fail' என்பதை Print செய்யுங்கள். அதன் பிறகு, பெயர் 'Deepak' ஆக இருந்தால் 'Welcome Deepak', இல்லையெனில் 'Welcome Student' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use two input() statements and two separate if...else statements.",
+
+      hintTamil:
+        "இரண்டு input() Statements மற்றும் இரண்டு தனித்தனி if...else Statements-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter name: Deepak
+Enter mark: 80
+Pass
+Welcome Deepak`,
+
+      expectedOutputTamil: `Enter name: Deepak
+Enter mark: 80
+Pass
+Welcome Deepak`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
