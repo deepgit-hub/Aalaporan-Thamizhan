@@ -4716,6 +4716,276 @@ for i in letters:
       locked: false,
       completed: false,
     },
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a Python program to print the following pattern using nested for loops.\n1 2 3 4\n1 2 3 4\n1 2 3 4\n1 2 3 4",
+
+      questionTamil:
+        "Nested For Loop பயன்படுத்தி கீழே கொடுக்கப்பட்டுள்ள Pattern-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.\n1 2 3 4\n1 2 3 4\n1 2 3 4\n1 2 3 4",
+
+      hintEnglish:
+        "Use two for loops. Print the inner loop variable.",
+
+      hintTamil:
+        "இரண்டு For Loops-ஐ பயன்படுத்தி Inner Loop Variable-ஐ Print செய்யுங்கள்.",
+
+      expectedOutput: `1 2 3 4
+1 2 3 4
+1 2 3 4
+1 2 3 4`,
+
+      expectedOutputTamil: `1 2 3 4
+1 2 3 4
+1 2 3 4
+1 2 3 4`,
+
+      solution: `for i in range(4):
+    for j in range(1, 5):
+        print(j, end=" ")
+    print()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a Python program to print the following pattern using nested for loops.\n*\n* *\n* * *\n* * * *",
+
+      questionTamil:
+        "Nested For Loop பயன்படுத்தி கீழே கொடுக்கப்பட்டுள்ள Pattern-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.\n*\n* *\n* * *\n* * * *",
+
+      hintEnglish:
+        "The inner loop should run from 1 to the outer loop variable.",
+
+      hintTamil:
+        "Inner Loop, Outer Loop Variable வரை இயங்க வேண்டும்.",
+
+      expectedOutput: `*
+* *
+* * *
+* * * *`,
+
+      expectedOutputTamil: `*
+* *
+* * *
+* * * *`,
+
+      solution: `for i in range(1, 5):
+    for j in range(i):
+        print("*", end=" ")
+    print()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a Python program to print a 5 × 5 star square pattern using nested for loops.",
+
+      questionTamil:
+        "Nested For Loop பயன்படுத்தி 5 × 5 Star Square Pattern-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use one outer loop for rows and one inner loop for columns.",
+
+      hintTamil:
+        "Rows-க்கு ஒரு Outer Loop மற்றும் Columns-க்கு ஒரு Inner Loop-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *`,
+
+      expectedOutputTamil: `* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a Python program to print the following number triangle using nested for loops.\n1\n1 2\n1 2 3\n1 2 3 4\n1 2 3 4 5",
+
+      questionTamil:
+        "Nested For Loop பயன்படுத்தி கீழே கொடுக்கப்பட்டுள்ள Number Triangle Pattern-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.\n1\n1 2\n1 2 3\n1 2 3 4\n1 2 3 4 5",
+
+      hintEnglish:
+        "The inner loop should print numbers from 1 to the outer loop variable.",
+
+      hintTamil:
+        "Inner Loop, 1 முதல் Outer Loop Variable வரை எண்களை Print செய்ய வேண்டும்.",
+
+      expectedOutput: `1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5`,
+
+      expectedOutputTamil: `1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+  ],
+},
+{
+  topicId: 15,
+  title: "Break Statement",
+
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to print numbers from 1 to 10 using a for loop. Stop the loop when the number becomes 5 using the break statement.",
+
+      questionTamil:
+        "For Loop பயன்படுத்தி 1 முதல் 10 வரை உள்ள எண்களை Print செய்யுங்கள். எண் 5 ஆனவுடன் break Statement பயன்படுத்தி Loop-ஐ நிறுத்தும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use an if statement with break inside the for loop.",
+
+      hintTamil:
+        "For Loop-க்குள் if Statement மற்றும் break-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `1
+2
+3
+4`,
+
+      expectedOutputTamil: `1
+2
+3
+4`,
+
+      solution: `for i in range(1, 11):
+    if i == 5:
+        break
+    print(i)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to print numbers from 10 to 1 using a while loop. Stop the loop when the number becomes 6 using the break statement.",
+
+      questionTamil:
+        "While Loop பயன்படுத்தி 10 முதல் 1 வரை உள்ள எண்களை Print செய்யுங்கள். எண் 6 ஆனவுடன் break Statement பயன்படுத்தி Loop-ஐ நிறுத்தும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a while loop with an if statement and break.",
+
+      hintTamil:
+        "While Loop-ல் if Statement மற்றும் break-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `10
+9
+8
+7`,
+
+      expectedOutputTamil: `10
+9
+8
+7`,
+
+      solution: `i = 10
+
+while i >= 1:
+    if i == 6:
+        break
+    print(i)
+    i -= 1`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to print numbers from 1 to 20. Stop the loop when the number becomes 11 using the break statement.",
+
+      questionTamil:
+        "1 முதல் 20 வரை உள்ள எண்களை Print செய்யுங்கள். எண் 11 ஆனவுடன் break Statement பயன்படுத்தி Loop-ஐ நிறுத்தும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a for loop with an if statement and break.",
+
+      hintTamil:
+        "For Loop-ல் if Statement மற்றும் break-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `1
+2
+3
+4
+5
+6
+7
+8
+9
+10`,
+
+      expectedOutputTamil: `1
+2
+3
+4
+5
+6
+7
+8
+9
+10`,
+
+      solution: `for i in range(1, 21):
+    if i == 11:
+        break
+    print(i)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
     
   ],
 },
