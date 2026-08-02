@@ -3468,6 +3468,100 @@ print(result)`,
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to print 'Even Number' if the number is even; otherwise print 'Odd Number' using the ternary operator. Use number = 15.",
+
+      questionTamil:
+        "number = 15 பயன்படுத்தி, எண் Even ஆக இருந்தால் 'Even Number', இல்லையெனில் 'Odd Number' என்பதை Ternary Operator பயன்படுத்தி Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the modulus (%) operator with the ternary operator.",
+
+      hintTamil:
+        "Modulus (%) Operator மற்றும் Ternary Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Odd Number`,
+
+      expectedOutputTamil: `Odd Number`,
+
+      solution: `number = 15
+
+result = "Even Number" if number % 2 == 0 else "Odd Number"
+
+print(result)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to print 'Positive Number' if the number is greater than or equal to 0; otherwise print 'Negative Number' using the ternary operator. Use number = -10.",
+
+      questionTamil:
+        "number = -10 பயன்படுத்தி, எண் 0 அல்லது அதற்கு மேல் இருந்தால் 'Positive Number', இல்லையெனில் 'Negative Number' என்பதை Ternary Operator பயன்படுத்தி Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the '>=' operator with the ternary operator.",
+
+      hintTamil:
+        "'>=' Operator மற்றும் Ternary Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Negative Number`,
+
+      expectedOutputTamil: `Negative Number`,
+
+      solution: `number = -10
+
+result = "Positive Number" if number >= 0 else "Negative Number"
+
+print(result)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to accept a mark from the user and print 'Pass' if the mark is greater than or equal to 35; otherwise print 'Fail' using the ternary operator.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு மதிப்பெண்ணை Input ஆக பெற்று, அது 35 அல்லது அதற்கு மேல் இருந்தால் 'Pass', இல்லையெனில் 'Fail' என்பதை Ternary Operator பயன்படுத்தி Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input(), int(), and the ternary operator.",
+
+      hintTamil:
+        "input(), int() மற்றும் Ternary Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter mark: 75
+Pass`,
+
+      expectedOutputTamil: `Enter mark: 75
+Pass`,
+
+      solution: `mark = int(input("Enter mark: "))
+
+result = "Pass" if mark >= 35 else "Fail"
+
+print(result)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
     
   ],
 },
