@@ -4105,7 +4105,232 @@ while i <= 10:
     },
   ],
 },
+{
+  topicId: 13,
+  title: "For Loop",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to print numbers from 1 to 5 using a for loop.",
+
+      questionTamil:
+        "For Loop பயன்படுத்தி 1 முதல் 5 வரை உள்ள எண்களை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the range() function from 1 to 5.",
+
+      hintTamil:
+        "1 முதல் 5 வரை range() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `1
+2
+3
+4
+5`,
+
+      expectedOutputTamil: `1
+2
+3
+4
+5`,
+
+      solution: `for i in range(1, 6):
+    print(i)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to print numbers from 5 to 1 using a for loop.",
+
+      questionTamil:
+        "For Loop பயன்படுத்தி 5 முதல் 1 வரை உள்ள எண்களை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use range() with a negative step value.",
+
+      hintTamil:
+        "Negative Step Value-உடன் range() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `5
+4
+3
+2
+1`,
+
+      expectedOutputTamil: `5
+4
+3
+2
+1`,
+
+      solution: `for i in range(5, 0, -1):
+    print(i)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to print 'Hello Python' five times using a for loop.",
+
+      questionTamil:
+        "For Loop பயன்படுத்தி 'Hello Python' என்பதை 5 முறை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use range(5) inside the for loop.",
+
+      hintTamil:
+        "For Loop-ல் range(5)-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Hello Python
+Hello Python
+Hello Python
+Hello Python
+Hello Python`,
+
+      expectedOutputTamil: `Hello Python
+Hello Python
+Hello Python
+Hello Python
+Hello Python`,
+
+      solution: `for i in range(5):
+    print("Hello Python")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to print all even numbers from 2 to 10 using a for loop.",
+
+      questionTamil:
+        "For Loop பயன்படுத்தி 2 முதல் 10 வரை உள்ள அனைத்து Even எண்களையும் Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use range() with a step value of 2.",
+
+      hintTamil:
+        "Step Value 2-உடன் range() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `2
+4
+6
+8
+10`,
+
+      expectedOutputTamil: `2
+4
+6
+8
+10`,
+
+      solution: `for i in range(2, 11, 2):
+    print(i)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to print all odd numbers from 1 to 9 using a for loop.",
+
+      questionTamil:
+        "For Loop பயன்படுத்தி 1 முதல் 9 வரை உள்ள அனைத்து Odd எண்களையும் Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use range() with a step value of 2.",
+
+      hintTamil:
+        "Step Value 2-உடன் range() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `1
+3
+5
+7
+9`,
+
+      expectedOutputTamil: `1
+3
+5
+7
+9`,
+
+      solution: `for i in range(1, 10, 2):
+    print(i)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to accept a number from the user and print numbers from 1 to that number using a for loop.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, For Loop பயன்படுத்தி 1 முதல் அந்த எண் வரை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input(), int(), and range().",
+
+      hintTamil:
+        "input(), int() மற்றும் range() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: 5
+1
+2
+3
+4
+5`,
+
+      expectedOutputTamil: `Enter a number: 5
+1
+2
+3
+4
+5`,
+
+      solution: `number = int(input("Enter a number: "))
+
+for i in range(1, number + 1):
+    print(i)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
