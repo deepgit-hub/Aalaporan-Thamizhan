@@ -4491,6 +4491,115 @@ for i in range(1, 11):
     },
   ],
 },
+{
+  topicId: 14,
+  title: "Nested Loop",
+
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to print the following pattern using nested for loops.\n*\n*\n*",
+
+      questionTamil:
+        "Nested For Loop பயன்படுத்தி கீழே கொடுக்கப்பட்டுள்ள Pattern-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.\n*\n*\n*",
+
+      hintEnglish:
+        "Use one outer loop and one inner loop.",
+
+      hintTamil:
+        "ஒரு Outer Loop மற்றும் ஒரு Inner Loop-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `*
+*
+*`,
+
+      expectedOutputTamil: `*
+*
+*`,
+
+      solution: `for i in range(3):
+    for j in range(1):
+        print("*")
+`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to print a 3 × 3 square star pattern using nested for loops.",
+
+      questionTamil:
+        "Nested For Loop பயன்படுத்தி 3 × 3 Star Square Pattern-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use two for loops. Print '*' with end=' '.",
+
+      hintTamil:
+        "இரண்டு For Loops-ஐ பயன்படுத்தி end=' ' உடன் '*'-ஐ Print செய்யுங்கள்.",
+
+      expectedOutput: `* * *
+* * *
+* * *`,
+
+      expectedOutputTamil: `* * *
+* * *
+* * *`,
+
+      solution: `for i in range(3):
+    for j in range(3):
+        print("*", end=" ")
+    print()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to print the following number pattern using nested for loops.\n1 2 3\n1 2 3\n1 2 3",
+
+      questionTamil:
+        "Nested For Loop பயன்படுத்தி கீழே கொடுக்கப்பட்டுள்ள Number Pattern-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.\n1 2 3\n1 2 3\n1 2 3",
+
+      hintEnglish:
+        "Use two for loops and print the inner loop variable.",
+
+      hintTamil:
+        "இரண்டு For Loops-ஐ பயன்படுத்தி Inner Loop Variable-ஐ Print செய்யுங்கள்.",
+
+      expectedOutput: `1 2 3
+1 2 3
+1 2 3`,
+
+      expectedOutputTamil: `1 2 3
+1 2 3
+1 2 3`,
+
+      solution: `for i in range(3):
+    for j in range(1, 4):
+        print(j, end=" ")
+    print()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
