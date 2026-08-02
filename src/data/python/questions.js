@@ -4597,6 +4597,125 @@ for i in range(1, 11):
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to print the following pattern using nested for loops.\n1 1 1\n2 2 2\n3 3 3",
+
+      questionTamil:
+        "Nested For Loop பயன்படுத்தி கீழே கொடுக்கப்பட்டுள்ள Pattern-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.\n1 1 1\n2 2 2\n3 3 3",
+
+      hintEnglish:
+        "Print the outer loop variable inside the inner loop.",
+
+      hintTamil:
+        "Inner Loop-ல் Outer Loop Variable-ஐ Print செய்யுங்கள்.",
+
+      expectedOutput: `1 1 1
+2 2 2
+3 3 3`,
+
+      expectedOutputTamil: `1 1 1
+2 2 2
+3 3 3`,
+
+      solution: `for i in range(1, 4):
+    for j in range(3):
+        print(i, end=" ")
+    print()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to print the following pattern using nested for loops.\nA A A\nB B B\nC C C",
+
+      questionTamil:
+        "Nested For Loop பயன்படுத்தி கீழே கொடுக்கப்பட்டுள்ள Pattern-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.\nA A A\nB B B\nC C C",
+
+      hintEnglish:
+        "Store the letters in a list and print each letter three times.",
+
+      hintTamil:
+        "எழுத்துக்களை ஒரு List-ல் சேமித்து, ஒவ்வொரு எழுத்தையும் மூன்று முறை Print செய்யுங்கள்.",
+
+      expectedOutput: `A A A
+B B B
+C C C`,
+
+      expectedOutputTamil: `A A A
+B B B
+C C C`,
+
+      solution: `letters = ["A", "B", "C"]
+
+for i in letters:
+    for j in range(3):
+        print(i, end=" ")
+    print()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to print the multiplication table from 1 to 3 using nested for loops.",
+
+      questionTamil:
+        "Nested For Loop பயன்படுத்தி 1 முதல் 3 வரை உள்ள பெருக்கல் வாய்ப்பாட்டை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use one loop for the table number and another loop for the multiplier.",
+
+      hintTamil:
+        "ஒரு Loop-ஐ Table Number-க்கும், மற்றொரு Loop-ஐ Multiplier-க்கும் பயன்படுத்துங்கள்.",
+
+      expectedOutput: `1 x 1 = 1
+1 x 2 = 2
+1 x 3 = 3
+
+2 x 1 = 2
+2 x 2 = 4
+2 x 3 = 6
+
+3 x 1 = 3
+3 x 2 = 6
+3 x 3 = 9`,
+
+      expectedOutputTamil: `1 x 1 = 1
+1 x 2 = 2
+1 x 3 = 3
+
+2 x 1 = 2
+2 x 2 = 4
+2 x 3 = 6
+
+3 x 1 = 3
+3 x 2 = 6
+3 x 3 = 9`,
+
+      solution: `for i in range(1, 4):
+    for j in range(1, 4):
+        print(i, "x", j, "=", i * j)
+    print()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
     
   ],
 },
