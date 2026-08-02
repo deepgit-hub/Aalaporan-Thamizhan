@@ -3816,6 +3816,126 @@ while i <= 5:
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to print all even numbers from 2 to 10 using a while loop.",
+
+      questionTamil:
+        "While Loop பயன்படுத்தி 2 முதல் 10 வரை உள்ள அனைத்து Even எண்களையும் Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Start from 2 and increment the variable by 2.",
+
+      hintTamil:
+        "2-ல் தொடங்கி Variable-ஐ 2-ஆக Increment செய்யுங்கள்.",
+
+      expectedOutput: `2
+4
+6
+8
+10`,
+
+      expectedOutputTamil: `2
+4
+6
+8
+10`,
+
+      solution: `i = 2
+
+while i <= 10:
+    print(i)
+    i += 2`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to print all odd numbers from 1 to 9 using a while loop.",
+
+      questionTamil:
+        "While Loop பயன்படுத்தி 1 முதல் 9 வரை உள்ள அனைத்து Odd எண்களையும் Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Start from 1 and increment the variable by 2.",
+
+      hintTamil:
+        "1-ல் தொடங்கி Variable-ஐ 2-ஆக Increment செய்யுங்கள்.",
+
+      expectedOutput: `1
+3
+5
+7
+9`,
+
+      expectedOutputTamil: `1
+3
+5
+7
+9`,
+
+      solution: `i = 1
+
+while i <= 9:
+    print(i)
+    i += 2`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to accept a number from the user and print numbers from 1 to that number using a while loop.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, While Loop பயன்படுத்தி 1 முதல் அந்த எண் வரை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input(), int(), and a while loop.",
+
+      hintTamil:
+        "input(), int() மற்றும் While Loop-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: 5
+1
+2
+3
+4
+5`,
+
+      expectedOutputTamil: `Enter a number: 5
+1
+2
+3
+4
+5`,
+
+      solution: `number = int(input("Enter a number: "))
+
+i = 1
+
+while i <= number:
+    print(i)
+    i += 1`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
     
   ],
 },
