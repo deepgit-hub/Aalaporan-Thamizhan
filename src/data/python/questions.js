@@ -2578,7 +2578,151 @@ if age >= 18:
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a Python program to accept the user's name, age, and mark. If the name is 'Deepak', then check whether the mark is greater than or equal to 35 and print 'Pass'.",
+
+      questionTamil:
+        "பயனரிடமிருந்து பெயர், வயது மற்றும் மதிப்பெண்ணை Input ஆக பெற்று, பெயர் 'Deepak' ஆக இருந்தால், மதிப்பெண் 35 அல்லது அதற்கு மேல் உள்ளதா என்று சரிபார்த்து 'Pass' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input(), int(), and nested if statements.",
+
+      hintTamil:
+        "input(), int() மற்றும் Nested if Statements-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter name: Deepak
+Enter age: 20
+Enter mark: 80
+Pass`,
+
+      expectedOutputTamil: `Enter name: Deepak
+Enter age: 20
+Enter mark: 80
+Pass`,
+
+      solution: `name = input("Enter name: ")
+
+age = int(input("Enter age: "))
+
+mark = int(input("Enter mark: "))
+
+if name == "Deepak":
+    if mark >= 35:
+        print("Pass")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a Python program to accept a student's name and CGPA. If the name is 'Kathir', then check whether the CGPA is greater than or equal to 7.5 and print 'Placement Eligible'.",
+
+      questionTamil:
+        "பயனரிடமிருந்து மாணவரின் பெயர் மற்றும் CGPA-ஐ Input ஆக பெற்று, பெயர் 'Kathir' ஆக இருந்தால், CGPA 7.5 அல்லது அதற்கு மேல் உள்ளதா என்று சரிபார்த்து 'Placement Eligible' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use nested if statements with input().",
+
+      hintTamil:
+        "input() மற்றும் Nested if Statements-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter name: Kathir
+Enter CGPA: 8.4
+Placement Eligible`,
+
+      expectedOutputTamil: `Enter name: Kathir
+Enter CGPA: 8.4
+Placement Eligible`,
+
+      solution: `name = input("Enter name: ")
+
+cgpa = float(input("Enter CGPA: "))
+
+if name == "Kathir":
+    if cgpa >= 7.5:
+        print("Placement Eligible")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a Python program to accept a student's name, age, and attendance. If the age is greater than or equal to 18, then check whether the attendance is greater than or equal to 75 and print 'Eligible for Placement Drive'.",
+
+      questionTamil:
+        "பயனரிடமிருந்து மாணவரின் பெயர், வயது மற்றும் Attendance-ஐ Input ஆக பெற்று, வயது 18 அல்லது அதற்கு மேல் இருந்தால், Attendance 75 அல்லது அதற்கு மேல் உள்ளதா என்று சரிபார்த்து 'Eligible for Placement Drive' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use nested if statements with input() and int().",
+
+      hintTamil:
+        "input(), int() மற்றும் Nested if Statements-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter name: Deepak
+Enter age: 20
+Enter attendance: 90
+Eligible for Placement Drive`,
+
+      expectedOutputTamil: `Enter name: Deepak
+Enter age: 20
+Enter attendance: 90
+Eligible for Placement Drive`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a Python program to accept the user's name, age, mark, and CGPA. If the age is greater than or equal to 18, then check whether the mark is greater than or equal to 35. If both conditions are true, print 'Eligible'.",
+
+      questionTamil:
+        "பயனரிடமிருந்து பெயர், வயது, மதிப்பெண் மற்றும் CGPA-ஐ Input ஆக பெற்று, வயது 18 அல்லது அதற்கு மேல் இருந்தால், மதிப்பெண் 35 அல்லது அதற்கு மேல் உள்ளதா என்று சரிபார்த்து, இரண்டு நிபந்தனைகளும் True ஆக இருந்தால் 'Eligible' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use multiple input() statements and nested if statements.",
+
+      hintTamil:
+        "பல input() Statements மற்றும் Nested if Statements-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter name: Deepak
+Enter age: 20
+Enter mark: 75
+Enter CGPA: 8.5
+Eligible`,
+
+      expectedOutputTamil: `Enter name: Deepak
+Enter age: 20
+Enter mark: 75
+Enter CGPA: 8.5
+Eligible`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
