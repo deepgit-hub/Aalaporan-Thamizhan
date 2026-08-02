@@ -3047,6 +3047,330 @@ Enter CGPA: 8.5
     },
   ],
 },
+{
+  topicId: 10,
+  title: "Match Case",
+
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to print 'Monday' when the value of day is 1 using the match-case statement.",
+
+      questionTamil:
+        "match-case Statement பயன்படுத்தி day = 1 ஆக இருந்தால் 'Monday' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the match and case keywords.",
+
+      hintTamil:
+        "match மற்றும் case Keywords-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Monday`,
+
+      expectedOutputTamil: `Monday`,
+
+      solution: `day = 1
+
+match day:
+    case 1:
+        print("Monday")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to print 'Tuesday' when the value of day is 2 using the match-case statement.",
+
+      questionTamil:
+        "match-case Statement பயன்படுத்தி day = 2 ஆக இருந்தால் 'Tuesday' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a case for the value 2.",
+
+      hintTamil:
+        "2 என்ற Value-க்கு ஒரு case உருவாக்குங்கள்.",
+
+      expectedOutput: `Tuesday`,
+
+      expectedOutputTamil: `Tuesday`,
+
+      solution: `day = 2
+
+match day:
+    case 2:
+        print("Tuesday")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to print 'Welcome Deepak' when the value is 'Deepak' using the match-case statement.",
+
+      questionTamil:
+        "match-case Statement பயன்படுத்தி Value 'Deepak' ஆக இருந்தால் 'Welcome Deepak' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a string value inside the case.",
+
+      hintTamil:
+        "case-க்குள் String Value-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Welcome Deepak`,
+
+      expectedOutputTamil: `Welcome Deepak`,
+
+      solution: `name = "Deepak"
+
+match name:
+    case "Deepak":
+        print("Welcome Deepak")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to print the name of the month using the match-case statement. Use month = 3 to print 'March'.",
+
+      questionTamil:
+        "match-case Statement பயன்படுத்தி month = 3 ஆக இருந்தால் 'March' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a case for the value 3.",
+
+      hintTamil:
+        "3 என்ற Value-க்கு ஒரு case உருவாக்குங்கள்.",
+
+      expectedOutput: `March`,
+
+      expectedOutputTamil: `March`,
+
+      solution: `month = 3
+
+match month:
+    case 3:
+        print("March")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to print your favorite programming language using the match-case statement. Use language = 'Python'.",
+
+      questionTamil:
+        "match-case Statement பயன்படுத்தி language = 'Python' ஆக இருந்தால் 'Python is my favorite language' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a string inside the case statement.",
+
+      hintTamil:
+        "case Statement-ல் String Value-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Python is my favorite language`,
+
+      expectedOutputTamil: `Python is my favorite language`,
+
+      solution: `language = "Python"
+
+match language:
+    case "Python":
+        print("Python is my favorite language")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to accept a number from the user and print the corresponding day using the match-case statement (1 = Monday, 2 = Tuesday).",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, match-case Statement பயன்படுத்தி அதற்கான நாளை Print செய்யும் Python Program-ஐ எழுதுங்கள். (1 = Monday, 2 = Tuesday)",
+
+      hintEnglish:
+        "Use input(), int(), and match-case.",
+
+      hintTamil:
+        "input(), int() மற்றும் match-case Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter day number: 2
+Tuesday`,
+
+      expectedOutputTamil: `Enter day number: 2
+Tuesday`,
+
+      solution: `day = int(input("Enter day number: "))
+
+match day:
+    case 1:
+        print("Monday")
+    case 2:
+        print("Tuesday")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a Python program to accept a number from the user and print the corresponding month using the match-case statement (1 = January, 2 = February, 3 = March).",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, match-case Statement பயன்படுத்தி அதற்கான மாதத்தை Print செய்யும் Python Program-ஐ எழுதுங்கள். (1 = January, 2 = February, 3 = March)",
+
+      hintEnglish:
+        "Use input(), int(), and match-case.",
+
+      hintTamil:
+        "input(), int() மற்றும் match-case Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter month number: 3
+March`,
+
+      expectedOutputTamil: `Enter month number: 3
+March`,
+
+      solution: `month = int(input("Enter month number: "))
+
+match month:
+    case 1:
+        print("January")
+    case 2:
+        print("February")
+    case 3:
+        print("March")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a Python program to accept a student's name from the user and print a welcome message using the match-case statement.",
+
+      questionTamil:
+        "பயனரிடமிருந்து மாணவரின் பெயரை Input ஆக பெற்று, match-case Statement பயன்படுத்தி ஒரு Welcome Message-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a string inside the case statement.",
+
+      hintTamil:
+        "case Statement-ல் String Value-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter name: Deepak
+Welcome Deepak`,
+
+      expectedOutputTamil: `Enter name: Deepak
+Welcome Deepak`,
+
+      solution: `name = input("Enter name: ")
+
+match name:
+    case "Deepak":
+        print("Welcome Deepak")
+    case "Kathir":
+        print("Welcome Kathir")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a Python program to accept a number from the user and display the corresponding weekday using the match-case statement for values 1 to 5.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, 1 முதல் 5 வரை உள்ள Values-க்கு பொருத்தமான Weekday-ஐ match-case Statement பயன்படுத்தி Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create separate case blocks for each weekday.",
+
+      hintTamil:
+        "ஒவ்வொரு Weekday-க்கும் தனித்தனி case Blocks உருவாக்குங்கள்.",
+
+      expectedOutput: `Enter day number: 5
+Friday`,
+
+      expectedOutputTamil: `Enter day number: 5
+Friday`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a Python program to accept a user's choice (1-4) and display the selected programming language using the match-case statement. (1 = Python, 2 = Java, 3 = C++, 4 = JavaScript)",
+
+      questionTamil:
+        "பயனரிடமிருந்து 1 முதல் 4 வரை ஒரு Choice-ஐ Input ஆக பெற்று, match-case Statement பயன்படுத்தி அதற்கான Programming Language-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள். (1 = Python, 2 = Java, 3 = C++, 4 = JavaScript)",
+
+      hintEnglish:
+        "Create four case blocks for the four programming languages.",
+
+      hintTamil:
+        "நான்கு Programming Languages-க்கும் தனித்தனி case Blocks உருவாக்குங்கள்.",
+
+      expectedOutput: `Enter your choice: 2
+Java`,
+
+      expectedOutputTamil: `Enter your choice: 2
+Java`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+  ],
+},
 
 ];
 
