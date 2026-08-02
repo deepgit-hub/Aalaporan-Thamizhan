@@ -1920,9 +1920,134 @@ if mark >= 35:
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a Python program to accept the user's age. Print 'Eligible to Vote' if the age is greater than or equal to 18.",
+
+      questionTamil:
+        "பயனரிடமிருந்து வயதை Input ஆக பெற்று, அது 18 அல்லது அதற்கு மேல் இருந்தால் 'Eligible to Vote' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input(), int(), and an if statement.",
+
+      hintTamil:
+        "input(), int() மற்றும் if Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter age: 20
+Eligible to Vote`,
+
+      expectedOutputTamil: `Enter age: 20
+Eligible to Vote`,
+
+      solution: `age = int(input("Enter age: "))
+
+if age >= 18:
+    print("Eligible to Vote")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a Python program to accept a number from the user. Print 'Positive Number' if the number is greater than 0.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, அது 0-வை விட பெரியதாக இருந்தால் 'Positive Number' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input(), int(), and an if statement.",
+
+      hintTamil:
+        "input(), int() மற்றும் if Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter number: 25
+Positive Number`,
+
+      expectedOutputTamil: `Enter number: 25
+Positive Number`,
+
+      solution: `number = int(input("Enter number: "))
+
+if number > 0:
+    print("Positive Number")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a Python program to accept the student's mark from the user. Print 'Pass' if the mark is greater than or equal to 35.",
+
+      questionTamil:
+        "பயனரிடமிருந்து மாணவரின் மதிப்பெண்ணை Input ஆக பெற்று, அது 35 அல்லது அதற்கு மேல் இருந்தால் 'Pass' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input(), int(), and an if statement.",
+
+      hintTamil:
+        "input(), int() மற்றும் if Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter mark: 60
+Pass`,
+
+      expectedOutputTamil: `Enter mark: 60
+Pass`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a Python program to accept the user's age, mark, and name. Print 'Eligible' if the age is greater than or equal to 18, the mark is greater than or equal to 35, and the name is 'Deepak'.",
+
+      questionTamil:
+        "பயனரிடமிருந்து வயது, மதிப்பெண் மற்றும் பெயரை Input ஆக பெற்று, வயது 18 அல்லது அதற்கு மேல், மதிப்பெண் 35 அல்லது அதற்கு மேல், மேலும் பெயர் 'Deepak' ஆக இருந்தால் 'Eligible' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use multiple input() statements and separate if statements.",
+
+      hintTamil:
+        "பல input() Statements மற்றும் தனித்தனி if Statements-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter name: Deepak
+Enter age: 20
+Enter mark: 75
+Eligible`,
+
+      expectedOutputTamil: `Enter name: Deepak
+Enter age: 20
+Enter mark: 75
+Eligible`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
+
 ];
 
 export default questions;
