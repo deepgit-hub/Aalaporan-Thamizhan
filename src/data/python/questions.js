@@ -3371,7 +3371,106 @@ Java`,
     },
   ],
 },
+{
+  topicId: 11,
+  title: "Ternary Operator",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to print 'Pass' if marks are greater than or equal to 35; otherwise print 'Fail' using the ternary operator. Use marks = 80.",
+
+      questionTamil:
+        "marks = 80 பயன்படுத்தி, மதிப்பெண் 35 அல்லது அதற்கு மேல் இருந்தால் 'Pass', இல்லையெனில் 'Fail' என்பதை Ternary Operator பயன்படுத்தி Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the syntax: value_if_true if condition else value_if_false.",
+
+      hintTamil:
+        "'value_if_true if condition else value_if_false' என்ற Syntax-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Pass`,
+
+      expectedOutputTamil: `Pass`,
+
+      solution: `marks = 80
+
+result = "Pass" if marks >= 35 else "Fail"
+
+print(result)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to print 'Eligible' if age is greater than or equal to 18; otherwise print 'Not Eligible' using the ternary operator. Use age = 16.",
+
+      questionTamil:
+        "age = 16 பயன்படுத்தி, வயது 18 அல்லது அதற்கு மேல் இருந்தால் 'Eligible', இல்லையெனில் 'Not Eligible' என்பதை Ternary Operator பயன்படுத்தி Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the ternary operator with the '>=' operator.",
+
+      hintTamil:
+        "Ternary Operator மற்றும் '>=' Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Not Eligible`,
+
+      expectedOutputTamil: `Not Eligible`,
+
+      solution: `age = 16
+
+result = "Eligible" if age >= 18 else "Not Eligible"
+
+print(result)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to print 'Welcome Deepak' if the name is 'Deepak'; otherwise print 'Unknown User' using the ternary operator.",
+
+      questionTamil:
+        "பெயர் 'Deepak' ஆக இருந்தால் 'Welcome Deepak', இல்லையெனில் 'Unknown User' என்பதை Ternary Operator பயன்படுத்தி Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the '==' operator with the ternary operator.",
+
+      hintTamil:
+        "'==' Operator மற்றும் Ternary Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Welcome Deepak`,
+
+      expectedOutputTamil: `Welcome Deepak`,
+
+      solution: `name = "Deepak"
+
+result = "Welcome Deepak" if name == "Deepak" else "Unknown User"
+
+print(result)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
