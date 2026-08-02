@@ -2914,6 +2914,137 @@ print(age)`,
       locked: false,
       completed: false,
     },
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a Python program to accept the user's CGPA as input, convert it into a float, and print the value.",
+
+      questionTamil:
+        "பயனரிடமிருந்து CGPA-வை Input ஆக பெற்று, அதை Float-ஆக மாற்றி Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input() with float().",
+
+      hintTamil:
+        "input() மற்றும் float() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter CGPA: 8.7
+8.7`,
+
+      expectedOutputTamil: `Enter CGPA: 8.7
+8.7`,
+
+      solution: `cgpa = float(input("Enter CGPA: "))
+
+print(cgpa)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a Python program to accept a number as input, convert it into a float, then convert it into an integer and print both values.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, முதலில் அதை Float-ஆகவும், பின்னர் Integer-ஆகவும் மாற்றி இரண்டு மதிப்புகளையும் Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use float() first, then int().",
+
+      hintTamil:
+        "முதலில் float(), பின்னர் int() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter number: 25
+25.0
+25`,
+
+      expectedOutputTamil: `Enter number: 25
+25.0
+25`,
+
+      solution: `number = input("Enter number: ")
+
+floatNumber = float(number)
+
+intNumber = int(floatNumber)
+
+print(floatNumber)
+
+print(intNumber)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a Python program to accept the user's age and CGPA as input. Convert the age into an integer and the CGPA into a float. Print both values.",
+
+      questionTamil:
+        "பயனரிடமிருந்து வயது மற்றும் CGPA-வை Input ஆக பெற்று, வயதை Integer-ஆகவும், CGPA-வை Float-ஆகவும் மாற்றி Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use int() for age and float() for CGPA.",
+
+      hintTamil:
+        "வயதிற்கு int() மற்றும் CGPA-க்கு float() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter age: 20
+Enter CGPA: 8.5
+20
+8.5`,
+
+      expectedOutputTamil: `Enter age: 20
+Enter CGPA: 8.5
+20
+8.5`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a Python program to accept a mark as input, convert it into an integer, convert the integer into a string, and print the final value.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு மதிப்பெண்ணை Input ஆக பெற்று, அதை Integer-ஆக மாற்றி, பின்னர் அந்த Integer-ஐ String-ஆக மாற்றி இறுதி மதிப்பை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use int() and then str().",
+
+      hintTamil:
+        "முதலில் int(), பின்னர் str() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter mark: 95
+95`,
+
+      expectedOutputTamil: `Enter mark: 95
+95`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
