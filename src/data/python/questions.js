@@ -3936,9 +3936,176 @@ while i <= number:
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a Python program to accept a number from the user and print all even numbers from 2 to that number using a while loop.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, While Loop பயன்படுத்தி 2 முதல் அந்த எண் வரை உள்ள அனைத்து Even எண்களையும் Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Start from 2 and increment the variable by 2.",
+
+      hintTamil:
+        "2-ல் தொடங்கி Variable-ஐ 2-ஆக Increment செய்யுங்கள்.",
+
+      expectedOutput: `Enter a number: 10
+2
+4
+6
+8
+10`,
+
+      expectedOutputTamil: `Enter a number: 10
+2
+4
+6
+8
+10`,
+
+      solution: `number = int(input("Enter a number: "))
+
+i = 2
+
+while i <= number:
+    print(i)
+    i += 2`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a Python program to accept a number from the user and print its multiplication table from 1 to 10 using a while loop.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, While Loop பயன்படுத்தி அதன் பெருக்கல் வாய்ப்பாட்டை (1 முதல் 10 வரை) Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a counter from 1 to 10 inside the while loop.",
+
+      hintTamil:
+        "While Loop-ல் 1 முதல் 10 வரை Counter Variable-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: 5
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50`,
+
+      expectedOutputTamil: `Enter a number: 5
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50`,
+
+      solution: `number = int(input("Enter a number: "))
+
+i = 1
+
+while i <= 10:
+    print(number, "x", i, "=", number * i)
+    i += 1`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a Python program to accept a number from the user and print all odd numbers from 1 to that number using a while loop.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, While Loop பயன்படுத்தி 1 முதல் அந்த எண் வரை உள்ள அனைத்து Odd எண்களையும் Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Start from 1 and increment the variable by 2.",
+
+      hintTamil:
+        "1-ல் தொடங்கி Variable-ஐ 2-ஆக Increment செய்யுங்கள்.",
+
+      expectedOutput: `Enter a number: 9
+1
+3
+5
+7
+9`,
+
+      expectedOutputTamil: `Enter a number: 9
+1
+3
+5
+7
+9`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a Python program to accept a number from the user and print the multiplication table from 1 to 20 using a while loop.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, While Loop பயன்படுத்தி அதன் பெருக்கல் வாய்ப்பாட்டை (1 முதல் 20 வரை) Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a while loop with a counter from 1 to 20.",
+
+      hintTamil:
+        "1 முதல் 20 வரை Counter Variable-உடன் While Loop-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: 3
+3 x 1 = 3
+3 x 2 = 6
+...
+3 x 20 = 60`,
+
+      expectedOutputTamil: `Enter a number: 3
+3 x 1 = 3
+3 x 2 = 6
+...
+3 x 20 = 60`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
+
 ];
 
 export default questions;
