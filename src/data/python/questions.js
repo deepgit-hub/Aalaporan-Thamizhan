@@ -5262,6 +5262,138 @@ Enter a number: -1`,
     },
   ],
 },
+{
+  topicId: 16,
+  title: "Continue Statement",
+
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to print numbers from 1 to 5 using a for loop. Skip the number 3 using the continue statement.",
+
+      questionTamil:
+        "For Loop பயன்படுத்தி 1 முதல் 5 வரை உள்ள எண்களை Print செய்யுங்கள். 3 என்ற எண்ணை continue Statement பயன்படுத்தி Skip செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use an if statement with continue inside the for loop.",
+
+      hintTamil:
+        "For Loop-க்குள் if Statement மற்றும் continue-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `1
+2
+4
+5`,
+
+      expectedOutputTamil: `1
+2
+4
+5`,
+
+      solution: `for i in range(1, 6):
+    if i == 3:
+        continue
+    print(i)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to print numbers from 1 to 10 using a while loop. Skip the number 6 using the continue statement.",
+
+      questionTamil:
+        "While Loop பயன்படுத்தி 1 முதல் 10 வரை உள்ள எண்களை Print செய்யுங்கள். 6 என்ற எண்ணை continue Statement பயன்படுத்தி Skip செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Increment the variable before using continue.",
+
+      hintTamil:
+        "continue பயன்படுத்துவதற்கு முன் Variable-ஐ Increment செய்யுங்கள்.",
+
+      expectedOutput: `1
+2
+3
+4
+5
+7
+8
+9
+10`,
+
+      expectedOutputTamil: `1
+2
+3
+4
+5
+7
+8
+9
+10`,
+
+      solution: `i = 1
+
+while i <= 10:
+    if i == 6:
+        i += 1
+        continue
+
+    print(i)
+    i += 1`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to print numbers from 1 to 10. Skip all even numbers using the continue statement.",
+
+      questionTamil:
+        "1 முதல் 10 வரை உள்ள எண்களை Print செய்யுங்கள். அனைத்து Even எண்களையும் continue Statement பயன்படுத்தி Skip செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the modulus (%) operator with continue.",
+
+      hintTamil:
+        "Modulus (%) Operator மற்றும் continue Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `1
+3
+5
+7
+9`,
+
+      expectedOutputTamil: `1
+3
+5
+7
+9`,
+
+      solution: `for i in range(1, 11):
+    if i % 2 == 0:
+        continue
+    print(i)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
