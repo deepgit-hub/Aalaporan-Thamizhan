@@ -4986,7 +4986,128 @@ while i >= 1:
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to print the multiplication table of 5 using a for loop. Stop the loop when the multiplier becomes 6 using the break statement.",
+
+      questionTamil:
+        "For Loop பயன்படுத்தி 5-ன் பெருக்கல் வாய்ப்பாட்டை Print செய்யுங்கள். Multiplier 6 ஆனவுடன் break Statement பயன்படுத்தி Loop-ஐ நிறுத்தும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a for loop with an if statement and break.",
+
+      hintTamil:
+        "For Loop-ல் if Statement மற்றும் break-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25`,
+
+      expectedOutputTamil: `5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25`,
+
+      solution: `for i in range(1, 11):
+    if i == 6:
+        break
+    print("5 x", i, "=", 5 * i)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to print numbers from 1 to 10 using a while loop. Stop the loop when the number becomes 8 using the break statement.",
+
+      questionTamil:
+        "While Loop பயன்படுத்தி 1 முதல் 10 வரை உள்ள எண்களை Print செய்யுங்கள். எண் 8 ஆனவுடன் break Statement பயன்படுத்தி Loop-ஐ நிறுத்தும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a while loop with an if statement and break.",
+
+      hintTamil:
+        "While Loop-ல் if Statement மற்றும் break-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `1
+2
+3
+4
+5
+6
+7`,
+
+      expectedOutputTamil: `1
+2
+3
+4
+5
+6
+7`,
+
+      solution: `i = 1
+
+while i <= 10:
+    if i == 8:
+        break
+    print(i)
+    i += 1`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to accept a number from the user. Print numbers from 1 to that number, but stop when the number becomes 5 using the break statement.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, 1 முதல் அந்த எண் வரை Print செய்யுங்கள். எண் 5 ஆனவுடன் break Statement பயன்படுத்தி Loop-ஐ நிறுத்தும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input(), int(), a for loop, and break.",
+
+      hintTamil:
+        "input(), int(), For Loop மற்றும் break Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: 10
+1
+2
+3
+4`,
+
+      expectedOutputTamil: `Enter a number: 10
+1
+2
+3
+4`,
+
+      solution: `number = int(input("Enter a number: "))
+
+for i in range(1, number + 1):
+    if i == 5:
+        break
+    print(i)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
