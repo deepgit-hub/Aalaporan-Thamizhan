@@ -2476,6 +2476,108 @@ if name == "Deepak":
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to check whether a student has passed. If the mark is greater than or equal to 35, then check whether the attendance is greater than or equal to 75 and print 'Eligible for Exam'. Use mark = 80 and attendance = 90.",
+
+      questionTamil:
+        "ஒரு மாணவர் தேர்ச்சி பெற்றுள்ளாரா என்பதை சரிபார்க்கும் Python Program-ஐ எழுதுங்கள். மதிப்பெண் 35 அல்லது அதற்கு மேல் இருந்தால், Attendance 75 அல்லது அதற்கு மேல் உள்ளதா என்று சரிபார்த்து 'Eligible for Exam' என்பதை Print செய்யுங்கள். mark = 80 மற்றும் attendance = 90 பயன்படுத்துங்கள்.",
+
+      hintEnglish:
+        "Use one if statement inside another if statement.",
+
+      hintTamil:
+        "ஒரு if Statement-க்குள் மற்றொரு if Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Eligible for Exam`,
+
+      expectedOutputTamil: `Eligible for Exam`,
+
+      solution: `mark = 80
+
+attendance = 90
+
+if mark >= 35:
+    if attendance >= 75:
+        print("Eligible for Exam")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to check whether a user is eligible to register. If the age is greater than or equal to 18, then check whether the user has an Aadhaar card and print 'Registration Successful'. Use age = 20 and hasAadhaar = True.",
+
+      questionTamil:
+        "ஒரு பயனர் பதிவு செய்ய தகுதியானவரா என்பதை சரிபார்க்கும் Python Program-ஐ எழுதுங்கள். வயது 18 அல்லது அதற்கு மேல் இருந்தால், Aadhaar Card உள்ளதா என்று சரிபார்த்து 'Registration Successful' என்பதை Print செய்யுங்கள். age = 20 மற்றும் hasAadhaar = True பயன்படுத்துங்கள்.",
+
+      hintEnglish:
+        "Use nested if statements.",
+
+      hintTamil:
+        "Nested if Statements-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Registration Successful`,
+
+      expectedOutputTamil: `Registration Successful`,
+
+      solution: `age = 20
+
+hasAadhaar = True
+
+if age >= 18:
+    if hasAadhaar:
+        print("Registration Successful")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to accept the user's age and mark. If the age is greater than or equal to 18, then check whether the mark is greater than or equal to 35 and print 'Eligible'.",
+
+      questionTamil:
+        "பயனரிடமிருந்து வயது மற்றும் மதிப்பெண்ணை Input ஆக பெற்று, வயது 18 அல்லது அதற்கு மேல் இருந்தால், மதிப்பெண் 35 அல்லது அதற்கு மேல் உள்ளதா என்று சரிபார்த்து 'Eligible' என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input(), int(), and nested if statements.",
+
+      hintTamil:
+        "input(), int() மற்றும் Nested if Statements-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter age: 20
+Enter mark: 75
+Eligible`,
+
+      expectedOutputTamil: `Enter age: 20
+Enter mark: 75
+Eligible`,
+
+      solution: `age = int(input("Enter age: "))
+
+mark = int(input("Enter mark: "))
+
+if age >= 18:
+    if mark >= 35:
+        print("Eligible")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
     
   ],
 },
