@@ -2822,7 +2822,98 @@ print(number)`,
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to convert the float value 8.5 into an integer and print the result.",
+
+      questionTamil:
+        "8.5 என்ற Float Value-ஐ Integer-ஆக மாற்றி அதன் மதிப்பை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the int() function.",
+
+      hintTamil:
+        "int() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `8`,
+
+      expectedOutputTamil: `8`,
+
+      solution: `cgpa = 8.5
+
+cgpa = int(cgpa)
+
+print(cgpa)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to convert the string '95.5' into a float and print the result.",
+
+      questionTamil:
+        "'95.5' என்ற String-ஐ Float-ஆக மாற்றி அதன் மதிப்பை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the float() function.",
+
+      hintTamil:
+        "float() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `95.5`,
+
+      expectedOutputTamil: `95.5`,
+
+      solution: `mark = "95.5"
+
+mark = float(mark)
+
+print(mark)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to accept the user's age as input, convert it into an integer, and print the age after type casting.",
+
+      questionTamil:
+        "பயனரிடமிருந்து வயதை Input ஆக பெற்று, அதை Integer-ஆக மாற்றி (Type Casting) Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input() with int().",
+
+      hintTamil:
+        "input() மற்றும் int() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter age: 20
+20`,
+
+      expectedOutputTamil: `Enter age: 20
+20`,
+
+      solution: `age = int(input("Enter age: "))
+
+print(age)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
