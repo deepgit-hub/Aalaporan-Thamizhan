@@ -3695,6 +3695,130 @@ Odd Number`,
     },
   ],
 },
+{
+  topicId: 12,
+  title: "While Loop",
+
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to print numbers from 1 to 5 using a while loop.",
+
+      questionTamil:
+        "While Loop பயன்படுத்தி 1 முதல் 5 வரை உள்ள எண்களை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Initialize a variable with 1 and increment it until 5.",
+
+      hintTamil:
+        "ஒரு Variable-ஐ 1-ல் தொடங்கி, 5 வரை Increment செய்யுங்கள்.",
+
+      expectedOutput: `1
+2
+3
+4
+5`,
+
+      expectedOutputTamil: `1
+2
+3
+4
+5`,
+
+      solution: `i = 1
+
+while i <= 5:
+    print(i)
+    i += 1`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to print numbers from 5 to 1 using a while loop.",
+
+      questionTamil:
+        "While Loop பயன்படுத்தி 5 முதல் 1 வரை உள்ள எண்களை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Start from 5 and decrement the variable.",
+
+      hintTamil:
+        "5-ல் தொடங்கி Variable-ஐ Decrement செய்யுங்கள்.",
+
+      expectedOutput: `5
+4
+3
+2
+1`,
+
+      expectedOutputTamil: `5
+4
+3
+2
+1`,
+
+      solution: `i = 5
+
+while i >= 1:
+    print(i)
+    i -= 1`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to print 'Hello Python' five times using a while loop.",
+
+      questionTamil:
+        "While Loop பயன்படுத்தி 'Hello Python' என்பதை 5 முறை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a counter variable and a while loop.",
+
+      hintTamil:
+        "Counter Variable மற்றும் While Loop-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Hello Python
+Hello Python
+Hello Python
+Hello Python
+Hello Python`,
+
+      expectedOutputTamil: `Hello Python
+Hello Python
+Hello Python
+Hello Python
+Hello Python`,
+
+      solution: `i = 1
+
+while i <= 5:
+    print("Hello Python")
+    i += 1`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
