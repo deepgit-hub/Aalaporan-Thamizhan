@@ -3562,7 +3562,137 @@ print(result)`,
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a Python program to accept the user's age and print 'Eligible to Vote' if the age is greater than or equal to 18; otherwise print 'Not Eligible' using the ternary operator.",
+
+      questionTamil:
+        "பயனரிடமிருந்து வயதை Input ஆக பெற்று, அது 18 அல்லது அதற்கு மேல் இருந்தால் 'Eligible to Vote', இல்லையெனில் 'Not Eligible' என்பதை Ternary Operator பயன்படுத்தி Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input(), int(), and the ternary operator.",
+
+      hintTamil:
+        "input(), int() மற்றும் Ternary Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter age: 20
+Eligible to Vote`,
+
+      expectedOutputTamil: `Enter age: 20
+Eligible to Vote`,
+
+      solution: `age = int(input("Enter age: "))
+
+result = "Eligible to Vote" if age >= 18 else "Not Eligible"
+
+print(result)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a Python program to accept a number from the user and print 'Even Number' if the number is even; otherwise print 'Odd Number' using the ternary operator.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, அது Even ஆக இருந்தால் 'Even Number', இல்லையெனில் 'Odd Number' என்பதை Ternary Operator பயன்படுத்தி Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input(), int(), modulus (%) operator, and the ternary operator.",
+
+      hintTamil:
+        "input(), int(), Modulus (%) Operator மற்றும் Ternary Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter number: 12
+Even Number`,
+
+      expectedOutputTamil: `Enter number: 12
+Even Number`,
+
+      solution: `number = int(input("Enter number: "))
+
+result = "Even Number" if number % 2 == 0 else "Odd Number"
+
+print(result)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a Python program to accept the user's mark and print 'Pass' if the mark is greater than or equal to 35; otherwise print 'Fail' using the ternary operator.",
+
+      questionTamil:
+        "பயனரிடமிருந்து மதிப்பெண்ணை Input ஆக பெற்று, அது 35 அல்லது அதற்கு மேல் இருந்தால் 'Pass', இல்லையெனில் 'Fail' என்பதை Ternary Operator பயன்படுத்தி Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input(), int(), and the ternary operator.",
+
+      hintTamil:
+        "input(), int() மற்றும் Ternary Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter mark: 80
+Pass`,
+
+      expectedOutputTamil: `Enter mark: 80
+Pass`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a Python program to accept the user's age, mark, and a number. Using the ternary operator, display whether the user is eligible to vote, whether the student passed, and whether the number is even or odd.",
+
+      questionTamil:
+        "பயனரிடமிருந்து வயது, மதிப்பெண் மற்றும் ஒரு எண்ணை Input ஆக பெற்று, Ternary Operator பயன்படுத்தி வாக்களிக்க தகுதியானவரா, மாணவர் தேர்ச்சி பெற்றாரா மற்றும் அந்த எண் Even அல்லது Odd என்பதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use three separate ternary operators.",
+
+      hintTamil:
+        "மூன்று தனித்தனி Ternary Operators-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter age: 20
+Enter mark: 75
+Enter number: 9
+Eligible to Vote
+Pass
+Odd Number`,
+
+      expectedOutputTamil: `Enter age: 20
+Enter mark: 75
+Enter number: 9
+Eligible to Vote
+Pass
+Odd Number`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
