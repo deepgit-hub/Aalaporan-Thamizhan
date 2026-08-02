@@ -2375,6 +2375,110 @@ Welcome Deepak`,
     },
   ],
 },
+{
+  topicId: 8,
+  title: "Nested If Statement",
+
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to check if a student has passed. If the mark is greater than or equal to 35, then check if the mark is greater than or equal to 90 and print 'Excellent'. Use mark = 95.",
+
+      questionTamil:
+        "ஒரு மாணவர் தேர்ச்சி பெற்றுள்ளாரா என்பதை சரிபார்க்கும் Python Program-ஐ எழுதுங்கள். மதிப்பெண் 35 அல்லது அதற்கு மேல் இருந்தால், மீண்டும் அது 90 அல்லது அதற்கு மேல் உள்ளதா என்று சரிபார்த்து 'Excellent' என்பதை Print செய்யுங்கள். mark = 95 பயன்படுத்துங்கள்.",
+
+      hintEnglish:
+        "Use one if statement inside another if statement.",
+
+      hintTamil:
+        "ஒரு if Statement-க்குள் மற்றொரு if Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Excellent`,
+
+      expectedOutputTamil: `Excellent`,
+
+      solution: `mark = 95
+
+if mark >= 35:
+    if mark >= 90:
+        print("Excellent")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to check whether a student is eligible for placement. If the CGPA is greater than or equal to 7.5, then check if the age is greater than or equal to 18 and print 'Eligible'. Use cgpa = 8.2 and age = 20.",
+
+      questionTamil:
+        "ஒரு மாணவர் Placement-க்கு தகுதியானவரா என்பதை சரிபார்க்கும் Python Program-ஐ எழுதுங்கள். CGPA 7.5 அல்லது அதற்கு மேல் இருந்தால், வயது 18 அல்லது அதற்கு மேல் உள்ளதா என்று சரிபார்த்து 'Eligible' என்பதை Print செய்யுங்கள். cgpa = 8.2 மற்றும் age = 20 பயன்படுத்துங்கள்.",
+
+      hintEnglish:
+        "Use nested if statements.",
+
+      hintTamil:
+        "Nested if Statements-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Eligible`,
+
+      expectedOutputTamil: `Eligible`,
+
+      solution: `cgpa = 8.2
+
+age = 20
+
+if cgpa >= 7.5:
+    if age >= 18:
+        print("Eligible")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to check whether the user is Deepak. If the name is 'Deepak', then check whether the password is 'python123' and print 'Login Successful'.",
+
+      questionTamil:
+        "பயனர் 'Deepak' தானா என்பதை சரிபார்க்கும் Python Program-ஐ எழுதுங்கள். பெயர் 'Deepak' ஆக இருந்தால், Password 'python123' ஆக உள்ளதா என்று சரிபார்த்து 'Login Successful' என்பதை Print செய்யுங்கள்.",
+
+      hintEnglish:
+        "Use two if statements, one inside another.",
+
+      hintTamil:
+        "ஒரு if Statement-க்குள் மற்றொரு if Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Login Successful`,
+
+      expectedOutputTamil: `Login Successful`,
+
+      solution: `name = "Deepak"
+
+password = "python123"
+
+if name == "Deepak":
+    if password == "python123":
+        print("Login Successful")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
