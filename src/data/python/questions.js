@@ -6708,7 +6708,210 @@ print(numbers)`,
     },
   ],
 },
+{
+  topicId: 20,
+  title: "Dictionaries",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to create a dictionary containing a student's name, age, and department. Print the dictionary.",
+
+      questionTamil:
+        "மாணவரின் Name, Age மற்றும் Department ஆகியவற்றைக் கொண்ட ஒரு Dictionary-ஐ உருவாக்கி அதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use key-value pairs inside curly braces {}.",
+
+      hintTamil:
+        "Curly Braces {}-க்குள் Key-Value Pairs-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `{'name': 'Deepak', 'age': 20, 'department': 'Computer Science'}`,
+
+      expectedOutputTamil: `{'name': 'Deepak', 'age': 20, 'department': 'Computer Science'}`,
+
+      solution: `student = {
+    "name": "Deepak",
+    "age": 20,
+    "department": "Computer Science"
+}
+
+print(student)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to create a dictionary containing a book's title, author, and price. Print the dictionary.",
+
+      questionTamil:
+        "ஒரு புத்தகத்தின் Title, Author மற்றும் Price ஆகியவற்றைக் கொண்ட ஒரு Dictionary-ஐ உருவாக்கி அதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Store the details as key-value pairs.",
+
+      hintTamil:
+        "விவரங்களை Key-Value Pairs ஆக சேமியுங்கள்.",
+
+      expectedOutput: `{'title': 'Python Basics', 'author': 'Kathir', 'price': 450}`,
+
+      expectedOutputTamil: `{'title': 'Python Basics', 'author': 'Kathir', 'price': 450}`,
+
+      solution: `book = {
+    "title": "Python Basics",
+    "author": "Kathir",
+    "price": 450
+}
+
+print(book)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to create a dictionary containing your favorite programming language and version. Print the dictionary.",
+
+      questionTamil:
+        "உங்களுக்கு பிடித்த Programming Language மற்றும் அதன் Version ஆகியவற்றைக் கொண்ட ஒரு Dictionary-ஐ உருவாக்கி அதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a dictionary using key-value pairs.",
+
+      hintTamil:
+        "Key-Value Pairs பயன்படுத்தி ஒரு Dictionary உருவாக்குங்கள்.",
+
+      expectedOutput: `{'language': 'Python', 'version': '3.13'}`,
+
+      expectedOutputTamil: `{'language': 'Python', 'version': '3.13'}`,
+
+      solution: `programming = {
+    "language": "Python",
+    "version": "3.13"
+}
+
+print(programming)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to create a dictionary containing a student's name, age, and department. Print only the student's name.",
+
+      questionTamil:
+        "மாணவரின் Name, Age மற்றும் Department ஆகியவற்றைக் கொண்ட ஒரு Dictionary-ஐ உருவாக்கி, மாணவரின் பெயரை மட்டும் Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Access the value using its key.",
+
+      hintTamil:
+        "Key-ஐ பயன்படுத்தி Value-ஐ Access செய்யுங்கள்.",
+
+      expectedOutput: `Deepak`,
+
+      expectedOutputTamil: `Deepak`,
+
+      solution: `student = {
+    "name": "Deepak",
+    "age": 20,
+    "department": "Computer Science"
+}
+
+print(student["name"])`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to create a dictionary containing a book's title, author, and price. Print only the price.",
+
+      questionTamil:
+        "ஒரு புத்தகத்தின் Title, Author மற்றும் Price ஆகியவற்றைக் கொண்ட ஒரு Dictionary-ஐ உருவாக்கி, Price-ஐ மட்டும் Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the key to access the price.",
+
+      hintTamil:
+        "Price-ஐ Access செய்ய அதற்கான Key-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `450`,
+
+      expectedOutputTamil: `450`,
+
+      solution: `book = {
+    "title": "Python Basics",
+    "author": "Kathir",
+    "price": 450
+}
+
+print(book["price"])`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to create a dictionary containing a student's name and age. Add a new key 'college' with the value 'Don Bosco College' and print the updated dictionary.",
+
+      questionTamil:
+        "மாணவரின் Name மற்றும் Age ஆகியவற்றைக் கொண்ட ஒரு Dictionary-ஐ உருவாக்கி, அதில் 'college' என்ற புதிய Key-ஐ 'Don Bosco College' என்ற Value-உடன் சேர்த்து Updated Dictionary-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Add a new key using dictionary[key] = value.",
+
+      hintTamil:
+        "dictionary[key] = value பயன்படுத்தி புதிய Key-ஐ சேருங்கள்.",
+
+      expectedOutput: `{'name': 'Deepak', 'age': 20, 'college': 'Don Bosco College'}`,
+
+      expectedOutputTamil: `{'name': 'Deepak', 'age': 20, 'college': 'Don Bosco College'}`,
+
+      solution: `student = {
+    "name": "Deepak",
+    "age": 20
+}
+
+student["college"] = "Don Bosco College"
+
+print(student)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
