@@ -12989,7 +12989,167 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Shape with a function named draw() that prints 'Drawing Shape'. Create a class named Polygon that inherits from Shape. Then create a class named Rectangle that inherits from Polygon and call the inherited function.",
+
+      questionTamil:
+        "Shape என்ற Base Class-ஐ உருவாக்கி, 'Drawing Shape' என்று Print செய்யும் draw() Function-ஐ உருவாக்குங்கள். Shape Class-ஐ Inherit செய்யும் Polygon Class-ஐ உருவாக்கி, பின்னர் Polygon Class-ஐ Inherit செய்யும் Rectangle Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create three levels of inheritance: Shape → Polygon → Rectangle.",
+
+      hintTamil:
+        "Shape → Polygon → Rectangle என்ற மூன்று நிலை Inheritance-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Drawing Shape`,
+
+      expectedOutputTamil: `Drawing Shape`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Shape {
+
+public:
+    void draw() {
+        cout << "Drawing Shape";
+    }
+
+};
+
+class Polygon : public Shape {
+
+};
+
+class Rectangle : public Polygon {
+
+};
+
+int main() {
+
+    Rectangle r;
+
+    r.draw();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Employee with a function named work() that prints 'Employee Working'. Create a class named Manager that inherits from Employee. Then create a class named GeneralManager that inherits from Manager and call the inherited function.",
+
+      questionTamil:
+        "Employee என்ற Base Class-ஐ உருவாக்கி, 'Employee Working' என்று Print செய்யும் work() Function-ஐ உருவாக்குங்கள். Employee Class-ஐ Inherit செய்யும் Manager Class-ஐ உருவாக்கி, பின்னர் Manager Class-ஐ Inherit செய்யும் GeneralManager Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create three levels of inheritance: Employee → Manager → GeneralManager.",
+
+      hintTamil:
+        "Employee → Manager → GeneralManager என்ற மூன்று நிலை Inheritance-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Employee Working`,
+
+      expectedOutputTamil: `Employee Working`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Employee {
+
+public:
+    void work() {
+        cout << "Employee Working";
+    }
+
+};
+
+class Manager : public Employee {
+
+};
+
+class GeneralManager : public Manager {
+
+};
+
+int main() {
+
+    GeneralManager gm;
+
+    gm.work();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Device with a function named powerOn() that prints 'Device Powered On'. Create a class named Computer that inherits from Device. Then create a class named Laptop that inherits from Computer and call the inherited function.",
+
+      questionTamil:
+        "Device என்ற Base Class-ஐ உருவாக்கி, 'Device Powered On' என்று Print செய்யும் powerOn() Function-ஐ உருவாக்குங்கள். Device Class-ஐ Inherit செய்யும் Computer Class-ஐ உருவாக்கி, பின்னர் Computer Class-ஐ Inherit செய்யும் Laptop Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create three levels of inheritance: Device → Computer → Laptop.",
+
+      hintTamil:
+        "Device → Computer → Laptop என்ற மூன்று நிலை Inheritance-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Device Powered On`,
+
+      expectedOutputTamil: `Device Powered On`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Device {
+
+public:
+    void powerOn() {
+        cout << "Device Powered On";
+    }
+
+};
+
+class Computer : public Device {
+
+};
+
+class Laptop : public Computer {
+
+};
+
+int main() {
+
+    Laptop l;
+
+    l.powerOn();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
