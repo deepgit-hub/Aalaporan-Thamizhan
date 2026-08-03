@@ -8079,7 +8079,221 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a C++ program to accept elements for a 2 × 2 integer array and print the elements in reverse order.",
+
+      questionTamil:
+        "2 × 2 Integer Array-க்கான மதிப்புகளை Input ஆக பெற்று, அனைத்து Elements-ஐயும் தலைகீழ் வரிசையில் (Reverse Order) Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use nested loops starting from the last row and last column.",
+
+      hintTamil:
+        "கடைசி Row மற்றும் கடைசி Column-லிருந்து Nested Loops-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter 4 elements:
+10
+20
+30
+40
+
+40 30
+20 10`,
+
+      expectedOutputTamil: `Enter 4 elements:
+10
+20
+30
+40
+
+40 30
+20 10`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int numbers[2][2];
+
+    cout << "Enter 4 elements:" << endl;
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            cin >> numbers[i][j];
+        }
+    }
+
+    for (int i = 1; i >= 0; i--) {
+        for (int j = 1; j >= 0; j--) {
+            cout << numbers[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a C++ program to accept elements for a 2 × 3 integer array and count how many odd numbers are present.",
+
+      questionTamil:
+        "2 × 3 Integer Array-க்கான மதிப்புகளை Input ஆக பெற்று, அதில் உள்ள Odd எண்களின் எண்ணிக்கையை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a counter variable and nested loops to check each element.",
+
+      hintTamil:
+        "Counter Variable மற்றும் Nested Loops-ஐ பயன்படுத்தி ஒவ்வொரு Element-ஐயும் சரிபார்க்குங்கள்.",
+
+      expectedOutput: `Enter 6 elements:
+10
+15
+20
+25
+30
+35
+
+Odd Numbers = 3`,
+
+      expectedOutputTamil: `Enter 6 elements:
+10
+15
+20
+25
+30
+35
+
+Odd Numbers = 3`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int numbers[2][3];
+    int count = 0;
+
+    cout << "Enter 6 elements:" << endl;
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 3; j++) {
+            cin >> numbers[i][j];
+        }
+    }
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 3; j++) {
+            if (numbers[i][j] % 2 != 0) {
+                count++;
+            }
+        }
+    }
+
+    cout << "Odd Numbers = " << count;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a C++ program to accept elements for a 2 × 3 integer array and print the largest element.",
+
+      questionTamil:
+        "2 × 3 Integer Array-க்கான மதிப்புகளை Input ஆக பெற்று, அதில் உள்ள மிகப்பெரிய எண்ணை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Assume the first element is the largest and compare it with the remaining elements using nested loops.",
+
+      hintTamil:
+        "முதல் Element-ஐ Largest என எடுத்துக்கொண்டு, Nested Loops பயன்படுத்தி மற்ற Elements-உடன் ஒப்பிடுங்கள்.",
+
+      expectedOutput: `Enter 6 elements:
+15
+22
+48
+17
+36
+29
+
+Largest = 48`,
+
+      expectedOutputTamil: `Enter 6 elements:
+15
+22
+48
+17
+36
+29
+
+Largest = 48`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a C++ program to accept elements for a 2 × 2 integer array and print the sum of all elements.",
+
+      questionTamil:
+        "2 × 2 Integer Array-க்கான மதிப்புகளை Input ஆக பெற்று, அனைத்து Elements-இன் கூட்டுத்தொகையை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use nested loops to calculate the sum of all elements.",
+
+      hintTamil:
+        "Nested Loops பயன்படுத்தி அனைத்து Elements-இன் கூட்டுத்தொகையை கணக்கிடுங்கள்.",
+
+      expectedOutput: `Enter 4 elements:
+10
+20
+30
+40
+
+Sum = 100`,
+
+      expectedOutputTamil: `Enter 4 elements:
+10
+20
+30
+40
+
+Sum = 100`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
