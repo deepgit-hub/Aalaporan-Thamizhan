@@ -3830,7 +3830,274 @@ Python`,
     },
   ],
 },
+{
+  topicId: 10,
+  title: "Ternary Operator",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to accept a number from the user and print 'Even Number' if the number is even, otherwise print 'Odd Number' using the ternary operator.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, அது Even ஆக இருந்தால் 'Even Number', இல்லையெனில் 'Odd Number' என்பதை Ternary Operator பயன்படுத்தி Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the ternary operator (condition ? true : false).",
+
+      hintTamil:
+        "Ternary Operator (condition ? true : false)-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: 15
+Odd Number`,
+
+      expectedOutputTamil: `Enter a number: 15
+Odd Number`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int number;
+
+    cout << "Enter a number: ";
+    cin >> number;
+
+    cout << (number % 2 == 0 ? "Even Number" : "Odd Number");
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to accept two integers from the user and print the greater number using the ternary operator.",
+
+      questionTamil:
+        "பயனரிடமிருந்து இரண்டு Integer எண்களை Input ஆக பெற்று, பெரிய எண்ணை Ternary Operator பயன்படுத்தி Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Compare the two numbers using the > operator.",
+
+      hintTamil:
+        "> Operator மற்றும் Ternary Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter first number: 20
+Enter second number: 35
+Greater Number = 35`,
+
+      expectedOutputTamil: `Enter first number: 20
+Enter second number: 35
+Greater Number = 35`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int num1, num2;
+
+    cout << "Enter first number: ";
+    cin >> num1;
+
+    cout << "Enter second number: ";
+    cin >> num2;
+
+    cout << "Greater Number = " << (num1 > num2 ? num1 : num2);
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to accept a student's mark and print 'Pass' if the mark is greater than or equal to 35, otherwise print 'Fail' using the ternary operator.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு மாணவரின் மதிப்பெண்ணை Input ஆக பெற்று, அது 35 அல்லது அதற்கு மேல் இருந்தால் 'Pass', இல்லையெனில் 'Fail' என்பதை Ternary Operator பயன்படுத்தி Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the >= operator with the ternary operator.",
+
+      hintTamil:
+        ">= Operator மற்றும் Ternary Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter mark: 28
+Fail`,
+
+      expectedOutputTamil: `Enter mark: 28
+Fail`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int mark;
+
+    cout << "Enter mark: ";
+    cin >> mark;
+
+    cout << (mark >= 35 ? "Pass" : "Fail");
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to accept a person's age and print 'Eligible to Vote' if the age is 18 or above, otherwise print 'Not Eligible to Vote' using the ternary operator.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு நபரின் வயதை Input ஆக பெற்று, அது 18 அல்லது அதற்கு மேல் இருந்தால் 'Eligible to Vote', இல்லையெனில் 'Not Eligible to Vote' என்பதை Ternary Operator பயன்படுத்தி Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the >= operator with the ternary operator.",
+
+      hintTamil:
+        ">= Operator மற்றும் Ternary Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter age: 16
+Not Eligible to Vote`,
+
+      expectedOutputTamil: `Enter age: 16
+Not Eligible to Vote`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int age;
+
+    cout << "Enter age: ";
+    cin >> age;
+
+    cout << (age >= 18 ? "Eligible to Vote" : "Not Eligible to Vote");
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to accept two integers from the user and print 'Equal' if both numbers are equal, otherwise print 'Not Equal' using the ternary operator.",
+
+      questionTamil:
+        "பயனரிடமிருந்து இரண்டு Integer எண்களை Input ஆக பெற்று, அவை சமமாக இருந்தால் 'Equal', இல்லையெனில் 'Not Equal' என்பதை Ternary Operator பயன்படுத்தி Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the == operator with the ternary operator.",
+
+      hintTamil:
+        "== Operator மற்றும் Ternary Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter first number: 15
+Enter second number: 20
+Not Equal`,
+
+      expectedOutputTamil: `Enter first number: 15
+Enter second number: 20
+Not Equal`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int num1, num2;
+
+    cout << "Enter first number: ";
+    cin >> num1;
+
+    cout << "Enter second number: ";
+    cin >> num2;
+
+    cout << (num1 == num2 ? "Equal" : "Not Equal");
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to accept a number from the user and print 'Positive Number' if the number is positive, otherwise print 'Negative Number' using the ternary operator.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, அது Positive ஆக இருந்தால் 'Positive Number', இல்லையெனில் 'Negative Number' என்பதை Ternary Operator பயன்படுத்தி Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the > operator with the ternary operator.",
+
+      hintTamil:
+        "> Operator மற்றும் Ternary Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: -10
+Negative Number`,
+
+      expectedOutputTamil: `Enter a number: -10
+Negative Number`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int number;
+
+    cout << "Enter a number: ";
+    cin >> number;
+
+    cout << (number > 0 ? "Positive Number" : "Negative Number");
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
