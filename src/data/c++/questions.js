@@ -1139,6 +1139,288 @@ A
     },
   ],
 },
+{
+  topicId: 4,
+  title: "Input and Output",
+
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to accept an integer from the user and print it.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு Integer எண்ணை Input ஆக பெற்று அதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use cin to get input and cout to display it.",
+
+      hintTamil:
+        "Input பெற cin மற்றும் Print செய்ய cout-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: 25
+25`,
+
+      expectedOutputTamil: `Enter a number: 25
+25`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int number;
+
+    cout << "Enter a number: ";
+    cin >> number;
+
+    cout << number;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to accept the user's name and print 'Welcome <name>'.",
+
+      questionTamil:
+        "பயனரிடமிருந்து பெயரை Input ஆக பெற்று 'Welcome <name>' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use string and cin to accept the name.",
+
+      hintTamil:
+        "பெயரை பெற string மற்றும் cin-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter your name: Deepak
+Welcome Deepak`,
+
+      expectedOutputTamil: `Enter your name: Deepak
+Welcome Deepak`,
+
+      solution: `#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+
+    string name;
+
+    cout << "Enter your name: ";
+    cin >> name;
+
+    cout << "Welcome " << name;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to accept two integers from the user and print both numbers.",
+
+      questionTamil:
+        "பயனரிடமிருந்து இரண்டு Integer எண்களை Input ஆக பெற்று அவற்றை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use two int variables with cin.",
+
+      hintTamil:
+        "இரண்டு int Variables மற்றும் cin-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter first number: 10
+Enter second number: 20
+10 20`,
+
+      expectedOutputTamil: `Enter first number: 10
+Enter second number: 20
+10 20`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int num1, num2;
+
+    cout << "Enter first number: ";
+    cin >> num1;
+
+    cout << "Enter second number: ";
+    cin >> num2;
+
+    cout << num1 << " " << num2;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to accept a character from the user and print it.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு Character-ஐ Input ஆக பெற்று அதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a char variable with cin and cout.",
+
+      hintTamil:
+        "char Variable, cin மற்றும் cout-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a character: A
+A`,
+
+      expectedOutputTamil: `Enter a character: A
+A`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    char ch;
+
+    cout << "Enter a character: ";
+    cin >> ch;
+
+    cout << ch;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to accept a float value from the user and print it.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு Float மதிப்பை Input ஆக பெற்று அதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a float variable with cin.",
+
+      hintTamil:
+        "float Variable மற்றும் cin-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a float value: 45.75
+45.75`,
+
+      expectedOutputTamil: `Enter a float value: 45.75
+45.75`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    float number;
+
+    cout << "Enter a float value: ";
+    cin >> number;
+
+    cout << number;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to accept a student's name, age, and percentage from the user and print all the details.",
+
+      questionTamil:
+        "பயனரிடமிருந்து மாணவரின் பெயர், வயது மற்றும் சதவீதத்தை Input ஆக பெற்று அனைத்து விவரங்களையும் Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use string, int, float, cin, and cout.",
+
+      hintTamil:
+        "string, int, float, cin மற்றும் cout-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter name: Deepak
+Enter age: 20
+Enter percentage: 89.5
+Name: Deepak
+Age: 20
+Percentage: 89.5`,
+
+      expectedOutputTamil: `Enter name: Deepak
+Enter age: 20
+Enter percentage: 89.5
+Name: Deepak
+Age: 20
+Percentage: 89.5`,
+
+      solution: `#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+
+    string name;
+    int age;
+    float percentage;
+
+    cout << "Enter name: ";
+    cin >> name;
+
+    cout << "Enter age: ";
+    cin >> age;
+
+    cout << "Enter percentage: ";
+    cin >> percentage;
+
+    cout << "Name: " << name << endl;
+    cout << "Age: " << age << endl;
+    cout << "Percentage: " << percentage;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+  ],
+},
 ];
 
 export default questions;
