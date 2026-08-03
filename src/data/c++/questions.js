@@ -13833,7 +13833,10 @@ int main() {
       locked: false,
       completed: false,
     },
-    {
+    
+  ],
+},
+{
   topicId: 30,
   title: "File Handling",
 
@@ -13965,10 +13968,277 @@ int main() {
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to create a file named 'message.txt' and write the text 'Welcome to File Handling' into it.",
+
+      questionTamil:
+        "'message.txt' என்ற File-ஐ உருவாக்கி, அதில் 'Welcome to File Handling' என்று எழுதும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use ofstream to create the file and write the message.",
+
+      hintTamil:
+        "File உருவாக்க மற்றும் Message எழுத ofstream-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Welcome to File Handling is written into message.txt`,
+
+      expectedOutputTamil: `Welcome to File Handling is written into message.txt`,
+
+      solution: `#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+
+    ofstream file("message.txt");
+
+    file << "Welcome to File Handling";
+
+    file.close();
+
+    cout << "Welcome to File Handling is written into message.txt";
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to create a file named 'number.txt' and write the number 100 into it.",
+
+      questionTamil:
+        "'number.txt' என்ற File-ஐ உருவாக்கி, அதில் 100 என்ற எண்ணை எழுதும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use ofstream to write an integer value into the file.",
+
+      hintTamil:
+        "Integer Value-ஐ File-ல் எழுத ofstream-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `100 is written into number.txt`,
+
+      expectedOutputTamil: `100 is written into number.txt`,
+
+      solution: `#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+
+    ofstream file("number.txt");
+
+    file << 100;
+
+    file.close();
+
+    cout << "100 is written into number.txt";
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to read and display the contents of the file 'student.txt'.",
+
+      questionTamil:
+        "'student.txt' என்ற File-ல் உள்ள தகவலை படித்து திரையில் Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use ifstream and getline() to read the file.",
+
+      hintTamil:
+        "File-ஐ படிக்க ifstream மற்றும் getline()-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Deepak`,
+
+      expectedOutputTamil: `Deepak`,
+
+      solution: `#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+
+    ifstream file("student.txt");
+
+    string text;
+
+    getline(file, text);
+
+    cout << text;
+
+    file.close();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a C++ program to create a file named 'college.txt' and write the text 'ABC College' into it.",
+
+      questionTamil:
+        "'college.txt' என்ற File-ஐ உருவாக்கி, அதில் 'ABC College' என்று எழுதும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use ofstream to create the file and write the text.",
+
+      hintTamil:
+        "File உருவாக்க மற்றும் Text எழுத ofstream-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `ABC College is written into college.txt`,
+
+      expectedOutputTamil: `ABC College is written into college.txt`,
+
+      solution: `#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+
+    ofstream file("college.txt");
+
+    file << "ABC College";
+
+    file.close();
+
+    cout << "ABC College is written into college.txt";
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a C++ program to create a file named 'city.txt' and write the text 'Chennai' into it. Then read and display the contents of the file.",
+
+      questionTamil:
+        "'city.txt' என்ற File-ஐ உருவாக்கி, அதில் 'Chennai' என்று எழுதுங்கள். பின்னர் அந்த File-ல் உள்ள தகவலை படித்து திரையில் Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use both ofstream and ifstream in the same program.",
+
+      hintTamil:
+        "ஒரே Program-ல் ofstream மற்றும் ifstream இரண்டையும் பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Chennai`,
+
+      expectedOutputTamil: `Chennai`,
+
+      solution: `#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+
+    ofstream outFile("city.txt");
+    outFile << "Chennai";
+    outFile.close();
+
+    ifstream inFile("city.txt");
+
+    string text;
+    getline(inFile, text);
+
+    cout << text;
+
+    inFile.close();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a C++ program to create a file named 'data.txt' and write the text 'C++ Programming' into it.",
+
+      questionTamil:
+        "'data.txt' என்ற File-ஐ உருவாக்கி, அதில் 'C++ Programming' என்று எழுதும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use ofstream to create the file and write the text.",
+
+      hintTamil:
+        "File உருவாக்க மற்றும் Text எழுத ofstream-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `C++ Programming is written into data.txt`,
+
+      expectedOutputTamil: `C++ Programming is written into data.txt`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a C++ program to read and display the contents of the file 'message.txt'.",
+
+      questionTamil:
+        "'message.txt' என்ற File-ல் உள்ள தகவலை படித்து திரையில் Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use ifstream and getline() to read the file.",
+
+      hintTamil:
+        "File-ஐ படிக்க ifstream மற்றும் getline()-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Welcome to File Handling`,
+
+      expectedOutputTamil: `Welcome to File Handling`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 }
-  ],
-},
 ];
 
 export default questions;
