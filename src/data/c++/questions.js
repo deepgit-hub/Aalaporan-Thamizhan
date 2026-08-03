@@ -12648,9 +12648,182 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Vehicle with a function named move() that prints 'Vehicle Moving'. Create two derived classes named Bus and Train that inherit from Vehicle and call the inherited function.",
+
+      questionTamil:
+        "Vehicle என்ற Base Class-ஐ உருவாக்கி, 'Vehicle Moving' என்று Print செய்யும் move() Function-ஐ உருவாக்குங்கள். Vehicle Class-ஐ Inherit செய்யும் Bus மற்றும் Train என்ற இரண்டு Derived Classes-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create two derived classes from the same base class and call the inherited function using both objects.",
+
+      hintTamil:
+        "ஒரே Base Class-லிருந்து இரண்டு Derived Classes-ஐ உருவாக்கி, இரண்டு Objects மூலமும் Inherited Function-ஐ Call செய்யுங்கள்.",
+
+      expectedOutput: `Vehicle Moving
+Vehicle Moving`,
+
+      expectedOutputTamil: `Vehicle Moving
+Vehicle Moving`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Vehicle {
+
+public:
+    void move() {
+        cout << "Vehicle Moving" << endl;
+    }
+
+};
+
+class Bus : public Vehicle {
+
+};
+
+class Train : public Vehicle {
+
+};
+
+int main() {
+
+    Bus b;
+    Train t;
+
+    b.move();
+    t.move();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Device with a function named powerOn() that prints 'Device Powered On'. Create two derived classes named Laptop and Mobile that inherit from Device and call the inherited function.",
+
+      questionTamil:
+        "Device என்ற Base Class-ஐ உருவாக்கி, 'Device Powered On' என்று Print செய்யும் powerOn() Function-ஐ உருவாக்குங்கள். Device Class-ஐ Inherit செய்யும் Laptop மற்றும் Mobile என்ற இரண்டு Derived Classes-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use one base class and two derived classes with public inheritance.",
+
+      hintTamil:
+        "ஒரு Base Class மற்றும் public Inheritance பயன்படுத்தி இரண்டு Derived Classes-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Device Powered On
+Device Powered On`,
+
+      expectedOutputTamil: `Device Powered On
+Device Powered On`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Device {
+
+public:
+    void powerOn() {
+        cout << "Device Powered On" << endl;
+    }
+
+};
+
+class Laptop : public Device {
+
+};
+
+class Mobile : public Device {
+
+};
+
+int main() {
+
+    Laptop l;
+    Mobile m;
+
+    l.powerOn();
+    m.powerOn();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Person with a function named walk() that prints 'Person Walking'. Create two derived classes named Teacher and Doctor that inherit from Person and call the inherited function.",
+
+      questionTamil:
+        "Person என்ற Base Class-ஐ உருவாக்கி, 'Person Walking' என்று Print செய்யும் walk() Function-ஐ உருவாக்குங்கள். Person Class-ஐ Inherit செய்யும் Teacher மற்றும் Doctor என்ற இரண்டு Derived Classes-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create one base class and two derived classes using public inheritance.",
+
+      hintTamil:
+        "public Inheritance பயன்படுத்தி ஒரு Base Class மற்றும் இரண்டு Derived Classes-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Person Walking
+Person Walking`,
+
+      expectedOutputTamil: `Person Walking
+Person Walking`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Shape with a function named show() that prints 'This is a Shape'. Create two derived classes named Square and Triangle that inherit from Shape and call the inherited function.",
+
+      questionTamil:
+        "Shape என்ற Base Class-ஐ உருவாக்கி, 'This is a Shape' என்று Print செய்யும் show() Function-ஐ உருவாக்குங்கள். Shape Class-ஐ Inherit செய்யும் Square மற்றும் Triangle என்ற இரண்டு Derived Classes-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use one base class and two derived classes with public inheritance.",
+
+      hintTamil:
+        "ஒரு Base Class மற்றும் public Inheritance பயன்படுத்தி இரண்டு Derived Classes-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `This is a Shape
+This is a Shape`,
+
+      expectedOutputTamil: `This is a Shape
+This is a Shape`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
+
 ];
 
 export default questions;
