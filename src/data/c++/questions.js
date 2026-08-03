@@ -2169,9 +2169,154 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a C++ program to accept a number from the user and print 'Divisible by 5' if the number is divisible by 5.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, அது 5-ஆல் வகுபட்டால் 'Divisible by 5' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the % operator with an if statement.",
+
+      hintTamil:
+        "% Operator மற்றும் if Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: 25
+Divisible by 5`,
+
+      expectedOutputTamil: `Enter a number: 25
+Divisible by 5`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int number;
+
+    cout << "Enter a number: ";
+    cin >> number;
+
+    if (number % 5 == 0) {
+        cout << "Divisible by 5";
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a C++ program to accept a number from the user and print 'Three Digit Number' if the number is between 100 and 999.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, அது 100 முதல் 999 வரை இருந்தால் 'Three Digit Number' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the >= and <= operators with an if statement.",
+
+      hintTamil:
+        ">= மற்றும் <= Operators-ஐ if Statement உடன் பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: 456
+Three Digit Number`,
+
+      expectedOutputTamil: `Enter a number: 456
+Three Digit Number`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int number;
+
+    cout << "Enter a number: ";
+    cin >> number;
+
+    if (number >= 100 && number <= 999) {
+        cout << "Three Digit Number";
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a C++ program to accept a number from the user and print 'Positive Number' if the number is greater than zero.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, அது 0-ஐ விட பெரியதாக இருந்தால் 'Positive Number' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the > operator with an if statement.",
+
+      hintTamil:
+        "> Operator மற்றும் if Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: 18
+Positive Number`,
+
+      expectedOutputTamil: `Enter a number: 18
+Positive Number`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a C++ program to accept a student's mark from the user and print 'Excellent' if the mark is greater than or equal to 90.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு மாணவரின் மதிப்பெண்ணை Input ஆக பெற்று, அது 90 அல்லது அதற்கு மேல் இருந்தால் 'Excellent' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the >= operator with an if statement.",
+
+      hintTamil:
+        ">= Operator மற்றும் if Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter mark: 95
+Excellent`,
+
+      expectedOutputTamil: `Enter mark: 95
+Excellent`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
+
 ];
 
 export default questions;
