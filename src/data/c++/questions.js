@@ -3245,7 +3245,406 @@ Can Drive`,
     },
   ],
 },
+{
+  topicId: 9,
+  title: "Switch Statement",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to accept a number between 1 and 3 from the user and display the corresponding programming language using a switch statement (1-Java, 2-C++, 3-Python).",
+
+      questionTamil:
+        "பயனரிடமிருந்து 1 முதல் 3 வரை ஒரு எண்ணை Input ஆக பெற்று, Switch Statement பயன்படுத்தி அதற்கான Programming Language-ஐ (1-Java, 2-C++, 3-Python) Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a switch statement with case 1, case 2, and case 3.",
+
+      hintTamil:
+        "case 1, case 2 மற்றும் case 3 உடன் Switch Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter your choice: 2
+C++`,
+
+      expectedOutputTamil: `Enter your choice: 2
+C++`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int choice;
+
+    cout << "Enter your choice: ";
+    cin >> choice;
+
+    switch(choice)
+    {
+        case 1:
+            cout << "Java";
+            break;
+
+        case 2:
+            cout << "C++";
+            break;
+
+        case 3:
+            cout << "Python";
+            break;
+
+        default:
+            cout << "Invalid Choice";
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to accept a number between 1 and 7 and display the corresponding day of the week using a switch statement.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 1 முதல் 7 வரை ஒரு எண்ணை Input ஆக பெற்று, Switch Statement பயன்படுத்தி அதற்கான வார நாளை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create cases for numbers 1 to 7.",
+
+      hintTamil:
+        "1 முதல் 7 வரை Case-களை உருவாக்குங்கள்.",
+
+      expectedOutput: `Enter day number: 5
+Friday`,
+
+      expectedOutputTamil: `Enter day number: 5
+Friday`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int day;
+
+    cout << "Enter day number: ";
+    cin >> day;
+
+    switch(day)
+    {
+        case 1:
+            cout << "Monday";
+            break;
+
+        case 2:
+            cout << "Tuesday";
+            break;
+
+        case 3:
+            cout << "Wednesday";
+            break;
+
+        case 4:
+            cout << "Thursday";
+            break;
+
+        case 5:
+            cout << "Friday";
+            break;
+
+        case 6:
+            cout << "Saturday";
+            break;
+
+        case 7:
+            cout << "Sunday";
+            break;
+
+        default:
+            cout << "Invalid Day";
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to accept a number between 1 and 4 and display the corresponding arithmetic operator name using a switch statement.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 1 முதல் 4 வரை ஒரு எண்ணை Input ஆக பெற்று, Switch Statement பயன்படுத்தி அதற்கான Arithmetic Operator பெயரை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use switch with four cases.",
+
+      hintTamil:
+        "நான்கு Case-களுடன் Switch Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter choice: 3
+Multiplication`,
+
+      expectedOutputTamil: `Enter choice: 3
+Multiplication`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int choice;
+
+    cout << "Enter choice: ";
+    cin >> choice;
+
+    switch(choice)
+    {
+        case 1:
+            cout << "Addition";
+            break;
+
+        case 2:
+            cout << "Subtraction";
+            break;
+
+        case 3:
+            cout << "Multiplication";
+            break;
+
+        case 4:
+            cout << "Division";
+            break;
+
+        default:
+            cout << "Invalid Choice";
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to accept a month number (1–12) from the user and display the corresponding month name using a switch statement.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 1 முதல் 12 வரை ஒரு மாத எண்ணை Input ஆக பெற்று, Switch Statement பயன்படுத்தி அதற்கான மாதத்தின் பெயரை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create cases for month numbers 1 to 12.",
+
+      hintTamil:
+        "1 முதல் 12 வரை Case-களை உருவாக்குங்கள்.",
+
+      expectedOutput: `Enter month number: 8
+August`,
+
+      expectedOutputTamil: `Enter month number: 8
+August`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int month;
+
+    cout << "Enter month number: ";
+    cin >> month;
+
+    switch(month)
+    {
+        case 1:
+            cout << "January";
+            break;
+        case 2:
+            cout << "February";
+            break;
+        case 3:
+            cout << "March";
+            break;
+        case 4:
+            cout << "April";
+            break;
+        case 5:
+            cout << "May";
+            break;
+        case 6:
+            cout << "June";
+            break;
+        case 7:
+            cout << "July";
+            break;
+        case 8:
+            cout << "August";
+            break;
+        case 9:
+            cout << "September";
+            break;
+        case 10:
+            cout << "October";
+            break;
+        case 11:
+            cout << "November";
+            break;
+        case 12:
+            cout << "December";
+            break;
+        default:
+            cout << "Invalid Month";
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to accept a number between 1 and 5 from the user and display the corresponding fruit name using a switch statement.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 1 முதல் 5 வரை ஒரு எண்ணை Input ஆக பெற்று, Switch Statement பயன்படுத்தி அதற்கான பழத்தின் பெயரை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use switch with five cases.",
+
+      hintTamil:
+        "ஐந்து Case-களுடன் Switch Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter choice: 2
+Banana`,
+
+      expectedOutputTamil: `Enter choice: 2
+Banana`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int choice;
+
+    cout << "Enter choice: ";
+    cin >> choice;
+
+    switch(choice)
+    {
+        case 1:
+            cout << "Apple";
+            break;
+        case 2:
+            cout << "Banana";
+            break;
+        case 3:
+            cout << "Orange";
+            break;
+        case 4:
+            cout << "Mango";
+            break;
+        case 5:
+            cout << "Grapes";
+            break;
+        default:
+            cout << "Invalid Choice";
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to accept a number between 1 and 4 from the user and display the corresponding season using a switch statement.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 1 முதல் 4 வரை ஒரு எண்ணை Input ஆக பெற்று, Switch Statement பயன்படுத்தி அதற்கான பருவ காலத்தின் பெயரை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create four cases for the seasons.",
+
+      hintTamil:
+        "நான்கு பருவ காலங்களுக்கான Case-களை உருவாக்குங்கள்.",
+
+      expectedOutput: `Enter choice: 3
+Rainy`,
+
+      expectedOutputTamil: `Enter choice: 3
+Rainy`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int choice;
+
+    cout << "Enter choice: ";
+    cin >> choice;
+
+    switch(choice)
+    {
+        case 1:
+            cout << "Summer";
+            break;
+        case 2:
+            cout << "Winter";
+            break;
+        case 3:
+            cout << "Rainy";
+            break;
+        case 4:
+            cout << "Spring";
+            break;
+        default:
+            cout << "Invalid Choice";
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+  ],
+},
 ];
 
 export default questions;
