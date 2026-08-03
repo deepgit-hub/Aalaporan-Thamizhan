@@ -742,7 +742,124 @@ Price: 799`,
     },
   ],
 },
+{
+  topicId: 3,
+  title: "Data Types",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to declare an int variable with the value 25 and print it.",
+
+      questionTamil:
+        "25 என்ற மதிப்புடன் ஒரு int Variable-ஐ உருவாக்கி அதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the int data type and cout statement.",
+
+      hintTamil:
+        "int Data Type மற்றும் cout Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `25`,
+
+      expectedOutputTamil: `25`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int number = 25;
+
+    cout << number;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to declare a float variable with the value 45.75 and print it.",
+
+      questionTamil:
+        "45.75 என்ற மதிப்புடன் ஒரு float Variable-ஐ உருவாக்கி அதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the float data type.",
+
+      hintTamil:
+        "float Data Type-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `45.75`,
+
+      expectedOutputTamil: `45.75`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    float marks = 45.75;
+
+    cout << marks;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to declare a char variable with the value 'A' and print it.",
+
+      questionTamil:
+        "'A' என்ற மதிப்புடன் ஒரு char Variable-ஐ உருவாக்கி அதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the char data type and single quotes.",
+
+      hintTamil:
+        "char Data Type மற்றும் Single Quotes-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `A`,
+
+      expectedOutputTamil: `A`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    char grade = 'A';
+
+    cout << grade;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
