@@ -7475,7 +7475,218 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+       {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a C++ program to accept 5 integers from the user and print the array elements in reverse order.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 5 Integer எண்களை Input ஆக பெற்று, Array-ல் உள்ள Elements-ஐ தலைகீழ் வரிசையில் (Reverse Order) Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Store the values in an array and use a loop from the last index to the first index.",
+
+      hintTamil:
+        "மதிப்புகளை Array-ல் சேமித்து, கடைசி Index-லிருந்து முதல் Index வரை Loop பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter 5 numbers:
+10
+20
+30
+40
+50
+
+50
+40
+30
+20
+10`,
+
+      expectedOutputTamil: `Enter 5 numbers:
+10
+20
+30
+40
+50
+
+50
+40
+30
+20
+10`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int numbers[5];
+
+    cout << "Enter 5 numbers:" << endl;
+
+    for (int i = 0; i < 5; i++) {
+        cin >> numbers[i];
+    }
+
+    for (int i = 4; i >= 0; i--) {
+        cout << numbers[i] << endl;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a C++ program to accept 5 integers from the user and count how many odd numbers are present in the array.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 5 Integer எண்களை Input ஆக பெற்று, Array-ல் உள்ள Odd எண்களின் எண்ணிக்கையை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a counter variable and check each element using the % operator.",
+
+      hintTamil:
+        "Counter Variable-ஐ பயன்படுத்தி, ஒவ்வொரு Element-ஐயும் % Operator மூலம் சரிபார்க்குங்கள்.",
+
+      expectedOutput: `Enter 5 numbers:
+10
+15
+20
+25
+30
+
+Odd Numbers = 2`,
+
+      expectedOutputTamil: `Enter 5 numbers:
+10
+15
+20
+25
+30
+
+Odd Numbers = 2`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int numbers[5];
+    int count = 0;
+
+    cout << "Enter 5 numbers:" << endl;
+
+    for (int i = 0; i < 5; i++) {
+        cin >> numbers[i];
+    }
+
+    for (int i = 0; i < 5; i++) {
+        if (numbers[i] % 2 != 0) {
+            count++;
+        }
+    }
+
+    cout << "Odd Numbers = " << count;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a C++ program to accept 5 integers from the user and print the largest element in the array.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 5 Integer எண்களை Input ஆக பெற்று, Array-ல் உள்ள மிகப்பெரிய எண்ணை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Assume the first element is the largest and compare it with the remaining elements.",
+
+      hintTamil:
+        "முதல் Element-ஐ Largest என எடுத்துக்கொண்டு, மற்ற Elements-உடன் ஒப்பிடுங்கள்.",
+
+      expectedOutput: `Enter 5 numbers:
+12
+48
+20
+65
+30
+
+Largest = 65`,
+
+      expectedOutputTamil: `Enter 5 numbers:
+12
+48
+20
+65
+30
+
+Largest = 65`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a C++ program to accept 5 integers from the user and print the sum of all elements in the array.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 5 Integer எண்களை Input ஆக பெற்று, Array-ல் உள்ள அனைத்து Elements-இன் கூட்டுத்தொகையை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Store the numbers in an array and use a loop to calculate the sum.",
+
+      hintTamil:
+        "எண்களை Array-ல் சேமித்து, Loop பயன்படுத்தி கூட்டுத்தொகையை கணக்கிடுங்கள்.",
+
+      expectedOutput: `Enter 5 numbers:
+5
+10
+15
+20
+25
+
+Sum = 75`,
+
+      expectedOutputTamil: `Enter 5 numbers:
+5
+10
+15
+20
+25
+
+Sum = 75`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    }, 
   ],
 },
 ];
