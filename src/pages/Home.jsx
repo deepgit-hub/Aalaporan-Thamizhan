@@ -188,7 +188,7 @@ function Home() {
             <h3>👨‍💻 About the Developer</h3>
 
             <p>
-              Hi! I'm <strong>Deepak</strong> , a Computer Science student passionate about helping Tamil students learn programming through simple explanations, practical coding exercises, and real-world examples. I created Alaporan Tamilan with the belief that talent exists everywhere—it only needs the right opportunity to grow.
+              Hi! I'm <strong>Deepak</strong> , a Computer Science student passionate about helping Tamil students learn programming through simple explanations, practical coding exercises, and real-world examples. I created Aalaporan Thamizhan with the belief that talent exists everywhere—it only needs the right opportunity to grow.
             </p>
 
           </div>
