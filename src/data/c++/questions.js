@@ -857,6 +857,132 @@ int main() {
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to declare a bool variable with the value true and print it.",
+
+      questionTamil:
+        "true என்ற மதிப்புடன் ஒரு bool Variable-ஐ உருவாக்கி அதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the bool data type and cout statement.",
+
+      hintTamil:
+        "bool Data Type மற்றும் cout Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `1`,
+
+      expectedOutputTamil: `1`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    bool isPassed = true;
+
+    cout << isPassed;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to declare a double variable with the value 12345.6789 and print it.",
+
+      questionTamil:
+        "12345.6789 என்ற மதிப்புடன் ஒரு double Variable-ஐ உருவாக்கி அதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the double data type.",
+
+      hintTamil:
+        "double Data Type-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `12345.6789`,
+
+      expectedOutputTamil: `12345.6789`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    double value = 12345.6789;
+
+    cout << value;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to declare variables of int, float, char, bool, and double data types. Assign suitable values and print them.",
+
+      questionTamil:
+        "int, float, char, bool மற்றும் double Data Types-க்கு Variables-ஐ உருவாக்கி, பொருத்தமான மதிப்புகளை Assign செய்து Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Declare one variable for each data type and print all of them.",
+
+      hintTamil:
+        "ஒவ்வொரு Data Type-க்கும் ஒரு Variable உருவாக்கி அனைத்தையும் Print செய்யுங்கள்.",
+
+      expectedOutput: `25
+45.5
+A
+1
+12345.6789`,
+
+      expectedOutputTamil: `25
+45.5
+A
+1
+12345.6789`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int number = 25;
+    float marks = 45.5;
+    char grade = 'A';
+    bool isPassed = true;
+    double value = 12345.6789;
+
+    cout << number << endl;
+    cout << marks << endl;
+    cout << grade << endl;
+    cout << isPassed << endl;
+    cout << value;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
     
   ],
 },
