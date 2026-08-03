@@ -6461,7 +6461,206 @@ int main() {
     },
   ],
 },
+{
+  topicId: 15,
+  title: "Continue Statement",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to print numbers from 1 to 10 using a for loop, but skip printing the number 5 using the continue statement.",
+
+      questionTamil:
+        "For Loop பயன்படுத்தி 1 முதல் 10 வரை உள்ள எண்களை Print செய்யுங்கள். ஆனால் 5 என்ற எண்ணை மட்டும் Continue Statement பயன்படுத்தி Skip செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use an if statement to check if the number is 5, then use continue.",
+
+      hintTamil:
+        "எண் 5 ஆக உள்ளதா என்பதை if Statement மூலம் சரிபார்த்து continue-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `1
+2
+3
+4
+6
+7
+8
+9
+10`,
+
+      expectedOutputTamil: `1
+2
+3
+4
+6
+7
+8
+9
+10`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    for (int i = 1; i <= 10; i++) {
+
+        if (i == 5) {
+            continue;
+        }
+
+        cout << i << endl;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to print numbers from 1 to 10 using a while loop, but skip printing the number 6 using the continue statement.",
+
+      questionTamil:
+        "While Loop பயன்படுத்தி 1 முதல் 10 வரை உள்ள எண்களை Print செய்யுங்கள். ஆனால் 6 என்ற எண்ணை மட்டும் Continue Statement பயன்படுத்தி Skip செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Increment the variable before using continue to avoid an infinite loop.",
+
+      hintTamil:
+        "Infinite Loop வராமல் இருக்க continue பயன்படுத்தும் முன் Variable-ஐ Increment செய்யுங்கள்.",
+
+      expectedOutput: `1
+2
+3
+4
+5
+7
+8
+9
+10`,
+
+      expectedOutputTamil: `1
+2
+3
+4
+5
+7
+8
+9
+10`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int i = 1;
+
+    while (i <= 10) {
+
+        if (i == 6) {
+            i++;
+            continue;
+        }
+
+        cout << i << endl;
+        i++;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to print numbers from 1 to 15 using a do while loop, but skip printing the number 8 using the continue statement.",
+
+      questionTamil:
+        "Do While Loop பயன்படுத்தி 1 முதல் 15 வரை உள்ள எண்களை Print செய்யுங்கள். ஆனால் 8 என்ற எண்ணை மட்டும் Continue Statement பயன்படுத்தி Skip செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Increment the variable before using continue.",
+
+      hintTamil:
+        "continue பயன்படுத்தும் முன் Variable-ஐ Increment செய்யுங்கள்.",
+
+      expectedOutput: `1
+2
+3
+4
+5
+6
+7
+9
+10
+11
+12
+13
+14
+15`,
+
+      expectedOutputTamil: `1
+2
+3
+4
+5
+6
+7
+9
+10
+11
+12
+13
+14
+15`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int i = 1;
+
+    do {
+
+        if (i == 8) {
+            i++;
+            continue;
+        }
+
+        cout << i << endl;
+        i++;
+
+    } while (i <= 15);
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
