@@ -6909,9 +6909,140 @@ print(student)`,
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a Python program to create a dictionary containing a student's name, age, and department. Print all the values using a for loop.",
+
+      questionTamil:
+        "மாணவரின் Name, Age மற்றும் Department ஆகியவற்றைக் கொண்ட ஒரு Dictionary-ஐ உருவாக்கி, For Loop பயன்படுத்தி அனைத்து Values-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the values() method with a for loop.",
+
+      hintTamil:
+        "values() Method மற்றும் For Loop-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Deepak
+20
+Computer Science`,
+
+      expectedOutputTamil: `Deepak
+20
+Computer Science`,
+
+      solution: `student = {
+    "name": "Deepak",
+    "age": 20,
+    "department": "Computer Science"
+}
+
+for value in student.values():
+    print(value)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a Python program to create a dictionary containing a student's name and age. Update the age to 21 and print the updated dictionary.",
+
+      questionTamil:
+        "மாணவரின் Name மற்றும் Age ஆகியவற்றைக் கொண்ட ஒரு Dictionary-ஐ உருவாக்கி, Age-ஐ 21 ஆக Update செய்து Updated Dictionary-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Update the value using dictionary[key] = value.",
+
+      hintTamil:
+        "dictionary[key] = value பயன்படுத்தி Value-ஐ Update செய்யுங்கள்.",
+
+      expectedOutput: `{'name': 'Deepak', 'age': 21}`,
+
+      expectedOutputTamil: `{'name': 'Deepak', 'age': 21}`,
+
+      solution: `student = {
+    "name": "Deepak",
+    "age": 20
+}
+
+student["age"] = 21
+
+print(student)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a Python program to create a dictionary containing five student names as keys and their marks as values. Print the student who scored the highest mark.",
+
+      questionTamil:
+        "ஐந்து மாணவர்களின் பெயர்களை Keys ஆகவும், அவர்களின் மதிப்பெண்களை Values ஆகவும் கொண்ட ஒரு Dictionary-ஐ உருவாக்கி, அதிக மதிப்பெண் பெற்ற மாணவரின் பெயரை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the max() function with the dictionary.",
+
+      hintTamil:
+        "Dictionary-உடன் max() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Kathir`,
+
+      expectedOutputTamil: `Kathir`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a Python program to create two dictionaries containing student information. Print the name and department from both dictionaries.",
+
+      questionTamil:
+        "மாணவர்களின் விவரங்களைக் கொண்ட இரண்டு Dictionary-களை உருவாக்கி, இரண்டு Dictionary-களிலிருந்தும் Name மற்றும் Department-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create two dictionaries and access their values using keys.",
+
+      hintTamil:
+        "இரண்டு Dictionary-களை உருவாக்கி, Keys பயன்படுத்தி Values-ஐ Access செய்யுங்கள்.",
+
+      expectedOutput: `Deepak
+Computer Science
+Kathir
+Information Technology`,
+
+      expectedOutputTamil: `Deepak
+Computer Science
+Kathir
+Information Technology`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
+
 ];
 
 export default questions;
