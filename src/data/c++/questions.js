@@ -1594,6 +1594,7 @@ Price: 55000`,
     },
   ],
 },
+
 ];
 
 export default questions;
