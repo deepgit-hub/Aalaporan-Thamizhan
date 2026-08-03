@@ -2923,6 +2923,161 @@ int main() {
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to accept a person's age and whether they have a driving license. Print 'Can Drive' if the age is 18 or above and the person has a driving license.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு நபரின் வயது மற்றும் அவரிடம் Driving License உள்ளதா என்பதை Input ஆக பெற்று, வயது 18 அல்லது அதற்கு மேல் இருந்தும் Driving License இருந்தும் 'Can Drive' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a nested if statement. Check the age first, then check the driving license.",
+
+      hintTamil:
+        "Nested if Statement-ஐ பயன்படுத்துங்கள். முதலில் வயதை சரிபார்த்து, பின்னர் Driving License-ஐ சரிபார்க்குங்கள்.",
+
+      expectedOutput: `Enter age: 22
+Has Driving License (1/0): 1
+Can Drive`,
+
+      expectedOutputTamil: `Enter age: 22
+Has Driving License (1/0): 1
+Can Drive`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int age;
+    bool hasLicense;
+
+    cout << "Enter age: ";
+    cin >> age;
+
+    cout << "Has Driving License (1/0): ";
+    cin >> hasLicense;
+
+    if (age >= 18) {
+        if (hasLicense) {
+            cout << "Can Drive";
+        }
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to accept a username and OTP. Print 'Verification Successful' if the username is 'deepak' and the OTP is '5678'.",
+
+      questionTamil:
+        "பயனரிடமிருந்து Username மற்றும் OTP-ஐ Input ஆக பெற்று, Username 'deepak' மற்றும் OTP '5678' ஆக இருந்தால் மட்டும் 'Verification Successful' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Check the username first, then verify the OTP using nested if.",
+
+      hintTamil:
+        "முதலில் Username-ஐ சரிபார்த்து, பின்னர் Nested if மூலம் OTP-ஐ சரிபார்க்குங்கள்.",
+
+      expectedOutput: `Enter username: deepak
+Enter OTP: 5678
+Verification Successful`,
+
+      expectedOutputTamil: `Enter username: deepak
+Enter OTP: 5678
+Verification Successful`,
+
+      solution: `#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+
+    string username;
+    int otp;
+
+    cout << "Enter username: ";
+    cin >> username;
+
+    cout << "Enter OTP: ";
+    cin >> otp;
+
+    if (username == "deepak") {
+        if (otp == 5678) {
+            cout << "Verification Successful";
+        }
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to accept an employee's experience and performance rating. Print 'Promotion Eligible' if the experience is 5 years or more and the performance rating is 8 or above.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு பணியாளரின் Experience மற்றும் Performance Rating-ஐ Input ஆக பெற்று, Experience 5 ஆண்டுகள் அல்லது அதற்கு மேல் மற்றும் Performance Rating 8 அல்லது அதற்கு மேல் இருந்தால் 'Promotion Eligible' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use nested if statements. Check the experience first, then check the performance rating.",
+
+      hintTamil:
+        "Nested if Statement-ஐ பயன்படுத்துங்கள். முதலில் Experience-ஐ சரிபார்த்து, பின்னர் Performance Rating-ஐ சரிபார்க்குங்கள்.",
+
+      expectedOutput: `Enter experience: 6
+Enter performance rating: 9
+Promotion Eligible`,
+
+      expectedOutputTamil: `Enter experience: 6
+Enter performance rating: 9
+Promotion Eligible`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int experience, rating;
+
+    cout << "Enter experience: ";
+    cin >> experience;
+
+    cout << "Enter performance rating: ";
+    cin >> rating;
+
+    if (experience >= 5) {
+        if (rating >= 8) {
+            cout << "Promotion Eligible";
+        }
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
     
   ],
 },
