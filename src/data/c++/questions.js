@@ -7689,7 +7689,188 @@ Sum = 75`,
     }, 
   ],
 },
+{
+  topicId: 18,
+  title: "2D Arrays",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to declare and initialize a 2 × 2 integer array and print all its elements.",
+
+      questionTamil:
+        "2 × 2 Integer Array-ஐ உருவாக்கி, அதில் மதிப்புகளை Initialize செய்து, அனைத்து Elements-ஐயும் Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use two nested for loops to print the array elements.",
+
+      hintTamil:
+        "Array Elements-ஐ Print செய்ய இரண்டு Nested for Loops-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `10 20
+30 40`,
+
+      expectedOutputTamil: `10 20
+30 40`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int numbers[2][2] = {
+        {10, 20},
+        {30, 40}
+    };
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            cout << numbers[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to accept elements for a 2 × 2 integer array from the user and print them.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 2 × 2 Integer Array-க்கான மதிப்புகளை Input ஆக பெற்று, பின்னர் அனைத்து Elements-ஐயும் Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use one nested loop for input and another nested loop for output.",
+
+      hintTamil:
+        "Input பெற ஒரு Nested Loop மற்றும் Print செய்ய மற்றொரு Nested Loop-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter 4 elements:
+1
+2
+3
+4
+
+1 2
+3 4`,
+
+      expectedOutputTamil: `Enter 4 elements:
+1
+2
+3
+4
+
+1 2
+3 4`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int numbers[2][2];
+
+    cout << "Enter 4 elements:" << endl;
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            cin >> numbers[i][j];
+        }
+    }
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            cout << numbers[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to accept elements for a 2 × 2 integer array and print the sum of all the elements.",
+
+      questionTamil:
+        "2 × 2 Integer Array-க்கான மதிப்புகளை Input ஆக பெற்று, அனைத்து Elements-இன் கூட்டுத்தொகையை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Store the elements in a 2D array and use nested loops to calculate the sum.",
+
+      hintTamil:
+        "Elements-ஐ 2D Array-ல் சேமித்து, Nested Loops பயன்படுத்தி கூட்டுத்தொகையை கணக்கிடுங்கள்.",
+
+      expectedOutput: `Enter 4 elements:
+10
+20
+30
+40
+
+Sum = 100`,
+
+      expectedOutputTamil: `Enter 4 elements:
+10
+20
+30
+40
+
+Sum = 100`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int numbers[2][2];
+    int sum = 0;
+
+    cout << "Enter 4 elements:" << endl;
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            cin >> numbers[i][j];
+        }
+    }
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            sum += numbers[i][j];
+        }
+    }
+
+    cout << "Sum = " << sum;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
