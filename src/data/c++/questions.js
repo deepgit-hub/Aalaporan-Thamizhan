@@ -1419,7 +1419,179 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a C++ program to accept two float values from the user and print them.",
+
+      questionTamil:
+        "பயனரிடமிருந்து இரண்டு Float மதிப்புகளை Input ஆக பெற்று அவற்றை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use two float variables with cin and cout.",
+
+      hintTamil:
+        "இரண்டு float Variables, cin மற்றும் cout-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter first number: 12.5
+Enter second number: 45.8
+12.5 45.8`,
+
+      expectedOutputTamil: `Enter first number: 12.5
+Enter second number: 45.8
+12.5 45.8`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    float num1, num2;
+
+    cout << "Enter first number: ";
+    cin >> num1;
+
+    cout << "Enter second number: ";
+    cin >> num2;
+
+    cout << num1 << " " << num2;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a C++ program to accept a student's name, roll number, and department from the user and print all the details.",
+
+      questionTamil:
+        "பயனரிடமிருந்து மாணவரின் பெயர், Roll Number மற்றும் Department-ஐ Input ஆக பெற்று அனைத்து விவரங்களையும் Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use string and int variables with cin and cout.",
+
+      hintTamil:
+        "string, int Variables, cin மற்றும் cout-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter name: Deepak
+Enter roll number: 101
+Enter department: ComputerScience
+Name: Deepak
+Roll Number: 101
+Department: ComputerScience`,
+
+      expectedOutputTamil: `Enter name: Deepak
+Enter roll number: 101
+Enter department: ComputerScience
+Name: Deepak
+Roll Number: 101
+Department: ComputerScience`,
+
+      solution: `#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+
+    string name, department;
+    int rollNumber;
+
+    cout << "Enter name: ";
+    cin >> name;
+
+    cout << "Enter roll number: ";
+    cin >> rollNumber;
+
+    cout << "Enter department: ";
+    cin >> department;
+
+    cout << "Name: " << name << endl;
+    cout << "Roll Number: " << rollNumber << endl;
+    cout << "Department: " << department;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a C++ program to accept an employee's name, ID, and salary from the user and print all the details.",
+
+      questionTamil:
+        "பயனரிடமிருந்து பணியாளரின் பெயர், ID மற்றும் Salary-ஐ Input ஆக பெற்று அனைத்து விவரங்களையும் Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use string, int, float, cin, and cout.",
+
+      hintTamil:
+        "string, int, float, cin மற்றும் cout-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter name: Kathir
+Enter ID: 501
+Enter salary: 35000
+Name: Kathir
+ID: 501
+Salary: 35000`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a C++ program to accept a product name, quantity, and price from the user and print all the details.",
+
+      questionTamil:
+        "பயனரிடமிருந்து Product Name, Quantity மற்றும் Price-ஐ Input ஆக பெற்று அனைத்து விவரங்களையும் Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use string, int, float, cin, and cout.",
+
+      hintTamil:
+        "string, int, float, cin மற்றும் cout-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter product name: Laptop
+Enter quantity: 2
+Enter price: 55000
+Product: Laptop
+Quantity: 2
+Price: 55000`,
+
+      expectedOutputTamil: `Enter product name: Laptop
+Enter quantity: 2
+Enter price: 55000
+Product: Laptop
+Quantity: 2
+Price: 55000`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
