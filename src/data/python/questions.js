@@ -8072,7 +8072,114 @@ Department: Computer Science`,
     },
   ],
 },
+{
+  topicId: 24,
+  title: "Objects",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to create a class named Student. Create an object named student and print the object.",
+
+      questionTamil:
+        "'Student' என்ற Class-ஐ உருவாக்கி, 'student' என்ற Object-ஐ உருவாக்கி அதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create an object using the class name.",
+
+      hintTamil:
+        "Class பெயரை பயன்படுத்தி ஒரு Object-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `<__main__.Student object at ...>`,
+
+      expectedOutputTamil: `<__main__.Student object at ...>`,
+
+      solution: `class Student:
+    pass
+
+student = Student()
+
+print(student)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to create a class named Student with a method display(). Create an object and call the display() method.",
+
+      questionTamil:
+        "'Student' என்ற Class-ஐ உருவாக்கி, அதில் display() என்ற Method-ஐ உருவாக்குங்கள். Object-ஐ உருவாக்கி display() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Call the method using the object.",
+
+      hintTamil:
+        "Object பயன்படுத்தி Method-ஐ Call செய்யுங்கள்.",
+
+      expectedOutput: `Hello Student`,
+
+      expectedOutputTamil: `Hello Student`,
+
+      solution: `class Student:
+    def display(self):
+        print("Hello Student")
+
+student = Student()
+
+student.display()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to create a class named Calculator with a method add(). Create two objects and call the add() method using both objects.",
+
+      questionTamil:
+        "'Calculator' என்ற Class-ஐ உருவாக்கி, அதில் add() என்ற Method-ஐ உருவாக்குங்கள். இரண்டு Objects-ஐ உருவாக்கி, இரண்டிலும் add() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create two objects from the same class.",
+
+      hintTamil:
+        "ஒரே Class-இல் இருந்து இரண்டு Objects-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `30
+30`,
+
+      expectedOutputTamil: `30
+30`,
+
+      solution: `class Calculator:
+    def add(self):
+        print(10 + 20)
+
+obj1 = Calculator()
+obj2 = Calculator()
+
+obj1.add()
+obj2.add()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+  ],
+},
 ];
 
 export default questions;
