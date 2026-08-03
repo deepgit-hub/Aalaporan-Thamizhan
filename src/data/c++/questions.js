@@ -983,7 +983,160 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a C++ program to declare a string variable named city with the value 'Vaniyambadi' and print it.",
+
+      questionTamil:
+        "'city' என்ற String Variable-ஐ உருவாக்கி, அதற்கு 'Vaniyambadi' என்ற மதிப்பை Assign செய்து அதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Include the <string> header file and use the string data type.",
+
+      hintTamil:
+        "<string> Header File-ஐ Include செய்து string Data Type-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Vaniyambadi`,
+
+      expectedOutputTamil: `Vaniyambadi`,
+
+      solution: `#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+
+    string city = "Vaniyambadi";
+
+    cout << city;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a C++ program to declare variables of char, int, float, and bool data types. Assign suitable values and print them.",
+
+      questionTamil:
+        "char, int, float மற்றும் bool Data Types-க்கு Variables-ஐ உருவாக்கி, பொருத்தமான மதிப்புகளை Assign செய்து Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Declare one variable for each data type and print all of them.",
+
+      hintTamil:
+        "ஒவ்வொரு Data Type-க்கும் ஒரு Variable உருவாக்கி அனைத்தையும் Print செய்யுங்கள்.",
+
+      expectedOutput: `B
+100
+99.5
+0`,
+
+      expectedOutputTamil: `B
+100
+99.5
+0`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    char grade = 'B';
+    int marks = 100;
+    float percentage = 99.5;
+    bool isAbsent = false;
+
+    cout << grade << endl;
+    cout << marks << endl;
+    cout << percentage << endl;
+    cout << isAbsent;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a C++ program to declare variables of int, double, char, and string data types. Assign suitable values and print them.",
+
+      questionTamil:
+        "int, double, char மற்றும் string Data Types-க்கு Variables-ஐ உருவாக்கி, பொருத்தமான மதிப்புகளை Assign செய்து Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use one variable for each data type and display all values.",
+
+      hintTamil:
+        "ஒவ்வொரு Data Type-க்கும் ஒரு Variable உருவாக்கி அனைத்து Values-ஐ Print செய்யுங்கள்.",
+
+      expectedOutput: `101
+4567.89
+A
+Deepak`,
+
+      expectedOutputTamil: `101
+4567.89
+A
+Deepak`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a C++ program to declare variables for a student's name (string), roll number (int), grade (char), percentage (float), and result (bool). Assign suitable values and print them.",
+
+      questionTamil:
+        "மாணவரின் பெயர் (string), Roll Number (int), Grade (char), Percentage (float), மற்றும் Result (bool) ஆகியவற்றிற்கு Variables-ஐ உருவாக்கி, பொருத்தமான மதிப்புகளை Assign செய்து Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use all five data types and print each value on a new line.",
+
+      hintTamil:
+        "ஐந்து Data Types-ஐ பயன்படுத்தி ஒவ்வொரு Value-ஐயும் புதிய வரியில் Print செய்யுங்கள்.",
+
+      expectedOutput: `Deepak
+101
+A
+92.5
+1`,
+
+      expectedOutputTamil: `Deepak
+101
+A
+92.5
+1`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
