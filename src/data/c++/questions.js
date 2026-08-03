@@ -1594,7 +1594,154 @@ Price: 55000`,
     },
   ],
 },
+{
+  topicId: 5,
+  title: "Operators",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to accept two integers from the user and print their sum.",
+
+      questionTamil:
+        "பயனரிடமிருந்து இரண்டு Integer எண்களை Input ஆக பெற்று அவற்றின் கூட்டுத்தொகையை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the + operator.",
+
+      hintTamil:
+        "கூட்டலுக்கு + Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter first number: 10
+Enter second number: 20
+Sum = 30`,
+
+      expectedOutputTamil: `Enter first number: 10
+Enter second number: 20
+Sum = 30`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int num1, num2;
+
+    cout << "Enter first number: ";
+    cin >> num1;
+
+    cout << "Enter second number: ";
+    cin >> num2;
+
+    cout << "Sum = " << num1 + num2;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to accept two integers from the user and print their difference.",
+
+      questionTamil:
+        "பயனரிடமிருந்து இரண்டு Integer எண்களை Input ஆக பெற்று அவற்றின் வித்தியாசத்தை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the - operator.",
+
+      hintTamil:
+        "கழித்தலுக்கு - Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter first number: 30
+Enter second number: 10
+Difference = 20`,
+
+      expectedOutputTamil: `Enter first number: 30
+Enter second number: 10
+Difference = 20`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int num1, num2;
+
+    cout << "Enter first number: ";
+    cin >> num1;
+
+    cout << "Enter second number: ";
+    cin >> num2;
+
+    cout << "Difference = " << num1 - num2;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to accept two integers from the user and print their product.",
+
+      questionTamil:
+        "பயனரிடமிருந்து இரண்டு Integer எண்களை Input ஆக பெற்று அவற்றின் பெருக்கலை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the * operator.",
+
+      hintTamil:
+        "பெருக்கலுக்கு * Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter first number: 5
+Enter second number: 6
+Product = 30`,
+
+      expectedOutputTamil: `Enter first number: 5
+Enter second number: 6
+Product = 30`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int num1, num2;
+
+    cout << "Enter first number: ";
+    cin >> num1;
+
+    cout << "Enter second number: ";
+    cin >> num2;
+
+    cout << "Product = " << num1 * num2;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
