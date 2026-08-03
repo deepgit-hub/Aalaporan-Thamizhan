@@ -12114,9 +12114,190 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a C++ program to create two base classes named Keyboard and Mouse with functions type() and click(). Create a derived class named Computer that inherits from both classes and call both inherited functions.",
+
+      questionTamil:
+        "Keyboard மற்றும் Mouse என்ற இரண்டு Base Classes-ஐ உருவாக்கி, type() மற்றும் click() என்ற Functions-ஐ உருவாக்குங்கள். இரண்டு Class-களையும் Inherit செய்யும் Computer என்ற Derived Class-ஐ உருவாக்கி, இரண்டு Inherited Functions-ஐயும் Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use public inheritance from both base classes.",
+
+      hintTamil:
+        "இரண்டு Base Classes-லிருந்தும் public Inheritance-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Typing...
+Mouse Clicked`,
+
+      expectedOutputTamil: `Typing...
+Mouse Clicked`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Keyboard {
+
+public:
+    void type() {
+        cout << "Typing..." << endl;
+    }
+
+};
+
+class Mouse {
+
+public:
+    void click() {
+        cout << "Mouse Clicked";
+    }
+
+};
+
+class Computer : public Keyboard, public Mouse {
+
+};
+
+int main() {
+
+    Computer c;
+
+    c.type();
+    c.click();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a C++ program to create two base classes named AudioPlayer and VideoPlayer with functions playAudio() and playVideo(). Create a derived class named MediaPlayer that inherits from both classes and call both inherited functions.",
+
+      questionTamil:
+        "AudioPlayer மற்றும் VideoPlayer என்ற இரண்டு Base Classes-ஐ உருவாக்கி, playAudio() மற்றும் playVideo() என்ற Functions-ஐ உருவாக்குங்கள். இரண்டு Class-களையும் Inherit செய்யும் MediaPlayer என்ற Derived Class-ஐ உருவாக்கி, இரண்டு Inherited Functions-ஐயும் Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a derived class that inherits from both base classes.",
+
+      hintTamil:
+        "இரண்டு Base Classes-லிருந்தும் Inherit செய்யும் Derived Class-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Playing Audio
+Playing Video`,
+
+      expectedOutputTamil: `Playing Audio
+Playing Video`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class AudioPlayer {
+
+public:
+    void playAudio() {
+        cout << "Playing Audio" << endl;
+    }
+
+};
+
+class VideoPlayer {
+
+public:
+    void playVideo() {
+        cout << "Playing Video";
+    }
+
+};
+
+class MediaPlayer : public AudioPlayer, public VideoPlayer {
+
+};
+
+int main() {
+
+    MediaPlayer m;
+
+    m.playAudio();
+    m.playVideo();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a C++ program to create two base classes named Teacher and Parent with functions teach() and guide(). Create a derived class named Child that inherits from both classes and call both inherited functions.",
+
+      questionTamil:
+        "Teacher மற்றும் Parent என்ற இரண்டு Base Classes-ஐ உருவாக்கி, teach() மற்றும் guide() என்ற Functions-ஐ உருவாக்குங்கள். இரண்டு Class-களையும் Inherit செய்யும் Child என்ற Derived Class-ஐ உருவாக்கி, இரண்டு Inherited Functions-ஐயும் Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use public inheritance from both base classes.",
+
+      hintTamil:
+        "இரண்டு Base Classes-லிருந்தும் public Inheritance-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Teaching...
+Guiding...`,
+
+      expectedOutputTamil: `Teaching...
+Guiding...`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a C++ program to create two base classes named Camera and GPS with functions capture() and navigate(). Create a derived class named SmartPhone that inherits from both classes and call both inherited functions.",
+
+      questionTamil:
+        "Camera மற்றும் GPS என்ற இரண்டு Base Classes-ஐ உருவாக்கி, capture() மற்றும் navigate() என்ற Functions-ஐ உருவாக்குங்கள். இரண்டு Class-களையும் Inherit செய்யும் SmartPhone என்ற Derived Class-ஐ உருவாக்கி, இரண்டு Inherited Functions-ஐயும் Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a derived class using public inheritance from both base classes.",
+
+      hintTamil:
+        "இரண்டு Base Classes-லிருந்தும் public Inheritance பயன்படுத்தி Derived Class-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Capturing...
+Navigating...`,
+
+      expectedOutputTamil: `Capturing...
+Navigating...`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
+
 ];
 
 export default questions;
