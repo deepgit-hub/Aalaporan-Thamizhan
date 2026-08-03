@@ -4816,7 +4816,167 @@ int main() {
     },
   ],
 },
+{
+  topicId: 12,
+  title: "Do While Loop",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to print numbers from 1 to 5 using a do while loop.",
+
+      questionTamil:
+        "Do While Loop பயன்படுத்தி 1 முதல் 5 வரை உள்ள எண்களை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Initialize the variable with 1 and use a do while loop until it reaches 5.",
+
+      hintTamil:
+        "Variable-ஐ 1-ல் Initialize செய்து, 5 வரை Do While Loop-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `1
+2
+3
+4
+5`,
+
+      expectedOutputTamil: `1
+2
+3
+4
+5`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int i = 1;
+
+    do {
+        cout << i << endl;
+        i++;
+    } while (i <= 5);
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to print numbers from 5 to 1 using a do while loop.",
+
+      questionTamil:
+        "Do While Loop பயன்படுத்தி 5 முதல் 1 வரை உள்ள எண்களை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Initialize the variable with 5 and decrement it until it reaches 1.",
+
+      hintTamil:
+        "Variable-ஐ 5-ல் Initialize செய்து, 1 வரை Decrement செய்யுங்கள்.",
+
+      expectedOutput: `5
+4
+3
+2
+1`,
+
+      expectedOutputTamil: `5
+4
+3
+2
+1`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int i = 5;
+
+    do {
+        cout << i << endl;
+        i--;
+    } while (i >= 1);
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to print the first 10 natural numbers using a do while loop.",
+
+      questionTamil:
+        "Do While Loop பயன்படுத்தி முதல் 10 இயல் எண்களை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Start from 1 and continue until 10.",
+
+      hintTamil:
+        "1-ல் தொடங்கி 10 வரை Do While Loop-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `1
+2
+3
+4
+5
+6
+7
+8
+9
+10`,
+
+      expectedOutputTamil: `1
+2
+3
+4
+5
+6
+7
+8
+9
+10`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int i = 1;
+
+    do {
+        cout << i << endl;
+        i++;
+    } while (i <= 10);
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
