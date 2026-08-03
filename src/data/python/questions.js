@@ -6584,8 +6584,131 @@ print(numbers)`,
       locked: false,
       completed: false,
     },
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a Python program to create a set containing five student names and print each name using a for loop.",
+
+      questionTamil:
+        "ஐந்து மாணவர்களின் பெயர்களைக் கொண்ட ஒரு Set-ஐ உருவாக்கி, For Loop பயன்படுத்தி ஒவ்வொரு பெயரையும் Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a for loop to iterate through the set.",
+
+      hintTamil:
+        "Set-ஐ Traverse செய்ய For Loop-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Deepak
+Kathir
+Rahul
+Kavin
+Arun`,
+
+      expectedOutputTamil: `Deepak
+Kathir
+Rahul
+Kavin
+Arun`,
+
+      solution: `students = {"Deepak", "Kathir", "Rahul", "Kavin", "Arun"}
+
+for student in students:
+    print(student)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a Python program to create a set containing the numbers 10, 20, 30, 40, and 50. Remove the number 30 from the set and print the updated set.",
+
+      questionTamil:
+        "10, 20, 30, 40 மற்றும் 50 ஆகிய எண்களைக் கொண்ட ஒரு Set-ஐ உருவாக்கி, அதிலிருந்து 30 என்ற எண்ணை Remove செய்து Updated Set-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the remove() method.",
+
+      hintTamil:
+        "remove() Method-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `{10, 20, 40, 50}`,
+
+      expectedOutputTamil: `{10, 20, 40, 50}`,
+
+      solution: `numbers = {10, 20, 30, 40, 50}
+
+numbers.remove(30)
+
+print(numbers)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a Python program to create a set containing five numbers and print the largest number in the set.",
+
+      questionTamil:
+        "ஐந்து எண்களைக் கொண்ட ஒரு Set-ஐ உருவாக்கி, அதில் உள்ள மிகப்பெரிய எண்ணை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the max() function.",
+
+      hintTamil:
+        "max() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `50`,
+
+      expectedOutputTamil: `50`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a Python program to create two sets containing numbers. Find and print the common elements between the two sets.",
+
+      questionTamil:
+        "இரண்டு Set-களை உருவாக்கி, அவற்றில் பொதுவாக உள்ள Elements-ஐ (Common Elements) Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the intersection() method or '&' operator.",
+
+      hintTamil:
+        "intersection() Method அல்லது '&' Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `{30, 40}`,
+
+      expectedOutputTamil: `{30, 40}`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
+
 ];
 
 export default questions;
