@@ -596,7 +596,150 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a C++ program to declare an integer variable rollNumber, assign the value 101, and print it.",
+
+      questionTamil:
+        "'rollNumber' என்ற Integer Variable-ஐ உருவாக்கி, அதற்கு 101 என்ற மதிப்பை Assign செய்து அதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Declare an int variable and use cout to display its value.",
+
+      hintTamil:
+        "int Variable-ஐ Declare செய்து cout மூலம் அதன் மதிப்பை Print செய்யுங்கள்.",
+
+      expectedOutput: `101`,
+
+      expectedOutputTamil: `101`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int rollNumber = 101;
+
+    cout << rollNumber;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a C++ program to declare variables for productName, quantity, and price. Assign suitable values and print them.",
+
+      questionTamil:
+        "'productName', 'quantity', மற்றும் 'price' ஆகியவற்றிற்கு Variables-ஐ உருவாக்கி, பொருத்தமான மதிப்புகளை Assign செய்து Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use string, int, and float variables.",
+
+      hintTamil:
+        "string, int மற்றும் float Variables-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Product: Laptop
+Quantity: 2
+Price: 55000`,
+
+      expectedOutputTamil: `Product: Laptop
+Quantity: 2
+Price: 55000`,
+
+      solution: `#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+
+    string productName = "Laptop";
+    int quantity = 2;
+    float price = 55000;
+
+    cout << "Product: " << productName << endl;
+    cout << "Quantity: " << quantity << endl;
+    cout << "Price: " << price;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a C++ program to declare variables for an employee's name, ID, and salary. Assign suitable values and print them.",
+
+      questionTamil:
+        "ஒரு பணியாளரின் பெயர், ID மற்றும் சம்பளத்திற்கு Variables-ஐ உருவாக்கி, பொருத்தமான மதிப்புகளை Assign செய்து Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use string, int, and float variables.",
+
+      hintTamil:
+        "string, int மற்றும் float Variables-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Name: Kathir
+ID: 501
+Salary: 35000`,
+
+      expectedOutputTamil: `Name: Kathir
+ID: 501
+Salary: 35000`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a C++ program to declare variables for a book's title, author, and price. Assign suitable values and print them.",
+
+      questionTamil:
+        "ஒரு புத்தகத்தின் Title, Author மற்றும் Price-க்கு Variables-ஐ உருவாக்கி, பொருத்தமான மதிப்புகளை Assign செய்து Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use string and float variables to store the details.",
+
+      hintTamil:
+        "விவரங்களை சேமிக்க string மற்றும் float Variables-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Title: C++ Programming
+Author: Bjarne Stroustrup
+Price: 799`,
+
+      expectedOutputTamil: `Title: C++ Programming
+Author: Bjarne Stroustrup
+Price: 799`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
