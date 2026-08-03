@@ -7041,7 +7041,103 @@ Information Technology`,
       completed: false,
     },
   ],
-}, ,
+},
+{
+  topicId: 21,
+  title: "Functions",
+
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to create a function named greet() that prints 'Hello Python'. Call the function.",
+
+      questionTamil:
+        "'greet()' என்ற Function-ஐ உருவாக்கி, அது 'Hello Python' என்பதை Print செய்ய வேண்டும். அந்த Function-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the def keyword and call the function.",
+
+      hintTamil:
+        "def Keyword பயன்படுத்தி Function-ஐ உருவாக்கி Call செய்யுங்கள்.",
+
+      expectedOutput: `Hello Python`,
+
+      expectedOutputTamil: `Hello Python`,
+
+      solution: `def greet():
+    print("Hello Python")
+
+greet()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to create a function named displayName() that prints 'Deepak'. Call the function.",
+
+      questionTamil:
+        "'displayName()' என்ற Function-ஐ உருவாக்கி, அது 'Deepak' என்பதை Print செய்ய வேண்டும். அந்த Function-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a function using def and call it.",
+
+      hintTamil:
+        "def பயன்படுத்தி Function-ஐ உருவாக்கி Call செய்யுங்கள்.",
+
+      expectedOutput: `Deepak`,
+
+      expectedOutputTamil: `Deepak`,
+
+      solution: `def displayName():
+    print("Deepak")
+
+displayName()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to create a function named showCollege() that prints 'Don Bosco College'. Call the function.",
+
+      questionTamil:
+        "'showCollege()' என்ற Function-ஐ உருவாக்கி, அது 'Don Bosco College' என்பதை Print செய்ய வேண்டும். அந்த Function-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the def keyword and call the function.",
+
+      hintTamil:
+        "def Keyword பயன்படுத்தி Function-ஐ உருவாக்கி Call செய்யுங்கள்.",
+
+      expectedOutput: `Don Bosco College`,
+
+      expectedOutputTamil: `Don Bosco College`,
+
+      solution: `def showCollege():
+    print("Don Bosco College")
+
+showCollege()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+  ],
+},
 
 ];
 
