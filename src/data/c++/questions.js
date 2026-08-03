@@ -4401,7 +4401,179 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to print all even numbers from 2 to 20 using a while loop.",
+
+      questionTamil:
+        "While Loop பயன்படுத்தி 2 முதல் 20 வரை உள்ள அனைத்து Even எண்களையும் Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Start from 2 and increment the variable by 2.",
+
+      hintTamil:
+        "2-ல் தொடங்கி ஒவ்வொரு முறையும் Variable-ஐ 2-ஆல் Increment செய்யுங்கள்.",
+
+      expectedOutput: `2
+4
+6
+8
+10
+12
+14
+16
+18
+20`,
+
+      expectedOutputTamil: `2
+4
+6
+8
+10
+12
+14
+16
+18
+20`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int i = 2;
+
+    while (i <= 20) {
+        cout << i << endl;
+        i += 2;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to print all odd numbers from 1 to 19 using a while loop.",
+
+      questionTamil:
+        "While Loop பயன்படுத்தி 1 முதல் 19 வரை உள்ள அனைத்து Odd எண்களையும் Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Start from 1 and increment the variable by 2.",
+
+      hintTamil:
+        "1-ல் தொடங்கி ஒவ்வொரு முறையும் Variable-ஐ 2-ஆல் Increment செய்யுங்கள்.",
+
+      expectedOutput: `1
+3
+5
+7
+9
+11
+13
+15
+17
+19`,
+
+      expectedOutputTamil: `1
+3
+5
+7
+9
+11
+13
+15
+17
+19`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int i = 1;
+
+    while (i <= 19) {
+        cout << i << endl;
+        i += 2;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to print the multiplication table of 5 using a while loop.",
+
+      questionTamil:
+        "While Loop பயன்படுத்தி 5-ன் பெருக்கல் வாய்ப்பாட்டை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Start from 1 and continue until 10.",
+
+      hintTamil:
+        "1-ல் தொடங்கி 10 வரை Loop-ஐ இயக்குங்கள்.",
+
+      expectedOutput: `5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50`,
+
+      expectedOutputTamil: `5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int i = 1;
+
+    while (i <= 10) {
+        cout << "5 x " << i << " = " << 5 * i << endl;
+        i++;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
