@@ -633,6 +633,99 @@ int main()
   completed: false,
 },
 {
+  id: 8,
+
+  title: "Nested If",
+
+  englishDefinition:
+    "A Nested If Statement is an if statement placed inside another if statement. It is used when a second condition needs to be checked only if the first condition is true.",
+
+  tamilDefinition:
+    "Nested If Statement என்பது ஒரு if Statement-க்குள் மற்றொரு if Statement எழுதப்படுவது ஆகும். முதல் Condition உண்மையாக இருந்தால் மட்டுமே இரண்டாவது Condition சரிபார்க்கப்படும்.",
+
+  realWorldUsage:
+    "Nested If Statements are commonly used in login systems. For example, a program first checks whether the username is correct. If it is correct, then it checks whether the password is correct before allowing the user to log in.",
+
+  realWorldUsageTamil:
+    "Nested If Statement Login System போன்ற இடங்களில் அதிகமாக பயன்படுத்தப்படுகிறது. உதாரணமாக, முதலில் Username சரியானதா என்று சரிபார்க்கப்படுகிறது. அது சரியாக இருந்தால் மட்டுமே Password சரியானதா என்று மீண்டும் சரிபார்க்கப்பட்டு Login அனுமதிக்கப்படுகிறது.",
+
+  syntax: `if(condition1)
+{
+    if(condition2)
+    {
+        // Code
+    }
+}`,
+
+  syntaxExplanationEnglish: [
+    "The outer if statement checks the first condition.",
+    "The inner if statement executes only if the outer condition is true.",
+    "The second condition is checked only after the first condition succeeds.",
+    "Nested if statements are useful when one condition depends on another.",
+    "They are commonly used for validation and authentication systems."
+  ],
+
+  syntaxExplanationTamil: [
+    "வெளிப்புற if Statement முதலில் முதல் Condition-ஐ சரிபார்க்கிறது.",
+    "முதல் Condition உண்மையாக இருந்தால் மட்டுமே உள்ளேயுள்ள if Statement இயக்கப்படும்.",
+    "முதல் Condition வெற்றியடைந்த பிறகே இரண்டாவது Condition சரிபார்க்கப்படும்.",
+    "ஒரு Condition மற்றொரு Condition-ஐ சார்ந்திருக்கும் போது Nested If Statement பயன்படுத்தப்படுகிறது.",
+    "Validation மற்றும் Authentication போன்ற செயல்களில் Nested If Statement அதிகமாக பயன்படுத்தப்படுகிறது."
+  ],
+
+  exampleProgram: `#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int age = 20;
+    bool hasID = true;
+
+    if(age >= 18)
+    {
+        if(hasID)
+        {
+            cout << "Entry Allowed";
+        }
+    }
+
+    return 0;
+}`,
+
+  programExplanationEnglish: [
+    "Line 1: #include <iostream> includes the input and output library.",
+    "Line 3: using namespace std; allows us to use cout without writing std::.",
+    "Line 5: int main() is the starting point of the program.",
+    "Line 7: An integer variable 'age' is initialized with the value 20.",
+    "Line 8: A boolean variable 'hasID' is initialized with true.",
+    "Line 10: The outer if statement checks whether age is greater than or equal to 18.",
+    "Line 12: Since the first condition is true, the inner if statement is executed.",
+    "Line 12: The inner if statement checks whether hasID is true.",
+    "Line 14: cout displays 'Entry Allowed'.",
+    "Line 18: return 0; ends the program successfully."
+  ],
+
+  programExplanationTamil: [
+    "வரி 1: #include <iostream> என்பது Input மற்றும் Output Library-ஐ இணைக்கிறது.",
+    "வரி 3: using namespace std; பயன்படுத்துவதால் std:: என்று எழுத வேண்டியதில்லை.",
+    "வரி 5: int main() என்பது Program தொடங்கும் இடமாகும்.",
+    "வரி 7: 'age' என்ற Integer Variable-ல் 20 சேமிக்கப்படுகிறது.",
+    "வரி 8: 'hasID' என்ற Boolean Variable-ல் true சேமிக்கப்படுகிறது.",
+    "வரி 10: வெளிப்புற if Statement, வயது 18 அல்லது அதற்கு மேல் உள்ளதா என்பதை சரிபார்க்கிறது.",
+    "வரி 12: முதல் Condition உண்மையாக இருப்பதால் உள்ளேயுள்ள if Statement இயக்கப்படுகிறது.",
+    "வரி 12: உள்ளேயுள்ள if Statement, hasID true ஆக உள்ளதா என்பதை சரிபார்க்கிறது.",
+    "வரி 14: cout மூலம் 'Entry Allowed' திரையில் காட்டப்படுகிறது.",
+    "வரி 18: return 0; Program-ஐ வெற்றிகரமாக முடிக்கிறது."
+  ],
+
+  output: `Entry Allowed`,
+
+  locked: false,
+
+  completed: false,
+},
+{
   id: 9,
 
   title: "Switch Statement",
