@@ -9129,7 +9129,142 @@ student2.greet()`,
     },
   ],
 },
+{
+  topicId: 27,
+  title: "Multiple Inheritance",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to create two classes named Father and Mother with methods fatherName() and motherName(). Create a class Child that inherits from both classes. Create an object of Child and call both methods.",
+
+      questionTamil:
+        "'Father' மற்றும் 'Mother' என்ற இரண்டு Classes-ஐ உருவாக்கி, அவற்றில் fatherName() மற்றும் motherName() என்ற Methods-ஐ உருவாக்குங்கள். பின்னர் இரண்டு Classes-யையும் Inherit செய்யும் Child Class-ஐ உருவாக்கி, Child Object மூலம் இரண்டு Methods-ஐயும் Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use class Child(Father, Mother).",
+
+      hintTamil:
+        "class Child(Father, Mother) என்பதை பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Father
+Mother`,
+
+      expectedOutputTamil: `Father
+Mother`,
+
+      solution: `class Father:
+    def fatherName(self):
+        print("Father")
+
+class Mother:
+    def motherName(self):
+        print("Mother")
+
+class Child(Father, Mother):
+    pass
+
+child = Child()
+
+child.fatherName()
+child.motherName()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to create two classes named Student and Sports with methods study() and play(). Create a class School that inherits from both classes. Create an object and call both methods.",
+
+      questionTamil:
+        "'Student' மற்றும் 'Sports' என்ற இரண்டு Classes-ஐ உருவாக்கி, அவற்றில் study() மற்றும் play() என்ற Methods-ஐ உருவாக்குங்கள். பின்னர் இரண்டு Classes-யையும் Inherit செய்யும் School Class-ஐ உருவாக்கி, Object மூலம் இரண்டு Methods-ஐயும் Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use multiple inheritance with two parent classes.",
+
+      hintTamil:
+        "இரண்டு Parent Classes உடன் Multiple Inheritance-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Studying
+Playing`,
+
+      expectedOutputTamil: `Studying
+Playing`,
+
+      solution: `class Student:
+    def study(self):
+        print("Studying")
+
+class Sports:
+    def play(self):
+        print("Playing")
+
+class School(Student, Sports):
+    pass
+
+school = School()
+
+school.study()
+school.play()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to create two classes named Calculator and Display with methods add() and show(). Create a class Result that inherits from both classes. Create an object and call both methods.",
+
+      questionTamil:
+        "'Calculator' மற்றும் 'Display' என்ற இரண்டு Classes-ஐ உருவாக்கி, அவற்றில் add() மற்றும் show() என்ற Methods-ஐ உருவாக்குங்கள். பின்னர் இரண்டு Classes-யையும் Inherit செய்யும் Result Class-ஐ உருவாக்கி, Object மூலம் இரண்டு Methods-ஐயும் Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a child class that inherits from both parent classes.",
+
+      hintTamil:
+        "இரண்டு Parent Classes-ஐ Inherit செய்யும் Child Class-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `30
+Result Displayed`,
+
+      expectedOutputTamil: `30
+Result Displayed`,
+
+      solution: `class Calculator:
+    def add(self):
+        print(10 + 20)
+
+class Display:
+    def show(self):
+        print("Result Displayed")
+
+class Result(Calculator, Display):
+    pass
+
+result = Result()
+
+result.add()
+result.show()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
