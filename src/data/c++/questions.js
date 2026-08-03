@@ -6069,6 +6069,178 @@ int main() {
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to print numbers from 1 to 20 using a while loop, but stop the loop when the number becomes 11 using the break statement.",
+
+      questionTamil:
+        "While Loop பயன்படுத்தி 1 முதல் 20 வரை உள்ள எண்களை Print செய்யுங்கள். ஆனால் எண் 11 ஆனவுடன் Break Statement பயன்படுத்தி Loop-ஐ நிறுத்தும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use an if statement inside the while loop and apply break when the number becomes 11.",
+
+      hintTamil:
+        "While Loop-க்குள் if Statement பயன்படுத்தி, எண் 11 ஆனவுடன் break-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `1
+2
+3
+4
+5
+6
+7
+8
+9
+10`,
+
+      expectedOutputTamil: `1
+2
+3
+4
+5
+6
+7
+8
+9
+10`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int i = 1;
+
+    while (i <= 20) {
+
+        if (i == 11) {
+            break;
+        }
+
+        cout << i << endl;
+        i++;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to print the multiplication table of 9 using a for loop, but stop after printing 9 × 6 using the break statement.",
+
+      questionTamil:
+        "For Loop பயன்படுத்தி 9-ன் பெருக்கல் வாய்ப்பாட்டை Print செய்யுங்கள். ஆனால் 9 × 6 வரை Print செய்த பிறகு Break Statement பயன்படுத்தி Loop-ஐ நிறுத்தும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use an if statement to stop the loop when the loop variable becomes 7.",
+
+      hintTamil:
+        "Loop Variable 7 ஆனவுடன் if Statement மூலம் break-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `9 x 1 = 9
+9 x 2 = 18
+9 x 3 = 27
+9 x 4 = 36
+9 x 5 = 45
+9 x 6 = 54`,
+
+      expectedOutputTamil: `9 x 1 = 9
+9 x 2 = 18
+9 x 3 = 27
+9 x 4 = 36
+9 x 5 = 45
+9 x 6 = 54`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    for (int i = 1; i <= 10; i++) {
+
+        if (i == 7) {
+            break;
+        }
+
+        cout << "9 x " << i << " = " << 9 * i << endl;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to print numbers from 1 to 15 using a do while loop, but stop the loop when the number becomes 8 using the break statement.",
+
+      questionTamil:
+        "Do While Loop பயன்படுத்தி 1 முதல் 15 வரை உள்ள எண்களை Print செய்யுங்கள். ஆனால் எண் 8 ஆனவுடன் Break Statement பயன்படுத்தி Loop-ஐ நிறுத்தும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use an if statement inside the do while loop and apply break.",
+
+      hintTamil:
+        "Do While Loop-க்குள் if Statement பயன்படுத்தி break-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `1
+2
+3
+4
+5
+6
+7`,
+
+      expectedOutputTamil: `1
+2
+3
+4
+5
+6
+7`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int i = 1;
+
+    do {
+
+        if (i == 8) {
+            break;
+        }
+
+        cout << i << endl;
+        i++;
+
+    } while (i <= 15);
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
     
   ],
 },
