@@ -7388,7 +7388,100 @@ Department: Computer Science`,
     },
   ],
 },
+{
+  topicId: 22,
+  title: "Lambda Functions",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to create a lambda function that adds two numbers (10 and 20) and prints the result.",
+
+      questionTamil:
+        "10 மற்றும் 20 ஆகிய இரண்டு எண்களை கூட்டும் Lambda Function-ஐ உருவாக்கி அதன் முடிவை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use lambda with two parameters.",
+
+      hintTamil:
+        "இரண்டு Parameters உடன் lambda-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `30`,
+
+      expectedOutputTamil: `30`,
+
+      solution: `add = lambda a, b: a + b
+
+print(add(10, 20))`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to create a lambda function that finds the square of a number. Print the square of 5.",
+
+      questionTamil:
+        "ஒரு எண்ணின் Square-ஐ கண்டறியும் Lambda Function-ஐ உருவாக்கி, 5-ன் Square-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use one parameter in the lambda function.",
+
+      hintTamil:
+        "Lambda Function-ல் ஒரு Parameter-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `25`,
+
+      expectedOutputTamil: `25`,
+
+      solution: `square = lambda x: x * x
+
+print(square(5))`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to create a lambda function that checks whether a number is even. Print the result for 8.",
+
+      questionTamil:
+        "ஒரு எண் Even ஆக உள்ளதா என்பதை சரிபார்க்கும் Lambda Function-ஐ உருவாக்கி, 8-க்கான முடிவை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the modulus (%) operator inside the lambda function.",
+
+      hintTamil:
+        "Lambda Function-க்குள் Modulus (%) Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `True`,
+
+      expectedOutputTamil: `True`,
+
+      solution: `isEven = lambda x: x % 2 == 0
+
+print(isEven(8))`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 
 ];
 
