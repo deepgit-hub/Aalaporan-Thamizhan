@@ -7136,6 +7136,102 @@ showCollege()`,
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to create a function named add() that prints the sum of 10 and 20. Call the function.",
+
+      questionTamil:
+        "'add()' என்ற Function-ஐ உருவாக்கி, 10 மற்றும் 20 ஆகிய எண்களின் கூட்டுத்தொகையை Print செய்ய வேண்டும். அந்த Function-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a function using def and perform the addition inside it.",
+
+      hintTamil:
+        "def பயன்படுத்தி Function-ஐ உருவாக்கி, அதன் உள்ளே கூட்டலை செய்யுங்கள்.",
+
+      expectedOutput: `30`,
+
+      expectedOutputTamil: `30`,
+
+      solution: `def add():
+    print(10 + 20)
+
+add()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to create a function named evenOdd() that checks whether the number 15 is even or odd and prints the result. Call the function.",
+
+      questionTamil:
+        "'evenOdd()' என்ற Function-ஐ உருவாக்கி, 15 என்பது Even அல்லது Odd என்பதை சரிபார்த்து Print செய்ய வேண்டும். அந்த Function-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use an if...else statement inside the function.",
+
+      hintTamil:
+        "Function-க்குள் if...else Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Odd`,
+
+      expectedOutputTamil: `Odd`,
+
+      solution: `def evenOdd():
+    if 15 % 2 == 0:
+        print("Even")
+    else:
+        print("Odd")
+
+evenOdd()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to create a function named welcome() that accepts a name as input and prints 'Welcome <name>'. Call the function.",
+
+      questionTamil:
+        "'welcome()' என்ற Function-ஐ உருவாக்கி, பயனரிடமிருந்து பெயரை Input ஆக பெற்று 'Welcome <name>' என்பதை Print செய்ய வேண்டும். அந்த Function-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input() inside the function and call the function.",
+
+      hintTamil:
+        "Function-க்குள் input() பயன்படுத்தி, Function-ஐ Call செய்யுங்கள்.",
+
+      expectedOutput: `Enter your name: Deepak
+Welcome Deepak`,
+
+      expectedOutputTamil: `Enter your name: Deepak
+Welcome Deepak`,
+
+      solution: `def welcome():
+    name = input("Enter your name: ")
+    print("Welcome", name)
+
+welcome()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
   ],
 },
 
