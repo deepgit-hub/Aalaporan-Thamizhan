@@ -1902,7 +1902,144 @@ Different`,
     },
   ],
 },
+{
+  topicId: 6,
+  title: "If Statement",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to accept an integer from the user and print 'Positive Number' if the number is positive.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு Integer எண்ணை Input ஆக பெற்று, அந்த எண் Positive ஆக இருந்தால் 'Positive Number' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use an if statement with the > operator.",
+
+      hintTamil:
+        "if Statement மற்றும் > Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: 10
+Positive Number`,
+
+      expectedOutputTamil: `Enter a number: 10
+Positive Number`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int number;
+
+    cout << "Enter a number: ";
+    cin >> number;
+
+    if (number > 0) {
+        cout << "Positive Number";
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to accept a number from the user and print 'Even Number' if the number is even.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, அந்த எண் Even ஆக இருந்தால் 'Even Number' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the % operator with an if statement.",
+
+      hintTamil:
+        "% Operator மற்றும் if Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: 8
+Even Number`,
+
+      expectedOutputTamil: `Enter a number: 8
+Even Number`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int number;
+
+    cout << "Enter a number: ";
+    cin >> number;
+
+    if (number % 2 == 0) {
+        cout << "Even Number";
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to accept a student's mark from the user and print 'Pass' if the mark is greater than or equal to 35.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு மாணவரின் மதிப்பெண்ணை Input ஆக பெற்று, அது 35 அல்லது அதற்கு மேல் இருந்தால் 'Pass' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the >= operator with an if statement.",
+
+      hintTamil:
+        ">= Operator மற்றும் if Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter mark: 75
+Pass`,
+
+      expectedOutputTamil: `Enter mark: 75
+Pass`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int mark;
+
+    cout << "Enter mark: ";
+    cin >> mark;
+
+    if (mark >= 35) {
+        cout << "Pass";
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+  ],
+},
 ];
 
 export default questions;
