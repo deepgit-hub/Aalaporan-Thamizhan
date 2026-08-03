@@ -6398,7 +6398,194 @@ Arun`,
     },
   ],
 },
+{
+  topicId: 19,
+  title: "Sets",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to create a set containing the numbers 10, 20, 30, 40, and 50. Print the set.",
+
+      questionTamil:
+        "10, 20, 30, 40 மற்றும் 50 ஆகிய எண்களைக் கொண்ட ஒரு Set-ஐ உருவாக்கி அதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Store the values inside curly braces {}.",
+
+      hintTamil:
+        "Values-ஐ Curly Braces {}-க்குள் சேமியுங்கள்.",
+
+      expectedOutput: `{10, 20, 30, 40, 50}`,
+
+      expectedOutputTamil: `{10, 20, 30, 40, 50}`,
+
+      solution: `numbers = {10, 20, 30, 40, 50}
+
+print(numbers)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to create a set containing the names 'Deepak', 'Kathir', and 'Rahul'. Print the set.",
+
+      questionTamil:
+        "'Deepak', 'Kathir' மற்றும் 'Rahul' ஆகிய பெயர்களைக் கொண்ட ஒரு Set-ஐ உருவாக்கி அதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Store the names inside a set.",
+
+      hintTamil:
+        "பெயர்களை ஒரு Set-க்குள் சேமியுங்கள்.",
+
+      expectedOutput: `{'Deepak', 'Kathir', 'Rahul'}`,
+
+      expectedOutputTamil: `{'Deepak', 'Kathir', 'Rahul'}`,
+
+      solution: `students = {"Deepak", "Kathir", "Rahul"}
+
+print(students)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to create a set containing duplicate values 10, 20, 20, 30, 30, 40. Print the set.",
+
+      questionTamil:
+        "10, 20, 20, 30, 30, 40 என்ற Duplicate Values கொண்ட ஒரு Set-ஐ உருவாக்கி அதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Observe how sets automatically remove duplicate values.",
+
+      hintTamil:
+        "Set-ல் Duplicate Values தானாக நீக்கப்படுவதை கவனியுங்கள்.",
+
+      expectedOutput: `{10, 20, 30, 40}`,
+
+      expectedOutputTamil: `{10, 20, 30, 40}`,
+
+      solution: `numbers = {10, 20, 20, 30, 30, 40}
+
+print(numbers)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to create a set containing the numbers 5, 10, 15, 20, and 25. Print the total number of elements in the set.",
+
+      questionTamil:
+        "5, 10, 15, 20 மற்றும் 25 ஆகிய எண்களைக் கொண்ட ஒரு Set-ஐ உருவாக்கி, அதில் உள்ள மொத்த Elements எண்ணிக்கையை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the len() function.",
+
+      hintTamil:
+        "len() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `5`,
+
+      expectedOutputTamil: `5`,
+
+      solution: `numbers = {5, 10, 15, 20, 25}
+
+print(len(numbers))`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to create a set containing 'Apple', 'Banana', 'Orange', and 'Mango'. Print each element using a for loop.",
+
+      questionTamil:
+        "'Apple', 'Banana', 'Orange' மற்றும் 'Mango' ஆகியவற்றைக் கொண்ட ஒரு Set-ஐ உருவாக்கி, For Loop பயன்படுத்தி ஒவ்வொரு Element-ஐயும் Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a for loop to iterate through the set.",
+
+      hintTamil:
+        "Set-ஐ Traverse செய்ய For Loop-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Apple
+Banana
+Orange
+Mango`,
+
+      expectedOutputTamil: `Apple
+Banana
+Orange
+Mango`,
+
+      solution: `fruits = {"Apple", "Banana", "Orange", "Mango"}
+
+for fruit in fruits:
+    print(fruit)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to create a set containing the numbers 10, 20, 30. Add the number 40 to the set and print the updated set.",
+
+      questionTamil:
+        "10, 20 மற்றும் 30 ஆகிய எண்களைக் கொண்ட ஒரு Set-ஐ உருவாக்கி, அதில் 40 என்ற எண்ணை Add செய்து Updated Set-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the add() method.",
+
+      hintTamil:
+        "add() Method-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `{10, 20, 30, 40}`,
+
+      expectedOutputTamil: `{10, 20, 30, 40}`,
+
+      solution: `numbers = {10, 20, 30}
+
+numbers.add(40)
+
+print(numbers)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+  ],
+},
 ];
 
 export default questions;
