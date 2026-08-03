@@ -12297,7 +12297,360 @@ Navigating...`,
     },
   ],
 },
+{
+  topicId: 27,
+  title: "Hierarchical Inheritance",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Animal with a function named eat() that prints 'Animal is Eating'. Create two derived classes named Dog and Cat that inherit from Animal and call the inherited function using both objects.",
+
+      questionTamil:
+        "Animal என்ற Base Class-ஐ உருவாக்கி, 'Animal is Eating' என்று Print செய்யும் eat() Function-ஐ உருவாக்குங்கள். Animal Class-ஐ Inherit செய்யும் Dog மற்றும் Cat என்ற இரண்டு Derived Classes-ஐ உருவாக்கி, இரண்டு Objects மூலமும் Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create one base class and two derived classes that inherit from it.",
+
+      hintTamil:
+        "ஒரு Base Class மற்றும் அதிலிருந்து Inherit செய்யும் இரண்டு Derived Classes-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Animal is Eating
+Animal is Eating`,
+
+      expectedOutputTamil: `Animal is Eating
+Animal is Eating`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Animal {
+
+public:
+    void eat() {
+        cout << "Animal is Eating" << endl;
+    }
+
+};
+
+class Dog : public Animal {
+
+};
+
+class Cat : public Animal {
+
+};
+
+int main() {
+
+    Dog d;
+    Cat c;
+
+    d.eat();
+    c.eat();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Vehicle with a function named start() that prints 'Vehicle Started'. Create two derived classes named Car and Bike that inherit from Vehicle and call the inherited function.",
+
+      questionTamil:
+        "Vehicle என்ற Base Class-ஐ உருவாக்கி, 'Vehicle Started' என்று Print செய்யும் start() Function-ஐ உருவாக்குங்கள். Vehicle Class-ஐ Inherit செய்யும் Car மற்றும் Bike என்ற இரண்டு Derived Classes-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use one base class and two derived classes.",
+
+      hintTamil:
+        "ஒரு Base Class மற்றும் இரண்டு Derived Classes-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Vehicle Started
+Vehicle Started`,
+
+      expectedOutputTamil: `Vehicle Started
+Vehicle Started`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Vehicle {
+
+public:
+    void start() {
+        cout << "Vehicle Started" << endl;
+    }
+
+};
+
+class Car : public Vehicle {
+
+};
+
+class Bike : public Vehicle {
+
+};
+
+int main() {
+
+    Car c;
+    Bike b;
+
+    c.start();
+    b.start();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Person with a function named speak() that prints 'Person Speaking'. Create two derived classes named Teacher and Student that inherit from Person and call the inherited function.",
+
+      questionTamil:
+        "Person என்ற Base Class-ஐ உருவாக்கி, 'Person Speaking' என்று Print செய்யும் speak() Function-ஐ உருவாக்குங்கள். Person Class-ஐ Inherit செய்யும் Teacher மற்றும் Student என்ற இரண்டு Derived Classes-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create two derived classes from the same base class.",
+
+      hintTamil:
+        "ஒரே Base Class-லிருந்து இரண்டு Derived Classes-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Person Speaking
+Person Speaking`,
+
+      expectedOutputTamil: `Person Speaking
+Person Speaking`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Person {
+
+public:
+    void speak() {
+        cout << "Person Speaking" << endl;
+    }
+
+};
+
+class Teacher : public Person {
+
+};
+
+class Student : public Person {
+
+};
+
+int main() {
+
+    Teacher t;
+    Student s;
+
+    t.speak();
+    s.speak();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Shape with a function named draw() that prints 'Drawing Shape'. Create two derived classes named Circle and Rectangle that inherit from Shape and call the inherited function.",
+
+      questionTamil:
+        "Shape என்ற Base Class-ஐ உருவாக்கி, 'Drawing Shape' என்று Print செய்யும் draw() Function-ஐ உருவாக்குங்கள். Shape Class-ஐ Inherit செய்யும் Circle மற்றும் Rectangle என்ற இரண்டு Derived Classes-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create one base class and two derived classes using public inheritance.",
+
+      hintTamil:
+        "ஒரு Base Class மற்றும் public Inheritance பயன்படுத்தி இரண்டு Derived Classes-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Drawing Shape
+Drawing Shape`,
+
+      expectedOutputTamil: `Drawing Shape
+Drawing Shape`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Shape {
+
+public:
+    void draw() {
+        cout << "Drawing Shape" << endl;
+    }
+
+};
+
+class Circle : public Shape {
+
+};
+
+class Rectangle : public Shape {
+
+};
+
+int main() {
+
+    Circle c;
+    Rectangle r;
+
+    c.draw();
+    r.draw();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Employee with a function named work() that prints 'Employee Working'. Create two derived classes named Manager and Developer that inherit from Employee and call the inherited function.",
+
+      questionTamil:
+        "Employee என்ற Base Class-ஐ உருவாக்கி, 'Employee Working' என்று Print செய்யும் work() Function-ஐ உருவாக்குங்கள். Employee Class-ஐ Inherit செய்யும் Manager மற்றும் Developer என்ற இரண்டு Derived Classes-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use one base class and two derived classes.",
+
+      hintTamil:
+        "ஒரு Base Class மற்றும் இரண்டு Derived Classes-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Employee Working
+Employee Working`,
+
+      expectedOutputTamil: `Employee Working
+Employee Working`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Employee {
+
+public:
+    void work() {
+        cout << "Employee Working" << endl;
+    }
+
+};
+
+class Manager : public Employee {
+
+};
+
+class Developer : public Employee {
+
+};
+
+int main() {
+
+    Manager m;
+    Developer d;
+
+    m.work();
+    d.work();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Animal with a function named sleep() that prints 'Animal Sleeping'. Create two derived classes named Lion and Tiger that inherit from Animal and call the inherited function.",
+
+      questionTamil:
+        "Animal என்ற Base Class-ஐ உருவாக்கி, 'Animal Sleeping' என்று Print செய்யும் sleep() Function-ஐ உருவாக்குங்கள். Animal Class-ஐ Inherit செய்யும் Lion மற்றும் Tiger என்ற இரண்டு Derived Classes-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create two derived classes from the same base class and call the inherited function.",
+
+      hintTamil:
+        "ஒரே Base Class-லிருந்து இரண்டு Derived Classes-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யுங்கள்.",
+
+      expectedOutput: `Animal Sleeping
+Animal Sleeping`,
+
+      expectedOutputTamil: `Animal Sleeping
+Animal Sleeping`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Animal {
+
+public:
+    void sleep() {
+        cout << "Animal Sleeping" << endl;
+    }
+
+};
+
+class Lion : public Animal {
+
+};
+
+class Tiger : public Animal {
+
+};
+
+int main() {
+
+    Lion l;
+    Tiger t;
+
+    l.sleep();
+    t.sleep();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
