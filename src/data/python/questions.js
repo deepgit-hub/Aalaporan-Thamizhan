@@ -5828,9 +5828,265 @@ print(languages)`,
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to create a list containing the numbers 5, 10, 15, 20, and 25. Print the first element of the list.",
+
+      questionTamil:
+        "5, 10, 15, 20 மற்றும் 25 ஆகிய எண்களைக் கொண்ட ஒரு List-ஐ உருவாக்கி, அதன் முதல் Element-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Access the first element using index 0.",
+
+      hintTamil:
+        "முதல் Element-ஐ Index 0 பயன்படுத்தி Access செய்யுங்கள்.",
+
+      expectedOutput: `5`,
+
+      expectedOutputTamil: `5`,
+
+      solution: `numbers = [5, 10, 15, 20, 25]
+
+print(numbers[0])`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to create a list of fruits containing 'Apple', 'Banana', 'Orange', and 'Mango'. Print the last element of the list.",
+
+      questionTamil:
+        "'Apple', 'Banana', 'Orange' மற்றும் 'Mango' ஆகியவற்றைக் கொண்ட ஒரு List-ஐ உருவாக்கி, அதன் கடைசி Element-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use index -1 to access the last element.",
+
+      hintTamil:
+        "கடைசி Element-ஐ Access செய்ய Index -1-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Mango`,
+
+      expectedOutputTamil: `Mango`,
+
+      solution: `fruits = ["Apple", "Banana", "Orange", "Mango"]
+
+print(fruits[-1])`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to accept five numbers from the user, store them in a list, and print the complete list.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஐந்து எண்களை Input ஆக பெற்று, அவற்றை ஒரு List-ல் சேமித்து முழு List-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input(), int(), and append() to add elements to the list.",
+
+      hintTamil:
+        "input(), int() மற்றும் append() Method-ஐ பயன்படுத்தி List-ல் Elements-ஐ சேருங்கள்.",
+
+      expectedOutput: `Enter number 1: 10
+Enter number 2: 20
+Enter number 3: 30
+Enter number 4: 40
+Enter number 5: 50
+[10, 20, 30, 40, 50]`,
+
+      expectedOutputTamil: `Enter number 1: 10
+Enter number 2: 20
+Enter number 3: 30
+Enter number 4: 40
+Enter number 5: 50
+[10, 20, 30, 40, 50]`,
+
+      solution: `numbers = []
+
+for i in range(5):
+    number = int(input("Enter number " + str(i + 1) + ": "))
+    numbers.append(number)
+
+print(numbers)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a Python program to accept five student names from the user, store them in a list, and print all the names.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஐந்து மாணவர்களின் பெயர்களை Input ஆக பெற்று, அவற்றை ஒரு List-ல் சேமித்து அனைத்து பெயர்களையும் Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input() and append() to store the names in a list.",
+
+      hintTamil:
+        "input() மற்றும் append() Method-ஐ பயன்படுத்தி பெயர்களை List-ல் சேமியுங்கள்.",
+
+      expectedOutput: `Enter student 1: Deepak
+Enter student 2: Kathir
+Enter student 3: Rahul
+Enter student 4: Kavin
+Enter student 5: Arun
+['Deepak', 'Kathir', 'Rahul', 'Kavin', 'Arun']`,
+
+      expectedOutputTamil: `Enter student 1: Deepak
+Enter student 2: Kathir
+Enter student 3: Rahul
+Enter student 4: Kavin
+Enter student 5: Arun
+['Deepak', 'Kathir', 'Rahul', 'Kavin', 'Arun']`,
+
+      solution: `students = []
+
+for i in range(5):
+    name = input("Enter student " + str(i + 1) + ": ")
+    students.append(name)
+
+print(students)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a Python program to create a list containing five numbers and print each element using a for loop.",
+
+      questionTamil:
+        "ஐந்து எண்களைக் கொண்ட ஒரு List-ஐ உருவாக்கி, For Loop பயன்படுத்தி ஒவ்வொரு Element-ஐயும் Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a for loop to iterate through the list.",
+
+      hintTamil:
+        "List-ஐ Traverse செய்ய For Loop-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `10
+20
+30
+40
+50`,
+
+      expectedOutputTamil: `10
+20
+30
+40
+50`,
+
+      solution: `numbers = [10, 20, 30, 40, 50]
+
+for number in numbers:
+    print(number)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a Python program to accept five numbers from the user, store them in a list, and print the largest number.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஐந்து எண்களை Input ஆக பெற்று, அவற்றை ஒரு List-ல் சேமித்து, அதில் உள்ள மிகப்பெரிய எண்ணை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Store the numbers in a list and use the max() function.",
+
+      hintTamil:
+        "எண்களை List-ல் சேமித்து max() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter number 1: 12
+Enter number 2: 45
+Enter number 3: 8
+Enter number 4: 32
+Enter number 5: 25
+45`,
+
+      expectedOutputTamil: `Enter number 1: 12
+Enter number 2: 45
+Enter number 3: 8
+Enter number 4: 32
+Enter number 5: 25
+45`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a Python program to accept five student names from the user, store them in a list, and print the first and last names.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஐந்து மாணவர்களின் பெயர்களை Input ஆக பெற்று, அவற்றை ஒரு List-ல் சேமித்து, முதல் மற்றும் கடைசி பெயர்களை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Store the names in a list and use index 0 and -1.",
+
+      hintTamil:
+        "பெயர்களை List-ல் சேமித்து Index 0 மற்றும் -1-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter student 1: Deepak
+Enter student 2: Kathir
+Enter student 3: Rahul
+Enter student 4: Kavin
+Enter student 5: Arun
+Deepak
+Arun`,
+
+      expectedOutputTamil: `Enter student 1: Deepak
+Enter student 2: Kathir
+Enter student 3: Rahul
+Enter student 4: Kavin
+Enter student 5: Arun
+Deepak
+Arun`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
+
 ];
 
 export default questions;
