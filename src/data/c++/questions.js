@@ -6864,6 +6864,242 @@ int main() {
       locked: false,
       completed: false,
     },
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a C++ program to print numbers from 1 to 15 using a for loop, but skip printing the number 9 using the continue statement.",
+
+      questionTamil:
+        "For Loop பயன்படுத்தி 1 முதல் 15 வரை உள்ள எண்களை Print செய்யுங்கள். ஆனால் 9 என்ற எண்ணை மட்டும் Continue Statement பயன்படுத்தி Skip செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use an if statement to check if the number is 9, then use continue.",
+
+      hintTamil:
+        "எண் 9 ஆக உள்ளதா என்பதை if Statement மூலம் சரிபார்த்து continue-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `1
+2
+3
+4
+5
+6
+7
+8
+10
+11
+12
+13
+14
+15`,
+
+      expectedOutputTamil: `1
+2
+3
+4
+5
+6
+7
+8
+10
+11
+12
+13
+14
+15`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    for (int i = 1; i <= 15; i++) {
+
+        if (i == 9) {
+            continue;
+        }
+
+        cout << i << endl;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a C++ program to print the multiplication table of 8 using a do while loop, but skip printing 8 × 6 using the continue statement.",
+
+      questionTamil:
+        "Do While Loop பயன்படுத்தி 8-ன் பெருக்கல் வாய்ப்பாட்டை Print செய்யுங்கள். ஆனால் 8 × 6-ஐ மட்டும் Continue Statement பயன்படுத்தி Skip செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Increment the variable before using continue.",
+
+      hintTamil:
+        "continue பயன்படுத்தும் முன் Variable-ஐ Increment செய்யுங்கள்.",
+
+      expectedOutput: `8 x 1 = 8
+8 x 2 = 16
+8 x 3 = 24
+8 x 4 = 32
+8 x 5 = 40
+8 x 7 = 56
+8 x 8 = 64
+8 x 9 = 72
+8 x 10 = 80`,
+
+      expectedOutputTamil: `8 x 1 = 8
+8 x 2 = 16
+8 x 3 = 24
+8 x 4 = 32
+8 x 5 = 40
+8 x 7 = 56
+8 x 8 = 64
+8 x 9 = 72
+8 x 10 = 80`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int i = 1;
+
+    do {
+
+        if (i == 6) {
+            i++;
+            continue;
+        }
+
+        cout << "8 x " << i << " = " << 8 * i << endl;
+        i++;
+
+    } while (i <= 10);
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a C++ program to print numbers from 1 to 20 using a while loop, but skip printing the number 13 using the continue statement.",
+
+      questionTamil:
+        "While Loop பயன்படுத்தி 1 முதல் 20 வரை உள்ள எண்களை Print செய்யுங்கள். ஆனால் 13 என்ற எண்ணை மட்டும் Continue Statement பயன்படுத்தி Skip செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Increment the variable before using continue.",
+
+      hintTamil:
+        "continue பயன்படுத்தும் முன் Variable-ஐ Increment செய்யுங்கள்.",
+
+      expectedOutput: `1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+14
+15
+16
+17
+18
+19
+20`,
+
+      expectedOutputTamil: `1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+14
+15
+16
+17
+18
+19
+20`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a C++ program to print the multiplication table of 9 using a for loop, but skip printing 9 × 8 using the continue statement.",
+
+      questionTamil:
+        "For Loop பயன்படுத்தி 9-ன் பெருக்கல் வாய்ப்பாட்டை Print செய்யுங்கள். ஆனால் 9 × 8-ஐ மட்டும் Continue Statement பயன்படுத்தி Skip செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use an if statement with the continue statement.",
+
+      hintTamil:
+        "if Statement மற்றும் continue Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `9 x 1 = 9
+9 x 2 = 18
+9 x 3 = 27
+9 x 4 = 36
+9 x 5 = 45
+9 x 6 = 54
+9 x 7 = 63
+9 x 9 = 81
+9 x 10 = 90`,
+
+      expectedOutputTamil: `9 x 1 = 9
+9 x 2 = 18
+9 x 3 = 27
+9 x 4 = 36
+9 x 5 = 45
+9 x 6 = 54
+9 x 7 = 63
+9 x 9 = 81
+9 x 10 = 90`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
