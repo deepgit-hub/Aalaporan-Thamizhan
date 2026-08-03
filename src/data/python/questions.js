@@ -10319,7 +10319,143 @@ puppy.sound()`,
     },
   ],
 },
+{
+  topicId: 30,
+  title: "Hybrid Inheritance",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to create a class named Person with a method showName() that prints 'Deepak'. Create classes Student and Teacher that inherit from Person. Create a class Leader that inherits from Student. Create an object of Leader and call the showName() method.",
+
+      questionTamil:
+        "'Person' என்ற Class-ஐ உருவாக்கி, அதில் showName() என்ற Method-ஐ உருவாக்குங்கள். பின்னர் Person Class-ஐ Inherit செய்யும் Student மற்றும் Teacher Classes-ஐ உருவாக்கி, Student-ஐ Inherit செய்யும் Leader Class-ஐ உருவாக்குங்கள். Leader Object மூலம் showName() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Combine hierarchical and multilevel inheritance.",
+
+      hintTamil:
+        "Hierarchical மற்றும் Multilevel Inheritance-ஐ இணைத்து பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Deepak`,
+
+      expectedOutputTamil: `Deepak`,
+
+      solution: `class Person:
+    def showName(self):
+        print("Deepak")
+
+class Student(Person):
+    pass
+
+class Teacher(Person):
+    pass
+
+class Leader(Student):
+    pass
+
+leader = Leader()
+
+leader.showName()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to create classes Father and Mother with methods father() and mother(). Create a class Child that inherits from both classes. Create a class GrandChild that inherits from Child. Create an object of GrandChild and call both methods.",
+
+      questionTamil:
+        "'Father' மற்றும் 'Mother' என்ற Classes-ஐ உருவாக்கி, அவற்றில் father() மற்றும் mother() என்ற Methods-ஐ உருவாக்குங்கள். பின்னர் இரண்டு Classes-யையும் Inherit செய்யும் Child Class-ஐ உருவாக்கி, Child-ஐ Inherit செய்யும் GrandChild Class-ஐ உருவாக்குங்கள். GrandChild Object மூலம் இரண்டு Methods-ஐயும் Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Combine multiple and multilevel inheritance.",
+
+      hintTamil:
+        "Multiple மற்றும் Multilevel Inheritance-ஐ இணைத்து பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Father
+Mother`,
+
+      expectedOutputTamil: `Father
+Mother`,
+
+      solution: `class Father:
+    def father(self):
+        print("Father")
+
+class Mother:
+    def mother(self):
+        print("Mother")
+
+class Child(Father, Mother):
+    pass
+
+class GrandChild(Child):
+    pass
+
+grandChild = GrandChild()
+
+grandChild.father()
+grandChild.mother()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to create a class named Vehicle with a method start() that prints 'Vehicle Started'. Create classes Car and Bike that inherit from Vehicle. Create a class SportsCar that inherits from Car. Create an object of SportsCar and call the start() method.",
+
+      questionTamil:
+        "'Vehicle' என்ற Class-ஐ உருவாக்கி, அதில் start() என்ற Method-ஐ உருவாக்குங்கள். பின்னர் Vehicle Class-ஐ Inherit செய்யும் Car மற்றும் Bike Classes-ஐ உருவாக்கி, Car-ஐ Inherit செய்யும் SportsCar Class-ஐ உருவாக்குங்கள். SportsCar Object மூலம் start() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Combine hierarchical and multilevel inheritance.",
+
+      hintTamil:
+        "Hierarchical மற்றும் Multilevel Inheritance-ஐ இணைத்து பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Vehicle Started`,
+
+      expectedOutputTamil: `Vehicle Started`,
+
+      solution: `class Vehicle:
+    def start(self):
+        print("Vehicle Started")
+
+class Car(Vehicle):
+    pass
+
+class Bike(Vehicle):
+    pass
+
+class SportsCar(Car):
+    pass
+
+sportsCar = SportsCar()
+
+sportsCar.start()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
