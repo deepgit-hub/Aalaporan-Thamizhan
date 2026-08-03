@@ -13150,6 +13150,167 @@ int main() {
       locked: false,
       completed: false,
     },
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Animal with a function named breathe() that prints 'Animal is Breathing'. Create a class named Mammal that inherits from Animal. Then create a class named Human that inherits from Mammal and call the inherited function.",
+
+      questionTamil:
+        "Animal என்ற Base Class-ஐ உருவாக்கி, 'Animal is Breathing' என்று Print செய்யும் breathe() Function-ஐ உருவாக்குங்கள். Animal Class-ஐ Inherit செய்யும் Mammal Class-ஐ உருவாக்கி, பின்னர் Mammal Class-ஐ Inherit செய்யும் Human Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create three levels of inheritance: Animal → Mammal → Human.",
+
+      hintTamil:
+        "Animal → Mammal → Human என்ற மூன்று நிலை Inheritance-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Animal is Breathing`,
+
+      expectedOutputTamil: `Animal is Breathing`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Animal {
+
+public:
+    void breathe() {
+        cout << "Animal is Breathing";
+    }
+
+};
+
+class Mammal : public Animal {
+
+};
+
+class Human : public Mammal {
+
+};
+
+int main() {
+
+    Human h;
+
+    h.breathe();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Person with a function named walk() that prints 'Person Walking'. Create a class named Employee that inherits from Person. Then create a class named Manager that inherits from Employee and call the inherited function.",
+
+      questionTamil:
+        "Person என்ற Base Class-ஐ உருவாக்கி, 'Person Walking' என்று Print செய்யும் walk() Function-ஐ உருவாக்குங்கள். Person Class-ஐ Inherit செய்யும் Employee Class-ஐ உருவாக்கி, பின்னர் Employee Class-ஐ Inherit செய்யும் Manager Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create three levels of inheritance: Person → Employee → Manager.",
+
+      hintTamil:
+        "Person → Employee → Manager என்ற மூன்று நிலை Inheritance-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Person Walking`,
+
+      expectedOutputTamil: `Person Walking`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Person {
+
+public:
+    void walk() {
+        cout << "Person Walking";
+    }
+
+};
+
+class Employee : public Person {
+
+};
+
+class Manager : public Employee {
+
+};
+
+int main() {
+
+    Manager m;
+
+    m.walk();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Vehicle with a function named move() that prints 'Vehicle Moving'. Create a class named Car that inherits from Vehicle. Then create a class named SportsCar that inherits from Car and call the inherited function.",
+
+      questionTamil:
+        "Vehicle என்ற Base Class-ஐ உருவாக்கி, 'Vehicle Moving' என்று Print செய்யும் move() Function-ஐ உருவாக்குங்கள். Vehicle Class-ஐ Inherit செய்யும் Car Class-ஐ உருவாக்கி, பின்னர் Car Class-ஐ Inherit செய்யும் SportsCar Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create three levels of inheritance: Vehicle → Car → SportsCar.",
+
+      hintTamil:
+        "Vehicle → Car → SportsCar என்ற மூன்று நிலை Inheritance-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Vehicle Moving`,
+
+      expectedOutputTamil: `Vehicle Moving`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Shape with a function named display() that prints 'This is a Shape'. Create a class named Polygon that inherits from Shape. Then create a class named Triangle that inherits from Polygon and call the inherited function.",
+
+      questionTamil:
+        "Shape என்ற Base Class-ஐ உருவாக்கி, 'This is a Shape' என்று Print செய்யும் display() Function-ஐ உருவாக்குங்கள். Shape Class-ஐ Inherit செய்யும் Polygon Class-ஐ உருவாக்கி, பின்னர் Polygon Class-ஐ Inherit செய்யும் Triangle Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create three levels of inheritance: Shape → Polygon → Triangle.",
+
+      hintTamil:
+        "Shape → Polygon → Triangle என்ற மூன்று நிலை Inheritance-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `This is a Shape`,
+
+      expectedOutputTamil: `This is a Shape`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
