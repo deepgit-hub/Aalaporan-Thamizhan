@@ -11281,7 +11281,162 @@ int main() {
     },
   ],
 },
+{
+  topicId: 25,
+  title: "Single Inheritance",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Animal with a function named sound() that prints 'Animal Sound'. Create a derived class named Dog that inherits from Animal and call the inherited function.",
+
+      questionTamil:
+        "Animal என்ற Base Class-ஐ உருவாக்கி, 'Animal Sound' என்று Print செய்யும் sound() Function-ஐ உருவாக்குங்கள். Animal Class-ஐ Inherit செய்யும் Dog என்ற Derived Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use public inheritance and create an object of the derived class.",
+
+      hintTamil:
+        "public Inheritance-ஐ பயன்படுத்தி Derived Class-ன் Object-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Animal Sound`,
+
+      expectedOutputTamil: `Animal Sound`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Animal {
+
+public:
+    void sound() {
+        cout << "Animal Sound";
+    }
+
+};
+
+class Dog : public Animal {
+
+};
+
+int main() {
+
+    Dog d;
+
+    d.sound();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Vehicle with a function named start() that prints 'Vehicle Started'. Create a derived class named Car and call the inherited function.",
+
+      questionTamil:
+        "Vehicle என்ற Base Class-ஐ உருவாக்கி, 'Vehicle Started' என்று Print செய்யும் start() Function-ஐ உருவாக்குங்கள். Vehicle Class-ஐ Inherit செய்யும் Car என்ற Derived Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a derived class using public inheritance.",
+
+      hintTamil:
+        "public Inheritance பயன்படுத்தி Derived Class-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Vehicle Started`,
+
+      expectedOutputTamil: `Vehicle Started`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Vehicle {
+
+public:
+    void start() {
+        cout << "Vehicle Started";
+    }
+
+};
+
+class Car : public Vehicle {
+
+};
+
+int main() {
+
+    Car c;
+
+    c.start();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Person with a function named displayName() that prints 'John'. Create a derived class named Student and call the inherited function.",
+
+      questionTamil:
+        "Person என்ற Base Class-ஐ உருவாக்கி, 'John' என்று Print செய்யும் displayName() Function-ஐ உருவாக்குங்கள். Person Class-ஐ Inherit செய்யும் Student என்ற Derived Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create an object of the derived class and access the inherited member function.",
+
+      hintTamil:
+        "Derived Class-ன் Object-ஐ உருவாக்கி, Inherited Member Function-ஐ Call செய்யுங்கள்.",
+
+      expectedOutput: `John`,
+
+      expectedOutputTamil: `John`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Person {
+
+public:
+    void displayName() {
+        cout << "John";
+    }
+
+};
+
+class Student : public Person {
+
+};
+
+int main() {
+
+    Student s;
+
+    s.displayName();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+  ],
+},
 ];
 
 export default questions;
