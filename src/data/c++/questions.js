@@ -3078,7 +3078,171 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a C++ program to accept a person's age and whether they have a passport. Print 'Eligible to Travel' if the age is 18 or above and the person has a passport.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு நபரின் வயது மற்றும் அவரிடம் Passport உள்ளதா என்பதை Input ஆக பெற்று, வயது 18 அல்லது அதற்கு மேல் இருந்தும் Passport இருந்தும் 'Eligible to Travel' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use nested if statements. Check the age first, then check the passport.",
+
+      hintTamil:
+        "Nested if Statement-ஐ பயன்படுத்துங்கள். முதலில் வயதை சரிபார்த்து, பின்னர் Passport-ஐ சரிபார்க்குங்கள்.",
+
+      expectedOutput: `Enter age: 21
+Has Passport (1/0): 1
+Eligible to Travel`,
+
+      expectedOutputTamil: `Enter age: 21
+Has Passport (1/0): 1
+Eligible to Travel`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int age;
+    bool hasPassport;
+
+    cout << "Enter age: ";
+    cin >> age;
+
+    cout << "Has Passport (1/0): ";
+    cin >> hasPassport;
+
+    if (age >= 18) {
+        if (hasPassport) {
+            cout << "Eligible to Travel";
+        }
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a C++ program to accept a student's mark and project status. Print 'Certificate Awarded' if the mark is greater than or equal to 50 and the project is completed.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு மாணவரின் மதிப்பெண் மற்றும் Project முடித்துள்ளாரா என்பதை Input ஆக பெற்று, மதிப்பெண் 50 அல்லது அதற்கு மேல் மற்றும் Project முடித்திருந்தால் 'Certificate Awarded' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use nested if statements. Check the mark first, then check the project status.",
+
+      hintTamil:
+        "Nested if Statement-ஐ பயன்படுத்துங்கள். முதலில் Mark-ஐ சரிபார்த்து, பின்னர் Project Status-ஐ சரிபார்க்குங்கள்.",
+
+      expectedOutput: `Enter mark: 85
+Project Completed (1/0): 1
+Certificate Awarded`,
+
+      expectedOutputTamil: `Enter mark: 85
+Project Completed (1/0): 1
+Certificate Awarded`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int mark;
+    bool projectCompleted;
+
+    cout << "Enter mark: ";
+    cin >> mark;
+
+    cout << "Project Completed (1/0): ";
+    cin >> projectCompleted;
+
+    if (mark >= 50) {
+        if (projectCompleted) {
+            cout << "Certificate Awarded";
+        }
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a C++ program to accept a username and password. Print 'Login Successful' only if the username is 'admin' and the password is '1234'.",
+
+      questionTamil:
+        "பயனரிடமிருந்து Username மற்றும் Password-ஐ Input ஆக பெற்று, Username 'admin' மற்றும் Password '1234' ஆக இருந்தால் மட்டும் 'Login Successful' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use nested if statements to validate the username and password.",
+
+      hintTamil:
+        "Username மற்றும் Password-ஐ Nested if Statement மூலம் சரிபார்க்குங்கள்.",
+
+      expectedOutput: `Enter username: admin
+Enter password: 1234
+Login Successful`,
+
+      expectedOutputTamil: `Enter username: admin
+Enter password: 1234
+Login Successful`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a C++ program to accept a person's age and whether they have a driving license. Print 'Can Drive' if the age is 18 or above and the person has a driving license.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு நபரின் வயது மற்றும் அவரிடம் Driving License உள்ளதா என்பதை Input ஆக பெற்று, வயது 18 அல்லது அதற்கு மேல் மற்றும் Driving License இருந்தால் 'Can Drive' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use nested if statements. Check the age first, then check the driving license.",
+
+      hintTamil:
+        "Nested if Statement-ஐ பயன்படுத்துங்கள். முதலில் வயதை சரிபார்த்து, பின்னர் Driving License-ஐ சரிபார்க்குங்கள்.",
+
+      expectedOutput: `Enter age: 20
+Has Driving License (1/0): 1
+Can Drive`,
+
+      expectedOutputTamil: `Enter age: 20
+Has Driving License (1/0): 1
+Can Drive`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
