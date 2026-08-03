@@ -1191,7 +1191,7 @@ Day 5 : Deepak practiced C++.`,
 {
   id: 14,
 
-  title: "Nested Loops",
+  title: "Nested Ford Loops",
 
   englishDefinition:
     "A Nested Loop is a loop inside another loop. The inner loop executes completely for every single iteration of the outer loop. Nested loops are commonly used for pattern printing, tables, matrices, and multidimensional data.",
