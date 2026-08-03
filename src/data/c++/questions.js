@@ -9929,6 +9929,161 @@ Programming`,
     },
   ],
 },
+{
+  topicId: 22,
+  title: "Classes",
+
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to create a class named Student with a public data member called name. Assign the value 'Deepak' and display it.",
+
+      questionTamil:
+        "Student என்ற Class-ஐ உருவாக்கி, அதில் name என்ற Public Data Member-ஐ உருவாக்குங்கள். அதற்கு 'Deepak' என்ற மதிப்பை Assign செய்து Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a class, create an object, assign the value, and print it.",
+
+      hintTamil:
+        "Class-ஐ உருவாக்கி, Object-ஐ உருவாக்கி, Value Assign செய்து Print செய்யுங்கள்.",
+
+      expectedOutput: `Deepak`,
+
+      expectedOutputTamil: `Deepak`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Student {
+
+public:
+    string name;
+
+};
+
+int main() {
+
+    Student s;
+
+    s.name = "Deepak";
+
+    cout << s.name;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to create a class named Employee with public data members id and salary. Assign values and display them.",
+
+      questionTamil:
+        "Employee என்ற Class-ஐ உருவாக்கி, id மற்றும் salary என்ற Public Data Members-ஐ உருவாக்குங்கள். அவற்றிற்கு மதிப்புகளை Assign செய்து Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create an object and access the data members using the dot operator.",
+
+      hintTamil:
+        "Object-ஐ உருவாக்கி, Dot Operator மூலம் Data Members-ஐ அணுகுங்கள்.",
+
+      expectedOutput: `101
+25000`,
+
+      expectedOutputTamil: `101
+25000`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Employee {
+
+public:
+    int id;
+    int salary;
+
+};
+
+int main() {
+
+    Employee e;
+
+    e.id = 101;
+    e.salary = 25000;
+
+    cout << e.id << endl;
+    cout << e.salary;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to create a class named Car with public data members brand and model. Assign values and display them.",
+
+      questionTamil:
+        "Car என்ற Class-ஐ உருவாக்கி, brand மற்றும் model என்ற Public Data Members-ஐ உருவாக்குங்கள். அவற்றிற்கு மதிப்புகளை Assign செய்து Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create an object of the class and access its members using the dot operator.",
+
+      hintTamil:
+        "Class-ன் Object-ஐ உருவாக்கி, Dot Operator மூலம் Members-ஐ அணுகுங்கள்.",
+
+      expectedOutput: `Toyota
+Innova`,
+
+      expectedOutputTamil: `Toyota
+Innova`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Car {
+
+public:
+    string brand;
+    string model;
+
+};
+
+int main() {
+
+    Car c;
+
+    c.brand = "Toyota";
+    c.model = "Innova";
+
+    cout << c.brand << endl;
+    cout << c.model;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
