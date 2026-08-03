@@ -10453,7 +10453,138 @@ sportsCar.start()`,
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to create a class named Person with a method showName() that prints 'Kathir'. Create classes Student and Teacher that inherit from Person. Create a class Leader that inherits from Student. Create an object of Leader and call the showName() method.",
+
+      questionTamil:
+        "'Person' என்ற Class-ஐ உருவாக்கி, அதில் showName() என்ற Method-ஐ உருவாக்குங்கள். அது 'Kathir' என்பதை Print செய்ய வேண்டும். பின்னர் Person Class-ஐ Inherit செய்யும் Student மற்றும் Teacher Classes-ஐ உருவாக்கி, Student-ஐ Inherit செய்யும் Leader Class-ஐ உருவாக்குங்கள். Leader Object மூலம் showName() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Combine hierarchical and multilevel inheritance.",
+
+      hintTamil:
+        "Hierarchical மற்றும் Multilevel Inheritance-ஐ இணைத்து பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Kathir`,
+
+      expectedOutputTamil: `Kathir`,
+
+      solution: `class Person:
+    def showName(self):
+        print("Kathir")
+
+class Student(Person):
+    pass
+
+class Teacher(Person):
+    pass
+
+class Leader(Student):
+    pass
+
+leader = Leader()
+
+leader.showName()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to create classes College and Sports with methods collegeName() and play(). Create a class Student that inherits from both classes. Create a class Leader that inherits from Student. Create an object of Leader and call both methods.",
+
+      questionTamil:
+        "'College' மற்றும் 'Sports' என்ற Classes-ஐ உருவாக்கி, அவற்றில் collegeName() மற்றும் play() என்ற Methods-ஐ உருவாக்குங்கள். பின்னர் இரண்டு Classes-யையும் Inherit செய்யும் Student Class-ஐ உருவாக்கி, Student-ஐ Inherit செய்யும் Leader Class-ஐ உருவாக்குங்கள். Leader Object மூலம் இரண்டு Methods-ஐயும் Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Combine multiple and multilevel inheritance.",
+
+      hintTamil:
+        "Multiple மற்றும் Multilevel Inheritance-ஐ இணைத்து பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Don Bosco College
+Playing`,
+
+      expectedOutputTamil: `Don Bosco College
+Playing`,
+
+      solution: `class College:
+    def collegeName(self):
+        print("Don Bosco College")
+
+class Sports:
+    def play(self):
+        print("Playing")
+
+class Student(College, Sports):
+    pass
+
+class Leader(Student):
+    pass
+
+leader = Leader()
+
+leader.collegeName()
+leader.play()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to create a class named Vehicle with a method start() that prints 'Vehicle Started'. Create classes Car and Bike that inherit from Vehicle. Create a class SportsCar that inherits from Car. Create an object of SportsCar and call the start() method twice.",
+
+      questionTamil:
+        "'Vehicle' என்ற Class-ஐ உருவாக்கி, அதில் start() என்ற Method-ஐ உருவாக்குங்கள். பின்னர் Vehicle Class-ஐ Inherit செய்யும் Car மற்றும் Bike Classes-ஐ உருவாக்கி, Car-ஐ Inherit செய்யும் SportsCar Class-ஐ உருவாக்குங்கள். SportsCar Object மூலம் start() Method-ஐ இரண்டு முறை Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use hybrid inheritance and call the inherited method twice.",
+
+      hintTamil:
+        "Hybrid Inheritance பயன்படுத்தி Inherited Method-ஐ இரண்டு முறை Call செய்யுங்கள்.",
+
+      expectedOutput: `Vehicle Started
+Vehicle Started`,
+
+      expectedOutputTamil: `Vehicle Started
+Vehicle Started`,
+
+      solution: `class Vehicle:
+    def start(self):
+        print("Vehicle Started")
+
+class Car(Vehicle):
+    pass
+
+class Bike(Vehicle):
+    pass
+
+class SportsCar(Car):
+    pass
+
+sportsCar = SportsCar()
+
+sportsCar.start()
+sportsCar.start()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
