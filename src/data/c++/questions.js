@@ -10699,7 +10699,168 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a C++ program to create a class named Laptop and create two objects named l1 and l2. Assign different brands and RAM sizes, then display them.",
+
+      questionTamil:
+        "Laptop என்ற Class-ஐ உருவாக்கி, l1 மற்றும் l2 என்ற இரண்டு Objects-ஐ உருவாக்குங்கள். வெவ்வேறு Brand மற்றும் RAM அளவுகளை Assign செய்து Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create two objects and assign different values using the dot operator.",
+
+      hintTamil:
+        "இரண்டு Objects-ஐ உருவாக்கி, Dot Operator மூலம் வெவ்வேறு Values-ஐ Assign செய்யுங்கள்.",
+
+      expectedOutput: `Dell 16 GB
+HP 8 GB`,
+
+      expectedOutputTamil: `Dell 16 GB
+HP 8 GB`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Laptop {
+
+public:
+    string brand;
+    string ram;
+
+};
+
+int main() {
+
+    Laptop l1, l2;
+
+    l1.brand = "Dell";
+    l1.ram = "16 GB";
+
+    l2.brand = "HP";
+    l2.ram = "8 GB";
+
+    cout << l1.brand << " " << l1.ram << endl;
+    cout << l2.brand << " " << l2.ram;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a C++ program to create a class named Movie and create an object named movie1. Assign values to title and year, then display them.",
+
+      questionTamil:
+        "Movie என்ற Class-ஐ உருவாக்கி, movie1 என்ற Object-ஐ உருவாக்குங்கள். title மற்றும் year-க்கு மதிப்புகளை Assign செய்து Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create an object of the Movie class and access its members using the dot operator.",
+
+      hintTamil:
+        "Movie Class-ன் Object-ஐ உருவாக்கி, Dot Operator மூலம் அதன் Members-ஐ அணுகுங்கள்.",
+
+      expectedOutput: `Leo
+2023`,
+
+      expectedOutputTamil: `Leo
+2023`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Movie {
+
+public:
+    string title;
+    int year;
+
+};
+
+int main() {
+
+    Movie movie1;
+
+    movie1.title = "Leo";
+    movie1.year = 2023;
+
+    cout << movie1.title << endl;
+    cout << movie1.year;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a C++ program to create a class named Student and create an object named student1. Assign values to name and mark, then display them.",
+
+      questionTamil:
+        "Student என்ற Class-ஐ உருவாக்கி, student1 என்ற Object-ஐ உருவாக்குங்கள். name மற்றும் mark-க்கு மதிப்புகளை Assign செய்து Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create an object and use the dot operator to assign and display values.",
+
+      hintTamil:
+        "Object-ஐ உருவாக்கி, Dot Operator மூலம் Values-ஐ Assign செய்து Print செய்யுங்கள்.",
+
+      expectedOutput: `Ravi
+88`,
+
+      expectedOutputTamil: `Ravi
+88`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a C++ program to create a class named Employee and create two objects named e1 and e2. Assign different IDs and salaries, then display them.",
+
+      questionTamil:
+        "Employee என்ற Class-ஐ உருவாக்கி, e1 மற்றும் e2 என்ற இரண்டு Objects-ஐ உருவாக்குங்கள். வெவ்வேறு ID மற்றும் Salary-களை Assign செய்து Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create two objects and assign different values to each object.",
+
+      hintTamil:
+        "இரண்டு Objects-ஐ உருவாக்கி, ஒவ்வொரு Object-க்கும் வெவ்வேறு Values-ஐ Assign செய்யுங்கள்.",
+
+      expectedOutput: `101 25000
+102 30000`,
+
+      expectedOutputTamil: `101 25000
+102 30000`,
+
+      solution: ``,
+
+      challenge: true,
+     locked: false,
+      completed: false,
+    },
   ],
 },
 ];
