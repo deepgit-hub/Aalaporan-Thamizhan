@@ -3643,6 +3643,191 @@ int main() {
       locked: false,
       completed: false,
     },
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a C++ program to accept a number between 1 and 4 from the user and display the corresponding geometric shape using a switch statement.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 1 முதல் 4 வரை ஒரு எண்ணை Input ஆக பெற்று, Switch Statement பயன்படுத்தி அதற்கான வடிவத்தின் (Shape) பெயரை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use switch with four cases.",
+
+      hintTamil:
+        "நான்கு Case-களுடன் Switch Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter choice: 2
+Square`,
+
+      expectedOutputTamil: `Enter choice: 2
+Square`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int choice;
+
+    cout << "Enter choice: ";
+    cin >> choice;
+
+    switch(choice)
+    {
+        case 1:
+            cout << "Circle";
+            break;
+
+        case 2:
+            cout << "Square";
+            break;
+
+        case 3:
+            cout << "Triangle";
+            break;
+
+        case 4:
+            cout << "Rectangle";
+            break;
+
+        default:
+            cout << "Invalid Choice";
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a C++ program to accept a number between 1 and 5 from the user and display the corresponding color using a switch statement.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 1 முதல் 5 வரை ஒரு எண்ணை Input ஆக பெற்று, Switch Statement பயன்படுத்தி அதற்கான நிறத்தின் (Color) பெயரை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create five cases using a switch statement.",
+
+      hintTamil:
+        "Switch Statement-ல் ஐந்து Case-களை உருவாக்குங்கள்.",
+
+      expectedOutput: `Enter choice: 4
+Yellow`,
+
+      expectedOutputTamil: `Enter choice: 4
+Yellow`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int choice;
+
+    cout << "Enter choice: ";
+    cin >> choice;
+
+    switch(choice)
+    {
+        case 1:
+            cout << "Red";
+            break;
+
+        case 2:
+            cout << "Green";
+            break;
+
+        case 3:
+            cout << "Blue";
+            break;
+
+        case 4:
+            cout << "Yellow";
+            break;
+
+        case 5:
+            cout << "Black";
+            break;
+
+        default:
+            cout << "Invalid Choice";
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a C++ program to accept a number between 1 and 7 from the user and display the corresponding day of the week using a switch statement.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 1 முதல் 7 வரை ஒரு எண்ணை Input ஆக பெற்று, Switch Statement பயன்படுத்தி அதற்கான வார நாளை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a switch statement with cases 1 to 7.",
+
+      hintTamil:
+        "1 முதல் 7 வரை உள்ள Case-களுடன் Switch Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter day number: 1
+Monday`,
+
+      expectedOutputTamil: `Enter day number: 1
+Monday`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a C++ program to accept a number between 1 and 3 from the user and display the corresponding programming language using a switch statement.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 1 முதல் 3 வரை ஒரு எண்ணை Input ஆக பெற்று, Switch Statement பயன்படுத்தி அதற்கான Programming Language-ஐ Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use switch with three cases.",
+
+      hintTamil:
+        "மூன்று Case-களுடன் Switch Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter choice: 3
+Python`,
+
+      expectedOutputTamil: `Enter choice: 3
+Python`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
