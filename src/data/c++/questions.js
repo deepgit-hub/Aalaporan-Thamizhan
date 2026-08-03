@@ -7102,6 +7102,188 @@ int main() {
     },
   ],
 },
+{
+  topicId: 17,
+  title: "Arrays",
+
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to declare an integer array of size 5, initialize it with values, and print all the elements.",
+
+      questionTamil:
+        "5 அளவு கொண்ட ஒரு Integer Array-ஐ உருவாக்கி, அதில் மதிப்புகளை Initialize செய்து, அனைத்து Elements-ஐயும் Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Declare an array with 5 values and print each element using its index.",
+
+      hintTamil:
+        "5 மதிப்புகளுடன் Array-ஐ உருவாக்கி, ஒவ்வொரு Element-ஐயும் அதன் Index மூலம் Print செய்யுங்கள்.",
+
+      expectedOutput: `10
+20
+30
+40
+50`,
+
+      expectedOutputTamil: `10
+20
+30
+40
+50`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int numbers[5] = {10, 20, 30, 40, 50};
+
+    for (int i = 0; i < 5; i++) {
+        cout << numbers[i] << endl;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to accept 5 integers from the user and store them in an array. Then print all the elements.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 5 Integer எண்களை Input ஆக பெற்று Array-ல் சேமித்து, பின்னர் அனைத்து Elements-ஐயும் Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use one loop for input and another loop for output.",
+
+      hintTamil:
+        "Input பெற ஒரு Loop மற்றும் Print செய்ய மற்றொரு Loop-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter 5 numbers:
+5
+10
+15
+20
+25
+
+5
+10
+15
+20
+25`,
+
+      expectedOutputTamil: `Enter 5 numbers:
+5
+10
+15
+20
+25
+
+5
+10
+15
+20
+25`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int numbers[5];
+
+    cout << "Enter 5 numbers:" << endl;
+
+    for (int i = 0; i < 5; i++) {
+        cin >> numbers[i];
+    }
+
+    for (int i = 0; i < 5; i++) {
+        cout << numbers[i] << endl;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to accept 5 integers from the user and print their sum using an array.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 5 Integer எண்களை Input ஆக பெற்று, Array பயன்படுத்தி அவற்றின் கூட்டுத்தொகையை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Store the numbers in an array and use a loop to calculate the sum.",
+
+      hintTamil:
+        "எண்களை Array-ல் சேமித்து, Loop பயன்படுத்தி கூட்டுத்தொகையை கணக்கிடுங்கள்.",
+
+      expectedOutput: `Enter 5 numbers:
+10
+20
+30
+40
+50
+
+Sum = 150`,
+
+      expectedOutputTamil: `Enter 5 numbers:
+10
+20
+30
+40
+50
+
+Sum = 150`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int numbers[5];
+    int sum = 0;
+
+    cout << "Enter 5 numbers:" << endl;
+
+    for (int i = 0; i < 5; i++) {
+        cin >> numbers[i];
+    }
+
+    for (int i = 0; i < 5; i++) {
+        sum += numbers[i];
+    }
+
+    cout << "Sum = " << sum;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+  ],
+},
 
 ];
 
