@@ -2606,9 +2606,165 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a C++ program to accept two integers from the user and print 'First Number is Greater' if the first number is greater than the second number, otherwise print 'Second Number is Greater or Equal'.",
+
+      questionTamil:
+        "பயனரிடமிருந்து இரண்டு Integer எண்களை Input ஆக பெற்று, முதல் எண் இரண்டாவது எண்ணை விட பெரியதாக இருந்தால் 'First Number is Greater', இல்லையெனில் 'Second Number is Greater or Equal' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the > operator with an if-else statement.",
+
+      hintTamil:
+        "> Operator மற்றும் if-else Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter first number: 15
+Enter second number: 30
+Second Number is Greater or Equal`,
+
+      expectedOutputTamil: `Enter first number: 15
+Enter second number: 30
+Second Number is Greater or Equal`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int num1, num2;
+
+    cout << "Enter first number: ";
+    cin >> num1;
+
+    cout << "Enter second number: ";
+    cin >> num2;
+
+    if (num1 > num2) {
+        cout << "First Number is Greater";
+    }
+    else {
+        cout << "Second Number is Greater or Equal";
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a C++ program to accept a number from the user and print 'Divisible by 5' if the number is divisible by 5, otherwise print 'Not Divisible by 5'.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, அது 5-ஆல் வகுபட்டால் 'Divisible by 5', இல்லையெனில் 'Not Divisible by 5' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the % operator with an if-else statement.",
+
+      hintTamil:
+        "% Operator மற்றும் if-else Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: 17
+Not Divisible by 5`,
+
+      expectedOutputTamil: `Enter a number: 17
+Not Divisible by 5`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int number;
+
+    cout << "Enter a number: ";
+    cin >> number;
+
+    if (number % 5 == 0) {
+        cout << "Divisible by 5";
+    }
+    else {
+        cout << "Not Divisible by 5";
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a C++ program to accept a number from the user and print 'Even Number' if it is even, otherwise print 'Odd Number'.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, அது Even ஆக இருந்தால் 'Even Number', இல்லையெனில் 'Odd Number' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the % operator with an if-else statement.",
+
+      hintTamil:
+        "% Operator மற்றும் if-else Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: 11
+Odd Number`,
+
+      expectedOutputTamil: `Enter a number: 11
+Odd Number`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a C++ program to accept a student's mark from the user and print 'Pass' if the mark is greater than or equal to 35, otherwise print 'Fail'.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு மாணவரின் மதிப்பெண்ணை Input ஆக பெற்று, அது 35 அல்லது அதற்கு மேல் இருந்தால் 'Pass', இல்லையெனில் 'Fail' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the >= operator with an if-else statement.",
+
+      hintTamil:
+        ">= Operator மற்றும் if-else Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter mark: 25
+Fail`,
+
+      expectedOutputTamil: `Enter mark: 25
+Fail`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
+
 ];
 
 export default questions;
