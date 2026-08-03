@@ -8756,9 +8756,254 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a C++ program to accept 5 integers from the user and reverse the array.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 5 Integer எண்களை Input ஆக பெற்று, Array-ஐ தலைகீழாக (Reverse) மாற்றி Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Swap the first element with the last element, the second with the second last, and so on.",
+
+      hintTamil:
+        "முதல் Element-ஐ கடைசி Element-உடனும், இரண்டாவது Element-ஐ கடைசிக்கு முந்தைய Element-உடனும் மாற்றுங்கள்.",
+
+      expectedOutput: `Enter 5 elements:
+10
+20
+30
+40
+50
+
+50
+40
+30
+20
+10`,
+
+      expectedOutputTamil: `Enter 5 elements:
+10
+20
+30
+40
+50
+
+50
+40
+30
+20
+10`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int arr[5], temp;
+
+    cout << "Enter 5 elements:" << endl;
+
+    for(int i = 0; i < 5; i++) {
+        cin >> arr[i];
+    }
+
+    for(int i = 0; i < 5 / 2; i++) {
+        temp = arr[i];
+        arr[i] = arr[4 - i];
+        arr[4 - i] = temp;
+    }
+
+    for(int i = 0; i < 5; i++) {
+        cout << arr[i] << endl;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a C++ program to accept 5 integers from the user and sort the array in ascending order.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 5 Integer எண்களை Input ஆக பெற்று, Array-ஐ Ascending Order-ல் Sort செய்து Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use nested loops and swap the elements whenever required.",
+
+      hintTamil:
+        "Nested Loops பயன்படுத்தி தேவையான இடங்களில் Elements-ஐ Swap செய்யுங்கள்.",
+
+      expectedOutput: `Enter 5 elements:
+40
+10
+30
+50
+20
+
+10
+20
+30
+40
+50`,
+
+      expectedOutputTamil: `Enter 5 elements:
+40
+10
+30
+50
+20
+
+10
+20
+30
+40
+50`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int arr[5], temp;
+
+    cout << "Enter 5 elements:" << endl;
+
+    for(int i = 0; i < 5; i++) {
+        cin >> arr[i];
+    }
+
+    for(int i = 0; i < 4; i++) {
+        for(int j = i + 1; j < 5; j++) {
+            if(arr[i] > arr[j]) {
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+
+    cout << "Sorted Array:" << endl;
+
+    for(int i = 0; i < 5; i++) {
+        cout << arr[i] << endl;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a C++ program to accept 5 integers from the user and search for a given element in the array. Print 'Element Found' if it exists; otherwise print 'Element Not Found'.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 5 Integer எண்களை Input ஆக பெற்று, ஒரு குறிப்பிட்ட Element-ஐ Array-ல் தேடுங்கள். அது இருந்தால் 'Element Found', இல்லையெனில் 'Element Not Found' என்று Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a loop to compare each array element with the search value.",
+
+      hintTamil:
+        "Search செய்ய வேண்டிய எண்ணை ஒவ்வொரு Array Element-உடனும் Loop மூலம் ஒப்பிடுங்கள்.",
+
+      expectedOutput: `Enter 5 elements:
+10
+20
+30
+40
+50
+
+Enter element to search: 40
+
+Element Found`,
+
+      expectedOutputTamil: `Enter 5 elements:
+10
+20
+30
+40
+50
+
+Enter element to search: 40
+
+Element Found`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a C++ program to accept 5 integers from the user and sort the array in descending order.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 5 Integer எண்களை Input ஆக பெற்று, Array-ஐ Descending Order-ல் Sort செய்து Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use nested loops and swap elements whenever the first element is smaller than the second.",
+
+      hintTamil:
+        "Nested Loops பயன்படுத்தி, முதல் Element சிறியதாக இருந்தால் Swap செய்யுங்கள்.",
+
+      expectedOutput: `Enter 5 elements:
+40
+10
+30
+50
+20
+
+50
+40
+30
+20
+10`,
+
+      expectedOutputTamil: `Enter 5 elements:
+40
+10
+30
+50
+20
+
+50
+40
+30
+20
+10`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
+
 ];
 
 export default questions;
