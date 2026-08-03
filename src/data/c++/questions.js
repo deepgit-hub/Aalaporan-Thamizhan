@@ -9499,6 +9499,151 @@ int main() {
     },
   ],
 },
+{
+  topicId: 21,
+  title: "Function Overloading",
+
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to create two functions named display(). One function prints 'Hello' and another function prints an integer value. Call both functions from main().",
+
+      questionTamil:
+        "display() என்ற பெயரில் இரண்டு Functions-ஐ உருவாக்குங்கள். ஒரு Function 'Hello' என்று Print செய்ய வேண்டும். மற்றொரு Function ஒரு Integer Value-ஐ Print செய்ய வேண்டும். இரண்டு Functions-ஐயும் main()-லிருந்து Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create two display() functions with different parameter lists.",
+
+      hintTamil:
+        "வேறுபட்ட Parameters கொண்ட இரண்டு display() Functions-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Hello
+100`,
+
+      expectedOutputTamil: `Hello
+100`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+void display() {
+    cout << "Hello" << endl;
+}
+
+void display(int num) {
+    cout << num;
+}
+
+int main() {
+
+    display();
+    display(100);
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to overload a function named add(). One function adds two integers and another function adds three integers.",
+
+      questionTamil:
+        "add() என்ற Function-ஐ Overload செய்யுங்கள். ஒரு Function இரண்டு Integer எண்களை கூட்ட வேண்டும். மற்றொரு Function மூன்று Integer எண்களை கூட்ட வேண்டும்.",
+
+      hintEnglish:
+        "Create two add() functions with different numbers of parameters.",
+
+      hintTamil:
+        "வேறுபட்ட எண்ணிக்கையிலான Parameters கொண்ட இரண்டு add() Functions-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `30
+60`,
+
+      expectedOutputTamil: `30
+60`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+void add(int a, int b) {
+    cout << a + b << endl;
+}
+
+void add(int a, int b, int c) {
+    cout << a + b + c;
+}
+
+int main() {
+
+    add(10, 20);
+    add(10, 20, 30);
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to overload a function named printValue(). One function prints an integer value and another function prints a float value.",
+
+      questionTamil:
+        "printValue() என்ற Function-ஐ Overload செய்யுங்கள். ஒரு Function Integer Value-ஐ Print செய்ய வேண்டும். மற்றொரு Function Float Value-ஐ Print செய்ய வேண்டும்.",
+
+      hintEnglish:
+        "Use different parameter data types.",
+
+      hintTamil:
+        "வேறுபட்ட Data Types கொண்ட Parameters-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `50
+12.5`,
+
+      expectedOutputTamil: `50
+12.5`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+void printValue(int num) {
+    cout << num << endl;
+}
+
+void printValue(float num) {
+    cout << num;
+}
+
+int main() {
+
+    printValue(50);
+    printValue(12.5f);
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
