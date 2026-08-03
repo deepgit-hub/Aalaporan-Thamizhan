@@ -8178,6 +8178,114 @@ obj2.add()`,
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to create a class named Student with a method displayName() that prints 'Deepak'. Create two objects and call the method using both objects.",
+
+      questionTamil:
+        "'Student' என்ற Class-ஐ உருவாக்கி, அதில் displayName() என்ற Method-ஐ உருவாக்குங்கள். இரண்டு Objects-ஐ உருவாக்கி, இரண்டிலும் displayName() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create two objects from the same class and call the method.",
+
+      hintTamil:
+        "ஒரே Class-இல் இருந்து இரண்டு Objects-ஐ உருவாக்கி Method-ஐ Call செய்யுங்கள்.",
+
+      expectedOutput: `Deepak
+Deepak`,
+
+      expectedOutputTamil: `Deepak
+Deepak`,
+
+      solution: `class Student:
+    def displayName(self):
+        print("Deepak")
+
+student1 = Student()
+student2 = Student()
+
+student1.displayName()
+student2.displayName()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to create a class named College with a method showCollege() that prints 'Don Bosco College'. Create an object and call the method twice.",
+
+      questionTamil:
+        "'College' என்ற Class-ஐ உருவாக்கி, அதில் showCollege() என்ற Method-ஐ உருவாக்குங்கள். ஒரு Object-ஐ உருவாக்கி அந்த Method-ஐ இரண்டு முறை Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Call the same method twice using the same object.",
+
+      hintTamil:
+        "ஒரே Object பயன்படுத்தி Method-ஐ இரண்டு முறை Call செய்யுங்கள்.",
+
+      expectedOutput: `Don Bosco College
+Don Bosco College`,
+
+      expectedOutputTamil: `Don Bosco College
+Don Bosco College`,
+
+      solution: `class College:
+    def showCollege(self):
+        print("Don Bosco College")
+
+college = College()
+
+college.showCollege()
+college.showCollege()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to create a class named Square with a method findSquare() that accepts a number from the user and prints its square. Create an object and call the method.",
+
+      questionTamil:
+        "'Square' என்ற Class-ஐ உருவாக்கி, அதில் findSquare() என்ற Method-ஐ உருவாக்குங்கள். பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று அதன் Square-ஐ Print செய்ய வேண்டும். Object-ஐ உருவாக்கி அந்த Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input(), int(), and call the method using the object.",
+
+      hintTamil:
+        "input(), int() பயன்படுத்தி Object மூலம் Method-ஐ Call செய்யுங்கள்.",
+
+      expectedOutput: `Enter a number: 6
+36`,
+
+      expectedOutputTamil: `Enter a number: 6
+36`,
+
+      solution: `class Square:
+    def findSquare(self):
+        number = int(input("Enter a number: "))
+        print(number * number)
+
+square = Square()
+
+square.findSquare()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
