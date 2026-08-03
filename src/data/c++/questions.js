@@ -10394,7 +10394,160 @@ Creta`,
     },
   ],
 },
+{
+  topicId: 23,
+  title: "Objects",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to create a class named Student and create an object named s1. Assign the name 'Deepak' and display it.",
+
+      questionTamil:
+        "Student என்ற Class-ஐ உருவாக்கி, s1 என்ற Object-ஐ உருவாக்குங்கள். அதற்கு 'Deepak' என்ற பெயரை Assign செய்து Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a class, create an object, assign the value using the object, and display it.",
+
+      hintTamil:
+        "Class-ஐ உருவாக்கி, Object-ஐ உருவாக்கி, Object மூலம் Value Assign செய்து Print செய்யுங்கள்.",
+
+      expectedOutput: `Deepak`,
+
+      expectedOutputTamil: `Deepak`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Student {
+
+public:
+    string name;
+
+};
+
+int main() {
+
+    Student s1;
+
+    s1.name = "Deepak";
+
+    cout << s1.name;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to create a class named Employee and create an object named emp. Assign values to id and salary, then display them.",
+
+      questionTamil:
+        "Employee என்ற Class-ஐ உருவாக்கி, emp என்ற Object-ஐ உருவாக்குங்கள். id மற்றும் salary-க்கு மதிப்புகளை Assign செய்து Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create an object and access the data members using the dot operator.",
+
+      hintTamil:
+        "Object-ஐ உருவாக்கி, Dot Operator மூலம் Data Members-ஐ அணுகுங்கள்.",
+
+      expectedOutput: `101
+30000`,
+
+      expectedOutputTamil: `101
+30000`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Employee {
+
+public:
+    int id;
+    int salary;
+
+};
+
+int main() {
+
+    Employee emp;
+
+    emp.id = 101;
+    emp.salary = 30000;
+
+    cout << emp.id << endl;
+    cout << emp.salary;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to create a class named Car and create two objects named car1 and car2. Assign different brands and display them.",
+
+      questionTamil:
+        "Car என்ற Class-ஐ உருவாக்கி, car1 மற்றும் car2 என்ற இரண்டு Objects-ஐ உருவாக்குங்கள். வெவ்வேறு Brand-களை Assign செய்து Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create two objects from the same class and assign different values.",
+
+      hintTamil:
+        "ஒரே Class-ல் இருந்து இரண்டு Objects-ஐ உருவாக்கி, வெவ்வேறு Values-ஐ Assign செய்யுங்கள்.",
+
+      expectedOutput: `Toyota
+Honda`,
+
+      expectedOutputTamil: `Toyota
+Honda`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Car {
+
+public:
+    string brand;
+
+};
+
+int main() {
+
+    Car car1, car2;
+
+    car1.brand = "Toyota";
+    car2.brand = "Honda";
+
+    cout << car1.brand << endl;
+    cout << car2.brand;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
