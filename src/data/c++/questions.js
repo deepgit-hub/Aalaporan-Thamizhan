@@ -6658,7 +6658,212 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to print numbers from 1 to 20 using a for loop, but skip printing the number 11 using the continue statement.",
+
+      questionTamil:
+        "For Loop பயன்படுத்தி 1 முதல் 20 வரை உள்ள எண்களை Print செய்யுங்கள். ஆனால் 11 என்ற எண்ணை மட்டும் Continue Statement பயன்படுத்தி Skip செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use an if statement to check if the number is 11, then use continue.",
+
+      hintTamil:
+        "எண் 11 ஆக உள்ளதா என்பதை if Statement மூலம் சரிபார்த்து continue-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+12
+13
+14
+15
+16
+17
+18
+19
+20`,
+
+      expectedOutputTamil: `1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+12
+13
+14
+15
+16
+17
+18
+19
+20`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    for (int i = 1; i <= 20; i++) {
+
+        if (i == 11) {
+            continue;
+        }
+
+        cout << i << endl;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to print the multiplication table of 6 using a while loop, but skip printing 6 × 5 using the continue statement.",
+
+      questionTamil:
+        "While Loop பயன்படுத்தி 6-ன் பெருக்கல் வாய்ப்பாட்டை Print செய்யுங்கள். ஆனால் 6 × 5-ஐ மட்டும் Continue Statement பயன்படுத்தி Skip செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Increment the variable before using continue to avoid an infinite loop.",
+
+      hintTamil:
+        "Infinite Loop வராமல் இருக்க continue பயன்படுத்தும் முன் Variable-ஐ Increment செய்யுங்கள்.",
+
+      expectedOutput: `6 x 1 = 6
+6 x 2 = 12
+6 x 3 = 18
+6 x 4 = 24
+6 x 6 = 36
+6 x 7 = 42
+6 x 8 = 48
+6 x 9 = 54
+6 x 10 = 60`,
+
+      expectedOutputTamil: `6 x 1 = 6
+6 x 2 = 12
+6 x 3 = 18
+6 x 4 = 24
+6 x 6 = 36
+6 x 7 = 42
+6 x 8 = 48
+6 x 9 = 54
+6 x 10 = 60`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int i = 1;
+
+    while (i <= 10) {
+
+        if (i == 5) {
+            i++;
+            continue;
+        }
+
+        cout << "6 x " << i << " = " << 6 * i << endl;
+        i++;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to print numbers from 1 to 12 using a do while loop, but skip printing the number 7 using the continue statement.",
+
+      questionTamil:
+        "Do While Loop பயன்படுத்தி 1 முதல் 12 வரை உள்ள எண்களை Print செய்யுங்கள். ஆனால் 7 என்ற எண்ணை மட்டும் Continue Statement பயன்படுத்தி Skip செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Increment the variable before using continue.",
+
+      hintTamil:
+        "continue பயன்படுத்தும் முன் Variable-ஐ Increment செய்யுங்கள்.",
+
+      expectedOutput: `1
+2
+3
+4
+5
+6
+8
+9
+10
+11
+12`,
+
+      expectedOutputTamil: `1
+2
+3
+4
+5
+6
+8
+9
+10
+11
+12`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int i = 1;
+
+    do {
+
+        if (i == 7) {
+            i++;
+            continue;
+        }
+
+        cout << i << endl;
+        i++;
+
+    } while (i <= 12);
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
