@@ -11929,6 +11929,191 @@ int main() {
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to create two base classes named Camera and MusicPlayer with functions capture() and play(). Create a derived class named Smartphone that inherits from both classes and call both inherited functions.",
+
+      questionTamil:
+        "Camera மற்றும் MusicPlayer என்ற இரண்டு Base Classes-ஐ உருவாக்கி, capture() மற்றும் play() என்ற Functions-ஐ உருவாக்குங்கள். இரண்டு Class-களையும் Inherit செய்யும் Smartphone என்ற Derived Class-ஐ உருவாக்கி, இரண்டு Inherited Functions-ஐயும் Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use public inheritance from both base classes.",
+
+      hintTamil:
+        "இரண்டு Base Classes-லிருந்தும் public Inheritance-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Capturing Photo...
+Playing Music...`,
+
+      expectedOutputTamil: `Capturing Photo...
+Playing Music...`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Camera {
+
+public:
+    void capture() {
+        cout << "Capturing Photo..." << endl;
+    }
+
+};
+
+class MusicPlayer {
+
+public:
+    void play() {
+        cout << "Playing Music...";
+    }
+
+};
+
+class Smartphone : public Camera, public MusicPlayer {
+
+};
+
+int main() {
+
+    Smartphone s;
+
+    s.capture();
+    s.play();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to create two base classes named Writer and Reader with functions write() and read(). Create a derived class named FileManager that inherits from both classes and call both inherited functions.",
+
+      questionTamil:
+        "Writer மற்றும் Reader என்ற இரண்டு Base Classes-ஐ உருவாக்கி, write() மற்றும் read() என்ற Functions-ஐ உருவாக்குங்கள். இரண்டு Class-களையும் Inherit செய்யும் FileManager என்ற Derived Class-ஐ உருவாக்கி, இரண்டு Inherited Functions-ஐயும் Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a derived class that inherits from both base classes.",
+
+      hintTamil:
+        "இரண்டு Base Classes-லிருந்தும் Inherit செய்யும் Derived Class-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Writing File...
+Reading File...`,
+
+      expectedOutputTamil: `Writing File...
+Reading File...`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Writer {
+
+public:
+    void write() {
+        cout << "Writing File..." << endl;
+    }
+
+};
+
+class Reader {
+
+public:
+    void read() {
+        cout << "Reading File...";
+    }
+
+};
+
+class FileManager : public Writer, public Reader {
+
+};
+
+int main() {
+
+    FileManager f;
+
+    f.write();
+    f.read();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to create two base classes named Engine and Wheels with functions startEngine() and rotateWheels(). Create a derived class named Car that inherits from both classes and call both inherited functions.",
+
+      questionTamil:
+        "Engine மற்றும் Wheels என்ற இரண்டு Base Classes-ஐ உருவாக்கி, startEngine() மற்றும் rotateWheels() என்ற Functions-ஐ உருவாக்குங்கள். இரண்டு Class-களையும் Inherit செய்யும் Car என்ற Derived Class-ஐ உருவாக்கி, இரண்டு Inherited Functions-ஐயும் Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use public inheritance from both base classes.",
+
+      hintTamil:
+        "இரண்டு Base Classes-லிருந்தும் public Inheritance-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Engine Started
+Wheels Rotating`,
+
+      expectedOutputTamil: `Engine Started
+Wheels Rotating`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Engine {
+
+public:
+    void startEngine() {
+        cout << "Engine Started" << endl;
+    }
+
+};
+
+class Wheels {
+
+public:
+    void rotateWheels() {
+        cout << "Wheels Rotating";
+    }
+
+};
+
+class Car : public Engine, public Wheels {
+
+};
+
+int main() {
+
+    Car c;
+
+    c.startEngine();
+    c.rotateWheels();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
     
   ],
 },
