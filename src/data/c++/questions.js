@@ -13313,7 +13313,187 @@ int main() {
     },
   ],
 },
+{
+  topicId: 29,
+  title: "Hybrid Inheritance",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Person with a function named display() that prints 'Person'. Create two classes named Student and Employee that inherit from Person. Then create a class named Manager that inherits from Employee and call the inherited function.",
+
+      questionTamil:
+        "Person என்ற Base Class-ஐ உருவாக்கி, 'Person' என்று Print செய்யும் display() Function-ஐ உருவாக்குங்கள். Person Class-ஐ Inherit செய்யும் Student மற்றும் Employee என்ற இரண்டு Classes-ஐ உருவாக்கி, பின்னர் Employee Class-ஐ Inherit செய்யும் Manager Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "This combines Hierarchical and Multilevel Inheritance.",
+
+      hintTamil:
+        "இது Hierarchical மற்றும் Multilevel Inheritance-ன் சேர்க்கையாகும்.",
+
+      expectedOutput: `Person`,
+
+      expectedOutputTamil: `Person`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Person {
+
+public:
+    void display() {
+        cout << "Person";
+    }
+
+};
+
+class Student : public Person {
+
+};
+
+class Employee : public Person {
+
+};
+
+class Manager : public Employee {
+
+};
+
+int main() {
+
+    Manager m;
+
+    m.display();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Animal with a function named eat() that prints 'Animal is Eating'. Create two classes named Mammal and Bird that inherit from Animal. Then create a class named Dog that inherits from Mammal and call the inherited function.",
+
+      questionTamil:
+        "Animal என்ற Base Class-ஐ உருவாக்கி, 'Animal is Eating' என்று Print செய்யும் eat() Function-ஐ உருவாக்குங்கள். Animal Class-ஐ Inherit செய்யும் Mammal மற்றும் Bird என்ற இரண்டு Classes-ஐ உருவாக்கி, பின்னர் Mammal Class-ஐ Inherit செய்யும் Dog Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a hybrid inheritance structure using three inheritance levels.",
+
+      hintTamil:
+        "மூன்று நிலைகளைக் கொண்டு Hybrid Inheritance Structure-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Animal is Eating`,
+
+      expectedOutputTamil: `Animal is Eating`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Animal {
+
+public:
+    void eat() {
+        cout << "Animal is Eating";
+    }
+
+};
+
+class Mammal : public Animal {
+
+};
+
+class Bird : public Animal {
+
+};
+
+class Dog : public Mammal {
+
+};
+
+int main() {
+
+    Dog d;
+
+    d.eat();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Vehicle with a function named start() that prints 'Vehicle Started'. Create two classes named Car and Bike that inherit from Vehicle. Then create a class named SportsCar that inherits from Car and call the inherited function.",
+
+      questionTamil:
+        "Vehicle என்ற Base Class-ஐ உருவாக்கி, 'Vehicle Started' என்று Print செய்யும் start() Function-ஐ உருவாக்குங்கள். Vehicle Class-ஐ Inherit செய்யும் Car மற்றும் Bike என்ற இரண்டு Classes-ஐ உருவாக்கி, பின்னர் Car Class-ஐ Inherit செய்யும் SportsCar Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use both Hierarchical and Multilevel Inheritance.",
+
+      hintTamil:
+        "Hierarchical மற்றும் Multilevel Inheritance இரண்டையும் பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Vehicle Started`,
+
+      expectedOutputTamil: `Vehicle Started`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Vehicle {
+
+public:
+    void start() {
+        cout << "Vehicle Started";
+    }
+
+};
+
+class Car : public Vehicle {
+
+};
+
+class Bike : public Vehicle {
+
+};
+
+class SportsCar : public Car {
+
+};
+
+int main() {
+
+    SportsCar s;
+
+    s.start();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
