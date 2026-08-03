@@ -11739,7 +11739,199 @@ int main() {
     },
   ],
 },
+{
+  topicId: 26,
+  title: "Multiple Inheritance",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to create two base classes named Father and Mother with functions fatherProperty() and motherProperty(). Create a derived class named Child that inherits from both classes and call both inherited functions.",
+
+      questionTamil:
+        "Father மற்றும் Mother என்ற இரண்டு Base Classes-ஐ உருவாக்கி, அவற்றில் fatherProperty() மற்றும் motherProperty() என்ற Functions-ஐ உருவாக்குங்கள். இரண்டு Class-களையும் Inherit செய்யும் Child என்ற Derived Class-ஐ உருவாக்கி, இரண்டு Inherited Functions-ஐயும் Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Inherit from two base classes using public inheritance.",
+
+      hintTamil:
+        "public Inheritance பயன்படுத்தி இரண்டு Base Classes-லிருந்தும் Inherit செய்யுங்கள்.",
+
+      expectedOutput: `Father Property
+Mother Property`,
+
+      expectedOutputTamil: `Father Property
+Mother Property`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Father {
+
+public:
+    void fatherProperty() {
+        cout << "Father Property" << endl;
+    }
+
+};
+
+class Mother {
+
+public:
+    void motherProperty() {
+        cout << "Mother Property";
+    }
+
+};
+
+class Child : public Father, public Mother {
+
+};
+
+int main() {
+
+    Child c;
+
+    c.fatherProperty();
+    c.motherProperty();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to create two base classes named Printer and Scanner with functions print() and scan(). Create a derived class named AllInOne that inherits from both classes and call both inherited functions.",
+
+      questionTamil:
+        "Printer மற்றும் Scanner என்ற இரண்டு Base Classes-ஐ உருவாக்கி, அவற்றில் print() மற்றும் scan() என்ற Functions-ஐ உருவாக்குங்கள். இரண்டு Class-களையும் Inherit செய்யும் AllInOne என்ற Derived Class-ஐ உருவாக்கி, இரண்டு Inherited Functions-ஐயும் Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use public inheritance with two base classes.",
+
+      hintTamil:
+        "இரண்டு Base Classes-உடன் public Inheritance-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Printing...
+Scanning...`,
+
+      expectedOutputTamil: `Printing...
+Scanning...`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Printer {
+
+public:
+    void print() {
+        cout << "Printing..." << endl;
+    }
+
+};
+
+class Scanner {
+
+public:
+    void scan() {
+        cout << "Scanning...";
+    }
+
+};
+
+class AllInOne : public Printer, public Scanner {
+
+};
+
+int main() {
+
+    AllInOne a;
+
+    a.print();
+    a.scan();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to create two base classes named Teacher and SportsCoach with functions teach() and train(). Create a derived class named Student that inherits from both classes and call both inherited functions.",
+
+      questionTamil:
+        "Teacher மற்றும் SportsCoach என்ற இரண்டு Base Classes-ஐ உருவாக்கி, teach() மற்றும் train() என்ற Functions-ஐ உருவாக்குங்கள். இரண்டு Class-களையும் Inherit செய்யும் Student என்ற Derived Class-ஐ உருவாக்கி, இரண்டு Inherited Functions-ஈயும் Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a derived class that inherits from both base classes.",
+
+      hintTamil:
+        "இரண்டு Base Classes-லிருந்தும் Inherit செய்யும் Derived Class-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Teaching...
+Training...`,
+
+      expectedOutputTamil: `Teaching...
+Training...`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Teacher {
+
+public:
+    void teach() {
+        cout << "Teaching..." << endl;
+    }
+
+};
+
+class SportsCoach {
+
+public:
+    void train() {
+        cout << "Training...";
+    }
+
+};
+
+class Student : public Teacher, public SportsCoach {
+
+};
+
+int main() {
+
+    Student s;
+
+    s.teach();
+    s.train();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
