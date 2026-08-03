@@ -2764,7 +2764,168 @@ Fail`,
     },
   ],
 },
+{
+  topicId: 8,
+  title: "Nested If",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to accept a person's age and whether they have an ID card. Print 'Entry Allowed' if the age is 18 or above and the person has an ID card.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு நபரின் வயது மற்றும் அவரிடம் ID Card உள்ளதா என்பதை Input ஆக பெற்று, வயது 18 அல்லது அதற்கு மேல் இருந்தும் ID Card இருந்தும் 'Entry Allowed' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a nested if statement. Check the age first, then check the ID.",
+
+      hintTamil:
+        "Nested if Statement-ஐ பயன்படுத்துங்கள். முதலில் வயதை சரிபார்த்து, பின்னர் ID-ஐ சரிபார்க்குங்கள்.",
+
+      expectedOutput: `Enter age: 20
+Has ID (1/0): 1
+Entry Allowed`,
+
+      expectedOutputTamil: `Enter age: 20
+Has ID (1/0): 1
+Entry Allowed`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int age;
+    bool hasID;
+
+    cout << "Enter age: ";
+    cin >> age;
+
+    cout << "Has ID (1/0): ";
+    cin >> hasID;
+
+    if (age >= 18) {
+        if (hasID) {
+            cout << "Entry Allowed";
+        }
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to accept a username and password. Print 'Login Successful' only if the username is 'admin' and the password is '1234'.",
+
+      questionTamil:
+        "பயனரிடமிருந்து Username மற்றும் Password-ஐ Input ஆக பெற்று, Username 'admin' மற்றும் Password '1234' ஆக இருந்தால் மட்டும் 'Login Successful' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use nested if statements to validate the username and password.",
+
+      hintTamil:
+        "Username மற்றும் Password-ஐ சரிபார்க்க Nested if Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter username: admin
+Enter password: 1234
+Login Successful`,
+
+      expectedOutputTamil: `Enter username: admin
+Enter password: 1234
+Login Successful`,
+
+      solution: `#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+
+    string username, password;
+
+    cout << "Enter username: ";
+    cin >> username;
+
+    cout << "Enter password: ";
+    cin >> password;
+
+    if (username == "admin") {
+        if (password == "1234") {
+            cout << "Login Successful";
+        }
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to accept a student's mark and attendance percentage. Print 'Eligible for Exam' if the mark is greater than or equal to 35 and the attendance is 75 or above.",
+
+      questionTamil:
+        "பயனரிடமிருந்து மாணவரின் மதிப்பெண் மற்றும் Attendance சதவீதத்தை Input ஆக பெற்று, மதிப்பெண் 35 அல்லது அதற்கு மேல் மற்றும் Attendance 75 அல்லது அதற்கு மேல் இருந்தால் 'Eligible for Exam' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Check the mark first, then check the attendance using nested if.",
+
+      hintTamil:
+        "முதலில் Mark-ஐ சரிபார்த்து, பின்னர் Attendance-ஐ Nested if மூலம் சரிபார்க்குங்கள்.",
+
+      expectedOutput: `Enter mark: 80
+Enter attendance: 90
+Eligible for Exam`,
+
+      expectedOutputTamil: `Enter mark: 80
+Enter attendance: 90
+Eligible for Exam`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int mark, attendance;
+
+    cout << "Enter mark: ";
+    cin >> mark;
+
+    cout << "Enter attendance: ";
+    cin >> attendance;
+
+    if (mark >= 35) {
+        if (attendance >= 75) {
+            cout << "Eligible for Exam";
+        }
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
