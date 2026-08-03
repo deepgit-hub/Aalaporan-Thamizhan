@@ -6241,9 +6241,227 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a C++ program to print numbers from 1 to 20 using a for loop, but stop the loop when the number becomes 15 using the break statement.",
+
+      questionTamil:
+        "For Loop பயன்படுத்தி 1 முதல் 20 வரை உள்ள எண்களை Print செய்யுங்கள். ஆனால் எண் 15 ஆனவுடன் Break Statement பயன்படுத்தி Loop-ஐ நிறுத்தும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use an if statement inside the for loop and apply break when the number becomes 15.",
+
+      hintTamil:
+        "For Loop-க்குள் if Statement பயன்படுத்தி, எண் 15 ஆனவுடன் break-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14`,
+
+      expectedOutputTamil: `1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    for (int i = 1; i <= 20; i++) {
+
+        if (i == 15) {
+            break;
+        }
+
+        cout << i << endl;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a C++ program to print the multiplication table of 6 using a while loop, but stop after printing 6 × 7 using the break statement.",
+
+      questionTamil:
+        "While Loop பயன்படுத்தி 6-ன் பெருக்கல் வாய்ப்பாட்டை Print செய்யுங்கள். ஆனால் 6 × 7 வரை Print செய்த பிறகு Break Statement பயன்படுத்தி Loop-ஐ நிறுத்தும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a while loop and stop when the loop variable becomes 8.",
+
+      hintTamil:
+        "While Loop பயன்படுத்தி, Loop Variable 8 ஆனவுடன் break-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `6 x 1 = 6
+6 x 2 = 12
+6 x 3 = 18
+6 x 4 = 24
+6 x 5 = 30
+6 x 6 = 36
+6 x 7 = 42`,
+
+      expectedOutputTamil: `6 x 1 = 6
+6 x 2 = 12
+6 x 3 = 18
+6 x 4 = 24
+6 x 5 = 30
+6 x 6 = 36
+6 x 7 = 42`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int i = 1;
+
+    while (i <= 10) {
+
+        if (i == 8) {
+            break;
+        }
+
+        cout << "6 x " << i << " = " << 6 * i << endl;
+        i++;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a C++ program to print numbers from 1 to 30 using a for loop, but stop the loop when the number becomes 18 using the break statement.",
+
+      questionTamil:
+        "For Loop பயன்படுத்தி 1 முதல் 30 வரை உள்ள எண்களை Print செய்யுங்கள். ஆனால் எண் 18 ஆனவுடன் Break Statement பயன்படுத்தி Loop-ஐ நிறுத்தும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use an if statement with the break statement.",
+
+      hintTamil:
+        "if Statement மற்றும் break Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17`,
+
+      expectedOutputTamil: `1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a C++ program to print the multiplication table of 10 using a do while loop, but stop after printing 10 × 5 using the break statement.",
+
+      questionTamil:
+        "Do While Loop பயன்படுத்தி 10-ன் பெருக்கல் வாய்ப்பாட்டை Print செய்யுங்கள். ஆனால் 10 × 5 வரை Print செய்த பிறகு Break Statement பயன்படுத்தி Loop-ஐ நிறுத்தும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a do while loop and stop when the loop variable becomes 6.",
+
+      hintTamil:
+        "Do While Loop பயன்படுத்தி, Loop Variable 6 ஆனவுடன் break-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `10 x 1 = 10
+10 x 2 = 20
+10 x 3 = 30
+10 x 4 = 40
+10 x 5 = 50`,
+
+      expectedOutputTamil: `10 x 1 = 10
+10 x 2 = 20
+10 x 3 = 30
+10 x 4 = 40
+10 x 5 = 50`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
+
 ];
 
 export default questions;
