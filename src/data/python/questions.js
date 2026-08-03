@@ -8286,6 +8286,173 @@ square.findSquare()`,
       locked: false,
       completed: false,
     },
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a Python program to create a class named Table with a method multiplicationTable() that accepts a number from the user and prints its multiplication table from 1 to 10. Create two objects and call the method using both objects.",
+
+      questionTamil:
+        "'Table' என்ற Class-ஐ உருவாக்கி, அதில் multiplicationTable() என்ற Method-ஐ உருவாக்குங்கள். பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று அதன் பெருக்கல் வாய்ப்பாட்டை (1 முதல் 10 வரை) Print செய்ய வேண்டும். இரண்டு Objects-ஐ உருவாக்கி, இரண்டிலும் அந்த Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create two objects from the same class and call the method using both objects.",
+
+      hintTamil:
+        "ஒரே Class-இல் இருந்து இரண்டு Objects-ஐ உருவாக்கி, Method-ஐ இரண்டிலும் Call செய்யுங்கள்.",
+
+      expectedOutput: `Enter a number: 5
+5 x 1 = 5
+...
+5 x 10 = 50
+
+Enter a number: 3
+3 x 1 = 3
+...
+3 x 10 = 30`,
+
+      expectedOutputTamil: `Enter a number: 5
+5 x 1 = 5
+...
+5 x 10 = 50
+
+Enter a number: 3
+3 x 1 = 3
+...
+3 x 10 = 30`,
+
+      solution: `class Table:
+    def multiplicationTable(self):
+        number = int(input("Enter a number: "))
+
+        for i in range(1, 11):
+            print(number, "x", i, "=", number * i)
+
+table1 = Table()
+table2 = Table()
+
+table1.multiplicationTable()
+table2.multiplicationTable()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a Python program to create a class named Student with a method welcome() that accepts a name from the user and prints 'Welcome <name>'. Create two objects and call the method using both objects.",
+
+      questionTamil:
+        "'Student' என்ற Class-ஐ உருவாக்கி, அதில் welcome() என்ற Method-ஐ உருவாக்குங்கள். பயனரிடமிருந்து பெயரை Input ஆக பெற்று 'Welcome <name>' என்பதை Print செய்ய வேண்டும். இரண்டு Objects-ஐ உருவாக்கி, இரண்டிலும் அந்த Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input() inside the method and create two objects.",
+
+      hintTamil:
+        "Method-க்குள் input() பயன்படுத்தி, இரண்டு Objects-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Enter your name: Deepak
+Welcome Deepak
+
+Enter your name: Kathir
+Welcome Kathir`,
+
+      expectedOutputTamil: `Enter your name: Deepak
+Welcome Deepak
+
+Enter your name: Kathir
+Welcome Kathir`,
+
+      solution: `class Student:
+    def welcome(self):
+        name = input("Enter your name: ")
+        print("Welcome", name)
+
+student1 = Student()
+student2 = Student()
+
+student1.welcome()
+student2.welcome()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a Python program to create a class named Calculator with a method largest() that accepts three numbers from the user and prints the largest number. Create an object and call the method.",
+
+      questionTamil:
+        "'Calculator' என்ற Class-ஐ உருவாக்கி, அதில் largest() என்ற Method-ஐ உருவாக்குங்கள். பயனரிடமிருந்து மூன்று எண்களை Input ஆக பெற்று மிகப்பெரிய எண்ணை Print செய்ய வேண்டும். Object-ஐ உருவாக்கி அந்த Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input(), int(), and max() inside the class method.",
+
+      hintTamil:
+        "Class Method-க்குள் input(), int() மற்றும் max() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter first number: 10
+Enter second number: 45
+Enter third number: 30
+45`,
+
+      expectedOutputTamil: `Enter first number: 10
+Enter second number: 45
+Enter third number: 30
+45`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a Python program to create a class named Student with a method studentDetails() that accepts a student's name, age, and department from the user and prints all the details. Create an object and call the method.",
+
+      questionTamil:
+        "'Student' என்ற Class-ஐ உருவாக்கி, அதில் studentDetails() என்ற Method-ஐ உருவாக்குங்கள். பயனரிடமிருந்து மாணவரின் பெயர், வயது மற்றும் Department-ஐ Input ஆக பெற்று அனைத்து விவரங்களையும் Print செய்ய வேண்டும். Object-ஐ உருவாக்கி அந்த Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use multiple input() statements inside the class method.",
+
+      hintTamil:
+        "Class Method-க்குள் பல input() Statements-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter name: Deepak
+Enter age: 20
+Enter department: Computer Science
+Name: Deepak
+Age: 20
+Department: Computer Science`,
+
+      expectedOutputTamil: `Enter name: Deepak
+Enter age: 20
+Enter department: Computer Science
+Name: Deepak
+Age: 20
+Department: Computer Science`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
