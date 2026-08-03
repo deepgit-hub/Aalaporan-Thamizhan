@@ -8888,6 +8888,116 @@ department.showCollege()`,
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to create a class named Person with a method displayName() that prints 'Kathir'. Create a class Student that inherits from Person. Create an object of Student and call the displayName() method twice.",
+
+      questionTamil:
+        "'Person' என்ற Class-ஐ உருவாக்கி, அதில் displayName() என்ற Method-ஐ உருவாக்குங்கள். அது 'Kathir' என்பதை Print செய்ய வேண்டும். பின்னர் Person Class-ஐ Inherit செய்யும் Student Class-ஐ உருவாக்கி, Student Object மூலம் displayName() Method-ஐ இரண்டு முறை Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create the child class using inheritance and call the parent method twice.",
+
+      hintTamil:
+        "Inheritance பயன்படுத்தி Child Class-ஐ உருவாக்கி Parent Method-ஐ இரண்டு முறை Call செய்யுங்கள்.",
+
+      expectedOutput: `Kathir
+Kathir`,
+
+      expectedOutputTamil: `Kathir
+Kathir`,
+
+      solution: `class Person:
+    def displayName(self):
+        print("Kathir")
+
+class Student(Person):
+    pass
+
+student = Student()
+
+student.displayName()
+student.displayName()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to create a class named Shape with a method area() that prints 'Area Calculated'. Create a class Rectangle that inherits from Shape. Create an object of Rectangle and call the area() method.",
+
+      questionTamil:
+        "'Shape' என்ற Class-ஐ உருவாக்கி, அதில் area() என்ற Method-ஐ உருவாக்குங்கள். அது 'Area Calculated' என்பதை Print செய்ய வேண்டும். பின்னர் Shape Class-ஐ Inherit செய்யும் Rectangle Class-ஐ உருவாக்கி, Rectangle Object மூலம் area() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Access the parent method through the child object.",
+
+      hintTamil:
+        "Child Object மூலம் Parent Method-ஐ Access செய்யுங்கள்.",
+
+      expectedOutput: `Area Calculated`,
+
+      expectedOutputTamil: `Area Calculated`,
+
+      solution: `class Shape:
+    def area(self):
+        print("Area Calculated")
+
+class Rectangle(Shape):
+    pass
+
+rectangle = Rectangle()
+
+rectangle.area()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to create a class named Vehicle with a method start() that prints 'Vehicle Started'. Create a class Car that inherits from Vehicle. Create an object of Car and call the start() method.",
+
+      questionTamil:
+        "'Vehicle' என்ற Class-ஐ உருவாக்கி, அதில் start() என்ற Method-ஐ உருவாக்குங்கள். அது 'Vehicle Started' என்பதை Print செய்ய வேண்டும். பின்னர் Vehicle Class-ஐ Inherit செய்யும் Car Class-ஐ உருவாக்கி, Car Object மூலம் start() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use inheritance to access the parent class method.",
+
+      hintTamil:
+        "Parent Class Method-ஐ Access செய்ய Inheritance-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Vehicle Started`,
+
+      expectedOutputTamil: `Vehicle Started`,
+
+      solution: `class Vehicle:
+    def start(self):
+        print("Vehicle Started")
+
+class Car(Vehicle):
+    pass
+
+car = Car()
+
+car.start()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
     
   ],
 },
