@@ -108,6 +108,113 @@ int main() {
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to print 'C++ is a Powerful Programming Language' on the console.",
+
+      questionTamil:
+        "'C++ is a Powerful Programming Language' என்பதை Console-ல் Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the cout statement to display the message.",
+
+      hintTamil:
+        "Message-ஐ Display செய்ய cout Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `C++ is a Powerful Programming Language`,
+
+      expectedOutputTamil: `C++ is a Powerful Programming Language`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    cout << "C++ is a Powerful Programming Language";
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to print your college name on the console.",
+
+      questionTamil:
+        "உங்கள் கல்லூரியின் பெயரை Console-ல் Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the cout statement to display the college name.",
+
+      hintTamil:
+        "கல்லூரியின் பெயரை Display செய்ய cout Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Don Bosco College`,
+
+      expectedOutputTamil: `Don Bosco College`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    cout << "Don Bosco College";
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to print two lines: 'Good Morning' and 'Have a Nice Day'.",
+
+      questionTamil:
+        "'Good Morning' மற்றும் 'Have a Nice Day' ஆகிய இரண்டு வரிகளை Console-ல் Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use two cout statements or use endl for a new line.",
+
+      hintTamil:
+        "இரண்டு cout Statements அல்லது புதிய வரிக்கு endl-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Good Morning
+Have a Nice Day`,
+
+      expectedOutputTamil: `Good Morning
+Have a Nice Day`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    cout << "Good Morning" << endl;
+    cout << "Have a Nice Day";
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
     
   ],
 },
