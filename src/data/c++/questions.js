@@ -9641,7 +9641,143 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to overload a function named display(). One function displays a character and another function displays a string.",
+
+      questionTamil:
+        "display() என்ற Function-ஐ Overload செய்யுங்கள். ஒரு Function ஒரு Character-ஐ Print செய்ய வேண்டும். மற்றொரு Function ஒரு String-ஐ Print செய்ய வேண்டும்.",
+
+      hintEnglish:
+        "Create two display() functions with different parameter data types.",
+
+      hintTamil:
+        "வேறுபட்ட Data Type Parameters கொண்ட இரண்டு display() Functions-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `A
+Welcome`,
+
+      expectedOutputTamil: `A
+Welcome`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+void display(char ch) {
+    cout << ch << endl;
+}
+
+void display(string text) {
+    cout << text;
+}
+
+int main() {
+
+    display('A');
+    display("Welcome");
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to overload a function named multiply(). One function multiplies two integers and another function multiplies three integers.",
+
+      questionTamil:
+        "multiply() என்ற Function-ஐ Overload செய்யுங்கள். ஒரு Function இரண்டு Integer எண்களை பெருக்க வேண்டும். மற்றொரு Function மூன்று Integer எண்களை பெருக்க வேண்டும்.",
+
+      hintEnglish:
+        "Use different numbers of parameters for the overloaded functions.",
+
+      hintTamil:
+        "வேறுபட்ட எண்ணிக்கையிலான Parameters கொண்ட இரண்டு Functions-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `50
+120`,
+
+      expectedOutputTamil: `50
+120`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+void multiply(int a, int b) {
+    cout << a * b << endl;
+}
+
+void multiply(int a, int b, int c) {
+    cout << a * b * c;
+}
+
+int main() {
+
+    multiply(10, 5);
+    multiply(4, 5, 6);
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to overload a function named show(). One function displays an integer value and another function displays a character value.",
+
+      questionTamil:
+        "show() என்ற Function-ஐ Overload செய்யுங்கள். ஒரு Function Integer Value-ஐ Print செய்ய வேண்டும். மற்றொரு Function Character Value-ஐ Print செய்ய வேண்டும்.",
+
+      hintEnglish:
+        "Create two show() functions with different parameter data types.",
+
+      hintTamil:
+        "வேறுபட்ட Data Type Parameters கொண்ட இரண்டு show() Functions-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `25
+Z`,
+
+      expectedOutputTamil: `25
+Z`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+void show(int num) {
+    cout << num << endl;
+}
+
+void show(char ch) {
+    cout << ch;
+}
+
+int main() {
+
+    show(25);
+    show('Z');
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
