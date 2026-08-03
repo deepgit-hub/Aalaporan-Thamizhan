@@ -10545,6 +10545,160 @@ int main() {
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to create a class named Book and create an object named book1. Assign values to title and price, then display them.",
+
+      questionTamil:
+        "Book என்ற Class-ஐ உருவாக்கி, book1 என்ற Object-ஐ உருவாக்குங்கள். title மற்றும் price-க்கு மதிப்புகளை Assign செய்து Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create an object of the Book class and use the dot operator to assign values.",
+
+      hintTamil:
+        "Book Class-ன் Object-ஐ உருவாக்கி, Dot Operator மூலம் Values-ஐ Assign செய்யுங்கள்.",
+
+      expectedOutput: `C++ Programming
+500`,
+
+      expectedOutputTamil: `C++ Programming
+500`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Book {
+
+public:
+    string title;
+    int price;
+
+};
+
+int main() {
+
+    Book book1;
+
+    book1.title = "C++ Programming";
+    book1.price = 500;
+
+    cout << book1.title << endl;
+    cout << book1.price;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to create a class named Mobile and create two objects named m1 and m2. Assign different brands and display them.",
+
+      questionTamil:
+        "Mobile என்ற Class-ஐ உருவாக்கி, m1 மற்றும் m2 என்ற இரண்டு Objects-ஐ உருவாக்குங்கள். வெவ்வேறு Brand-களை Assign செய்து Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create two objects from the same class and assign different values.",
+
+      hintTamil:
+        "ஒரே Class-ல் இருந்து இரண்டு Objects-ஐ உருவாக்கி, வெவ்வேறு Values-ஐ Assign செய்யுங்கள்.",
+
+      expectedOutput: `Samsung
+Apple`,
+
+      expectedOutputTamil: `Samsung
+Apple`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Mobile {
+
+public:
+    string brand;
+
+};
+
+int main() {
+
+    Mobile m1, m2;
+
+    m1.brand = "Samsung";
+    m2.brand = "Apple";
+
+    cout << m1.brand << endl;
+    cout << m2.brand;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to create a class named Student and create two objects named s1 and s2. Assign different names and marks, then display them.",
+
+      questionTamil:
+        "Student என்ற Class-ஐ உருவாக்கி, s1 மற்றும் s2 என்ற இரண்டு Objects-ஐ உருவாக்குங்கள். வெவ்வேறு பெயர்கள் மற்றும் மதிப்பெண்களை Assign செய்து Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create two objects and assign different values to each object.",
+
+      hintTamil:
+        "இரண்டு Objects-ஐ உருவாக்கி, ஒவ்வொரு Object-க்கும் வெவ்வேறு Values-ஐ Assign செய்யுங்கள்.",
+
+      expectedOutput: `Arun 90
+Kavin 95`,
+
+      expectedOutputTamil: `Arun 90
+Kavin 95`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Student {
+
+public:
+    string name;
+    int mark;
+
+};
+
+int main() {
+
+    Student s1, s2;
+
+    s1.name = "Arun";
+    s1.mark = 90;
+
+    s2.name = "Kavin";
+    s2.mark = 95;
+
+    cout << s1.name << " " << s1.mark << endl;
+    cout << s2.name << " " << s2.mark;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
     
   ],
 },
