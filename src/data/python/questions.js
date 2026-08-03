@@ -5391,6 +5391,145 @@ while i <= 10:
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to print numbers from 1 to 15. Skip the numbers that are divisible by 3 using the continue statement.",
+
+      questionTamil:
+        "1 முதல் 15 வரை உள்ள எண்களை Print செய்யுங்கள். 3-ஆல் வகுபடும் எண்களை continue Statement பயன்படுத்தி Skip செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the modulus (%) operator with continue.",
+
+      hintTamil:
+        "Modulus (%) Operator மற்றும் continue Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `1
+2
+4
+5
+7
+8
+10
+11
+13
+14`,
+
+      expectedOutputTamil: `1
+2
+4
+5
+7
+8
+10
+11
+13
+14`,
+
+      solution: `for i in range(1, 16):
+    if i % 3 == 0:
+        continue
+    print(i)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to print numbers from 1 to 10. Skip the number 5 using the continue statement.",
+
+      questionTamil:
+        "1 முதல் 10 வரை உள்ள எண்களை Print செய்யுங்கள். 5 என்ற எண்ணை continue Statement பயன்படுத்தி Skip செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use an if statement with continue.",
+
+      hintTamil:
+        "if Statement மற்றும் continue Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `1
+2
+3
+4
+6
+7
+8
+9
+10`,
+
+      expectedOutputTamil: `1
+2
+3
+4
+6
+7
+8
+9
+10`,
+
+      solution: `for i in range(1, 11):
+    if i == 5:
+        continue
+    print(i)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to accept a number from the user and print numbers from 1 to that number. Skip the number 4 using the continue statement.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, 1 முதல் அந்த எண் வரை Print செய்யுங்கள். 4 என்ற எண்ணை continue Statement பயன்படுத்தி Skip செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input(), int(), a for loop, and continue.",
+
+      hintTamil:
+        "input(), int(), For Loop மற்றும் continue Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: 8
+1
+2
+3
+5
+6
+7
+8`,
+
+      expectedOutputTamil: `Enter a number: 8
+1
+2
+3
+5
+6
+7
+8`,
+
+      solution: `number = int(input("Enter a number: "))
+
+for i in range(1, number + 1):
+    if i == 4:
+        continue
+    print(i)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
     
   ],
 },
