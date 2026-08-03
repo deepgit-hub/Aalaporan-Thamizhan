@@ -6272,9 +6272,133 @@ for student in students:
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a Python program to create a tuple containing five numbers and print each element using a for loop.",
+
+      questionTamil:
+        "ஐந்து எண்களைக் கொண்ட ஒரு Tuple-ஐ உருவாக்கி, For Loop பயன்படுத்தி ஒவ்வொரு Element-ஐயும் Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a tuple and iterate through it using a for loop.",
+
+      hintTamil:
+        "ஒரு Tuple உருவாக்கி, அதை For Loop பயன்படுத்தி Traverse செய்யுங்கள்.",
+
+      expectedOutput: `10
+20
+30
+40
+50`,
+
+      expectedOutputTamil: `10
+20
+30
+40
+50`,
+
+      solution: `numbers = (10, 20, 30, 40, 50)
+
+for number in numbers:
+    print(number)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a Python program to create a tuple containing five fruits and print the total number of elements in the tuple.",
+
+      questionTamil:
+        "'Apple', 'Banana', 'Orange', 'Mango', 'Grapes' ஆகியவற்றைக் கொண்ட ஒரு Tuple-ஐ உருவாக்கி, அதில் உள்ள மொத்த Elements எண்ணிக்கையை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the len() function.",
+
+      hintTamil:
+        "len() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `5`,
+
+      expectedOutputTamil: `5`,
+
+      solution: `fruits = ("Apple", "Banana", "Orange", "Mango", "Grapes")
+
+print(len(fruits))`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a Python program to create a tuple containing five student names and print the first and last names.",
+
+      questionTamil:
+        "ஐந்து மாணவர்களின் பெயர்களைக் கொண்ட ஒரு Tuple-ஐ உருவாக்கி, முதல் மற்றும் கடைசி பெயர்களை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use index 0 and -1 to access the elements.",
+
+      hintTamil:
+        "Index 0 மற்றும் -1-ஐ பயன்படுத்தி Elements-ஐ Access செய்யுங்கள்.",
+
+      expectedOutput: `Deepak
+Arun`,
+
+      expectedOutputTamil: `Deepak
+Arun`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a Python program to create a tuple containing five numbers and print the largest and smallest numbers.",
+
+      questionTamil:
+        "ஐந்து எண்களைக் கொண்ட ஒரு Tuple-ஐ உருவாக்கி, அதில் உள்ள மிகப்பெரிய மற்றும் மிகச்சிறிய எண்ணை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the max() and min() functions.",
+
+      hintTamil:
+        "max() மற்றும் min() Functions-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `50
+10`,
+
+      expectedOutputTamil: `50
+10`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
+
 ];
 
 export default questions;
