@@ -7868,6 +7868,217 @@ int main() {
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to accept elements for a 2 × 3 integer array and print the largest element.",
+
+      questionTamil:
+        "2 × 3 Integer Array-க்கான மதிப்புகளை Input ஆக பெற்று, அதில் உள்ள மிகப்பெரிய எண்ணை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Assume the first element is the largest and compare it with the remaining elements using nested loops.",
+
+      hintTamil:
+        "முதல் Element-ஐ Largest என எடுத்துக்கொண்டு, Nested Loop பயன்படுத்தி மற்ற Elements-உடன் ஒப்பிடுங்கள்.",
+
+      expectedOutput: `Enter 6 elements:
+10
+45
+20
+30
+15
+25
+
+Largest = 45`,
+
+      expectedOutputTamil: `Enter 6 elements:
+10
+45
+20
+30
+15
+25
+
+Largest = 45`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int numbers[2][3];
+
+    cout << "Enter 6 elements:" << endl;
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 3; j++) {
+            cin >> numbers[i][j];
+        }
+    }
+
+    int largest = numbers[0][0];
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 3; j++) {
+            if (numbers[i][j] > largest) {
+                largest = numbers[i][j];
+            }
+        }
+    }
+
+    cout << "Largest = " << largest;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to accept elements for a 2 × 3 integer array and print the smallest element.",
+
+      questionTamil:
+        "2 × 3 Integer Array-க்கான மதிப்புகளை Input ஆக பெற்று, அதில் உள்ள மிகச்சிறிய எண்ணை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Assume the first element is the smallest and compare it with the remaining elements using nested loops.",
+
+      hintTamil:
+        "முதல் Element-ஐ Smallest என எடுத்துக்கொண்டு, Nested Loop பயன்படுத்தி மற்ற Elements-உடன் ஒப்பிடுங்கள்.",
+
+      expectedOutput: `Enter 6 elements:
+10
+45
+20
+30
+15
+25
+
+Smallest = 10`,
+
+      expectedOutputTamil: `Enter 6 elements:
+10
+45
+20
+30
+15
+25
+
+Smallest = 10`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int numbers[2][3];
+
+    cout << "Enter 6 elements:" << endl;
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 3; j++) {
+            cin >> numbers[i][j];
+        }
+    }
+
+    int smallest = numbers[0][0];
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 3; j++) {
+            if (numbers[i][j] < smallest) {
+                smallest = numbers[i][j];
+            }
+        }
+    }
+
+    cout << "Smallest = " << smallest;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to accept elements for a 2 × 3 integer array and count how many even numbers are present.",
+
+      questionTamil:
+        "2 × 3 Integer Array-க்கான மதிப்புகளை Input ஆக பெற்று, அதில் உள்ள Even எண்களின் எண்ணிக்கையை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a counter variable and nested loops to check each element.",
+
+      hintTamil:
+        "Counter Variable மற்றும் Nested Loops-ஐ பயன்படுத்தி ஒவ்வொரு Element-ஐயும் சரிபார்க்குங்கள்.",
+
+      expectedOutput: `Enter 6 elements:
+10
+15
+20
+25
+30
+35
+
+Even Numbers = 3`,
+
+      expectedOutputTamil: `Enter 6 elements:
+10
+15
+20
+25
+30
+35
+
+Even Numbers = 3`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int numbers[2][3];
+    int count = 0;
+
+    cout << "Enter 6 elements:" << endl;
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 3; j++) {
+            cin >> numbers[i][j];
+        }
+    }
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 3; j++) {
+            if (numbers[i][j] % 2 == 0) {
+                count++;
+            }
+        }
+    }
+
+    cout << "Even Numbers = " << count;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
     
   ],
 },
