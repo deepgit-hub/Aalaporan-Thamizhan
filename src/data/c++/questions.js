@@ -9296,7 +9296,207 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a C++ program to create a function named printOdd() that prints all odd numbers from 1 to 19. Call the function from main().",
+
+      questionTamil:
+        "printOdd() என்ற Function-ஐ உருவாக்கி, 1 முதல் 19 வரை உள்ள அனைத்து Odd எண்களையும் Print செய்யும் C++ Program-ஐ எழுதுங்கள். அந்த Function-ஐ main()-லிருந்து Call செய்யுங்கள்.",
+
+      hintEnglish:
+        "Use a for loop inside the function and increment the loop variable by 2.",
+
+      hintTamil:
+        "Function-க்குள் for Loop பயன்படுத்தி, Loop Variable-ஐ ஒவ்வொரு முறையும் 2-ஆல் Increment செய்யுங்கள்.",
+
+      expectedOutput: `1
+3
+5
+7
+9
+11
+13
+15
+17
+19`,
+
+      expectedOutputTamil: `1
+3
+5
+7
+9
+11
+13
+15
+17
+19`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+void printOdd() {
+
+    for(int i = 1; i <= 19; i += 2) {
+        cout << i << endl;
+    }
+}
+
+int main() {
+
+    printOdd();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a C++ program to create a function named displayArray() that prints all the elements of an integer array. Call the function from main().",
+
+      questionTamil:
+        "displayArray() என்ற Function-ஐ உருவாக்கி, ஒரு Integer Array-ன் அனைத்து Elements-ஐயும் Print செய்யும் C++ Program-ஐ எழுதுங்கள். அந்த Function-ஐ main()-லிருந்து Call செய்யுங்கள்.",
+
+      hintEnglish:
+        "Declare an array inside the function and use a for loop to print its elements.",
+
+      hintTamil:
+        "Function-க்குள் ஒரு Array-ஐ உருவாக்கி, for Loop பயன்படுத்தி அனைத்து Elements-ஐயும் Print செய்யுங்கள்.",
+
+      expectedOutput: `10
+20
+30
+40
+50`,
+
+      expectedOutputTamil: `10
+20
+30
+40
+50`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+void displayArray() {
+
+    int arr[5] = {10, 20, 30, 40, 50};
+
+    for(int i = 0; i < 5; i++) {
+        cout << arr[i] << endl;
+    }
+}
+
+int main() {
+
+    displayArray();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a C++ program to create a function named printEven() that prints all even numbers from 2 to 20. Call the function from main().",
+
+      questionTamil:
+        "printEven() என்ற Function-ஐ உருவாக்கி, 2 முதல் 20 வரை உள்ள அனைத்து Even எண்களையும் Print செய்யும் C++ Program-ஐ எழுதுங்கள். அந்த Function-ஐ main()-லிருந்து Call செய்யுங்கள்.",
+
+      hintEnglish:
+        "Use a for loop inside the function.",
+
+      hintTamil:
+        "Function-க்குள் for Loop-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `2
+4
+6
+8
+10
+12
+14
+16
+18
+20`,
+
+      expectedOutputTamil: `2
+4
+6
+8
+10
+12
+14
+16
+18
+20`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a C++ program to create a function named printTable() that prints the multiplication table of 8. Call the function from main().",
+
+      questionTamil:
+        "printTable() என்ற Function-ஐ உருவாக்கி, 8-ன் பெருக்கல் வாய்ப்பாட்டை Print செய்யும் C++ Program-ஐ எழுதுங்கள். அந்த Function-ஐ main()-லிருந்து Call செய்யுங்கள்.",
+
+      hintEnglish:
+        "Use a for loop inside the function to print the multiplication table.",
+
+      hintTamil:
+        "Function-க்குள் for Loop பயன்படுத்தி பெருக்கல் வாய்ப்பாட்டை Print செய்யுங்கள்.",
+
+      expectedOutput: `8 x 1 = 8
+8 x 2 = 16
+8 x 3 = 24
+8 x 4 = 32
+8 x 5 = 40
+8 x 6 = 48
+8 x 7 = 56
+8 x 8 = 64
+8 x 9 = 72
+8 x 10 = 80`,
+
+      expectedOutputTamil: `8 x 1 = 8
+8 x 2 = 16
+8 x 3 = 24
+8 x 4 = 32
+8 x 5 = 40
+8 x 6 = 48
+8 x 7 = 56
+8 x 8 = 64
+8 x 9 = 72
+8 x 10 = 80`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
