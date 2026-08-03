@@ -6177,6 +6177,101 @@ print(languages)`,
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to create a tuple containing the numbers 5, 10, 15, 20, and 25. Print the first element of the tuple.",
+
+      questionTamil:
+        "5, 10, 15, 20 மற்றும் 25 ஆகிய எண்களைக் கொண்ட ஒரு Tuple-ஐ உருவாக்கி, அதன் முதல் Element-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Access the first element using index 0.",
+
+      hintTamil:
+        "முதல் Element-ஐ Index 0 பயன்படுத்தி Access செய்யுங்கள்.",
+
+      expectedOutput: `5`,
+
+      expectedOutputTamil: `5`,
+
+      solution: `numbers = (5, 10, 15, 20, 25)
+
+print(numbers[0])`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to create a tuple containing 'Apple', 'Banana', 'Orange', and 'Mango'. Print the last element of the tuple.",
+
+      questionTamil:
+        "'Apple', 'Banana', 'Orange' மற்றும் 'Mango' ஆகியவற்றைக் கொண்ட ஒரு Tuple-ஐ உருவாக்கி, அதன் கடைசி Element-ஐ Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use index -1 to access the last element.",
+
+      hintTamil:
+        "கடைசி Element-ஐ Access செய்ய Index -1-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Mango`,
+
+      expectedOutputTamil: `Mango`,
+
+      solution: `fruits = ("Apple", "Banana", "Orange", "Mango")
+
+print(fruits[-1])`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to create a tuple containing five student names and print each name using a for loop.",
+
+      questionTamil:
+        "ஐந்து மாணவர்களின் பெயர்களைக் கொண்ட ஒரு Tuple-ஐ உருவாக்கி, For Loop பயன்படுத்தி ஒவ்வொரு பெயரையும் Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a tuple and iterate through it using a for loop.",
+
+      hintTamil:
+        "ஒரு Tuple உருவாக்கி, அதை For Loop பயன்படுத்தி Traverse செய்யுங்கள்.",
+
+      expectedOutput: `Deepak
+Kathir
+Rahul
+Kavin
+Arun`,
+
+      expectedOutputTamil: `Deepak
+Kathir
+Rahul
+Kavin
+Arun`,
+
+      solution: `students = ("Deepak", "Kathir", "Rahul", "Kavin", "Arun")
+
+for student in students:
+    print(student)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
     
   ],
 },
