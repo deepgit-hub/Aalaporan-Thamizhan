@@ -9543,6 +9543,142 @@ Result Displayed`,
     },
   ],
 },
+{
+  topicId: 28,
+  title: "Hierarchical Inheritance",
+
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to create a class named Person with a method displayName() that prints 'Deepak'. Create two classes Student and Teacher that inherit from Person. Create objects of both classes and call the displayName() method.",
+
+      questionTamil:
+        "'Person' என்ற Class-ஐ உருவாக்கி, அதில் displayName() என்ற Method-ஐ உருவாக்குங்கள். அது 'Deepak' என்பதை Print செய்ய வேண்டும். பின்னர் Person Class-ஐ Inherit செய்யும் Student மற்றும் Teacher என்ற இரண்டு Classes-ஐ உருவாக்கி, இரண்டு Objects மூலம் displayName() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create two child classes from the same parent class.",
+
+      hintTamil:
+        "ஒரே Parent Class-இல் இருந்து இரண்டு Child Classes-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Deepak
+Deepak`,
+
+      expectedOutputTamil: `Deepak
+Deepak`,
+
+      solution: `class Person:
+    def displayName(self):
+        print("Deepak")
+
+class Student(Person):
+    pass
+
+class Teacher(Person):
+    pass
+
+student = Student()
+teacher = Teacher()
+
+student.displayName()
+teacher.displayName()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to create a class named Animal with a method sound() that prints 'Animal Sound'. Create two classes Dog and Cat that inherit from Animal. Create objects of both classes and call the sound() method.",
+
+      questionTamil:
+        "'Animal' என்ற Class-ஐ உருவாக்கி, அதில் sound() என்ற Method-ஐ உருவாக்குங்கள். அது 'Animal Sound' என்பதை Print செய்ய வேண்டும். பின்னர் Animal Class-ஐ Inherit செய்யும் Dog மற்றும் Cat என்ற இரண்டு Classes-ஐ உருவாக்கி, இரண்டு Objects மூலம் sound() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create two child classes from one parent class.",
+
+      hintTamil:
+        "ஒரே Parent Class-இல் இருந்து இரண்டு Child Classes-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Animal Sound
+Animal Sound`,
+
+      expectedOutputTamil: `Animal Sound
+Animal Sound`,
+
+      solution: `class Animal:
+    def sound(self):
+        print("Animal Sound")
+
+class Dog(Animal):
+    pass
+
+class Cat(Animal):
+    pass
+
+dog = Dog()
+cat = Cat()
+
+dog.sound()
+cat.sound()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to create a class named College with a method showCollege() that prints 'Don Bosco College'. Create two classes Student and Staff that inherit from College. Create objects of both classes and call the showCollege() method.",
+
+      questionTamil:
+        "'College' என்ற Class-ஐ உருவாக்கி, அதில் showCollege() என்ற Method-ஐ உருவாக்குங்கள். அது 'Don Bosco College' என்பதை Print செய்ய வேண்டும். பின்னர் College Class-ஐ Inherit செய்யும் Student மற்றும் Staff என்ற இரண்டு Classes-ஐ உருவாக்கி, இரண்டு Objects மூலம் showCollege() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use one parent class and two child classes.",
+
+      hintTamil:
+        "ஒரே Parent Class மற்றும் இரண்டு Child Classes-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Don Bosco College
+Don Bosco College`,
+
+      expectedOutputTamil: `Don Bosco College
+Don Bosco College`,
+
+      solution: `class College:
+    def showCollege(self):
+        print("Don Bosco College")
+
+class Student(College):
+    pass
+
+class Staff(College):
+    pass
+
+student = Student()
+staff = Staff()
+
+student.showCollege()
+staff.showCollege()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
