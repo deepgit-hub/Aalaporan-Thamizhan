@@ -9262,7 +9262,134 @@ result.show()`,
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to create two classes named Person and Employee with methods showName() and showSalary(). Create a class Manager that inherits from both classes. Create an object and call both methods.",
+
+      questionTamil:
+        "'Person' மற்றும் 'Employee' என்ற இரண்டு Classes-ஐ உருவாக்கி, அவற்றில் showName() மற்றும் showSalary() என்ற Methods-ஐ உருவாக்குங்கள். பின்னர் இரண்டு Classes-யையும் Inherit செய்யும் Manager Class-ஐ உருவாக்கி, Object மூலம் இரண்டு Methods-ஐயும் Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use multiple inheritance with two parent classes.",
+
+      hintTamil:
+        "இரண்டு Parent Classes உடன் Multiple Inheritance-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Kathir
+30000`,
+
+      expectedOutputTamil: `Kathir
+30000`,
+
+      solution: `class Person:
+    def showName(self):
+        print("Kathir")
+
+class Employee:
+    def showSalary(self):
+        print(30000)
+
+class Manager(Person, Employee):
+    pass
+
+manager = Manager()
+
+manager.showName()
+manager.showSalary()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to create two classes named College and Department with methods collegeName() and departmentName(). Create a class Student that inherits from both classes. Create an object and call both methods.",
+
+      questionTamil:
+        "'College' மற்றும் 'Department' என்ற இரண்டு Classes-ஐ உருவாக்கி, அவற்றில் collegeName() மற்றும் departmentName() என்ற Methods-ஐ உருவாக்குங்கள். பின்னர் இரண்டு Classes-யையும் Inherit செய்யும் Student Class-ஐ உருவாக்கி, Object மூலம் இரண்டு Methods-ஐயும் Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a child class that inherits from both parent classes.",
+
+      hintTamil:
+        "இரண்டு Parent Classes-ஐ Inherit செய்யும் Child Class-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Don Bosco College
+Computer Science`,
+
+      expectedOutputTamil: `Don Bosco College
+Computer Science`,
+
+      solution: `class College:
+    def collegeName(self):
+        print("Don Bosco College")
+
+class Department:
+    def departmentName(self):
+        print("Computer Science")
+
+class Student(College, Department):
+    pass
+
+student = Student()
+
+student.collegeName()
+student.departmentName()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to create two classes named Teacher and Student with methods teach() and study(). Create a class Classroom that inherits from both classes. Create an object and call both methods.",
+
+      questionTamil:
+        "'Teacher' மற்றும் 'Student' என்ற இரண்டு Classes-ஐ உருவாக்கி, அவற்றில் teach() மற்றும் study() என்ற Methods-ஐ உருவாக்குங்கள். பின்னர் இரண்டு Classes-யையும் Inherit செய்யும் Classroom Class-ஐ உருவாக்கி, Object மூலம் இரண்டு Methods-ஐயும் Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use multiple inheritance and access methods from both parent classes.",
+
+      hintTamil:
+        "Multiple Inheritance பயன்படுத்தி இரண்டு Parent Classes-இன் Methods-ஐ Access செய்யுங்கள்.",
+
+      expectedOutput: `Teaching
+Studying`,
+
+      expectedOutputTamil: `Teaching
+Studying`,
+
+      solution: `class Teacher:
+    def teach(self):
+        print("Teaching")
+
+class Student:
+    def study(self):
+        print("Studying")
+
+class Classroom(Teacher, Student):
+    pass
+
+classroom = Classroom()
+
+classroom.teach()
+classroom.study()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
