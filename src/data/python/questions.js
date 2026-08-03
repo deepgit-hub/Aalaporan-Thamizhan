@@ -5530,7 +5530,211 @@ for i in range(1, number + 1):
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a Python program to accept a number from the user and print numbers from 1 to that number. Skip all even numbers using the continue statement.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, 1 முதல் அந்த எண் வரை Print செய்யுங்கள். அனைத்து Even எண்களையும் continue Statement பயன்படுத்தி Skip செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the modulus (%) operator with continue.",
+
+      hintTamil:
+        "Modulus (%) Operator மற்றும் continue Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: 10
+1
+3
+5
+7
+9`,
+
+      expectedOutputTamil: `Enter a number: 10
+1
+3
+5
+7
+9`,
+
+      solution: `number = int(input("Enter a number: "))
+
+for i in range(1, number + 1):
+    if i % 2 == 0:
+        continue
+    print(i)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a Python program to print the multiplication table of a number entered by the user from 1 to 10. Skip the multiplication when the multiplier is 5 using the continue statement.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, 1 முதல் 10 வரை அதன் பெருக்கல் வாய்ப்பாட்டை Print செய்யுங்கள். Multiplier 5 ஆக இருக்கும் போது continue Statement பயன்படுத்தி அந்த வரியை Skip செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a for loop with continue.",
+
+      hintTamil:
+        "For Loop மற்றும் continue Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: 3
+3 x 1 = 3
+3 x 2 = 6
+3 x 3 = 9
+3 x 4 = 12
+3 x 6 = 18
+3 x 7 = 21
+3 x 8 = 24
+3 x 9 = 27
+3 x 10 = 30`,
+
+      expectedOutputTamil: `Enter a number: 3
+3 x 1 = 3
+3 x 2 = 6
+3 x 3 = 9
+3 x 4 = 12
+3 x 6 = 18
+3 x 7 = 21
+3 x 8 = 24
+3 x 9 = 27
+3 x 10 = 30`,
+
+      solution: `number = int(input("Enter a number: "))
+
+for i in range(1, 11):
+    if i == 5:
+        continue
+    print(number, "x", i, "=", number * i)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a Python program to print numbers from 1 to 20. Skip all numbers that are divisible by 4 using the continue statement.",
+
+      questionTamil:
+        "1 முதல் 20 வரை உள்ள எண்களை Print செய்யுங்கள். 4-ஆல் வகுபடும் அனைத்து எண்களையும் continue Statement பயன்படுத்தி Skip செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the modulus (%) operator with continue inside a loop.",
+
+      hintTamil:
+        "Loop-க்குள் Modulus (%) Operator மற்றும் continue Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `1
+2
+3
+5
+6
+7
+9
+10
+11
+13
+14
+15
+17
+18
+19`,
+
+      expectedOutputTamil: `1
+2
+3
+5
+6
+7
+9
+10
+11
+13
+14
+15
+17
+18
+19`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a Python program to accept a number from the user and print numbers from 1 to that number. Skip all numbers that are multiples of 5 using the continue statement.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, 1 முதல் அந்த எண் வரை Print செய்யுங்கள். 5-ன் மடங்குகளான அனைத்து எண்களையும் continue Statement பயன்படுத்தி Skip செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the modulus (%) operator with continue.",
+
+      hintTamil:
+        "Modulus (%) Operator மற்றும் continue Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: 20
+1
+2
+3
+4
+6
+7
+8
+9
+11
+12
+13
+14
+16
+17
+18
+19`,
+
+      expectedOutputTamil: `Enter a number: 20
+1
+2
+3
+4
+6
+7
+8
+9
+11
+12
+13
+14
+16
+17
+18
+19`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
