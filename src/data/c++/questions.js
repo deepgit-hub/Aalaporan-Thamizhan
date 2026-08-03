@@ -1739,7 +1739,167 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a C++ program to accept two integers from the user and check whether they are equal or not.",
+
+      questionTamil:
+        "பயனரிடமிருந்து இரண்டு Integer எண்களை Input ஆக பெற்று அவை சமமா இல்லையா என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the == operator.",
+
+      hintTamil:
+        "== Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter first number: 10
+Enter second number: 10
+Equal`,
+
+      expectedOutputTamil: `Enter first number: 10
+Enter second number: 10
+Equal`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int num1, num2;
+
+    cout << "Enter first number: ";
+    cin >> num1;
+
+    cout << "Enter second number: ";
+    cin >> num2;
+
+    if (num1 == num2)
+        cout << "Equal";
+    else
+        cout << "Not Equal";
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a C++ program to accept two integers from the user and check whether the first number is greater than the second number.",
+
+      questionTamil:
+        "பயனரிடமிருந்து இரண்டு Integer எண்களை Input ஆக பெற்று, முதல் எண் இரண்டாவது எண்ணை விட பெரியதா என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the > operator with an if statement.",
+
+      hintTamil:
+        "> Operator மற்றும் if Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter first number: 20
+Enter second number: 10
+First number is greater`,
+
+      expectedOutputTamil: `Enter first number: 20
+Enter second number: 10
+First number is greater`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int num1, num2;
+
+    cout << "Enter first number: ";
+    cin >> num1;
+
+    cout << "Enter second number: ";
+    cin >> num2;
+
+    if (num1 > num2)
+        cout << "First number is greater";
+    else
+        cout << "First number is not greater";
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a C++ program to accept two integers from the user and print the larger number using comparison operators.",
+
+      questionTamil:
+        "பயனரிடமிருந்து இரண்டு Integer எண்களை Input ஆக பெற்று, Comparison Operators பயன்படுத்தி பெரிய எண்ணை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the > operator with an if-else statement.",
+
+      hintTamil:
+        "> Operator மற்றும் if-else Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter first number: 15
+Enter second number: 30
+Largest Number = 30`,
+
+      expectedOutputTamil: `Enter first number: 15
+Enter second number: 30
+Largest Number = 30`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a C++ program to accept two integers from the user and check whether they are different.",
+
+      questionTamil:
+        "பயனரிடமிருந்து இரண்டு Integer எண்களை Input ஆக பெற்று, அவை வெவ்வேறானவையா என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the != operator.",
+
+      hintTamil:
+        "!= Operator-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter first number: 25
+Enter second number: 10
+Different`,
+
+      expectedOutputTamil: `Enter first number: 25
+Enter second number: 10
+Different`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
