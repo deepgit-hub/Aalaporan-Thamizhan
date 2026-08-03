@@ -215,7 +215,149 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a C++ program to print your name, college name, and department on separate lines.",
+
+      questionTamil:
+        "உங்கள் பெயர், கல்லூரியின் பெயர் மற்றும் துறையின் பெயரை தனித்தனி வரிகளில் Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use multiple cout statements or endl to print each item on a new line.",
+
+      hintTamil:
+        "ஒவ்வொரு தகவலையும் புதிய வரியில் Print செய்ய பல cout Statements அல்லது endl-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Deepak
+Don Bosco College
+Computer Science`,
+
+      expectedOutputTamil: `Deepak
+Don Bosco College
+Computer Science`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    cout << "Deepak" << endl;
+    cout << "Don Bosco College" << endl;
+    cout << "Computer Science";
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a C++ program to print the following pattern using cout statements only.\n*\n**\n***",
+
+      questionTamil:
+        "cout Statements மட்டும் பயன்படுத்தி கீழே கொடுக்கப்பட்டுள்ள Pattern-ஐ Print செய்யும் C++ Program-ஐ எழுதுங்கள்.\n*\n**\n***",
+
+      hintEnglish:
+        "Use three separate cout statements with endl.",
+
+      hintTamil:
+        "மூன்று தனித்தனி cout Statements மற்றும் endl-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `*
+**
+***`,
+
+      expectedOutputTamil: `*
+**
+***`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    cout << "*" << endl;
+    cout << "**" << endl;
+    cout << "***";
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a C++ program to print your name, city, and country on separate lines using cout statements.",
+
+      questionTamil:
+        "cout Statements பயன்படுத்தி உங்கள் பெயர், நகரம் மற்றும் நாட்டின் பெயரை தனித்தனி வரிகளில் Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use three cout statements with endl.",
+
+      hintTamil:
+        "மூன்று cout Statements மற்றும் endl-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Deepak
+Vaniyambadi
+India`,
+
+      expectedOutputTamil: `Deepak
+Vaniyambadi
+India`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a C++ program to print the following pattern using cout statements only.\n####\n####\n####",
+
+      questionTamil:
+        "cout Statements மட்டும் பயன்படுத்தி கீழே கொடுக்கப்பட்டுள்ள Pattern-ஐ Print செய்யும் C++ Program-ஐ எழுதுங்கள்.\n####\n####\n####",
+
+      hintEnglish:
+        "Print each row using a separate cout statement.",
+
+      hintTamil:
+        "ஒவ்வொரு வரியையும் தனித்தனி cout Statement மூலம் Print செய்யுங்கள்.",
+
+      expectedOutput: `####
+####
+####`,
+
+      expectedOutputTamil: `####
+####
+####`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
