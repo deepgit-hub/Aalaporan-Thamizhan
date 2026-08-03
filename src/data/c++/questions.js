@@ -2038,7 +2038,137 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to accept a number from the user and print 'Negative Number' if the number is negative.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, அந்த எண் Negative ஆக இருந்தால் 'Negative Number' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the < operator with an if statement.",
+
+      hintTamil:
+        "< Operator மற்றும் if Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: -8
+Negative Number`,
+
+      expectedOutputTamil: `Enter a number: -8
+Negative Number`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int number;
+
+    cout << "Enter a number: ";
+    cin >> number;
+
+    if (number < 0) {
+        cout << "Negative Number";
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to accept a character from the user and print 'Uppercase Letter' if the character is an uppercase alphabet.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு Character-ஐ Input ஆக பெற்று, அது Uppercase Alphabet ஆக இருந்தால் 'Uppercase Letter' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Check whether the character is between 'A' and 'Z'.",
+
+      hintTamil:
+        "Character 'A' மற்றும் 'Z' இடையே உள்ளதா என்பதை சரிபார்க்கவும்.",
+
+      expectedOutput: `Enter a character: A
+Uppercase Letter`,
+
+      expectedOutputTamil: `Enter a character: A
+Uppercase Letter`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    char ch;
+
+    cout << "Enter a character: ";
+    cin >> ch;
+
+    if (ch >= 'A' && ch <= 'Z') {
+        cout << "Uppercase Letter";
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to accept a person's age from the user and print 'Eligible to Vote' if the age is 18 or above.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு நபரின் வயதை Input ஆக பெற்று, அது 18 அல்லது அதற்கு மேல் இருந்தால் 'Eligible to Vote' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the >= operator with an if statement.",
+
+      hintTamil:
+        ">= Operator மற்றும் if Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter age: 20
+Eligible to Vote`,
+
+      expectedOutputTamil: `Enter age: 20
+Eligible to Vote`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int age;
+
+    cout << "Enter age: ";
+    cin >> age;
+
+    if (age >= 18) {
+        cout << "Eligible to Vote";
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
