@@ -7573,7 +7573,137 @@ print(multiply(num1, num2))`,
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a Python program to accept a number from the user and use a lambda function to determine whether the number is positive or negative.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, Lambda Function பயன்படுத்தி அந்த எண் Positive அல்லது Negative என்பதை கண்டறியும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a conditional expression inside the lambda function.",
+
+      hintTamil:
+        "Lambda Function-க்குள் Conditional Expression-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: -5
+Negative`,
+
+      expectedOutputTamil: `Enter a number: -5
+Negative`,
+
+      solution: `check = lambda x: "Positive" if x >= 0 else "Negative"
+
+number = int(input("Enter a number: "))
+
+print(check(number))`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a Python program to create a lambda function that returns the length of a string. Print the length of 'Python'.",
+
+      questionTamil:
+        "'Python' என்ற String-ன் Length-ஐ Return செய்யும் Lambda Function-ஐ உருவாக்கி அதன் முடிவை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the len() function inside the lambda function.",
+
+      hintTamil:
+        "Lambda Function-க்குள் len() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `6`,
+
+      expectedOutputTamil: `6`,
+
+      solution: `length = lambda text: len(text)
+
+print(length("Python"))`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a Python program to accept three numbers from the user and use a lambda function to print the largest number.",
+
+      questionTamil:
+        "பயனரிடமிருந்து மூன்று எண்களை Input ஆக பெற்று, Lambda Function பயன்படுத்தி மிகப்பெரிய எண்ணை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a lambda function with three parameters and conditional expressions.",
+
+      hintTamil:
+        "மூன்று Parameters மற்றும் Conditional Expressions கொண்ட Lambda Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter first number: 15
+Enter second number: 30
+Enter third number: 25
+30`,
+
+      expectedOutputTamil: `Enter first number: 15
+Enter second number: 30
+Enter third number: 25
+30`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a Python program to accept two numbers from the user and use separate lambda functions to print their sum, difference, product, and quotient.",
+
+      questionTamil:
+        "பயனரிடமிருந்து இரண்டு எண்களை Input ஆக பெற்று, தனித்தனி Lambda Functions பயன்படுத்தி அவற்றின் கூட்டல், கழித்தல், பெருக்கல் மற்றும் வகுத்தல் முடிவுகளை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create four separate lambda functions for +, -, *, and /.",
+
+      hintTamil:
+        "கூட்டல், கழித்தல், பெருக்கல் மற்றும் வகுத்தலுக்கு நான்கு தனித்தனி Lambda Functions-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Enter first number: 20
+Enter second number: 5
+Addition: 25
+Subtraction: 15
+Multiplication: 100
+Division: 4.0`,
+
+      expectedOutputTamil: `Enter first number: 20
+Enter second number: 5
+Addition: 25
+Subtraction: 15
+Multiplication: 100
+Division: 4.0`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 
