@@ -1180,7 +1180,7 @@ Selected Option : 4
 The Do While Loop always executes at least one time because the condition is checked after executing the code.
 
 💡 குறிப்பு (Tamil)
-Do While Loop-ல் Condition Code குறைந்தபட்சம் ஒரு முறை கண்டிப்பாக இயங்கும்.`,
+Do While Loop-ல் Condition சரிபார்க்கப்படுவதால் Code குறைந்தபட்சம் ஒரு முறை கண்டிப்பாக இயங்கும்.`,
 
   locked: true,
 
