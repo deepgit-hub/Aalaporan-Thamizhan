@@ -8552,7 +8552,101 @@ college = College()`,
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to create a class named Student with a constructor that accepts a student's name and prints 'Welcome <name>'. Create an object.",
+
+      questionTamil:
+        "'Student' என்ற Class-ஐ உருவாக்கி, Constructor-ல் மாணவரின் பெயரை Parameter ஆக பெற்று 'Welcome <name>' என்பதை Print செய்ய வேண்டும். பின்னர் ஒரு Object-ஐ உருவாக்கும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Pass the name as an argument while creating the object.",
+
+      hintTamil:
+        "Object உருவாக்கும் போது பெயரை Argument ஆக அனுப்புங்கள்.",
+
+      expectedOutput: `Welcome Deepak`,
+
+      expectedOutputTamil: `Welcome Deepak`,
+
+      solution: `class Student:
+    def __init__(self, name):
+        print("Welcome", name)
+
+student = Student("Deepak")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to create a class named Student with a constructor that accepts a name and age and prints both values. Create an object.",
+
+      questionTamil:
+        "'Student' என்ற Class-ஐ உருவாக்கி, Constructor-ல் பெயர் மற்றும் வயதை Parameter-ஆக பெற்று இரண்டையும் Print செய்ய வேண்டும். பின்னர் ஒரு Object-ஐ உருவாக்கும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Pass two arguments while creating the object.",
+
+      hintTamil:
+        "Object உருவாக்கும் போது இரண்டு Arguments-ஐ அனுப்புங்கள்.",
+
+      expectedOutput: `Name: Deepak
+Age: 20`,
+
+      expectedOutputTamil: `Name: Deepak
+Age: 20`,
+
+      solution: `class Student:
+    def __init__(self, name, age):
+        print("Name:", name)
+        print("Age:", age)
+
+student = Student("Deepak", 20)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to create a class named Rectangle with a constructor that accepts length and width and prints the area. Create an object.",
+
+      questionTamil:
+        "'Rectangle' என்ற Class-ஐ உருவாக்கி, Constructor-ல் Length மற்றும் Width-ஐ Parameter-ஆக பெற்று அதன் Area-ஐ Print செய்ய வேண்டும். பின்னர் ஒரு Object-ஐ உருவாக்கும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Multiply the length and width inside the constructor.",
+
+      hintTamil:
+        "Constructor-க்குள் Length மற்றும் Width-ஐ பெருக்குங்கள்.",
+
+      expectedOutput: `Area: 50`,
+
+      expectedOutputTamil: `Area: 50`,
+
+      solution: `class Rectangle:
+    def __init__(self, length, width):
+        print("Area:", length * width)
+
+rectangle = Rectangle(10, 5)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
