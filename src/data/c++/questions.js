@@ -8296,6 +8296,469 @@ Sum = 100`,
     },
   ],
 },
+{
+  topicId: 19,
+  title: "Array Operations",
+
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to accept 5 integers from the user and search for a given number in the array. Print 'Element Found' if it exists; otherwise print 'Element Not Found'.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 5 Integer எண்களை Input ஆக பெற்று, ஒரு எண்ணை Array-ல் தேடுங்கள். அந்த எண் இருந்தால் 'Element Found' என்றும், இல்லையெனில் 'Element Not Found' என்றும் Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a loop to compare each element with the search value.",
+
+      hintTamil:
+        "Search செய்ய வேண்டிய எண்ணை ஒவ்வொரு Element-உடனும் Loop மூலம் ஒப்பிடுங்கள்.",
+
+      expectedOutput: `Enter 5 elements:
+10
+20
+30
+40
+50
+
+Enter element to search: 30
+
+Element Found`,
+
+      expectedOutputTamil: `Enter 5 elements:
+10
+20
+30
+40
+50
+
+Enter element to search: 30
+
+Element Found`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int arr[5], search;
+    bool found = false;
+
+    cout << "Enter 5 elements:" << endl;
+
+    for(int i = 0; i < 5; i++) {
+        cin >> arr[i];
+    }
+
+    cout << "Enter element to search: ";
+    cin >> search;
+
+    for(int i = 0; i < 5; i++) {
+        if(arr[i] == search) {
+            found = true;
+            break;
+        }
+    }
+
+    if(found)
+        cout << "Element Found";
+    else
+        cout << "Element Not Found";
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to accept 5 integers from the user and insert a new element at the end of the array.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 5 Integer எண்களை Input ஆக பெற்று, புதிய Element ஒன்றை Array-ன் இறுதியில் Insert செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Declare the array with size 6 and store the new element at index 5.",
+
+      hintTamil:
+        "Array-ஐ Size 6-ஆக உருவாக்கி, புதிய Element-ஐ Index 5-ல் சேமியுங்கள்.",
+
+      expectedOutput: `Enter 5 elements:
+10
+20
+30
+40
+50
+
+Enter new element: 60
+
+10
+20
+30
+40
+50
+60`,
+
+      expectedOutputTamil: `Enter 5 elements:
+10
+20
+30
+40
+50
+
+Enter new element: 60
+
+10
+20
+30
+40
+50
+60`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int arr[6];
+
+    cout << "Enter 5 elements:" << endl;
+
+    for(int i = 0; i < 5; i++) {
+        cin >> arr[i];
+    }
+
+    cout << "Enter new element: ";
+    cin >> arr[5];
+
+    for(int i = 0; i < 6; i++) {
+        cout << arr[i] << endl;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to accept 5 integers from the user and delete the last element from the array by displaying only the first 4 elements.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 5 Integer எண்களை Input ஆக பெற்று, கடைசி Element-ஐ Delete செய்தது போல முதல் 4 Elements-ஐ மட்டும் Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Print only the first 4 elements of the array.",
+
+      hintTamil:
+        "Array-ன் முதல் 4 Elements-ஐ மட்டும் Print செய்யுங்கள்.",
+
+      expectedOutput: `Enter 5 elements:
+10
+20
+30
+40
+50
+
+10
+20
+30
+40`,
+
+      expectedOutputTamil: `Enter 5 elements:
+10
+20
+30
+40
+50
+
+10
+20
+30
+40`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int arr[5];
+
+    cout << "Enter 5 elements:" << endl;
+
+    for(int i = 0; i < 5; i++) {
+        cin >> arr[i];
+    }
+
+    for(int i = 0; i < 4; i++) {
+        cout << arr[i] << endl;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to accept 5 integers from the user and insert a new element at the beginning of the array.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 5 Integer எண்களை Input ஆக பெற்று, புதிய Element ஒன்றை Array-ன் தொடக்கத்தில் (Beginning) Insert செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Shift all elements one position to the right before inserting the new element.",
+
+      hintTamil:
+        "புதிய Element-ஐ Insert செய்வதற்கு முன் அனைத்து Elements-ஐயும் ஒரு இடம் வலதுபுறம் Shift செய்யுங்கள்.",
+
+      expectedOutput: `Enter 5 elements:
+10
+20
+30
+40
+50
+
+Enter new element: 5
+
+5
+10
+20
+30
+40
+50`,
+
+      expectedOutputTamil: `Enter 5 elements:
+10
+20
+30
+40
+50
+
+Enter new element: 5
+
+5
+10
+20
+30
+40
+50`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int arr[6];
+    int newElement;
+
+    cout << "Enter 5 elements:" << endl;
+
+    for(int i = 0; i < 5; i++) {
+        cin >> arr[i];
+    }
+
+    cout << "Enter new element: ";
+    cin >> newElement;
+
+    for(int i = 5; i > 0; i--) {
+        arr[i] = arr[i - 1];
+    }
+
+    arr[0] = newElement;
+
+    cout << "Array after insertion:" << endl;
+
+    for(int i = 0; i < 6; i++) {
+        cout << arr[i] << endl;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to accept 5 integers from the user and count how many times a given element appears in the array.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 5 Integer எண்களை Input ஆக பெற்று, ஒரு குறிப்பிட்ட Element Array-ல் எத்தனை முறை உள்ளது என்பதை எண்ணி Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a counter variable and compare every element with the search value.",
+
+      hintTamil:
+        "Counter Variable பயன்படுத்தி, ஒவ்வொரு Element-ஐயும் Search Value-உடன் ஒப்பிடுங்கள்.",
+
+      expectedOutput: `Enter 5 elements:
+10
+20
+10
+30
+10
+
+Enter element: 10
+
+Count = 3`,
+
+      expectedOutputTamil: `Enter 5 elements:
+10
+20
+10
+30
+10
+
+Enter element: 10
+
+Count = 3`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int arr[5], element, count = 0;
+
+    cout << "Enter 5 elements:" << endl;
+
+    for(int i = 0; i < 5; i++) {
+        cin >> arr[i];
+    }
+
+    cout << "Enter element: ";
+    cin >> element;
+
+    for(int i = 0; i < 5; i++) {
+        if(arr[i] == element) {
+            count++;
+        }
+    }
+
+    cout << "Count = " << count;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to accept 5 integers from the user and replace a given element with a new element.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 5 Integer எண்களை Input ஆக பெற்று, ஒரு குறிப்பிட்ட Element-ஐ புதிய Element-ஆக Replace செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Search for the old element and replace it with the new element.",
+
+      hintTamil:
+        "பழைய Element-ஐ தேடி, அதற்குப் பதிலாக புதிய Element-ஐ சேமியுங்கள்.",
+
+      expectedOutput: `Enter 5 elements:
+10
+20
+30
+40
+50
+
+Enter element to replace: 30
+Enter new element: 35
+
+10
+20
+35
+40
+50`,
+
+      expectedOutputTamil: `Enter 5 elements:
+10
+20
+30
+40
+50
+
+Enter element to replace: 30
+Enter new element: 35
+
+10
+20
+35
+40
+50`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int arr[5], oldElement, newElement;
+
+    cout << "Enter 5 elements:" << endl;
+
+    for(int i = 0; i < 5; i++) {
+        cin >> arr[i];
+    }
+
+    cout << "Enter element to replace: ";
+    cin >> oldElement;
+
+    cout << "Enter new element: ";
+    cin >> newElement;
+
+    for(int i = 0; i < 5; i++) {
+        if(arr[i] == oldElement) {
+            arr[i] = newElement;
+            break;
+        }
+    }
+
+    for(int i = 0; i < 5; i++) {
+        cout << arr[i] << endl;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
