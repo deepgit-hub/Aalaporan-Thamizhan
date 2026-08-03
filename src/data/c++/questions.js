@@ -5678,9 +5678,245 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a C++ program to accept a number from the user and print its multiplication table using a for loop.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று, அதன் பெருக்கல் வாய்ப்பாட்டை For Loop பயன்படுத்தி Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a for loop from 1 to 10.",
+
+      hintTamil:
+        "1 முதல் 10 வரை For Loop-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: 7
+7 x 1 = 7
+7 x 2 = 14
+7 x 3 = 21
+7 x 4 = 28
+7 x 5 = 35
+7 x 6 = 42
+7 x 7 = 49
+7 x 8 = 56
+7 x 9 = 63
+7 x 10 = 70`,
+
+      expectedOutputTamil: `Enter a number: 7
+7 x 1 = 7
+7 x 2 = 14
+7 x 3 = 21
+7 x 4 = 28
+7 x 5 = 35
+7 x 6 = 42
+7 x 7 = 49
+7 x 8 = 56
+7 x 9 = 63
+7 x 10 = 70`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int number;
+
+    cout << "Enter a number: ";
+    cin >> number;
+
+    for (int i = 1; i <= 10; i++) {
+        cout << number << " x " << i << " = " << number * i << endl;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a C++ program to print numbers from 10 to 1 using a for loop.",
+
+      questionTamil:
+        "For Loop பயன்படுத்தி 10 முதல் 1 வரை உள்ள எண்களை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Initialize the loop variable with 10 and decrement it until it reaches 1.",
+
+      hintTamil:
+        "Loop Variable-ஐ 10-ல் Initialize செய்து, 1 வரை Decrement செய்யுங்கள்.",
+
+      expectedOutput: `10
+9
+8
+7
+6
+5
+4
+3
+2
+1`,
+
+      expectedOutputTamil: `10
+9
+8
+7
+6
+5
+4
+3
+2
+1`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    for (int i = 10; i >= 1; i--) {
+        cout << i << endl;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a C++ program to print all even numbers from 2 to 50 using a for loop.",
+
+      questionTamil:
+        "For Loop பயன்படுத்தி 2 முதல் 50 வரை உள்ள அனைத்து Even எண்களையும் Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Start from 2 and increment the loop variable by 2.",
+
+      hintTamil:
+        "2-ல் தொடங்கி ஒவ்வொரு முறையும் Loop Variable-ஐ 2-ஆல் Increment செய்யுங்கள்.",
+
+      expectedOutput: `2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+22
+24
+26
+28
+30
+32
+34
+36
+38
+40
+42
+44
+46
+48
+50`,
+
+      expectedOutputTamil: `2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+22
+24
+26
+28
+30
+32
+34
+36
+38
+40
+42
+44
+46
+48
+50`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a C++ program to print the multiplication table of 8 using a for loop.",
+
+      questionTamil:
+        "For Loop பயன்படுத்தி 8-ன் பெருக்கல் வாய்ப்பாட்டை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a for loop from 1 to 10.",
+
+      hintTamil:
+        "1 முதல் 10 வரை For Loop-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `8 x 1 = 8
+8 x 2 = 16
+8 x 3 = 24
+8 x 4 = 32
+8 x 5 = 40
+8 x 6 = 48
+8 x 7 = 56
+8 x 8 = 64
+8 x 9 = 72
+8 x 10 = 80`,
+
+      expectedOutputTamil: `8 x 1 = 8
+8 x 2 = 16
+8 x 3 = 24
+8 x 4 = 32
+8 x 5 = 40
+8 x 6 = 48
+8 x 7 = 56
+8 x 8 = 64
+8 x 9 = 72
+8 x 10 = 80`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
+
 ];
 
 export default questions;
