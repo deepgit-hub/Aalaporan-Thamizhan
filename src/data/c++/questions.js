@@ -475,6 +475,127 @@ int main() {
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to declare a string variable named name, assign the value 'Deepak', and print it.",
+
+      questionTamil:
+        "'name' என்ற String Variable-ஐ உருவாக்கி, அதற்கு 'Deepak' என்ற மதிப்பை Assign செய்து அதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Include the string library and use the string data type.",
+
+      hintTamil:
+        "string Data Type-ஐ பயன்படுத்த <string> Header File-ஐ Include செய்யுங்கள்.",
+
+      expectedOutput: `Deepak`,
+
+      expectedOutputTamil: `Deepak`,
+
+      solution: `#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+
+    string name = "Deepak";
+
+    cout << name;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to declare two integer variables num1 and num2, assign the values 10 and 20, and print both values.",
+
+      questionTamil:
+        "'num1' மற்றும் 'num2' என்ற இரண்டு Integer Variables-ஐ உருவாக்கி, அவற்றிற்கு 10 மற்றும் 20 என்ற மதிப்புகளை Assign செய்து Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Declare two int variables and print them using cout.",
+
+      hintTamil:
+        "இரண்டு int Variables-ஐ Declare செய்து cout மூலம் Print செய்யுங்கள்.",
+
+      expectedOutput: `10 20`,
+
+      expectedOutputTamil: `10 20`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int num1 = 10;
+    int num2 = 20;
+
+    cout << num1 << " " << num2;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to declare variables for a student's name, age, and percentage. Assign suitable values and print them.",
+
+      questionTamil:
+        "ஒரு மாணவரின் பெயர், வயது மற்றும் சதவீதத்திற்கு Variables-ஐ உருவாக்கி, பொருத்தமான மதிப்புகளை Assign செய்து Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use string, int, and float variables.",
+
+      hintTamil:
+        "string, int மற்றும் float Variables-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Name: Deepak
+Age: 20
+Percentage: 89.5`,
+
+      expectedOutputTamil: `Name: Deepak
+Age: 20
+Percentage: 89.5`,
+
+      solution: `#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+
+    string name = "Deepak";
+    int age = 20;
+    float percentage = 89.5;
+
+    cout << "Name: " << name << endl;
+    cout << "Age: " << age << endl;
+    cout << "Percentage: " << percentage;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
     
   ],
 },
