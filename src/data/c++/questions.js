@@ -13491,6 +13491,179 @@ int main() {
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Device with a function named powerOn() that prints 'Device Powered On'. Create two classes named Computer and Mobile that inherit from Device. Then create a class named Laptop that inherits from Computer and call the inherited function.",
+
+      questionTamil:
+        "Device என்ற Base Class-ஐ உருவாக்கி, 'Device Powered On' என்று Print செய்யும் powerOn() Function-ஐ உருவாக்குங்கள். Device Class-ஐ Inherit செய்யும் Computer மற்றும் Mobile என்ற இரண்டு Classes-ஐ உருவாக்கி, பின்னர் Computer Class-ஐ Inherit செய்யும் Laptop Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "This combines Hierarchical and Multilevel Inheritance.",
+
+      hintTamil:
+        "இது Hierarchical மற்றும் Multilevel Inheritance-ன் சேர்க்கையாகும்.",
+
+      expectedOutput: `Device Powered On`,
+
+      expectedOutputTamil: `Device Powered On`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Device {
+
+public:
+    void powerOn() {
+        cout << "Device Powered On";
+    }
+
+};
+
+class Computer : public Device {
+
+};
+
+class Mobile : public Device {
+
+};
+
+class Laptop : public Computer {
+
+};
+
+int main() {
+
+    Laptop l;
+
+    l.powerOn();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Shape with a function named draw() that prints 'Drawing Shape'. Create two classes named Circle and Rectangle that inherit from Shape. Then create a class named Cylinder that inherits from Circle and call the inherited function.",
+
+      questionTamil:
+        "Shape என்ற Base Class-ஐ உருவாக்கி, 'Drawing Shape' என்று Print செய்யும் draw() Function-ஐ உருவாக்குங்கள். Shape Class-ஐ Inherit செய்யும் Circle மற்றும் Rectangle என்ற இரண்டு Classes-ஐ உருவாக்கி, பின்னர் Circle Class-ஐ Inherit செய்யும் Cylinder Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use both Hierarchical and Multilevel Inheritance.",
+
+      hintTamil:
+        "Hierarchical மற்றும் Multilevel Inheritance இரண்டையும் பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Drawing Shape`,
+
+      expectedOutputTamil: `Drawing Shape`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Shape {
+
+public:
+    void draw() {
+        cout << "Drawing Shape";
+    }
+
+};
+
+class Circle : public Shape {
+
+};
+
+class Rectangle : public Shape {
+
+};
+
+class Cylinder : public Circle {
+
+};
+
+int main() {
+
+    Cylinder c;
+
+    c.draw();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Employee with a function named work() that prints 'Employee Working'. Create two classes named Manager and Developer that inherit from Employee. Then create a class named TeamLead that inherits from Manager and call the inherited function.",
+
+      questionTamil:
+        "Employee என்ற Base Class-ஐ உருவாக்கி, 'Employee Working' என்று Print செய்யும் work() Function-ஐ உருவாக்குங்கள். Employee Class-ஐ Inherit செய்யும் Manager மற்றும் Developer என்ற இரண்டு Classes-ஐ உருவாக்கி, பின்னர் Manager Class-ஐ Inherit செய்யும் TeamLead Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create one base class, two derived classes, and one class derived from one of them.",
+
+      hintTamil:
+        "ஒரு Base Class, இரண்டு Derived Classes மற்றும் அவற்றில் ஒன்றிலிருந்து Inherit செய்யும் மற்றொரு Class-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Employee Working`,
+
+      expectedOutputTamil: `Employee Working`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Employee {
+
+public:
+    void work() {
+        cout << "Employee Working";
+    }
+
+};
+
+class Manager : public Employee {
+
+};
+
+class Developer : public Employee {
+
+};
+
+class TeamLead : public Manager {
+
+};
+
+int main() {
+
+    TeamLead t;
+
+    t.work();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
     
   ],
 },
