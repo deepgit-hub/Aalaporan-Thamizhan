@@ -8776,7 +8776,121 @@ Perimeter: 30`,
     },
   ],
 },
+{
+  topicId: 26,
+  title: "Single Inheritance",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to create a class named Person with a method displayName() that prints 'Deepak'. Create another class Student that inherits from Person. Create an object of Student and call the displayName() method.",
+
+      questionTamil:
+        "'Person' என்ற Class-ஐ உருவாக்கி, அதில் displayName() என்ற Method-ஐ உருவாக்குங்கள். அது 'Deepak' என்பதை Print செய்ய வேண்டும். பின்னர் Person Class-ஐ Inherit செய்யும் Student Class-ஐ உருவாக்கி, Student Object மூலம் displayName() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use class Student(Person).",
+
+      hintTamil:
+        "class Student(Person) என்பதை பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Deepak`,
+
+      expectedOutputTamil: `Deepak`,
+
+      solution: `class Person:
+    def displayName(self):
+        print("Deepak")
+
+class Student(Person):
+    pass
+
+student = Student()
+
+student.displayName()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to create a class named Animal with a method sound() that prints 'Animal Sound'. Create a class Dog that inherits from Animal. Create an object of Dog and call the sound() method.",
+
+      questionTamil:
+        "'Animal' என்ற Class-ஐ உருவாக்கி, அதில் sound() என்ற Method-ஐ உருவாக்குங்கள். அது 'Animal Sound' என்பதை Print செய்ய வேண்டும். பின்னர் Animal Class-ஐ Inherit செய்யும் Dog Class-ஐ உருவாக்கி, Dog Object மூலம் sound() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create the child class using inheritance.",
+
+      hintTamil:
+        "Inheritance பயன்படுத்தி Child Class-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Animal Sound`,
+
+      expectedOutputTamil: `Animal Sound`,
+
+      solution: `class Animal:
+    def sound(self):
+        print("Animal Sound")
+
+class Dog(Animal):
+    pass
+
+dog = Dog()
+
+dog.sound()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to create a class named College with a method showCollege() that prints 'Don Bosco College'. Create a class Department that inherits from College. Create an object of Department and call the showCollege() method.",
+
+      questionTamil:
+        "'College' என்ற Class-ஐ உருவாக்கி, அதில் showCollege() என்ற Method-ஐ உருவாக்குங்கள். அது 'Don Bosco College' என்பதை Print செய்ய வேண்டும். பின்னர் College Class-ஐ Inherit செய்யும் Department Class-ஐ உருவாக்கி, Department Object மூலம் showCollege() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a child class and access the parent method.",
+
+      hintTamil:
+        "Child Class உருவாக்கி Parent Method-ஐ Access செய்யுங்கள்.",
+
+      expectedOutput: `Don Bosco College`,
+
+      expectedOutputTamil: `Don Bosco College`,
+
+      solution: `class College:
+    def showCollege(self):
+        print("Don Bosco College")
+
+class Department(College):
+    pass
+
+department = Department()
+
+department.showCollege()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
