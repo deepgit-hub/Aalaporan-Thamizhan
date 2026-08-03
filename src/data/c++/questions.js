@@ -12823,7 +12823,175 @@ This is a Shape`,
     },
   ],
 },
+{
+  topicId: 28,
+  title: "Multilevel Inheritance",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Animal with a function named eat() that prints 'Animal is Eating'. Create a class named Mammal that inherits from Animal. Then create a class named Dog that inherits from Mammal and call the inherited function.",
+
+      questionTamil:
+        "Animal என்ற Base Class-ஐ உருவாக்கி, 'Animal is Eating' என்று Print செய்யும் eat() Function-ஐ உருவாக்குங்கள். Animal Class-ஐ Inherit செய்யும் Mammal Class-ஐ உருவாக்கி, பின்னர் Mammal Class-ஐ Inherit செய்யும் Dog Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create three levels of inheritance: Animal → Mammal → Dog.",
+
+      hintTamil:
+        "Animal → Mammal → Dog என்ற மூன்று நிலை Inheritance-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Animal is Eating`,
+
+      expectedOutputTamil: `Animal is Eating`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Animal {
+
+public:
+    void eat() {
+        cout << "Animal is Eating";
+    }
+
+};
+
+class Mammal : public Animal {
+
+};
+
+class Dog : public Mammal {
+
+};
+
+int main() {
+
+    Dog d;
+
+    d.eat();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Vehicle with a function named start() that prints 'Vehicle Started'. Create a class named Car that inherits from Vehicle. Then create a class named SportsCar that inherits from Car and call the inherited function.",
+
+      questionTamil:
+        "Vehicle என்ற Base Class-ஐ உருவாக்கி, 'Vehicle Started' என்று Print செய்யும் start() Function-ஐ உருவாக்குங்கள். Vehicle Class-ஐ Inherit செய்யும் Car Class-ஐ உருவாக்கி, பின்னர் Car Class-ஐ Inherit செய்யும் SportsCar Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create three levels of inheritance: Vehicle → Car → SportsCar.",
+
+      hintTamil:
+        "Vehicle → Car → SportsCar என்ற மூன்று நிலை Inheritance-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Vehicle Started`,
+
+      expectedOutputTamil: `Vehicle Started`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Vehicle {
+
+public:
+    void start() {
+        cout << "Vehicle Started";
+    }
+
+};
+
+class Car : public Vehicle {
+
+};
+
+class SportsCar : public Car {
+
+};
+
+int main() {
+
+    SportsCar s;
+
+    s.start();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Person with a function named speak() that prints 'Person Speaking'. Create a class named Teacher that inherits from Person. Then create a class named Professor that inherits from Teacher and call the inherited function.",
+
+      questionTamil:
+        "Person என்ற Base Class-ஐ உருவாக்கி, 'Person Speaking' என்று Print செய்யும் speak() Function-ஐ உருவாக்குங்கள். Person Class-ஐ Inherit செய்யும் Teacher Class-ஐ உருவாக்கி, பின்னர் Teacher Class-ஐ Inherit செய்யும் Professor Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create three levels of inheritance: Person → Teacher → Professor.",
+
+      hintTamil:
+        "Person → Teacher → Professor என்ற மூன்று நிலை Inheritance-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Person Speaking`,
+
+      expectedOutputTamil: `Person Speaking`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Person {
+
+public:
+    void speak() {
+        cout << "Person Speaking";
+    }
+
+};
+
+class Teacher : public Person {
+
+};
+
+class Professor : public Teacher {
+
+};
+
+int main() {
+
+    Professor p;
+
+    p.speak();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
