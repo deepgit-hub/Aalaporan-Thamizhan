@@ -13833,7 +13833,140 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+    {
+  topicId: 30,
+  title: "File Handling",
+
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to create a file named 'sample.txt' and write the text 'Hello World' into it.",
+
+      questionTamil:
+        "'sample.txt' என்ற File-ஐ உருவாக்கி, அதில் 'Hello World' என்று எழுதும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use ofstream to create the file and write data.",
+
+      hintTamil:
+        "File உருவாக்க மற்றும் Data எழுத ofstream-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Hello World is written into sample.txt`,
+
+      expectedOutputTamil: `Hello World is written into sample.txt`,
+
+      solution: `#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+
+    ofstream file("sample.txt");
+
+    file << "Hello World";
+
+    file.close();
+
+    cout << "Hello World is written into sample.txt";
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to read and display the contents of the file 'sample.txt'.",
+
+      questionTamil:
+        "'sample.txt' என்ற File-ல் உள்ள தகவலை படித்து திரையில் Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use ifstream to read data from the file.",
+
+      hintTamil:
+        "File-ஐ படிக்க ifstream-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Hello World`,
+
+      expectedOutputTamil: `Hello World`,
+
+      solution: `#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+
+    ifstream file("sample.txt");
+
+    string text;
+
+    getline(file, text);
+
+    cout << text;
+
+    file.close();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to create a file named 'student.txt' and write your name into it.",
+
+      questionTamil:
+        "'student.txt' என்ற File-ஐ உருவாக்கி, அதில் உங்கள் பெயரை எழுதும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use ofstream to create the file and write the name.",
+
+      hintTamil:
+        "File உருவாக்க மற்றும் பெயரை எழுத ofstream-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Name is written into student.txt`,
+
+      expectedOutputTamil: `Name is written into student.txt`,
+
+      solution: `#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+
+    ofstream file("student.txt");
+
+    file << "Deepak";
+
+    file.close();
+
+    cout << "Name is written into student.txt";
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+  ],
+}
   ],
 },
 ];
