@@ -13664,6 +13664,175 @@ int main() {
       locked: false,
       completed: false,
     },
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Animal with a function named breathe() that prints 'Animal is Breathing'. Create two classes named Mammal and Bird that inherit from Animal. Then create a class named Human that inherits from Mammal and call the inherited function.",
+
+      questionTamil:
+        "Animal என்ற Base Class-ஐ உருவாக்கி, 'Animal is Breathing' என்று Print செய்யும் breathe() Function-ஐ உருவாக்குங்கள். Animal Class-ஐ Inherit செய்யும் Mammal மற்றும் Bird என்ற இரண்டு Classes-ஐ உருவாக்கி, பின்னர் Mammal Class-ஐ Inherit செய்யும் Human Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use both Hierarchical and Multilevel Inheritance.",
+
+      hintTamil:
+        "Hierarchical மற்றும் Multilevel Inheritance இரண்டையும் பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Animal is Breathing`,
+
+      expectedOutputTamil: `Animal is Breathing`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Animal {
+
+public:
+    void breathe() {
+        cout << "Animal is Breathing";
+    }
+
+};
+
+class Mammal : public Animal {
+
+};
+
+class Bird : public Animal {
+
+};
+
+class Human : public Mammal {
+
+};
+
+int main() {
+
+    Human h;
+
+    h.breathe();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Vehicle with a function named move() that prints 'Vehicle Moving'. Create two classes named Car and Bike that inherit from Vehicle. Then create a class named SportsCar that inherits from Car and call the inherited function.",
+
+      questionTamil:
+        "Vehicle என்ற Base Class-ஐ உருவாக்கி, 'Vehicle Moving' என்று Print செய்யும் move() Function-ஐ உருவாக்குங்கள். Vehicle Class-ஐ Inherit செய்யும் Car மற்றும் Bike என்ற இரண்டு Classes-ஐ உருவாக்கி, பின்னர் Car Class-ஐ Inherit செய்யும் SportsCar Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create one base class, two derived classes, and another class derived from one of them.",
+
+      hintTamil:
+        "ஒரு Base Class, இரண்டு Derived Classes மற்றும் அவற்றில் ஒன்றிலிருந்து Inherit செய்யும் மற்றொரு Class-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Vehicle Moving`,
+
+      expectedOutputTamil: `Vehicle Moving`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Vehicle {
+
+public:
+    void move() {
+        cout << "Vehicle Moving";
+    }
+
+};
+
+class Car : public Vehicle {
+
+};
+
+class Bike : public Vehicle {
+
+};
+
+class SportsCar : public Car {
+
+};
+
+int main() {
+
+    SportsCar s;
+
+    s.move();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Person with a function named speak() that prints 'Person Speaking'. Create two classes named Teacher and Student that inherit from Person. Then create a class named Professor that inherits from Teacher and call the inherited function.",
+
+      questionTamil:
+        "Person என்ற Base Class-ஐ உருவாக்கி, 'Person Speaking' என்று Print செய்யும் speak() Function-ஐ உருவாக்குங்கள். Person Class-ஐ Inherit செய்யும் Teacher மற்றும் Student என்ற இரண்டு Classes-ஐ உருவாக்கி, பின்னர் Teacher Class-ஐ Inherit செய்யும் Professor Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use both Hierarchical and Multilevel Inheritance.",
+
+      hintTamil:
+        "Hierarchical மற்றும் Multilevel Inheritance இரண்டையும் பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Person Speaking`,
+
+      expectedOutputTamil: `Person Speaking`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Device with a function named show() that prints 'Device Ready'. Create two classes named Computer and Mobile that inherit from Device. Then create a class named Laptop that inherits from Computer and call the inherited function.",
+
+      questionTamil:
+        "Device என்ற Base Class-ஐ உருவாக்கி, 'Device Ready' என்று Print செய்யும் show() Function-ஐ உருவாக்குங்கள். Device Class-ஐ Inherit செய்யும் Computer மற்றும் Mobile என்ற இரண்டு Classes-ஐ உருவாக்கி, பின்னர் Computer Class-ஐ Inherit செய்யும் Laptop Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a hybrid inheritance structure using one base class, two derived classes, and another derived class.",
+
+      hintTamil:
+        "ஒரு Base Class, இரண்டு Derived Classes மற்றும் மற்றொரு Derived Class கொண்டு Hybrid Inheritance Structure-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Device Ready`,
+
+      expectedOutputTamil: `Device Ready`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
     
   ],
 },
