@@ -9949,6 +9949,130 @@ Don Bosco College`,
     },
   ],
 },
+{
+  topicId: 29,
+  title: "Multilevel Inheritance",
+
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to create a class named GrandParent with a method grandParentMethod() that prints 'Grand Parent'. Create a class Parent that inherits from GrandParent and a class Child that inherits from Parent. Create an object of Child and call the grandParentMethod().",
+
+      questionTamil:
+        "'GrandParent' என்ற Class-ஐ உருவாக்கி, அதில் grandParentMethod() என்ற Method-ஐ உருவாக்குங்கள். பின்னர் GrandParent-ஐ Inherit செய்யும் Parent Class மற்றும் Parent-ஐ Inherit செய்யும் Child Class-ஐ உருவாக்கி, Child Object மூலம் grandParentMethod() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create three levels of inheritance.",
+
+      hintTamil:
+        "மூன்று நிலை Inheritance-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Grand Parent`,
+
+      expectedOutputTamil: `Grand Parent`,
+
+      solution: `class GrandParent:
+    def grandParentMethod(self):
+        print("Grand Parent")
+
+class Parent(GrandParent):
+    pass
+
+class Child(Parent):
+    pass
+
+child = Child()
+
+child.grandParentMethod()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to create a class named Person with a method showName() that prints 'Deepak'. Create a class Student that inherits from Person and a class Leader that inherits from Student. Create an object of Leader and call the showName() method.",
+
+      questionTamil:
+        "'Person' என்ற Class-ஐ உருவாக்கி, அதில் showName() என்ற Method-ஐ உருவாக்குங்கள். பின்னர் Person-ஐ Inherit செய்யும் Student Class மற்றும் Student-ஐ Inherit செய்யும் Leader Class-ஐ உருவாக்கி, Leader Object மூலம் showName() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use multilevel inheritance with three classes.",
+
+      hintTamil:
+        "மூன்று Classes கொண்டு Multilevel Inheritance-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Deepak`,
+
+      expectedOutputTamil: `Deepak`,
+
+      solution: `class Person:
+    def showName(self):
+        print("Deepak")
+
+class Student(Person):
+    pass
+
+class Leader(Student):
+    pass
+
+leader = Leader()
+
+leader.showName()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to create a class named Animal with a method sound() that prints 'Animal Sound'. Create a class Dog that inherits from Animal and a class Puppy that inherits from Dog. Create an object of Puppy and call the sound() method.",
+
+      questionTamil:
+        "'Animal' என்ற Class-ஐ உருவாக்கி, அதில் sound() என்ற Method-ஐ உருவாக்குங்கள். பின்னர் Animal-ஐ Inherit செய்யும் Dog Class மற்றும் Dog-ஐ Inherit செய்யும் Puppy Class-ஐ உருவாக்கி, Puppy Object மூலம் sound() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create three levels of inheritance and access the grandparent method.",
+
+      hintTamil:
+        "மூன்று நிலை Inheritance உருவாக்கி Grandparent Method-ஐ Access செய்யுங்கள்.",
+
+      expectedOutput: `Animal Sound`,
+
+      expectedOutputTamil: `Animal Sound`,
+
+      solution: `class Animal:
+    def sound(self):
+        print("Animal Sound")
+
+class Dog(Animal):
+    pass
+
+class Puppy(Dog):
+    pass
+
+puppy = Puppy()
+
+puppy.sound()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
