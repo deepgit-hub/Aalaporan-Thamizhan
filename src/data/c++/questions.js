@@ -9778,7 +9778,155 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a C++ program to overload a function named calculate(). One function calculates the square of a number and another function calculates the cube of a number.",
+
+      questionTamil:
+        "calculate() என்ற Function-ஐ Overload செய்யுங்கள். ஒரு Function ஒரு எண்ணின் Square-ஐ கணக்கிட வேண்டும். மற்றொரு Function ஒரு எண்ணின் Cube-ஐ கணக்கிட வேண்டும்.",
+
+      hintEnglish:
+        "Use different parameter data types for function overloading.",
+
+      hintTamil:
+        "Function Overloading-க்கு வேறுபட்ட Data Type Parameters-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `25
+125`,
+
+      expectedOutputTamil: `25
+125`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+void calculate(int num) {
+    cout << num * num << endl;
+}
+
+void calculate(float num) {
+    cout << num * num * num;
+}
+
+int main() {
+
+    calculate(5);
+    calculate(5.0f);
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a C++ program to overload a function named display(). One function displays an integer and another function displays an integer and a character.",
+
+      questionTamil:
+        "display() என்ற Function-ஐ Overload செய்யுங்கள். ஒரு Function ஒரு Integer-ஐ Print செய்ய வேண்டும். மற்றொரு Function ஒரு Integer மற்றும் ஒரு Character-ஐ Print செய்ய வேண்டும்.",
+
+      hintEnglish:
+        "Use different numbers of parameters.",
+
+      hintTamil:
+        "வேறுபட்ட எண்ணிக்கையிலான Parameters-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `100
+100 A`,
+
+      expectedOutputTamil: `100
+100 A`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+void display(int num) {
+    cout << num << endl;
+}
+
+void display(int num, char ch) {
+    cout << num << " " << ch;
+}
+
+int main() {
+
+    display(100);
+    display(100, 'A');
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a C++ program to overload a function named add(). One function adds two integers and another function adds three integers.",
+
+      questionTamil:
+        "add() என்ற Function-ஐ Overload செய்யுங்கள். ஒரு Function இரண்டு Integer எண்களை கூட்ட வேண்டும். மற்றொரு Function மூன்று Integer எண்களை கூட்ட வேண்டும்.",
+
+      hintEnglish:
+        "Create overloaded functions with different numbers of parameters.",
+
+      hintTamil:
+        "வேறுபட்ட எண்ணிக்கையிலான Parameters கொண்ட Overloaded Functions-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `30
+60`,
+
+      expectedOutputTamil: `30
+60`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a C++ program to overload a function named show(). One function displays a character and another function displays a string.",
+
+      questionTamil:
+        "show() என்ற Function-ஐ Overload செய்யுங்கள். ஒரு Function ஒரு Character-ஐ Print செய்ய வேண்டும். மற்றொரு Function ஒரு String-ஐ Print செய்ய வேண்டும்.",
+
+      hintEnglish:
+        "Use different parameter data types for the overloaded functions.",
+
+      hintTamil:
+        "Overloaded Functions-க்கு வேறுபட்ட Data Type Parameters-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `B
+Programming`,
+
+      expectedOutputTamil: `B
+Programming`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
