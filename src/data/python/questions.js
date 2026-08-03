@@ -6086,7 +6086,100 @@ Arun`,
     },
   ],
 },
+{
+  topicId: 18,
+  title: "Tuples",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to create a tuple containing the numbers 10, 20, 30, 40, and 50. Print the tuple.",
+
+      questionTamil:
+        "10, 20, 30, 40 மற்றும் 50 ஆகிய எண்களைக் கொண்ட ஒரு Tuple-ஐ உருவாக்கி அதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Store the values inside parentheses ().",
+
+      hintTamil:
+        "Values-ஐ Parentheses ()-க்குள் சேமியுங்கள்.",
+
+      expectedOutput: `(10, 20, 30, 40, 50)`,
+
+      expectedOutputTamil: `(10, 20, 30, 40, 50)`,
+
+      solution: `numbers = (10, 20, 30, 40, 50)
+
+print(numbers)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to create a tuple containing the names 'Deepak', 'Kathir', and 'Rahul'. Print the tuple.",
+
+      questionTamil:
+        "'Deepak', 'Kathir' மற்றும் 'Rahul' ஆகிய பெயர்களைக் கொண்ட ஒரு Tuple-ஐ உருவாக்கி அதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Store the names inside parentheses ().",
+
+      hintTamil:
+        "பெயர்களை Parentheses ()-க்குள் சேமியுங்கள்.",
+
+      expectedOutput: `('Deepak', 'Kathir', 'Rahul')`,
+
+      expectedOutputTamil: `('Deepak', 'Kathir', 'Rahul')`,
+
+      solution: `students = ("Deepak", "Kathir", "Rahul")
+
+print(students)`,
+
+      challenge: false,
+      locked: false,
+     completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to create a tuple containing 'Python', 'Java', and 'C++'. Print the tuple.",
+
+      questionTamil:
+        "'Python', 'Java' மற்றும் 'C++' ஆகியவற்றைக் கொண்ட ஒரு Tuple-ஐ உருவாக்கி அதை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a tuple of strings and print it.",
+
+      hintTamil:
+        "String Values-ஐ கொண்டு ஒரு Tuple உருவாக்கி Print செய்யுங்கள்.",
+
+      expectedOutput: `('Python', 'Java', 'C++')`,
+
+      expectedOutputTamil: `('Python', 'Java', 'C++')`,
+
+      solution: `languages = ("Python", "Java", "C++")
+
+print(languages)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
