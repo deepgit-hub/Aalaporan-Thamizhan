@@ -10863,6 +10863,282 @@ int main() {
     },
   ],
 },
+{
+  topicId: 24,
+  title: "Constructors",
+
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to create a class named Student with a default constructor that prints 'Student Object Created'.",
+
+      questionTamil:
+        "Student என்ற Class-ஐ உருவாக்கி, 'Student Object Created' என்று Print செய்யும் Default Constructor-ஐ பயன்படுத்தி C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a constructor with the same name as the class and no return type.",
+
+      hintTamil:
+        "Class-ன் பெயரிலேயே Return Type இல்லாமல் Constructor-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Student Object Created`,
+
+      expectedOutputTamil: `Student Object Created`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Student {
+
+public:
+
+    Student() {
+        cout << "Student Object Created";
+    }
+
+};
+
+int main() {
+
+    Student s;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to create a class named Car with a default constructor that prints 'Car Created'.",
+
+      questionTamil:
+        "Car என்ற Class-ஐ உருவாக்கி, 'Car Created' என்று Print செய்யும் Default Constructor-ஐ பயன்படுத்தி C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "The constructor is automatically called when the object is created.",
+
+      hintTamil:
+        "Object உருவாக்கப்படும் போது Constructor தானாகவே அழைக்கப்படும்.",
+
+      expectedOutput: `Car Created`,
+
+      expectedOutputTamil: `Car Created`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Car {
+
+public:
+
+    Car() {
+        cout << "Car Created";
+    }
+
+};
+
+int main() {
+
+    Car c;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to create a class named Employee with a default constructor that prints 'Employee Created'.",
+
+      questionTamil:
+        "Employee என்ற Class-ஐ உருவாக்கி, 'Employee Created' என்று Print செய்யும் Default Constructor-ஐ பயன்படுத்தி C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create an object to invoke the constructor automatically.",
+
+      hintTamil:
+        "Constructor தானாக அழைக்கப்பட Object-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Employee Created`,
+
+      expectedOutputTamil: `Employee Created`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Employee {
+
+public:
+
+    Employee() {
+        cout << "Employee Created";
+    }
+
+};
+
+int main() {
+
+    Employee e;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to create a class named Book with a default constructor that prints 'Book Created'.",
+
+      questionTamil:
+        "Book என்ற Class-ஐ உருவாக்கி, 'Book Created' என்று Print செய்யும் Default Constructor-ஐ பயன்படுத்தி C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a constructor with the same name as the class and create an object.",
+
+      hintTamil:
+        "Class-ன் பெயரிலேயே Constructor-ஐ உருவாக்கி, Object-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Book Created`,
+
+      expectedOutputTamil: `Book Created`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Book {
+
+public:
+
+    Book() {
+        cout << "Book Created";
+    }
+
+};
+
+int main() {
+
+    Book b;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to create a class named Mobile with a default constructor that prints 'Mobile Created'.",
+
+      questionTamil:
+        "Mobile என்ற Class-ஐ உருவாக்கி, 'Mobile Created' என்று Print செய்யும் Default Constructor-ஐ பயன்படுத்தி C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "The constructor will execute automatically when the object is created.",
+
+      hintTamil:
+        "Object உருவாக்கப்படும் போது Constructor தானாகவே இயக்கப்படும்.",
+
+      expectedOutput: `Mobile Created`,
+
+      expectedOutputTamil: `Mobile Created`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Mobile {
+
+public:
+
+    Mobile() {
+        cout << "Mobile Created";
+    }
+
+};
+
+int main() {
+
+    Mobile m;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to create a class named Laptop with a default constructor that prints 'Laptop Created'.",
+
+      questionTamil:
+        "Laptop என்ற Class-ஐ உருவாக்கி, 'Laptop Created' என்று Print செய்யும் Default Constructor-ஐ பயன்படுத்தி C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create an object to invoke the constructor automatically.",
+
+      hintTamil:
+        "Constructor தானாக அழைக்கப்பட Object-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Laptop Created`,
+
+      expectedOutputTamil: `Laptop Created`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Laptop {
+
+public:
+
+    Laptop() {
+        cout << "Laptop Created";
+    }
+
+};
+
+int main() {
+
+    Laptop l;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
