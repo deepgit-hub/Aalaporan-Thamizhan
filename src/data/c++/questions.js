@@ -7282,6 +7282,199 @@ int main() {
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to accept 5 integers from the user and print the largest element in the array.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 5 Integer எண்களை Input ஆக பெற்று, Array-ல் உள்ள மிகப்பெரிய எண்ணை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Assume the first element is the largest and compare it with the remaining elements.",
+
+      hintTamil:
+        "முதல் Element-ஐ Largest என எடுத்துக்கொண்டு, மற்ற Elements-உடன் ஒப்பிடுங்கள்.",
+
+      expectedOutput: `Enter 5 numbers:
+15
+40
+25
+10
+35
+
+Largest = 40`,
+
+      expectedOutputTamil: `Enter 5 numbers:
+15
+40
+25
+10
+35
+
+Largest = 40`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int numbers[5];
+
+    cout << "Enter 5 numbers:" << endl;
+
+    for (int i = 0; i < 5; i++) {
+        cin >> numbers[i];
+    }
+
+    int largest = numbers[0];
+
+    for (int i = 1; i < 5; i++) {
+        if (numbers[i] > largest) {
+            largest = numbers[i];
+        }
+    }
+
+    cout << "Largest = " << largest;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to accept 5 integers from the user and print the smallest element in the array.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 5 Integer எண்களை Input ஆக பெற்று, Array-ல் உள்ள மிகச்சிறிய எண்ணை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Assume the first element is the smallest and compare it with the remaining elements.",
+
+      hintTamil:
+        "முதல் Element-ஐ Smallest என எடுத்துக்கொண்டு, மற்ற Elements-உடன் ஒப்பிடுங்கள்.",
+
+      expectedOutput: `Enter 5 numbers:
+15
+40
+25
+10
+35
+
+Smallest = 10`,
+
+      expectedOutputTamil: `Enter 5 numbers:
+15
+40
+25
+10
+35
+
+Smallest = 10`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int numbers[5];
+
+    cout << "Enter 5 numbers:" << endl;
+
+    for (int i = 0; i < 5; i++) {
+        cin >> numbers[i];
+    }
+
+    int smallest = numbers[0];
+
+    for (int i = 1; i < 5; i++) {
+        if (numbers[i] < smallest) {
+            smallest = numbers[i];
+        }
+    }
+
+    cout << "Smallest = " << smallest;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to accept 5 integers from the user and count how many even numbers are present in the array.",
+
+      questionTamil:
+        "பயனரிடமிருந்து 5 Integer எண்களை Input ஆக பெற்று, Array-ல் உள்ள Even எண்களின் எண்ணிக்கையை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a counter variable and check each element using the % operator.",
+
+      hintTamil:
+        "Counter Variable-ஐ பயன்படுத்தி, ஒவ்வொரு Element-ஐயும் % Operator மூலம் சரிபார்க்குங்கள்.",
+
+      expectedOutput: `Enter 5 numbers:
+10
+15
+20
+25
+30
+
+Even Numbers = 3`,
+
+      expectedOutputTamil: `Enter 5 numbers:
+10
+15
+20
+25
+30
+
+Even Numbers = 3`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int numbers[5];
+    int count = 0;
+
+    cout << "Enter 5 numbers:" << endl;
+
+    for (int i = 0; i < 5; i++) {
+        cin >> numbers[i];
+    }
+
+    for (int i = 0; i < 5; i++) {
+        if (numbers[i] % 2 == 0) {
+            count++;
+        }
+    }
+
+    cout << "Even Numbers = " << count;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
     
   ],
 },
