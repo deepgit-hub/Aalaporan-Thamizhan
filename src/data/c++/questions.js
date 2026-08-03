@@ -2461,6 +2461,151 @@ int main() {
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to accept two integers from the user and print 'Equal' if both numbers are equal, otherwise print 'Not Equal'.",
+
+      questionTamil:
+        "பயனரிடமிருந்து இரண்டு Integer எண்களை Input ஆக பெற்று, அவை சமமாக இருந்தால் 'Equal', இல்லையெனில் 'Not Equal' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the == operator with an if-else statement.",
+
+      hintTamil:
+        "== Operator மற்றும் if-else Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter first number: 15
+Enter second number: 20
+Not Equal`,
+
+      expectedOutputTamil: `Enter first number: 15
+Enter second number: 20
+Not Equal`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int num1, num2;
+
+    cout << "Enter first number: ";
+    cin >> num1;
+
+    cout << "Enter second number: ";
+    cin >> num2;
+
+    if (num1 == num2) {
+        cout << "Equal";
+    }
+    else {
+        cout << "Not Equal";
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to accept a person's age from the user and print 'Eligible to Vote' if the age is 18 or above, otherwise print 'Not Eligible to Vote'.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு நபரின் வயதை Input ஆக பெற்று, அது 18 அல்லது அதற்கு மேல் இருந்தால் 'Eligible to Vote', இல்லையெனில் 'Not Eligible to Vote' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the >= operator with an if-else statement.",
+
+      hintTamil:
+        ">= Operator மற்றும் if-else Statement-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter age: 16
+Not Eligible to Vote`,
+
+      expectedOutputTamil: `Enter age: 16
+Not Eligible to Vote`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int age;
+
+    cout << "Enter age: ";
+    cin >> age;
+
+    if (age >= 18) {
+        cout << "Eligible to Vote";
+    }
+    else {
+        cout << "Not Eligible to Vote";
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to accept a character from the user and print 'Uppercase Letter' if it is an uppercase letter, otherwise print 'Not an Uppercase Letter'.",
+
+      questionTamil:
+        "பயனரிடமிருந்து ஒரு Character-ஐ Input ஆக பெற்று, அது Uppercase Letter ஆக இருந்தால் 'Uppercase Letter', இல்லையெனில் 'Not an Uppercase Letter' என்பதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Check whether the character is between 'A' and 'Z' using an if-else statement.",
+
+      hintTamil:
+        "'A' மற்றும் 'Z' இடையே உள்ளதா என்பதை if-else Statement மூலம் சரிபார்க்குங்கள்.",
+
+      expectedOutput: `Enter a character: b
+Not an Uppercase Letter`,
+
+      expectedOutputTamil: `Enter a character: b
+Not an Uppercase Letter`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    char ch;
+
+    cout << "Enter a character: ";
+    cin >> ch;
+
+    if (ch >= 'A' && ch <= 'Z') {
+        cout << "Uppercase Letter";
+    }
+    else {
+        cout << "Not an Uppercase Letter";
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
     
   ],
 },
