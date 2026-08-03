@@ -8647,6 +8647,133 @@ rectangle = Rectangle(10, 5)`,
       locked: false,
       completed: false,
     },
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a Python program to create a class named Student with a constructor that accepts a student's name, age, and department and prints all the details. Create an object.",
+
+      questionTamil:
+        "'Student' என்ற Class-ஐ உருவாக்கி, Constructor-ல் மாணவரின் பெயர், வயது மற்றும் Department-ஐ Parameter-ஆக பெற்று அனைத்து விவரங்களையும் Print செய்ய வேண்டும். பின்னர் ஒரு Object-ஐ உருவாக்கும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Pass three arguments while creating the object.",
+
+      hintTamil:
+        "Object உருவாக்கும் போது மூன்று Arguments-ஐ அனுப்புங்கள்.",
+
+      expectedOutput: `Name: Deepak
+Age: 20
+Department: Computer Science`,
+
+      expectedOutputTamil: `Name: Deepak
+Age: 20
+Department: Computer Science`,
+
+      solution: `class Student:
+    def __init__(self, name, age, department):
+        print("Name:", name)
+        print("Age:", age)
+        print("Department:", department)
+
+student = Student("Deepak", 20, "Computer Science")`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a Python program to create a class named Calculator with a constructor that accepts two numbers and prints their sum. Create an object.",
+
+      questionTamil:
+        "'Calculator' என்ற Class-ஐ உருவாக்கி, Constructor-ல் இரண்டு எண்களை Parameter-ஆக பெற்று அவற்றின் கூட்டுத்தொகையை Print செய்ய வேண்டும். பின்னர் ஒரு Object-ஐ உருவாக்கும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Add the two numbers inside the constructor.",
+
+      hintTamil:
+        "Constructor-க்குள் இரண்டு எண்களையும் கூட்டுங்கள்.",
+
+      expectedOutput: `Sum: 30`,
+
+      expectedOutputTamil: `Sum: 30`,
+
+      solution: `class Calculator:
+    def __init__(self, a, b):
+        print("Sum:", a + b)
+
+calculator = Calculator(10, 20)`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a Python program to create a class named Employee with a constructor that accepts an employee's name, salary, and department and prints all the details. Create an object.",
+
+      questionTamil:
+        "'Employee' என்ற Class-ஐ உருவாக்கி, Constructor-ல் பணியாளரின் பெயர், சம்பளம் மற்றும் Department-ஐ Parameter-ஆக பெற்று அனைத்து விவரங்களையும் Print செய்ய வேண்டும். பின்னர் ஒரு Object-ஐ உருவாக்கும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Pass three arguments to the constructor and print all the values.",
+
+      hintTamil:
+        "Constructor-க்கு மூன்று Arguments அனுப்பி அனைத்து Values-ஐ Print செய்யுங்கள்.",
+
+      expectedOutput: `Name: Kathir
+Salary: 30000
+Department: IT`,
+
+      expectedOutputTamil: `Name: Kathir
+Salary: 30000
+Department: IT`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a Python program to create a class named Rectangle with a constructor that accepts length and width and prints the area and perimeter. Create an object.",
+
+      questionTamil:
+        "'Rectangle' என்ற Class-ஐ உருவாக்கி, Constructor-ல் Length மற்றும் Width-ஐ Parameter-ஆக பெற்று அதன் Area மற்றும் Perimeter-ஐ Print செய்ய வேண்டும். பின்னர் ஒரு Object-ஐ உருவாக்கும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Calculate both the area and perimeter inside the constructor.",
+
+      hintTamil:
+        "Constructor-க்குள் Area மற்றும் Perimeter இரண்டையும் கணக்கிடுங்கள்.",
+
+      expectedOutput: `Area: 50
+Perimeter: 30`,
+
+      expectedOutputTamil: `Area: 50
+Perimeter: 30`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
