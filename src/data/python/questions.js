@@ -8455,7 +8455,106 @@ Department: Computer Science`,
     },
   ],
 },
+{
+  topicId: 25,
+  title: "Constructors",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a Python program to create a class named Student with a constructor that prints 'Student Object Created'. Create an object.",
+
+      questionTamil:
+        "'Student' என்ற Class-ஐ உருவாக்கி, அதில் Constructor-ஐ பயன்படுத்தி 'Student Object Created' என்பதை Print செய்ய வேண்டும். பின்னர் ஒரு Object-ஐ உருவாக்கும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the __init__() constructor.",
+
+      hintTamil:
+        "__init__() Constructor-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Student Object Created`,
+
+      expectedOutputTamil: `Student Object Created`,
+
+      solution: `class Student:
+    def __init__(self):
+        print("Student Object Created")
+
+student = Student()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a Python program to create a class named Student with a constructor that prints 'Welcome Deepak'. Create an object.",
+
+      questionTamil:
+        "'Student' என்ற Class-ஐ உருவாக்கி, அதில் Constructor பயன்படுத்தி 'Welcome Deepak' என்பதை Print செய்ய வேண்டும். பின்னர் ஒரு Object-ஐ உருவாக்கும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the __init__() constructor.",
+
+      hintTamil:
+        "__init__() Constructor-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Welcome Deepak`,
+
+      expectedOutputTamil: `Welcome Deepak`,
+
+      solution: `class Student:
+    def __init__(self):
+        print("Welcome Deepak")
+
+student = Student()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a Python program to create a class named College with a constructor that prints 'Don Bosco College'. Create an object.",
+
+      questionTamil:
+        "'College' என்ற Class-ஐ உருவாக்கி, அதில் Constructor பயன்படுத்தி 'Don Bosco College' என்பதை Print செய்ய வேண்டும். பின்னர் ஒரு Object-ஐ உருவாக்கும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the __init__() method.",
+
+      hintTamil:
+        "__init__() Method-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Don Bosco College`,
+
+      expectedOutputTamil: `Don Bosco College`,
+
+      solution: `class College:
+    def __init__(self):
+        print("Don Bosco College")
+
+college = College()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
