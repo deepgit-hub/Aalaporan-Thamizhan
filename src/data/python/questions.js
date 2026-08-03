@@ -7479,6 +7479,100 @@ print(isEven(8))`,
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to create a lambda function that finds the larger of two numbers (25 and 40) and prints the result.",
+
+      questionTamil:
+        "25 மற்றும் 40 ஆகிய இரண்டு எண்களில் பெரிய எண்ணை கண்டறியும் Lambda Function-ஐ உருவாக்கி அதன் முடிவை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a conditional expression inside the lambda function.",
+
+      hintTamil:
+        "Lambda Function-க்குள் Conditional Expression-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `40`,
+
+      expectedOutputTamil: `40`,
+
+      solution: `largest = lambda a, b: a if a > b else b
+
+print(largest(25, 40))`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to create a lambda function that converts a string to uppercase. Print the result for 'python'.",
+
+      questionTamil:
+        "'python' என்ற String-ஐ Uppercase-ஆக மாற்றும் Lambda Function-ஐ உருவாக்கி அதன் முடிவை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the upper() method inside the lambda function.",
+
+      hintTamil:
+        "Lambda Function-க்குள் upper() Method-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `PYTHON`,
+
+      expectedOutputTamil: `PYTHON`,
+
+      solution: `uppercase = lambda text: text.upper()
+
+print(uppercase("python"))`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to accept two numbers from the user and use a lambda function to print their product.",
+
+      questionTamil:
+        "பயனரிடமிருந்து இரண்டு எண்களை Input ஆக பெற்று, Lambda Function பயன்படுத்தி அவற்றின் பெருக்கலை Print செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input(), int(), and a lambda function with two parameters.",
+
+      hintTamil:
+        "input(), int() மற்றும் இரண்டு Parameters கொண்ட Lambda Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter first number: 5
+Enter second number: 6
+30`,
+
+      expectedOutputTamil: `Enter first number: 5
+Enter second number: 6
+30`,
+
+      solution: `multiply = lambda a, b: a * b
+
+num1 = int(input("Enter first number: "))
+
+num2 = int(input("Enter second number: "))
+
+print(multiply(num1, num2))`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
     
   ],
 },
