@@ -5916,7 +5916,162 @@ int main() {
     },
   ],
 },
+{
+  topicId: 14,
+  title: "Break Statement",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to print numbers from 1 to 10 using a for loop, but stop the loop when the number becomes 5 using the break statement.",
+
+      questionTamil:
+        "For Loop பயன்படுத்தி 1 முதல் 10 வரை உள்ள எண்களை Print செய்யுங்கள். ஆனால் எண் 5 ஆனவுடன் Break Statement பயன்படுத்தி Loop-ஐ நிறுத்தும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use an if statement to check if the number is 5, then use break.",
+
+      hintTamil:
+        "எண் 5 ஆக உள்ளதா என்பதை if Statement மூலம் சரிபார்த்து break-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `1
+2
+3
+4`,
+
+      expectedOutputTamil: `1
+2
+3
+4`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    for (int i = 1; i <= 10; i++) {
+
+        if (i == 5) {
+            break;
+        }
+
+        cout << i << endl;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to print numbers from 10 to 1 using a while loop, but stop the loop when the number becomes 6 using the break statement.",
+
+      questionTamil:
+        "While Loop பயன்படுத்தி 10 முதல் 1 வரை உள்ள எண்களை Print செய்யுங்கள். ஆனால் எண் 6 ஆனவுடன் Break Statement பயன்படுத்தி Loop-ஐ நிறுத்தும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use an if statement inside the while loop and apply break.",
+
+      hintTamil:
+        "While Loop-க்குள் if Statement பயன்படுத்தி break-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `10
+9
+8
+7`,
+
+      expectedOutputTamil: `10
+9
+8
+7`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int i = 10;
+
+    while (i >= 1) {
+
+        if (i == 6) {
+            break;
+        }
+
+        cout << i << endl;
+        i--;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to print the multiplication table of 7 using a for loop, but stop after printing 7 × 5 using the break statement.",
+
+      questionTamil:
+        "For Loop பயன்படுத்தி 7-ன் பெருக்கல் வாய்ப்பாட்டை Print செய்யுங்கள். ஆனால் 7 × 5 வரை Print செய்த பிறகு Break Statement பயன்படுத்தி Loop-ஐ நிறுத்தும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use an if statement to check when the loop variable becomes 6.",
+
+      hintTamil:
+        "Loop Variable 6 ஆகும்போது if Statement மூலம் break-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `7 x 1 = 7
+7 x 2 = 14
+7 x 3 = 21
+7 x 4 = 28
+7 x 5 = 35`,
+
+      expectedOutputTamil: `7 x 1 = 7
+7 x 2 = 14
+7 x 3 = 21
+7 x 4 = 28
+7 x 5 = 35`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    for (int i = 1; i <= 10; i++) {
+
+        if (i == 6) {
+            break;
+        }
+
+        cout << "7 x " << i << " = " << 7 * i << endl;
+    }
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
