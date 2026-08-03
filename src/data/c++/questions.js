@@ -9003,7 +9003,133 @@ Element Found`,
     },
   ],
 },
+{
+  topicId: 20,
+  title: "Functions",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to create a function named greet() that prints 'Welcome to C++ Programming'. Call the function from the main() function.",
+
+      questionTamil:
+        "greet() என்ற Function-ஐ உருவாக்கி, அது 'Welcome to C++ Programming' என்று Print செய்யும் வகையில் C++ Program-ஐ எழுதுங்கள். அந்த Function-ஐ main() Function-லிருந்து Call செய்யுங்கள்.",
+
+      hintEnglish:
+        "Create a function outside main() and call it inside main().",
+
+      hintTamil:
+        "main()-க்கு வெளியே Function-ஐ உருவாக்கி, main()-க்குள் Call செய்யுங்கள்.",
+
+      expectedOutput: `Welcome to C++ Programming`,
+
+      expectedOutputTamil: `Welcome to C++ Programming`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+void greet() {
+    cout << "Welcome to C++ Programming";
+}
+
+int main() {
+
+    greet();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to create a function named displayNumber() that prints the number 100. Call the function from main().",
+
+      questionTamil:
+        "displayNumber() என்ற Function-ஐ உருவாக்கி, அது 100-ஐ Print செய்யும் வகையில் C++ Program-ஐ எழுதுங்கள். அந்த Function-ஐ main()-லிருந்து Call செய்யுங்கள்.",
+
+      hintEnglish:
+        "Create a function with no parameters and no return value.",
+
+      hintTamil:
+        "Parameters மற்றும் Return Value இல்லாத Function-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `100`,
+
+      expectedOutputTamil: `100`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+void displayNumber() {
+    cout << 100;
+}
+
+int main() {
+
+    displayNumber();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to create a function named displayMessage() that prints 'Have a Nice Day!'. Call the function twice from main().",
+
+      questionTamil:
+        "displayMessage() என்ற Function-ஐ உருவாக்கி, அது 'Have a Nice Day!' என்று Print செய்யும் வகையில் C++ Program-ஐ எழுதுங்கள். அந்த Function-ஐ main()-லிருந்து இரண்டு முறை Call செய்யுங்கள்.",
+
+      hintEnglish:
+        "Call the same function two times.",
+
+      hintTamil:
+        "ஒரே Function-ஐ இரண்டு முறை Call செய்யுங்கள்.",
+
+      expectedOutput: `Have a Nice Day!
+Have a Nice Day!`,
+
+      expectedOutputTamil: `Have a Nice Day!
+Have a Nice Day!`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+void displayMessage() {
+    cout << "Have a Nice Day!" << endl;
+}
+
+int main() {
+
+    displayMessage();
+    displayMessage();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
