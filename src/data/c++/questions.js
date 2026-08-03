@@ -11435,6 +11435,156 @@ int main() {
       locked: false,
       completed: false,
     },
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Shape with a function named draw() that prints 'Drawing Shape'. Create a derived class named Circle and call the inherited function.",
+
+      questionTamil:
+        "Shape என்ற Base Class-ஐ உருவாக்கி, 'Drawing Shape' என்று Print செய்யும் draw() Function-ஐ உருவாக்குங்கள். Shape Class-ஐ Inherit செய்யும் Circle என்ற Derived Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a derived class using public inheritance and call the inherited function.",
+
+      hintTamil:
+        "public Inheritance பயன்படுத்தி Derived Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யுங்கள்.",
+
+      expectedOutput: `Drawing Shape`,
+
+      expectedOutputTamil: `Drawing Shape`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Shape {
+
+public:
+    void draw() {
+        cout << "Drawing Shape";
+    }
+
+};
+
+class Circle : public Shape {
+
+};
+
+int main() {
+
+    Circle c;
+
+    c.draw();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Employee with a function named work() that prints 'Employee Working'. Create a derived class named Manager and call the inherited function.",
+
+      questionTamil:
+        "Employee என்ற Base Class-ஐ உருவாக்கி, 'Employee Working' என்று Print செய்யும் work() Function-ஐ உருவாக்குங்கள். Employee Class-ஐ Inherit செய்யும் Manager என்ற Derived Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create an object of the derived class and call the inherited function.",
+
+      hintTamil:
+        "Derived Class-ன் Object-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யுங்கள்.",
+
+      expectedOutput: `Employee Working`,
+
+      expectedOutputTamil: `Employee Working`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Employee {
+
+public:
+    void work() {
+        cout << "Employee Working";
+    }
+
+};
+
+class Manager : public Employee {
+
+};
+
+int main() {
+
+    Manager m;
+
+    m.work();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to create a base class named Bird with a function named fly() that prints 'Bird is Flying'. Create a derived class named Eagle and call the inherited function.",
+
+      questionTamil:
+        "Bird என்ற Base Class-ஐ உருவாக்கி, 'Bird is Flying' என்று Print செய்யும் fly() Function-ஐ உருவாக்குங்கள். Bird Class-ஐ Inherit செய்யும் Eagle என்ற Derived Class-ஐ உருவாக்கி, Inherited Function-ஐ Call செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use public inheritance and create an object of the derived class.",
+
+      hintTamil:
+        "public Inheritance பயன்படுத்தி Derived Class-ஐ உருவாக்கி, அதன் Object-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Bird is Flying`,
+
+      expectedOutputTamil: `Bird is Flying`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+class Bird {
+
+public:
+    void fly() {
+        cout << "Bird is Flying";
+    }
+
+};
+
+class Eagle : public Bird {
+
+};
+
+int main() {
+
+    Eagle e;
+
+    e.fly();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
   ],
 },
 ];
