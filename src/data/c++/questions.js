@@ -9127,7 +9127,175 @@ int main() {
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a C++ program to create a function named printEven() that prints all even numbers from 2 to 20. Call the function from main().",
+
+      questionTamil:
+        "printEven() என்ற Function-ஐ உருவாக்கி, 2 முதல் 20 வரை உள்ள அனைத்து Even எண்களையும் Print செய்யும் C++ Program-ஐ எழுதுங்கள். அந்த Function-ஐ main()-லிருந்து Call செய்யுங்கள்.",
+
+      hintEnglish:
+        "Use a for loop inside the function.",
+
+      hintTamil:
+        "Function-க்குள் for Loop-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `2
+4
+6
+8
+10
+12
+14
+16
+18
+20`,
+
+      expectedOutputTamil: `2
+4
+6
+8
+10
+12
+14
+16
+18
+20`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+void printEven() {
+
+    for(int i = 2; i <= 20; i += 2) {
+        cout << i << endl;
+    }
+}
+
+int main() {
+
+    printEven();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a C++ program to create a function named printTable() that prints the multiplication table of 5. Call the function from main().",
+
+      questionTamil:
+        "printTable() என்ற Function-ஐ உருவாக்கி, 5-ன் பெருக்கல் வாய்ப்பாட்டை Print செய்யும் C++ Program-ஐ எழுதுங்கள். அந்த Function-ஐ main()-லிருந்து Call செய்யுங்கள்.",
+
+      hintEnglish:
+        "Use a for loop inside the function to print the multiplication table.",
+
+      hintTamil:
+        "Function-க்குள் for Loop-ஐ பயன்படுத்தி பெருக்கல் வாய்ப்பாட்டை Print செய்யுங்கள்.",
+
+      expectedOutput: `5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50`,
+
+      expectedOutputTamil: `5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+void printTable() {
+
+    for(int i = 1; i <= 10; i++) {
+        cout << "5 x " << i << " = " << 5 * i << endl;
+    }
+}
+
+int main() {
+
+    printTable();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a C++ program to create a function named printSquare() that prints the squares of numbers from 1 to 5. Call the function from main().",
+
+      questionTamil:
+        "printSquare() என்ற Function-ஐ உருவாக்கி, 1 முதல் 5 வரை உள்ள எண்களின் Square-ஐ Print செய்யும் C++ Program-ஐ எழுதுங்கள். அந்த Function-ஐ main()-லிருந்து Call செய்யுங்கள்.",
+
+      hintEnglish:
+        "Use a for loop inside the function and print i * i.",
+
+      hintTamil:
+        "Function-க்குள் for Loop பயன்படுத்தி i * i-ஐ Print செய்யுங்கள்.",
+
+      expectedOutput: `1
+4
+9
+16
+25`,
+
+      expectedOutputTamil: `1
+4
+9
+16
+25`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+void printSquare() {
+
+    for(int i = 1; i <= 5; i++) {
+        cout << i * i << endl;
+    }
+}
+
+int main() {
+
+    printSquare();
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
