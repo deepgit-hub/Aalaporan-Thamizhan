@@ -7231,9 +7231,164 @@ welcome()`,
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a Python program to create a function named square() that accepts a number as input and prints its square. Call the function.",
+
+      questionTamil:
+        "'square()' என்ற Function-ஐ உருவாக்கி, பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று அதன் Square-ஐ Print செய்ய வேண்டும். அந்த Function-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input(), int(), and multiply the number by itself.",
+
+      hintTamil:
+        "input(), int() பயன்படுத்தி, எண்ணை அதே எண்ணால் பெருக்குங்கள்.",
+
+      expectedOutput: `Enter a number: 5
+25`,
+
+      expectedOutputTamil: `Enter a number: 5
+25`,
+
+      solution: `def square():
+    number = int(input("Enter a number: "))
+    print(number * number)
+
+square()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a Python program to create a function named multiplicationTable() that accepts a number as input and prints its multiplication table from 1 to 10. Call the function.",
+
+      questionTamil:
+        "'multiplicationTable()' என்ற Function-ஐ உருவாக்கி, பயனரிடமிருந்து ஒரு எண்ணை Input ஆக பெற்று அதன் பெருக்கல் வாய்ப்பாட்டை (1 முதல் 10 வரை) Print செய்ய வேண்டும். அந்த Function-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use a for loop inside the function.",
+
+      hintTamil:
+        "Function-க்குள் For Loop-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter a number: 5
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50`,
+
+      expectedOutputTamil: `Enter a number: 5
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50`,
+
+      solution: `def multiplicationTable():
+    number = int(input("Enter a number: "))
+
+    for i in range(1, 11):
+        print(number, "x", i, "=", number * i)
+
+multiplicationTable()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a Python program to create a function named largest() that accepts three numbers as input and prints the largest number. Call the function.",
+
+      questionTamil:
+        "'largest()' என்ற Function-ஐ உருவாக்கி, பயனரிடமிருந்து மூன்று எண்களை Input ஆக பெற்று, அவற்றில் மிகப்பெரிய எண்ணை Print செய்ய வேண்டும். அந்த Function-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use input(), int(), and the max() function.",
+
+      hintTamil:
+        "input(), int() மற்றும் max() Function-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter first number: 10
+Enter second number: 35
+Enter third number: 25
+35`,
+
+      expectedOutputTamil: `Enter first number: 10
+Enter second number: 35
+Enter third number: 25
+35`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a Python program to create a function named studentDetails() that accepts a student's name, age, and department as input and prints all the details. Call the function.",
+
+      questionTamil:
+        "'studentDetails()' என்ற Function-ஐ உருவாக்கி, பயனரிடமிருந்து மாணவரின் பெயர், வயது மற்றும் Department-ஐ Input ஆக பெற்று, அனைத்து விவரங்களையும் Print செய்ய வேண்டும். அந்த Function-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use multiple input() statements inside the function.",
+
+      hintTamil:
+        "Function-க்குள் பல input() Statements-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Enter name: Deepak
+Enter age: 20
+Enter department: Computer Science
+Name: Deepak
+Age: 20
+Department: Computer Science`,
+
+      expectedOutputTamil: `Enter name: Deepak
+Enter age: 20
+Enter department: Computer Science
+Name: Deepak
+Age: 20
+Department: Computer Science`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
+
 
 ];
 
