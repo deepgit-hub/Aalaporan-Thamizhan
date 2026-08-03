@@ -10070,7 +10070,122 @@ puppy.sound()`,
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to create a class named College with a method showCollege() that prints 'Don Bosco College'. Create a class Department that inherits from College and a class Student that inherits from Department. Create an object of Student and call the showCollege() method.",
+
+      questionTamil:
+        "'College' என்ற Class-ஐ உருவாக்கி, அதில் showCollege() என்ற Method-ஐ உருவாக்குங்கள். பின்னர் College-ஐ Inherit செய்யும் Department Class மற்றும் Department-ஐ Inherit செய்யும் Student Class-ஐ உருவாக்கி, Student Object மூலம் showCollege() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create three levels of inheritance and call the grandparent method.",
+
+      hintTamil:
+        "மூன்று நிலை Inheritance உருவாக்கி Grandparent Method-ஐ Call செய்யுங்கள்.",
+
+      expectedOutput: `Don Bosco College`,
+
+      expectedOutputTamil: `Don Bosco College`,
+
+      solution: `class College:
+    def showCollege(self):
+        print("Don Bosco College")
+
+class Department(College):
+    pass
+
+class Student(Department):
+    pass
+
+student = Student()
+
+student.showCollege()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to create a class named Vehicle with a method start() that prints 'Vehicle Started'. Create a class Car that inherits from Vehicle and a class SportsCar that inherits from Car. Create an object of SportsCar and call the start() method.",
+
+      questionTamil:
+        "'Vehicle' என்ற Class-ஐ உருவாக்கி, அதில் start() என்ற Method-ஐ உருவாக்குங்கள். பின்னர் Vehicle-ஐ Inherit செய்யும் Car Class மற்றும் Car-ஐ Inherit செய்யும் SportsCar Class-ஐ உருவாக்கி, SportsCar Object மூலம் start() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use three classes in multilevel inheritance.",
+
+      hintTamil:
+        "மூன்று Classes கொண்டு Multilevel Inheritance-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `Vehicle Started`,
+
+      expectedOutputTamil: `Vehicle Started`,
+
+      solution: `class Vehicle:
+    def start(self):
+        print("Vehicle Started")
+
+class Car(Vehicle):
+    pass
+
+class SportsCar(Car):
+    pass
+
+sportsCar = SportsCar()
+
+sportsCar.start()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to create a class named Employee with a method showCompany() that prints 'OpenAI'. Create a class Manager that inherits from Employee and a class TeamLeader that inherits from Manager. Create an object of TeamLeader and call the showCompany() method.",
+
+      questionTamil:
+        "'Employee' என்ற Class-ஐ உருவாக்கி, அதில் showCompany() என்ற Method-ஐ உருவாக்குங்கள். பின்னர் Employee-ஐ Inherit செய்யும் Manager Class மற்றும் Manager-ஐ Inherit செய்யும் TeamLeader Class-ஐ உருவாக்கி, TeamLeader Object மூலம் showCompany() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create three inheritance levels and call the inherited method.",
+
+      hintTamil:
+        "மூன்று நிலை Inheritance உருவாக்கி Inherited Method-ஐ Call செய்யுங்கள்.",
+
+      expectedOutput: `OpenAI`,
+
+      expectedOutputTamil: `OpenAI`,
+
+      solution: `class Employee:
+    def showCompany(self):
+        print("OpenAI")
+
+class Manager(Employee):
+    pass
+
+class TeamLeader(Manager):
+    pass
+
+teamLeader = TeamLeader()
+
+teamLeader.showCompany()`,
+
+      challenge: false,
+      locked: false,
+     completed: false,
+    },
   ],
 },
 ];
