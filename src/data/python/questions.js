@@ -9676,7 +9676,134 @@ staff.showCollege()`,
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 4,
+      title: "Question 4",
+
+      questionEnglish:
+        "Write a Python program to create a class named Vehicle with a method start() that prints 'Vehicle Started'. Create two classes Car and Bike that inherit from Vehicle. Create objects of both classes and call the start() method.",
+
+      questionTamil:
+        "'Vehicle' என்ற Class-ஐ உருவாக்கி, அதில் start() என்ற Method-ஐ உருவாக்குங்கள். அது 'Vehicle Started' என்பதை Print செய்ய வேண்டும். பின்னர் Vehicle Class-ஐ Inherit செய்யும் Car மற்றும் Bike என்ற இரண்டு Classes-ஐ உருவாக்கி, இரண்டு Objects மூலம் start() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create two child classes from one parent class.",
+
+      hintTamil:
+        "ஒரே Parent Class-இல் இருந்து இரண்டு Child Classes-ஐ உருவாக்குங்கள்.",
+
+      expectedOutput: `Vehicle Started
+Vehicle Started`,
+
+      expectedOutputTamil: `Vehicle Started
+Vehicle Started`,
+
+      solution: `class Vehicle:
+    def start(self):
+        print("Vehicle Started")
+
+class Car(Vehicle):
+    pass
+
+class Bike(Vehicle):
+    pass
+
+car = Car()
+bike = Bike()
+
+car.start()
+bike.start()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 5,
+      title: "Question 5",
+
+      questionEnglish:
+        "Write a Python program to create a class named Shape with a method area() that prints 'Area Calculated'. Create two classes Rectangle and Circle that inherit from Shape. Create objects of both classes and call the area() method.",
+
+      questionTamil:
+        "'Shape' என்ற Class-ஐ உருவாக்கி, அதில் area() என்ற Method-ஐ உருவாக்குங்கள். அது 'Area Calculated' என்பதை Print செய்ய வேண்டும். பின்னர் Shape Class-ஐ Inherit செய்யும் Rectangle மற்றும் Circle என்ற இரண்டு Classes-ஐ உருவாக்கி, இரண்டு Objects மூலம் area() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create two child classes and access the parent method.",
+
+      hintTamil:
+        "இரண்டு Child Classes உருவாக்கி Parent Method-ஐ Access செய்யுங்கள்.",
+
+      expectedOutput: `Area Calculated
+Area Calculated`,
+
+      expectedOutputTamil: `Area Calculated
+Area Calculated`,
+
+      solution: `class Shape:
+    def area(self):
+        print("Area Calculated")
+
+class Rectangle(Shape):
+    pass
+
+class Circle(Shape):
+    pass
+
+rectangle = Rectangle()
+circle = Circle()
+
+rectangle.area()
+circle.area()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 6,
+      title: "Question 6",
+
+      questionEnglish:
+        "Write a Python program to create a class named Employee with a method showCompany() that prints 'OpenAI'. Create two classes Manager and Developer that inherit from Employee. Create objects of both classes and call the showCompany() method.",
+
+      questionTamil:
+        "'Employee' என்ற Class-ஐ உருவாக்கி, அதில் showCompany() என்ற Method-ஐ உருவாக்குங்கள். அது 'OpenAI' என்பதை Print செய்ய வேண்டும். பின்னர் Employee Class-ஐ Inherit செய்யும் Manager மற்றும் Developer என்ற இரண்டு Classes-ஐ உருவாக்கி, இரண்டு Objects மூலம் showCompany() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use one parent class and two child classes.",
+
+      hintTamil:
+        "ஒரே Parent Class மற்றும் இரண்டு Child Classes-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `OpenAI
+OpenAI`,
+
+      expectedOutputTamil: `OpenAI
+OpenAI`,
+
+      solution: `class Employee:
+    def showCompany(self):
+        print("OpenAI")
+
+class Manager(Employee):
+    pass
+
+class Developer(Employee):
+    pass
+
+manager = Manager()
+developer = Developer()
+
+manager.showCompany()
+developer.showCompany()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
   ],
 },
 ];
