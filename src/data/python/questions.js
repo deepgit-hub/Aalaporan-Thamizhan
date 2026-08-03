@@ -8998,9 +8998,138 @@ car.start()`,
       locked: false,
       completed: false,
     },
-    
+        {
+      id: 7,
+      title: "Question 7",
+
+      questionEnglish:
+        "Write a Python program to create a class named Employee with a method showDetails() that prints 'Employee Details'. Create a class Manager that inherits from Employee. Create an object of Manager and call the showDetails() method.",
+
+      questionTamil:
+        "'Employee' என்ற Class-ஐ உருவாக்கி, அதில் showDetails() என்ற Method-ஐ உருவாக்குங்கள். அது 'Employee Details' என்பதை Print செய்ய வேண்டும். பின்னர் Employee Class-ஐ Inherit செய்யும் Manager Class-ஐ உருவாக்கி, Manager Object மூலம் showDetails() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create the child class using inheritance and call the parent method.",
+
+      hintTamil:
+        "Inheritance பயன்படுத்தி Child Class-ஐ உருவாக்கி Parent Method-ஐ Call செய்யுங்கள்.",
+
+      expectedOutput: `Employee Details`,
+
+      expectedOutputTamil: `Employee Details`,
+
+      solution: `class Employee:
+    def showDetails(self):
+        print("Employee Details")
+
+class Manager(Employee):
+    pass
+
+manager = Manager()
+
+manager.showDetails()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 8,
+      title: "Question 8",
+
+      questionEnglish:
+        "Write a Python program to create a class named Person with a method greet() that prints 'Hello'. Create a class Student that inherits from Person. Create two objects of Student and call the greet() method using both objects.",
+
+      questionTamil:
+        "'Person' என்ற Class-ஐ உருவாக்கி, அதில் greet() என்ற Method-ஐ உருவாக்குங்கள். அது 'Hello' என்பதை Print செய்ய வேண்டும். பின்னர் Person Class-ஐ Inherit செய்யும் Student Class-ஐ உருவாக்கி, இரண்டு Student Objects உருவாக்கி greet() Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create two child objects and call the inherited method.",
+
+      hintTamil:
+        "இரண்டு Child Objects உருவாக்கி Inherited Method-ஐ Call செய்யுங்கள்.",
+
+      expectedOutput: `Hello
+Hello`,
+
+      expectedOutputTamil: `Hello
+Hello`,
+
+      solution: `class Person:
+    def greet(self):
+        print("Hello")
+
+class Student(Person):
+    pass
+
+student1 = Student()
+student2 = Student()
+
+student1.greet()
+student2.greet()`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 9,
+      title: "Question 9",
+
+      questionEnglish:
+        "Write a Python program to create a class named Person with a method displayName() that prints a name. Create a class Student that inherits from Person and call the inherited method using a Student object.",
+
+      questionTamil:
+        "'Person' என்ற Class-ஐ உருவாக்கி, அதில் displayName() என்ற Method-ஐ உருவாக்குங்கள். பின்னர் Person Class-ஐ Inherit செய்யும் Student Class-ஐ உருவாக்கி, Student Object மூலம் Inherited Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a parent class, child class, and call the inherited method.",
+
+      hintTamil:
+        "Parent Class, Child Class உருவாக்கி Inherited Method-ஐ Call செய்யுங்கள்.",
+
+      expectedOutput: `Deepak`,
+
+      expectedOutputTamil: `Deepak`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 10,
+      title: "Question 10",
+
+      questionEnglish:
+        "Write a Python program to create a class named Vehicle with a method start() and a class Bike that inherits from Vehicle. Create an object of Bike and call the inherited method.",
+
+      questionTamil:
+        "'Vehicle' என்ற Class-ஐ உருவாக்கி, அதில் start() என்ற Method-ஐ உருவாக்குங்கள். பின்னர் Vehicle Class-ஐ Inherit செய்யும் Bike Class-ஐ உருவாக்கி, Bike Object மூலம் Inherited Method-ஐ Call செய்யும் Python Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Create a child class and access the parent method.",
+
+      hintTamil:
+        "Child Class உருவாக்கி Parent Method-ஐ Access செய்யுங்கள்.",
+
+      expectedOutput: `Vehicle Started`,
+
+      expectedOutputTamil: `Vehicle Started`,
+
+      solution: ``,
+
+      challenge: true,
+      locked: false,
+      completed: false,
+    },
   ],
 },
+
 ];
 
 export default questions;
