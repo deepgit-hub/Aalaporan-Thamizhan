@@ -360,7 +360,124 @@ India`,
     },
   ],
 },
+{
+  topicId: 2,
+  title: "Variables",
 
+  questions: [
+    {
+      id: 1,
+      title: "Question 1",
+
+      questionEnglish:
+        "Write a C++ program to declare an integer variable named age, assign the value 20, and print it.",
+
+      questionTamil:
+        "'age' என்ற Integer Variable-ஐ உருவாக்கி, அதற்கு 20 என்ற மதிப்பை Assign செய்து அதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Declare an int variable and use cout to print it.",
+
+      hintTamil:
+        "int Variable-ஐ Declare செய்து cout மூலம் Print செய்யுங்கள்.",
+
+      expectedOutput: `20`,
+
+      expectedOutputTamil: `20`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    int age = 20;
+
+    cout << age;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 2,
+      title: "Question 2",
+
+      questionEnglish:
+        "Write a C++ program to declare a float variable named price, assign the value 99.99, and print it.",
+
+      questionTamil:
+        "'price' என்ற Float Variable-ஐ உருவாக்கி, அதற்கு 99.99 என்ற மதிப்பை Assign செய்து அதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the float data type.",
+
+      hintTamil:
+        "float Data Type-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `99.99`,
+
+      expectedOutputTamil: `99.99`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    float price = 99.99;
+
+    cout << price;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+
+    {
+      id: 3,
+      title: "Question 3",
+
+      questionEnglish:
+        "Write a C++ program to declare a character variable named grade, assign the value 'A', and print it.",
+
+      questionTamil:
+        "'grade' என்ற Character Variable-ஐ உருவாக்கி, அதற்கு 'A' என்ற மதிப்பை Assign செய்து அதை Print செய்யும் C++ Program-ஐ எழுதுங்கள்.",
+
+      hintEnglish:
+        "Use the char data type.",
+
+      hintTamil:
+        "char Data Type-ஐ பயன்படுத்துங்கள்.",
+
+      expectedOutput: `A`,
+
+      expectedOutputTamil: `A`,
+
+      solution: `#include <iostream>
+using namespace std;
+
+int main() {
+
+    char grade = 'A';
+
+    cout << grade;
+
+    return 0;
+}`,
+
+      challenge: false,
+      locked: false,
+      completed: false,
+    },
+    
+  ],
+},
 ];
 
 export default questions;
