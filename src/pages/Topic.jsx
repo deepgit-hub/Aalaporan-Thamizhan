@@ -1,31 +1,45 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { useState } from "react";
-import topics from "../data/java/topics";
+import { useEffect, useState } from "react";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../firebase";
 import MentorSupport from "../components/MentorSupportButton";
 import "../styles/Topic.css";
 
 function Topic() {
   const navigate = useNavigate();
-  const { id } = useParams();
+ const navigate = useNavigate();
 
-  const [allTopics, setAllTopics] = useState(topics);
+const { languageId, topicId } = useParams();
 
-  const topic = allTopics.find((topic) => topic.id === Number(id));
+const [topic, setTopic] = useState(null);
 
-  const handleMarkAsLearned = () => {
-    const updatedTopics = [...allTopics];
+  useEffect(() => {
+  async function fetchTopic() {
+    const topicRef = doc(
+      db,
+      "languages",
+      languageId,
+      "concepts",
+      topicId
+    );
 
-    updatedTopics[topic.id - 1].completed = true;
+    const topicSnap = await getDoc(topicRef);
 
-    if (updatedTopics[topic.id]) {
-      updatedTopics[topic.id].locked = false;
+    if (topicSnap.exists()) {
+      setTopic(topicSnap.data());
     }
+  }
 
-    setAllTopics(updatedTopics);
+  fetchTopic();
+}, [languageId, topicId]);
 
-    alert("🎉 Topic Completed! Next Topic Unlocked.");
-  };
+if (!topic) {
+  return <h2>Loading...</h2>;
+}
 
+const handleMarkAsLearned = () => {
+  alert("🎉 Topic Completed!");
+};
   return (
     <div className="topic-page">
       <div className="container">
