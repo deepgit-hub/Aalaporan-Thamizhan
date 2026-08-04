@@ -120,7 +120,7 @@ useEffect(() => {
 
           <div className="section-header">
 
-            <h2>📚 Java Learning Hub</h2>
+            <h2>📚 {languageId?.toUpperCase()} Learning Hub</h2>
 
             <p>
               Explore any topic, practice coding, and track your progress as
