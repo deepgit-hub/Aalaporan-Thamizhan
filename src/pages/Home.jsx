@@ -158,7 +158,7 @@ useEffect(() => {
       </p>
 
       <p className="progress-message">
-        🚀 Start learning today and build a strong foundation in JAVA.
+        🚀 Start learning today and build a strong foundation in {languageId?.toUpperCase()}.
       </p>
 
     </div>
