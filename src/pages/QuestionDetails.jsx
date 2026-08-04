@@ -13,7 +13,11 @@ function QuestionDetails() {
 
   const [topic, setTopic] = useState(null);
   const [question, setQuestion] = useState(null);
-
+const compilerLinks = {
+  cpp: "https://onecompiler.com/cpp",
+  java: "https://onecompiler.com/java",
+  python: "https://onecompiler.com/python",
+};
   useEffect(() => {
     async function fetchData() {
       // Fetch Topic
@@ -109,10 +113,7 @@ function QuestionDetails() {
         <button
           className="run-btn"
           onClick={() =>
-            window.open(
-              "https://onecompiler.com/java#draft-fvge",
-              "_blank"
-            )
+            window.open(compilerLinks[languageId], "_blank")
           }
         >
           💻 Run Code
