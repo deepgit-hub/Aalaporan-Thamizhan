@@ -25,12 +25,13 @@ function Languages() {
       <h1>Languages</h1>
 
       {languages.map((language) => (
-        <h2 key={language.id}>
-  <Link to={`/topics/${language.id}`}>
-    {language.name}
+  <Link
+    key={language.id}
+    to={`/topics/${language.id}`}
+  >
+    <h2>{language.name}</h2>
   </Link>
-</h2>
-      ))}
+))}
     </div>
   );
 }
