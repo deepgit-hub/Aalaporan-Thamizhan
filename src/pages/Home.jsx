@@ -14,6 +14,27 @@ import "../styles/Home.css";
 
 function Home() {
   const navigate = useNavigate();
+const { languageId } = useParams();
+
+const [topics, setTopics] = useState([]);
+useEffect(() => {
+  async function fetchTopics() {
+    const snapshot = await getDocs(
+      collection(db, "languages", languageId, "concepts")
+    );
+
+    const data = snapshot.docs
+      .map((doc) => ({
+        id: Number(doc.id),
+        ...doc.data(),
+      }))
+      .sort((a, b) => a.id - b.id);
+
+    setTopics(data);
+  }
+
+  fetchTopics();
+}, [languageId]);
 
   return (
     <div className="home-page">
