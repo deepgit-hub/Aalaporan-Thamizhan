@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase";
-
+import { Link } from "react-router-dom";
 function Languages() {
   const [languages, setLanguages] = useState([]);
 
@@ -26,8 +26,10 @@ function Languages() {
 
       {languages.map((language) => (
         <h2 key={language.id}>
-          {language.name}
-        </h2>
+  <Link to={`/topics/${language.id}`}>
+    {language.name}
+  </Link>
+</h2>
       ))}
     </div>
   );
