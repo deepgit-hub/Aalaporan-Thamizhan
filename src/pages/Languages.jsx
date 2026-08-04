@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase";
 import { Link } from "react-router-dom";
+
 function Languages() {
   const [languages, setLanguages] = useState([]);
 
@@ -13,7 +14,7 @@ function Languages() {
         id: doc.id,
         ...doc.data(),
       }));
-      console.log(data);
+
       setLanguages(data);
     }
 
@@ -25,13 +26,13 @@ function Languages() {
       <h1>Languages</h1>
 
       {languages.map((language) => (
-  <Link
-    key={language.id}
-    to={`/topics/${language.id}`}
-  >
-    <h2>{language.name}</h2>
-  </Link>
-))}
+        <Link
+          key={language.id}
+          to={`/home/${language.id}`}
+        >
+          <h2>{language.name}</h2>
+        </Link>
+      ))}
     </div>
   );
 }
