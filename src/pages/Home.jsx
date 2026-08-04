@@ -49,7 +49,7 @@ useEffect(() => {
           </span>
 
           <h1 className="hero-title">
-            Master Java Through Real Learning,
+           Master {languageId?.toUpperCase()} Through Real Learning,
             <br />
             Not Just Theory.
           </h1>
