@@ -50,7 +50,7 @@ const handleMarkAsLearned = () => {
 
           <button
             className="back-btn"
-            onClick={() => navigate("/")}
+            onClick={() => navigate(`/home/${languageId}`)}
           >
             ← Back
           </button>
