@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase";
 
 function Topic() {
   const { languageId } = useParams();
+
+  const navigate = useNavigate();
 
   const [topics, setTopics] = useState([]);
 
@@ -30,7 +32,22 @@ function Topic() {
       <h1>{languageId}</h1>
 
       {topics.map((topic) => (
-        <h2 key={topic.id}>{topic.title}</h2>
+        <div
+          key={topic.id}
+          onClick={() =>
+            navigate(`/questions/${languageId}/${topic.id}`)
+          }
+          style={{
+            cursor: "pointer",
+            border: "1px solid #ccc",
+            padding: "15px",
+            marginBottom: "10px",
+            borderRadius: "10px",
+          }}
+        >
+          <h2>{topic.title}</h2>
+          <p>{topic.englishDefinition}</p>
+        </div>
       ))}
     </div>
   );
