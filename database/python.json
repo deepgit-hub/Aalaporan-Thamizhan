@@ -1,4 +1,20 @@
 {
+  "id": "python",
   "name": "Python",
-  "topics": []
+  "topics": [
+    {
+      "topicId": 1,
+      "title": "Introduction to Python",
+      "questions": [
+        {
+          "questionId": 1,
+          "title": "Variables"
+        },
+        {
+          "questionId": 2,
+          "title": "Hello World"
+        }
+      ]
+    }
+  ]
 }
