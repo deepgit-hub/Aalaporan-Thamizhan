@@ -213,7 +213,7 @@ const handleMarkAsLearned = () => {
 
           <button
             className="start-btn"
-            onClick={() => navigate(`/question/${topic.id}`)}
+            onClick={() => navigate(`/questions/${languageId}/${topicId}`)}
           >
             🚀 Start Coding
           </button>
