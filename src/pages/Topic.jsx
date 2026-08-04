@@ -1,54 +1,221 @@
-import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { collection, getDocs } from "firebase/firestore";
-import { db } from "../firebase";
+import { useState } from "react";
+import topics from "../data/java/topics";
+import MentorSupport from "../components/MentorSupportButton";
+import "../styles/Topic.css";
 
 function Topic() {
-  const { languageId } = useParams();
-
   const navigate = useNavigate();
+  const { id } = useParams();
 
-  const [topics, setTopics] = useState([]);
+  const [allTopics, setAllTopics] = useState(topics);
 
-  useEffect(() => {
-    async function fetchTopics() {
-      const snapshot = await getDocs(
-        collection(db, "languages", languageId, "concepts")
-      );
+  const topic = allTopics.find((topic) => topic.id === Number(id));
 
-      const data = snapshot.docs.map((doc) => ({
-        id: doc.id,
-        ...doc.data(),
-      }));
+  const handleMarkAsLearned = () => {
+    const updatedTopics = [...allTopics];
 
-      setTopics(data);
+    updatedTopics[topic.id - 1].completed = true;
+
+    if (updatedTopics[topic.id]) {
+      updatedTopics[topic.id].locked = false;
     }
 
-    fetchTopics();
-  }, [languageId]);
+    setAllTopics(updatedTopics);
+
+    alert("🎉 Topic Completed! Next Topic Unlocked.");
+  };
 
   return (
-    <div>
-      <h1>{languageId}</h1>
+    <div className="topic-page">
+      <div className="container">
 
-      {topics.map((topic) => (
-        <div
-          key={topic.id}
-          onClick={() =>
-            navigate(`/questions/${languageId}/${topic.id}`)
-          }
-          style={{
-            cursor: "pointer",
-            border: "1px solid #ccc",
-            padding: "15px",
-            marginBottom: "10px",
-            borderRadius: "10px",
-          }}
-        >
-          <h2>{topic.title}</h2>
-          <p>{topic.englishDefinition}</p>
+        {/* Header */}
+
+        <div className="topic-header">
+
+          <button
+            className="back-btn"
+            onClick={() => navigate("/")}
+          >
+            ← Back
+          </button>
+
+          <h1 className="topic-title">{topic.title}</h1>
+
         </div>
-      ))}
+
+        {/* English */}
+
+        <div className="topic-section">
+
+          <h2>📖 English Definition</h2>
+
+          <p>{topic.englishDefinition}</p>
+
+        </div>
+
+        {/* Tamil */}
+
+        <div className="topic-section">
+
+          <h2>📖 Tamil Definition</h2>
+
+          <p>{topic.tamilDefinition}</p>
+
+        </div>
+
+        {/* Real World */}
+
+        <div className="topic-section">
+
+          <h2>🌍 Real World Usage</h2>
+
+          <p>{topic.realWorldUsage}</p>
+
+        </div>
+
+        {/* Tamil Real World */}
+
+        <div className="topic-section">
+
+          <h2>🌍 நிஜ வாழ்க்கையில் பயன்பாடு</h2>
+
+          <p>{topic.realWorldUsageTamil}</p>
+
+        </div>
+
+        {/* Syntax */}
+
+        <div className="topic-section">
+
+          <h2>💻 Syntax</h2>
+
+          <pre className="code-box">
+            <code>{topic.syntax}</code>
+          </pre>
+
+        </div>
+
+        {/* Syntax Explanation English */}
+
+        <div className="topic-section">
+
+          <h2>📘 Syntax Explanation (English)</h2>
+
+          <ul className="topic-list">
+
+            {topic.syntaxExplanationEnglish.map((item, index) => (
+
+              <li key={index}>{item}</li>
+
+            ))}
+
+          </ul>
+
+        </div>
+
+        {/* Syntax Explanation Tamil */}
+
+        <div className="topic-section">
+
+          <h2>📗 Syntax Explanation (Tamil)</h2>
+
+          <ul className="topic-list">
+
+            {topic.syntaxExplanationTamil.map((item, index) => (
+
+              <li key={index}>{item}</li>
+
+            ))}
+
+          </ul>
+
+        </div>
+
+        {/* Example Program */}
+
+        <div className="topic-section">
+
+          <h2>🖥 Example Program</h2>
+
+          <pre className="code-box">
+            <code>{topic.exampleProgram}</code>
+          </pre>
+
+        </div>
+
+        {/* Program Explanation English */}
+
+        <div className="topic-section">
+
+          <h2>📘 Program Explanation (English)</h2>
+
+          <ul className="topic-list">
+
+            {topic.programExplanationEnglish.map((item, index) => (
+
+              <li key={index}>{item}</li>
+
+            ))}
+
+          </ul>
+
+        </div>
+
+        {/* Program Explanation Tamil */}
+
+        <div className="topic-section">
+
+          <h2>📗 Program Explanation (Tamil)</h2>
+
+          <ul className="topic-list">
+
+            {topic.programExplanationTamil.map((item, index) => (
+
+              <li key={index}>{item}</li>
+
+            ))}
+
+          </ul>
+
+        </div>
+
+        {/* Output */}
+
+        <div className="topic-section">
+
+          <h2>🖥 Output</h2>
+
+          <pre className="code-box">
+            <code>{topic.output}</code>
+          </pre>
+
+        </div>
+
+        {/* Buttons */}
+
+        <div className="topic-buttons">
+
+          <button
+            className="start-btn"
+            onClick={() => navigate(`/question/${topic.id}`)}
+          >
+            🚀 Start Coding
+          </button>
+
+          <button
+            className="complete-btn"
+            onClick={handleMarkAsLearned}
+          >
+            ✅ Mark as Learned
+          </button>
+
+        </div>
+
+      </div>
+        <MentorSupport />
+
     </div>
   );
 }
