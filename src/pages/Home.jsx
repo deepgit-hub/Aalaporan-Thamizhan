@@ -172,7 +172,9 @@ useEffect(() => {
               <TopicCard
                 key={topic.id}
                 title={topic.title}
-                onClick={() => navigate(`/topic/${topic.id}`)}
+                onClick={() =>
+  navigate(`/topic/${languageId}/${topic.id}`)
+}
               />
 
             ))}
