@@ -7,7 +7,7 @@ import "../styles/Topic.css";
 
 function Topic() {
   const navigate = useNavigate();
- const navigate = useNavigate();
+  
 
 const { languageId, topicId } = useParams();
 
@@ -50,7 +50,7 @@ const handleMarkAsLearned = () => {
 
           <button
             className="back-btn"
-            onClick={() => navigate(`/home/${languageId}`)}
+           onClick={() => navigate(`/home/${languageId}`)}
           >
             ← Back
           </button>
