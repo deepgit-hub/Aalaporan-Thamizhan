@@ -186,3 +186,32 @@ font-size:.9rem;
 color:#9ca3af;
 
 }
+.quote-card{
+
+    margin-bottom:35px;
+
+}
+
+.quote{
+
+    font-size:1.15rem;
+
+    line-height:1.8;
+
+    font-style:italic;
+
+    color:#f3f4f6;
+
+}
+
+.author{
+
+    margin-top:15px;
+
+    color:#22c55e;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+}
