@@ -163,8 +163,13 @@ async function fetchStudent() {
       <h3>📈 Overall Progress</h3>
 
       <span className="progress-percent">
-        0%
-      </span>
+  {student
+    ? Math.round(
+        (student.totalCompleted / topics.length) * 100
+      )
+    : 0}
+  %
+</span>
 
     </div>
 
