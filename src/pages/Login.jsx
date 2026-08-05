@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../firebase";
-
+import "../styles/Login.css";
 function Login() {
   const navigate = useNavigate();
 
