@@ -10,6 +10,7 @@ function App() {
   return (
     <Routes>
     <Route path="/" element={<Login />} />
+    <Route path="/welcome" element={<Welcome />}/>
     <Route path="/languages" element={<Languages />} />
       <Route path="/home/:languageId" element={<Home />}/>
 
