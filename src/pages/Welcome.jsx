@@ -40,8 +40,8 @@ function Welcome() {
           <span>📚 Assigned Language</span>
 
           <h2>
-  {student.language === "java" && "☕ Java"}
-  {student.language === "python" && "🐍 Python"}
+  {student.language === "java" && "☕ JAVA"}
+  {student.language === "python" && "🐍 PYTHON"}
   {student.language === "cpp" && "⚙️ C++"}
 </h2>
 
