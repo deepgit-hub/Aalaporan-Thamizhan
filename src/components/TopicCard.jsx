@@ -20,8 +20,10 @@ function TopicCard({
       <h3>{title}</h3>
 
       <span className="topic-status">
-        {completed ? "Completed" : "Learn Now"}
-      </span>
+  {completed
+    ? "✅ Completed"
+    : "📖 Start Learning"}
+</span>
     </button>
   );
 }
