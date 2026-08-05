@@ -2,7 +2,12 @@ import TopicCard from "../components/TopicCard";
 import MentorSupport from "../components/MentorSupportButton";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { collection, getDocs } from "firebase/firestore";
+import {
+  collection,
+  getDocs,
+  doc,
+  getDoc,
+} from "firebase/firestore";
 import { db } from "../firebase";
 import {
   Languages,
@@ -16,7 +21,7 @@ function Home() {
   const navigate = useNavigate();
 const { languageId } = useParams();
 
-const [topics, setTopics] = useState([]);
+const [student, setStudent] = useState(null);
 useEffect(() => {
   async function fetchTopics() {
     const snapshot = await getDocs(
@@ -32,8 +37,29 @@ useEffect(() => {
 
     setTopics(data);
   }
+const currentStudent = JSON.parse(
+  localStorage.getItem("student")
+);
 
+async function fetchStudent() {
+
+  const studentRef = doc(
+    db,
+    "students",
+    currentStudent.username
+  );
+
+  const studentSnap = await getDoc(studentRef);
+
+  if (studentSnap.exists()) {
+
+    setStudent(studentSnap.data());
+
+  }
+
+}
   fetchTopics();
+  fetchStudent();
 }, [languageId]);
 
   return (
