@@ -55,7 +55,7 @@ function Welcome() {
         </button>
 
         <p className="footer-text">
-          Made with ❤️ by Deepak
+          Made with ❤️ by Supreme Senior DEEPAK
         </p>
 
       </div>
