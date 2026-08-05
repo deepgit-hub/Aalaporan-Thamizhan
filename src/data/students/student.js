@@ -9,6 +9,7 @@ const students = [
     language: "java",
 
     completedTopics: [],
+    totalCompleted: 0,
   },
 
   {
@@ -21,6 +22,7 @@ const students = [
     language: "java",
 
     completedTopics: [],
+    totalCompleted: 0,
   },
 
   {
@@ -33,6 +35,7 @@ const students = [
     language: "java",
 
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24104",
@@ -44,6 +47,7 @@ const students = [
     language: "java",
 
     completedTopics: [],
+    totalCompleted: 0,
   },
   
   {
@@ -56,6 +60,7 @@ const students = [
     language: "java",
 
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24108",
@@ -67,6 +72,7 @@ const students = [
     language: "java",
 
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24109",
@@ -78,6 +84,7 @@ const students = [
     language: "java",
 
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24111",
@@ -85,6 +92,7 @@ const students = [
     name: "Bullet",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24112",
@@ -92,6 +100,7 @@ const students = [
     name: "FAHEEMA KOUSER A R",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24113",
