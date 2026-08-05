@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
-
 import Languages from "./pages/Languages";
 import Home from "./pages/Home";
 import Topic from "./pages/Topic";
 import Question from "./pages/Question";
 import QuestionDetails from "./pages/QuestionDetails";
 import Login from "./pages/Login";
+import Welcome from "./pages/Welcome";
 function App() {
   return (
     <Routes>
