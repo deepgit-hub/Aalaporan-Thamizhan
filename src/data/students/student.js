@@ -108,6 +108,7 @@ const students = [
     name: "GOKUL C",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24114",
@@ -115,6 +116,7 @@ const students = [
     name: "JACK DANIEL",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24115",
@@ -122,6 +124,7 @@ const students = [
     name: "JASMIN MARY A",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24116",
@@ -129,6 +132,7 @@ const students = [
     name: "SECRATARY JAZZ",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24117",
@@ -136,6 +140,7 @@ const students = [
     name: "AMARAN",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24118",
@@ -143,6 +148,7 @@ const students = [
     name: "REP!!!",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24119",
@@ -150,6 +156,7 @@ const students = [
     name: "JOYCE VINOLA S",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24120",
@@ -157,6 +164,7 @@ const students = [
     name: "KALAI CHIKKAM",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24121",
@@ -164,6 +172,7 @@ const students = [
     name: "Kalai Selvi K K",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24122",
@@ -171,6 +180,7 @@ const students = [
     name: "MAAVEERAN KATHIRAVAN BRO",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24123",
@@ -178,6 +188,7 @@ const students = [
     name: "KIRUTHIKA Y",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24124",
@@ -185,6 +196,7 @@ const students = [
     name: "LEEZA M",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24125",
@@ -192,6 +204,7 @@ const students = [
     name: "LOKESH B",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24128",
@@ -199,6 +212,7 @@ const students = [
     name: "MANOJ S",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24129",
@@ -206,6 +220,7 @@ const students = [
     name: "MERLIN A",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24130",
@@ -213,6 +228,7 @@ const students = [
     name: "MOHAN V",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24131",
@@ -220,6 +236,7 @@ const students = [
     name: "MUGESH S",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24132",
@@ -227,6 +244,7 @@ const students = [
     name: "NALINI M",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24133",
@@ -234,6 +252,7 @@ const students = [
     name: "NITHISH R",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24134",
@@ -241,6 +260,7 @@ const students = [
     name: "PRASANTH P",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24136",
@@ -248,6 +268,7 @@ const students = [
     name: "PRAVEEN ANTO C",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24137",
@@ -255,6 +276,7 @@ const students = [
     name: "ROGAN KENNADY A",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24138",
@@ -262,6 +284,7 @@ const students = [
     name: "RUPPESH E",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24139",
@@ -269,6 +292,7 @@ const students = [
     name: "RUTH SHAMINI B",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   
   {
@@ -277,6 +301,7 @@ const students = [
     name: "SACHIN P",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24141",
@@ -284,6 +309,7 @@ const students = [
     name: "TVK SANDEEP P",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24142",
@@ -291,6 +317,7 @@ const students = [
     name: "SANGAVI S",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24143",
@@ -298,6 +325,7 @@ const students = [
     name: "SANKAR BRO",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24144",
@@ -305,6 +333,7 @@ const students = [
     name: "SARAN S",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24145",
@@ -312,6 +341,7 @@ const students = [
     name: "SUMITHA D",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24146",
@@ -319,6 +349,7 @@ const students = [
     name: "THARAKESWARAN S",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24147",
@@ -326,6 +357,7 @@ const students = [
     name: "THIRUMALAI T",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24148",
@@ -333,6 +365,7 @@ const students = [
     name: "CS SECRATARY",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   
   {
@@ -341,6 +374,7 @@ const students = [
     name: "YOGESHWARAN S",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24151",
@@ -348,6 +382,7 @@ const students = [
     name: "ITHU JEICHI NAMMA ENNA PANNA POROM",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24152",
@@ -355,6 +390,7 @@ const students = [
     name: "VIGNESH ANNA ",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B24154",
@@ -362,6 +398,7 @@ const students = [
     name: "SANTHAKUMAR L",
     language: "java",
     completedTopics: [],
+    totalCompleted: 0,
   },
 
   {
@@ -370,6 +407,7 @@ const students = [
     name: "ABISELYA A",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25102",
@@ -377,6 +415,7 @@ const students = [
     name: "ANIS ANDREW P",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25103",
@@ -384,6 +423,7 @@ const students = [
     name: "ANTONY JESTINE L",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25104",
@@ -391,6 +431,7 @@ const students = [
     name: "ANTONY VIMAL RAJ E",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25105",
@@ -398,6 +439,7 @@ const students = [
     name: "ANU P",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25106",
@@ -405,6 +447,7 @@ const students = [
     name: "ARUL EDWIN RAJ A",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25107",
@@ -412,6 +455,7 @@ const students = [
     name: "ARUL JASMINE D",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25108",
@@ -419,6 +463,7 @@ const students = [
     name: "AVILA PRINCY R",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25109",
@@ -426,6 +471,7 @@ const students = [
     name: "CHANDRASEKAR S",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25110",
@@ -433,6 +479,7 @@ const students = [
     name: "CHARLES RAJASEKAR A",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25111",
@@ -440,6 +487,7 @@ const students = [
     name: "DEEPIKA PRINCY S",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25112",
@@ -447,6 +495,7 @@ const students = [
     name: "DEIVANAI M",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25113",
@@ -454,6 +503,7 @@ const students = [
     name: "DHANALAKSHMI S",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25115",
@@ -461,6 +511,7 @@ const students = [
     name: "FEROZE JACOB S",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25116",
@@ -468,6 +519,7 @@ const students = [
     name: "GOMATHI S",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25117",
@@ -475,6 +527,7 @@ const students = [
     name: "HARINI P",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25118",
@@ -482,6 +535,7 @@ const students = [
     name: "HARIPRASATH M",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25119",
@@ -489,6 +543,7 @@ const students = [
     name: "HARITHA V",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25120",
@@ -496,6 +551,7 @@ const students = [
     name: "JESTINNAYAGI A",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25121",
@@ -503,6 +559,7 @@ const students = [
     name: "KAYALVIZHI R",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25122",
@@ -510,6 +567,7 @@ const students = [
     name: "KEVINRAJ J",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25123",
@@ -517,6 +575,7 @@ const students = [
     name: "SECRETARY KINGSLY SEBASTIN A",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   
   {
@@ -525,6 +584,7 @@ const students = [
     name: "KOUSALYA S",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25125",
@@ -532,6 +592,7 @@ const students = [
     name: "LOKESH G",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25126",
@@ -539,6 +600,7 @@ const students = [
     name: "MALARAVAN G M",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25127",
@@ -546,6 +608,7 @@ const students = [
     name: "MALESH K",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25128",
@@ -553,6 +616,7 @@ const students = [
     name: "MARIA JASMINE J",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25129",
@@ -560,6 +624,7 @@ const students = [
     name: "MARY DARLIA SUMITH J",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25130",
@@ -567,6 +632,7 @@ const students = [
     name: "MATHESH S",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25131",
@@ -574,6 +640,7 @@ const students = [
     name: "MONIKA R",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25133",
@@ -581,6 +648,7 @@ const students = [
     name: "NAVEEN KUMAR V",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25134",
@@ -588,6 +656,7 @@ const students = [
     name: "NITHRA S",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25135",
@@ -595,6 +664,7 @@ const students = [
     name: "NIVETHA SREE N",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25136",
@@ -602,6 +672,7 @@ const students = [
     name: "PAUL RAJ A",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25137",
@@ -609,6 +680,7 @@ const students = [
     name: "POOVARASAN S",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25138",
@@ -616,6 +688,7 @@ const students = [
     name: "PRADEESH M",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25139",
@@ -623,6 +696,7 @@ const students = [
     name: "PRAVEEN RAJ A",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25140",
@@ -630,6 +704,7 @@ const students = [
     name: "RAKESH P",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25141",
@@ -637,6 +712,7 @@ const students = [
     name: "RAMENT R",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25142",
@@ -644,6 +720,7 @@ const students = [
     name: "ROSA MISTIKA A",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25143",
@@ -651,6 +728,7 @@ const students = [
     name: "ROSHAN A",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25145",
@@ -658,6 +736,7 @@ const students = [
     name: "SANJAYPRAKASH P",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25146",
@@ -665,6 +744,7 @@ const students = [
     name: "SANTHOSH P",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25147",
@@ -672,6 +752,7 @@ const students = [
     name: "SANTHOSH KUMAR P",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25148",
@@ -679,6 +760,7 @@ const students = [
     name: "SANTHOSH S",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25149",
@@ -686,6 +768,7 @@ const students = [
     name: "SHALINI C",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   
   {
@@ -694,6 +777,7 @@ const students = [
     name: "SHARLINE J",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25151",
@@ -701,6 +785,7 @@ const students = [
     name: "SHERLIN SHEEBA A",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25152",
@@ -708,6 +793,7 @@ const students = [
     name: "SUGAVANAM A",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25153",
@@ -715,6 +801,7 @@ const students = [
     name: "SUJITHKUMAR S",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25154",
@@ -722,6 +809,7 @@ const students = [
     name: "VARALAKSHMI B",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25155",
@@ -729,6 +817,7 @@ const students = [
     name: "VISHVANATH V",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B25156",
@@ -736,6 +825,7 @@ const students = [
     name: "LOKESH K",
     language: "python",
     completedTopics: [],
+    totalCompleted: 0,
   },
   
   {
@@ -744,6 +834,7 @@ const students = [
     name: "AKASH MASHALO M",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26102",
@@ -751,6 +842,7 @@ const students = [
     name: "ANGEL ROSALI A",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26103",
@@ -758,6 +850,7 @@ const students = [
     name: "ANTHONY SAIRASAN A",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26104",
@@ -765,6 +858,7 @@ const students = [
     name: "ANTHONYBALAN S",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26105",
@@ -772,6 +866,7 @@ const students = [
     name: "ANTO FRANKLIN L",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26106",
@@ -779,6 +874,7 @@ const students = [
     name: "ANTONY HERBERT RAJ",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26107",
@@ -786,6 +882,7 @@ const students = [
     name: "ANTONY NIROSH S",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26108",
@@ -793,6 +890,7 @@ const students = [
     name: "ANTRO JAVIS A",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26109",
@@ -800,6 +898,7 @@ const students = [
     name: "ARAVIND A",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26110",
@@ -807,6 +906,7 @@ const students = [
     name: "ASHWIN A",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26111",
@@ -814,6 +914,7 @@ const students = [
     name: "BOOMIKA P",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26112",
@@ -821,6 +922,7 @@ const students = [
     name: "DHABITHA KILATISH A",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26113",
@@ -828,6 +930,7 @@ const students = [
     name: "DHARSAN BALA R",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26114",
@@ -835,6 +938,7 @@ const students = [
     name: "DHARSAN T",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26115",
@@ -842,6 +946,7 @@ const students = [
     name: "GOKUL NANDHAKUMAR R",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26116",
@@ -849,6 +954,7 @@ const students = [
     name: "GOWTHAM A",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26117",
@@ -856,6 +962,7 @@ const students = [
     name: "GOWTHAM S",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26118",
@@ -863,6 +970,7 @@ const students = [
     name: "GUGAN T",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26119",
@@ -870,6 +978,7 @@ const students = [
     name: "JEFFERY ARPUTHARAJ J",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26120",
@@ -877,6 +986,7 @@ const students = [
     name: "JESTIN HENI P",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26121",
@@ -884,6 +994,7 @@ const students = [
     name: "JOHN PETER J",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26122",
@@ -891,6 +1002,7 @@ const students = [
     name: "JOTHI SREE K",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26123",
@@ -898,6 +1010,7 @@ const students = [
     name: "KALAISELVAN R",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26124",
@@ -905,6 +1018,7 @@ const students = [
     name: "MADHUMITHA N",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26125",
@@ -912,6 +1026,7 @@ const students = [
     name: "MAGIMAI NATHAN V",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
 
   {
@@ -920,6 +1035,7 @@ const students = [
     name: "MAHALAKSHMI T",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26127",
@@ -927,6 +1043,7 @@ const students = [
     name: "MEGANATH M",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26128",
@@ -934,6 +1051,7 @@ const students = [
     name: "MITHRAN N",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26129",
@@ -941,6 +1059,7 @@ const students = [
     name: "MONISHA S",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26130",
@@ -948,6 +1067,7 @@ const students = [
     name: "NITHISH KUMAR P",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26131",
@@ -955,6 +1075,7 @@ const students = [
     name: "PADMESH V",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26132",
@@ -962,6 +1083,7 @@ const students = [
     name: "PHYNTAMIL SELVAN C",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26133",
@@ -969,6 +1091,7 @@ const students = [
     name: "PONNARASU S",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26134",
@@ -976,6 +1099,7 @@ const students = [
     name: "PRASANNA P",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26135",
@@ -983,6 +1107,7 @@ const students = [
     name: "PRICILLLA BHAVANA S",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26136",
@@ -990,6 +1115,7 @@ const students = [
     name: "PUNITH ANTHONY J",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26137",
@@ -997,6 +1123,7 @@ const students = [
     name: "RANGANATH S",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26138",
@@ -1004,6 +1131,7 @@ const students = [
     name: "REENAMERCY A",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26139",
@@ -1011,6 +1139,7 @@ const students = [
     name: "RISHINATH",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26140",
@@ -1018,6 +1147,7 @@ const students = [
     name: "RITHIKA V",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26141",
@@ -1025,6 +1155,7 @@ const students = [
     name: "ROSHAN FERNANDO P",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26142",
@@ -1032,6 +1163,7 @@ const students = [
     name: "SAMUEL D",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26143",
@@ -1039,6 +1171,7 @@ const students = [
     name: "SAMUVEL A",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26144",
@@ -1046,6 +1179,7 @@ const students = [
     name: "SHARLIN PRIYA S",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26145",
@@ -1053,6 +1187,7 @@ const students = [
     name: "SHARMILA M",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26146",
@@ -1060,6 +1195,7 @@ const students = [
     name: "SILAMBARASAN T",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26147",
@@ -1067,6 +1203,7 @@ const students = [
     name: "SUJAN P",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26148",
@@ -1074,6 +1211,7 @@ const students = [
     name: "TAMILRASAN M",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26149",
@@ -1081,6 +1219,7 @@ const students = [
     name: "TAMIZHARASI K",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26150",
@@ -1088,6 +1227,7 @@ const students = [
     name: "TEJAS B",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
 
   {
@@ -1096,6 +1236,7 @@ const students = [
     name: "THENNARASU A",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26152",
@@ -1103,6 +1244,7 @@ const students = [
     name: "THOMAS EDISON A",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26153",
@@ -1110,6 +1252,7 @@ const students = [
     name: "THOMSON A",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26154",
@@ -1117,6 +1260,7 @@ const students = [
     name: "YUVANESH R",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
   {
     username: "B26155",
@@ -1124,6 +1268,7 @@ const students = [
     name: "YUVASRI M",
     language: "cpp",
     completedTopics: [],
+    totalCompleted: 0,
   },
 
 ];
