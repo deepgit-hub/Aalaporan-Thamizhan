@@ -68,11 +68,22 @@ const students = [
     completedTopics: [],
   },
   {
-    username: "B24106",
+    username: "B24108",
 
-    password: "B24106",
+    password: "B24108",
 
-    name: "ASHWINI K",
+    name: "ELON MUSK",
+
+    language: "java",
+
+    completedTopics: [],
+  },
+  {
+    username: "B24109",
+
+    password: "B24109",
+
+    name: "DURGA DEVI J ",
 
     language: "java",
 
