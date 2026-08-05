@@ -169,7 +169,7 @@ const students = [
   {
     username: "B24122",
     password: "B24122",
-    name: "KATHIRAVAN G",
+    name: "MAAVEERAN KATHIRAVAN BRO",
     language: "java",
     completedTopics: [],
   },
@@ -240,13 +240,6 @@ const students = [
     username: "B24134",
     password: "B24134",
     name: "PRASANTH P",
-    language: "java",
-    completedTopics: [],
-  },
-  {
-    username: "B24135",
-    password: "B24135",
-    name: "PRATHAP E",
     language: "java",
     completedTopics: [],
   },
