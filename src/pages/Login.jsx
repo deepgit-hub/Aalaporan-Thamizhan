@@ -1,14 +1,51 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../firebase";
 
 function Login() {
+  const navigate = useNavigate();
+
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  function handleLogin(e) {
+  async function handleLogin(e) {
     e.preventDefault();
 
-    console.log("Username:", username);
-    console.log("Password:", password);
+    try {
+      // Get student document using username
+      const studentRef = doc(db, "students", username);
+      const studentSnap = await getDoc(studentRef);
+
+      // Username not found
+      if (!studentSnap.exists()) {
+        alert("❌ Username not found");
+        return;
+      }
+
+      const student = studentSnap.data();
+
+      // Password incorrect
+      if (student.password !== password) {
+        alert("❌ Incorrect Password");
+        return;
+      }
+
+      // Save student locally
+      localStorage.setItem(
+        "student",
+        JSON.stringify(student)
+      );
+
+      // Login Successful
+      alert(`🎉 Welcome ${student.name}`);
+
+      navigate("/languages");
+
+    } catch (error) {
+      console.error(error);
+      alert("❌ Something went wrong");
+    }
   }
 
   return (
@@ -17,9 +54,7 @@ function Login() {
 
         <h1>🌾 Aalaporan Thamizhan</h1>
 
-        <p>
-          Welcome Back Student 👋
-        </p>
+        <p>Welcome Back Student 👋</p>
 
         <form onSubmit={handleLogin}>
 
@@ -30,6 +65,7 @@ function Login() {
             onChange={(e) =>
               setUsername(e.target.value)
             }
+            required
           />
 
           <input
@@ -39,6 +75,7 @@ function Login() {
             onChange={(e) =>
               setPassword(e.target.value)
             }
+            required
           />
 
           <button type="submit">
