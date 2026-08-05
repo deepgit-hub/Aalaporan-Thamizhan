@@ -13,5 +13,8 @@
   --challenge: #f59e0b;
 }
 * {
-  font-family: "Noto Sans Tamil", "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
