@@ -19,49 +19,75 @@ import "../styles/Home.css";
 
 function Home() {
   const navigate = useNavigate();
-const { languageId } = useParams();
 
-const [student, setStudent] = useState(null);
-useEffect(() => {
-  async function fetchTopics() {
-    const snapshot = await getDocs(
-      collection(db, "languages", languageId, "concepts")
-    );
+  const { languageId } = useParams();
 
-    const data = snapshot.docs
-      .map((doc) => ({
-        id: Number(doc.id),
-        ...doc.data(),
-      }))
-      .sort((a, b) => a.id - b.id);
+  const [topics, setTopics] = useState([]);
 
-    setTopics(data);
-  }
-const currentStudent = JSON.parse(
-  localStorage.getItem("student")
-);
+  const [student, setStudent] = useState(null);
 
-async function fetchStudent() {
+  useEffect(() => {
 
-  const studentRef = doc(
-    db,
-    "students",
-    currentStudent.username
-  );
+    async function fetchTopics() {
 
-  const studentSnap = await getDoc(studentRef);
+      const snapshot = await getDocs(
+        collection(db, "languages", languageId, "concepts")
+      );
 
-  if (studentSnap.exists()) {
+      const data = snapshot.docs
+        .map((doc) => ({
+          id: Number(doc.id),
+          ...doc.data(),
+        }))
+        .sort((a, b) => a.id - b.id);
 
-    setStudent(studentSnap.data());
+      setTopics(data);
 
-  }
+    }
 
-}
-  fetchTopics();
-  fetchStudent();
-}, [languageId]);
+    async function fetchStudent() {
 
+      const currentStudent = JSON.parse(
+        localStorage.getItem("student")
+      );
+
+      if (!currentStudent) return;
+
+      const studentRef = doc(
+        db,
+        "students",
+        currentStudent.username
+      );
+
+      const studentSnap = await getDoc(studentRef);
+
+      if (studentSnap.exists()) {
+
+        const data = studentSnap.data();
+
+        setStudent(data);
+
+        localStorage.setItem(
+          "student",
+          JSON.stringify(data)
+        );
+
+      }
+
+    }
+
+    fetchTopics();
+
+    fetchStudent();
+
+  }, [languageId]);
+
+  const progress =
+    student && topics.length > 0
+      ? Math.round(
+          (student.totalCompleted / topics.length) * 100
+        )
+      : 0;
   return (
     <div className="home-page">
       <div className="container">
@@ -75,28 +101,26 @@ async function fetchStudent() {
           </span>
 
           <h1 className="hero-title">
-           Master {languageId?.toUpperCase()} Through Real Learning,
+            Master {languageId?.toUpperCase()} Through Real Learning,
             <br />
             Not Just Theory.
           </h1>
 
           <p className="hero-description">
-            Welcome to a bilingual coding platform where every Java concept is
+            Welcome to a bilingual coding platform where every concept is
             taught in both <strong>English</strong> and <strong>Tamil</strong>.
             Learn with simple explanations, real-world applications,
             practical examples, coding exercises, and challenge questions.
           </p>
 
           <p className="hero-description">
-            This platform is designed to help students understand not only
+            This platform helps students understand not only
             <strong> how to code</strong>, but also
             <strong> where</strong>,
             <strong> why</strong>, and
             <strong> when</strong> every concept is used in real software
             development.
           </p>
-
-          {/* Feature Cards */}
 
           <div className="hero-features">
 
@@ -107,112 +131,122 @@ async function fetchStudent() {
               </div>
 
               <p>
-                Every Java topic is explained in both English and Tamil,
-                making programming easier to understand.
+                Every concept is explained in both English and Tamil.
               </p>
+
             </div>
 
             <div className="feature-card">
+
               <div className="feature-header">
                 <Globe2 className="feature-icon" />
                 <h3>Real-World Applications</h3>
               </div>
 
               <p>
-                Learn where every programming concept is used in real software
-                development and industry projects.
+                Learn where every programming concept is used in industry.
               </p>
+
             </div>
 
             <div className="feature-card">
+
               <div className="feature-header">
                 <CodeXml className="feature-icon" />
                 <h3>Practice as You Learn</h3>
               </div>
 
               <p>
-                Strengthen your understanding by solving coding questions after
-                every lesson.
+                Strengthen your understanding through coding questions.
               </p>
+
             </div>
 
           </div>
 
         </section>
 
-        {/* ================= JAVA LEARNING HUB ================= */}
+        {/* ================= TOPICS ================= */}
 
         <section className="topics-section">
 
           <div className="section-header">
 
-            <h2>📚 {languageId?.toUpperCase()} Learning Hub</h2>
+            <h2>
+              📚 {languageId?.toUpperCase()} Learning Hub
+            </h2>
 
             <p>
-              Explore any topic, practice coding, and track your progress as
-              you master each concept.
+              Explore every topic and track your learning progress.
             </p>
 
           </div>
-          {/* ================= PROGRESS CARD ================= */}
 
-  <div className="progress-card">
+          {/* ================= PROGRESS ================= */}
 
-    <div className="progress-top">
+          <div className="progress-card">
 
-      <h3>📈 Overall Progress</h3>
+            <div className="progress-top">
 
-      <span className="progress-percent">
-  {student
-    ? Math.round(
-        (student.totalCompleted / topics.length) * 100
-      )
-    : 0}
-  %
-</span>
+              <h3>📈 Overall Progress</h3>
 
-    </div>
+              <span className="progress-percent">
 
-    <div className="progress-bar">
+                {progress}%
 
-      <div
-  className="progress-fill"
-  style={{
-    width: `${
-      student
-        ? Math.round(
-            (student.totalCompleted / topics.length) * 100
-          )
-        : 0
-    }%`,
-  }}
-></div>
+              </span>
 
-    </div>
+            </div>
 
-    <div className="progress-bottom">
+            <div className="progress-bar">
 
-      <p>
-  <strong>
-    {student ? student.totalCompleted : 0}
-  </strong>{" "}
-  /{" "}
-  <strong>{topics.length}</strong> Topics Completed
-</p>
+              <div
+                className="progress-fill"
+                style={{
+                  width: `${progress}%`,
+                }}
+              ></div>
 
-      <p className="progress-message">
-  {student && student.totalCompleted === topics.length
-    ? "🎉 Congratulations! You've completed every topic in this language."
-    : `🚀 Keep going! You've completed ${
-        student ? student.totalCompleted : 0
-      } of ${topics.length} topics.`}
-</p>
+            </div>
 
-    </div>
+            <div className="progress-bottom">
 
-  </div>
-  {/* ================= TOPICS ================= */}
-          <div className="topics-grid">
+              <p>
+
+                <strong>
+
+                  {student ? student.totalCompleted : 0}
+
+                </strong>
+
+                {" / "}
+
+                <strong>
+
+                  {topics.length}
+
+                </strong>
+
+                {" Topics Completed"}
+
+              </p>
+
+              <p className="progress-message">
+
+                {student && topics.length > 0
+
+                  ? `🚀 Keep going! You've completed ${student.totalCompleted} of ${topics.length} topics.`
+
+                  : "Loading your progress..."}
+
+              </p>
+
+            </div>
+
+          </div>
+
+          {/* ================= TOPICS ================= */}
+                    <div className="topics-grid">
 
             {topics.map((topic) => (
 
@@ -220,8 +254,8 @@ async function fetchStudent() {
                 key={topic.id}
                 title={topic.title}
                 onClick={() =>
-  navigate(`/topic/${languageId}/${topic.id}`)
-}
+                  navigate(`/topic/${languageId}/${topic.id}`)
+                }
               />
 
             ))}
@@ -229,7 +263,9 @@ async function fetchStudent() {
           </div>
 
         </section>
-<MentorSupport />
+
+        <MentorSupport />
+
       </div>
 
       {/* ================= FOOTER ================= */}
@@ -243,16 +279,21 @@ async function fetchStudent() {
             <h2>🌾 Aalaporan Thamizhan</h2>
 
             <p>
-              Empowering Tamil students to rise, innovate, and lead the future of technology.
+              Empowering Tamil students to rise, innovate,
+              and lead the future of technology.
             </p>
 
             <p className="footer-quote">
               "From Tamil classrooms to global companies —
               your journey starts with a single line of code."
             </p>
+
             <p className="footer-quote">
-              Every expert programmer was once a beginner. Start today, stay consistent, and let your code speak for itself.
+              Every expert programmer was once a beginner.
+              Start today, stay consistent, and let your code
+              speak for itself.
             </p>
+
           </div>
 
           <div className="footer-center">
@@ -260,37 +301,44 @@ async function fetchStudent() {
             <h3>👨‍💻 About the Developer</h3>
 
             <p>
-              Hi! I'm <strong>Deepak</strong> , a Computer Science student passionate about helping Tamil students learn programming through simple explanations, practical coding exercises, and real-world examples. I created Aalaporan Thamizhan with the belief that talent exists everywhere—it only needs the right opportunity to grow.
+              Hi! I'm <strong>Deepak</strong>, a Computer Science
+              student passionate about helping Tamil students
+              learn programming through simple explanations,
+              practical coding exercises, and real-world examples.
             </p>
 
           </div>
 
           <div className="footer-right">
-<div className="footer-buttons">
-            <button
-              className="portfolio-btn1"
-              onClick={() =>
-                window.open(
-                  "https://deepgit-hub.github.io/Digital-Portfolio/",
-                  "_blank"
-                )
-              }
-            >
-              👨‍💻  Know More DEEPAK
-            </button>
-            <button
-              className="portfolio-btn2"
-              onClick={() =>
-                window.open(
-                  "https://thequeenslab.vercel.app/",
-                  "_blank"
-                )
-              }
-            >
-              🌏︎ To Built WEBSITES
-            </button>
-            
-</div>
+
+            <div className="footer-buttons">
+
+              <button
+                className="portfolio-btn1"
+                onClick={() =>
+                  window.open(
+                    "https://deepgit-hub.github.io/Digital-Portfolio/",
+                    "_blank"
+                  )
+                }
+              >
+                👨‍💻 Know More DEEPAK
+              </button>
+
+              <button
+                className="portfolio-btn2"
+                onClick={() =>
+                  window.open(
+                    "https://thequeenslab.vercel.app/",
+                    "_blank"
+                  )
+                }
+              >
+                🌏︎ To Build Websites
+              </button>
+
+            </div>
+
           </div>
 
         </div>
@@ -298,7 +346,7 @@ async function fetchStudent() {
         <hr />
 
         <p className="copyright">
-          © 2026  Aalaporan Thamizhan • Designed & Developed by deep-AK
+          © 2026 Aalaporan Thamizhan • Designed & Developed by Deepak
         </p>
 
       </footer>
