@@ -18,7 +18,7 @@ const students = [
 
     name: "ABINA A",
 
-    language: "cpp",
+    language: "java",
 
     completedTopics: [],
   },
@@ -30,144 +30,55 @@ const students = [
 
     name: "ABISHEK A",
 
-    language: "python",
+    language: "java",
 
     completedTopics: [],
   },
   {
-    username: "B24103",
+    username: "B24104",
 
-    password: "B24103",
+    password: "B24104",
 
-    name: "ABISHEK A",
+    name: "Jonny Sins",
 
-    language: "python",
-
-    completedTopics: [],
-  },
-  {
-    username: "B24103",
-
-    password: "B24103",
-
-    name: "ABISHEK A",
-
-    language: "python",
+    language: "java",
 
     completedTopics: [],
   },
   {
-    username: "B24103",
+    username: "B24105",
 
-    password: "B24103",
+    password: "B24105",
 
-    name: "ABISHEK A",
+    name: "Slow Motion",
 
-    language: "python",
-
-    completedTopics: [],
-  },
-  {
-    username: "B24103",
-
-    password: "B24103",
-
-    name: "ABISHEK A",
-
-    language: "python",
-
-    completedTopics: [],
-  },
-
-  {
-    username: "B24103",
-
-    password: "B24103",
-
-    name: "ABISHEK A",
-
-    language: "python",
+    language: "java",
 
     completedTopics: [],
   },
   {
-    username: "B24103",
+    username: "B24106",
 
-    password: "B24103",
+    password: "B24106",
 
-    name: "ABISHEK A",
+    name: "ASHWINI K",
 
-    language: "python",
-
-    completedTopics: [],
-  },
-  {
-    username: "B24103",
-
-    password: "B24103",
-
-    name: "ABISHEK A",
-
-    language: "python",
+    language: "java",
 
     completedTopics: [],
   },
   {
-    username: "B24103",
+    username: "B24106",
 
-    password: "B24103",
+    password: "B24106",
 
-    name: "ABISHEK A",
+    name: "ASHWINI K",
 
-    language: "python",
-
-    completedTopics: [],
-  },
-  {
-    username: "B24103",
-
-    password: "B24103",
-
-    name: "ABISHEK A",
-
-    language: "python",
+    language: "java",
 
     completedTopics: [],
   },
-  {
-    username: "B24103",
-
-    password: "B24103",
-
-    name: "ABISHEK A",
-
-    language: "python",
-
-    completedTopics: [],
-  },
-  {
-    username: "B24103",
-
-    password: "B24103",
-
-    name: "ABISHEK A",
-
-    language: "python",
-
-    completedTopics: [],
-  },
-  {
-    username: "B24103",
-
-    password: "B24103",
-
-    name: "ABISHEK A",
-
-    language: "python",
-
-    completedTopics: [],
-  },
-
+  
 ];
 
 export default students;
