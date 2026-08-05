@@ -1080,7 +1080,43 @@ const students = [
     language: "cpp",
     completedTopics: [],
   },
-   
+
+  {
+    username: "B26151",
+    password: "B26151",
+    name: "THENNARASU A",
+    language: "cpp",
+    completedTopics: [],
+  },
+  {
+    username: "B26152",
+    password: "B26152",
+    name: "THOMAS EDISON A",
+    language: "cpp",
+    completedTopics: [],
+  },
+  {
+    username: "B26153",
+    password: "B26153",
+    name: "THOMSON A",
+    language: "cpp",
+    completedTopics: [],
+  },
+  {
+    username: "B26154",
+    password: "B26154",
+    name: "YUVANESH R",
+    language: "cpp",
+    completedTopics: [],
+  },
+  {
+    username: "B26155",
+    password: "B26155",
+    name: "YUVASRI M",
+    language: "cpp",
+    completedTopics: [],
+  },
+
 ];
 
 export default students;
