@@ -282,7 +282,7 @@ const students = [
   {
     username: "B24141",
     password: "B24141",
-    name: "SANDEEP P",
+    name: " TVK SANDEEP P",
     language: "java",
     completedTopics: [],
   },
@@ -296,7 +296,7 @@ const students = [
   {
     username: "B24143",
     password: "B24143",
-    name: "SANKAR L",
+    name: "SANKAR BRO",
     language: "java",
     completedTopics: [],
   },
@@ -331,7 +331,7 @@ const students = [
   {
     username: "B24148",
     password: "B24148",
-    name: "VARUN CHRISTOPER THOMAS I",
+    name: "CS SECRATARY",
     language: "java",
     completedTopics: [],
   },
