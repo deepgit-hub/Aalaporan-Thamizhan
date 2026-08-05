@@ -31,9 +31,21 @@ function Welcome() {
 
         <h3>{student.name}</h3>
 
-        <p className="quote">
-          {randomQuote}
-        </p>
+        <div className="quote-card">
+
+  <p className="quote">
+
+    "{randomQuote.quote}"
+
+  </p>
+
+  <h4 className="author">
+
+    — {randomQuote.author}
+
+  </h4>
+
+</div>
 
         <div className="language-card">
 
