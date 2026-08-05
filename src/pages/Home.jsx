@@ -251,12 +251,15 @@ function Home() {
             {topics.map((topic) => (
 
               <TopicCard
-                key={topic.id}
-                title={topic.title}
-                onClick={() =>
-                  navigate(`/topic/${languageId}/${topic.id}`)
-                }
-              />
+  key={topic.id}
+  title={topic.title}
+  completed={
+    student?.completedTopics?.includes(topic.id)
+  }
+  onClick={() =>
+    navigate(`/topic/${languageId}/${topic.id}`)
+  }
+/>
 
             ))}
 
