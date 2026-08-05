@@ -272,7 +272,7 @@ const students = [
   {
     username: "B24141",
     password: "B24141",
-    name: " TVK SANDEEP P",
+    name: "TVK SANDEEP P",
     language: "java",
     completedTopics: [],
   },
