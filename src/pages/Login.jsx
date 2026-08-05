@@ -52,9 +52,15 @@ function Login() {
     <div className="login-page">
       <div className="login-card">
 
-        <h1>🌾 Aalaporan Thamizhan</h1>
+        <h1>🌾 AALAPORAN THAMIZHAN</h1>
 
-        <p>Welcome Back Student 👋</p>
+      <p>
+  Learn Programming in Tamil with
+  <br />
+  Real Concepts, Practice Questions
+  <br />
+  and Industry Knowledge.
+</p>
 
         <form onSubmit={handleLogin}>
 
