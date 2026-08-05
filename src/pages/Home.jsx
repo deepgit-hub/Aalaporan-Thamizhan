@@ -176,17 +176,29 @@ async function fetchStudent() {
     <div className="progress-bar">
 
       <div
-        className="progress-fill"
-        style={{ width: "0%" }}
-      ></div>
+  className="progress-fill"
+  style={{
+    width: `${
+      student
+        ? Math.round(
+            (student.totalCompleted / topics.length) * 100
+          )
+        : 0
+    }%`,
+  }}
+></div>
 
     </div>
 
     <div className="progress-bottom">
 
       <p>
-        <strong>0</strong> / <strong>30</strong> Topics Completed
-      </p>
+  <strong>
+    {student ? student.totalCompleted : 0}
+  </strong>{" "}
+  /{" "}
+  <strong>{topics.length}</strong> Topics Completed
+</p>
 
       <p className="progress-message">
         🚀 Start learning today and build a strong foundation in {languageId?.toUpperCase()}.
