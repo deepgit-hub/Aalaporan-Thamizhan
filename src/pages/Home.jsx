@@ -201,8 +201,12 @@ async function fetchStudent() {
 </p>
 
       <p className="progress-message">
-        🚀 Start learning today and build a strong foundation in {languageId?.toUpperCase()}.
-      </p>
+  {student && student.totalCompleted === topics.length
+    ? "🎉 Congratulations! You've completed every topic in this language."
+    : `🚀 Keep going! You've completed ${
+        student ? student.totalCompleted : 0
+      } of ${topics.length} topics.`}
+</p>
 
     </div>
 
