@@ -21,8 +21,8 @@ function TopicCard({
 
       <span className="topic-status">
   {completed
-    ? "✅ Completed"
-    : "📖 Start Learning"}
+    ? " Completed"
+    : " Start Learning"}
 </span>
     </button>
   );
