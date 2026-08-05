@@ -16,7 +16,9 @@ function Topic() {
 const { languageId, topicId } = useParams();
 
 const [topic, setTopic] = useState(null);
-
+const student = JSON.parse(
+  localStorage.getItem("student")
+);
   useEffect(() => {
   async function fetchTopic() {
     const topicRef = doc(
@@ -41,8 +43,46 @@ if (!topic) {
   return <h2>Loading...</h2>;
 }
 
-const handleMarkAsLearned = () => {
-  alert("🎉 Topic Completed!");
+const handleMarkAsLearned = async () => {
+  try {
+    // Prevent duplicate completion
+    if (student.completedTopics.includes(Number(topicId))) {
+      alert("✅ You have already completed this topic.");
+      return;
+    }
+
+    // Update local student object
+    const updatedTopics = [
+      ...student.completedTopics,
+      Number(topicId),
+    ];
+
+    const updatedTotal = updatedTopics.length;
+
+    // Update Firestore
+    await updateDoc(
+      doc(db, "students", student.username),
+      {
+        completedTopics: updatedTopics,
+        totalCompleted: updatedTotal,
+      }
+    );
+
+    // Update localStorage
+    student.completedTopics = updatedTopics;
+    student.totalCompleted = updatedTotal;
+
+    localStorage.setItem(
+      "student",
+      JSON.stringify(student)
+    );
+
+    alert("🎉 Topic Completed Successfully!");
+
+  } catch (error) {
+    console.error(error);
+    alert("❌ Failed to update progress.");
+  }
 };
   return (
     <div className="topic-page">
