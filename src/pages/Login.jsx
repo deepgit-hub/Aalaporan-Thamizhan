@@ -40,7 +40,7 @@ function Login() {
       // Login Successful
       alert(`🎉 Welcome ${student.name}`);
 
-      navigate("/languages");
+      navigate(`/home/${student.language}`);
 
     } catch (error) {
       console.error(error);
