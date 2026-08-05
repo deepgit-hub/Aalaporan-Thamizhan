@@ -335,13 +335,7 @@ const students = [
     language: "java",
     completedTopics: [],
   },
-  {
-    username: "B24149",
-    password: "B24149",
-    name: "VENKATESAN C",
-    language: "java",
-    completedTopics: [],
-  },
+  
   {
     username: "B24150",
     password: "B24150",
@@ -352,14 +346,14 @@ const students = [
   {
     username: "B24151",
     password: "B24151",
-    name: "KATHIR K",
+    name: "ITHU JEICHI NAMMA ENNA PANNA POROM",
     language: "java",
     completedTopics: [],
   },
   {
     username: "B24152",
     password: "B24152",
-    name: "VIGNESH V",
+    name: "VIGNESH ANNA ",
     language: "java",
     completedTopics: [],
   },
