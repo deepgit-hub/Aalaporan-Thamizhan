@@ -40,8 +40,10 @@ function Welcome() {
           <span>📚 Assigned Language</span>
 
           <h2>
-            {student.language.toUpperCase()}
-          </h2>
+  {student.language === "java" && "☕ Java"}
+  {student.language === "python" && "🐍 Python"}
+  {student.language === "cpp" && "⚙️ C++"}
+</h2>
 
         </div>
 
