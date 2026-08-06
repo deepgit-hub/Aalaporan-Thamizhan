@@ -8,6 +8,7 @@ import {
 import { db } from "../firebase";
 import MentorSupport from "../components/MentorSupportButton";
 import "../styles/Topic.css";
+import SetupGuide from "../components/SetupGuide";
 
 function Topic() {
   const navigate = useNavigate();
@@ -16,6 +17,8 @@ function Topic() {
 const { languageId, topicId } = useParams();
 
 const [topic, setTopic] = useState(null);
+const [showSetupGuide, setShowSetupGuide] =
+  useState(false);
 const student = JSON.parse(
   localStorage.getItem("student")
 );
@@ -254,7 +257,12 @@ const handleMarkAsLearned = async () => {
         {/* Buttons */}
 
         <div className="topic-buttons">
-
+<button
+  className="setup-btn"
+  onClick={() => setShowSetupGuide(true)}
+>
+  🚀 Get Your PC Ready
+</button> 
           <button
             className="topic-start-btn"
             onClick={() => navigate(`/questions/${languageId}/${topicId}`)}
@@ -268,10 +276,15 @@ const handleMarkAsLearned = async () => {
           >
             ✅ Mark as Learned
           </button>
-
+<SetupGuide
+  isOpen={showSetupGuide}
+  onClose={() => setShowSetupGuide(false)}
+  language={languageId}
+/>
         </div>
 
       </div>
+
         <MentorSupport />
 
     </div>
