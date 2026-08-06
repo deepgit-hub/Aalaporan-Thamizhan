@@ -45,24 +45,33 @@ const student = JSON.parse(
 if (!topic) {
   return <h2>Loading...</h2>;
 }
-
+const isCompleted = student.completedTopics.includes(
+  Number(topicId)
+);
 const handleMarkAsLearned = async () => {
   try {
-    // Prevent duplicate completion
-    if (student.completedTopics.includes(Number(topicId))) {
-      alert("✅ You have already completed this topic.");
-      return;
-    }
 
-    // Update local student object
-    const updatedTopics = [
-      ...student.completedTopics,
-      Number(topicId),
-    ];
+    let updatedTopics;
+
+    if (isCompleted) {
+
+      // Mark as Unread
+      updatedTopics = student.completedTopics.filter(
+        (id) => id !== Number(topicId)
+      );
+
+    } else {
+
+      // Mark as Learned
+      updatedTopics = [
+        ...student.completedTopics,
+        Number(topicId),
+      ];
+
+    }
 
     const updatedTotal = updatedTopics.length;
 
-    // Update Firestore
     await updateDoc(
       doc(db, "students", student.username),
       {
@@ -71,7 +80,6 @@ const handleMarkAsLearned = async () => {
       }
     );
 
-    // Update localStorage
     student.completedTopics = updatedTopics;
     student.totalCompleted = updatedTotal;
 
@@ -80,7 +88,13 @@ const handleMarkAsLearned = async () => {
       JSON.stringify(student)
     );
 
-    alert("🎉 Topic Completed Successfully!");
+    alert(
+      isCompleted
+        ? "↩️ Topic marked as Unread."
+        : "🎉 Topic marked as Learned!"
+    );
+
+    window.location.reload();
 
   } catch (error) {
     console.error(error);
@@ -271,11 +285,13 @@ const handleMarkAsLearned = async () => {
           </button>
 
           <button
-            className="topic-complete-btn"
-            onClick={handleMarkAsLearned}
-          >
-            ✅ Mark as Learned
-          </button>
+  className="topic-complete-btn"
+  onClick={handleMarkAsLearned}
+>
+  {isCompleted
+    ? "↩️ Mark as Unread"
+    : "✅ Mark as Learned"}
+</button>
 <SetupGuide
   isOpen={showSetupGuide}
   onClose={() => setShowSetupGuide(false)}
