@@ -24,7 +24,8 @@ function Login() {
       }
 
       const student = studentSnap.data();
-
+      console.log("Firestore password:", student.password);
+console.log("Typed password:", password);
       // Password incorrect
       if (student.password !== password) {
         alert("❌ Incorrect Password");
