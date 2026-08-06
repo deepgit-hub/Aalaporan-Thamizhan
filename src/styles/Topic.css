@@ -255,7 +255,7 @@
    START BUTTON
 ========================================== */
 
-.start-btn{
+.topic-start-btn{
 
     background:#2563eb;
 
@@ -279,7 +279,7 @@
 
 }
 
-.start-btn:hover{
+.topic-start-btn:hover{
 
     background:#1d4ed8;
 
@@ -291,7 +291,7 @@
    COMPLETE BUTTON
 ========================================== */
 
-.complete-btn{
+.topic-complete-btn{
 
     background:white;
 
@@ -313,7 +313,7 @@
 
 }
 
-.complete-btn:hover{
+.topic-complete-btn:hover{
 
     background:#22c55e;
 
