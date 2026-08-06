@@ -256,14 +256,14 @@ const handleMarkAsLearned = async () => {
         <div className="topic-buttons">
 
           <button
-            className="start-btn"
+            className="topic-start-btn"
             onClick={() => navigate(`/questions/${languageId}/${topicId}`)}
           >
             🚀 Start Coding
           </button>
 
           <button
-            className="complete-btn"
+            className="topic-complete-btn"
             onClick={handleMarkAsLearned}
           >
             ✅ Mark as Learned
