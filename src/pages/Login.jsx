@@ -53,7 +53,7 @@ console.log("Typed password:", password);
     <div className="login-page">
       <div className="login-card">
 
-        <h1>🌾 AALAPORAN THAMIZHAN</h1>
+        <h1>🌾 DEEP CODE</h1>
 
       <p>
   Learn Programming in Tamil with
