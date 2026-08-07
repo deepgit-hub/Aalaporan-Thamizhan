@@ -58,9 +58,8 @@ console.log("Typed password:", password);
       <p>
   Learn Programming in Tamil with
   <br />
-  Real Concepts, Practice Questions
-  <br />
-  and Industry Knowledge.
+  Real Concepts & Practice Questions
+  
 </p>
 
         <form onSubmit={handleLogin}>
