@@ -64,6 +64,7 @@ function Home() {
       if (studentSnap.exists()) {
 
         const data = studentSnap.data();
+        console.log(data.completedTopics);
 
         setStudent(data);
 
