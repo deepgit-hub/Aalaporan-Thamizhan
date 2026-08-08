@@ -39,9 +39,15 @@ console.log("Typed password:", password);
       );
 
       // Login Successful
-      alert(`🎉 Welcome ${student.name}`);
+alert(`🎉 Welcome ${student.name}`);
 
-      navigate("/welcome");
+if (!student.language) {
+  // New student → choose language
+  navigate("/choose-language");
+} else {
+  // Existing student → continue normally
+  navigate("/welcome");
+}
 
     } catch (error) {
       console.error(error);
