@@ -39,9 +39,15 @@ console.log("Typed password:", password);
       );
 
       // Login Successful
-      alert(`🎉 Welcome ${student.name}`);
+alert(`🎉 Welcome ${student.name}`);
 
-      navigate("/welcome");
+if (!student.language) {
+  // New student → choose language
+  navigate("/choose-language");
+} else {
+  // Existing student → continue normally
+  navigate("/welcome");
+}
 
     } catch (error) {
       console.error(error);
@@ -53,14 +59,13 @@ console.log("Typed password:", password);
     <div className="login-page">
       <div className="login-card">
 
-        <h1>🌾 AALAPORAN THAMIZHAN</h1>
+        <h1>🌾 DEEP CODE</h1>
 
       <p>
   Learn Programming in Tamil with
   <br />
-  Real Concepts, Practice Questions
-  <br />
-  and Industry Knowledge.
+  Real Concepts & Practice Questions
+  
 </p>
 
         <form onSubmit={handleLogin}>

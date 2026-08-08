@@ -1,0 +1,143 @@
+.choose-language-page {
+  min-height: 100vh;
+  background: #f8fafc;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px;
+}
+
+.choose-language-card {
+  width: 100%;
+  max-width: 700px;
+
+  background: white;
+
+  padding: 50px;
+
+  border-radius: 25px;
+
+  text-align: center;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.language-logo {
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.choose-language-card h1 {
+  color: #173476;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.choose-language-card h2 {
+  color: #0f172a;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.choose-language-card > p {
+  color: #64748b;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.language-options {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.language-option {
+  width: 180px;
+  min-height: 170px;
+
+  border: 3px solid #e2e8f0;
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 25px 15px;
+
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  transition: 0.3s;
+}
+
+.language-option span {
+  font-size: 45px;
+}
+
+.language-option strong {
+  font-size: 22px;
+  color: #173476;
+}
+
+.language-option small {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.language-option:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Java */
+
+.language-option.java:hover {
+  border-color: #ef4444;
+}
+
+/* Python */
+
+.language-option.python:hover {
+  border-color: #2563eb;
+}
+
+/* C++ */
+
+.language-option.cpp:hover {
+  border-color: #16a34a;
+}
+
+.choose-note {
+  margin-top: 30px !important;
+  margin-bottom: 0 !important;
+
+  font-size: 15px !important;
+}
+
+@media (max-width: 600px) {
+
+  .choose-language-card {
+    padding: 30px 20px;
+  }
+
+  .choose-language-card h1 {
+    font-size: 25px;
+  }
+
+  .choose-language-card h2 {
+    font-size: 23px;
+  }
+
+  .language-option {
+    width: 100%;
+    max-width: 280px;
+  }
+
+}

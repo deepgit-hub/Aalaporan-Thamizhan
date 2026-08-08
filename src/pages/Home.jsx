@@ -64,6 +64,7 @@ function Home() {
       if (studentSnap.exists()) {
 
         const data = studentSnap.data();
+        console.log(data.completedTopics);
 
         setStudent(data);
 
@@ -85,7 +86,7 @@ function Home() {
   const progress =
     student && topics.length > 0
       ? Math.round(
-          (student.totalCompleted / topics.length) * 100
+          (student.completedTopics.length / topics.length) * 100
         )
       : 0;
   return (
@@ -215,7 +216,7 @@ function Home() {
 
                 <strong>
 
-                  {student ? student.totalCompleted : 0}
+                  {student ? student.completedTopics.length : 0}
 
                 </strong>
 
@@ -235,7 +236,7 @@ function Home() {
 
                 {student && topics.length > 0
 
-                  ? `🚀 Keep going! You've completed ${student.totalCompleted} of ${topics.length} topics.`
+                  ? `🚀 Keep going! You've completed ${student.completedTopics.length} of ${topics.length} topics.`
 
                   : "Loading your progress..."}
 
