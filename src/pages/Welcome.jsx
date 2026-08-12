@@ -25,7 +25,7 @@ function Welcome() {
           🌾
         </div>
 
-        <h1>DEEP CODE</h1>
+        <h1>Alaporan Thamizhan</h1>
 
         <h2>Welcome Back 👋</h2>
 
