@@ -55,7 +55,7 @@ function ChooseLanguage() {
           🌾
         </div>
 
-        <h1>AALAPORAN THAMIZHAN</h1>
+        <h1>DEEP CODE</h1>
 
         <h2>Choose Your Language 👨‍💻</h2>
 
