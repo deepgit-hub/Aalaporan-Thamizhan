@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 
 import "../styles/Home.css";
+import ThingsToRemember from "../components/ThingsToRemember";
 
 function Home() {
   const navigate = useNavigate();
