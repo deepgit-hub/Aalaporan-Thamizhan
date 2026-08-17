@@ -350,7 +350,7 @@ function Home() {
         <hr />
 
         <p className="copyright">
-          © 2026 Aalaporan Thamizhan • Designed & Developed by Deepak
+          © 2026 DEEP CODE • Designed & Developed by Deepak
         </p>
 
       </footer>
