@@ -23,6 +23,7 @@ function Home() {
   const { languageId } = useParams();
 
   const [topics, setTopics] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const [student, setStudent] = useState(null);
 
@@ -82,7 +83,11 @@ function Home() {
     fetchStudent();
 
   }, [languageId]);
-
+const filteredTopics = topics.filter((topic) =>
+  topic.title
+    .toLowerCase()
+    .includes(searchTerm.toLowerCase())
+);
   const progress =
     student && topics.length > 0
       ? Math.round(
