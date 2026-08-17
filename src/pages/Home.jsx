@@ -390,6 +390,11 @@ const filteredTopics = topics.filter((topic) =>
 
     </div>
   );
+  <ThingsToRemember
+  isOpen={showRemember}
+  onClose={() => setShowRemember(false)}
+  language={languageId}
+/>
 }
 
 export default Home;
