@@ -59,7 +59,7 @@ if (!student.language) {
     <div className="login-page">
       <div className="login-card">
 
-        <h1>🌾 Alaporan Thamizhan</h1>
+        <h1>🌾 DEEP CODE</h1>
 
       <p>
   Learn Programming in Tamil with
