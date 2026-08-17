@@ -189,6 +189,18 @@ const filteredTopics = topics.filter((topic) =>
             </p>
 
           </div>
+          {/* ================= THINGS TO REMEMBER ================= */}
+
+<div className="remember-button-container">
+
+  <button
+    className="remember-btn"
+    onClick={() => setShowRemember(true)}
+  >
+    📌 Things to Remember
+  </button>
+
+</div>
           {/* ================= SEARCH ================= */}
 
 <div className="topic-search">
