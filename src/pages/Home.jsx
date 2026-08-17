@@ -27,6 +27,7 @@ function Home() {
   const [searchTerm, setSearchTerm] = useState("");
 
   const [student, setStudent] = useState(null);
+  const [showRemember, setShowRemember] = useState(false);
 
   useEffect(() => {
 
