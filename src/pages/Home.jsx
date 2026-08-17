@@ -187,6 +187,20 @@ const filteredTopics = topics.filter((topic) =>
             </p>
 
           </div>
+          {/* ================= SEARCH ================= */}
+
+<div className="topic-search">
+
+  <span className="search-icon">🔍</span>
+
+  <input
+    type="text"
+    placeholder={`Search ${languageId?.toUpperCase()} topics...`}
+    value={searchTerm}
+    onChange={(e) => setSearchTerm(e.target.value)}
+  />
+
+</div>
 
           {/* ================= PROGRESS ================= */}
 
@@ -254,7 +268,7 @@ const filteredTopics = topics.filter((topic) =>
           {/* ================= TOPICS ================= */}
                     <div className="topics-grid">
 
-            {topics.map((topic) => (
+            {filteredTopics.map((topic) => (
 
               <TopicCard
   key={topic.id}
