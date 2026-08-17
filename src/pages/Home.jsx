@@ -389,6 +389,7 @@ const filteredTopics = topics.filter((topic) =>
       </footer>
 
     </div>
+    
   );
   <ThingsToRemember
   isOpen={showRemember}
